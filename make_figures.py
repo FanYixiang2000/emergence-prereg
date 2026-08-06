@@ -227,8 +227,8 @@ def fig2():
                      arrowstyle="-", color=GREY, lw=0.5, zorder=2))
     ax.annotate("", xy=(0.90, 0.55), xytext=(0.66, 0.55),
                 arrowprops=dict(arrowstyle="->", color=RED, lw=1.2))
-    ax.text(0.78, 0.60, "push\n(left or right)", fontsize=6, color=RED,
-            ha="center")
+    ax.text(0.85, 0.68, "push\n(left or right)", fontsize=6, color=RED,
+            ha="center", va="bottom")
     ax.text(0.5, 0.15, "phase 1: grip (attachment $\\geq$ threshold)\n"
             "phase 2: collective push", fontsize=6, ha="center")
     ax.set_xlim(0, 1)
@@ -524,10 +524,10 @@ def fig4():
     ax.text(0.62, 0.0095, "non-overlapping\n95% CIs", fontsize=5.5,
             ha="center")
 
-    panel(fig, 0.005, 1.00, "a")
-    panel(fig, 0.29, 1.00, "b")
-    panel(fig, 0.55, 1.00, "c")
-    panel(fig, 0.80, 1.00, "d")
+    panel(fig, 0.005, 1.06, "a")
+    panel(fig, 0.29, 1.06, "b")
+    panel(fig, 0.55, 1.06, "c")
+    panel(fig, 0.80, 1.06, "d")
     save(fig, "fig4")
 
 
@@ -668,7 +668,8 @@ def fig6():
         axi.plot(grid - t50, med, lw=0.6)
     axi.set_xlim(-220, 220)
     axi.set_title("curves collapse under\ntime translation",
-                  fontsize=4.8, pad=1)
+                  fontsize=4.8, pad=1,
+                  bbox=dict(facecolor="white", edgecolor="none", pad=0.6))
     axi.tick_params(labelsize=4.5, length=1.5, width=0.4)
     for s in axi.spines.values():
         s.set_linewidth(0.4)
@@ -713,11 +714,11 @@ def fig6():
               "unresolvable": "#DDDDDD"}
     for i, (name, verdict, label) in enumerate(rows):
         y = len(rows) - 1 - i
-        ax.add_patch(Rectangle((0.58, y + 0.08), 0.40, 0.84,
+        ax.add_patch(Rectangle((0.68, y + 0.08), 0.32, 0.84,
                      facecolor=colmap[verdict], edgecolor="white",
                      lw=0.5))
-        ax.text(0.56, y + 0.5, name, fontsize=6, ha="right", va="center")
-        ax.text(0.78, y + 0.5, label, fontsize=5.5, ha="center",
+        ax.text(0.66, y + 0.5, name, fontsize=6, ha="right", va="center")
+        ax.text(0.84, y + 0.5, label, fontsize=5.5, ha="center",
                 va="center",
                 color="white" if verdict == "onset" else DARK)
     ax.set_xlim(0, 1.0)
@@ -726,9 +727,9 @@ def fig6():
     ax.set_title("onset appears where a new joint regime is crossed",
                  fontsize=6.5)
 
-    panel(fig, 0.005, 1.00, "a")
-    panel(fig, 0.30, 1.00, "b")
-    panel(fig, 0.56, 1.00, "c")
+    panel(fig, 0.005, 1.06, "a")
+    panel(fig, 0.30, 1.06, "b")
+    panel(fig, 0.56, 1.06, "c")
     save(fig, "fig6")
 
 
