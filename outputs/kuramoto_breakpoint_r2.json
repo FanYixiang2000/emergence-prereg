@@ -1,0 +1,173 @@
+{
+  "status": "KUR-BP-R2 saturation-truncated window; registered before run; fresh seeds",
+  "gate": 0.1,
+  "seeds": {
+    "81021": {
+      "super": {
+        "drop": 0.5984,
+        "gate_passed": true,
+        "t_sat": 9.4,
+        "window_points": 48,
+        "hinge": {
+          "delta_bic": 94.539,
+          "t_star": 3.2,
+          "slope_before": -0.002876,
+          "slope_after": -0.101048,
+          "onset_type": true
+        },
+        "thinning": {
+          "parity0": {
+            "delta_bic": 48.945,
+            "t_star": 3.2,
+            "slope_before": -0.002364,
+            "slope_after": -0.10191,
+            "onset_type": true,
+            "ok": true
+          },
+          "parity1": {
+            "delta_bic": 40.607,
+            "t_star": 3.4,
+            "slope_before": -0.009491,
+            "slope_after": -0.101598,
+            "onset_type": true,
+            "ok": true
+          }
+        },
+        "t_r90": 6.4,
+        "onset_pass": true,
+        "final_ladder": {
+          "C_individual": 0.00166,
+          "C_pair": 5.99701,
+          "C_high": 0.00091,
+          "C_total": 5.99959,
+          "H_P": 3.9662
+        }
+      },
+      "sub": {
+        "drop": 0.001,
+        "gate_passed": false,
+        "verdict": "no_collapse_B5_not_applicable",
+        "final_ladder": {
+          "C_individual": 0.00108,
+          "C_pair": 0.01638,
+          "C_high": 0.02893,
+          "C_total": 0.04639,
+          "H_P": 9.91939
+        }
+      }
+    },
+    "81022": {
+      "super": {
+        "drop": 0.599,
+        "gate_passed": true,
+        "t_sat": 9.4,
+        "window_points": 48,
+        "hinge": {
+          "delta_bic": 92.661,
+          "t_star": 3.2,
+          "slope_before": -0.004275,
+          "slope_after": -0.100826,
+          "onset_type": true
+        },
+        "thinning": {
+          "parity0": {
+            "delta_bic": 48.098,
+            "t_star": 3.2,
+            "slope_before": -0.003664,
+            "slope_after": -0.101681,
+            "onset_type": true,
+            "ok": true
+          },
+          "parity1": {
+            "delta_bic": 39.191,
+            "t_star": 3.4,
+            "slope_before": -0.010987,
+            "slope_after": -0.101316,
+            "onset_type": true,
+            "ok": true
+          }
+        },
+        "t_r90": 6.4,
+        "onset_pass": true,
+        "final_ladder": {
+          "C_individual": 0.00145,
+          "C_pair": 6.00258,
+          "C_high": 0.00095,
+          "C_total": 6.00497,
+          "H_P": 3.96081
+        }
+      },
+      "sub": {
+        "drop": 0.0005,
+        "gate_passed": false,
+        "verdict": "no_collapse_B5_not_applicable",
+        "final_ladder": {
+          "C_individual": 0.00094,
+          "C_pair": 0.01223,
+          "C_high": 0.02741,
+          "C_total": 0.04057,
+          "H_P": 9.92521
+        }
+      }
+    },
+    "81023": {
+      "super": {
+        "drop": 0.5999,
+        "gate_passed": true,
+        "t_sat": 9.2,
+        "window_points": 47,
+        "hinge": {
+          "delta_bic": 91.037,
+          "t_star": 3.2,
+          "slope_before": -0.004873,
+          "slope_after": -0.10457,
+          "onset_type": true
+        },
+        "thinning": {
+          "parity0": {
+            "delta_bic": 42.555,
+            "t_star": 3.2,
+            "slope_before": -0.005574,
+            "slope_after": -0.103588,
+            "onset_type": true,
+            "ok": true
+          },
+          "parity1": {
+            "delta_bic": 43.37,
+            "t_star": 3.4,
+            "slope_before": -0.010356,
+            "slope_after": -0.107219,
+            "onset_type": true,
+            "ok": true
+          }
+        },
+        "t_r90": 6.2,
+        "onset_pass": true,
+        "final_ladder": {
+          "C_individual": 0.00087,
+          "C_pair": 6.01014,
+          "C_high": 0.00059,
+          "C_total": 6.01159,
+          "H_P": 3.95419
+        }
+      },
+      "sub": {
+        "drop": 0.0007,
+        "gate_passed": false,
+        "verdict": "no_collapse_B5_not_applicable",
+        "final_ladder": {
+          "C_individual": 0.00105,
+          "C_pair": 0.0147,
+          "C_high": 0.02428,
+          "C_total": 0.04002,
+          "H_P": 9.92576
+        }
+      }
+    }
+  },
+  "registered_outcomes": {
+    "KURR2_1_onset_3of3": true,
+    "KURR2_2_subcritical_gated_null_3of3": true,
+    "KURR2_3_relational_carrier_3of3": true
+  }
+}

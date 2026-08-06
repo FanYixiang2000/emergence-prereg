@@ -1,0 +1,101 @@
+{
+  "status": "DETECTOR-VALIDATION frozen held-out benchmark; detector imported unchanged from ant_fine_onset; registered before run",
+  "config": {
+    "n_per_family": 200,
+    "ref_density": 80,
+    "ref_sigma": 0.02,
+    "densities": [
+      12,
+      20,
+      40,
+      80
+    ],
+    "sigmas": [
+      0.0,
+      0.01,
+      0.02,
+      0.04,
+      0.08
+    ],
+    "gate": 0.1,
+    "seed": 4040001,
+    "external_method": "ruptures.Binseg(model=rbf), n_bkps=1"
+  },
+  "reference_point": {
+    "onset": {
+      "onset_rate": 1.0,
+      "median_loc_err_frac": 0.1013,
+      "n_loc_compared": 200
+    },
+    "knee": {
+      "onset_rate": 0.0,
+      "median_loc_err_frac": null,
+      "n_loc_compared": 0
+    },
+    "gradual": {
+      "onset_rate": 0.0,
+      "median_loc_err_frac": null,
+      "n_loc_compared": 0
+    },
+    "scurve": {
+      "onset_rate": 0.995,
+      "median_loc_err_frac": 0.1899,
+      "n_loc_compared": 199
+    },
+    "flat": {
+      "onset_rate": 0.0,
+      "median_loc_err_frac": null,
+      "n_loc_compared": 0
+    }
+  },
+  "by_density": {
+    "12": {
+      "onset_power": 0.0,
+      "fpr": 0.0
+    },
+    "20": {
+      "onset_power": 0.615,
+      "fpr": 0.0
+    },
+    "40": {
+      "onset_power": 0.995,
+      "fpr": 0.0
+    },
+    "80": {
+      "onset_power": 1.0,
+      "fpr": 0.0
+    }
+  },
+  "by_sigma": {
+    "0.0": {
+      "onset_power": 1.0,
+      "fpr": 0.0
+    },
+    "0.01": {
+      "onset_power": 1.0,
+      "fpr": 0.0
+    },
+    "0.02": {
+      "onset_power": 1.0,
+      "fpr": 0.0
+    },
+    "0.04": {
+      "onset_power": 1.0,
+      "fpr": 0.0
+    },
+    "0.08": {
+      "onset_power": 0.93,
+      "fpr": 0.0
+    }
+  },
+  "registered_outcomes": {
+    "DV1_specificity_fpr_le_0.05": true,
+    "DV2_power_ge_0.80": true,
+    "DV3_power_monotone_in_density": true,
+    "DV3_fpr_not_increasing_in_density": true,
+    "DV4_power_graceful_in_noise": true,
+    "DV4_fpr_le_0.10_all_noise": true,
+    "ref_onset_power": 1.0,
+    "ref_fpr": 0.0
+  }
+}

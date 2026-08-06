@@ -1,0 +1,32 @@
+Gym has been unmaintained since 2022 and does not support NumPy 2.0 amongst other critical functionality.
+Please upgrade to Gymnasium, the maintained drop-in replacement of Gym, or contact the authors of your software and request that they upgrade.
+Users of this version of Gym should be able to simply replace 'import gym' with 'import gymnasium as gym' in the vast majority of cases.
+See the migration guide at https://gymnasium.farama.org/introduction/migration_guide/ for additional information.
+training seed 93003 for 2000000 steps
+  checkpoint 40000 saved at step 40960
+  checkpoint 80000 saved at step 81920
+  checkpoint 160000 saved at step 161792
+  checkpoint 320000 saved at step 321536
+  checkpoint 640000 saved at step 641024
+  checkpoint 1000000 saved at step 1001472
+  checkpoint 1500000 saved at step 1501184
+  checkpoint 2000000 saved at step 2000896
+training done in 21.73 min; evaluating 8 checkpoints
+  ckpt 40000: G=0.0298 CI=[0.005267726710144357, 0.08400332986403866] M=-0.20 score=0.00
+  ckpt 80000: G=0.0235 CI=[0.005839451098640015, 0.07608587330617451] M=0.00 score=0.40
+  ckpt 160000: G=0.0488 CI=[0.01974836344943839, 0.12125881567670992] M=-0.20 score=0.20
+  ckpt 320000: G=0.0788 CI=[0.036639011612966364, 0.15153787160465357] M=0.80 score=2.00
+  ckpt 640000: G=0.0861 CI=[0.05977641159775949, 0.14505703589854738] M=4.60 score=9.40
+  ckpt 1000000: G=0.0455 CI=[0.019409660835617706, 0.10186173344382211] M=7.80 score=24.40
+  ckpt 1500000: G=0.0415 CI=[0.01916590466100973, 0.09321811447462147] M=17.40 score=46.00
+  ckpt 2000000: G=0.0703 CI=[0.03728817400842275, 0.1270472224028877] M=16.20 score=35.40
+{
+  "t_seed_steps": 160000,
+  "t_visible_steps": 1000000,
+  "registered_outcomes": {
+    "OTC_G1_all_finite_normalized": true,
+    "OTC_G2_seed_no_later_than_visible": true,
+    "OTC_G3_final_M_positive": true
+  }
+}
+Wrote /home/Yixiang/MPARL/GOGOGO/outputs/overcooked_genesis_curve_curve_s93003.json

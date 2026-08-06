@@ -1,0 +1,97 @@
+{
+  "thresholds": {
+    "potential_bits": 1.0,
+    "burstiness_ratio": 5.0,
+    "usefulness_acc_gain": 0.2
+  },
+  "task": "y=(a+b)//2 ordinal",
+  "runs": {
+    "11": {
+      "stats": {
+        "h_pre_burst_bits": 5.501128673553467,
+        "window_burst_bits": 1.7402664422988892,
+        "global_max_burst_bits": 1.7402664422988892,
+        "global_max_burst_epoch": 80,
+        "burstiness_ratio": 547.8982165729565,
+        "window_epoch": 120,
+        "usefulness_acc_gain": 0.04612114652991295,
+        "final_train_acc": 1.0,
+        "final_test_acc": 0.07162593305110931,
+        "train_acc_99_epoch": 160,
+        "test_acc_90_epoch": NaN,
+        "burst_jump_correlation": NaN,
+        "final_test_entropy_bits": 0.7025907635688782,
+        "initial_test_entropy_bits": 6.592414855957031
+      },
+      "verdict": {
+        "passes": {
+          "potential": true,
+          "burstiness": true,
+          "usefulness": false,
+          "endogeneity": true
+        },
+        "emergent": 0
+      }
+    },
+    "22": {
+      "stats": {
+        "h_pre_burst_bits": 5.540265083312988,
+        "window_burst_bits": 1.7626062631607056,
+        "global_max_burst_bits": 1.7626062631607056,
+        "global_max_burst_epoch": 80,
+        "burstiness_ratio": 528.6237959443656,
+        "window_epoch": 120,
+        "usefulness_acc_gain": 0.04569606855511665,
+        "final_train_acc": 1.0,
+        "final_test_acc": 0.07035069167613983,
+        "train_acc_99_epoch": 160,
+        "test_acc_90_epoch": NaN,
+        "burst_jump_correlation": NaN,
+        "final_test_entropy_bits": 0.7332549095153809,
+        "initial_test_entropy_bits": 6.592355251312256
+      },
+      "verdict": {
+        "passes": {
+          "potential": true,
+          "burstiness": true,
+          "usefulness": false,
+          "endogeneity": true
+        },
+        "emergent": 0
+      }
+    },
+    "33": {
+      "stats": {
+        "h_pre_burst_bits": 5.479074001312256,
+        "window_burst_bits": 1.6691153049468994,
+        "global_max_burst_bits": 1.6691153049468994,
+        "global_max_burst_epoch": 80,
+        "burstiness_ratio": 515.2860943508555,
+        "window_epoch": 120,
+        "usefulness_acc_gain": 0.05037194490432739,
+        "final_train_acc": 1.0,
+        "final_test_acc": 0.07672688364982605,
+        "train_acc_99_epoch": 160,
+        "test_acc_90_epoch": NaN,
+        "burst_jump_correlation": NaN,
+        "final_test_entropy_bits": 0.7249118089675903,
+        "initial_test_entropy_bits": 6.592676639556885
+      },
+      "verdict": {
+        "passes": {
+          "potential": true,
+          "burstiness": true,
+          "usefulness": false,
+          "endogeneity": true
+        },
+        "emergent": 0
+      }
+    }
+  },
+  "predictions": {
+    "OL1_strong_and_generalizing": false,
+    "OL2_rejected_via_burstiness": false,
+    "OL3_potential_passes": true
+  },
+  "all_pass": false
+}

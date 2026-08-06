@@ -1,0 +1,9 @@
+'[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1032)' thrown while requesting HEAD https://huggingface.co/EleutherAI/pythia-6.9b/resolve/step0/config.json
+Retrying in 1s [Retry 1/5].
+  step0/config.json: retry after 10s (Cannot send a request, as the client has been closed.)
+'[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1032)' thrown while requesting HEAD https://huggingface.co/EleutherAI/pythia-6.9b/resolve/step0/config.json
+Retrying in 1s [Retry 1/5].
+  step0/config.json: retry after 20s (Cannot send a request, as the client has been closed.)
+'[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1032)' thrown while requesting HEAD https://huggingface.co/EleutherAI/pythia-6.9b/resolve/step0/config.json
+Retrying in 1s [Retry 1/5].
+  step0/config.json: retry after 30s (Cannot send a request, as the client has been closed.)

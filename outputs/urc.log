@@ -1,0 +1,21 @@
+crowd URC seed 6101: agreement so far 5/6
+crowd URC seed 6102: agreement so far 10/12
+crowd URC seed 6103: agreement so far 15/18
+crowd URC seed 6104: agreement so far 21/24
+crowd URC seed 6105: agreement so far 27/30
+crowd URC seed 6106: agreement so far 32/36
+crowd URC seed 6107: agreement so far 37/42
+crowd URC seed 6108: agreement so far 42/48
+crowd URC seed 6109: agreement so far 48/54
+crowd URC seed 6110: agreement so far 53/60
+boids URC a=0.0: k=2 contraction 0.00 JS 0.000
+boids URC a=0.25: k=2 contraction -0.12 JS 0.941
+boids URC a=0.5: k=3 contraction -1.03 JS 0.968
+boids URC a=0.75: k=3 contraction -1.01 JS 0.995
+boids URC a=1.0: k=3 contraction -1.00 JS 1.000
+{
+  "URC1_crowd_verdict_agreement_ge_90_no_false_pos": false,
+  "URC2_basins_resolve_structure_mi_ge_0.5": false,
+  "URC3_boids_monotone_and_loadbearing": false
+}
+Wrote /home/Yixiang/MPARL/GOGOGO/outputs/universal_reference_contract.json

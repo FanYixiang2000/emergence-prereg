@@ -1,0 +1,100 @@
+learned basins, seed 1101
+  learned        verdict 1 pot 1.57 spec 0.87 mi 1.00
+  initial_twin   verdict 0 pot 0.11 spec 0.84 mi 0.05
+  team_nearest   verdict 0 pot 1.00 spec 0.82 mi 1.00
+  fixed_food0    verdict 0 pot 0.54 spec 0.81 mi 0.54
+  fixed_food1    verdict 0 pot 0.81 spec 0.84 mi 0.00
+learned basins, seed 1102
+  learned        verdict 1 pot 1.57 spec 0.82 mi 1.00
+  initial_twin   verdict 0 pot 0.05 spec 0.83 mi 0.00
+  team_nearest   verdict 0 pot 1.00 spec 0.81 mi 1.00
+  fixed_food0    verdict 0 pot 0.58 spec 0.81 mi 0.58
+  fixed_food1    verdict 0 pot 0.81 spec 0.80 mi 0.00
+learned basins, seed 1103
+  learned        verdict 1 pot 1.66 spec 0.80 mi 0.84
+  initial_twin   verdict 0 pot 0.05 spec 0.80 mi 0.05
+  team_nearest   verdict 0 pot 1.00 spec 0.80 mi 1.00
+  fixed_food0    verdict 0 pot 0.58 spec 0.83 mi 0.58
+  fixed_food1    verdict 0 pot 0.81 spec 0.82 mi 0.00
+learned basins, seed 1104
+  learned        verdict 1 pot 0.81 spec 0.80 mi 0.81
+  initial_twin   verdict 0 pot 0.26 spec 0.81 mi 0.20
+  team_nearest   verdict 0 pot 1.00 spec 0.80 mi 1.00
+  fixed_food0    verdict 0 pot 0.58 spec 0.80 mi 0.58
+  fixed_food1    verdict 0 pot 0.81 spec 0.81 mi 0.00
+learned basins, seed 1105
+  learned        verdict 1 pot 1.10 spec 0.82 mi 1.00
+  initial_twin   verdict 0 pot -0.00 spec 0.85 mi 0.00
+  team_nearest   verdict 0 pot 1.00 spec 0.83 mi 1.00
+  fixed_food0    verdict 0 pot 0.54 spec 0.80 mi 0.54
+  fixed_food1    verdict 0 pot 0.81 spec 0.82 mi 0.00
+learned basins, seed 1106
+  learned        verdict 1 pot 1.45 spec 0.83 mi 1.00
+  initial_twin   verdict 0 pot 0.15 spec 0.81 mi 0.10
+  team_nearest   verdict 0 pot 1.00 spec 0.83 mi 1.00
+  fixed_food0    verdict 0 pot 0.51 spec 0.84 mi 0.51
+  fixed_food1    verdict 0 pot 0.81 spec 0.83 mi 0.00
+learned basins, seed 1107
+  learned        verdict 1 pot 1.00 spec 0.83 mi 1.00
+  initial_twin   verdict 0 pot 0.11 spec 0.82 mi 0.05
+  team_nearest   verdict 0 pot 1.00 spec 0.85 mi 1.00
+  fixed_food0    verdict 0 pot 0.54 spec 0.82 mi 0.54
+  fixed_food1    verdict 0 pot 0.81 spec 0.84 mi 0.00
+learned basins, seed 1108
+  learned        verdict 1 pot 1.53 spec 0.83 mi 0.81
+  initial_twin   verdict 0 pot 0.05 spec 0.82 mi 0.05
+  team_nearest   verdict 0 pot 1.00 spec 0.83 mi 1.00
+  fixed_food0    verdict 0 pot 0.47 spec 0.81 mi 0.47
+  fixed_food1    verdict 0 pot 0.81 spec 0.83 mi 0.00
+learned basins, seed 1109
+  learned        verdict 1 pot 1.62 spec 0.83 mi 1.00
+  initial_twin   verdict 0 pot 0.13 spec 0.89 mi 0.00
+  team_nearest   verdict 0 pot 1.00 spec 0.84 mi 1.00
+  fixed_food0    verdict 0 pot 0.59 spec 0.80 mi 0.59
+  fixed_food1    verdict 0 pot 0.81 spec 0.82 mi 0.00
+learned basins, seed 1110
+  learned        verdict 1 pot 1.62 spec 0.82 mi 0.84
+  initial_twin   verdict 0 pot 0.23 spec 0.83 mi 0.13
+  team_nearest   verdict 0 pot 1.00 spec 0.82 mi 1.00
+  fixed_food0    verdict 0 pot 0.51 spec 0.84 mi 0.51
+  fixed_food1    verdict 0 pot 0.81 spec 0.85 mi 0.00
+learned basins, seed 1201
+  learned        verdict 1 pot 1.57 spec 0.84 mi 1.00
+  initial_twin   verdict 0 pot 0.27 spec 0.83 mi 0.10
+  team_nearest   verdict 0 pot 1.00 spec 0.82 mi 1.00
+  fixed_food0    verdict 0 pot 0.54 spec 0.82 mi 0.54
+  fixed_food1    verdict 0 pot 0.81 spec 0.80 mi 0.00
+learned basins, seed 1202
+  learned        verdict 1 pot 1.56 spec 0.81 mi 0.84
+  initial_twin   verdict 0 pot 0.26 spec 0.84 mi 0.05
+  team_nearest   verdict 0 pot 1.00 spec 0.82 mi 1.00
+  fixed_food0    verdict 0 pot 0.51 spec 0.83 mi 0.51
+  fixed_food1    verdict 0 pot 0.81 spec 0.80 mi 0.00
+learned basins, seed 1203
+  learned        verdict 1 pot 1.54 spec 0.82 mi 1.00
+  initial_twin   verdict 0 pot 0.05 spec 0.84 mi 0.05
+  team_nearest   verdict 0 pot 1.00 spec 0.85 mi 1.00
+  fixed_food0    verdict 0 pot 0.59 spec 0.83 mi 0.59
+  fixed_food1    verdict 0 pot 0.81 spec 0.81 mi 0.00
+learned basins, seed 1204
+  learned        verdict 1 pot 1.54 spec 0.81 mi 0.81
+  initial_twin   verdict 0 pot 0.10 spec 0.84 mi 0.00
+  team_nearest   verdict 0 pot 1.00 spec 0.83 mi 1.00
+  fixed_food0    verdict 0 pot 0.51 spec 0.82 mi 0.51
+  fixed_food1    verdict 0 pot 0.81 spec 0.83 mi 0.00
+learned basins, seed 1205
+  learned        verdict 0 pot 0.89 spec 0.84 mi 0.80  <-- differs
+  initial_twin   verdict 0 pot 0.13 spec 0.83 mi 0.13
+  team_nearest   verdict 0 pot 1.00 spec 0.83 mi 1.00
+  fixed_food0    verdict 0 pot 0.49 spec 0.81 mi 0.49
+  fixed_food1    verdict 0 pot 0.81 spec 0.84 mi 0.00
+{
+  "LB1_controls_rejected": "60/60",
+  "LB2_learned_accepted": "14/15",
+  "LB3_agreement_with_hand_basins": "74/75",
+  "learned_partitions_identifiable": "15/15",
+  "LB1_pass": true,
+  "LB2_pass": true,
+  "LB3_pass": true
+}
+Wrote /home/Yixiang/MPARL/GOGOGO/outputs/learned_basin_clbf.json

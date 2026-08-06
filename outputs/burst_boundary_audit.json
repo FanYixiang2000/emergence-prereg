@@ -1,0 +1,61 @@
+{
+  "status": "stored-output audit: burst collapse is an acquisition-shape evidence channel, not a sufficient or necessary definition",
+  "old_position_retained_as_historical_hypothesis": "strong emergence should show burst-like structured useful collapse",
+  "updated_position": "burst is predictive when aligned with usefulness and controls; the emergence verdict requires endogenous formation, irreducibility/novelty, persistence and value",
+  "values": {
+    "ordinary_burst_not_sufficient": {
+      "old_proxy_accepts": "6/6",
+      "min_burstiness_ratio": 6805.164188608554,
+      "max_burstiness_ratio": 22822.163974020204,
+      "novelty_verdict": false,
+      "novelty_gap": -0.002833863099416134
+    },
+    "ant_gradual_but_collective": {
+      "D": 0.9418668122270741,
+      "R": 0.9655172413793104,
+      "span_frac": 0.248,
+      "max_step_frac": 0.154137586701713,
+      "dev_final": 0.9937488812598936
+    },
+    "pythia_grid_relative": {
+      "full_grid_emergent": 0,
+      "full_grid_passes": {
+        "potential": true,
+        "bounded_burst": false,
+        "usefulness": true,
+        "endogeneity": true
+      },
+      "thinning_agreement": 0.0,
+      "n_thinning_cells": 9,
+      "radius_verdicts": {
+        "0": 0,
+        "1": 0,
+        "2": 1
+      }
+    },
+    "bursty_failed_controls": [
+      {
+        "scale": "1b",
+        "condition": "pythia_random_target"
+      },
+      {
+        "scale": "1b",
+        "condition": "shuffled_vocab"
+      },
+      {
+        "scale": "1b",
+        "condition": "tail_words"
+      },
+      {
+        "scale": "2.8b",
+        "condition": "shuffled_vocab"
+      }
+    ]
+  },
+  "registered_outcomes": {
+    "BB1_burst_not_sufficient": true,
+    "BB2_burst_not_necessary": true,
+    "BB3_burst_grid_relative": true,
+    "BB4_burst_needs_utility_controls": true
+  }
+}

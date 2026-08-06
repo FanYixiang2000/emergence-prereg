@@ -1,0 +1,16 @@
+boids a=0.0: contraction 0.00 TC3 0.04 JS 0.000
+boids a=0.25: contraction 1.26 TC3 0.52 JS 1.000
+boids a=0.5: contraction 1.52 TC3 0.88 JS 1.000
+boids a=0.75: contraction 1.61 TC3 2.10 JS 1.000
+boids a=1.0: contraction 1.64 TC3 2.70 JS 1.000
+schelling tau=0.3: seg 0.753 JS 0.000
+schelling tau=0.5: seg 0.921 JS 0.000
+schelling tau=0.7: seg 1.000 JS 0.331
+{
+  "CE1_boids_collapse_monotone_in_coupling": true,
+  "CE2_boids_tc3_monotone_and_range": true,
+  "CE3_boids_do_decouple_loadbearing": true,
+  "CE4_schelling_tipping_and_loadbearing": true,
+  "CE5_life_deterministic_substrate_boundary": true
+}
+Wrote /home/Yixiang/MPARL/GOGOGO/outputs/canonical_exemplars.json

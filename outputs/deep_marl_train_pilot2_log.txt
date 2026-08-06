@@ -1,0 +1,62 @@
+training PPO seed 11 ...
+  seed 11 episode 500: mean return (last 100) -27.97
+  seed 11 episode 1000: mean return (last 100) -26.92
+  seed 11 episode 1500: mean return (last 100) -26.23
+  seed 11 episode 2000: mean return (last 100) -22.78
+  seed 11 episode 2500: mean return (last 100) -22.36
+  seed 11 episode 3000: mean return (last 100) -22.16
+  seed 11 episode 3500: mean return (last 100) -21.76
+  seed 11 episode 4000: mean return (last 100) -21.44
+  seed 11 episode 4500: mean return (last 100) -22.37
+  seed 11 episode 5000: mean return (last 100) -22.01
+  seed 11 episode 5500: mean return (last 100) -20.89
+  seed 11 episode 6000: mean return (last 100) -22.50
+{
+  "condition": "trained_seed11",
+  "n_episodes": 40,
+  "early_potential_bits": 2.1748531637400457,
+  "p_win_start": 0.2875,
+  "p_win_end": 0.225,
+  "final_bijection_rate": 0.225,
+  "mean_commit_step": 7.525,
+  "do_gap_median": -0.0625,
+  "do_gap_mean": -0.06875,
+  "do_sign_wins": 13,
+  "do_sign_losses": 25,
+  "do_sign_p": 0.9832237801601877
+}
+{
+  "D1_potential": {
+    "trained_early_potential": [
+      2.1748531637400457
+    ],
+    "pass": true
+  },
+  "D2_useful_collapse": {
+    "trained_win_shift": [
+      -0.06249999999999997
+    ],
+    "trained_bijection_rate": [
+      0.225
+    ],
+    "untrained_bijection_rate": 0.125,
+    "noise_bijection_rate": 0.2,
+    "pass": false
+  },
+  "D3_counterfactual": {
+    "pooled_do_gap_median": -0.0625,
+    "pooled_sign_wins": 13,
+    "pooled_sign_losses": 25,
+    "pooled_sign_p": 0.9832237801601877,
+    "pass": false
+  },
+  "D4_greedy_contrast": {
+    "greedy_bijection_rate": 0.425,
+    "greedy_early_potential": 0.0,
+    "trained_min_bijection": 0.225,
+    "trained_min_potential": 2.1748531637400457,
+    "pass": false
+  },
+  "all_pass": false
+}
+Wrote /home/Yixiang/MPARL/GOGOGO/outputs/deep_marl_collapse_train_pilot2.json

@@ -1,0 +1,12 @@
+seed 81021 super: drop=0.5984 gate=True t_sat=9.4 {'delta_bic': 94.539, 't_star': 3.2, 'slope_before': -0.002876, 'slope_after': -0.101048, 'onset_type': True}
+seed 81021 sub: drop=0.001 gate=False t_sat=None no_collapse_B5_not_applicable
+seed 81022 super: drop=0.599 gate=True t_sat=9.4 {'delta_bic': 92.661, 't_star': 3.2, 'slope_before': -0.004275, 'slope_after': -0.100826, 'onset_type': True}
+seed 81022 sub: drop=0.0005 gate=False t_sat=None no_collapse_B5_not_applicable
+seed 81023 super: drop=0.5999 gate=True t_sat=9.2 {'delta_bic': 91.037, 't_star': 3.2, 'slope_before': -0.004873, 'slope_after': -0.10457, 'onset_type': True}
+seed 81023 sub: drop=0.0007 gate=False t_sat=None no_collapse_B5_not_applicable
+{
+  "KURR2_1_onset_3of3": true,
+  "KURR2_2_subcritical_gated_null_3of3": true,
+  "KURR2_3_relational_carrier_3of3": true
+}
+Wrote /home/Yixiang/MPARL/GOGOGO/outputs/kuramoto_breakpoint_r2.json

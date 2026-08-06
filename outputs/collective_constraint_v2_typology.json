@@ -1,0 +1,81 @@
+{
+  "status": "v2 source-typed relabel of the frozen four-mechanism battery; registered in V2_ALIGNMENT_PREREGISTRATION.md (RL); pure reinterpretation -- the v1 file is unmodified and remains the historical record",
+  "v1_source_file": "collective_constraint.json (untouched)",
+  "definition": "EMERGENCE_DEFINITION_V2.md",
+  "mechanisms": {
+    "central_script": {
+      "H_real": 3.169925001442312,
+      "H_broken": 3.169925001442312,
+      "C_constraint": 0.0,
+      "G_reorganization": 0.0,
+      "M_endogenous_macro_gain": 0.0,
+      "N_irreducibility_given_env": 0.0,
+      "R_persistence": 1.0,
+      "P_Z_real": 1.0,
+      "P_Z_broken": 1.0,
+      "micro_down_macro_up": false,
+      "v1_accept": false,
+      "v2_type": "externally-specified organization",
+      "emergence_channel": null,
+      "boundary_violated": "B3 (macro-regime hard-coded by an external controller, by construction)",
+      "v2_verdict": "not emergence (same verdict as v1, new reason: boundary B3, not the absence of G)"
+    },
+    "common_cause": {
+      "H_real": 3.169925001442312,
+      "H_broken": 3.169925001442312,
+      "C_constraint": 0.0,
+      "G_reorganization": 0.0,
+      "M_endogenous_macro_gain": 0.0,
+      "N_irreducibility_given_env": 0.0,
+      "R_persistence": 1.0,
+      "P_Z_real": 1.0,
+      "P_Z_broken": 1.0,
+      "micro_down_macro_up": false,
+      "v1_accept": false,
+      "v2_type": "environment-mediated coordination",
+      "emergence_channel": "C_env",
+      "boundary_violated": "none intrinsic; in THIS authored battery the E-following rule is itself hard-coded (B3), so the row validates the instrument rather than certifying a wild emergence claim",
+      "v2_verdict": "emergence TYPE label: environment-mediated; v1's blanket 'reject' is retired"
+    },
+    "independent_coincidence": {
+      "H_real": 4.754887502163468,
+      "H_broken": 4.754887502163468,
+      "C_constraint": 0.0,
+      "G_reorganization": 0.0,
+      "M_endogenous_macro_gain": 0.0,
+      "N_irreducibility_given_env": 0.0,
+      "R_persistence": 0.30333333333333334,
+      "P_Z_real": 0.3333333333333333,
+      "P_Z_broken": 0.3333333333333333,
+      "micro_down_macro_up": false,
+      "v1_accept": false,
+      "v2_type": "transient parallel alignment",
+      "emergence_channel": "C_individual (transient)",
+      "boundary_violated": "B4 (persistence fails: R = 0.30)",
+      "v2_verdict": "not emergence (fails persistence under both versions)"
+    },
+    "local_feedback": {
+      "H_real": 3.169925001442312,
+      "H_broken": 4.754887502163468,
+      "C_constraint": 1.584962500721156,
+      "G_reorganization": 0.4591479170272448,
+      "M_endogenous_macro_gain": 0.6666666666666667,
+      "N_irreducibility_given_env": 1.584962500721156,
+      "R_persistence": 1.0,
+      "P_Z_real": 1.0,
+      "P_Z_broken": 0.3333333333333333,
+      "micro_down_macro_up": true,
+      "v1_accept": true,
+      "v2_type": "interaction-generated collective constraint",
+      "emergence_channel": "C_pair / C_high (relational)",
+      "boundary_violated": "none",
+      "v2_verdict": "emergence TYPE label: relational/higher-order (v1 accept preserved, now as the strongest channel rather than the only admissible one)"
+    }
+  },
+  "copied_fields_sha256_v1": "218d1c3963ce45e4328b7174d5afbde2671cec20c99a31699fc75824c7ce8729",
+  "copied_fields_sha256_v2": "218d1c3963ce45e4328b7174d5afbde2671cec20c99a31699fc75824c7ce8729",
+  "registered_outcomes": {
+    "RL1_numeric_fields_preserved_bit_for_bit": true
+  },
+  "reading": "v1 asked 'is it emergence? (only local feedback)'; v2 asks 'which channel carries the collapse, and do the boundary conditions B1-B4 hold?'. The same numbers answer both questions; only the ontology changed, which is why no rerun is needed or permitted."
+}

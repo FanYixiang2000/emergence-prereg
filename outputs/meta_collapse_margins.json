@@ -1,0 +1,188 @@
+{
+  "status": "disclosed follow-up to MC-1..4 (misses retained); soft-signature margins, F-1..F-3 declared in docstring",
+  "final_classes": {
+    "blind_dem": 11,
+    "selective": 13
+  },
+  "f1_moat_ratio_ge3_fraction": 0.0,
+  "f2_soft_commit_median": 0.825,
+  "f2_soft_commit_iqr": 0.15833333333333333,
+  "f2_commits": [
+    0.625,
+    0.9416666666666667,
+    0.8333333333333334,
+    0.9833333333333333,
+    0.9666666666666667,
+    0.7833333333333333,
+    0.7333333333333333,
+    0.675,
+    0.9833333333333333,
+    0.7833333333333333,
+    0.8416666666666667,
+    0.7583333333333333,
+    0.9916666666666667,
+    0.8166666666666667,
+    0.925,
+    0.7,
+    0.9916666666666667,
+    0.9083333333333333,
+    0.8166666666666667,
+    0.8166666666666667,
+    0.8333333333333334,
+    0.8,
+    0.5916666666666667,
+    0.9333333333333333
+  ],
+  "f3_far_margin_separates": "24/24 = 1.00",
+  "declared_outcomes": {
+    "F1_moat_after_last_flip": "0.00 of seeds >= 3x",
+    "F2_midtraining_stochastic": "median 0.82 in [0.2,0.8]: False; IQR 0.16 >= 0.15: True",
+    "F3_basin_lives_in_field_state": "1.00 >= 0.9: True"
+  },
+  "per_seed": [
+    {
+      "seed": 6601,
+      "class": "blind_dem",
+      "cliff_final": 2.207131984287635,
+      "far_final": 0.6857685361902122
+    },
+    {
+      "seed": 6602,
+      "class": "blind_dem",
+      "cliff_final": 3.2554812805255384,
+      "far_final": 0.7150816852395359
+    },
+    {
+      "seed": 6603,
+      "class": "selective",
+      "cliff_final": 2.4066441943857595,
+      "far_final": -1.0245525801508912
+    },
+    {
+      "seed": 6604,
+      "class": "blind_dem",
+      "cliff_final": 2.2523697145231343,
+      "far_final": 0.16031507664710398
+    },
+    {
+      "seed": 6605,
+      "class": "blind_dem",
+      "cliff_final": 3.9774013473258316,
+      "far_final": 0.6089979972605679
+    },
+    {
+      "seed": 6606,
+      "class": "selective",
+      "cliff_final": 4.5081453400847735,
+      "far_final": -1.6870260201520164
+    },
+    {
+      "seed": 6607,
+      "class": "blind_dem",
+      "cliff_final": 2.682981306986091,
+      "far_final": 2.0885472315565243
+    },
+    {
+      "seed": 6608,
+      "class": "blind_dem",
+      "cliff_final": 2.363564787002508,
+      "far_final": 0.49891205473848066
+    },
+    {
+      "seed": 6609,
+      "class": "blind_dem",
+      "cliff_final": 3.2644573363124407,
+      "far_final": 0.8776789506581442
+    },
+    {
+      "seed": 6610,
+      "class": "blind_dem",
+      "cliff_final": 4.0630166551452485,
+      "far_final": 0.5832271549361696
+    },
+    {
+      "seed": 6611,
+      "class": "blind_dem",
+      "cliff_final": 3.571687143748178,
+      "far_final": 0.2445789271952501
+    },
+    {
+      "seed": 6612,
+      "class": "selective",
+      "cliff_final": 2.573057328188427,
+      "far_final": -0.7770358847796466
+    },
+    {
+      "seed": 6613,
+      "class": "selective",
+      "cliff_final": 3.6357612334164795,
+      "far_final": -1.5674568502643327
+    },
+    {
+      "seed": 6614,
+      "class": "blind_dem",
+      "cliff_final": 3.0630778985078906,
+      "far_final": 1.0161277760352756
+    },
+    {
+      "seed": 6615,
+      "class": "selective",
+      "cliff_final": 2.919929343211445,
+      "far_final": -1.045178663459338
+    },
+    {
+      "seed": 6616,
+      "class": "selective",
+      "cliff_final": 1.5518431756959958,
+      "far_final": -0.8210247453627035
+    },
+    {
+      "seed": 6617,
+      "class": "selective",
+      "cliff_final": 3.0222565140106763,
+      "far_final": -1.5295615686732313
+    },
+    {
+      "seed": 6618,
+      "class": "selective",
+      "cliff_final": 3.0634022819046884,
+      "far_final": -1.0473956651274432
+    },
+    {
+      "seed": 6619,
+      "class": "selective",
+      "cliff_final": 2.4170081666493632,
+      "far_final": -1.8821132619389078
+    },
+    {
+      "seed": 6620,
+      "class": "selective",
+      "cliff_final": 2.7524680573047755,
+      "far_final": -1.560859312293633
+    },
+    {
+      "seed": 6621,
+      "class": "selective",
+      "cliff_final": 2.6689274634808666,
+      "far_final": -0.8113128629770783
+    },
+    {
+      "seed": 6622,
+      "class": "selective",
+      "cliff_final": 3.3375920057485793,
+      "far_final": -1.1161160814158837
+    },
+    {
+      "seed": 6623,
+      "class": "blind_dem",
+      "cliff_final": 2.8983322754548944,
+      "far_final": 0.9664342858253403
+    },
+    {
+      "seed": 6624,
+      "class": "selective",
+      "cliff_final": 2.4333959620024297,
+      "far_final": -0.828258339499977
+    }
+  ]
+}

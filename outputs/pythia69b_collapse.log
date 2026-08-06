@@ -1,0 +1,34 @@
+288 probes in 2 length-batches; dropped verb pairs: none
+download pytorch_model-00001-of-00002.bin: 9.23 GiB, 591 ranges, 24 threads
+  pytorch_model-00001-of-00002.bin: 1/591 ranges
+  pytorch_model-00001-of-00002.bin: 25/591 ranges
+  pytorch_model-00001-of-00002.bin: 50/591 ranges
+  pytorch_model-00001-of-00002.bin: 75/591 ranges
+  pytorch_model-00001-of-00002.bin: 100/591 ranges
+  pytorch_model-00001-of-00002.bin: 125/591 ranges
+  pytorch_model-00001-of-00002.bin: 150/591 ranges
+  pytorch_model-00001-of-00002.bin: 175/591 ranges
+  pytorch_model-00001-of-00002.bin: 200/591 ranges
+  pytorch_model-00001-of-00002.bin: 225/591 ranges
+  pytorch_model-00001-of-00002.bin: 250/591 ranges
+  pytorch_model-00001-of-00002.bin: 275/591 ranges
+  pytorch_model-00001-of-00002.bin: 300/591 ranges
+  pytorch_model-00001-of-00002.bin: 325/591 ranges
+Traceback (most recent call last):
+  File "/home/Yixiang/MPARL/GOGOGO/pythia_collapse_probe.py", line 356, in main
+    ckpt = download_checkpoint(step, model_id, ckpt_dir)
+  File "/home/Yixiang/MPARL/GOGOGO/pythia_collapse_probe.py", line 179, in download_checkpoint
+    raise IOError(f"no weight object found for {rev}")
+OSError: no weight object found for step0
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/Yixiang/MPARL/GOGOGO/pythia_collapse_probe.py", line 419, in <module>
+    main()
+    ~~~~^^
+  File "/home/Yixiang/MPARL/GOGOGO/pythia_collapse_probe.py", line 359, in main
+    raise RuntimeError(
+        f"baseline checkpoint step {baseline_step} failed"
+    ) from exc
+RuntimeError: baseline checkpoint step 0 failed

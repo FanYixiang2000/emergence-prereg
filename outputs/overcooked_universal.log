@@ -1,0 +1,38 @@
+Gym has been unmaintained since 2022 and does not support NumPy 2.0 amongst other critical functionality.
+Please upgrade to Gymnasium, the maintained drop-in replacement of Gym, or contact the authors of your software and request that they upgrade.
+Users of this version of Gym should be able to simply replace 'import gym' with 'import gymnasium as gym' in the vast majority of cases.
+See the migration guide at https://gymnasium.farama.org/introduction/migration_guide/ for additional information.
+=== seed 77002 ===
+  universal recipe chose k=4
+  learned: universal 1 vs hand 1
+  initial_twin: universal 0 vs hand 0
+  scripted_roles: universal 0 vs hand 0
+  bc_clone: universal 0 vs hand 0
+  untrained_other: universal 0 vs hand 0
+=== seed 77007 ===
+  universal recipe chose k=4
+  learned: universal 0 vs hand 1
+  initial_twin: universal 0 vs hand 0
+  scripted_roles: universal 0 vs hand 0
+  bc_clone: universal 0 vs hand 0
+  untrained_other: universal 0 vs hand 0
+=== seed 77010 ===
+  universal recipe chose k=4
+  learned: universal 0 vs hand 0
+  initial_twin: universal 0 vs hand 0
+  scripted_roles: universal 0 vs hand 0
+  bc_clone: universal 0 vs hand 0
+  untrained_other: universal 0 vs hand 0
+=== seed 77005 ===
+  universal recipe chose k=4
+  learned: universal 0 vs hand 0
+  initial_twin: universal 0 vs hand 0
+  scripted_roles: universal 0 vs hand 0
+  bc_clone: universal 0 vs hand 0
+  untrained_other: universal 0 vs hand 0
+{
+  "U4a_agreement": "19/20 -> True",
+  "U4b_controls_rejected": "16/16 -> True",
+  "U4c_learned_pattern_preserved": false
+}
+Wrote /home/Yixiang/MPARL/GOGOGO/outputs/overcooked_universal_observer.json

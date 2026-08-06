@@ -1,0 +1,178 @@
+{
+  "status": "emergence-promoting selection at d = 1.5; PE-1..3 frozen in the docstring",
+  "arms": {
+    "N": {
+      "replicates": [
+        {
+          "selective_fraction": 0.25,
+          "mean_value": 5.553515625,
+          "mean_e_adapt": 0.12526788057661742
+        },
+        {
+          "selective_fraction": 0.625,
+          "mean_value": 5.520703125,
+          "mean_e_adapt": 0.3120009798137657
+        },
+        {
+          "selective_fraction": 0.625,
+          "mean_value": 5.573828125,
+          "mean_e_adapt": 0.309700100867976
+        },
+        {
+          "selective_fraction": 0.25,
+          "mean_value": 5.546093750000001,
+          "mean_e_adapt": 0.12361733194590507
+        },
+        {
+          "selective_fraction": 0.5,
+          "mean_value": 5.598828125000001,
+          "mean_e_adapt": 0.24652602968270998
+        },
+        {
+          "selective_fraction": 0.625,
+          "mean_value": 5.4964843750000005,
+          "mean_e_adapt": 0.30786445647310456
+        },
+        {
+          "selective_fraction": 0.0,
+          "mean_value": 5.509375,
+          "mean_e_adapt": 0.0
+        },
+        {
+          "selective_fraction": 0.125,
+          "mean_value": 5.509375,
+          "mean_e_adapt": 0.06277603246469517
+        },
+        {
+          "selective_fraction": 0.375,
+          "mean_value": 5.56484375,
+          "mean_e_adapt": 0.18483451525201655
+        },
+        {
+          "selective_fraction": 0.5,
+          "mean_value": 5.53359375,
+          "mean_e_adapt": 0.24790341359588278
+        }
+      ],
+      "selective_fraction_mean": 0.3875,
+      "value_mean": 5.540664062500001
+    },
+    "V": {
+      "replicates": [
+        {
+          "selective_fraction": 0.75,
+          "mean_value": 5.58984375,
+          "mean_e_adapt": 0.3739965569433428
+        },
+        {
+          "selective_fraction": 0.25,
+          "mean_value": 5.510937500000001,
+          "mean_e_adapt": 0.12397457306524551
+        },
+        {
+          "selective_fraction": 0.5,
+          "mean_value": 5.563671875,
+          "mean_e_adapt": 0.24442058234630004
+        },
+        {
+          "selective_fraction": 0.25,
+          "mean_value": 5.56171875,
+          "mean_e_adapt": 0.1226101827933791
+        },
+        {
+          "selective_fraction": 0.75,
+          "mean_value": 5.570703125,
+          "mean_e_adapt": 0.37052648173984265
+        },
+        {
+          "selective_fraction": 0.25,
+          "mean_value": 5.49453125,
+          "mean_e_adapt": 0.1215112284620724
+        },
+        {
+          "selective_fraction": 0.25,
+          "mean_value": 5.547265625,
+          "mean_e_adapt": 0.1254833323418184
+        },
+        {
+          "selective_fraction": 0.75,
+          "mean_value": 5.516796874999999,
+          "mean_e_adapt": 0.37118076581674964
+        },
+        {
+          "selective_fraction": 0.75,
+          "mean_value": 5.57890625,
+          "mean_e_adapt": 0.36941185872744564
+        },
+        {
+          "selective_fraction": 0.75,
+          "mean_value": 5.495703125,
+          "mean_e_adapt": 0.3709515818778175
+        }
+      ],
+      "selective_fraction_mean": 0.525,
+      "value_mean": 5.5430078125
+    },
+    "E": {
+      "replicates": [
+        {
+          "selective_fraction": 0.5,
+          "mean_value": 5.57578125,
+          "mean_e_adapt": 0.24953646295443754
+        },
+        {
+          "selective_fraction": 0.75,
+          "mean_value": 5.536328125,
+          "mean_e_adapt": 0.37338556602212225
+        },
+        {
+          "selective_fraction": 1.0,
+          "mean_value": 5.59140625,
+          "mean_e_adapt": 0.4948237063280616
+        },
+        {
+          "selective_fraction": 1.0,
+          "mean_value": 5.525390625,
+          "mean_e_adapt": 0.4906065008964723
+        },
+        {
+          "selective_fraction": 0.75,
+          "mean_value": 5.569921875,
+          "mean_e_adapt": 0.36731713511986963
+        },
+        {
+          "selective_fraction": 0.5,
+          "mean_value": 5.4875,
+          "mean_e_adapt": 0.24602732980729192
+        },
+        {
+          "selective_fraction": 0.5,
+          "mean_value": 5.541015625,
+          "mean_e_adapt": 0.25016321217880966
+        },
+        {
+          "selective_fraction": 1.0,
+          "mean_value": 3.845703125,
+          "mean_e_adapt": 0.37696357130391706
+        },
+        {
+          "selective_fraction": 0.75,
+          "mean_value": 4.719921875000001,
+          "mean_e_adapt": 0.39160110637307205
+        },
+        {
+          "selective_fraction": 1.0,
+          "mean_value": 5.524609375000001,
+          "mean_e_adapt": 0.49860390173541413
+        }
+      ],
+      "selective_fraction_mean": 0.775,
+      "value_mean": 5.291757812499999
+    }
+  },
+  "registered_outcomes": {
+    "PE1_E_beats_N_by_0.25": "0.78 vs 0.39 -> True",
+    "PE2_E_beats_V_by_0.15": "0.78 vs 0.53 -> True",
+    "PE3_no_value_sacrifice": "5.29 vs 5.54 -> True"
+  }
+}

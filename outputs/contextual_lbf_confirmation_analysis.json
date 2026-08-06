@@ -1,0 +1,67 @@
+{
+  "status": "prospectively frozen fresh-seed run",
+  "analysis_scope": "registered confirmation",
+  "n_seeds": 10,
+  "counts": {
+    "learned_full_passes": 9,
+    "nonlearned_controls_rejected": 40,
+    "team_nearest_exact_failure_route": 10,
+    "learned_context_ordering": 10,
+    "learned_positive_usefulness": 10,
+    "learned_positive_acquisition": 10,
+    "initial_twins_fail_acquisition": 10
+  },
+  "learned_full_pass_exact_one_sided_sign_p": 0.0107421875,
+  "seed_bootstrap_intervals": {
+    "potential_bits": {
+      "point": 1.3674067728294097,
+      "n_seeds": 10,
+      "ci95": [
+        1.2317198004711156,
+        1.4984798792992027
+      ]
+    },
+    "conditional_selectivity": {
+      "point": 0.7925000000000001,
+      "n_seeds": 10,
+      "ci95": [
+        0.64375,
+        0.9387500000000001
+      ]
+    },
+    "specificity_js_bits": {
+      "point": 0.7946161423428895,
+      "n_seeds": 10,
+      "ci95": [
+        0.7688518569079351,
+        0.8221594313182322
+      ]
+    },
+    "usefulness_gap": {
+      "point": 0.07892462849541611,
+      "n_seeds": 10,
+      "ci95": [
+        0.05260083602239015,
+        0.1079235087227252
+      ]
+    },
+    "acquisition": {
+      "point": 0.7837500000000001,
+      "n_seeds": 10,
+      "ci95": [
+        0.6337499999999999,
+        0.9325000000000001
+      ]
+    }
+  },
+  "predictions": {
+    "CLBF_C1_learned_full_pass_at_least_9_of_10": true,
+    "CLBF_C2_all_40_controls_rejected": true,
+    "CLBF_C3_nearest_exact_route_at_least_9_of_10": true,
+    "CLBF_C4_acquisition_all_positive_and_init_all_fail": true,
+    "CLBF_C5_order_all_and_usefulness_at_least_9_of_10": true,
+    "CLBF_C6_positive_bootstrap_lower_bounds": true
+  },
+  "all_registered_predictions_pass": true,
+  "inference_note": "Training seed is the population unit. Bootstrap intervals resample 10 seed-level summaries, not evaluation episodes."
+}

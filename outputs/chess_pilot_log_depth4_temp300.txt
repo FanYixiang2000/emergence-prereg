@@ -1,0 +1,64 @@
+selecting positions (sacrifice=12, quiet=6) ...
+selected 12 sacrifice + 6 quiet
+measured 10/18
+measured 18/18
+{
+  "n_sacrifice_analyzed": 12,
+  "n_quiet_analyzed": 6,
+  "C1_local_cost": {
+    "median_local_cost_key": -3.0,
+    "median_local_cost_greedy": -0.5,
+    "pass": true
+  },
+  "C2_useful_collapse": {
+    "mean_useful_shift_key": 0.08072916666666667,
+    "mean_useful_shift_greedy": -0.3880208333333333,
+    "mean_useful_shift_random": -0.5755208333333334,
+    "sign_vs_greedy": {
+      "wins": 12,
+      "losses": 0,
+      "ties": 0,
+      "p_one_sided": 0.000244140625
+    },
+    "sign_vs_random": {
+      "wins": 12,
+      "losses": 0,
+      "ties": 0,
+      "p_one_sided": 0.000244140625
+    },
+    "pass": true
+  },
+  "C3_selectivity": {
+    "mean_p_win_key": 0.7578125,
+    "mean_p_win_deep_alt": 0.2890625,
+    "gap": 0.46875,
+    "sign_vs_deep_alt": {
+      "wins": 12,
+      "losses": 0,
+      "ties": 0,
+      "p_one_sided": 0.000244140625
+    },
+    "mean_specificity_js_bits": 0.2920102614637974,
+    "pass": true
+  },
+  "C4_potential": {
+    "median_potential_bits": 1.4639950389311236,
+    "pass": true
+  },
+  "C5_quiet_control": {
+    "mean_useful_shift_quiet_best": -0.026041666666666668,
+    "mean_useful_shift_sacrifice_key": 0.08072916666666667,
+    "gap": 0.10677083333333334,
+    "mean_quiet_potential_bits": 1.9304016390551466,
+    "pass": false
+  },
+  "all_pass": false,
+  "estimator": {
+    "multipv": 6,
+    "playout_depth": 4,
+    "temperature_cp": 300.0,
+    "horizon_plies": 12,
+    "n_rollouts": 32,
+    "classify_depth": 12
+  }
+}

@@ -1,0 +1,71 @@
+{
+ "status": "SEMI-INJ semi-synthetic injection on real substrate; frozen detector unchanged; registered before run",
+ "config": {
+  "t0_fracs": [
+   0.3,
+   0.5,
+   0.7
+  ],
+  "widths": [
+   1,
+   3,
+   6
+  ],
+  "n_per_cell": 25,
+  "n_neg_per_family": 100,
+  "p_open": 0.5,
+  "p_commit": 0.97
+ },
+ "positives": {
+  "w1_f0.3": {
+   "power": 0.88,
+   "median_tstar_err_frac": 0.010101010101010102
+  },
+  "w1_f0.5": {
+   "power": 0.8,
+   "median_tstar_err_frac": 0.010101010101010102
+  },
+  "w1_f0.7": {
+   "power": 0.84,
+   "median_tstar_err_frac": 0.010101010101010102
+  },
+  "w3_f0.3": {
+   "power": 0.88,
+   "median_tstar_err_frac": 0.010101010101010102
+  },
+  "w3_f0.5": {
+   "power": 0.92,
+   "median_tstar_err_frac": 0.010101010101010102
+  },
+  "w3_f0.7": {
+   "power": 0.96,
+   "median_tstar_err_frac": 0.010101010101010102
+  },
+  "w6_f0.3": {
+   "power": 0.8,
+   "median_tstar_err_frac": 0.030303030303030304
+  },
+  "w6_f0.5": {
+   "power": 0.92,
+   "median_tstar_err_frac": 0.020202020202020204
+  },
+  "w6_f0.7": {
+   "power": 0.92,
+   "median_tstar_err_frac": 0.020202020202020204
+  }
+ },
+ "negatives": {
+  "constant_open": 0.0,
+  "linear_drift": 0.03,
+  "shuffled_real": 0.0
+ },
+ "registered_outcomes": {
+  "SI1_power_w_le3": 0.88,
+  "SI1_pass": false,
+  "SI2_fpr_pooled": 0.01,
+  "SI2_pass": true,
+  "SI3_median_tstar_err_frac": 0.010101010101010102,
+  "SI3_pass": true,
+  "w6_power_descriptive": 0.88
+ }
+}

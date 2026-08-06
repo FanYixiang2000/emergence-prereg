@@ -1,0 +1,2 @@
+'timed out' thrown while requesting HEAD https://huggingface.co/EleutherAI/pythia-6.9b/resolve/step0/config.json
+Retrying in 1s [Retry 1/5].

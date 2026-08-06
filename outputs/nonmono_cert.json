@@ -1,0 +1,54 @@
+{
+ "stage_v": {
+  "power": 0.5933333333333334,
+  "V1_power_ge_090": false,
+  "fpr_pooled": 0.025,
+  "fpr_by_family": {
+   "stationary_osc": 0.04,
+   "gradual_osc": 0.0,
+   "recovering_dip": 0.06,
+   "late_dip": 0.0
+  },
+  "V2_fpr_le_005": true,
+  "n_pos": 300,
+  "n_neg": 400,
+  "pos_sample": [
+   {
+    "t_lock": 50,
+    "t_true": 42,
+    "onset": true,
+    "t_star": 40.0,
+    "ok": true
+   },
+   {
+    "t_lock": 70,
+    "t_true": 70,
+    "onset": true,
+    "t_star": 66.0,
+    "ok": true
+   },
+   {
+    "t_lock": 70,
+    "t_true": 63,
+    "onset": true,
+    "t_star": 67.0,
+    "ok": true
+   },
+   {
+    "t_lock": 50,
+    "t_true": 50,
+    "onset": true,
+    "t_star": 31.0,
+    "ok": false
+   },
+   {
+    "t_lock": 30,
+    "t_true": 27,
+    "onset": true,
+    "t_star": 24.0,
+    "ok": true
+   }
+  ]
+ },
+ "stage_r": "NOT RUN (validation failed, preregistered stop)"
+}

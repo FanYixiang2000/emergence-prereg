@@ -1,0 +1,99 @@
+contract B, seed 1101
+  learned        A=1 B=1 failed=-
+  initial_twin   A=0 B=0 failed=potential;conditional_selectivity;usefulness;acquisition
+  team_nearest   A=0 B=0 failed=endogeneity;acquisition
+  fixed_food0    A=0 B=0 failed=conditional_selectivity;endogeneity;acquisition
+  fixed_food1    A=0 B=0 failed=conditional_selectivity;usefulness;endogeneity;acquisition
+contract B, seed 1102
+  learned        A=1 B=1 failed=-
+  initial_twin   A=0 B=0 failed=potential;conditional_selectivity;usefulness;acquisition
+  team_nearest   A=0 B=0 failed=endogeneity;acquisition
+  fixed_food0    A=0 B=0 failed=conditional_selectivity;endogeneity;acquisition
+  fixed_food1    A=0 B=0 failed=conditional_selectivity;usefulness;endogeneity;acquisition
+contract B, seed 1103
+  learned        A=1 B=0 failed=conditional_selectivity  <-- FLIP
+  initial_twin   A=0 B=0 failed=potential;conditional_selectivity;usefulness;acquisition
+  team_nearest   A=0 B=0 failed=endogeneity;acquisition
+  fixed_food0    A=0 B=0 failed=conditional_selectivity;endogeneity;acquisition
+  fixed_food1    A=0 B=0 failed=conditional_selectivity;usefulness;endogeneity;acquisition
+contract B, seed 1104
+  learned        A=0 B=0 failed=usefulness
+  initial_twin   A=0 B=0 failed=potential;conditional_selectivity;usefulness;acquisition
+  team_nearest   A=0 B=0 failed=endogeneity;acquisition
+  fixed_food0    A=0 B=0 failed=conditional_selectivity;endogeneity;acquisition
+  fixed_food1    A=0 B=0 failed=conditional_selectivity;usefulness;endogeneity;acquisition
+contract B, seed 1105
+  learned        A=1 B=0 failed=usefulness  <-- FLIP
+  initial_twin   A=0 B=0 failed=potential;conditional_selectivity;usefulness;acquisition
+  team_nearest   A=0 B=0 failed=endogeneity;acquisition
+  fixed_food0    A=0 B=0 failed=conditional_selectivity;endogeneity;acquisition
+  fixed_food1    A=0 B=0 failed=conditional_selectivity;usefulness;endogeneity;acquisition
+contract B, seed 1106
+  learned        A=1 B=0 failed=usefulness  <-- FLIP
+  initial_twin   A=0 B=0 failed=potential;conditional_selectivity;usefulness;acquisition
+  team_nearest   A=0 B=0 failed=endogeneity;acquisition
+  fixed_food0    A=0 B=0 failed=potential;conditional_selectivity;endogeneity;acquisition
+  fixed_food1    A=0 B=0 failed=conditional_selectivity;usefulness;endogeneity;acquisition
+contract B, seed 1107
+  learned        A=1 B=0 failed=usefulness  <-- FLIP
+  initial_twin   A=0 B=0 failed=potential;conditional_selectivity;usefulness;acquisition
+  team_nearest   A=0 B=0 failed=endogeneity;acquisition
+  fixed_food0    A=0 B=0 failed=potential;conditional_selectivity;endogeneity;acquisition
+  fixed_food1    A=0 B=0 failed=conditional_selectivity;usefulness;endogeneity;acquisition
+contract B, seed 1108
+  learned        A=1 B=1 failed=-
+  initial_twin   A=0 B=0 failed=potential;conditional_selectivity;usefulness;acquisition
+  team_nearest   A=0 B=0 failed=endogeneity;acquisition
+  fixed_food0    A=0 B=0 failed=conditional_selectivity;endogeneity;acquisition
+  fixed_food1    A=0 B=0 failed=conditional_selectivity;usefulness;endogeneity;acquisition
+contract B, seed 1109
+  learned        A=1 B=1 failed=-
+  initial_twin   A=0 B=0 failed=potential;conditional_selectivity;usefulness;acquisition
+  team_nearest   A=0 B=0 failed=endogeneity;acquisition
+  fixed_food0    A=0 B=0 failed=potential;conditional_selectivity;endogeneity;acquisition
+  fixed_food1    A=0 B=0 failed=conditional_selectivity;usefulness;endogeneity;acquisition
+contract B, seed 1110
+  learned        A=1 B=1 failed=-
+  initial_twin   A=0 B=0 failed=potential;conditional_selectivity;usefulness;acquisition
+  team_nearest   A=0 B=0 failed=endogeneity;acquisition
+  fixed_food0    A=0 B=0 failed=conditional_selectivity;endogeneity;acquisition
+  fixed_food1    A=0 B=0 failed=conditional_selectivity;usefulness;endogeneity;acquisition
+contract B, seed 1201
+  learned        A=1 B=1 failed=-
+  initial_twin   A=0 B=0 failed=potential;conditional_selectivity;usefulness;acquisition
+  team_nearest   A=0 B=0 failed=endogeneity;acquisition
+  fixed_food0    A=0 B=0 failed=conditional_selectivity;endogeneity;acquisition
+  fixed_food1    A=0 B=0 failed=conditional_selectivity;usefulness;endogeneity;acquisition
+contract B, seed 1202
+  learned        A=1 B=1 failed=-
+  initial_twin   A=0 B=0 failed=potential;conditional_selectivity;usefulness;acquisition
+  team_nearest   A=0 B=0 failed=endogeneity;acquisition
+  fixed_food0    A=0 B=0 failed=conditional_selectivity;endogeneity;acquisition
+  fixed_food1    A=0 B=0 failed=conditional_selectivity;usefulness;endogeneity;acquisition
+contract B, seed 1203
+  learned        A=1 B=1 failed=-
+  initial_twin   A=0 B=0 failed=potential;conditional_selectivity;usefulness;acquisition
+  team_nearest   A=0 B=0 failed=endogeneity;acquisition
+  fixed_food0    A=0 B=0 failed=conditional_selectivity;endogeneity;acquisition
+  fixed_food1    A=0 B=0 failed=conditional_selectivity;usefulness;endogeneity;acquisition
+contract B, seed 1204
+  learned        A=1 B=1 failed=-
+  initial_twin   A=0 B=0 failed=potential;conditional_selectivity;usefulness;acquisition
+  team_nearest   A=0 B=0 failed=endogeneity;acquisition
+  fixed_food0    A=0 B=0 failed=conditional_selectivity;endogeneity;acquisition
+  fixed_food1    A=0 B=0 failed=conditional_selectivity;usefulness;endogeneity;acquisition
+contract B, seed 1205
+  learned        A=0 B=1 failed=-  <-- FLIP
+  initial_twin   A=0 B=0 failed=potential;conditional_selectivity;usefulness;acquisition
+  team_nearest   A=0 B=0 failed=endogeneity;acquisition
+  fixed_food0    A=0 B=0 failed=conditional_selectivity;endogeneity;acquisition
+  fixed_food1    A=0 B=0 failed=conditional_selectivity;usefulness;endogeneity;acquisition
+{
+  "DO1_learned_accepted": "10/15",
+  "DO2_controls_rejected": "60/60",
+  "DO3_contract_agreement": "70/75",
+  "DO1_pass": false,
+  "DO2_pass": true,
+  "DO3_pass": false
+}
+Wrote /home/Yixiang/MPARL/GOGOGO/outputs/dual_observer_contracts.json

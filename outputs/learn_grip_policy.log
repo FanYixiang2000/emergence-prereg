@@ -1,0 +1,25 @@
+calibration: tau*=18 theta*=0.5914 (per-seed opens at tau*: [0.593, 0.587, 0.552, 0.647, 0.578])
+test seed 0: open={'flip_rate': 0.99976, 'trigger_rate': 0.99976, 'mean_trigger_step': 19.77167} fixed={'flip_rate': 0.98218, 'trigger_rate': 1.0, 'mean_trigger_step': 18.0} random={'flip_rate': 0.73853, 'trigger_rate': 1.0, 'mean_trigger_step': 19.90796}
+test seed 1: open={'flip_rate': 1.0, 'trigger_rate': 1.0, 'mean_trigger_step': 23.46338} fixed={'flip_rate': 1.0, 'trigger_rate': 1.0, 'mean_trigger_step': 18.0} random={'flip_rate': 0.85034, 'trigger_rate': 1.0, 'mean_trigger_step': 19.87695}
+test seed 2: open={'flip_rate': 0.99976, 'trigger_rate': 0.99976, 'mean_trigger_step': 21.73333} fixed={'flip_rate': 0.99976, 'trigger_rate': 1.0, 'mean_trigger_step': 18.0} random={'flip_rate': 0.78882, 'trigger_rate': 1.0, 'mean_trigger_step': 19.94824}
+test seed 3: open={'flip_rate': 1.0, 'trigger_rate': 1.0, 'mean_trigger_step': 21.48291} fixed={'flip_rate': 0.99976, 'trigger_rate': 1.0, 'mean_trigger_step': 18.0} random={'flip_rate': 0.7832, 'trigger_rate': 1.0, 'mean_trigger_step': 20.03101}
+test seed 4: open={'flip_rate': 0.99976, 'trigger_rate': 0.99976, 'mean_trigger_step': 22.70086} fixed={'flip_rate': 0.99854, 'trigger_rate': 1.0, 'mean_trigger_step': 18.0} random={'flip_rate': 0.80469, 'trigger_rate': 1.0, 'mean_trigger_step': 20.04199}
+{
+  "GP1_transfer_ge_0.90_in_4of5": true,
+  "GP2_adaptive_dominance": true,
+  "GP3_beats_random_by_0.15": true,
+  "pooled_flip": {
+    "open": 0.99985,
+    "fixed": 0.99604,
+    "random": 0.79312
+  },
+  "pooled_mean_step": {
+    "open": 21.83,
+    "fixed": 18.0,
+    "random": 19.961
+  },
+  "open_seeds_ge_090": 5,
+  "tau_star": 18,
+  "theta_star": 0.5914
+}
+Wrote /home/Yixiang/MPARL/GOGOGO/outputs/learn_grip_policy.json

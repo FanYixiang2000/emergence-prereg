@@ -1,0 +1,47 @@
+predictive validity: cell (7.0,0.7) seed 10370
+  M_early 0.438 perf_early 4.84 -> accepted 1 useful 0.16
+predictive validity: cell (7.0,0.7) seed 10371
+  M_early 0.574 perf_early 4.13 -> accepted 0 useful -0.10
+predictive validity: cell (7.0,0.7) seed 10372
+  M_early 0.404 perf_early 4.00 -> accepted 0 useful -0.06
+predictive validity: cell (7.0,0.7) seed 10373
+  M_early 0.286 perf_early 4.20 -> accepted 0 useful -0.09
+predictive validity: cell (7.0,0.7) seed 10374
+  M_early 0.271 perf_early 3.89 -> accepted 0 useful -0.11
+predictive validity: cell (10.0,0.4) seed 10640
+  M_early 0.616 perf_early 4.96 -> accepted 1 useful 0.42
+predictive validity: cell (10.0,0.4) seed 10641
+  M_early 0.674 perf_early 4.62 -> accepted 1 useful 0.24
+predictive validity: cell (10.0,0.4) seed 10642
+  M_early 0.515 perf_early 4.80 -> accepted 1 useful 0.59
+predictive validity: cell (10.0,0.4) seed 10643
+  M_early 0.623 perf_early 4.66 -> accepted 0 useful -0.03
+predictive validity: cell (10.0,0.4) seed 10644
+  M_early 0.519 perf_early 4.56 -> accepted 0 useful 0.06
+predictive validity: cell (13.0,0.1) seed 10910
+  M_early 0.545 perf_early 4.66 -> accepted 0 useful -0.14
+predictive validity: cell (13.0,0.1) seed 10911
+  M_early 0.583 perf_early 4.80 -> accepted 1 useful 0.75
+predictive validity: cell (13.0,0.1) seed 10912
+  M_early 0.633 perf_early 4.87 -> accepted 0 useful -0.03
+predictive validity: cell (13.0,0.1) seed 10913
+  M_early 0.614 perf_early 4.48 -> accepted 1 useful 1.36
+predictive validity: cell (13.0,0.1) seed 10914
+  M_early 0.504 perf_early 5.12 -> accepted 1 useful 0.13
+predictive validity: cell (13.0,0.25) seed 10925
+  M_early 0.657 perf_early 4.45 -> accepted 1 useful 1.25
+predictive validity: cell (13.0,0.25) seed 10926
+  M_early 0.526 perf_early 4.56 -> accepted 1 useful 1.44
+predictive validity: cell (13.0,0.25) seed 10927
+  M_early 0.479 perf_early 4.99 -> accepted 1 useful 0.15
+predictive validity: cell (13.0,0.25) seed 10928
+  M_early 0.548 perf_early 5.69 -> accepted 1 useful 1.45
+predictive validity: cell (13.0,0.25) seed 10929
+  M_early 0.520 perf_early 4.63 -> accepted 0 useful 1.37
+{
+  "PV1_auroc_M_early_ge_0.75": false,
+  "PV2_M_beats_perf": false,
+  "PV3_spearman_ge_0.5": false
+}
+AUROC M 0.626 vs perf 0.783; Spearman 0.326
+Wrote /home/Yixiang/MPARL/GOGOGO/outputs/predictive_validity.json

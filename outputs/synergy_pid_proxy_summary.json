@@ -1,0 +1,52 @@
+{
+  "summary": [
+    {
+      "system": "synergistic_xor",
+      "h_basin": 0.9999335195913548,
+      "i_x1_b": 4.96812690653492e-06,
+      "i_x2_b": 4.4729264131460056e-05,
+      "i_joint_b": 0.9999335195913546,
+      "synergy_proxy": 0.9998838222003166,
+      "redundancy_proxy": 0.0,
+      "collapse_from_joint": 0.9999335195913546,
+      "useful_value": 1.0,
+      "spatial_emergence_score": 0.9998173495152187
+    },
+    {
+      "system": "unique_x1",
+      "h_basin": 0.9999656563720319,
+      "i_x1_b": 0.9999656563720319,
+      "i_x2_b": 2.24947289639843e-05,
+      "i_joint_b": 0.9999656563720318,
+      "synergy_proxy": 0.0,
+      "redundancy_proxy": 2.2494728964095323e-05,
+      "collapse_from_joint": 0.9999656563720318,
+      "useful_value": 1.0,
+      "spatial_emergence_score": 0.0
+    },
+    {
+      "system": "redundant",
+      "h_basin": 0.9999999927865248,
+      "i_x1_b": 0.9999999927865248,
+      "i_x2_b": 0.9999999927865248,
+      "i_joint_b": 0.9999999927865248,
+      "synergy_proxy": 0.0,
+      "redundancy_proxy": 0.9999999927865248,
+      "collapse_from_joint": 0.9999999927865248,
+      "useful_value": 1.0,
+      "spatial_emergence_score": 0.0
+    },
+    {
+      "system": "noise",
+      "h_basin": 0.9998799572296073,
+      "i_x1_b": 7.485124109640751e-06,
+      "i_x2_b": 1.4112013954292735e-05,
+      "i_joint_b": 2.1536429905211207e-05,
+      "synergy_proxy": 0.0,
+      "redundancy_proxy": 6.070815872227797e-08,
+      "collapse_from_joint": 2.1536429905211207e-05,
+      "useful_value": 0.0,
+      "spatial_emergence_score": 0.0
+    }
+  ]
+}

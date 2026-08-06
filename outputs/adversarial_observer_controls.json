@@ -1,0 +1,74 @@
+{
+  "status": "full-verdict null under random observers, control side",
+  "n_random_observers": 1000,
+  "n_controls": 13,
+  "per_control": {
+    "initial_twin_1101": {
+      "partition_dependent_pass_rate": 0.0,
+      "full_verdict_pass_rate": 0.0,
+      "partition_independent_pass": false
+    },
+    "initial_twin_1102": {
+      "partition_dependent_pass_rate": 0.0,
+      "full_verdict_pass_rate": 0.0,
+      "partition_independent_pass": false
+    },
+    "initial_twin_1103": {
+      "partition_dependent_pass_rate": 0.0,
+      "full_verdict_pass_rate": 0.0,
+      "partition_independent_pass": false
+    },
+    "initial_twin_1104": {
+      "partition_dependent_pass_rate": 0.0,
+      "full_verdict_pass_rate": 0.0,
+      "partition_independent_pass": false
+    },
+    "initial_twin_1105": {
+      "partition_dependent_pass_rate": 0.0,
+      "full_verdict_pass_rate": 0.0,
+      "partition_independent_pass": false
+    },
+    "initial_twin_1106": {
+      "partition_dependent_pass_rate": 0.0,
+      "full_verdict_pass_rate": 0.0,
+      "partition_independent_pass": false
+    },
+    "initial_twin_1107": {
+      "partition_dependent_pass_rate": 0.0,
+      "full_verdict_pass_rate": 0.0,
+      "partition_independent_pass": false
+    },
+    "initial_twin_1108": {
+      "partition_dependent_pass_rate": 0.0,
+      "full_verdict_pass_rate": 0.0,
+      "partition_independent_pass": false
+    },
+    "initial_twin_1109": {
+      "partition_dependent_pass_rate": 0.0,
+      "full_verdict_pass_rate": 0.0,
+      "partition_independent_pass": false
+    },
+    "initial_twin_1110": {
+      "partition_dependent_pass_rate": 0.0,
+      "full_verdict_pass_rate": 0.0,
+      "partition_independent_pass": false
+    },
+    "team_nearest": {
+      "partition_dependent_pass_rate": 0.829,
+      "full_verdict_pass_rate": 0.0,
+      "partition_independent_pass": false
+    },
+    "fixed_food0": {
+      "partition_dependent_pass_rate": 0.772,
+      "full_verdict_pass_rate": 0.0,
+      "partition_independent_pass": false
+    },
+    "fixed_food1": {
+      "partition_dependent_pass_rate": 0.79,
+      "full_verdict_pass_rate": 0.0,
+      "partition_independent_pass": false
+    }
+  },
+  "max_full_verdict_pass_rate_any_control": 0.0,
+  "reading": "No random observer produces a full acceptance of any control (the provenance and value components are partition-independent and already fail); the strongest a malicious partition can do is inflate the two distributional components, which the protocol never treats as sufficient."
+}

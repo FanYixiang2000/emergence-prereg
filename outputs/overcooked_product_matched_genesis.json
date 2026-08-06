@@ -1,0 +1,94 @@
+{
+  "status": "E1 product-matched genesis comparison; registered in V2_ALIGNMENT_PREREGISTRATION.md wave 3; calibration used score only",
+  "target_score": 41.0,
+  "calibration": {
+    "0.05": {
+      "real_score": 98.2,
+      "G_js_bits": 0.0
+    },
+    "0.1": {
+      "real_score": 93.6,
+      "G_js_bits": 0.0
+    },
+    "0.15": {
+      "real_score": 84.0,
+      "G_js_bits": 0.019241683775016144
+    },
+    "0.2": {
+      "real_score": 76.8,
+      "G_js_bits": 0.005018308391328085
+    },
+    "0.25": {
+      "real_score": 69.0,
+      "G_js_bits": 0.051899160321315516
+    },
+    "0.3": {
+      "real_score": 65.2,
+      "G_js_bits": 0.04680799043827321
+    },
+    "0.35": {
+      "real_score": 52.6,
+      "G_js_bits": 0.057840387134625124
+    },
+    "0.4": {
+      "real_score": 50.4,
+      "G_js_bits": 0.10184548108007513
+    },
+    "0.45": {
+      "real_score": 42.0,
+      "G_js_bits": 0.07523309770197839
+    },
+    "0.5": {
+      "real_score": 31.6,
+      "G_js_bits": 0.07145382916686088
+    },
+    "0.55": {
+      "real_score": 28.8,
+      "G_js_bits": 0.14172632081244543
+    },
+    "0.6": {
+      "real_score": 23.8,
+      "G_js_bits": 0.1252582640169943
+    },
+    "0.65": {
+      "real_score": 15.8,
+      "G_js_bits": 0.09249755836995134
+    },
+    "0.7": {
+      "real_score": 7.8,
+      "G_js_bits": 0.09207041751892739
+    }
+  },
+  "eps_star": 0.45,
+  "certified_noisy_scripted": {
+    "n": 100,
+    "G_js_bits": 0.05720116426073335,
+    "G_boot_ci95": [
+      0.02928004090522758,
+      0.10125767377948146
+    ],
+    "C_signed_bits": 0.6218620922088733,
+    "M_score_gain": 17.0,
+    "real_score": 40.4,
+    "cut_score": 23.4,
+    "partner_action_tv": 0.023166666666666648
+  },
+  "certified_learned": {
+    "n": 100,
+    "G_js_bits": 0.041754664299010216,
+    "G_boot_ci95": [
+      0.017913972895057292,
+      0.11708833383637389
+    ],
+    "C_signed_bits": 0.157931807282375,
+    "M_score_gain": 14.399999999999999,
+    "real_score": 39.4,
+    "cut_score": 25.0,
+    "partner_action_tv": 0.020000000000000025
+  },
+  "eval_minutes_certified": 0.79,
+  "registered_outcomes": {
+    "E1_1_product_matched_factor2": true,
+    "E1_2_genesis_separation": false
+  }
+}

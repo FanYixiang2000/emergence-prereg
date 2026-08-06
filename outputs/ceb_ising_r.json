@@ -1,0 +1,74 @@
+{
+  "status": "CEB-ISING-R dense Ising battery; preregistered",
+  "temperature_high_to_low": [
+    4.0,
+    3.2,
+    2.8,
+    2.6,
+    2.45,
+    2.35,
+    2.3,
+    2.25,
+    2.2,
+    2.15,
+    2.1,
+    2.0,
+    1.8,
+    1.5,
+    1.3
+  ],
+  "abs_magnetization": [
+    0.04207,
+    0.06095,
+    0.08691,
+    0.11677,
+    0.19859,
+    0.34326,
+    0.53723,
+    0.6412,
+    0.77871,
+    0.84203,
+    0.87142,
+    0.91229,
+    0.95642,
+    0.98654,
+    0.99481
+  ],
+  "openness": [
+    0.99872,
+    0.99732,
+    0.99454,
+    0.99014,
+    0.97136,
+    0.91325,
+    0.78042,
+    0.67876,
+    0.50185,
+    0.3986,
+    0.34424,
+    0.25969,
+    0.15138,
+    0.05824,
+    0.02603
+  ],
+  "adj": {
+    "drop": 0.9727,
+    "gate_passed": true,
+    "hinge": {
+      "delta_bic": 22.682,
+      "t_star": 4.0,
+      "slope_before": -0.00960131,
+      "slope_after": -0.10088206,
+      "onset_type": true
+    },
+    "b5_control": true
+  },
+  "registered_outcomes": {
+    "ISGR1_control_collapse": true,
+    "ISGR2_native_alignment": false,
+    "ISGR3_high_low_contrast": true,
+    "hinge_index": 4,
+    "steepest_m_index": 6,
+    "tc_grid_index": 7
+  }
+}

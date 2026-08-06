@@ -1,0 +1,17 @@
+Gym has been unmaintained since 2022 and does not support NumPy 2.0 amongst other critical functionality.
+Please upgrade to Gymnasium, the maintained drop-in replacement of Gym, or contact the authors of your software and request that they upgrade.
+Users of this version of Gym should be able to simply replace 'import gym' with 'import gymnasium as gym' in the vast majority of cases.
+See the migration guide at https://gymnasium.farama.org/introduction/migration_guide/ for additional information.
+collecting learned self-play rollouts for distillation
+  33600 state-action samples
+scripted_roles: G=0.0000 CI=[0.0, 0.0] M=5.80 score=102.00
+learned: G=0.1036 CI=[0.05802057938706037, 0.18281205277930232] M=14.80 score=41.00
+bc_clone_of_learned: G=0.1498 CI=[0.09178916305693259, 0.24256275073645353] M=12.60 score=28.60
+context_marginal: G=0.0040 CI=[0.00035373097233166144, 0.03123102801712397] M=0.00 score=0.00
+{
+  "OTC_C1_scripted_null_learned_positive": true,
+  "OTC_C2_clone_instantaneous_G_positive": true,
+  "OTC_C3_marginal_G_at_or_below_scripted": true,
+  "OTC_C4_product_band_factor_two": false
+}
+Wrote /home/Yixiang/MPARL/GOGOGO/outputs/overcooked_genesis_comparison_pilot.json

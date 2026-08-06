@@ -1,0 +1,16 @@
+trained_seed11 {"performance_level": 0.85, "specificity_js": 0.7106, "synergy": 0.0464, "psi_rosas": 0.7056, "ei_do_gap": 0.2164}
+trained_seed22 {"performance_level": 0.85, "specificity_js": 0.6867, "synergy": 0.053, "psi_rosas": 0.6069, "ei_do_gap": 0.382}
+trained_seed33 {"performance_level": 0.8667, "specificity_js": 0.5539, "synergy": 0.088, "psi_rosas": 0.7187, "ei_do_gap": 0.1625}
+untrained {"performance_level": 0.0, "specificity_js": 0.3192, "synergy": 0.0524, "psi_rosas": 0.3821, "ei_do_gap": 0.1535}
+greedy_nearest {"performance_level": 0.0833, "specificity_js": 0.3745, "synergy": 0.115, "psi_rosas": 0.7889, "ei_do_gap": -0.0959}
+noise {"performance_level": 0.0167, "specificity_js": 0.3371, "synergy": 0.0, "psi_rosas": 0.3441, "ei_do_gap": 0.2152}
+forced_commit {"performance_level": 0.4833, "specificity_js": 0.6648, "synergy": 0.2224, "psi_rosas": 0.4296, "ei_do_gap": 0.0607}
+
+detector             best_acc  misclassified
+performance_level       1.000  -
+specificity_js          0.857  forced_commit
+synergy                 0.714  noise;untrained
+psi_rosas               0.857  greedy_nearest
+ei_do_gap               0.857  noise
+
+Wrote /home/Yixiang/MPARL/GOGOGO/outputs/lbf_prior_detectors.json

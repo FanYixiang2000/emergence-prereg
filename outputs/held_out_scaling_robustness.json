@@ -1,0 +1,328 @@
+{
+  "status": "registered S7 scoring plus radius sensitivity, held-out scales, re-analysis of stored series",
+  "scales": {
+    "1b": {
+      "pythia_agreement": {
+        "full_grid_emergent": 1,
+        "full_grid_passes": {
+          "potential": true,
+          "bounded_burst": true,
+          "usefulness": true,
+          "endogeneity": true
+        },
+        "radius_verdicts": {
+          "0": 1,
+          "1": 1,
+          "2": 1
+        },
+        "radius_stable": true,
+        "thinning_agreement": 1.0,
+        "n_thinning_cells": 9
+      },
+      "pythia_random_target": {
+        "full_grid_emergent": 0,
+        "full_grid_passes": {
+          "potential": true,
+          "bounded_burst": true,
+          "usefulness": false,
+          "endogeneity": true
+        },
+        "radius_verdicts": {
+          "0": 0,
+          "1": 0,
+          "2": 0
+        },
+        "radius_stable": true,
+        "thinning_agreement": 1.0,
+        "n_thinning_cells": 9
+      },
+      "shuffled_vocab": {
+        "full_grid_emergent": 0,
+        "full_grid_passes": {
+          "potential": true,
+          "bounded_burst": true,
+          "usefulness": false,
+          "endogeneity": true
+        },
+        "radius_verdicts": {
+          "0": 0,
+          "1": 0,
+          "2": 0
+        },
+        "radius_stable": true,
+        "thinning_agreement": 1.0,
+        "n_thinning_cells": 9
+      },
+      "head_facts": {
+        "full_grid_emergent": 0,
+        "full_grid_passes": {
+          "potential": true,
+          "bounded_burst": false,
+          "usefulness": true,
+          "endogeneity": true
+        },
+        "radius_verdicts": {
+          "0": 0,
+          "1": 0,
+          "2": 0
+        },
+        "radius_stable": true,
+        "thinning_agreement": 0.5555555555555556,
+        "n_thinning_cells": 9
+      },
+      "tail_facts": {
+        "full_grid_emergent": 0,
+        "full_grid_passes": {
+          "potential": true,
+          "bounded_burst": false,
+          "usefulness": true,
+          "endogeneity": true
+        },
+        "radius_verdicts": {
+          "0": 0,
+          "1": 0,
+          "2": 0
+        },
+        "radius_stable": true,
+        "thinning_agreement": 0.6666666666666666,
+        "n_thinning_cells": 9
+      },
+      "tail_words": {
+        "full_grid_emergent": 0,
+        "full_grid_passes": {
+          "potential": true,
+          "bounded_burst": true,
+          "usefulness": false,
+          "endogeneity": true
+        },
+        "radius_verdicts": {
+          "0": 0,
+          "1": 0,
+          "2": 0
+        },
+        "radius_stable": true,
+        "thinning_agreement": 0.2222222222222222,
+        "n_thinning_cells": 9
+      }
+    },
+    "1.4b": {
+      "pythia_agreement": {
+        "full_grid_emergent": 1,
+        "full_grid_passes": {
+          "potential": true,
+          "bounded_burst": true,
+          "usefulness": true,
+          "endogeneity": true
+        },
+        "radius_verdicts": {
+          "0": 0,
+          "1": 1,
+          "2": 1
+        },
+        "radius_stable": false,
+        "thinning_agreement": 0.8888888888888888,
+        "n_thinning_cells": 9
+      },
+      "pythia_random_target": {
+        "full_grid_emergent": 0,
+        "full_grid_passes": {
+          "potential": true,
+          "bounded_burst": false,
+          "usefulness": false,
+          "endogeneity": true
+        },
+        "radius_verdicts": {
+          "0": 0,
+          "1": 0,
+          "2": 0
+        },
+        "radius_stable": true,
+        "thinning_agreement": 1.0,
+        "n_thinning_cells": 9
+      },
+      "shuffled_vocab": {
+        "full_grid_emergent": 0,
+        "full_grid_passes": {
+          "potential": true,
+          "bounded_burst": false,
+          "usefulness": false,
+          "endogeneity": true
+        },
+        "radius_verdicts": {
+          "0": 0,
+          "1": 0,
+          "2": 0
+        },
+        "radius_stable": true,
+        "thinning_agreement": 1.0,
+        "n_thinning_cells": 9
+      },
+      "head_facts": {
+        "full_grid_emergent": 0,
+        "full_grid_passes": {
+          "potential": true,
+          "bounded_burst": false,
+          "usefulness": true,
+          "endogeneity": true
+        },
+        "radius_verdicts": {
+          "0": 0,
+          "1": 0,
+          "2": 0
+        },
+        "radius_stable": true,
+        "thinning_agreement": 1.0,
+        "n_thinning_cells": 9
+      },
+      "tail_facts": {
+        "full_grid_emergent": 0,
+        "full_grid_passes": {
+          "potential": true,
+          "bounded_burst": false,
+          "usefulness": true,
+          "endogeneity": true
+        },
+        "radius_verdicts": {
+          "0": 0,
+          "1": 0,
+          "2": 0
+        },
+        "radius_stable": true,
+        "thinning_agreement": 1.0,
+        "n_thinning_cells": 9
+      },
+      "tail_words": {
+        "full_grid_emergent": 0,
+        "full_grid_passes": {
+          "potential": true,
+          "bounded_burst": false,
+          "usefulness": false,
+          "endogeneity": true
+        },
+        "radius_verdicts": {
+          "0": 0,
+          "1": 0,
+          "2": 0
+        },
+        "radius_stable": true,
+        "thinning_agreement": 0.5555555555555556,
+        "n_thinning_cells": 9
+      }
+    },
+    "2.8b": {
+      "pythia_agreement": {
+        "full_grid_emergent": 0,
+        "full_grid_passes": {
+          "potential": true,
+          "bounded_burst": false,
+          "usefulness": true,
+          "endogeneity": true
+        },
+        "radius_verdicts": {
+          "0": 0,
+          "1": 0,
+          "2": 1
+        },
+        "radius_stable": false,
+        "thinning_agreement": 0.0,
+        "n_thinning_cells": 9
+      },
+      "pythia_random_target": {
+        "full_grid_emergent": 0,
+        "full_grid_passes": {
+          "potential": true,
+          "bounded_burst": false,
+          "usefulness": false,
+          "endogeneity": true
+        },
+        "radius_verdicts": {
+          "0": 0,
+          "1": 0,
+          "2": 0
+        },
+        "radius_stable": true,
+        "thinning_agreement": 1.0,
+        "n_thinning_cells": 9
+      },
+      "shuffled_vocab": {
+        "full_grid_emergent": 0,
+        "full_grid_passes": {
+          "potential": true,
+          "bounded_burst": true,
+          "usefulness": false,
+          "endogeneity": true
+        },
+        "radius_verdicts": {
+          "0": 0,
+          "1": 0,
+          "2": 0
+        },
+        "radius_stable": true,
+        "thinning_agreement": 1.0,
+        "n_thinning_cells": 9
+      },
+      "head_facts": {
+        "full_grid_emergent": 0,
+        "full_grid_passes": {
+          "potential": true,
+          "bounded_burst": false,
+          "usefulness": true,
+          "endogeneity": true
+        },
+        "radius_verdicts": {
+          "0": 0,
+          "1": 0,
+          "2": 0
+        },
+        "radius_stable": true,
+        "thinning_agreement": 1.0,
+        "n_thinning_cells": 9
+      },
+      "tail_facts": {
+        "full_grid_emergent": 0,
+        "full_grid_passes": {
+          "potential": true,
+          "bounded_burst": false,
+          "usefulness": true,
+          "endogeneity": true
+        },
+        "radius_verdicts": {
+          "0": 0,
+          "1": 0,
+          "2": 0
+        },
+        "radius_stable": true,
+        "thinning_agreement": 1.0,
+        "n_thinning_cells": 9
+      },
+      "tail_words": {
+        "full_grid_emergent": 0,
+        "full_grid_passes": {
+          "potential": true,
+          "bounded_burst": false,
+          "usefulness": false,
+          "endogeneity": true
+        },
+        "radius_verdicts": {
+          "0": 0,
+          "1": 0,
+          "2": 0
+        },
+        "radius_stable": true,
+        "thinning_agreement": 0.5555555555555556,
+        "n_thinning_cells": 9
+      }
+    }
+  },
+  "S7": {
+    "registered_criterion": ">= 0.90 condition-level thinning agreement",
+    "cells_agreeing": 130,
+    "cells_total": 162,
+    "fraction": 0.8024691358024691,
+    "pass": false
+  },
+  "radius_unstable_conditions": [
+    "1.4b:pythia_agreement",
+    "2.8b:pythia_agreement"
+  ]
+}

@@ -1,0 +1,1944 @@
+{
+  "status": "BENCH-72 full-factorial analytic ground truth; registered Wave 4 in V2_ALIGNMENT_PREREGISTRATION.md with pre-run shape amendment; blind instrument recovery of source/M/J/t*/rho/V plus 5 declared pseudo-controls; exact enumeration, no sampling",
+  "n_cells": 72,
+  "registered_outcomes": {
+    "B72_1_source": true,
+    "B72_2_M_vs_B": true,
+    "B72_3_tstar": true,
+    "B72_4_persistence": true,
+    "B72_5_value": true,
+    "B72_6_controls": true
+  },
+  "checks": {
+    "B72_1_source": {
+      "accuracy": 1.0,
+      "pass": true
+    },
+    "B72_2_M_vs_B": {
+      "M_groups_ok": 24,
+      "J_groups_ok": 24,
+      "n_groups": 24,
+      "pass": true
+    },
+    "B72_3_tstar": {
+      "max_error_stages": 0,
+      "pass": true
+    },
+    "B72_4_persistence": {
+      "accuracy": 1.0,
+      "pass": true
+    },
+    "B72_5_value": {
+      "nonneutral_ok": 48,
+      "n_nonneutral": 48,
+      "neutral_ok": 24,
+      "pass": true
+    },
+    "B72_6_controls": {
+      "revelation_peak_norm": 0.0,
+      "metric_peak_norm": 0.0,
+      "transient_sync_persistent_est": false,
+      "pass": true
+    },
+    "group_detail": [
+      {
+        "group": [
+          "lambda_ind",
+          "persistent",
+          1
+        ],
+        "M_rel_range": 0.0,
+        "J": {
+          "gradual": 0.0892,
+          "sigmoid": 0.1449,
+          "punctuated": 1.0
+        },
+        "M_pass": true,
+        "J_pass": true
+      },
+      {
+        "group": [
+          "lambda_ind",
+          "persistent",
+          0
+        ],
+        "M_rel_range": 0.0,
+        "J": {
+          "gradual": 0.0892,
+          "sigmoid": 0.1449,
+          "punctuated": 1.0
+        },
+        "M_pass": true,
+        "J_pass": true
+      },
+      {
+        "group": [
+          "lambda_ind",
+          "persistent",
+          -1
+        ],
+        "M_rel_range": 0.0,
+        "J": {
+          "gradual": 0.0892,
+          "sigmoid": 0.1449,
+          "punctuated": 1.0
+        },
+        "M_pass": true,
+        "J_pass": true
+      },
+      {
+        "group": [
+          "lambda_ind",
+          "transient",
+          1
+        ],
+        "M_rel_range": 0.0,
+        "J": {
+          "gradual": 0.0892,
+          "sigmoid": 0.1449,
+          "punctuated": 1.0
+        },
+        "M_pass": true,
+        "J_pass": true
+      },
+      {
+        "group": [
+          "lambda_ind",
+          "transient",
+          0
+        ],
+        "M_rel_range": 0.0,
+        "J": {
+          "gradual": 0.0892,
+          "sigmoid": 0.1449,
+          "punctuated": 1.0
+        },
+        "M_pass": true,
+        "J_pass": true
+      },
+      {
+        "group": [
+          "lambda_ind",
+          "transient",
+          -1
+        ],
+        "M_rel_range": 0.0,
+        "J": {
+          "gradual": 0.0892,
+          "sigmoid": 0.1449,
+          "punctuated": 1.0
+        },
+        "M_pass": true,
+        "J_pass": true
+      },
+      {
+        "group": [
+          "rho_env",
+          "persistent",
+          1
+        ],
+        "M_rel_range": 0.0,
+        "J": {
+          "gradual": 0.0618,
+          "sigmoid": 0.1502,
+          "punctuated": 1.0
+        },
+        "M_pass": true,
+        "J_pass": true
+      },
+      {
+        "group": [
+          "rho_env",
+          "persistent",
+          0
+        ],
+        "M_rel_range": 0.0,
+        "J": {
+          "gradual": 0.0618,
+          "sigmoid": 0.1502,
+          "punctuated": 1.0
+        },
+        "M_pass": true,
+        "J_pass": true
+      },
+      {
+        "group": [
+          "rho_env",
+          "persistent",
+          -1
+        ],
+        "M_rel_range": 0.0,
+        "J": {
+          "gradual": 0.0618,
+          "sigmoid": 0.1502,
+          "punctuated": 1.0
+        },
+        "M_pass": true,
+        "J_pass": true
+      },
+      {
+        "group": [
+          "rho_env",
+          "transient",
+          1
+        ],
+        "M_rel_range": 0.0,
+        "J": {
+          "gradual": 0.0618,
+          "sigmoid": 0.1502,
+          "punctuated": 1.0
+        },
+        "M_pass": true,
+        "J_pass": true
+      },
+      {
+        "group": [
+          "rho_env",
+          "transient",
+          0
+        ],
+        "M_rel_range": 0.0,
+        "J": {
+          "gradual": 0.0618,
+          "sigmoid": 0.1502,
+          "punctuated": 1.0
+        },
+        "M_pass": true,
+        "J_pass": true
+      },
+      {
+        "group": [
+          "rho_env",
+          "transient",
+          -1
+        ],
+        "M_rel_range": 0.0,
+        "J": {
+          "gradual": 0.0618,
+          "sigmoid": 0.1502,
+          "punctuated": 1.0
+        },
+        "M_pass": true,
+        "J_pass": true
+      },
+      {
+        "group": [
+          "kappa_pair",
+          "persistent",
+          1
+        ],
+        "M_rel_range": 0.0,
+        "J": {
+          "gradual": 0.0828,
+          "sigmoid": 0.1442,
+          "punctuated": 1.0
+        },
+        "M_pass": true,
+        "J_pass": true
+      },
+      {
+        "group": [
+          "kappa_pair",
+          "persistent",
+          0
+        ],
+        "M_rel_range": 0.0,
+        "J": {
+          "gradual": 0.0828,
+          "sigmoid": 0.1442,
+          "punctuated": 1.0
+        },
+        "M_pass": true,
+        "J_pass": true
+      },
+      {
+        "group": [
+          "kappa_pair",
+          "persistent",
+          -1
+        ],
+        "M_rel_range": 0.0,
+        "J": {
+          "gradual": 0.0828,
+          "sigmoid": 0.1442,
+          "punctuated": 1.0
+        },
+        "M_pass": true,
+        "J_pass": true
+      },
+      {
+        "group": [
+          "kappa_pair",
+          "transient",
+          1
+        ],
+        "M_rel_range": 0.0,
+        "J": {
+          "gradual": 0.0828,
+          "sigmoid": 0.1442,
+          "punctuated": 1.0
+        },
+        "M_pass": true,
+        "J_pass": true
+      },
+      {
+        "group": [
+          "kappa_pair",
+          "transient",
+          0
+        ],
+        "M_rel_range": 0.0,
+        "J": {
+          "gradual": 0.0828,
+          "sigmoid": 0.1442,
+          "punctuated": 1.0
+        },
+        "M_pass": true,
+        "J_pass": true
+      },
+      {
+        "group": [
+          "kappa_pair",
+          "transient",
+          -1
+        ],
+        "M_rel_range": 0.0,
+        "J": {
+          "gradual": 0.0828,
+          "sigmoid": 0.1442,
+          "punctuated": 1.0
+        },
+        "M_pass": true,
+        "J_pass": true
+      },
+      {
+        "group": [
+          "gamma_high",
+          "persistent",
+          1
+        ],
+        "M_rel_range": 0.0,
+        "J": {
+          "gradual": 0.1016,
+          "sigmoid": 0.148,
+          "punctuated": 1.0
+        },
+        "M_pass": true,
+        "J_pass": true
+      },
+      {
+        "group": [
+          "gamma_high",
+          "persistent",
+          0
+        ],
+        "M_rel_range": 0.0,
+        "J": {
+          "gradual": 0.1016,
+          "sigmoid": 0.148,
+          "punctuated": 1.0
+        },
+        "M_pass": true,
+        "J_pass": true
+      },
+      {
+        "group": [
+          "gamma_high",
+          "persistent",
+          -1
+        ],
+        "M_rel_range": 0.0,
+        "J": {
+          "gradual": 0.1016,
+          "sigmoid": 0.148,
+          "punctuated": 1.0
+        },
+        "M_pass": true,
+        "J_pass": true
+      },
+      {
+        "group": [
+          "gamma_high",
+          "transient",
+          1
+        ],
+        "M_rel_range": 0.0,
+        "J": {
+          "gradual": 0.1016,
+          "sigmoid": 0.148,
+          "punctuated": 1.0
+        },
+        "M_pass": true,
+        "J_pass": true
+      },
+      {
+        "group": [
+          "gamma_high",
+          "transient",
+          0
+        ],
+        "M_rel_range": 0.0,
+        "J": {
+          "gradual": 0.1016,
+          "sigmoid": 0.148,
+          "punctuated": 1.0
+        },
+        "M_pass": true,
+        "J_pass": true
+      },
+      {
+        "group": [
+          "gamma_high",
+          "transient",
+          -1
+        ],
+        "M_rel_range": 0.0,
+        "J": {
+          "gradual": 0.1016,
+          "sigmoid": 0.148,
+          "punctuated": 1.0
+        },
+        "M_pass": true,
+        "J_pass": true
+      }
+    ]
+  },
+  "controls": {
+    "external_mask": {
+      "external_by_construction": true,
+      "estimate": {
+        "source_est": "C_individual",
+        "M_est": 0.6652285125255144,
+        "J_est": 1.0,
+        "tstar_est": 15,
+        "persistent_est": true,
+        "V_est": 0,
+        "peak_stage": 15,
+        "dtot_final": 6.629523855835908,
+        "dtot_peak": 6.629523855835908
+      }
+    },
+    "external_overwrite": {
+      "external_by_construction": true,
+      "estimate": {
+        "source_est": "C_individual",
+        "M_est": 0.9471365148033973,
+        "J_est": 1.0,
+        "tstar_est": 15,
+        "persistent_est": true,
+        "V_est": 0,
+        "peak_stage": 15,
+        "dtot_final": 9.438958194657317,
+        "dtot_peak": 9.438958194657317
+      }
+    },
+    "revelation_only": {
+      "estimate": {
+        "source_est": "C_individual",
+        "M_est": 0.0,
+        "J_est": 0.0,
+        "tstar_est": 0,
+        "persistent_est": true,
+        "V_est": 0,
+        "peak_stage": 0,
+        "dtot_final": 0.0,
+        "dtot_peak": 0.0
+      }
+    },
+    "metric_artifact": {
+      "metric_curve": [
+        0.0,
+        0.0,
+        0.0001,
+        0.0002,
+        0.0005,
+        0.0016,
+        0.0048,
+        0.0145,
+        0.0427,
+        0.1192,
+        0.2913,
+        0.5553,
+        0.7914,
+        0.9202,
+        0.9722,
+        0.9907,
+        0.9969,
+        0.999,
+        0.9997,
+        0.9997,
+        0.9997,
+        0.9997,
+        0.9997,
+        0.9997,
+        0.9997
+      ],
+      "estimate": {
+        "source_est": "C_individual",
+        "M_est": 0.0,
+        "J_est": 0.0,
+        "tstar_est": 0,
+        "persistent_est": true,
+        "V_est": 0,
+        "peak_stage": 0,
+        "dtot_final": 0.0,
+        "dtot_peak": 0.0
+      }
+    },
+    "transient_sync": {
+      "estimate": {
+        "source_est": "C_pair",
+        "M_est": 0.18263302132104595,
+        "J_est": 1.0,
+        "tstar_est": 12,
+        "persistent_est": false,
+        "V_est": 0,
+        "peak_stage": 12,
+        "dtot_final": 0.0,
+        "dtot_peak": 1.8200812937416355
+      }
+    }
+  },
+  "cells": [
+    {
+      "truth": {
+        "source": "lambda_ind",
+        "shape": "gradual",
+        "stability": "persistent",
+        "value": 1,
+        "tstar_true": null
+      },
+      "estimate": {
+        "source_est": "C_individual",
+        "M_est": 0.3753922264386463,
+        "J_est": 0.0891688245258263,
+        "tstar_est": 18,
+        "persistent_est": true,
+        "V_est": 1,
+        "peak_stage": 18,
+        "dtot_final": 3.741077950826573,
+        "dtot_peak": 3.741077950826573
+      }
+    },
+    {
+      "truth": {
+        "source": "lambda_ind",
+        "shape": "gradual",
+        "stability": "persistent",
+        "value": 0,
+        "tstar_true": null
+      },
+      "estimate": {
+        "source_est": "C_individual",
+        "M_est": 0.3753922264386463,
+        "J_est": 0.0891688245258263,
+        "tstar_est": 18,
+        "persistent_est": true,
+        "V_est": 0,
+        "peak_stage": 18,
+        "dtot_final": 3.741077950826573,
+        "dtot_peak": 3.741077950826573
+      }
+    },
+    {
+      "truth": {
+        "source": "lambda_ind",
+        "shape": "gradual",
+        "stability": "persistent",
+        "value": -1,
+        "tstar_true": null
+      },
+      "estimate": {
+        "source_est": "C_individual",
+        "M_est": 0.3753922264386463,
+        "J_est": 0.0891688245258263,
+        "tstar_est": 18,
+        "persistent_est": true,
+        "V_est": -1,
+        "peak_stage": 18,
+        "dtot_final": 3.741077950826573,
+        "dtot_peak": 3.741077950826573
+      }
+    },
+    {
+      "truth": {
+        "source": "lambda_ind",
+        "shape": "gradual",
+        "stability": "transient",
+        "value": 1,
+        "tstar_true": null
+      },
+      "estimate": {
+        "source_est": "C_individual",
+        "M_est": 0.3753922264386463,
+        "J_est": 0.0891688245258263,
+        "tstar_est": 18,
+        "persistent_est": false,
+        "V_est": 1,
+        "peak_stage": 18,
+        "dtot_final": 0.0,
+        "dtot_peak": 3.741077950826573
+      }
+    },
+    {
+      "truth": {
+        "source": "lambda_ind",
+        "shape": "gradual",
+        "stability": "transient",
+        "value": 0,
+        "tstar_true": null
+      },
+      "estimate": {
+        "source_est": "C_individual",
+        "M_est": 0.3753922264386463,
+        "J_est": 0.0891688245258263,
+        "tstar_est": 18,
+        "persistent_est": false,
+        "V_est": 0,
+        "peak_stage": 18,
+        "dtot_final": 0.0,
+        "dtot_peak": 3.741077950826573
+      }
+    },
+    {
+      "truth": {
+        "source": "lambda_ind",
+        "shape": "gradual",
+        "stability": "transient",
+        "value": -1,
+        "tstar_true": null
+      },
+      "estimate": {
+        "source_est": "C_individual",
+        "M_est": 0.3753922264386463,
+        "J_est": 0.0891688245258263,
+        "tstar_est": 18,
+        "persistent_est": false,
+        "V_est": -1,
+        "peak_stage": 18,
+        "dtot_final": 0.0,
+        "dtot_peak": 3.741077950826573
+      }
+    },
+    {
+      "truth": {
+        "source": "lambda_ind",
+        "shape": "sigmoid",
+        "stability": "persistent",
+        "value": 1,
+        "tstar_true": null
+      },
+      "estimate": {
+        "source_est": "C_individual",
+        "M_est": 0.3753922264386463,
+        "J_est": 0.14491082208060405,
+        "tstar_est": 10,
+        "persistent_est": true,
+        "V_est": 1,
+        "peak_stage": 18,
+        "dtot_final": 3.741077950826573,
+        "dtot_peak": 3.741077950826573
+      }
+    },
+    {
+      "truth": {
+        "source": "lambda_ind",
+        "shape": "sigmoid",
+        "stability": "persistent",
+        "value": 0,
+        "tstar_true": null
+      },
+      "estimate": {
+        "source_est": "C_individual",
+        "M_est": 0.3753922264386463,
+        "J_est": 0.14491082208060405,
+        "tstar_est": 10,
+        "persistent_est": true,
+        "V_est": 0,
+        "peak_stage": 18,
+        "dtot_final": 3.741077950826573,
+        "dtot_peak": 3.741077950826573
+      }
+    },
+    {
+      "truth": {
+        "source": "lambda_ind",
+        "shape": "sigmoid",
+        "stability": "persistent",
+        "value": -1,
+        "tstar_true": null
+      },
+      "estimate": {
+        "source_est": "C_individual",
+        "M_est": 0.3753922264386463,
+        "J_est": 0.14491082208060405,
+        "tstar_est": 10,
+        "persistent_est": true,
+        "V_est": -1,
+        "peak_stage": 18,
+        "dtot_final": 3.741077950826573,
+        "dtot_peak": 3.741077950826573
+      }
+    },
+    {
+      "truth": {
+        "source": "lambda_ind",
+        "shape": "sigmoid",
+        "stability": "transient",
+        "value": 1,
+        "tstar_true": null
+      },
+      "estimate": {
+        "source_est": "C_individual",
+        "M_est": 0.3753922264386463,
+        "J_est": 0.14491082208060405,
+        "tstar_est": 10,
+        "persistent_est": false,
+        "V_est": 1,
+        "peak_stage": 18,
+        "dtot_final": 0.0,
+        "dtot_peak": 3.741077950826573
+      }
+    },
+    {
+      "truth": {
+        "source": "lambda_ind",
+        "shape": "sigmoid",
+        "stability": "transient",
+        "value": 0,
+        "tstar_true": null
+      },
+      "estimate": {
+        "source_est": "C_individual",
+        "M_est": 0.3753922264386463,
+        "J_est": 0.14491082208060405,
+        "tstar_est": 10,
+        "persistent_est": false,
+        "V_est": 0,
+        "peak_stage": 18,
+        "dtot_final": 0.0,
+        "dtot_peak": 3.741077950826573
+      }
+    },
+    {
+      "truth": {
+        "source": "lambda_ind",
+        "shape": "sigmoid",
+        "stability": "transient",
+        "value": -1,
+        "tstar_true": null
+      },
+      "estimate": {
+        "source_est": "C_individual",
+        "M_est": 0.3753922264386463,
+        "J_est": 0.14491082208060405,
+        "tstar_est": 10,
+        "persistent_est": false,
+        "V_est": -1,
+        "peak_stage": 18,
+        "dtot_final": 0.0,
+        "dtot_peak": 3.741077950826573
+      }
+    },
+    {
+      "truth": {
+        "source": "lambda_ind",
+        "shape": "punctuated",
+        "stability": "persistent",
+        "value": 1,
+        "tstar_true": 11
+      },
+      "estimate": {
+        "source_est": "C_individual",
+        "M_est": 0.3753922264386463,
+        "J_est": 1.0,
+        "tstar_est": 11,
+        "persistent_est": true,
+        "V_est": 1,
+        "peak_stage": 11,
+        "dtot_final": 3.741077950826573,
+        "dtot_peak": 3.741077950826573
+      }
+    },
+    {
+      "truth": {
+        "source": "lambda_ind",
+        "shape": "punctuated",
+        "stability": "persistent",
+        "value": 0,
+        "tstar_true": 11
+      },
+      "estimate": {
+        "source_est": "C_individual",
+        "M_est": 0.3753922264386463,
+        "J_est": 1.0,
+        "tstar_est": 11,
+        "persistent_est": true,
+        "V_est": 0,
+        "peak_stage": 11,
+        "dtot_final": 3.741077950826573,
+        "dtot_peak": 3.741077950826573
+      }
+    },
+    {
+      "truth": {
+        "source": "lambda_ind",
+        "shape": "punctuated",
+        "stability": "persistent",
+        "value": -1,
+        "tstar_true": 11
+      },
+      "estimate": {
+        "source_est": "C_individual",
+        "M_est": 0.3753922264386463,
+        "J_est": 1.0,
+        "tstar_est": 11,
+        "persistent_est": true,
+        "V_est": -1,
+        "peak_stage": 11,
+        "dtot_final": 3.741077950826573,
+        "dtot_peak": 3.741077950826573
+      }
+    },
+    {
+      "truth": {
+        "source": "lambda_ind",
+        "shape": "punctuated",
+        "stability": "transient",
+        "value": 1,
+        "tstar_true": 11
+      },
+      "estimate": {
+        "source_est": "C_individual",
+        "M_est": 0.3753922264386463,
+        "J_est": 1.0,
+        "tstar_est": 11,
+        "persistent_est": false,
+        "V_est": 1,
+        "peak_stage": 11,
+        "dtot_final": 0.0,
+        "dtot_peak": 3.741077950826573
+      }
+    },
+    {
+      "truth": {
+        "source": "lambda_ind",
+        "shape": "punctuated",
+        "stability": "transient",
+        "value": 0,
+        "tstar_true": 11
+      },
+      "estimate": {
+        "source_est": "C_individual",
+        "M_est": 0.3753922264386463,
+        "J_est": 1.0,
+        "tstar_est": 11,
+        "persistent_est": false,
+        "V_est": 0,
+        "peak_stage": 11,
+        "dtot_final": 0.0,
+        "dtot_peak": 3.741077950826573
+      }
+    },
+    {
+      "truth": {
+        "source": "lambda_ind",
+        "shape": "punctuated",
+        "stability": "transient",
+        "value": -1,
+        "tstar_true": 11
+      },
+      "estimate": {
+        "source_est": "C_individual",
+        "M_est": 0.3753922264386463,
+        "J_est": 1.0,
+        "tstar_est": 11,
+        "persistent_est": false,
+        "V_est": -1,
+        "peak_stage": 11,
+        "dtot_final": 0.0,
+        "dtot_peak": 3.741077950826573
+      }
+    },
+    {
+      "truth": {
+        "source": "rho_env",
+        "shape": "gradual",
+        "stability": "persistent",
+        "value": 1,
+        "tstar_true": null
+      },
+      "estimate": {
+        "source_est": "C_env",
+        "M_est": 0.02119118567606881,
+        "J_est": 0.061793593670693626,
+        "tstar_est": 14,
+        "persistent_est": true,
+        "V_est": 1,
+        "peak_stage": 18,
+        "dtot_final": 0.21118678518392286,
+        "dtot_peak": 0.21118678518392286
+      }
+    },
+    {
+      "truth": {
+        "source": "rho_env",
+        "shape": "gradual",
+        "stability": "persistent",
+        "value": 0,
+        "tstar_true": null
+      },
+      "estimate": {
+        "source_est": "C_env",
+        "M_est": 0.02119118567606881,
+        "J_est": 0.061793593670693626,
+        "tstar_est": 14,
+        "persistent_est": true,
+        "V_est": 0,
+        "peak_stage": 18,
+        "dtot_final": 0.21118678518392286,
+        "dtot_peak": 0.21118678518392286
+      }
+    },
+    {
+      "truth": {
+        "source": "rho_env",
+        "shape": "gradual",
+        "stability": "persistent",
+        "value": -1,
+        "tstar_true": null
+      },
+      "estimate": {
+        "source_est": "C_env",
+        "M_est": 0.02119118567606881,
+        "J_est": 0.061793593670693626,
+        "tstar_est": 14,
+        "persistent_est": true,
+        "V_est": -1,
+        "peak_stage": 18,
+        "dtot_final": 0.21118678518392286,
+        "dtot_peak": 0.21118678518392286
+      }
+    },
+    {
+      "truth": {
+        "source": "rho_env",
+        "shape": "gradual",
+        "stability": "transient",
+        "value": 1,
+        "tstar_true": null
+      },
+      "estimate": {
+        "source_est": "C_env",
+        "M_est": 0.02119118567606881,
+        "J_est": 0.061793593670693626,
+        "tstar_est": 14,
+        "persistent_est": false,
+        "V_est": 1,
+        "peak_stage": 18,
+        "dtot_final": 0.0,
+        "dtot_peak": 0.21118678518392286
+      }
+    },
+    {
+      "truth": {
+        "source": "rho_env",
+        "shape": "gradual",
+        "stability": "transient",
+        "value": 0,
+        "tstar_true": null
+      },
+      "estimate": {
+        "source_est": "C_env",
+        "M_est": 0.02119118567606881,
+        "J_est": 0.061793593670693626,
+        "tstar_est": 14,
+        "persistent_est": false,
+        "V_est": 0,
+        "peak_stage": 18,
+        "dtot_final": 0.0,
+        "dtot_peak": 0.21118678518392286
+      }
+    },
+    {
+      "truth": {
+        "source": "rho_env",
+        "shape": "gradual",
+        "stability": "transient",
+        "value": -1,
+        "tstar_true": null
+      },
+      "estimate": {
+        "source_est": "C_env",
+        "M_est": 0.02119118567606881,
+        "J_est": 0.061793593670693626,
+        "tstar_est": 14,
+        "persistent_est": false,
+        "V_est": -1,
+        "peak_stage": 18,
+        "dtot_final": 0.0,
+        "dtot_peak": 0.21118678518392286
+      }
+    },
+    {
+      "truth": {
+        "source": "rho_env",
+        "shape": "sigmoid",
+        "stability": "persistent",
+        "value": 1,
+        "tstar_true": null
+      },
+      "estimate": {
+        "source_est": "C_env",
+        "M_est": 0.02119118567606881,
+        "J_est": 0.15021607413515084,
+        "tstar_est": 10,
+        "persistent_est": true,
+        "V_est": 1,
+        "peak_stage": 18,
+        "dtot_final": 0.21118678518392286,
+        "dtot_peak": 0.21118678518392286
+      }
+    },
+    {
+      "truth": {
+        "source": "rho_env",
+        "shape": "sigmoid",
+        "stability": "persistent",
+        "value": 0,
+        "tstar_true": null
+      },
+      "estimate": {
+        "source_est": "C_env",
+        "M_est": 0.02119118567606881,
+        "J_est": 0.15021607413515084,
+        "tstar_est": 10,
+        "persistent_est": true,
+        "V_est": 0,
+        "peak_stage": 18,
+        "dtot_final": 0.21118678518392286,
+        "dtot_peak": 0.21118678518392286
+      }
+    },
+    {
+      "truth": {
+        "source": "rho_env",
+        "shape": "sigmoid",
+        "stability": "persistent",
+        "value": -1,
+        "tstar_true": null
+      },
+      "estimate": {
+        "source_est": "C_env",
+        "M_est": 0.02119118567606881,
+        "J_est": 0.15021607413515084,
+        "tstar_est": 10,
+        "persistent_est": true,
+        "V_est": -1,
+        "peak_stage": 18,
+        "dtot_final": 0.21118678518392286,
+        "dtot_peak": 0.21118678518392286
+      }
+    },
+    {
+      "truth": {
+        "source": "rho_env",
+        "shape": "sigmoid",
+        "stability": "transient",
+        "value": 1,
+        "tstar_true": null
+      },
+      "estimate": {
+        "source_est": "C_env",
+        "M_est": 0.02119118567606881,
+        "J_est": 0.15021607413515084,
+        "tstar_est": 10,
+        "persistent_est": false,
+        "V_est": 1,
+        "peak_stage": 18,
+        "dtot_final": 0.0,
+        "dtot_peak": 0.21118678518392286
+      }
+    },
+    {
+      "truth": {
+        "source": "rho_env",
+        "shape": "sigmoid",
+        "stability": "transient",
+        "value": 0,
+        "tstar_true": null
+      },
+      "estimate": {
+        "source_est": "C_env",
+        "M_est": 0.02119118567606881,
+        "J_est": 0.15021607413515084,
+        "tstar_est": 10,
+        "persistent_est": false,
+        "V_est": 0,
+        "peak_stage": 18,
+        "dtot_final": 0.0,
+        "dtot_peak": 0.21118678518392286
+      }
+    },
+    {
+      "truth": {
+        "source": "rho_env",
+        "shape": "sigmoid",
+        "stability": "transient",
+        "value": -1,
+        "tstar_true": null
+      },
+      "estimate": {
+        "source_est": "C_env",
+        "M_est": 0.02119118567606881,
+        "J_est": 0.15021607413515084,
+        "tstar_est": 10,
+        "persistent_est": false,
+        "V_est": -1,
+        "peak_stage": 18,
+        "dtot_final": 0.0,
+        "dtot_peak": 0.21118678518392286
+      }
+    },
+    {
+      "truth": {
+        "source": "rho_env",
+        "shape": "punctuated",
+        "stability": "persistent",
+        "value": 1,
+        "tstar_true": 11
+      },
+      "estimate": {
+        "source_est": "C_env",
+        "M_est": 0.02119118567606881,
+        "J_est": 1.0,
+        "tstar_est": 11,
+        "persistent_est": true,
+        "V_est": 1,
+        "peak_stage": 11,
+        "dtot_final": 0.21118678518392286,
+        "dtot_peak": 0.21118678518392286
+      }
+    },
+    {
+      "truth": {
+        "source": "rho_env",
+        "shape": "punctuated",
+        "stability": "persistent",
+        "value": 0,
+        "tstar_true": 11
+      },
+      "estimate": {
+        "source_est": "C_env",
+        "M_est": 0.02119118567606881,
+        "J_est": 1.0,
+        "tstar_est": 11,
+        "persistent_est": true,
+        "V_est": 0,
+        "peak_stage": 11,
+        "dtot_final": 0.21118678518392286,
+        "dtot_peak": 0.21118678518392286
+      }
+    },
+    {
+      "truth": {
+        "source": "rho_env",
+        "shape": "punctuated",
+        "stability": "persistent",
+        "value": -1,
+        "tstar_true": 11
+      },
+      "estimate": {
+        "source_est": "C_env",
+        "M_est": 0.02119118567606881,
+        "J_est": 1.0,
+        "tstar_est": 11,
+        "persistent_est": true,
+        "V_est": -1,
+        "peak_stage": 11,
+        "dtot_final": 0.21118678518392286,
+        "dtot_peak": 0.21118678518392286
+      }
+    },
+    {
+      "truth": {
+        "source": "rho_env",
+        "shape": "punctuated",
+        "stability": "transient",
+        "value": 1,
+        "tstar_true": 11
+      },
+      "estimate": {
+        "source_est": "C_env",
+        "M_est": 0.02119118567606881,
+        "J_est": 1.0,
+        "tstar_est": 11,
+        "persistent_est": false,
+        "V_est": 1,
+        "peak_stage": 11,
+        "dtot_final": 0.0,
+        "dtot_peak": 0.21118678518392286
+      }
+    },
+    {
+      "truth": {
+        "source": "rho_env",
+        "shape": "punctuated",
+        "stability": "transient",
+        "value": 0,
+        "tstar_true": 11
+      },
+      "estimate": {
+        "source_est": "C_env",
+        "M_est": 0.02119118567606881,
+        "J_est": 1.0,
+        "tstar_est": 11,
+        "persistent_est": false,
+        "V_est": 0,
+        "peak_stage": 11,
+        "dtot_final": 0.0,
+        "dtot_peak": 0.21118678518392286
+      }
+    },
+    {
+      "truth": {
+        "source": "rho_env",
+        "shape": "punctuated",
+        "stability": "transient",
+        "value": -1,
+        "tstar_true": 11
+      },
+      "estimate": {
+        "source_est": "C_env",
+        "M_est": 0.02119118567606881,
+        "J_est": 1.0,
+        "tstar_est": 11,
+        "persistent_est": false,
+        "V_est": -1,
+        "peak_stage": 11,
+        "dtot_final": 0.0,
+        "dtot_peak": 0.21118678518392286
+      }
+    },
+    {
+      "truth": {
+        "source": "kappa_pair",
+        "shape": "gradual",
+        "stability": "persistent",
+        "value": 1,
+        "tstar_true": null
+      },
+      "estimate": {
+        "source_est": "C_pair",
+        "M_est": 0.18263302132104595,
+        "J_est": 0.08276166136464068,
+        "tstar_est": 18,
+        "persistent_est": true,
+        "V_est": 1,
+        "peak_stage": 18,
+        "dtot_final": 1.8200812937416355,
+        "dtot_peak": 1.8200812937416355
+      }
+    },
+    {
+      "truth": {
+        "source": "kappa_pair",
+        "shape": "gradual",
+        "stability": "persistent",
+        "value": 0,
+        "tstar_true": null
+      },
+      "estimate": {
+        "source_est": "C_pair",
+        "M_est": 0.18263302132104595,
+        "J_est": 0.08276166136464068,
+        "tstar_est": 18,
+        "persistent_est": true,
+        "V_est": 0,
+        "peak_stage": 18,
+        "dtot_final": 1.8200812937416355,
+        "dtot_peak": 1.8200812937416355
+      }
+    },
+    {
+      "truth": {
+        "source": "kappa_pair",
+        "shape": "gradual",
+        "stability": "persistent",
+        "value": -1,
+        "tstar_true": null
+      },
+      "estimate": {
+        "source_est": "C_pair",
+        "M_est": 0.18263302132104595,
+        "J_est": 0.08276166136464068,
+        "tstar_est": 18,
+        "persistent_est": true,
+        "V_est": -1,
+        "peak_stage": 18,
+        "dtot_final": 1.8200812937416355,
+        "dtot_peak": 1.8200812937416355
+      }
+    },
+    {
+      "truth": {
+        "source": "kappa_pair",
+        "shape": "gradual",
+        "stability": "transient",
+        "value": 1,
+        "tstar_true": null
+      },
+      "estimate": {
+        "source_est": "C_pair",
+        "M_est": 0.18263302132104595,
+        "J_est": 0.08276166136464068,
+        "tstar_est": 18,
+        "persistent_est": false,
+        "V_est": 1,
+        "peak_stage": 18,
+        "dtot_final": 0.0,
+        "dtot_peak": 1.8200812937416355
+      }
+    },
+    {
+      "truth": {
+        "source": "kappa_pair",
+        "shape": "gradual",
+        "stability": "transient",
+        "value": 0,
+        "tstar_true": null
+      },
+      "estimate": {
+        "source_est": "C_pair",
+        "M_est": 0.18263302132104595,
+        "J_est": 0.08276166136464068,
+        "tstar_est": 18,
+        "persistent_est": false,
+        "V_est": 0,
+        "peak_stage": 18,
+        "dtot_final": 0.0,
+        "dtot_peak": 1.8200812937416355
+      }
+    },
+    {
+      "truth": {
+        "source": "kappa_pair",
+        "shape": "gradual",
+        "stability": "transient",
+        "value": -1,
+        "tstar_true": null
+      },
+      "estimate": {
+        "source_est": "C_pair",
+        "M_est": 0.18263302132104595,
+        "J_est": 0.08276166136464068,
+        "tstar_est": 18,
+        "persistent_est": false,
+        "V_est": -1,
+        "peak_stage": 18,
+        "dtot_final": 0.0,
+        "dtot_peak": 1.8200812937416355
+      }
+    },
+    {
+      "truth": {
+        "source": "kappa_pair",
+        "shape": "sigmoid",
+        "stability": "persistent",
+        "value": 1,
+        "tstar_true": null
+      },
+      "estimate": {
+        "source_est": "C_pair",
+        "M_est": 0.18263302132104595,
+        "J_est": 0.14421559776484674,
+        "tstar_est": 10,
+        "persistent_est": true,
+        "V_est": 1,
+        "peak_stage": 18,
+        "dtot_final": 1.8200812937416355,
+        "dtot_peak": 1.8200812937416355
+      }
+    },
+    {
+      "truth": {
+        "source": "kappa_pair",
+        "shape": "sigmoid",
+        "stability": "persistent",
+        "value": 0,
+        "tstar_true": null
+      },
+      "estimate": {
+        "source_est": "C_pair",
+        "M_est": 0.18263302132104595,
+        "J_est": 0.14421559776484674,
+        "tstar_est": 10,
+        "persistent_est": true,
+        "V_est": 0,
+        "peak_stage": 18,
+        "dtot_final": 1.8200812937416355,
+        "dtot_peak": 1.8200812937416355
+      }
+    },
+    {
+      "truth": {
+        "source": "kappa_pair",
+        "shape": "sigmoid",
+        "stability": "persistent",
+        "value": -1,
+        "tstar_true": null
+      },
+      "estimate": {
+        "source_est": "C_pair",
+        "M_est": 0.18263302132104595,
+        "J_est": 0.14421559776484674,
+        "tstar_est": 10,
+        "persistent_est": true,
+        "V_est": -1,
+        "peak_stage": 18,
+        "dtot_final": 1.8200812937416355,
+        "dtot_peak": 1.8200812937416355
+      }
+    },
+    {
+      "truth": {
+        "source": "kappa_pair",
+        "shape": "sigmoid",
+        "stability": "transient",
+        "value": 1,
+        "tstar_true": null
+      },
+      "estimate": {
+        "source_est": "C_pair",
+        "M_est": 0.18263302132104595,
+        "J_est": 0.14421559776484674,
+        "tstar_est": 10,
+        "persistent_est": false,
+        "V_est": 1,
+        "peak_stage": 18,
+        "dtot_final": 0.0,
+        "dtot_peak": 1.8200812937416355
+      }
+    },
+    {
+      "truth": {
+        "source": "kappa_pair",
+        "shape": "sigmoid",
+        "stability": "transient",
+        "value": 0,
+        "tstar_true": null
+      },
+      "estimate": {
+        "source_est": "C_pair",
+        "M_est": 0.18263302132104595,
+        "J_est": 0.14421559776484674,
+        "tstar_est": 10,
+        "persistent_est": false,
+        "V_est": 0,
+        "peak_stage": 18,
+        "dtot_final": 0.0,
+        "dtot_peak": 1.8200812937416355
+      }
+    },
+    {
+      "truth": {
+        "source": "kappa_pair",
+        "shape": "sigmoid",
+        "stability": "transient",
+        "value": -1,
+        "tstar_true": null
+      },
+      "estimate": {
+        "source_est": "C_pair",
+        "M_est": 0.18263302132104595,
+        "J_est": 0.14421559776484674,
+        "tstar_est": 10,
+        "persistent_est": false,
+        "V_est": -1,
+        "peak_stage": 18,
+        "dtot_final": 0.0,
+        "dtot_peak": 1.8200812937416355
+      }
+    },
+    {
+      "truth": {
+        "source": "kappa_pair",
+        "shape": "punctuated",
+        "stability": "persistent",
+        "value": 1,
+        "tstar_true": 11
+      },
+      "estimate": {
+        "source_est": "C_pair",
+        "M_est": 0.18263302132104595,
+        "J_est": 1.0,
+        "tstar_est": 11,
+        "persistent_est": true,
+        "V_est": 1,
+        "peak_stage": 11,
+        "dtot_final": 1.8200812937416355,
+        "dtot_peak": 1.8200812937416355
+      }
+    },
+    {
+      "truth": {
+        "source": "kappa_pair",
+        "shape": "punctuated",
+        "stability": "persistent",
+        "value": 0,
+        "tstar_true": 11
+      },
+      "estimate": {
+        "source_est": "C_pair",
+        "M_est": 0.18263302132104595,
+        "J_est": 1.0,
+        "tstar_est": 11,
+        "persistent_est": true,
+        "V_est": 0,
+        "peak_stage": 11,
+        "dtot_final": 1.8200812937416355,
+        "dtot_peak": 1.8200812937416355
+      }
+    },
+    {
+      "truth": {
+        "source": "kappa_pair",
+        "shape": "punctuated",
+        "stability": "persistent",
+        "value": -1,
+        "tstar_true": 11
+      },
+      "estimate": {
+        "source_est": "C_pair",
+        "M_est": 0.18263302132104595,
+        "J_est": 1.0,
+        "tstar_est": 11,
+        "persistent_est": true,
+        "V_est": -1,
+        "peak_stage": 11,
+        "dtot_final": 1.8200812937416355,
+        "dtot_peak": 1.8200812937416355
+      }
+    },
+    {
+      "truth": {
+        "source": "kappa_pair",
+        "shape": "punctuated",
+        "stability": "transient",
+        "value": 1,
+        "tstar_true": 11
+      },
+      "estimate": {
+        "source_est": "C_pair",
+        "M_est": 0.18263302132104595,
+        "J_est": 1.0,
+        "tstar_est": 11,
+        "persistent_est": false,
+        "V_est": 1,
+        "peak_stage": 11,
+        "dtot_final": 0.0,
+        "dtot_peak": 1.8200812937416355
+      }
+    },
+    {
+      "truth": {
+        "source": "kappa_pair",
+        "shape": "punctuated",
+        "stability": "transient",
+        "value": 0,
+        "tstar_true": 11
+      },
+      "estimate": {
+        "source_est": "C_pair",
+        "M_est": 0.18263302132104595,
+        "J_est": 1.0,
+        "tstar_est": 11,
+        "persistent_est": false,
+        "V_est": 0,
+        "peak_stage": 11,
+        "dtot_final": 0.0,
+        "dtot_peak": 1.8200812937416355
+      }
+    },
+    {
+      "truth": {
+        "source": "kappa_pair",
+        "shape": "punctuated",
+        "stability": "transient",
+        "value": -1,
+        "tstar_true": 11
+      },
+      "estimate": {
+        "source_est": "C_pair",
+        "M_est": 0.18263302132104595,
+        "J_est": 1.0,
+        "tstar_est": 11,
+        "persistent_est": false,
+        "V_est": -1,
+        "peak_stage": 11,
+        "dtot_final": 0.0,
+        "dtot_peak": 1.8200812937416355
+      }
+    },
+    {
+      "truth": {
+        "source": "gamma_high",
+        "shape": "gradual",
+        "stability": "persistent",
+        "value": 1,
+        "tstar_true": null
+      },
+      "estimate": {
+        "source_est": "C_high",
+        "M_est": 0.04992923031816546,
+        "J_est": 0.10157526614906266,
+        "tstar_est": 18,
+        "persistent_est": true,
+        "V_est": 1,
+        "peak_stage": 18,
+        "dtot_final": 0.49758393885004715,
+        "dtot_peak": 0.49758393885004715
+      }
+    },
+    {
+      "truth": {
+        "source": "gamma_high",
+        "shape": "gradual",
+        "stability": "persistent",
+        "value": 0,
+        "tstar_true": null
+      },
+      "estimate": {
+        "source_est": "C_high",
+        "M_est": 0.04992923031816546,
+        "J_est": 0.10157526614906266,
+        "tstar_est": 18,
+        "persistent_est": true,
+        "V_est": 0,
+        "peak_stage": 18,
+        "dtot_final": 0.49758393885004715,
+        "dtot_peak": 0.49758393885004715
+      }
+    },
+    {
+      "truth": {
+        "source": "gamma_high",
+        "shape": "gradual",
+        "stability": "persistent",
+        "value": -1,
+        "tstar_true": null
+      },
+      "estimate": {
+        "source_est": "C_high",
+        "M_est": 0.04992923031816546,
+        "J_est": 0.10157526614906266,
+        "tstar_est": 18,
+        "persistent_est": true,
+        "V_est": -1,
+        "peak_stage": 18,
+        "dtot_final": 0.49758393885004715,
+        "dtot_peak": 0.49758393885004715
+      }
+    },
+    {
+      "truth": {
+        "source": "gamma_high",
+        "shape": "gradual",
+        "stability": "transient",
+        "value": 1,
+        "tstar_true": null
+      },
+      "estimate": {
+        "source_est": "C_high",
+        "M_est": 0.04992923031816546,
+        "J_est": 0.10157526614906266,
+        "tstar_est": 18,
+        "persistent_est": false,
+        "V_est": 1,
+        "peak_stage": 18,
+        "dtot_final": 0.0,
+        "dtot_peak": 0.49758393885004715
+      }
+    },
+    {
+      "truth": {
+        "source": "gamma_high",
+        "shape": "gradual",
+        "stability": "transient",
+        "value": 0,
+        "tstar_true": null
+      },
+      "estimate": {
+        "source_est": "C_high",
+        "M_est": 0.04992923031816546,
+        "J_est": 0.10157526614906266,
+        "tstar_est": 18,
+        "persistent_est": false,
+        "V_est": 0,
+        "peak_stage": 18,
+        "dtot_final": 0.0,
+        "dtot_peak": 0.49758393885004715
+      }
+    },
+    {
+      "truth": {
+        "source": "gamma_high",
+        "shape": "gradual",
+        "stability": "transient",
+        "value": -1,
+        "tstar_true": null
+      },
+      "estimate": {
+        "source_est": "C_high",
+        "M_est": 0.04992923031816546,
+        "J_est": 0.10157526614906266,
+        "tstar_est": 18,
+        "persistent_est": false,
+        "V_est": -1,
+        "peak_stage": 18,
+        "dtot_final": 0.0,
+        "dtot_peak": 0.49758393885004715
+      }
+    },
+    {
+      "truth": {
+        "source": "gamma_high",
+        "shape": "sigmoid",
+        "stability": "persistent",
+        "value": 1,
+        "tstar_true": null
+      },
+      "estimate": {
+        "source_est": "C_high",
+        "M_est": 0.04992923031816546,
+        "J_est": 0.1480382932293219,
+        "tstar_est": 11,
+        "persistent_est": true,
+        "V_est": 1,
+        "peak_stage": 18,
+        "dtot_final": 0.49758393885004715,
+        "dtot_peak": 0.49758393885004715
+      }
+    },
+    {
+      "truth": {
+        "source": "gamma_high",
+        "shape": "sigmoid",
+        "stability": "persistent",
+        "value": 0,
+        "tstar_true": null
+      },
+      "estimate": {
+        "source_est": "C_high",
+        "M_est": 0.04992923031816546,
+        "J_est": 0.1480382932293219,
+        "tstar_est": 11,
+        "persistent_est": true,
+        "V_est": 0,
+        "peak_stage": 18,
+        "dtot_final": 0.49758393885004715,
+        "dtot_peak": 0.49758393885004715
+      }
+    },
+    {
+      "truth": {
+        "source": "gamma_high",
+        "shape": "sigmoid",
+        "stability": "persistent",
+        "value": -1,
+        "tstar_true": null
+      },
+      "estimate": {
+        "source_est": "C_high",
+        "M_est": 0.04992923031816546,
+        "J_est": 0.1480382932293219,
+        "tstar_est": 11,
+        "persistent_est": true,
+        "V_est": -1,
+        "peak_stage": 18,
+        "dtot_final": 0.49758393885004715,
+        "dtot_peak": 0.49758393885004715
+      }
+    },
+    {
+      "truth": {
+        "source": "gamma_high",
+        "shape": "sigmoid",
+        "stability": "transient",
+        "value": 1,
+        "tstar_true": null
+      },
+      "estimate": {
+        "source_est": "C_high",
+        "M_est": 0.04992923031816546,
+        "J_est": 0.1480382932293219,
+        "tstar_est": 11,
+        "persistent_est": false,
+        "V_est": 1,
+        "peak_stage": 18,
+        "dtot_final": 0.0,
+        "dtot_peak": 0.49758393885004715
+      }
+    },
+    {
+      "truth": {
+        "source": "gamma_high",
+        "shape": "sigmoid",
+        "stability": "transient",
+        "value": 0,
+        "tstar_true": null
+      },
+      "estimate": {
+        "source_est": "C_high",
+        "M_est": 0.04992923031816546,
+        "J_est": 0.1480382932293219,
+        "tstar_est": 11,
+        "persistent_est": false,
+        "V_est": 0,
+        "peak_stage": 18,
+        "dtot_final": 0.0,
+        "dtot_peak": 0.49758393885004715
+      }
+    },
+    {
+      "truth": {
+        "source": "gamma_high",
+        "shape": "sigmoid",
+        "stability": "transient",
+        "value": -1,
+        "tstar_true": null
+      },
+      "estimate": {
+        "source_est": "C_high",
+        "M_est": 0.04992923031816546,
+        "J_est": 0.1480382932293219,
+        "tstar_est": 11,
+        "persistent_est": false,
+        "V_est": -1,
+        "peak_stage": 18,
+        "dtot_final": 0.0,
+        "dtot_peak": 0.49758393885004715
+      }
+    },
+    {
+      "truth": {
+        "source": "gamma_high",
+        "shape": "punctuated",
+        "stability": "persistent",
+        "value": 1,
+        "tstar_true": 11
+      },
+      "estimate": {
+        "source_est": "C_high",
+        "M_est": 0.04992923031816546,
+        "J_est": 1.0,
+        "tstar_est": 11,
+        "persistent_est": true,
+        "V_est": 1,
+        "peak_stage": 11,
+        "dtot_final": 0.49758393885004715,
+        "dtot_peak": 0.49758393885004715
+      }
+    },
+    {
+      "truth": {
+        "source": "gamma_high",
+        "shape": "punctuated",
+        "stability": "persistent",
+        "value": 0,
+        "tstar_true": 11
+      },
+      "estimate": {
+        "source_est": "C_high",
+        "M_est": 0.04992923031816546,
+        "J_est": 1.0,
+        "tstar_est": 11,
+        "persistent_est": true,
+        "V_est": 0,
+        "peak_stage": 11,
+        "dtot_final": 0.49758393885004715,
+        "dtot_peak": 0.49758393885004715
+      }
+    },
+    {
+      "truth": {
+        "source": "gamma_high",
+        "shape": "punctuated",
+        "stability": "persistent",
+        "value": -1,
+        "tstar_true": 11
+      },
+      "estimate": {
+        "source_est": "C_high",
+        "M_est": 0.04992923031816546,
+        "J_est": 1.0,
+        "tstar_est": 11,
+        "persistent_est": true,
+        "V_est": -1,
+        "peak_stage": 11,
+        "dtot_final": 0.49758393885004715,
+        "dtot_peak": 0.49758393885004715
+      }
+    },
+    {
+      "truth": {
+        "source": "gamma_high",
+        "shape": "punctuated",
+        "stability": "transient",
+        "value": 1,
+        "tstar_true": 11
+      },
+      "estimate": {
+        "source_est": "C_high",
+        "M_est": 0.04992923031816546,
+        "J_est": 1.0,
+        "tstar_est": 11,
+        "persistent_est": false,
+        "V_est": 1,
+        "peak_stage": 11,
+        "dtot_final": 0.0,
+        "dtot_peak": 0.49758393885004715
+      }
+    },
+    {
+      "truth": {
+        "source": "gamma_high",
+        "shape": "punctuated",
+        "stability": "transient",
+        "value": 0,
+        "tstar_true": 11
+      },
+      "estimate": {
+        "source_est": "C_high",
+        "M_est": 0.04992923031816546,
+        "J_est": 1.0,
+        "tstar_est": 11,
+        "persistent_est": false,
+        "V_est": 0,
+        "peak_stage": 11,
+        "dtot_final": 0.0,
+        "dtot_peak": 0.49758393885004715
+      }
+    },
+    {
+      "truth": {
+        "source": "gamma_high",
+        "shape": "punctuated",
+        "stability": "transient",
+        "value": -1,
+        "tstar_true": 11
+      },
+      "estimate": {
+        "source_est": "C_high",
+        "M_est": 0.04992923031816546,
+        "J_est": 1.0,
+        "tstar_est": 11,
+        "persistent_est": false,
+        "V_est": -1,
+        "peak_stage": 11,
+        "dtot_final": 0.0,
+        "dtot_peak": 0.49758393885004715
+      }
+    }
+  ]
+}

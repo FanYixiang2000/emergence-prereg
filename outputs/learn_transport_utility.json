@@ -1,0 +1,192 @@
+{
+  "status": "LEARN-TRANSPORT-UTILITY learned controllability pilot; preregistered",
+  "config": {
+    "seeds": 5,
+    "updates": 800,
+    "taus": [
+      0,
+      5,
+      10,
+      15,
+      20
+    ],
+    "eval_batch": 2048
+  },
+  "seeds": {
+    "0": {
+      "final_success": 1.0,
+      "final_entropy0": 0.01948,
+      "final_side_mean": -1.0,
+      "per_tau": {
+        "0": {
+          "mean_entropy": 0.01948,
+          "switch_rate": 0.0,
+          "success": 1.0
+        },
+        "5": {
+          "mean_entropy": 0.01778,
+          "switch_rate": 0.0,
+          "success": 1.0
+        },
+        "10": {
+          "mean_entropy": 0.01886,
+          "switch_rate": 0.0,
+          "success": 1.0
+        },
+        "15": {
+          "mean_entropy": 0.02304,
+          "switch_rate": 0.0,
+          "success": 1.0
+        },
+        "20": {
+          "mean_entropy": 0.02295,
+          "switch_rate": 0.0,
+          "success": 1.0
+        }
+      }
+    },
+    "1": {
+      "final_success": 1.0,
+      "final_entropy0": 0.1447,
+      "final_side_mean": 1.0,
+      "per_tau": {
+        "0": {
+          "mean_entropy": 0.1447,
+          "switch_rate": 0.0,
+          "success": 1.0
+        },
+        "5": {
+          "mean_entropy": 0.13626,
+          "switch_rate": 0.0,
+          "success": 1.0
+        },
+        "10": {
+          "mean_entropy": 0.11302,
+          "switch_rate": 0.0,
+          "success": 1.0
+        },
+        "15": {
+          "mean_entropy": 0.1049,
+          "switch_rate": 0.0,
+          "success": 1.0
+        },
+        "20": {
+          "mean_entropy": 0.10602,
+          "switch_rate": 0.0,
+          "success": 1.0
+        }
+      }
+    },
+    "2": {
+      "final_success": 1.0,
+      "final_entropy0": 0.30311,
+      "final_side_mean": -1.0,
+      "per_tau": {
+        "0": {
+          "mean_entropy": 0.30311,
+          "switch_rate": 0.0,
+          "success": 1.0
+        },
+        "5": {
+          "mean_entropy": 0.28069,
+          "switch_rate": 0.0,
+          "success": 1.0
+        },
+        "10": {
+          "mean_entropy": 0.27874,
+          "switch_rate": 0.0,
+          "success": 1.0
+        },
+        "15": {
+          "mean_entropy": 0.28739,
+          "switch_rate": 0.0,
+          "success": 1.0
+        },
+        "20": {
+          "mean_entropy": 0.28766,
+          "switch_rate": 0.0,
+          "success": 1.0
+        }
+      }
+    },
+    "3": {
+      "final_success": 1.0,
+      "final_entropy0": 0.55666,
+      "final_side_mean": 1.0,
+      "per_tau": {
+        "0": {
+          "mean_entropy": 0.55666,
+          "switch_rate": 0.0,
+          "success": 1.0
+        },
+        "5": {
+          "mean_entropy": 0.48041,
+          "switch_rate": 0.0,
+          "success": 1.0
+        },
+        "10": {
+          "mean_entropy": 0.38268,
+          "switch_rate": 0.0,
+          "success": 1.0
+        },
+        "15": {
+          "mean_entropy": 0.32583,
+          "switch_rate": 0.0,
+          "success": 1.0
+        },
+        "20": {
+          "mean_entropy": 0.32504,
+          "switch_rate": 0.0,
+          "success": 1.0
+        }
+      }
+    },
+    "4": {
+      "final_success": 1.0,
+      "final_entropy0": 0.21416,
+      "final_side_mean": 1.0,
+      "per_tau": {
+        "0": {
+          "mean_entropy": 0.21416,
+          "switch_rate": 0.0,
+          "success": 1.0
+        },
+        "5": {
+          "mean_entropy": 0.2249,
+          "switch_rate": 0.0,
+          "success": 1.0
+        },
+        "10": {
+          "mean_entropy": 0.24293,
+          "switch_rate": 0.0,
+          "success": 1.0
+        },
+        "15": {
+          "mean_entropy": 0.26432,
+          "switch_rate": 0.0,
+          "success": 1.0
+        },
+        "20": {
+          "mean_entropy": 0.26714,
+          "switch_rate": 0.0,
+          "success": 1.0
+        }
+      }
+    }
+  },
+  "registered_outcomes": {
+    "LTU1_learnability": true,
+    "LTU2_openness_utility": false,
+    "LTU3_timing_utility": false,
+    "LTU4_all_locked_boundary": true,
+    "n_learned": 5,
+    "pooled_entropy_switch_rank": 0.0,
+    "mean_switch_by_tau": {
+      "0": 0.0,
+      "5": 0.0,
+      "10": 0.0,
+      "15": 0.0,
+      "20": 0.0
+    }
+  }
+}

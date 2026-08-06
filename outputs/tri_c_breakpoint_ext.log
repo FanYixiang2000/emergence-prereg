@@ -1,0 +1,21 @@
+seed 96401 trained; final O=0.6812 r3=0.995
+seed 96401: dBIC=14.86 t*=1550 onset=False r3_cross=1000 lead=False
+seed 96402 trained; final O=0.6951 r3=0.989
+seed 96402: dBIC=58.578 t*=550 onset=True r3_cross=1175 lead=True
+seed 96403 trained; final O=0.6842 r3=0.994
+seed 96403: dBIC=73.079 t*=600 onset=True r3_cross=1200 lead=True
+seed 96404 trained; final O=0.6876 r3=0.992
+seed 96404: dBIC=65.61 t*=600 onset=True r3_cross=1200 lead=True
+seed 96405 trained; final O=0.6788 r3=0.996
+seed 96405: dBIC=19.799 t*=425 onset=True r3_cross=1050 lead=True
+{
+  "TCE1_onset_4of5": true,
+  "TCE2_collapse_leads": true,
+  "passing_seeds": [
+    96402,
+    96403,
+    96404,
+    96405
+  ]
+}
+Wrote /home/Yixiang/MPARL/GOGOGO/outputs/tri_c_breakpoint_ext.json

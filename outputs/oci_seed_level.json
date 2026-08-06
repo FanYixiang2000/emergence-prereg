@@ -1,0 +1,43 @@
+{
+  "status": "OC-RING-INT seed-level reanalysis; POST-HOC (recorded after the preregistered run-level outcome); frozen endpoint definitions; no new runs",
+  "n_seeds": 8,
+  "moved": {
+    "open_seeds": 7,
+    "late_seeds": 1,
+    "early_seeds": 5,
+    "sign_flip_p": 0.015625,
+    "mcnemar_discordant": [
+      6,
+      0
+    ],
+    "mcnemar_p": 0.015625
+  },
+  "strict_flip": {
+    "open_seeds": 3,
+    "late_seeds": 0,
+    "sign_flip_p": 0.125,
+    "mcnemar_discordant": [
+      3,
+      0
+    ],
+    "mcnemar_p": 0.125,
+    "note": "not significant at seed level; descriptive only"
+  },
+  "run_level_counts": {
+    "early": {
+      "held": 8,
+      "flip": 2,
+      "uncommitted": 6
+    },
+    "open": {
+      "held": 8,
+      "flip": 3,
+      "uncommitted": 5
+    },
+    "late": {
+      "held": 15,
+      "flip": 0,
+      "uncommitted": 1
+    }
+  }
+}

@@ -1,0 +1,286 @@
+{
+  "status": "construct calibration of the continuous profile; expectations declared in the docstring",
+  "part1_orthogonal_grid": {
+    "grid": {
+      "0.5|0.2": {
+        "M": 0.029046750002195643,
+        "A": 0.269236685829606
+      },
+      "0.5|0.4": {
+        "M": 0.11869800225035229,
+        "A": 0.2692366858296068
+      },
+      "0.5|0.6": {
+        "M": 0.27804466722765536,
+        "A": 0.269236685829607
+      },
+      "0.5|0.8": {
+        "M": 0.5309468459179463,
+        "A": 0.26923668582960625
+      },
+      "1.0|0.2": {
+        "M": 0.029049405424761587,
+        "A": 0.45412029572234835
+      },
+      "1.0|0.4": {
+        "M": 0.11870910026539966,
+        "A": 0.4541202957223477
+      },
+      "1.0|0.6": {
+        "M": 0.2780719038759455,
+        "A": 0.454120295722349
+      },
+      "1.0|0.8": {
+        "M": 0.5310044037972377,
+        "A": 0.45412029572234935
+      },
+      "2.0|0.2": {
+        "M": 0.029049405545331364,
+        "A": 0.6312709039041011
+      },
+      "2.0|0.4": {
+        "M": 0.1187091007693073,
+        "A": 0.6312709039041009
+      },
+      "2.0|0.6": {
+        "M": 0.27807190511263774,
+        "A": 0.6312709039040967
+      },
+      "2.0|0.8": {
+        "M": 0.5310044064107189,
+        "A": 0.6312709039040981
+      },
+      "4.0|0.2": {
+        "M": 0.029049405545331364,
+        "A": 0.7691790073709367
+      },
+      "4.0|0.4": {
+        "M": 0.1187091007693073,
+        "A": 0.7691790073709355
+      },
+      "4.0|0.6": {
+        "M": 0.27807190511263774,
+        "A": 0.7691790073709319
+      },
+      "4.0|0.8": {
+        "M": 0.5310044064107189,
+        "A": 0.7691790073709327
+      }
+    },
+    "M_responds_to_beta": [
+      {
+        "range": 0.5019000959157507,
+        "spearman": 1.0,
+        "responsive": true
+      },
+      {
+        "range": 0.501954998372476,
+        "spearman": 1.0,
+        "responsive": true
+      },
+      {
+        "range": 0.5019550008653875,
+        "spearman": 1.0,
+        "responsive": true
+      },
+      {
+        "range": 0.5019550008653875,
+        "spearman": 1.0,
+        "responsive": true
+      }
+    ],
+    "A_responds_to_alpha": [
+      {
+        "range": 0.49994232154133067,
+        "spearman": 1.0,
+        "responsive": true
+      },
+      {
+        "range": 0.49994232154132867,
+        "spearman": 1.0,
+        "responsive": true
+      },
+      {
+        "range": 0.4999423215413249,
+        "spearman": 1.0,
+        "responsive": true
+      },
+      {
+        "range": 0.49994232154132645,
+        "spearman": 1.0,
+        "responsive": true
+      }
+    ],
+    "M_flat_in_alpha": [
+      {
+        "range": 2.655543135721139e-06,
+        "practically_constant": true
+      },
+      {
+        "range": 1.1098518955005021e-05,
+        "practically_constant": true
+      },
+      {
+        "range": 2.7237884982378446e-05,
+        "practically_constant": true
+      },
+      {
+        "range": 5.756049277261255e-05,
+        "practically_constant": true
+      }
+    ],
+    "A_flat_in_beta": [
+      {
+        "range": 9.992007221626409e-16,
+        "practically_constant": true
+      },
+      {
+        "range": 1.6653345369377348e-15,
+        "practically_constant": true
+      },
+      {
+        "range": 4.440892098500626e-15,
+        "practically_constant": true
+      },
+      {
+        "range": 4.773959005888173e-15,
+        "practically_constant": true
+      }
+    ],
+    "rule": "responsive: range > 0.1 and Spearman >= 0.9; orthogonal: cross-axis range < 0.02 (rank statistics are undefined on practically constant series)",
+    "CAL1_original_spearman_rule": "FAIL, retained (rank of jitter on constant series)",
+    "CAL1_pass": true
+  },
+  "part2_dose_response": {
+    "seeds": {
+      "9101": {
+        "lambdas": [
+          0.0,
+          0.25,
+          0.5,
+          0.75,
+          1.0
+        ],
+        "M_vs_forced_trigger": [
+          0.0,
+          0.10220681824533458,
+          0.3578125318229176,
+          0.800594079286563,
+          1.0
+        ],
+        "value_degradation": [
+          0.0,
+          1.836666666666666,
+          5.256666666666667,
+          9.303333333333333,
+          11.0
+        ],
+        "spearman_M_lambda": 1.0,
+        "spearman_dU_lambda": 1.0
+      },
+      "9102": {
+        "lambdas": [
+          0.0,
+          0.25,
+          0.5,
+          0.75,
+          1.0
+        ],
+        "M_vs_forced_trigger": [
+          0.0,
+          0.09643129419996314,
+          0.3246217436600108,
+          0.73030787025203,
+          1.0
+        ],
+        "value_degradation": [
+          0.0,
+          1.7666666666666675,
+          5.136666666666667,
+          8.996666666666666,
+          11.0
+        ],
+        "spearman_M_lambda": 1.0,
+        "spearman_dU_lambda": 1.0
+      },
+      "9103": {
+        "lambdas": [
+          0.0,
+          0.25,
+          0.5,
+          0.75,
+          1.0
+        ],
+        "M_vs_forced_trigger": [
+          0.0,
+          0.016870446910108472,
+          0.1565134063627906,
+          0.5005156780337348,
+          1.0
+        ],
+        "value_degradation": [
+          0.0,
+          0.3533333333333335,
+          2.826666666666666,
+          7.226666666666667,
+          11.0
+        ],
+        "spearman_M_lambda": 1.0,
+        "spearman_dU_lambda": 1.0
+      },
+      "9104": {
+        "lambdas": [
+          0.0,
+          0.25,
+          0.5,
+          0.75,
+          1.0
+        ],
+        "M_vs_forced_trigger": [
+          0.0,
+          0.09451690313775216,
+          0.3549805396486696,
+          0.7819527692351691,
+          1.0
+        ],
+        "value_degradation": [
+          0.0,
+          1.7300000000000004,
+          5.273333333333333,
+          9.153333333333332,
+          11.0
+        ],
+        "spearman_M_lambda": 1.0,
+        "spearman_dU_lambda": 1.0
+      },
+      "9105": {
+        "lambdas": [
+          0.0,
+          0.25,
+          0.5,
+          0.75,
+          1.0
+        ],
+        "M_vs_forced_trigger": [
+          0.0,
+          0.05731038077849561,
+          0.24356584499804315,
+          0.6056948667230526,
+          1.0
+        ],
+        "value_degradation": [
+          0.0,
+          1.0099999999999998,
+          3.87,
+          7.87,
+          11.0
+        ],
+        "spearman_M_lambda": 1.0,
+        "spearman_dU_lambda": 1.0
+      }
+    },
+    "mean_spearman_M_lambda": 1.0,
+    "mean_spearman_dU_lambda": 1.0,
+    "CAL2_pass": true
+  }
+}

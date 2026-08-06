@@ -1,0 +1,200 @@
+{
+  "status": "BP regime-breakpoint model comparison on STORED collapse curves; registered with disclosure that curves were previously inspected (limited confirmatory value); thresholds frozen before run; fresh-seed confirmation registered as BP-FRESH future work",
+  "method": "one-segment vs continuous two-segment linear on log10(steps), BIC comparison, Delta-BIC >= 2",
+  "results": {
+    "s93001": {
+      "collapse_norm": {
+        "delta_bic": 1.817,
+        "breakpoint_step": 320000,
+        "verdict": false,
+        "rss_1seg": 0.00125,
+        "rss_2seg": 0.000592
+      },
+      "C_individual": {
+        "delta_bic": 3.477,
+        "breakpoint_step": 320000,
+        "verdict": true,
+        "rss_1seg": 0.041005,
+        "rss_2seg": 0.015787
+      },
+      "C_env": {
+        "delta_bic": 13.411,
+        "breakpoint_step": 640000,
+        "verdict": true,
+        "rss_1seg": 0.001181,
+        "rss_2seg": 0.000131
+      },
+      "C_relational": {
+        "delta_bic": -3.679,
+        "breakpoint_step": 640000,
+        "verdict": false,
+        "rss_1seg": 0.000136,
+        "rss_2seg": 0.000128
+      },
+      "_grid": [
+        40000,
+        80000,
+        160000,
+        320000,
+        640000,
+        1000000,
+        1500000,
+        2000000
+      ]
+    },
+    "s93002": {
+      "collapse_norm": {
+        "delta_bic": -1.593,
+        "breakpoint_step": 1500000,
+        "verdict": false,
+        "rss_1seg": 0.00204,
+        "rss_2seg": 0.001481
+      },
+      "C_individual": {
+        "delta_bic": -1.563,
+        "breakpoint_step": 1500000,
+        "verdict": false,
+        "rss_1seg": 0.051839,
+        "rss_2seg": 0.037474
+      },
+      "C_env": {
+        "delta_bic": -2.108,
+        "breakpoint_step": 640000,
+        "verdict": false,
+        "rss_1seg": 0.000432,
+        "rss_2seg": 0.000334
+      },
+      "C_relational": {
+        "delta_bic": 4.116,
+        "breakpoint_step": 160000,
+        "verdict": true,
+        "rss_1seg": 0.000538,
+        "rss_2seg": 0.000191
+      },
+      "_grid": [
+        40000,
+        80000,
+        160000,
+        320000,
+        640000,
+        1000000,
+        1500000,
+        2000000
+      ]
+    },
+    "s93003": {
+      "collapse_norm": {
+        "delta_bic": 6.684,
+        "breakpoint_step": 1500000,
+        "verdict": true,
+        "rss_1seg": 0.00716,
+        "rss_2seg": 0.001846
+      },
+      "C_individual": {
+        "delta_bic": 7.01,
+        "breakpoint_step": 1500000,
+        "verdict": true,
+        "rss_1seg": 0.183863,
+        "rss_2seg": 0.045516
+      },
+      "C_env": {
+        "delta_bic": -3.378,
+        "breakpoint_step": 320000,
+        "verdict": false,
+        "rss_1seg": 7.6e-05,
+        "rss_2seg": 6.9e-05
+      },
+      "C_relational": {
+        "delta_bic": -2.991,
+        "breakpoint_step": 1500000,
+        "verdict": false,
+        "rss_1seg": 0.000314,
+        "rss_2seg": 0.000271
+      },
+      "_grid": [
+        40000,
+        80000,
+        160000,
+        320000,
+        640000,
+        1000000,
+        1500000,
+        2000000
+      ]
+    },
+    "dense": {
+      "collapse_norm": {
+        "delta_bic": -3.634,
+        "breakpoint_step": 80000,
+        "verdict": false,
+        "rss_1seg": 0.005847,
+        "rss_2seg": 0.005199
+      },
+      "C_individual": {
+        "delta_bic": -3.211,
+        "breakpoint_step": 80000,
+        "verdict": false,
+        "rss_1seg": 0.14874,
+        "rss_2seg": 0.128324
+      },
+      "C_env": {
+        "delta_bic": 13.402,
+        "breakpoint_step": 640000,
+        "verdict": true,
+        "rss_1seg": 0.000974,
+        "rss_2seg": 0.000256
+      },
+      "C_relational": {
+        "delta_bic": -3.879,
+        "breakpoint_step": 820000,
+        "verdict": false,
+        "rss_1seg": 9.9e-05,
+        "rss_2seg": 9e-05
+      },
+      "_grid": [
+        40000,
+        80000,
+        120000,
+        160000,
+        240000,
+        320000,
+        480000,
+        640000,
+        820000,
+        1000000,
+        1250000,
+        1500000,
+        1750000,
+        2000000
+      ]
+    }
+  },
+  "thinning": {
+    "parity0": {
+      "delta_bic": 28.889,
+      "breakpoint_step": 820000,
+      "verdict": true,
+      "rss_1seg": 0.000558,
+      "rss_2seg": 5e-06,
+      "window_ok": true
+    },
+    "parity1": {
+      "delta_bic": 3.541,
+      "breakpoint_step": 640000,
+      "verdict": true,
+      "rss_1seg": 0.000301,
+      "rss_2seg": 0.000104,
+      "window_ok": true
+    }
+  },
+  "registered_outcomes": {
+    "BP1_seeds_env_breakpoint": false,
+    "BP2_dense_env_breakpoint": false,
+    "BP3_grid_persistence": true,
+    "BP1_by_seed": {
+      "s93001": true,
+      "s93002": false,
+      "s93003": false
+    }
+  }
+}

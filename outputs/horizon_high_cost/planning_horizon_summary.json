@@ -1,0 +1,9 @@
+{
+  "summary": {
+    "n_conditions": 5225.0,
+    "horizon_reversal_rate": 0.24574162679425837,
+    "h2_preserve_rate": 0.24574162679425837,
+    "mean_positive_option_value": 2.451246105919003,
+    "max_option_value": 9.35
+  }
+}

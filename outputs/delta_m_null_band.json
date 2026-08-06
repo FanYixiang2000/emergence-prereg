@@ -1,0 +1,31 @@
+{
+  "status": "Delta-M mechanism-null band; registered in V2_ALIGNMENT_PREREGISTRATION.md (NB); aggregation of stored outputs only, nothing rerun or modified",
+  "null_sources_M": {
+    "comparison_scripted_roles": 5.799999999999997,
+    "comparison_context_marginal": 0.0,
+    "smoke_scripted": 0.0,
+    "smoke_initial": 0.0
+  },
+  "null_band_M": [
+    0.0,
+    5.799999999999997
+  ],
+  "learned_M": {
+    "comparison_learned_2M": 14.8,
+    "comparison_bc_clone": 12.600000000000001,
+    "genesis_s93001_2M": 9.799999999999997,
+    "genesis_s93002_2M": -0.19999999999999973,
+    "genesis_s93003_2M": 16.2
+  },
+  "learned_above_band": {
+    "comparison_learned_2M": true,
+    "comparison_bc_clone": true,
+    "genesis_s93001_2M": true,
+    "genesis_s93002_2M": false,
+    "genesis_s93003_2M": true
+  },
+  "registered_outcomes": {
+    "NB1_learned_M_exceeds_null_band": false
+  },
+  "reading": "M is never reported alone: a scripted mechanism already yields M at the band's upper edge from desynchronization alone, so only M above the band plus a positive G certificate carries any endogenous-formation claim."
+}

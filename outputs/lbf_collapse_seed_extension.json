@@ -1,0 +1,3377 @@
+{
+  "conditions": {
+    "trained_seed101": {
+      "condition": "trained_seed101",
+      "n_episodes": 30,
+      "early_potential_bits": 1.1315990875397595,
+      "p_win_start": 0.45972222222222214,
+      "p_win_end": 0.6965277777777777,
+      "final_win_rate": 0.8,
+      "mean_commit_step": 2.433333333333333,
+      "episodes": [
+        {
+          "episode": 0,
+          "early_potential_bits": 0.5611749161301712,
+          "p_win_start": 0.0,
+          "p_win_end": 0.0,
+          "final_win": 0,
+          "final_basin": [
+            0
+          ],
+          "commit_step": 2,
+          "commit_collapse_bits": 0.07086484586858757,
+          "p_win_do_commit": 0.0,
+          "p_win_do_block": 0.0
+        },
+        {
+          "episode": 1,
+          "early_potential_bits": 1.1458563313367964,
+          "p_win_start": 0.5625,
+          "p_win_end": 0.9166666666666666,
+          "final_win": 1,
+          "final_basin": [
+            1,
+            0
+          ],
+          "commit_step": 3,
+          "commit_collapse_bits": 0.1065432536357635,
+          "p_win_do_commit": 0.08333333333333333,
+          "p_win_do_block": 0.0
+        },
+        {
+          "episode": 2,
+          "early_potential_bits": 1.384872349491417,
+          "p_win_start": 0.5833333333333334,
+          "p_win_end": 0.8541666666666666,
+          "final_win": 1,
+          "final_basin": [
+            1,
+            0
+          ],
+          "commit_step": 1,
+          "commit_collapse_bits": 0.48939343392709,
+          "p_win_do_commit": 0.7291666666666666,
+          "p_win_do_block": 0.0
+        },
+        {
+          "episode": 3,
+          "early_potential_bits": 1.1106358293428376,
+          "p_win_start": 0.6875,
+          "p_win_end": 0.8541666666666666,
+          "final_win": 1,
+          "final_basin": [
+            1,
+            0
+          ],
+          "commit_step": 2,
+          "commit_collapse_bits": 3.28989956813433,
+          "p_win_do_commit": 0.7083333333333334,
+          "p_win_do_block": 0.0
+        },
+        {
+          "episode": 4,
+          "early_potential_bits": 1.4433535685601278,
+          "p_win_start": 0.5625,
+          "p_win_end": 0.8958333333333334,
+          "final_win": 1,
+          "final_basin": [
+            1,
+            0
+          ],
+          "commit_step": 2,
+          "commit_collapse_bits": 0.7337929183083821,
+          "p_win_do_commit": 0.7708333333333334,
+          "p_win_do_block": 0.0
+        },
+        {
+          "episode": 5,
+          "early_potential_bits": 0.5976337007192533,
+          "p_win_start": 0.0,
+          "p_win_end": 0.0,
+          "final_win": 0,
+          "final_basin": [
+            0
+          ],
+          "commit_step": 3,
+          "commit_collapse_bits": 0.0030117344464025766,
+          "p_win_do_commit": 0.0,
+          "p_win_do_block": 0.0
+        },
+        {
+          "episode": 6,
+          "early_potential_bits": 1.3982542626545413,
+          "p_win_start": 0.5625,
+          "p_win_end": 0.9375,
+          "final_win": 1,
+          "final_basin": [
+            1,
+            0
+          ],
+          "commit_step": 1,
+          "commit_collapse_bits": 0.5182966950618292,
+          "p_win_do_commit": 0.1875,
+          "p_win_do_block": 0.0
+        },
+        {
+          "episode": 7,
+          "early_potential_bits": 1.3514348314459328,
+          "p_win_start": 0.6458333333333334,
+          "p_win_end": 0.875,
+          "final_win": 1,
+          "final_basin": [
+            1,
+            0
+          ],
+          "commit_step": 1,
+          "commit_collapse_bits": 1.4856968262323198,
+          "p_win_do_commit": 0.8125,
+          "p_win_do_block": 0.0
+        },
+        {
+          "episode": 8,
+          "early_potential_bits": 1.3704646652774322,
+          "p_win_start": 0.5625,
+          "p_win_end": 0.8958333333333334,
+          "final_win": 1,
+          "final_basin": [
+            1,
+            0
+          ],
+          "commit_step": 4,
+          "commit_collapse_bits": 0.26214431079451483,
+          "p_win_do_commit": 0.020833333333333332,
+          "p_win_do_block": 0.0
+        },
+        {
+          "episode": 9,
+          "early_potential_bits": 1.330051182198685,
+          "p_win_start": 0.625,
+          "p_win_end": 0.7708333333333334,
+          "final_win": 1,
+          "final_basin": [
+            1,
+            0
+          ],
+          "commit_step": 5,
+          "commit_collapse_bits": 0.3001724240328401,
+          "p_win_do_commit": 0.020833333333333332,
+          "p_win_do_block": 0.0
+        },
+        {
+          "episode": 10,
+          "early_potential_bits": 1.1978949839317699,
+          "p_win_start": 0.7291666666666666,
+          "p_win_end": 0.8541666666666666,
+          "final_win": 1,
+          "final_basin": [
+            1,
+            0
+          ],
+          "commit_step": 1,
+          "commit_collapse_bits": 1.0507485109284267,
+          "p_win_do_commit": 0.8125,
+          "p_win_do_block": 0.0
+        },
+        {
+          "episode": 11,
+          "early_potential_bits": 1.1727486867220416,
+          "p_win_start": 0.5208333333333334,
+          "p_win_end": 0.8958333333333334,
+          "final_win": 1,
+          "final_basin": [
+            1,
+            0
+          ],
+          "commit_step": 2,
+          "commit_collapse_bits": 2.0781402847453614,
+          "p_win_do_commit": 0.6666666666666666,
+          "p_win_do_block": 0.0
+        },
+        {
+          "episode": 12,
+          "early_potential_bits": 1.3994851007356506,
+          "p_win_start": 0.4375,
+          "p_win_end": 0.75,
+          "final_win": 1,
+          "final_basin": [
+            1,
+            0
+          ],
+          "commit_step": 3,
+          "commit_collapse_bits": 1.0695198896861575,
+          "p_win_do_commit": 0.7083333333333334,
+          "p_win_do_block": 0.0
+        },
+        {
+          "episode": 13,
+          "early_potential_bits": 1.1256237699356142,
+          "p_win_start": 0.7083333333333334,
+          "p_win_end": 0.9166666666666666,
+          "final_win": 1,
+          "final_basin": [
+            1,
+            0
+          ],
+          "commit_step": 1,
+          "commit_collapse_bits": 0.5564287528196886,
+          "p_win_do_commit": 0.875,
+          "p_win_do_block": 0.0
+        },
+        {
+          "episode": 14,
+          "early_potential_bits": 0.5569229260307369,
+          "p_win_start": 0.0,
+          "p_win_end": 0.0,
+          "final_win": 0,
+          "final_basin": [
+            0
+          ],
+          "commit_step": 1,
+          "commit_collapse_bits": 0.14759542839946949,
+          "p_win_do_commit": 0.0,
+          "p_win_do_block": 0.0
+        },
+        {
+          "episode": 15,
+          "early_potential_bits": 0.6234578119582993,
+          "p_win_start": 0.0,
+          "p_win_end": 0.0,
+          "final_win": 0,
+          "final_basin": [
+            0
+          ],
+          "commit_step": 1,
+          "commit_collapse_bits": 0.05559377915893675,
+          "p_win_do_commit": 0.0,
+          "p_win_do_block": 0.0
+        },
+        {
+          "episode": 16,
+          "early_potential_bits": 1.3553420293100353,
+          "p_win_start": 0.5625,
+          "p_win_end": 0.8333333333333334,
+          "final_win": 1,
+          "final_basin": [
+            1,
+            0
+          ],
+          "commit_step": 4,
+          "commit_collapse_bits": 0.49868333172792756,
+          "p_win_do_commit": 0.6041666666666666,
+          "p_win_do_block": 0.0
+        },
+        {
+          "episode": 17,
+          "early_potential_bits": 0.690132516833858,
+          "p_win_start": 0.0,
+          "p_win_end": 0.0,
+          "final_win": 0,
+          "final_basin": [
+            0
+          ],
+          "commit_step": 2,
+          "commit_collapse_bits": 0.25447898429186644,
+          "p_win_do_commit": 0.0,
+          "p_win_do_block": 0.0
+        },
+        {
+          "episode": 18,
+          "early_potential_bits": 1.2219584961756658,
+          "p_win_start": 0.4583333333333333,
+          "p_win_end": 0.9166666666666666,
+          "final_win": 1,
+          "final_basin": [
+            1,
+            0
+          ],
+          "commit_step": 4,
+          "commit_collapse_bits": 0.2712518716552971,
+          "p_win_do_commit": 0.0,
+          "p_win_do_block": 0.0
+        },
+        {
+          "episode": 19,
+          "early_potential_bits": 1.1763560359597822,
+          "p_win_start": 0.6666666666666666,
+          "p_win_end": 0.875,
+          "final_win": 1,
+          "final_basin": [
+            1,
+            0
+          ],
+          "commit_step": 4,
+          "commit_collapse_bits": 0.13092375193484648,
+          "p_win_do_commit": 0.020833333333333332,
+          "p_win_do_block": 0.0
+        },
+        {
+          "episode": 20,
+          "early_potential_bits": 1.2887503256793595,
+          "p_win_start": 0.6458333333333334,
+          "p_win_end": 0.9166666666666666,
+          "final_win": 1,
+          "final_basin": [
+            1,
+            0
+          ],
+          "commit_step": 1,
+          "commit_collapse_bits": 0.1408227471447484,
+          "p_win_do_commit": 0.7708333333333334,
+          "p_win_do_block": 0.0
+        },
+        {
+          "episode": 21,
+          "early_potential_bits": 1.348050877419113,
+          "p_win_start": 0.5,
+          "p_win_end": 0.8125,
+          "final_win": 1,
+          "final_basin": [
+            1,
+            0
+          ],
+          "commit_step": 4,
+          "commit_collapse_bits": 0.19164068218855612,
+          "p_win_do_commit": 0.020833333333333332,
+          "p_win_do_block": 0.0
+        },
+        {
+          "episode": 22,
+          "early_potential_bits": 1.1916129047720136,
+          "p_win_start": 0.6875,
+          "p_win_end": 0.8541666666666666,
+          "final_win": 1,
+          "final_basin": [
+            1,
+            0
+          ],
+          "commit_step": 3,
+          "commit_collapse_bits": 0.18416351690285165,
+          "p_win_do_commit": 0.6458333333333334,
+          "p_win_do_block": 0.0
+        },
+        {
+          "episode": 23,
+          "early_potential_bits": 0.8282602081507053,
+          "p_win_start": 0.4791666666666667,
+          "p_win_end": 0.875,
+          "final_win": 1,
+          "final_basin": [
+            1,
+            0
+          ],
+          "commit_step": 1,
+          "commit_collapse_bits": 0.4029946332981751,
+          "p_win_do_commit": 0.041666666666666664,
+          "p_win_do_block": 0.0
+        },
+        {
+          "episode": 24,
+          "early_potential_bits": 1.3184235803358113,
+          "p_win_start": 0.4791666666666667,
+          "p_win_end": 0.875,
+          "final_win": 1,
+          "final_basin": [
+            1,
+            0
+          ],
+          "commit_step": 3,
+          "commit_collapse_bits": 0.07999904135744594,
+          "p_win_do_commit": 0.75,
+          "p_win_do_block": 0.0
+        },
+        {
+          "episode": 25,
+          "early_potential_bits": 1.3339553859852813,
+          "p_win_start": 0.6041666666666666,
+          "p_win_end": 0.875,
+          "final_win": 1,
+          "final_basin": [
+            1,
+            0
+          ],
+          "commit_step": 4,
+          "commit_collapse_bits": 0.42340234478675765,
+          "p_win_do_commit": 0.0625,
+          "p_win_do_block": 0.0
+        },
+        {
+          "episode": 26,
+          "early_potential_bits": 1.2293204155630468,
+          "p_win_start": 0.4791666666666667,
+          "p_win_end": 0.8541666666666666,
+          "final_win": 1,
+          "final_basin": [
+            1,
+            0
+          ],
+          "commit_step": 1,
+          "commit_collapse_bits": 0.16860851194423077,
+          "p_win_do_commit": 0.8333333333333334,
+          "p_win_do_block": 0.0
+        },
+        {
+          "episode": 27,
+          "early_potential_bits": 0.45931638215660664,
+          "p_win_start": 0.0,
+          "p_win_end": 0.0,
+          "final_win": 0,
+          "final_basin": [
+            0
+          ],
+          "commit_step": 2,
+          "commit_collapse_bits": 0.0035756176216403188,
+          "p_win_do_commit": 0.0,
+          "p_win_do_block": 0.0
+        },
+        {
+          "episode": 28,
+          "early_potential_bits": 1.2714824893315166,
+          "p_win_start": 0.5,
+          "p_win_end": 0.8958333333333334,
+          "final_win": 1,
+          "final_basin": [
+            1,
+            0
+          ],
+          "commit_step": 3,
+          "commit_collapse_bits": 0.33254070143549863,
+          "p_win_do_commit": 0.0,
+          "p_win_do_block": 0.0
+        },
+        {
+          "episode": 29,
+          "early_potential_bits": 1.465146062048681,
+          "p_win_start": 0.5416666666666666,
+          "p_win_end": 0.8958333333333334,
+          "final_win": 1,
+          "final_basin": [
+            1,
+            0
+          ],
+          "commit_step": 4,
+          "commit_collapse_bits": 0.5306000693876488,
+          "p_win_do_commit": 0.8125,
+          "p_win_do_block": 0.0
+        }
+      ],
+      "do_gap_median": 0.13541666666666666,
+      "do_gap_mean": 0.3652777777777778,
+      "do_sign_wins": 22,
+      "do_sign_losses": 0,
+      "do_sign_p": 4.76837158203125e-07
+    },
+    "trained_seed202": {
+      "condition": "trained_seed202",
+      "n_episodes": 30,
+      "early_potential_bits": 1.0231098861737014,
+      "p_win_start": 0.5055555555555555,
+      "p_win_end": 0.7166666666666668,
+      "final_win_rate": 0.7666666666666667,
+      "mean_commit_step": 4.066666666666666,
+      "episodes": [
+        {
+          "episode": 0,
+          "early_potential_bits": 1.3055193395000964,
+          "p_win_start": 0.75,
+          "p_win_end": 0.8958333333333334,
+          "final_win": 1,
+          "final_basin": [
+            0,
+            1
+          ],
+          "commit_step": 4,
+          "commit_collapse_bits": 0.9709788145417272,
+          "p_win_do_commit": 0.7916666666666666,
+          "p_win_do_block": 0.0
+        },
+        {
+          "episode": 1,
+          "early_potential_bits": 0.4024211954454719,
+          "p_win_start": 0.0,
+          "p_win_end": 0.0,
+          "final_win": 0,
+          "final_basin": [
+            0
+          ],
+          "commit_step": 1,
+          "commit_collapse_bits": 0.08328134321173526,
+          "p_win_do_commit": 0.0,
+          "p_win_do_block": 0.0
+        },
+        {
+          "episode": 2,
+          "early_potential_bits": 1.2267808316261126,
+          "p_win_start": 0.5833333333333334,
+          "p_win_end": 0.875,
+          "final_win": 1,
+          "final_basin": [
+            0,
+            1
+          ],
+          "commit_step": 2,
+          "commit_collapse_bits": 0.10629558430130745,
+          "p_win_do_commit": 0.7916666666666666,
+          "p_win_do_block": 0.0
+        },
+        {
+          "episode": 3,
+          "early_potential_bits": 1.3959166950214108,
+          "p_win_start": 0.5625,
+          "p_win_end": 0.8958333333333334,
+          "final_win": 1,
+          "final_basin": [
+            0,
+            1
+          ],
+          "commit_step": 5,
+          "commit_collapse_bits": 0.1982575489663856,
+          "p_win_do_commit": 0.041666666666666664,
+          "p_win_do_block": 0.0
+        },
+        {
+          "episode": 4,
+          "early_potential_bits": 0.6332771844755128,
+          "p_win_start": 0.7916666666666666,
+          "p_win_end": 0.9375,
+          "final_win": 1,
+          "final_basin": [
+            0,
+            1
+          ],
+          "commit_step": 7,
+          "commit_collapse_bits": 0.08328134321173526,
+          "p_win_do_commit": 1.0,
+          "p_win_do_block": 0.0
+        },
+        {
+          "episode": 5,
+          "early_potential_bits": 0.5102923104883215,
+          "p_win_start": 0.0,
+          "p_win_end": 0.0,
+          "final_win": 0,
+          "final_basin": [
+            0
+          ],
+          "commit_step": 1,
+          "commit_collapse_bits": 0.037906284296434556,
+          "p_win_do_commit": 0.0,
+          "p_win_do_block": 0.0
+        },
+        {
+          "episode": 6,
+          "early_potential_bits": 1.3391127581157163,
+          "p_win_start": 0.4583333333333333,
+          "p_win_end": 1.0,
+          "final_win": 1,
+          "final_basin": [
+            0,
+            1
+          ],
+          "commit_step": 2,
+          "commit_collapse_bits": 0.23280537656214426,
+          "p_win_do_commit": 0.8333333333333334,
+          "p_win_do_block": 0.0
+        },
+        {
+          "episode": 7,
+          "early_potential_bits": 0.7475113866544203,
+          "p_win_start": 0.75,
+          "p_win_end": 0.0,
+          "final_win": 0,
+          "final_basin": [
+            0
+          ],
+          "commit_step": 38,
+          "commit_collapse_bits": 0.13349668309776766,
+          "p_win_do_commit": 0.5208333333333334,
+          "p_win_do_block": 0.0
+        },
+        {
+          "episode": 8,
+          "early_potential_bits": 1.2111691377015237,
+          "p_win_start": 0.6875,
+          "p_win_end": 0.9166666666666666,
+          "final_win": 1,
+          "final_basin": [
+            0,
+            1
+          ],
+          "commit_step": 5,
+          "commit_collapse_bits": 0.18101691721196173,
+          "p_win_do_commit": 0.041666666666666664,
+          "p_win_do_block": 0.0
+        },
+        {
+          "episode": 9,
+          "early_potential_bits": 1.1293368270745383,
+          "p_win_start": 0.75,
+          "p_win_end": 0.9166666666666666,
+          "final_win": 1,
+          "final_basin": [
+            0,
+            1
+          ],
+          "commit_step": 5,
+          "commit_collapse_bits": 0.16187947379901918,
+          "p_win_do_commit": 0.041666666666666664,
+          "p_win_do_block": 0.0
+        },
+        {
+          "episode": 10,
+          "early_potential_bits": 1.500520146439909,
+          "p_win_start": 0.5416666666666666,
+          "p_win_end": 0.8958333333333334,
+          "final_win": 1,
+          "final_basin": [
+            0,
+            1
+          ],
+          "commit_step": 10,
+          "commit_collapse_bits": 1.58528188482414,
+          "p_win_do_commit": 0.875,
+          "p_win_do_block": 0.0
+        },
+        {
+          "episode": 11,
+          "early_potential_bits": 1.3002660032041955,
+          "p_win_start": 0.6041666666666666,
+          "p_win_end": 0.9166666666666666,
+          "final_win": 1,
+          "final_basin": [
+            0,
+            1
+          ],
+          "commit_step": 1,
+          "commit_collapse_bits": 0.4992622620884514,
+          "p_win_do_commit": 0.7916666666666666,
+          "p_win_do_block": 0.0
+        },
+        {
+          "episode": 12,
+          "early_potential_bits": 1.0409837566087796,
+          "p_win_start": 0.6666666666666666,
+          "p_win_end": 0.9791666666666666,
+          "final_win": 1,
+          "final_basin": [
+            0,
+            1
+          ],
+          "commit_step": 1,
+          "commit_collapse_bits": 1.5312944883801594,
+          "p_win_do_commit": 0.8541666666666666,
+          "p_win_do_block": 0.0
+        },
+        {
+          "episode": 13,
+          "early_potential_bits": 0.40915821183767953,
+          "p_win_start": 0.0,
+          "p_win_end": 0.0,
+          "final_win": 0,
+          "final_basin": [
+            0
+          ],
+          "commit_step": 1,
+          "commit_collapse_bits": 0.1344453528950825,
+          "p_win_do_commit": 0.0,
+          "p_win_do_block": 0.0
+        },
+        {
+          "episode": 14,
+          "early_potential_bits": 0.5602315409009039,
+          "p_win_start": 0.0,
+          "p_win_end": 0.0,
+          "final_win": 0,
+          "final_basin": [
+            0
+          ],
+          "commit_step": 1,
+          "commit_collapse_bits": 0.01209927108892201,
+          "p_win_do_commit": 0.0,
+          "p_win_do_block": 0.0
+        },
+        {
+          "episode": 15,
+          "early_potential_bits": 1.353635586582145,
+          "p_win_start": 0.6041666666666666,
+          "p_win_end": 0.9583333333333334,
+          "final_win": 1,
+          "final_basin": [
+            0,
+            1
+          ],
+          "commit_step": 1,
+          "commit_collapse_bits": 0.9587863072679481,
+          "p_win_do_commit": 0.8125,
+          "p_win_do_block": 0.0
+        },
+        {
+          "episode": 16,
+          "early_potential_bits": 1.086788535169198,
+          "p_win_start": 0.6666666666666666,
+          "p_win_end": 0.9791666666666666,
+          "final_win": 1,
+          "final_basin": [
+            0,
+            1
+          ],
+          "commit_step": 1,
+          "commit_collapse_bits": 0.5322762018883928,
+          "p_win_do_commit": 0.875,
+          "p_win_do_block": 0.0
+        },
+        {
+          "episode": 17,
+          "early_potential_bits": 1.1754679263789456,
+          "p_win_start": 0.3958333333333333,
+          "p_win_end": 0.9166666666666666,
+          "final_win": 1,
+          "final_basin": [
+            0,
+            1
+          ],
+          "commit_step": 3,
+          "commit_collapse_bits": 0.48682098453397976,
+          "p_win_do_commit": 0.875,
+          "p_win_do_block": 0.0
+        },
+        {
+          "episode": 18,
+          "early_potential_bits": 0.8524843476606484,
+          "p_win_start": 0.7708333333333334,
+          "p_win_end": 0.9791666666666666,
+          "final_win": 1,
+          "final_basin": [
+            0,
+            1
+          ],
+          "commit_step": 2,
+          "commit_collapse_bits": 0.2794423410302097,
+          "p_win_do_commit": 0.041666666666666664,
+          "p_win_do_block": 0.0
+        },
+        {
+          "episode": 19,
+          "early_potential_bits": 1.0305020278977002,
+          "p_win_start": 0.7916666666666666,
+          "p_win_end": 0.9375,
+          "final_win": 1,
+          "final_basin": [
+            0,
+            1
+          ],
+          "commit_step": 3,
+          "commit_collapse_bits": 0.33611227830499646,
+          "p_win_do_commit": 0.0625,
+          "p_win_do_block": 0.0
+        },
+        {
+          "episode": 20,
+          "early_potential_bits": 1.082597556265003,
+          "p_win_start": 0.6041666666666666,
+          "p_win_end": 0.9166666666666666,
+          "final_win": 1,
+          "final_basin": [
+            0,
+            1
+          ],
+          "commit_step": 3,
+          "commit_collapse_bits": 0.23874773167840638,
+          "p_win_do_commit": 0.041666666666666664,
+          "p_win_do_block": 0.0
+        },
+        {
+          "episode": 21,
+          "early_potential_bits": 1.1300543186564211,
+          "p_win_start": 0.625,
+          "p_win_end": 0.9791666666666666,
+          "final_win": 1,
+          "final_basin": [
+            0,
+            1
+          ],
+          "commit_step": 2,
+          "commit_collapse_bits": 0.11974502673710188,
+          "p_win_do_commit": 0.8125,
+          "p_win_do_block": 0.0
+        },
+        {
+          "episode": 22,
+          "early_potential_bits": 0.733372204518347,
+          "p_win_start": 0.7291666666666666,
+          "p_win_end": 0.9583333333333334,
+          "final_win": 1,
+          "final_basin": [
+            0,
+            1
+          ],
+          "commit_step": 4,
+          "commit_collapse_bits": 0.9958407442523826,
+          "p_win_do_commit": 1.0,
+          "p_win_do_block": 0.0
+        },
+        {
+          "episode": 23,
+          "early_potential_bits": 1.6717054765698476,
+          "p_win_start": 0.3958333333333333,
+          "p_win_end": 0.8958333333333334,
+          "final_win": 1,
+          "final_basin": [
+            0,
+            1
+          ],
+          "commit_step": 5,
+          "commit_collapse_bits": 0.3044046978702309,
+          "p_win_do_commit": 0.0,
+          "p_win_do_block": 0.0
+        },
+        {
+          "episode": 24,
+          "early_potential_bits": 1.4016283731150876,
+          "p_win_start": 0.6875,
+          "p_win_end": 0.9166666666666666,
+          "final_win": 1,
+          "final_basin": [
+            0,
+            1
+          ],
+          "commit_step": 1,
+          "commit_collapse_bits": 0.6141287683586675,
+          "p_win_do_commit": 0.75,
+          "p_win_do_block": 0.0
+        },
+        {
+          "episode": 25,
+          "early_potential_bits": 0.4251709613719583,
+          "p_win_start": 0.0,
+          "p_win_end": 0.0,
+          "final_win": 0,
+          "final_basin": [
+            0
+          ],
+          "commit_step": 1,
+          "commit_collapse_bits": 0.059735907686007755,
+          "p_win_do_commit": 0.0,
+          "p_win_do_block": 0.0
+        },
+        {
+          "episode": 26,
+          "early_potential_bits": 1.3026091646611886,
+          "p_win_start": 0.4375,
+          "p_win_end": 1.0,
+          "final_win": 1,
+          "final_basin": [
+            0,
+            1
+          ],
+          "commit_step": 2,
+          "commit_collapse_bits": 0.2255135670749412,
+          "p_win_do_commit": 0.8958333333333334,
+          "p_win_do_block": 0.0
+        },
+        {
+          "episode": 27,
+          "early_potential_bits": 1.2367075657192486,
+          "p_win_start": 0.7083333333333334,
+          "p_win_end": 0.9166666666666666,
+          "final_win": 1,
+          "final_basin": [
+            0,
+            1
+          ],
+          "commit_step": 6,
+          "commit_collapse_bits": 1.0846638415628849,
+          "p_win_do_commit": 0.8958333333333334,
+          "p_win_do_block": 0.0
+        },
+        {
+          "episode": 28,
+          "early_potential_bits": 1.1663116221296652,
+          "p_win_start": 0.6041666666666666,
+          "p_win_end": 0.9166666666666666,
+          "final_win": 1,
+          "final_basin": [
+            0,
+            1
+          ],
+          "commit_step": 3,
+          "commit_collapse_bits": 0.0868857377018792,
+          "p_win_do_commit": 0.020833333333333332,
+          "p_win_do_block": 0.0
+        },
+        {
+          "episode": 29,
+          "early_potential_bits": 0.3317635934210436,
+          "p_win_start": 0.0,
+          "p_win_end": 0.0,
+          "final_win": 0,
+          "final_basin": [
+            0
+          ],
+          "commit_step": 1,
+          "commit_collapse_bits": 0.24110361079803574,
+          "p_win_do_commit": 0.0,
+          "p_win_do_block": 0.0
+        }
+      ],
+      "do_gap_median": 0.6354166666666667,
+      "do_gap_mean": 0.4555555555555556,
+      "do_sign_wins": 23,
+      "do_sign_losses": 0,
+      "do_sign_p": 2.384185791015625e-07
+    },
+    "trained_seed303": {
+      "condition": "trained_seed303",
+      "n_episodes": 30,
+      "early_potential_bits": 1.4093967881792173,
+      "p_win_start": 0.22569444444444445,
+      "p_win_end": 0.6451388888888889,
+      "final_win_rate": 0.8333333333333334,
+      "mean_commit_step": 5.2,
+      "episodes": [
+        {
+          "episode": 0,
+          "early_potential_bits": 1.5452579572424672,
+          "p_win_start": 0.5,
+          "p_win_end": 0.8541666666666666,
+          "final_win": 1,
+          "final_basin": [
+            0,
+            1
+          ],
+          "commit_step": 5,
+          "commit_collapse_bits": 0.4460739665757803,
+          "p_win_do_commit": 0.020833333333333332,
+          "p_win_do_block": 0.0
+        },
+        {
+          "episode": 1,
+          "early_potential_bits": 1.5560082377802207,
+          "p_win_start": 0.25,
+          "p_win_end": 0.7708333333333334,
+          "final_win": 1,
+          "final_basin": [
+            1,
+            0
+          ],
+          "commit_step": 5,
+          "commit_collapse_bits": 0.7180209555260733,
+          "p_win_do_commit": 0.125,
+          "p_win_do_block": 0.0
+        },
+        {
+          "episode": 2,
+          "early_potential_bits": 1.6575912460421522,
+          "p_win_start": 0.20833333333333334,
+          "p_win_end": 0.7708333333333334,
+          "final_win": 1,
+          "final_basin": [
+            1,
+            0
+          ],
+          "commit_step": 2,
+          "commit_collapse_bits": 1.0458526513614828,
+          "p_win_do_commit": 0.6666666666666666,
+          "p_win_do_block": 0.0
+        },
+        {
+          "episode": 3,
+          "early_potential_bits": 1.711440368239819,
+          "p_win_start": 0.3541666666666667,
+          "p_win_end": 0.8125,
+          "final_win": 1,
+          "final_basin": [
+            0,
+            1
+          ],
+          "commit_step": 4,
+          "commit_collapse_bits": 0.6962832676491724,
+          "p_win_do_commit": 0.20833333333333334,
+          "p_win_do_block": 0.0
+        },
+        {
+          "episode": 4,
+          "early_potential_bits": 1.5080088016259048,
+          "p_win_start": 0.3333333333333333,
+          "p_win_end": 0.6875,
+          "final_win": 1,
+          "final_basin": [
+            0,
+            1
+          ],
+          "commit_step": 4,
+          "commit_collapse_bits": 0.540579211553958,
+          "p_win_do_commit": 0.0625,
+          "p_win_do_block": 0.0
+        },
+        {
+          "episode": 5,
+          "early_potential_bits": 0.6246683294790816,
+          "p_win_start": 0.0,
+          "p_win_end": 0.0,
+          "final_win": 0,
+          "final_basin": [
+            0
+          ],
+          "commit_step": 1,
+          "commit_collapse_bits": 0.002420921377219918,
+          "p_win_do_commit": 0.0,
+          "p_win_do_block": 0.0
+        },
+        {
+          "episode": 6,
+          "early_potential_bits": 1.5057495439540125,
+          "p_win_start": 0.3125,
+          "p_win_end": 0.8333333333333334,
+          "final_win": 1,
+          "final_basin": [
+            0,
+            1
+          ],
+          "commit_step": 4,
+          "commit_collapse_bits": 0.5441730290816825,
+          "p_win_do_commit": 0.0,
+          "p_win_do_block": 0.0
+        },
+        {
+          "episode": 7,
+          "early_potential_bits": 1.5419682733098607,
+          "p_win_start": 0.25,
+          "p_win_end": 0.5833333333333334,
+          "final_win": 1,
+          "final_basin": [
+            1,
+            0
+          ],
+          "commit_step": 14,
+          "commit_collapse_bits": 0.4582750970445609,
+          "p_win_do_commit": 0.0,
+          "p_win_do_block": 0.0
+        },
+        {
+          "episode": 8,
+          "early_potential_bits": 1.536455947044714,
+          "p_win_start": 0.375,
+          "p_win_end": 0.75,
+          "final_win": 1,
+          "final_basin": [
+            1,
+            0
+          ],
+          "commit_step": 4,
+          "commit_collapse_bits": 0.45541954985545,
+          "p_win_do_commit": 0.0,
+          "p_win_do_block": 0.0
+        },
+        {
+          "episode": 9,
+          "early_potential_bits": 1.5799502163095527,
+          "p_win_start": 0.2916666666666667,
+          "p_win_end": 0.8541666666666666,
+          "final_win": 1,
+          "final_basin": [
+            0,
+            1
+          ],
+          "commit_step": 6,
+          "commit_collapse_bits": 0.9983545854644175,
+          "p_win_do_commit": 0.125,
+          "p_win_do_block": 0.0
+        },
+        {
+          "episode": 10,
+          "early_potential_bits": 1.6181983226405539,
+          "p_win_start": 0.2708333333333333,
+          "p_win_end": 0.7916666666666666,
+          "final_win": 1,
+          "final_basin": [
+            0,
+            1
+          ],
+          "commit_step": 2,
+          "commit_collapse_bits": 0.548436377075089,
+          "p_win_do_commit": 0.7916666666666666,
+          "p_win_do_block": 0.0
+        },
+        {
+          "episode": 11,
+          "early_potential_bits": 1.5380461067663358,
+          "p_win_start": 0.20833333333333334,
+          "p_win_end": 0.6041666666666666,
+          "final_win": 1,
+          "final_basin": [
+            1,
+            0
+          ],
+          "commit_step": 8,
+          "commit_collapse_bits": 1.2847979177973035,
+          "p_win_do_commit": 0.14583333333333334,
+          "p_win_do_block": 0.0
+        },
+        {
+          "episode": 12,
+          "early_potential_bits": 1.5985848084786014,
+          "p_win_start": 0.2916666666666667,
+          "p_win_end": 0.7916666666666666,
+          "final_win": 1,
+          "final_basin": [
+            0,
+            1
+          ],
+          "commit_step": 3,
+          "commit_collapse_bits": 0.5367390866481618,
+          "p_win_do_commit": 0.0625,
+          "p_win_do_block": 0.0
+        },
+        {
+          "episode": 13,
+          "early_potential_bits": 0.7370176372376855,
+          "p_win_start": 0.0,
+          "p_win_end": 0.0,
+          "final_win": 0,
+          "final_basin": [
+            0
+          ],
+          "commit_step": 2,
+          "commit_collapse_bits": 0.0019476182380206535,
+          "p_win_do_commit": 0.0,
+          "p_win_do_block": 0.0
+        },
+        {
+          "episode": 14,
+          "early_potential_bits": 1.5254797278797898,
+          "p_win_start": 0.16666666666666666,
+          "p_win_end": 0.75,
+          "final_win": 1,
+          "final_basin": [
+            1,
+            0
+          ],
+          "commit_step": 5,
+          "commit_collapse_bits": 0.8250449645239065,
+          "p_win_do_commit": 0.08333333333333333,
+          "p_win_do_block": 0.0
+        },
+        {
+          "episode": 15,
+          "early_potential_bits": 1.4665108907448896,
+          "p_win_start": 0.25,
+          "p_win_end": 0.6666666666666666,
+          "final_win": 1,
+          "final_basin": [
+            1,
+            0
+          ],
+          "commit_step": 3,
+          "commit_collapse_bits": 1.08227345865632,
+          "p_win_do_commit": 0.3958333333333333,
+          "p_win_do_block": 0.0
+        },
+        {
+          "episode": 16,
+          "early_potential_bits": 0.7997040114542419,
+          "p_win_start": 0.0,
+          "p_win_end": 0.0,
+          "final_win": 0,
+          "final_basin": [
+            0
+          ],
+          "commit_step": 3,
+          "commit_collapse_bits": 0.04686362705828519,
+          "p_win_do_commit": 0.0,
+          "p_win_do_block": 0.0
+        },
+        {
+          "episode": 17,
+          "early_potential_bits": 1.568900696641337,
+          "p_win_start": 0.1875,
+          "p_win_end": 0.8125,
+          "final_win": 1,
+          "final_basin": [
+            1,
+            0
+          ],
+          "commit_step": 8,
+          "commit_collapse_bits": 0.6359000095801999,
+          "p_win_do_commit": 0.0,
+          "p_win_do_block": 0.0
+        },
+        {
+          "episode": 18,
+          "early_potential_bits": 1.5530147158362668,
+          "p_win_start": 0.3333333333333333,
+          "p_win_end": 0.8333333333333334,
+          "final_win": 1,
+          "final_basin": [
+            0,
+            1
+          ],
+          "commit_step": 4,
+          "commit_collapse_bits": 0.9987184402241571,
+          "p_win_do_commit": 0.0,
+          "p_win_do_block": 0.0
+        },
+        {
+          "episode": 19,
+          "early_potential_bits": 1.5408621237887423,
+          "p_win_start": 0.20833333333333334,
+          "p_win_end": 0.7291666666666666,
+          "final_win": 1,
+          "final_basin": [
+            1,
+            0
+          ],
+          "commit_step": 3,
+          "commit_collapse_bits": 0.687787352099455,
+          "p_win_do_commit": 0.0,
+          "p_win_do_block": 0.0
+        },
+        {
+          "episode": 20,
+          "early_potential_bits": 0.7974069559349409,
+          "p_win_start": 0.0,
+          "p_win_end": 0.0,
+          "final_win": 0,
+          "final_basin": [
+            0
+          ],
+          "commit_step": 4,
+          "commit_collapse_bits": 0.007425952712320008,
+          "p_win_do_commit": 0.0,
+          "p_win_do_block": 0.0
+        },
+        {
+          "episode": 21,
+          "early_potential_bits": 1.5773022171572448,
+          "p_win_start": 0.3541666666666667,
+          "p_win_end": 0.7083333333333334,
+          "final_win": 1,
+          "final_basin": [
+            1,
+            0
+          ],
+          "commit_step": 15,
+          "commit_collapse_bits": 0.5668066209929659,
+          "p_win_do_commit": 0.0,
+          "p_win_do_block": 0.0
+        },
+        {
+          "episode": 22,
+          "early_potential_bits": 0.6977091446007266,
+          "p_win_start": 0.0,
+          "p_win_end": 0.0,
+          "final_win": 0,
+          "final_basin": [
+            0
+          ],
+          "commit_step": 2,
+          "commit_collapse_bits": 0.03422047182271755,
+          "p_win_do_commit": 0.0,
+          "p_win_do_block": 0.0
+        },
+        {
+          "episode": 23,
+          "early_potential_bits": 1.5133803399276593,
+          "p_win_start": 0.20833333333333334,
+          "p_win_end": 0.75,
+          "final_win": 1,
+          "final_basin": [
+            1,
+            0
+          ],
+          "commit_step": 7,
+          "commit_collapse_bits": 1.1731899217612842,
+          "p_win_do_commit": 0.0,
+          "p_win_do_block": 0.0
+        },
+        {
+          "episode": 24,
+          "early_potential_bits": 1.5283449771603257,
+          "p_win_start": 0.20833333333333334,
+          "p_win_end": 0.6666666666666666,
+          "final_win": 1,
+          "final_basin": [
+            1,
+            0
+          ],
+          "commit_step": 6,
+          "commit_collapse_bits": 0.4655213836157882,
+          "p_win_do_commit": 0.0,
+          "p_win_do_block": 0.0
+        },
+        {
+          "episode": 25,
+          "early_potential_bits": 1.560548425364323,
+          "p_win_start": 0.2708333333333333,
+          "p_win_end": 0.8958333333333334,
+          "final_win": 1,
+          "final_basin": [
+            1,
+            0
+          ],
+          "commit_step": 14,
+          "commit_collapse_bits": 0.8801785461633524,
+          "p_win_do_commit": 0.125,
+          "p_win_do_block": 0.0
+        },
+        {
+          "episode": 26,
+          "early_potential_bits": 1.4993507162082853,
+          "p_win_start": 0.16666666666666666,
+          "p_win_end": 0.7916666666666666,
+          "final_win": 1,
+          "final_basin": [
+            1,
+            0
+          ],
+          "commit_step": 1,
+          "commit_collapse_bits": 1.0175039137872564,
+          "p_win_do_commit": 0.5625,
+          "p_win_do_block": 0.0
+        },
+        {
+          "episode": 27,
+          "early_potential_bits": 1.5452965991742378,
+          "p_win_start": 0.1875,
+          "p_win_end": 0.7916666666666666,
+          "final_win": 1,
+          "final_basin": [
+            0,
+            1
+          ],
+          "commit_step": 8,
+          "commit_collapse_bits": 0.5313331313197107,
+          "p_win_do_commit": 0.6458333333333334,
+          "p_win_do_block": 0.0
+        },
+        {
+          "episode": 28,
+          "early_potential_bits": 1.3066732569849957,
+          "p_win_start": 0.3958333333333333,
+          "p_win_end": 0.9166666666666666,
+          "final_win": 1,
+          "final_basin": [
+            1,
+            0
+          ],
+          "commit_step": 2,
+          "commit_collapse_bits": 0.3730650297422778,
+          "p_win_do_commit": 0.020833333333333332,
+          "p_win_do_block": 0.0
+        },
+        {
+          "episode": 29,
+          "early_potential_bits": 1.542473050367555,
+          "p_win_start": 0.1875,
+          "p_win_end": 0.9375,
+          "final_win": 1,
+          "final_basin": [
+            1,
+            0
+          ],
+          "commit_step": 7,
+          "commit_collapse_bits": 0.8131385687284571,
+          "p_win_do_commit": 0.20833333333333334,
+          "p_win_do_block": 0.0
+        }
+      ],
+      "do_gap_median": 0.020833333333333332,
+      "do_gap_mean": 0.14166666666666664,
+      "do_sign_wins": 16,
+      "do_sign_losses": 0,
+      "do_sign_p": 3.0517578125e-05
+    },
+    "trained_seed404": {
+      "condition": "trained_seed404",
+      "n_episodes": 30,
+      "early_potential_bits": 0.9303155943043184,
+      "p_win_start": 0.5763888888888888,
+      "p_win_end": 0.7972222222222223,
+      "final_win_rate": 0.8333333333333334,
+      "mean_commit_step": 3.433333333333333,
+      "episodes": [
+        {
+          "episode": 0,
+          "early_potential_bits": 0.32457598357580125,
+          "p_win_start": 0.0,
+          "p_win_end": 0.0,
+          "final_win": 0,
+          "final_basin": [
+            0
+          ],
+          "commit_step": 2,
+          "commit_collapse_bits": 0.051508125002322096,
+          "p_win_do_commit": 0.0,
+          "p_win_do_block": 0.0
+        },
+        {
+          "episode": 1,
+          "early_potential_bits": 0.9586249782211542,
+          "p_win_start": 0.75,
+          "p_win_end": 0.9791666666666666,
+          "final_win": 1,
+          "final_basin": [
+            0,
+            1
+          ],
+          "commit_step": 2,
+          "commit_collapse_bits": 2.5758760636837676,
+          "p_win_do_commit": 0.8958333333333334,
+          "p_win_do_block": 0.0
+        },
+        {
+          "episode": 2,
+          "early_potential_bits": 1.0350532489464697,
+          "p_win_start": 0.7916666666666666,
+          "p_win_end": 0.9375,
+          "final_win": 1,
+          "final_basin": [
+            0,
+            1
+          ],
+          "commit_step": 1,
+          "commit_collapse_bits": 1.5558131102806498,
+          "p_win_do_commit": 0.875,
+          "p_win_do_block": 0.0
+        },
+        {
+          "episode": 3,
+          "early_potential_bits": 0.5153018066783603,
+          "p_win_start": 0.0,
+          "p_win_end": 0.0,
+          "final_win": 0,
+          "final_basin": [
+            0
+          ],
+          "commit_step": 4,
+          "commit_collapse_bits": 0.050538764933701935,
+          "p_win_do_commit": 0.0,
+          "p_win_do_block": 0.0
+        },
+        {
+          "episode": 4,
+          "early_potential_bits": 1.0505656665418828,
+          "p_win_start": 0.6875,
+          "p_win_end": 0.9375,
+          "final_win": 1,
+          "final_basin": [
+            0,
+            1
+          ],
+          "commit_step": 4,
+          "commit_collapse_bits": 0.25411586475214365,
+          "p_win_do_commit": 0.041666666666666664,
+          "p_win_do_block": 0.0
+        },
+        {
+          "episode": 5,
+          "early_potential_bits": 0.8614913654983116,
+          "p_win_start": 0.75,
+          "p_win_end": 1.0,
+          "final_win": 1,
+          "final_basin": [
+            0,
+            1
+          ],
+          "commit_step": 5,
+          "commit_collapse_bits": 1.5312944882899906,
+          "p_win_do_commit": 1.0,
+          "p_win_do_block": 0.0
+        },
+        {
+          "episode": 6,
+          "early_potential_bits": 1.1630136799668007,
+          "p_win_start": 0.6875,
+          "p_win_end": 0.9375,
+          "final_win": 1,
+          "final_basin": [
+            0,
+            1
+          ],
+          "commit_step": 5,
+          "commit_collapse_bits": 0.48268434365489454,
+          "p_win_do_commit": 0.8958333333333334,
+          "p_win_do_block": 0.0
+        },
+        {
+          "episode": 7,
+          "early_potential_bits": 1.297281869106349,
+          "p_win_start": 0.6666666666666666,
+          "p_win_end": 0.9791666666666666,
+          "final_win": 1,
+          "final_basin": [
+            0,
+            1
+          ],
+          "commit_step": 6,
+          "commit_collapse_bits": 0.34395795840244914,
+          "p_win_do_commit": 0.041666666666666664,
+          "p_win_do_block": 0.0
+        },
+        {
+          "episode": 8,
+          "early_potential_bits": 1.4756341301983014,
+          "p_win_start": 0.6666666666666666,
+          "p_win_end": 1.0,
+          "final_win": 1,
+          "final_basin": [
+            0,
+            1
+          ],
+          "commit_step": 2,
+          "commit_collapse_bits": 2.653966641018127,
+          "p_win_do_commit": 0.2708333333333333,
+          "p_win_do_block": 0.0
+        },
+        {
+          "episode": 9,
+          "early_potential_bits": 1.1562685420898022,
+          "p_win_start": 0.5625,
+          "p_win_end": 0.875,
+          "final_win": 1,
+          "final_basin": [
+            0,
+            1
+          ],
+          "commit_step": 4,
+          "commit_collapse_bits": 0.16788731612277497,
+          "p_win_do_commit": 0.08333333333333333,
+          "p_win_do_block": 0.0
+        },
+        {
+          "episode": 10,
+          "early_potential_bits": 0.1957241198167331,
+          "p_win_start": 0.0,
+          "p_win_end": 0.0,
+          "final_win": 0,
+          "final_basin": [
+            0
+          ],
+          "commit_step": 2,
+          "commit_collapse_bits": 0.9958407442523826,
+          "p_win_do_commit": 0.0,
+          "p_win_do_block": 0.0
+        },
+        {
+          "episode": 11,
+          "early_potential_bits": 0.3056685820486378,
+          "p_win_start": 0.875,
+          "p_win_end": 0.9583333333333334,
+          "final_win": 1,
+          "final_basin": [
+            0,
+            1
+          ],
+          "commit_step": 4,
+          "commit_collapse_bits": 0.9958407442523826,
+          "p_win_do_commit": 1.0,
+          "p_win_do_block": 0.0
+        },
+        {
+          "episode": 12,
+          "early_potential_bits": 1.0091848372114987,
+          "p_win_start": 0.7708333333333334,
+          "p_win_end": 0.9791666666666666,
+          "final_win": 1,
+          "final_basin": [
+            0,
+            1
+          ],
+          "commit_step": 5,
+          "commit_collapse_bits": 0.13782287394803724,
+          "p_win_do_commit": 1.0,
+          "p_win_do_block": 0.0
+        },
+        {
+          "episode": 13,
+          "early_potential_bits": 1.1358880375563192,
+          "p_win_start": 0.6041666666666666,
+          "p_win_end": 0.9583333333333334,
+          "final_win": 1,
+          "final_basin": [
+            0,
+            1
+          ],
+          "commit_step": 1,
+          "commit_collapse_bits": 2.0947673590243756,
+          "p_win_do_commit": 0.7916666666666666,
+          "p_win_do_block": 0.0
+        },
+        {
+          "episode": 14,
+          "early_potential_bits": 1.27768935685971,
+          "p_win_start": 0.5,
+          "p_win_end": 0.9791666666666666,
+          "final_win": 1,
+          "final_basin": [
+            0,
+            1
+          ],
+          "commit_step": 3,
+          "commit_collapse_bits": 0.3790532372518559,
+          "p_win_do_commit": 0.041666666666666664,
+          "p_win_do_block": 0.0
+        },
+        {
+          "episode": 15,
+          "early_potential_bits": 0.7190993649152837,
+          "p_win_start": 0.6458333333333334,
+          "p_win_end": 1.0,
+          "final_win": 1,
+          "final_basin": [
+            0,
+            1
+          ],
+          "commit_step": 2,
+          "commit_collapse_bits": 0.26303440554525503,
+          "p_win_do_commit": 0.3125,
+          "p_win_do_block": 0.0
+        },
+        {
+          "episode": 16,
+          "early_potential_bits": 0.6680384116545796,
+          "p_win_start": 0.75,
+          "p_win_end": 0.9791666666666666,
+          "final_win": 1,
+          "final_basin": [
+            0,
+            1
+          ],
+          "commit_step": 7,
+          "commit_collapse_bits": 2.0776292224248074,
+          "p_win_do_commit": 1.0,
+          "p_win_do_block": 0.0
+        },
+        {
+          "episode": 17,
+          "early_potential_bits": 0.3769122675499319,
+          "p_win_start": 0.0,
+          "p_win_end": 0.0,
+          "final_win": 0,
+          "final_basin": [
+            0
+          ],
+          "commit_step": 1,
+          "commit_collapse_bits": 0.059735907686007755,
+          "p_win_do_commit": 0.0,
+          "p_win_do_block": 0.0
+        },
+        {
+          "episode": 18,
+          "early_potential_bits": 0.7956766253964872,
+          "p_win_start": 0.7083333333333334,
+          "p_win_end": 0.9375,
+          "final_win": 1,
+          "final_basin": [
+            0,
+            1
+          ],
+          "commit_step": 1,
+          "commit_collapse_bits": 0.48271952140886637,
+          "p_win_do_commit": 0.875,
+          "p_win_do_block": 0.0
+        },
+        {
+          "episode": 19,
+          "early_potential_bits": 1.2965340701392243,
+          "p_win_start": 0.6458333333333334,
+          "p_win_end": 0.9583333333333334,
+          "final_win": 1,
+          "final_basin": [
+            0,
+            1
+          ],
+          "commit_step": 4,
+          "commit_collapse_bits": 0.4880503525019831,
+          "p_win_do_commit": 0.9166666666666666,
+          "p_win_do_block": 0.0
+        },
+        {
+          "episode": 20,
+          "early_potential_bits": 1.270722791150683,
+          "p_win_start": 0.5833333333333334,
+          "p_win_end": 0.9166666666666666,
+          "final_win": 1,
+          "final_basin": [
+            0,
+            1
+          ],
+          "commit_step": 7,
+          "commit_collapse_bits": 0.37053018924338293,
+          "p_win_do_commit": 0.0,
+          "p_win_do_block": 0.0
+        },
+        {
+          "episode": 21,
+          "early_potential_bits": 1.025239967168914,
+          "p_win_start": 0.7083333333333334,
+          "p_win_end": 1.0,
+          "final_win": 1,
+          "final_basin": [
+            0,
+            1
+          ],
+          "commit_step": 3,
+          "commit_collapse_bits": 0.5809035766418467,
+          "p_win_do_commit": 0.9375,
+          "p_win_do_block": 0.0
+        },
+        {
+          "episode": 22,
+          "early_potential_bits": 1.0870923151682503,
+          "p_win_start": 0.6875,
+          "p_win_end": 0.8958333333333334,
+          "final_win": 1,
+          "final_basin": [
+            0,
+            1
+          ],
+          "commit_step": 3,
+          "commit_collapse_bits": 0.11898605794304626,
+          "p_win_do_commit": 0.0,
+          "p_win_do_block": 0.0
+        },
+        {
+          "episode": 23,
+          "early_potential_bits": 0.8837649868463533,
+          "p_win_start": 0.7291666666666666,
+          "p_win_end": 1.0,
+          "final_win": 1,
+          "final_basin": [
+            0,
+            1
+          ],
+          "commit_step": 6,
+          "commit_collapse_bits": 0.125530881952705,
+          "p_win_do_commit": 0.9166666666666666,
+          "p_win_do_block": 0.0
+        },
+        {
+          "episode": 24,
+          "early_potential_bits": 1.283910850468042,
+          "p_win_start": 0.7291666666666666,
+          "p_win_end": 0.9166666666666666,
+          "final_win": 1,
+          "final_basin": [
+            0,
+            1
+          ],
+          "commit_step": 2,
+          "commit_collapse_bits": 0.49226304331708204,
+          "p_win_do_commit": 0.9375,
+          "p_win_do_block": 0.0
+        },
+        {
+          "episode": 25,
+          "early_potential_bits": 1.091423283476018,
+          "p_win_start": 0.6666666666666666,
+          "p_win_end": 0.9166666666666666,
+          "final_win": 1,
+          "final_basin": [
+            0,
+            1
+          ],
+          "commit_step": 4,
+          "commit_collapse_bits": 0.2181149618356721,
+          "p_win_do_commit": 0.0,
+          "p_win_do_block": 0.0
+        },
+        {
+          "episode": 26,
+          "early_potential_bits": 0.8837745782674329,
+          "p_win_start": 0.6875,
+          "p_win_end": 0.9583333333333334,
+          "final_win": 1,
+          "final_basin": [
+            0,
+            1
+          ],
+          "commit_step": 3,
+          "commit_collapse_bits": 1.0326709331065569,
+          "p_win_do_commit": 0.7916666666666666,
+          "p_win_do_block": 0.0
+        },
+        {
+          "episode": 27,
+          "early_potential_bits": 1.2260695222543387,
+          "p_win_start": 0.7291666666666666,
+          "p_win_end": 1.0,
+          "final_win": 1,
+          "final_basin": [
+            0,
+            1
+          ],
+          "commit_step": 4,
+          "commit_collapse_bits": 0.9958407442523826,
+          "p_win_do_commit": 1.0,
+          "p_win_do_block": 0.0
+        },
+        {
+          "episode": 28,
+          "early_potential_bits": 1.0926822187018517,
+          "p_win_start": 0.7083333333333334,
+          "p_win_end": 0.9166666666666666,
+          "final_win": 1,
+          "final_basin": [
+            0,
+            1
+          ],
+          "commit_step": 4,
+          "commit_collapse_bits": 0.1098991178198653,
+          "p_win_do_commit": 0.041666666666666664,
+          "p_win_do_block": 0.0
+        },
+        {
+          "episode": 29,
+          "early_potential_bits": 0.4465603716560289,
+          "p_win_start": 0.0,
+          "p_win_end": 0.0,
+          "final_win": 0,
+          "final_basin": [
+            0
+          ],
+          "commit_step": 2,
+          "commit_collapse_bits": 0.3061160261241087,
+          "p_win_do_commit": 0.0,
+          "p_win_do_block": 0.0
+        }
+      ],
+      "do_gap_median": 0.5520833333333333,
+      "do_gap_mean": 0.4888888888888888,
+      "do_sign_wins": 22,
+      "do_sign_losses": 0,
+      "do_sign_p": 4.76837158203125e-07
+    },
+    "trained_seed505": {
+      "condition": "trained_seed505",
+      "n_episodes": 30,
+      "early_potential_bits": 1.0788913462424419,
+      "p_win_start": 0.5083333333333333,
+      "p_win_end": 0.7659722222222224,
+      "final_win_rate": 0.8333333333333334,
+      "mean_commit_step": 2.8,
+      "episodes": [
+        {
+          "episode": 0,
+          "early_potential_bits": 1.2023390958618572,
+          "p_win_start": 0.7083333333333334,
+          "p_win_end": 0.9583333333333334,
+          "final_win": 1,
+          "final_basin": [
+            0,
+            1
+          ],
+          "commit_step": 3,
+          "commit_collapse_bits": 0.3718359111908541,
+          "p_win_do_commit": 0.1875,
+          "p_win_do_block": 0.0
+        },
+        {
+          "episode": 1,
+          "early_potential_bits": 1.105150438343786,
+          "p_win_start": 0.8541666666666666,
+          "p_win_end": 0.9583333333333334,
+          "final_win": 1,
+          "final_basin": [
+            0,
+            1
+          ],
+          "commit_step": 1,
+          "commit_collapse_bits": 3.3328874757121096,
+          "p_win_do_commit": 0.8958333333333334,
+          "p_win_do_block": 0.0
+        },
+        {
+          "episode": 2,
+          "early_potential_bits": 1.2671044307520765,
+          "p_win_start": 0.5416666666666666,
+          "p_win_end": 0.9166666666666666,
+          "final_win": 1,
+          "final_basin": [
+            0,
+            1
+          ],
+          "commit_step": 3,
+          "commit_collapse_bits": 0.1850200974816168,
+          "p_win_do_commit": 0.3541666666666667,
+          "p_win_do_block": 0.0
+        },
+        {
+          "episode": 3,
+          "early_potential_bits": 1.261687363607683,
+          "p_win_start": 0.625,
+          "p_win_end": 0.8958333333333334,
+          "final_win": 1,
+          "final_basin": [
+            0,
+            1
+          ],
+          "commit_step": 5,
+          "commit_collapse_bits": 0.1073899287559259,
+          "p_win_do_commit": 0.0,
+          "p_win_do_block": 0.0
+        },
+        {
+          "episode": 4,
+          "early_potential_bits": 1.2414061300920463,
+          "p_win_start": 0.625,
+          "p_win_end": 0.875,
+          "final_win": 1,
+          "final_basin": [
+            0,
+            1
+          ],
+          "commit_step": 1,
+          "commit_collapse_bits": 0.38323410160232885,
+          "p_win_do_commit": 0.75,
+          "p_win_do_block": 0.0
+        },
+        {
+          "episode": 5,
+          "early_potential_bits": 0.996419333933134,
+          "p_win_start": 0.6666666666666666,
+          "p_win_end": 0.8958333333333334,
+          "final_win": 1,
+          "final_basin": [
+            0,
+            1
+          ],
+          "commit_step": 4,
+          "commit_collapse_bits": 0.19854441587980082,
+          "p_win_do_commit": 0.0625,
+          "p_win_do_block": 0.0
+        },
+        {
+          "episode": 6,
+          "early_potential_bits": 1.4597643765810935,
+          "p_win_start": 0.5,
+          "p_win_end": 0.9166666666666666,
+          "final_win": 1,
+          "final_basin": [
+            0,
+            1
+          ],
+          "commit_step": 1,
+          "commit_collapse_bits": 0.6360917978458942,
+          "p_win_do_commit": 0.6666666666666666,
+          "p_win_do_block": 0.0
+        },
+        {
+          "episode": 7,
+          "early_potential_bits": 0.9602940177847278,
+          "p_win_start": 0.75,
+          "p_win_end": 1.0,
+          "final_win": 1,
+          "final_basin": [
+            0,
+            1
+          ],
+          "commit_step": 4,
+          "commit_collapse_bits": 0.16788731612277497,
+          "p_win_do_commit": 0.0,
+          "p_win_do_block": 0.0
+        },
+        {
+          "episode": 8,
+          "early_potential_bits": 0.9814598963396467,
+          "p_win_start": 0.5416666666666666,
+          "p_win_end": 0.9375,
+          "final_win": 1,
+          "final_basin": [
+            0,
+            1
+          ],
+          "commit_step": 2,
+          "commit_collapse_bits": 0.16187947379901918,
+          "p_win_do_commit": 0.10416666666666667,
+          "p_win_do_block": 0.0
+        },
+        {
+          "episode": 9,
+          "early_potential_bits": 0.5153018066783603,
+          "p_win_start": 0.0,
+          "p_win_end": 0.0,
+          "final_win": 0,
+          "final_basin": [
+            0
+          ],
+          "commit_step": 2,
+          "commit_collapse_bits": 0.05208039556351339,
+          "p_win_do_commit": 0.0,
+          "p_win_do_block": 0.0
+        },
+        {
+          "episode": 10,
+          "early_potential_bits": 0.6726794481751762,
+          "p_win_start": 0.6666666666666666,
+          "p_win_end": 0.9583333333333334,
+          "final_win": 1,
+          "final_basin": [
+            0,
+            1
+          ],
+          "commit_step": 1,
+          "commit_collapse_bits": 0.3159917724466711,
+          "p_win_do_commit": 0.08333333333333333,
+          "p_win_do_block": 0.0
+        },
+        {
+          "episode": 11,
+          "early_potential_bits": 0.34777634295532245,
+          "p_win_start": 0.0,
+          "p_win_end": 0.0,
+          "final_win": 0,
+          "final_basin": [
+            0
+          ],
+          "commit_step": 1,
+          "commit_collapse_bits": 0.08328134321173526,
+          "p_win_do_commit": 0.0,
+          "p_win_do_block": 0.0
+        },
+        {
+          "episode": 12,
+          "early_potential_bits": 0.4543068859665678,
+          "p_win_start": 0.0,
+          "p_win_end": 0.0,
+          "final_win": 0,
+          "final_basin": [
+            0
+          ],
+          "commit_step": 2,
+          "commit_collapse_bits": 0.01542872115044127,
+          "p_win_do_commit": 0.0,
+          "p_win_do_block": 0.0
+        },
+        {
+          "episode": 13,
+          "early_potential_bits": 1.1510191171921023,
+          "p_win_start": 0.5208333333333334,
+          "p_win_end": 0.8541666666666666,
+          "final_win": 1,
+          "final_basin": [
+            0,
+            1
+          ],
+          "commit_step": 4,
+          "commit_collapse_bits": 0.18204773282948464,
+          "p_win_do_commit": 0.375,
+          "p_win_do_block": 0.0
+        },
+        {
+          "episode": 14,
+          "early_potential_bits": 0.9390651099029786,
+          "p_win_start": 0.5,
+          "p_win_end": 0.9375,
+          "final_win": 1,
+          "final_basin": [
+            0,
+            1
+          ],
+          "commit_step": 1,
+          "commit_collapse_bits": 0.17099231220284067,
+          "p_win_do_commit": 0.6875,
+          "p_win_do_block": 0.0
+        },
+        {
+          "episode": 15,
+          "early_potential_bits": 1.1709517276531238,
+          "p_win_start": 0.5833333333333334,
+          "p_win_end": 0.8958333333333334,
+          "final_win": 1,
+          "final_basin": [
+            0,
+            1
+          ],
+          "commit_step": 1,
+          "commit_collapse_bits": 0.49109702128047583,
+          "p_win_do_commit": 0.7291666666666666,
+          "p_win_do_block": 0.0
+        },
+        {
+          "episode": 16,
+          "early_potential_bits": 1.5627868518429058,
+          "p_win_start": 0.6041666666666666,
+          "p_win_end": 0.8958333333333334,
+          "final_win": 1,
+          "final_basin": [
+            0,
+            1
+          ],
+          "commit_step": 6,
+          "commit_collapse_bits": 0.585142247529058,
+          "p_win_do_commit": 0.8125,
+          "p_win_do_block": 0.0
+        },
+        {
+          "episode": 17,
+          "early_potential_bits": 0.9661624730343279,
+          "p_win_start": 0.5416666666666666,
+          "p_win_end": 0.8958333333333334,
+          "final_win": 1,
+          "final_basin": [
+            0,
+            1
+          ],
+          "commit_step": 2,
+          "commit_collapse_bits": 0.13977648738623977,
+          "p_win_do_commit": 0.08333333333333333,
+          "p_win_do_block": 0.0
+        },
+        {
+          "episode": 18,
+          "early_potential_bits": 1.3428655015982205,
+          "p_win_start": 0.5625,
+          "p_win_end": 0.9583333333333334,
+          "final_win": 1,
+          "final_basin": [
+            0,
+            1
+          ],
+          "commit_step": 3,
+          "commit_collapse_bits": 0.31093244176040213,
+          "p_win_do_commit": 0.020833333333333332,
+          "p_win_do_block": 0.0
+        },
+        {
+          "episode": 19,
+          "early_potential_bits": 1.3288671888304826,
+          "p_win_start": 0.5208333333333334,
+          "p_win_end": 0.9583333333333334,
+          "final_win": 1,
+          "final_basin": [
+            0,
+            1
+          ],
+          "commit_step": 2,
+          "commit_collapse_bits": 0.486327032759739,
+          "p_win_do_commit": 0.8541666666666666,
+          "p_win_do_block": 0.0
+        },
+        {
+          "episode": 20,
+          "early_potential_bits": 1.1926273858468297,
+          "p_win_start": 0.6041666666666666,
+          "p_win_end": 0.875,
+          "final_win": 1,
+          "final_basin": [
+            0,
+            1
+          ],
+          "commit_step": 3,
+          "commit_collapse_bits": 0.2617379297089728,
+          "p_win_do_commit": 0.9166666666666666,
+          "p_win_do_block": 0.0
+        },
+        {
+          "episode": 21,
+          "early_potential_bits": 1.3446703257588684,
+          "p_win_start": 0.4583333333333333,
+          "p_win_end": 0.9583333333333334,
+          "final_win": 1,
+          "final_basin": [
+            0,
+            1
+          ],
+          "commit_step": 7,
+          "commit_collapse_bits": 2.632241442466785,
+          "p_win_do_commit": 1.0,
+          "p_win_do_block": 0.0
+        },
+        {
+          "episode": 22,
+          "early_potential_bits": 0.4456703930774594,
+          "p_win_start": 0.0,
+          "p_win_end": 0.0,
+          "final_win": 0,
+          "final_basin": [
+            0
+          ],
+          "commit_step": 2,
+          "commit_collapse_bits": 0.059735907686007755,
+          "p_win_do_commit": 0.0,
+          "p_win_do_block": 0.0
+        },
+        {
+          "episode": 23,
+          "early_potential_bits": 0.43155712004008134,
+          "p_win_start": 0.0,
+          "p_win_end": 0.0,
+          "final_win": 0,
+          "final_basin": [
+            0
+          ],
+          "commit_step": 3,
+          "commit_collapse_bits": 0.0942354131003548,
+          "p_win_do_commit": 0.0,
+          "p_win_do_block": 0.0
+        },
+        {
+          "episode": 24,
+          "early_potential_bits": 1.3291579666507307,
+          "p_win_start": 0.625,
+          "p_win_end": 0.9791666666666666,
+          "final_win": 1,
+          "final_basin": [
+            0,
+            1
+          ],
+          "commit_step": 6,
+          "commit_collapse_bits": 0.3106099166669463,
+          "p_win_do_commit": 0.0625,
+          "p_win_do_block": 0.0
+        },
+        {
+          "episode": 25,
+          "early_potential_bits": 1.622191942109761,
+          "p_win_start": 0.5416666666666666,
+          "p_win_end": 0.875,
+          "final_win": 1,
+          "final_basin": [
+            0,
+            1
+          ],
+          "commit_step": 5,
+          "commit_collapse_bits": 0.5605299711023519,
+          "p_win_do_commit": 0.6458333333333334,
+          "p_win_do_block": 0.0
+        },
+        {
+          "episode": 26,
+          "early_potential_bits": 1.3312885820580542,
+          "p_win_start": 0.7291666666666666,
+          "p_win_end": 0.875,
+          "final_win": 1,
+          "final_basin": [
+            0,
+            1
+          ],
+          "commit_step": 2,
+          "commit_collapse_bits": 1.4989630519324617,
+          "p_win_do_commit": 0.375,
+          "p_win_do_block": 0.0
+        },
+        {
+          "episode": 27,
+          "early_potential_bits": 1.206545783650647,
+          "p_win_start": 0.6041666666666666,
+          "p_win_end": 0.9166666666666666,
+          "final_win": 1,
+          "final_basin": [
+            0,
+            1
+          ],
+          "commit_step": 3,
+          "commit_collapse_bits": 0.7012531246994544,
+          "p_win_do_commit": 0.2916666666666667,
+          "p_win_do_block": 0.0
+        },
+        {
+          "episode": 28,
+          "early_potential_bits": 1.2539062330020518,
+          "p_win_start": 0.6875,
+          "p_win_end": 0.8541666666666666,
+          "final_win": 1,
+          "final_basin": [
+            0,
+            1
+          ],
+          "commit_step": 2,
+          "commit_collapse_bits": 0.4931113264757198,
+          "p_win_do_commit": 0.875,
+          "p_win_do_block": 0.0
+        },
+        {
+          "episode": 29,
+          "early_potential_bits": 1.2817171179531524,
+          "p_win_start": 0.6875,
+          "p_win_end": 0.9375,
+          "final_win": 1,
+          "final_basin": [
+            0,
+            1
+          ],
+          "commit_step": 2,
+          "commit_collapse_bits": 0.5224489442732769,
+          "p_win_do_commit": 0.7708333333333334,
+          "p_win_do_block": 0.0
+        }
+      ],
+      "do_gap_median": 0.3229166666666667,
+      "do_gap_mean": 0.38680555555555557,
+      "do_sign_wins": 23,
+      "do_sign_losses": 0,
+      "do_sign_p": 2.384185791015625e-07
+    },
+    "untrained": {
+      "condition": "untrained",
+      "n_episodes": 30,
+      "early_potential_bits": 0.34024697591617925,
+      "p_win_start": 0.0006944444444444444,
+      "p_win_end": 0.0006944444444444444,
+      "final_win_rate": 0.03333333333333333,
+      "mean_commit_step": 16.966666666666665,
+      "episodes": [
+        {
+          "episode": 0,
+          "early_potential_bits": 0.2774422552884693,
+          "p_win_start": 0.0,
+          "p_win_end": 0.0,
+          "final_win": 0,
+          "final_basin": [],
+          "commit_step": 22,
+          "commit_collapse_bits": 0.9958407442523826,
+          "p_win_do_commit": 0.0,
+          "p_win_do_block": 0.0
+        },
+        {
+          "episode": 1,
+          "early_potential_bits": 0.40401528704077344,
+          "p_win_start": 0.0,
+          "p_win_end": 0.0,
+          "final_win": 0,
+          "final_basin": [],
+          "commit_step": 14,
+          "commit_collapse_bits": 2.010022713495908,
+          "p_win_do_commit": 0.0,
+          "p_win_do_block": 0.0
+        },
+        {
+          "episode": 2,
+          "early_potential_bits": 0.13199218098444057,
+          "p_win_start": 0.0,
+          "p_win_end": 0.0,
+          "final_win": 0,
+          "final_basin": [],
+          "commit_step": 19,
+          "commit_collapse_bits": 1.5312944882899906,
+          "p_win_do_commit": 0.0,
+          "p_win_do_block": 0.0
+        },
+        {
+          "episode": 3,
+          "early_potential_bits": 0.4773221766797843,
+          "p_win_start": 0.0,
+          "p_win_end": 0.0,
+          "final_win": 0,
+          "final_basin": [],
+          "commit_step": 3,
+          "commit_collapse_bits": 1.147926084026548,
+          "p_win_do_commit": 0.0,
+          "p_win_do_block": 0.0
+        },
+        {
+          "episode": 4,
+          "early_potential_bits": 0.39514246316791873,
+          "p_win_start": 0.0,
+          "p_win_end": 0.0,
+          "final_win": 0,
+          "final_basin": [],
+          "commit_step": 5,
+          "commit_collapse_bits": 2.010022713495908,
+          "p_win_do_commit": 0.0,
+          "p_win_do_block": 0.0
+        },
+        {
+          "episode": 5,
+          "early_potential_bits": 0.22123304771227306,
+          "p_win_start": 0.0,
+          "p_win_end": 0.0,
+          "final_win": 0,
+          "final_basin": [],
+          "commit_step": 3,
+          "commit_collapse_bits": 2.1339130549761065,
+          "p_win_do_commit": 0.0,
+          "p_win_do_block": 0.0
+        },
+        {
+          "episode": 6,
+          "early_potential_bits": 0.5513201248073571,
+          "p_win_start": 0.0,
+          "p_win_end": 0.0,
+          "final_win": 0,
+          "final_basin": [],
+          "commit_step": 28,
+          "commit_collapse_bits": 1.994295890534169,
+          "p_win_do_commit": 0.0,
+          "p_win_do_block": 0.0
+        },
+        {
+          "episode": 7,
+          "early_potential_bits": 0.48666563499580784,
+          "p_win_start": 0.0,
+          "p_win_end": 0.0,
+          "final_win": 0,
+          "final_basin": [],
+          "commit_step": 22,
+          "commit_collapse_bits": 1.0249488245563383,
+          "p_win_do_commit": 0.0,
+          "p_win_do_block": 0.0
+        },
+        {
+          "episode": 8,
+          "early_potential_bits": 0.27290447576408067,
+          "p_win_start": 0.0,
+          "p_win_end": 0.0,
+          "final_win": 0,
+          "final_basin": [],
+          "commit_step": 15,
+          "commit_collapse_bits": 2.0777421941303156,
+          "p_win_do_commit": 0.020833333333333332,
+          "p_win_do_block": 0.0
+        },
+        {
+          "episode": 9,
+          "early_potential_bits": 0.3662426502424679,
+          "p_win_start": 0.020833333333333332,
+          "p_win_end": 0.0,
+          "final_win": 0,
+          "final_basin": [],
+          "commit_step": 33,
+          "commit_collapse_bits": 2.1054717340198956,
+          "p_win_do_commit": 0.0,
+          "p_win_do_block": 0.0
+        },
+        {
+          "episode": 10,
+          "early_potential_bits": 0.0,
+          "p_win_start": 0.0,
+          "p_win_end": 0.0,
+          "final_win": 0,
+          "final_basin": [],
+          "commit_step": 9,
+          "commit_collapse_bits": 1.5313570912886114,
+          "p_win_do_commit": 0.020833333333333332,
+          "p_win_do_block": 0.0
+        },
+        {
+          "episode": 11,
+          "early_potential_bits": 0.18025926878851858,
+          "p_win_start": 0.0,
+          "p_win_end": 0.0,
+          "final_win": 0,
+          "final_basin": [],
+          "commit_step": 1,
+          "commit_collapse_bits": 1.47390100010428,
+          "p_win_do_commit": 0.0,
+          "p_win_do_block": 0.0
+        },
+        {
+          "episode": 12,
+          "early_potential_bits": 0.24310036170853025,
+          "p_win_start": 0.0,
+          "p_win_end": 0.0,
+          "final_win": 0,
+          "final_basin": [],
+          "commit_step": 1,
+          "commit_collapse_bits": 2.5311007569871182,
+          "p_win_do_commit": 0.0,
+          "p_win_do_block": 0.0
+        },
+        {
+          "episode": 13,
+          "early_potential_bits": 0.19457915324670824,
+          "p_win_start": 0.0,
+          "p_win_end": 0.0,
+          "final_win": 0,
+          "final_basin": [],
+          "commit_step": 23,
+          "commit_collapse_bits": 3.193604665171718,
+          "p_win_do_commit": 0.0,
+          "p_win_do_block": 0.0
+        },
+        {
+          "episode": 14,
+          "early_potential_bits": 0.18069026435781935,
+          "p_win_start": 0.0,
+          "p_win_end": 0.0,
+          "final_win": 0,
+          "final_basin": [],
+          "commit_step": 29,
+          "commit_collapse_bits": 2.0776292224248074,
+          "p_win_do_commit": 0.0,
+          "p_win_do_block": 0.0
+        },
+        {
+          "episode": 15,
+          "early_potential_bits": 0.5972801524779779,
+          "p_win_start": 0.0,
+          "p_win_end": 0.0,
+          "final_win": 0,
+          "final_basin": [],
+          "commit_step": 27,
+          "commit_collapse_bits": 2.010022713495908,
+          "p_win_do_commit": 0.0,
+          "p_win_do_block": 0.0
+        },
+        {
+          "episode": 16,
+          "early_potential_bits": 0.3120382695261523,
+          "p_win_start": 0.0,
+          "p_win_end": 0.0,
+          "final_win": 0,
+          "final_basin": [],
+          "commit_step": 21,
+          "commit_collapse_bits": 2.0776292224248074,
+          "p_win_do_commit": 0.0,
+          "p_win_do_block": 0.0
+        },
+        {
+          "episode": 17,
+          "early_potential_bits": 0.22486004441134258,
+          "p_win_start": 0.0,
+          "p_win_end": 0.0,
+          "final_win": 0,
+          "final_basin": [],
+          "commit_step": 17,
+          "commit_collapse_bits": 2.010022713495908,
+          "p_win_do_commit": 0.0,
+          "p_win_do_block": 0.0
+        },
+        {
+          "episode": 18,
+          "early_potential_bits": 0.38013153913135683,
+          "p_win_start": 0.0,
+          "p_win_end": 0.0,
+          "final_win": 0,
+          "final_basin": [],
+          "commit_step": 2,
+          "commit_collapse_bits": 1.0091221345244878,
+          "p_win_do_commit": 0.0,
+          "p_win_do_block": 0.0
+        },
+        {
+          "episode": 19,
+          "early_potential_bits": 0.2990670556802613,
+          "p_win_start": 0.0,
+          "p_win_end": 0.0,
+          "final_win": 0,
+          "final_basin": [],
+          "commit_step": 14,
+          "commit_collapse_bits": 1.5312944882899906,
+          "p_win_do_commit": 0.0,
+          "p_win_do_block": 0.0
+        },
+        {
+          "episode": 20,
+          "early_potential_bits": 0.4288390987092687,
+          "p_win_start": 0.0,
+          "p_win_end": 0.0,
+          "final_win": 0,
+          "final_basin": [],
+          "commit_step": 13,
+          "commit_collapse_bits": 1.5330650732351014,
+          "p_win_do_commit": 0.0,
+          "p_win_do_block": 0.0
+        },
+        {
+          "episode": 21,
+          "early_potential_bits": 0.4286164422579288,
+          "p_win_start": 0.0,
+          "p_win_end": 0.0,
+          "final_win": 0,
+          "final_basin": [],
+          "commit_step": 27,
+          "commit_collapse_bits": 0.9958407442523826,
+          "p_win_do_commit": 0.0,
+          "p_win_do_block": 0.0
+        },
+        {
+          "episode": 22,
+          "early_potential_bits": 0.2990670556802613,
+          "p_win_start": 0.0,
+          "p_win_end": 0.0,
+          "final_win": 0,
+          "final_basin": [],
+          "commit_step": 28,
+          "commit_collapse_bits": 1.5312944882899906,
+          "p_win_do_commit": 0.0,
+          "p_win_do_block": 0.0
+        },
+        {
+          "episode": 23,
+          "early_potential_bits": 0.32639445931959205,
+          "p_win_start": 0.0,
+          "p_win_end": 0.0,
+          "final_win": 0,
+          "final_basin": [],
+          "commit_step": 24,
+          "commit_collapse_bits": 1.5312944882899906,
+          "p_win_do_commit": 0.0,
+          "p_win_do_block": 0.0
+        },
+        {
+          "episode": 24,
+          "early_potential_bits": 0.423596824388689,
+          "p_win_start": 0.0,
+          "p_win_end": 0.0,
+          "final_win": 0,
+          "final_basin": [],
+          "commit_step": 16,
+          "commit_collapse_bits": 2.1080043119855607,
+          "p_win_do_commit": 0.0,
+          "p_win_do_block": 0.0
+        },
+        {
+          "episode": 25,
+          "early_potential_bits": 0.13199218098444057,
+          "p_win_start": 0.0,
+          "p_win_end": 0.0,
+          "final_win": 0,
+          "final_basin": [],
+          "commit_step": 30,
+          "commit_collapse_bits": 1.5312944882899906,
+          "p_win_do_commit": 0.0,
+          "p_win_do_block": 0.0
+        },
+        {
+          "episode": 26,
+          "early_potential_bits": 0.5879363289012461,
+          "p_win_start": 0.0,
+          "p_win_end": 0.0,
+          "final_win": 0,
+          "final_basin": [],
+          "commit_step": 18,
+          "commit_collapse_bits": 1.5312944882899906,
+          "p_win_do_commit": 0.0,
+          "p_win_do_block": 0.0
+        },
+        {
+          "episode": 27,
+          "early_potential_bits": 0.3313325978517429,
+          "p_win_start": 0.0,
+          "p_win_end": 0.020833333333333332,
+          "final_win": 1,
+          "final_basin": [
+            0,
+            1
+          ],
+          "commit_step": 20,
+          "commit_collapse_bits": 4.584962467539171,
+          "p_win_do_commit": 0.0,
+          "p_win_do_block": 0.0
+        },
+        {
+          "episode": 28,
+          "early_potential_bits": 0.38921862547349995,
+          "p_win_start": 0.0,
+          "p_win_end": 0.0,
+          "final_win": 0,
+          "final_basin": [],
+          "commit_step": 6,
+          "commit_collapse_bits": 3.1123518639083687,
+          "p_win_do_commit": 0.0,
+          "p_win_do_block": 0.0
+        },
+        {
+          "episode": 29,
+          "early_potential_bits": 0.6641292579066681,
+          "p_win_start": 0.0,
+          "p_win_end": 0.0,
+          "final_win": 0,
+          "final_basin": [],
+          "commit_step": 19,
+          "commit_collapse_bits": 1.5313570912886114,
+          "p_win_do_commit": 0.0,
+          "p_win_do_block": 0.0
+        }
+      ],
+      "do_gap_median": 0.0,
+      "do_gap_mean": 0.0013888888888888887,
+      "do_sign_wins": 2,
+      "do_sign_losses": 0,
+      "do_sign_p": 0.5
+    },
+    "greedy_nearest": {
+      "condition": "greedy_nearest",
+      "n_episodes": 30,
+      "early_potential_bits": 0.0,
+      "p_win_start": 0.1,
+      "p_win_end": 0.1,
+      "final_win_rate": 0.1,
+      "mean_commit_step": 1.0,
+      "episodes": [
+        {
+          "episode": 0,
+          "early_potential_bits": 0.0,
+          "p_win_start": 0.0,
+          "p_win_end": 0.0,
+          "final_win": 0,
+          "final_basin": [],
+          "commit_step": 1,
+          "commit_collapse_bits": 0.0
+        },
+        {
+          "episode": 1,
+          "early_potential_bits": 0.0,
+          "p_win_start": 1.0,
+          "p_win_end": 1.0,
+          "final_win": 1,
+          "final_basin": [
+            0,
+            1
+          ],
+          "commit_step": 1,
+          "commit_collapse_bits": 0.0
+        },
+        {
+          "episode": 2,
+          "early_potential_bits": 0.0,
+          "p_win_start": 0.0,
+          "p_win_end": 0.0,
+          "final_win": 0,
+          "final_basin": [],
+          "commit_step": 1,
+          "commit_collapse_bits": 0.0
+        },
+        {
+          "episode": 3,
+          "early_potential_bits": 0.0,
+          "p_win_start": 0.0,
+          "p_win_end": 0.0,
+          "final_win": 0,
+          "final_basin": [
+            0
+          ],
+          "commit_step": 1,
+          "commit_collapse_bits": 0.0
+        },
+        {
+          "episode": 4,
+          "early_potential_bits": 0.0,
+          "p_win_start": 0.0,
+          "p_win_end": 0.0,
+          "final_win": 0,
+          "final_basin": [
+            0
+          ],
+          "commit_step": 1,
+          "commit_collapse_bits": 0.0
+        },
+        {
+          "episode": 5,
+          "early_potential_bits": 0.0,
+          "p_win_start": 0.0,
+          "p_win_end": 0.0,
+          "final_win": 0,
+          "final_basin": [],
+          "commit_step": 1,
+          "commit_collapse_bits": 0.0
+        },
+        {
+          "episode": 6,
+          "early_potential_bits": 0.0,
+          "p_win_start": 0.0,
+          "p_win_end": 0.0,
+          "final_win": 0,
+          "final_basin": [
+            0
+          ],
+          "commit_step": 1,
+          "commit_collapse_bits": 0.0
+        },
+        {
+          "episode": 7,
+          "early_potential_bits": 0.0,
+          "p_win_start": 0.0,
+          "p_win_end": 0.0,
+          "final_win": 0,
+          "final_basin": [
+            1
+          ],
+          "commit_step": 1,
+          "commit_collapse_bits": 0.0
+        },
+        {
+          "episode": 8,
+          "early_potential_bits": 0.0,
+          "p_win_start": 0.0,
+          "p_win_end": 0.0,
+          "final_win": 0,
+          "final_basin": [],
+          "commit_step": 1,
+          "commit_collapse_bits": 0.0
+        },
+        {
+          "episode": 9,
+          "early_potential_bits": 0.0,
+          "p_win_start": 1.0,
+          "p_win_end": 1.0,
+          "final_win": 1,
+          "final_basin": [
+            0,
+            1
+          ],
+          "commit_step": 1,
+          "commit_collapse_bits": 0.0
+        },
+        {
+          "episode": 10,
+          "early_potential_bits": 0.0,
+          "p_win_start": 0.0,
+          "p_win_end": 0.0,
+          "final_win": 0,
+          "final_basin": [],
+          "commit_step": 1,
+          "commit_collapse_bits": 0.0
+        },
+        {
+          "episode": 11,
+          "early_potential_bits": 0.0,
+          "p_win_start": 0.0,
+          "p_win_end": 0.0,
+          "final_win": 0,
+          "final_basin": [
+            0
+          ],
+          "commit_step": 1,
+          "commit_collapse_bits": 0.0
+        },
+        {
+          "episode": 12,
+          "early_potential_bits": 0.0,
+          "p_win_start": 0.0,
+          "p_win_end": 0.0,
+          "final_win": 0,
+          "final_basin": [],
+          "commit_step": 1,
+          "commit_collapse_bits": 0.0
+        },
+        {
+          "episode": 13,
+          "early_potential_bits": 0.0,
+          "p_win_start": 0.0,
+          "p_win_end": 0.0,
+          "final_win": 0,
+          "final_basin": [],
+          "commit_step": 1,
+          "commit_collapse_bits": 0.0
+        },
+        {
+          "episode": 14,
+          "early_potential_bits": 0.0,
+          "p_win_start": 1.0,
+          "p_win_end": 1.0,
+          "final_win": 1,
+          "final_basin": [
+            1,
+            0
+          ],
+          "commit_step": 1,
+          "commit_collapse_bits": 0.0
+        },
+        {
+          "episode": 15,
+          "early_potential_bits": 0.0,
+          "p_win_start": 0.0,
+          "p_win_end": 0.0,
+          "final_win": 0,
+          "final_basin": [],
+          "commit_step": 1,
+          "commit_collapse_bits": 0.0
+        },
+        {
+          "episode": 16,
+          "early_potential_bits": 0.0,
+          "p_win_start": 0.0,
+          "p_win_end": 0.0,
+          "final_win": 0,
+          "final_basin": [],
+          "commit_step": 1,
+          "commit_collapse_bits": 0.0
+        },
+        {
+          "episode": 17,
+          "early_potential_bits": 0.0,
+          "p_win_start": 0.0,
+          "p_win_end": 0.0,
+          "final_win": 0,
+          "final_basin": [],
+          "commit_step": 1,
+          "commit_collapse_bits": 0.0
+        },
+        {
+          "episode": 18,
+          "early_potential_bits": 0.0,
+          "p_win_start": 0.0,
+          "p_win_end": 0.0,
+          "final_win": 0,
+          "final_basin": [],
+          "commit_step": 1,
+          "commit_collapse_bits": 0.0
+        },
+        {
+          "episode": 19,
+          "early_potential_bits": 0.0,
+          "p_win_start": 0.0,
+          "p_win_end": 0.0,
+          "final_win": 0,
+          "final_basin": [],
+          "commit_step": 1,
+          "commit_collapse_bits": 0.0
+        },
+        {
+          "episode": 20,
+          "early_potential_bits": 0.0,
+          "p_win_start": 0.0,
+          "p_win_end": 0.0,
+          "final_win": 0,
+          "final_basin": [],
+          "commit_step": 1,
+          "commit_collapse_bits": 0.0
+        },
+        {
+          "episode": 21,
+          "early_potential_bits": 0.0,
+          "p_win_start": 0.0,
+          "p_win_end": 0.0,
+          "final_win": 0,
+          "final_basin": [],
+          "commit_step": 1,
+          "commit_collapse_bits": 0.0
+        },
+        {
+          "episode": 22,
+          "early_potential_bits": 0.0,
+          "p_win_start": 0.0,
+          "p_win_end": 0.0,
+          "final_win": 0,
+          "final_basin": [],
+          "commit_step": 1,
+          "commit_collapse_bits": 0.0
+        },
+        {
+          "episode": 23,
+          "early_potential_bits": 0.0,
+          "p_win_start": 0.0,
+          "p_win_end": 0.0,
+          "final_win": 0,
+          "final_basin": [
+            1
+          ],
+          "commit_step": 1,
+          "commit_collapse_bits": 0.0
+        },
+        {
+          "episode": 24,
+          "early_potential_bits": 0.0,
+          "p_win_start": 0.0,
+          "p_win_end": 0.0,
+          "final_win": 0,
+          "final_basin": [
+            0
+          ],
+          "commit_step": 1,
+          "commit_collapse_bits": 0.0
+        },
+        {
+          "episode": 25,
+          "early_potential_bits": 0.0,
+          "p_win_start": 0.0,
+          "p_win_end": 0.0,
+          "final_win": 0,
+          "final_basin": [
+            1
+          ],
+          "commit_step": 1,
+          "commit_collapse_bits": 0.0
+        },
+        {
+          "episode": 26,
+          "early_potential_bits": 0.0,
+          "p_win_start": 0.0,
+          "p_win_end": 0.0,
+          "final_win": 0,
+          "final_basin": [],
+          "commit_step": 1,
+          "commit_collapse_bits": 0.0
+        },
+        {
+          "episode": 27,
+          "early_potential_bits": 0.0,
+          "p_win_start": 0.0,
+          "p_win_end": 0.0,
+          "final_win": 0,
+          "final_basin": [],
+          "commit_step": 1,
+          "commit_collapse_bits": 0.0
+        },
+        {
+          "episode": 28,
+          "early_potential_bits": 0.0,
+          "p_win_start": 0.0,
+          "p_win_end": 0.0,
+          "final_win": 0,
+          "final_basin": [],
+          "commit_step": 1,
+          "commit_collapse_bits": 0.0
+        },
+        {
+          "episode": 29,
+          "early_potential_bits": 0.0,
+          "p_win_start": 0.0,
+          "p_win_end": 0.0,
+          "final_win": 0,
+          "final_basin": [],
+          "commit_step": 1,
+          "commit_collapse_bits": 0.0
+        }
+      ]
+    },
+    "noise": {
+      "condition": "noise",
+      "n_episodes": 30,
+      "early_potential_bits": 0.3198071466770433,
+      "p_win_start": 0.0,
+      "p_win_end": 0.0,
+      "final_win_rate": 0.0,
+      "mean_commit_step": 20.566666666666666,
+      "episodes": [
+        {
+          "episode": 0,
+          "early_potential_bits": 0.5025655797885942,
+          "p_win_start": 0.0,
+          "p_win_end": 0.0,
+          "final_win": 0,
+          "final_basin": [],
+          "commit_step": 27,
+          "commit_collapse_bits": 0.9958407442523826
+        },
+        {
+          "episode": 1,
+          "early_potential_bits": 0.3464164684413415,
+          "p_win_start": 0.0,
+          "p_win_end": 0.0,
+          "final_win": 0,
+          "final_basin": [],
+          "commit_step": 15,
+          "commit_collapse_bits": 1.0387860828206186
+        },
+        {
+          "episode": 2,
+          "early_potential_bits": 0.3409515376694219,
+          "p_win_start": 0.0,
+          "p_win_end": 0.0,
+          "final_win": 0,
+          "final_basin": [],
+          "commit_step": 42,
+          "commit_collapse_bits": 2.0776292224248074
+        },
+        {
+          "episode": 3,
+          "early_potential_bits": 0.16112810557905008,
+          "p_win_start": 0.0,
+          "p_win_end": 0.0,
+          "final_win": 0,
+          "final_basin": [],
+          "commit_step": 14,
+          "commit_collapse_bits": 1.5312944882899906
+        },
+        {
+          "episode": 4,
+          "early_potential_bits": 0.4281415309381695,
+          "p_win_start": 0.0,
+          "p_win_end": 0.0,
+          "final_win": 0,
+          "final_basin": [],
+          "commit_step": 7,
+          "commit_collapse_bits": 2.0777421941303156
+        },
+        {
+          "episode": 5,
+          "early_potential_bits": 0.4083531628548546,
+          "p_win_start": 0.0,
+          "p_win_end": 0.0,
+          "final_win": 0,
+          "final_basin": [],
+          "commit_step": 2,
+          "commit_collapse_bits": 2.632241442466785
+        },
+        {
+          "episode": 6,
+          "early_potential_bits": 0.340283348208481,
+          "p_win_start": 0.0,
+          "p_win_end": 0.0,
+          "final_win": 0,
+          "final_basin": [],
+          "commit_step": 24,
+          "commit_collapse_bits": 1.538965079632837
+        },
+        {
+          "episode": 7,
+          "early_potential_bits": 0.19457915324670824,
+          "p_win_start": 0.0,
+          "p_win_end": 0.0,
+          "final_win": 0,
+          "final_basin": [],
+          "commit_step": 17,
+          "commit_collapse_bits": 2.0777421941303156
+        },
+        {
+          "episode": 8,
+          "early_potential_bits": 0.29246663454285,
+          "p_win_start": 0.0,
+          "p_win_end": 0.0,
+          "final_win": 0,
+          "final_basin": [
+            1
+          ],
+          "commit_step": 16,
+          "commit_collapse_bits": 3.9999999783595745
+        },
+        {
+          "episode": 9,
+          "early_potential_bits": 0.29862766612890895,
+          "p_win_start": 0.0,
+          "p_win_end": 0.0,
+          "final_win": 0,
+          "final_basin": [
+            1
+          ],
+          "commit_step": 45,
+          "commit_collapse_bits": 3.9999999783595745
+        },
+        {
+          "episode": 10,
+          "early_potential_bits": 0.1957241198167331,
+          "p_win_start": 0.0,
+          "p_win_end": 0.0,
+          "final_win": 0,
+          "final_basin": [],
+          "commit_step": 2,
+          "commit_collapse_bits": 0.9958407442523826
+        },
+        {
+          "episode": 11,
+          "early_potential_bits": 0.2291751674843913,
+          "p_win_start": 0.0,
+          "p_win_end": 0.0,
+          "final_win": 0,
+          "final_basin": [],
+          "commit_step": 11,
+          "commit_collapse_bits": 3.0686046666144127
+        },
+        {
+          "episode": 12,
+          "early_potential_bits": 0.08329409761106181,
+          "p_win_start": 0.0,
+          "p_win_end": 0.0,
+          "final_win": 0,
+          "final_basin": [],
+          "commit_step": 5,
+          "commit_collapse_bits": 0.9958407442523826
+        },
+        {
+          "episode": 13,
+          "early_potential_bits": 0.5067045708836609,
+          "p_win_start": 0.0,
+          "p_win_end": 0.0,
+          "final_win": 0,
+          "final_basin": [],
+          "commit_step": 25,
+          "commit_collapse_bits": 4.959429344199131
+        },
+        {
+          "episode": 14,
+          "early_potential_bits": 0.2635533663995804,
+          "p_win_start": 0.0,
+          "p_win_end": 0.0,
+          "final_win": 0,
+          "final_basin": [],
+          "commit_step": 22,
+          "commit_collapse_bits": 1.47390100010428
+        },
+        {
+          "episode": 15,
+          "early_potential_bits": 0.16658819522212362,
+          "p_win_start": 0.0,
+          "p_win_end": 0.0,
+          "final_win": 0,
+          "final_basin": [],
+          "commit_step": 26,
+          "commit_collapse_bits": 1.5312944882899906
+        },
+        {
+          "episode": 16,
+          "early_potential_bits": 0.19457915324670824,
+          "p_win_start": 0.0,
+          "p_win_end": 0.0,
+          "final_win": 0,
+          "final_basin": [],
+          "commit_step": 13,
+          "commit_collapse_bits": 1.5597697842395126
+        },
+        {
+          "episode": 17,
+          "early_potential_bits": 0.2635533663995804,
+          "p_win_start": 0.0,
+          "p_win_end": 0.0,
+          "final_win": 0,
+          "final_basin": [],
+          "commit_step": 18,
+          "commit_collapse_bits": 1.531422478697147
+        },
+        {
+          "episode": 18,
+          "early_potential_bits": 0.3949282006986304,
+          "p_win_start": 0.0,
+          "p_win_end": 0.0,
+          "final_win": 0,
+          "final_basin": [],
+          "commit_step": 23,
+          "commit_collapse_bits": 1.1161411727903916
+        },
+        {
+          "episode": 19,
+          "early_potential_bits": 0.3814797835835753,
+          "p_win_start": 0.0,
+          "p_win_end": 0.0,
+          "final_win": 0,
+          "final_basin": [],
+          "commit_step": 32,
+          "commit_collapse_bits": 1.054682932828741
+        },
+        {
+          "episode": 20,
+          "early_potential_bits": 0.47117212968082,
+          "p_win_start": 0.0,
+          "p_win_end": 0.0,
+          "final_win": 0,
+          "final_basin": [],
+          "commit_step": 14,
+          "commit_collapse_bits": 1.5354548951237688
+        },
+        {
+          "episode": 21,
+          "early_potential_bits": 0.2926808970121383,
+          "p_win_start": 0.0,
+          "p_win_end": 0.0,
+          "final_win": 0,
+          "final_basin": [],
+          "commit_step": 24,
+          "commit_collapse_bits": 1.5312944882899906
+        },
+        {
+          "episode": 22,
+          "early_potential_bits": 0.38057857973118586,
+          "p_win_start": 0.0,
+          "p_win_end": 0.0,
+          "final_win": 0,
+          "final_basin": [],
+          "commit_step": 26,
+          "commit_collapse_bits": 2.5311007569871182
+        },
+        {
+          "episode": 23,
+          "early_potential_bits": 0.34073372234692795,
+          "p_win_start": 0.0,
+          "p_win_end": 0.0,
+          "final_win": 0,
+          "final_basin": [],
+          "commit_step": 5,
+          "commit_collapse_bits": 2.5311007569871182
+        },
+        {
+          "episode": 24,
+          "early_potential_bits": 0.18047708411101251,
+          "p_win_start": 0.0,
+          "p_win_end": 0.0,
+          "final_win": 0,
+          "final_basin": [],
+          "commit_step": 23,
+          "commit_collapse_bits": 3.193604665171718
+        },
+        {
+          "episode": 25,
+          "early_potential_bits": 0.6281093472172463,
+          "p_win_start": 0.0,
+          "p_win_end": 0.0,
+          "final_win": 0,
+          "final_basin": [
+            1
+          ],
+          "commit_step": 34,
+          "commit_collapse_bits": 3.263034393426617
+        },
+        {
+          "episode": 26,
+          "early_potential_bits": 0.26311289462574655,
+          "p_win_start": 0.0,
+          "p_win_end": 0.0,
+          "final_win": 0,
+          "final_basin": [],
+          "commit_step": 31,
+          "commit_collapse_bits": 2.010022713495908
+        },
+        {
+          "episode": 27,
+          "early_potential_bits": 0.3067959952055727,
+          "p_win_start": 0.0,
+          "p_win_end": 0.0,
+          "final_win": 0,
+          "final_basin": [],
+          "commit_step": 48,
+          "commit_collapse_bits": 1.5312944882899906
+        },
+        {
+          "episode": 28,
+          "early_potential_bits": 0.2735581277847214,
+          "p_win_start": 0.0,
+          "p_win_end": 0.0,
+          "final_win": 0,
+          "final_basin": [],
+          "commit_step": 7,
+          "commit_collapse_bits": 1.5597697842395126
+        },
+        {
+          "episode": 29,
+          "early_potential_bits": 0.4639024138515026,
+          "p_win_start": 0.0,
+          "p_win_end": 0.0,
+          "final_win": 0,
+          "final_basin": [],
+          "commit_step": 19,
+          "commit_collapse_bits": 1.5597697842395126
+        }
+      ]
+    }
+  },
+  "verdicts": {
+    "L1_potential": {
+      "trained_early_potential": [
+        1.1315990875397595,
+        1.0231098861737014,
+        1.4093967881792173,
+        0.9303155943043184,
+        1.0788913462424419
+      ],
+      "pass": true
+    },
+    "L2_useful_structure": {
+      "trained_win_rate": [
+        0.8,
+        0.7666666666666667,
+        0.8333333333333334,
+        0.8333333333333334,
+        0.8333333333333334
+      ],
+      "untrained_win_rate": 0.03333333333333333,
+      "noise_win_rate": 0.0,
+      "pass": true
+    },
+    "L3_counterfactual": {
+      "pooled_do_gap_median": 0.125,
+      "pooled_sign_wins": 106,
+      "pooled_sign_losses": 0,
+      "pooled_sign_p": 2.465190328815662e-32,
+      "pass": true
+    },
+    "L4_greedy_contrast": {
+      "greedy_win_rate": 0.1,
+      "greedy_early_potential": 0.0,
+      "trained_min_win": 0.7666666666666667,
+      "trained_min_potential": 0.9303155943043184,
+      "pass": true
+    },
+    "all_pass": true
+  }
+}

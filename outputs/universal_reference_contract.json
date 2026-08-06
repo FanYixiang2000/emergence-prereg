@@ -1,0 +1,54 @@
+{
+  "status": "universal reference contract; URC-1..3 frozen in the docstring; one recipe, zero per-domain choices",
+  "recipe": "episode -> generic channel stats (length, mean, std, final) -> z-score -> k-means, k by silhouette over 2..6, fixed seed",
+  "crowd": {
+    "agreement": "53/60",
+    "agreement_rate": 0.8833333333333333,
+    "control_false_positives": 0,
+    "mi_urc_vs_hand_basin_per_learned": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "min_mi": 0.0
+  },
+  "boids": {
+    "0.0": {
+      "k": 2,
+      "urc_contraction_bits": 0.0,
+      "urc_js_decouple_bits": 0.0
+    },
+    "0.25": {
+      "k": 2,
+      "urc_contraction_bits": -0.1173583152513219,
+      "urc_js_decouple_bits": 0.9411399970018528
+    },
+    "0.5": {
+      "k": 3,
+      "urc_contraction_bits": -1.0281642711606553,
+      "urc_js_decouple_bits": 0.968098804894103
+    },
+    "0.75": {
+      "k": 3,
+      "urc_contraction_bits": -1.0088518170137522,
+      "urc_js_decouple_bits": 0.9951366188802461
+    },
+    "1.0": {
+      "k": 3,
+      "urc_contraction_bits": -0.99819587904281,
+      "urc_js_decouple_bits": 1.0
+    }
+  },
+  "registered_outcomes": {
+    "URC1_crowd_verdict_agreement_ge_90_no_false_pos": false,
+    "URC2_basins_resolve_structure_mi_ge_0.5": false,
+    "URC3_boids_monotone_and_loadbearing": false
+  }
+}

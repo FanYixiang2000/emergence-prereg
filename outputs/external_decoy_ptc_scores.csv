@@ -1,0 +1,4 @@
+controller,mean_win,min_win,mean_decoy_damage,target_decoy_rate_proxy,decoy_damage_reduction,win_gain_vs_nearest,local_trap_avoidance,external_decoy_ptc_score,source
+role_oracle,0.9988425925925927,0.9976851851851851,0.0001227770885028949,0.0212,0.9998469593508543,0.8894675925925927,0.8893314678948283,0.8883021490662463,/home/Yixiang/MPARL/examples_6.29_MARL_SWARM/outputs/decoy_robustness_grid_marl.json
+role_mined,0.9988425925925927,0.9976851851851851,0.0001227770885028949,0.0,0.9998469593508543,0.8894675925925927,0.8893314678948283,0.8883021490662463,/home/Yixiang/MPARL/examples_6.29_MARL_SWARM/outputs/decoy_robustness_grid_marl.json
+nearest_only,0.109375,0.07060185185185185,0.802251488008321,0.8932,0.0,0.0,0.0,0.0,/home/Yixiang/MPARL/examples_6.29_MARL_SWARM/outputs/decoy_robustness_grid_marl.json

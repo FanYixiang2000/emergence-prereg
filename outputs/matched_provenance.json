@@ -1,0 +1,254 @@
+{
+  "status": "matched-behaviour provenance; predictions MP-1..MP-4 frozen in the docstring",
+  "outcome_rarity_bits_uniform_reference": 6.279355890427604,
+  "systems": {
+    "script": {
+      "metrics": {
+        "pattern_probability": 1.0,
+        "basin_distribution": {
+          "sacrifice_rescue": 1.0
+        },
+        "specificity_js_bits": 1.0,
+        "usefulness_do_gap": 11.0
+      },
+      "acquisition": 0.0,
+      "c_prov_bits": 0.0,
+      "note": "deterministic hand rule; its own initialization"
+    },
+    "bc_clone": {
+      "seeds": {
+        "9101": {
+          "metrics": {
+            "pattern_probability": 1.0,
+            "basin_distribution": {
+              "sacrifice_rescue": 1.0
+            },
+            "specificity_js_bits": 0.4235249907007573,
+            "usefulness_do_gap": 11.0
+          },
+          "acquisition": 0.98,
+          "c_prov_bits": 0.3308244953757586,
+          "discovery_checkpoint": 1,
+          "n_checkpoints": 20
+        },
+        "9102": {
+          "metrics": {
+            "pattern_probability": 1.0,
+            "basin_distribution": {
+              "sacrifice_rescue": 1.0
+            },
+            "specificity_js_bits": 0.4525170202932125,
+            "usefulness_do_gap": 11.0
+          },
+          "acquisition": 0.98,
+          "c_prov_bits": 0.3130862181355556,
+          "discovery_checkpoint": 1,
+          "n_checkpoints": 20
+        },
+        "9103": {
+          "metrics": {
+            "pattern_probability": 1.0,
+            "basin_distribution": {
+              "sacrifice_rescue": 1.0
+            },
+            "specificity_js_bits": 0.4525170202932125,
+            "usefulness_do_gap": 11.0
+          },
+          "acquisition": 0.975,
+          "c_prov_bits": 0.3308244953757586,
+          "discovery_checkpoint": 1,
+          "n_checkpoints": 20
+        },
+        "9104": {
+          "metrics": {
+            "pattern_probability": 1.0,
+            "basin_distribution": {
+              "sacrifice_rescue": 1.0
+            },
+            "specificity_js_bits": 0.38240307008829244,
+            "usefulness_do_gap": 11.0
+          },
+          "acquisition": 0.98,
+          "c_prov_bits": 0.3308244953757586,
+          "discovery_checkpoint": 1,
+          "n_checkpoints": 20
+        },
+        "9105": {
+          "metrics": {
+            "pattern_probability": 1.0,
+            "basin_distribution": {
+              "sacrifice_rescue": 1.0
+            },
+            "specificity_js_bits": 0.3958156020033583,
+            "usefulness_do_gap": 11.0
+          },
+          "acquisition": 0.99,
+          "c_prov_bits": 0.3308244953757586,
+          "discovery_checkpoint": 1,
+          "n_checkpoints": 20
+        }
+      }
+    },
+    "shaped": {
+      "seeds": {
+        "9101": {
+          "metrics": {
+            "pattern_probability": 1.0,
+            "basin_distribution": {
+              "sacrifice_rescue": 1.0
+            },
+            "specificity_js_bits": 1.0,
+            "usefulness_do_gap": 11.0
+          },
+          "acquisition": 0.99,
+          "c_prov_bits": 0.3908378044075136,
+          "discovery_checkpoint": 1,
+          "n_checkpoints": 21
+        },
+        "9102": {
+          "metrics": {
+            "pattern_probability": 1.0,
+            "basin_distribution": {
+              "sacrifice_rescue": 1.0
+            },
+            "specificity_js_bits": 1.0,
+            "usefulness_do_gap": 11.0
+          },
+          "acquisition": 0.99,
+          "c_prov_bits": 0.3870783363755197,
+          "discovery_checkpoint": 1,
+          "n_checkpoints": 21
+        },
+        "9103": {
+          "metrics": {
+            "pattern_probability": 1.0,
+            "basin_distribution": {
+              "sacrifice_rescue": 1.0
+            },
+            "specificity_js_bits": 1.0,
+            "usefulness_do_gap": 11.0
+          },
+          "acquisition": 0.98,
+          "c_prov_bits": 0.33002556258595883,
+          "discovery_checkpoint": 1,
+          "n_checkpoints": 21
+        },
+        "9104": {
+          "metrics": {
+            "pattern_probability": 1.0,
+            "basin_distribution": {
+              "sacrifice_rescue": 1.0
+            },
+            "specificity_js_bits": 1.0,
+            "usefulness_do_gap": 11.0
+          },
+          "acquisition": 0.99,
+          "c_prov_bits": 0.43673257037816277,
+          "discovery_checkpoint": 1,
+          "n_checkpoints": 21
+        },
+        "9105": {
+          "metrics": {
+            "pattern_probability": 1.0,
+            "basin_distribution": {
+              "sacrifice_rescue": 1.0
+            },
+            "specificity_js_bits": 1.0,
+            "usefulness_do_gap": 11.0
+          },
+          "acquisition": 0.975,
+          "c_prov_bits": 0.4116918409014618,
+          "discovery_checkpoint": 1,
+          "n_checkpoints": 21
+        }
+      }
+    },
+    "outcome_only": {
+      "seeds": {
+        "9101": {
+          "metrics": {
+            "pattern_probability": 1.0,
+            "basin_distribution": {
+              "sacrifice_rescue": 1.0
+            },
+            "specificity_js_bits": 1.0,
+            "usefulness_do_gap": 11.0
+          },
+          "acquisition": 0.99,
+          "c_prov_bits": 0.6253584174981565,
+          "discovery_checkpoint": 1,
+          "n_checkpoints": 21
+        },
+        "9102": {
+          "metrics": {
+            "pattern_probability": 1.0,
+            "basin_distribution": {
+              "sacrifice_rescue": 1.0
+            },
+            "specificity_js_bits": 1.0,
+            "usefulness_do_gap": 11.0
+          },
+          "acquisition": 0.99,
+          "c_prov_bits": 0.9299525024717434,
+          "discovery_checkpoint": 2,
+          "n_checkpoints": 21
+        },
+        "9103": {
+          "metrics": {
+            "pattern_probability": 1.0,
+            "basin_distribution": {
+              "sacrifice_rescue": 1.0
+            },
+            "specificity_js_bits": 1.0,
+            "usefulness_do_gap": 11.0
+          },
+          "acquisition": 0.98,
+          "c_prov_bits": 0.35367683065060435,
+          "discovery_checkpoint": 1,
+          "n_checkpoints": 21
+        },
+        "9104": {
+          "metrics": {
+            "pattern_probability": 1.0,
+            "basin_distribution": {
+              "sacrifice_rescue": 1.0
+            },
+            "specificity_js_bits": 1.0,
+            "usefulness_do_gap": 11.0
+          },
+          "acquisition": 0.99,
+          "c_prov_bits": 0.8895004587344492,
+          "discovery_checkpoint": 2,
+          "n_checkpoints": 21
+        },
+        "9105": {
+          "metrics": {
+            "pattern_probability": 1.0,
+            "basin_distribution": {
+              "sacrifice_rescue": 1.0
+            },
+            "specificity_js_bits": 1.0,
+            "usefulness_do_gap": 11.0
+          },
+          "acquisition": 0.975,
+          "c_prov_bits": 0.4406238607774431,
+          "discovery_checkpoint": 1,
+          "n_checkpoints": 21
+        }
+      }
+    }
+  },
+  "seed_mean_c_prov_bits": {
+    "bc_clone": 0.327276839927718,
+    "shaped": 0.39127322292972333,
+    "outcome_only": 0.6478224140264792
+  },
+  "registered_outcomes": {
+    "MP1_behaviour_matched": true,
+    "MP2_structural_magnitude_matched": true,
+    "MP3_acquisition_boundary": true,
+    "MP4_provenance_rarity_ordering": true,
+    "MP5_clone_counterfactually_distinguishable": true,
+    "mp2_deviations": 0
+  }
+}

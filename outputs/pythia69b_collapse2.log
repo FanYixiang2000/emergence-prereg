@@ -1,0 +1,1312 @@
+288 probes in 2 length-batches; dropped verb pairs: none
+  step0: attempt 1/10 failed (no weight object found for step0); retrying
+  step0: attempt 2/10 failed (no weight object found for step0); retrying
+  step0: attempt 3/10 failed (no weight object found for step0); retrying
+288 probes in 2 length-batches; dropped verb pairs: none
+download pytorch_model-00001-of-00002.bin: 9.23 GiB, 591 ranges, 24 threads
+  pytorch_model-00001-of-00002.bin: 1/591 ranges
+  pytorch_model-00001-of-00002.bin: 25/591 ranges
+  pytorch_model-00001-of-00002.bin: 50/591 ranges
+  step0: attempt 1/10 failed (range 503316480-520093695 failed); retrying
+  step0: attempt 2/10 failed (<urlopen error [Errno 111] Connection refused>); retrying
+  step0: attempt 3/10 failed (<urlopen error [Errno 111] Connection refused>); retrying
+  step0: attempt 4/10 failed (<urlopen error [Errno 111] Connection refused>); retrying
+  step0: attempt 5/10 failed (<urlopen error [Errno 111] Connection refused>); retrying
+  step0: attempt 6/10 failed (<urlopen error [Errno 111] Connection refused>); retrying
+  step0: attempt 7/10 failed (<urlopen error [Errno 111] Connection refused>); retrying
+download pytorch_model-00001-of-00002.bin: 9.23 GiB, 591 ranges, 24 threads
+  pytorch_model-00001-of-00002.bin: resuming, 52/591 ranges already done
+  step0: attempt 8/10 failed (range 922746880-939524095 failed); retrying
+  step0: attempt 9/10 failed (<urlopen error [Errno 111] Connection refused>); retrying
+  step0: attempt 10/10 failed (<urlopen error [Errno 111] Connection refused>); retrying
+Traceback (most recent call last):
+  File "/home/Yixiang/miniconda3/lib/python3.13/urllib/request.py", line 1319, in do_open
+    h.request(req.get_method(), req.selector, req.data, headers,
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+              encode_chunked=req.has_header('Transfer-encoding'))
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/Yixiang/miniconda3/lib/python3.13/http/client.py", line 1338, in request
+    self._send_request(method, url, body, headers, encode_chunked)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/Yixiang/miniconda3/lib/python3.13/http/client.py", line 1384, in _send_request
+    self.endheaders(body, encode_chunked=encode_chunked)
+    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/Yixiang/miniconda3/lib/python3.13/http/client.py", line 1333, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/Yixiang/miniconda3/lib/python3.13/http/client.py", line 1093, in _send_output
+    self.send(msg)
+    ~~~~~~~~~^^^^^
+  File "/home/Yixiang/miniconda3/lib/python3.13/http/client.py", line 1037, in send
+    self.connect()
+    ~~~~~~~~~~~~^^
+  File "/home/Yixiang/miniconda3/lib/python3.13/http/client.py", line 1472, in connect
+    super().connect()
+    ~~~~~~~~~~~~~~~^^
+  File "/home/Yixiang/miniconda3/lib/python3.13/http/client.py", line 1003, in connect
+    self.sock = self._create_connection(
+                ~~~~~~~~~~~~~~~~~~~~~~~^
+        (self.host,self.port), self.timeout, self.source_address)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/Yixiang/miniconda3/lib/python3.13/socket.py", line 864, in create_connection
+    raise exceptions[0]
+  File "/home/Yixiang/miniconda3/lib/python3.13/socket.py", line 849, in create_connection
+    sock.connect(sa)
+    ~~~~~~~~~~~~^^^^
+ConnectionRefusedError: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/Yixiang/MPARL/GOGOGO/pythia_collapse_probe.py", line 378, in main
+    ckpt = download_checkpoint(step, model_id, ckpt_dir)
+  File "/home/Yixiang/MPARL/GOGOGO/pythia_collapse_probe.py", line 186, in download_checkpoint
+    fetch_ranged(f"{BASE}/{model}/resolve/{rev}/{fname}", out)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/Yixiang/MPARL/GOGOGO/pythia_collapse_probe.py", line 59, in fetch_ranged
+    size = int(urllib.request.urlopen(req, timeout=60).headers["Content-Length"])
+               ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/home/Yixiang/miniconda3/lib/python3.13/urllib/request.py", line 189, in urlopen
+    return opener.open(url, data, timeout)
+           ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "/home/Yixiang/miniconda3/lib/python3.13/urllib/request.py", line 489, in open
+    response = self._open(req, data)
+  File "/home/Yixiang/miniconda3/lib/python3.13/urllib/request.py", line 506, in _open
+    result = self._call_chain(self.handle_open, protocol, protocol +
+                              '_open', req)
+  File "/home/Yixiang/miniconda3/lib/python3.13/urllib/request.py", line 466, in _call_chain
+    result = func(*args)
+  File "/home/Yixiang/miniconda3/lib/python3.13/urllib/request.py", line 1367, in https_open
+    return self.do_open(http.client.HTTPSConnection, req,
+           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                        context=self._context)
+                        ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/Yixiang/miniconda3/lib/python3.13/urllib/request.py", line 1322, in do_open
+    raise URLError(err)
+urllib.error.URLError: <urlopen error [Errno 111] Connection refused>
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/Yixiang/MPARL/GOGOGO/pythia_collapse_probe.py", line 441, in <module>
+    main()
+    ~~~~^^
+  File "/home/Yixiang/MPARL/GOGOGO/pythia_collapse_probe.py", line 381, in main
+    raise RuntimeError(
+        f"baseline checkpoint step {baseline_step} failed"
+    ) from exc
+RuntimeError: baseline checkpoint step 0 failed
+288 probes in 2 length-batches; dropped verb pairs: none
+download pytorch_model-00001-of-00002.bin: 9.23 GiB, 591 ranges, 24 threads
+  pytorch_model-00001-of-00002.bin: resuming, 52/591 ranges already done
+  pytorch_model-00001-of-00002.bin: 1/539 ranges
+  pytorch_model-00001-of-00002.bin: 25/539 ranges
+  pytorch_model-00001-of-00002.bin: 50/539 ranges
+  pytorch_model-00001-of-00002.bin: 75/539 ranges
+  pytorch_model-00001-of-00002.bin: 100/539 ranges
+  pytorch_model-00001-of-00002.bin: 125/539 ranges
+  pytorch_model-00001-of-00002.bin: 150/539 ranges
+  pytorch_model-00001-of-00002.bin: 175/539 ranges
+  pytorch_model-00001-of-00002.bin: 200/539 ranges
+  pytorch_model-00001-of-00002.bin: 225/539 ranges
+  pytorch_model-00001-of-00002.bin: 250/539 ranges
+  pytorch_model-00001-of-00002.bin: 275/539 ranges
+  pytorch_model-00001-of-00002.bin: 300/539 ranges
+  pytorch_model-00001-of-00002.bin: 325/539 ranges
+  pytorch_model-00001-of-00002.bin: 350/539 ranges
+  pytorch_model-00001-of-00002.bin: 375/539 ranges
+  step0: attempt 1/10 failed (range 7616856064-7633633279 failed); retrying
+  step0: attempt 2/10 failed (<urlopen error [Errno 111] Connection refused>); retrying
+  step0: attempt 3/10 failed (<urlopen error [Errno 111] Connection refused>); retrying
+  step0: attempt 4/10 failed (<urlopen error [Errno 111] Connection refused>); retrying
+  step0: attempt 5/10 failed (<urlopen error [Errno 111] Connection refused>); retrying
+  step0: attempt 6/10 failed (<urlopen error [Errno 111] Connection refused>); retrying
+  step0: attempt 7/10 failed (<urlopen error [Errno 111] Connection refused>); retrying
+  step0: attempt 8/10 failed (<urlopen error [Errno 111] Connection refused>); retrying
+  step0: attempt 9/10 failed (<urlopen error [Errno 111] Connection refused>); retrying
+  step0: attempt 10/10 failed (<urlopen error [Errno 111] Connection refused>); retrying
+Traceback (most recent call last):
+  File "/home/Yixiang/miniconda3/lib/python3.13/urllib/request.py", line 1319, in do_open
+    h.request(req.get_method(), req.selector, req.data, headers,
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+              encode_chunked=req.has_header('Transfer-encoding'))
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/Yixiang/miniconda3/lib/python3.13/http/client.py", line 1338, in request
+    self._send_request(method, url, body, headers, encode_chunked)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/Yixiang/miniconda3/lib/python3.13/http/client.py", line 1384, in _send_request
+    self.endheaders(body, encode_chunked=encode_chunked)
+    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/Yixiang/miniconda3/lib/python3.13/http/client.py", line 1333, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/Yixiang/miniconda3/lib/python3.13/http/client.py", line 1093, in _send_output
+    self.send(msg)
+    ~~~~~~~~~^^^^^
+  File "/home/Yixiang/miniconda3/lib/python3.13/http/client.py", line 1037, in send
+    self.connect()
+    ~~~~~~~~~~~~^^
+  File "/home/Yixiang/miniconda3/lib/python3.13/http/client.py", line 1472, in connect
+    super().connect()
+    ~~~~~~~~~~~~~~~^^
+  File "/home/Yixiang/miniconda3/lib/python3.13/http/client.py", line 1003, in connect
+    self.sock = self._create_connection(
+                ~~~~~~~~~~~~~~~~~~~~~~~^
+        (self.host,self.port), self.timeout, self.source_address)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/Yixiang/miniconda3/lib/python3.13/socket.py", line 864, in create_connection
+    raise exceptions[0]
+  File "/home/Yixiang/miniconda3/lib/python3.13/socket.py", line 849, in create_connection
+    sock.connect(sa)
+    ~~~~~~~~~~~~^^^^
+ConnectionRefusedError: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/Yixiang/MPARL/GOGOGO/pythia_collapse_probe.py", line 378, in main
+    ckpt = download_checkpoint(step, model_id, ckpt_dir)
+  File "/home/Yixiang/MPARL/GOGOGO/pythia_collapse_probe.py", line 186, in download_checkpoint
+    fetch_ranged(f"{BASE}/{model}/resolve/{rev}/{fname}", out)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/Yixiang/MPARL/GOGOGO/pythia_collapse_probe.py", line 59, in fetch_ranged
+    size = int(urllib.request.urlopen(req, timeout=60).headers["Content-Length"])
+               ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/home/Yixiang/miniconda3/lib/python3.13/urllib/request.py", line 189, in urlopen
+    return opener.open(url, data, timeout)
+           ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "/home/Yixiang/miniconda3/lib/python3.13/urllib/request.py", line 489, in open
+    response = self._open(req, data)
+  File "/home/Yixiang/miniconda3/lib/python3.13/urllib/request.py", line 506, in _open
+    result = self._call_chain(self.handle_open, protocol, protocol +
+                              '_open', req)
+  File "/home/Yixiang/miniconda3/lib/python3.13/urllib/request.py", line 466, in _call_chain
+    result = func(*args)
+  File "/home/Yixiang/miniconda3/lib/python3.13/urllib/request.py", line 1367, in https_open
+    return self.do_open(http.client.HTTPSConnection, req,
+           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                        context=self._context)
+                        ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/Yixiang/miniconda3/lib/python3.13/urllib/request.py", line 1322, in do_open
+    raise URLError(err)
+urllib.error.URLError: <urlopen error [Errno 111] Connection refused>
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/Yixiang/MPARL/GOGOGO/pythia_collapse_probe.py", line 441, in <module>
+    main()
+    ~~~~^^
+  File "/home/Yixiang/MPARL/GOGOGO/pythia_collapse_probe.py", line 381, in main
+    raise RuntimeError(
+        f"baseline checkpoint step {baseline_step} failed"
+    ) from exc
+RuntimeError: baseline checkpoint step 0 failed
+288 probes in 2 length-batches; dropped verb pairs: none
+download pytorch_model-00001-of-00002.bin: 9.23 GiB, 591 ranges, 24 threads
+  pytorch_model-00001-of-00002.bin: resuming, 451/591 ranges already done
+  pytorch_model-00001-of-00002.bin: 1/140 ranges
+  step0: attempt 1/10 failed (range 7633633280-7650410495 failed); retrying
+  step0: attempt 2/10 failed (<urlopen error [Errno 111] Connection refused>); retrying
+  step0: attempt 3/10 failed (<urlopen error [Errno 111] Connection refused>); retrying
+  step0: attempt 4/10 failed (<urlopen error [Errno 111] Connection refused>); retrying
+  step0: attempt 5/10 failed (<urlopen error [Errno 111] Connection refused>); retrying
+  step0: attempt 6/10 failed (<urlopen error [Errno 111] Connection refused>); retrying
+  step0: attempt 7/10 failed (<urlopen error [Errno 111] Connection refused>); retrying
+  step0: attempt 8/10 failed (<urlopen error [Errno 111] Connection refused>); retrying
+  step0: attempt 9/10 failed (<urlopen error [Errno 111] Connection refused>); retrying
+  step0: attempt 10/10 failed (<urlopen error [Errno 111] Connection refused>); retrying
+Traceback (most recent call last):
+  File "/home/Yixiang/miniconda3/lib/python3.13/urllib/request.py", line 1319, in do_open
+    h.request(req.get_method(), req.selector, req.data, headers,
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+              encode_chunked=req.has_header('Transfer-encoding'))
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/Yixiang/miniconda3/lib/python3.13/http/client.py", line 1338, in request
+    self._send_request(method, url, body, headers, encode_chunked)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/Yixiang/miniconda3/lib/python3.13/http/client.py", line 1384, in _send_request
+    self.endheaders(body, encode_chunked=encode_chunked)
+    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/Yixiang/miniconda3/lib/python3.13/http/client.py", line 1333, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/Yixiang/miniconda3/lib/python3.13/http/client.py", line 1093, in _send_output
+    self.send(msg)
+    ~~~~~~~~~^^^^^
+  File "/home/Yixiang/miniconda3/lib/python3.13/http/client.py", line 1037, in send
+    self.connect()
+    ~~~~~~~~~~~~^^
+  File "/home/Yixiang/miniconda3/lib/python3.13/http/client.py", line 1472, in connect
+    super().connect()
+    ~~~~~~~~~~~~~~~^^
+  File "/home/Yixiang/miniconda3/lib/python3.13/http/client.py", line 1003, in connect
+    self.sock = self._create_connection(
+                ~~~~~~~~~~~~~~~~~~~~~~~^
+        (self.host,self.port), self.timeout, self.source_address)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/Yixiang/miniconda3/lib/python3.13/socket.py", line 864, in create_connection
+    raise exceptions[0]
+  File "/home/Yixiang/miniconda3/lib/python3.13/socket.py", line 849, in create_connection
+    sock.connect(sa)
+    ~~~~~~~~~~~~^^^^
+ConnectionRefusedError: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/Yixiang/MPARL/GOGOGO/pythia_collapse_probe.py", line 378, in main
+    ckpt = download_checkpoint(step, model_id, ckpt_dir)
+  File "/home/Yixiang/MPARL/GOGOGO/pythia_collapse_probe.py", line 186, in download_checkpoint
+    fetch_ranged(f"{BASE}/{model}/resolve/{rev}/{fname}", out)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/Yixiang/MPARL/GOGOGO/pythia_collapse_probe.py", line 59, in fetch_ranged
+    size = int(urllib.request.urlopen(req, timeout=60).headers["Content-Length"])
+               ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/home/Yixiang/miniconda3/lib/python3.13/urllib/request.py", line 189, in urlopen
+    return opener.open(url, data, timeout)
+           ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "/home/Yixiang/miniconda3/lib/python3.13/urllib/request.py", line 489, in open
+    response = self._open(req, data)
+  File "/home/Yixiang/miniconda3/lib/python3.13/urllib/request.py", line 506, in _open
+    result = self._call_chain(self.handle_open, protocol, protocol +
+                              '_open', req)
+  File "/home/Yixiang/miniconda3/lib/python3.13/urllib/request.py", line 466, in _call_chain
+    result = func(*args)
+  File "/home/Yixiang/miniconda3/lib/python3.13/urllib/request.py", line 1367, in https_open
+    return self.do_open(http.client.HTTPSConnection, req,
+           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                        context=self._context)
+                        ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/Yixiang/miniconda3/lib/python3.13/urllib/request.py", line 1322, in do_open
+    raise URLError(err)
+urllib.error.URLError: <urlopen error [Errno 111] Connection refused>
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/Yixiang/MPARL/GOGOGO/pythia_collapse_probe.py", line 441, in <module>
+    main()
+    ~~~~^^
+  File "/home/Yixiang/MPARL/GOGOGO/pythia_collapse_probe.py", line 381, in main
+    raise RuntimeError(
+        f"baseline checkpoint step {baseline_step} failed"
+    ) from exc
+RuntimeError: baseline checkpoint step 0 failed
+288 probes in 2 length-batches; dropped verb pairs: none
+download pytorch_model-00001-of-00002.bin: 9.23 GiB, 591 ranges, 24 threads
+  pytorch_model-00001-of-00002.bin: resuming, 453/591 ranges already done
+  pytorch_model-00001-of-00002.bin: 1/138 ranges
+  pytorch_model-00001-of-00002.bin: 25/138 ranges
+  step0: attempt 1/10 failed (range 8120172544-8136949759 failed); retrying
+  step0: attempt 2/10 failed (<urlopen error [Errno 111] Connection refused>); retrying
+  step0: attempt 3/10 failed (<urlopen error [Errno 111] Connection refused>); retrying
+  step0: attempt 4/10 failed (<urlopen error [Errno 111] Connection refused>); retrying
+  step0: attempt 5/10 failed (<urlopen error [Errno 111] Connection refused>); retrying
+  step0: attempt 6/10 failed (<urlopen error [Errno 111] Connection refused>); retrying
+  step0: attempt 7/10 failed (<urlopen error [Errno 111] Connection refused>); retrying
+  step0: attempt 8/10 failed (<urlopen error [Errno 111] Connection refused>); retrying
+  step0: attempt 9/10 failed (<urlopen error [Errno 111] Connection refused>); retrying
+  step0: attempt 10/10 failed (<urlopen error [Errno 111] Connection refused>); retrying
+Traceback (most recent call last):
+  File "/home/Yixiang/miniconda3/lib/python3.13/urllib/request.py", line 1319, in do_open
+    h.request(req.get_method(), req.selector, req.data, headers,
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+              encode_chunked=req.has_header('Transfer-encoding'))
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/Yixiang/miniconda3/lib/python3.13/http/client.py", line 1338, in request
+    self._send_request(method, url, body, headers, encode_chunked)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/Yixiang/miniconda3/lib/python3.13/http/client.py", line 1384, in _send_request
+    self.endheaders(body, encode_chunked=encode_chunked)
+    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/Yixiang/miniconda3/lib/python3.13/http/client.py", line 1333, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/Yixiang/miniconda3/lib/python3.13/http/client.py", line 1093, in _send_output
+    self.send(msg)
+    ~~~~~~~~~^^^^^
+  File "/home/Yixiang/miniconda3/lib/python3.13/http/client.py", line 1037, in send
+    self.connect()
+    ~~~~~~~~~~~~^^
+  File "/home/Yixiang/miniconda3/lib/python3.13/http/client.py", line 1472, in connect
+    super().connect()
+    ~~~~~~~~~~~~~~~^^
+  File "/home/Yixiang/miniconda3/lib/python3.13/http/client.py", line 1003, in connect
+    self.sock = self._create_connection(
+                ~~~~~~~~~~~~~~~~~~~~~~~^
+        (self.host,self.port), self.timeout, self.source_address)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/Yixiang/miniconda3/lib/python3.13/socket.py", line 864, in create_connection
+    raise exceptions[0]
+  File "/home/Yixiang/miniconda3/lib/python3.13/socket.py", line 849, in create_connection
+    sock.connect(sa)
+    ~~~~~~~~~~~~^^^^
+ConnectionRefusedError: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/Yixiang/MPARL/GOGOGO/pythia_collapse_probe.py", line 378, in main
+    ckpt = download_checkpoint(step, model_id, ckpt_dir)
+  File "/home/Yixiang/MPARL/GOGOGO/pythia_collapse_probe.py", line 186, in download_checkpoint
+    fetch_ranged(f"{BASE}/{model}/resolve/{rev}/{fname}", out)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/Yixiang/MPARL/GOGOGO/pythia_collapse_probe.py", line 59, in fetch_ranged
+    size = int(urllib.request.urlopen(req, timeout=60).headers["Content-Length"])
+               ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/home/Yixiang/miniconda3/lib/python3.13/urllib/request.py", line 189, in urlopen
+    return opener.open(url, data, timeout)
+           ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "/home/Yixiang/miniconda3/lib/python3.13/urllib/request.py", line 489, in open
+    response = self._open(req, data)
+  File "/home/Yixiang/miniconda3/lib/python3.13/urllib/request.py", line 506, in _open
+    result = self._call_chain(self.handle_open, protocol, protocol +
+                              '_open', req)
+  File "/home/Yixiang/miniconda3/lib/python3.13/urllib/request.py", line 466, in _call_chain
+    result = func(*args)
+  File "/home/Yixiang/miniconda3/lib/python3.13/urllib/request.py", line 1367, in https_open
+    return self.do_open(http.client.HTTPSConnection, req,
+           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                        context=self._context)
+                        ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/Yixiang/miniconda3/lib/python3.13/urllib/request.py", line 1322, in do_open
+    raise URLError(err)
+urllib.error.URLError: <urlopen error [Errno 111] Connection refused>
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/Yixiang/MPARL/GOGOGO/pythia_collapse_probe.py", line 441, in <module>
+    main()
+    ~~~~^^
+  File "/home/Yixiang/MPARL/GOGOGO/pythia_collapse_probe.py", line 381, in main
+    raise RuntimeError(
+        f"baseline checkpoint step {baseline_step} failed"
+    ) from exc
+RuntimeError: baseline checkpoint step 0 failed
+288 probes in 2 length-batches; dropped verb pairs: none
+download pytorch_model-00001-of-00002.bin: 9.23 GiB, 591 ranges, 24 threads
+  pytorch_model-00001-of-00002.bin: resuming, 498/591 ranges already done
+  pytorch_model-00001-of-00002.bin: 1/93 ranges
+  pytorch_model-00001-of-00002.bin: 25/93 ranges
+  pytorch_model-00001-of-00002.bin: 50/93 ranges
+  pytorch_model-00001-of-00002.bin: 75/93 ranges
+  pytorch_model-00001-of-00002.bin: 93/93 ranges
+download pytorch_model-00002-of-00002.bin: 3.67 GiB, 235 ranges, 24 threads
+  pytorch_model-00002-of-00002.bin: 1/235 ranges
+  pytorch_model-00002-of-00002.bin: 25/235 ranges
+  pytorch_model-00002-of-00002.bin: 50/235 ranges
+  pytorch_model-00002-of-00002.bin: 75/235 ranges
+  pytorch_model-00002-of-00002.bin: 100/235 ranges
+  pytorch_model-00002-of-00002.bin: 125/235 ranges
+  pytorch_model-00002-of-00002.bin: 150/235 ranges
+  pytorch_model-00002-of-00002.bin: 175/235 ranges
+  pytorch_model-00002-of-00002.bin: 200/235 ranges
+  pytorch_model-00002-of-00002.bin: 225/235 ranges
+  pytorch_model-00002-of-00002.bin: 235/235 ranges
+Loading weights:   0%|          | 0/388 [00:00<?, ?it/s]Loading weights:  20%|█▉        | 77/388 [00:00<00:00, 763.49it/s]Loading weights:  40%|███▉      | 154/388 [00:00<00:00, 744.31it/s]Loading weights:  62%|██████▏   | 240/388 [00:00<00:00, 789.01it/s]Loading weights:  86%|████████▌ | 332/388 [00:00<00:00, 834.85it/s]Loading weights: 100%|██████████| 388/388 [00:00<00:00, 806.87it/s]
+step        0 H  14.43 C   0.00 agree 0.542 (attractor 0.549) rand 0.490 perm 0.510 [3543s]
+download pytorch_model-00001-of-00002.bin: 9.23 GiB, 591 ranges, 24 threads
+  pytorch_model-00001-of-00002.bin: 1/591 ranges
+  pytorch_model-00001-of-00002.bin: 25/591 ranges
+  step1: attempt 1/10 failed (range 620756992-637534207 failed); retrying
+  step1: attempt 2/10 failed (<urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1032)>); retrying
+  step1: attempt 3/10 failed (<urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1032)>); retrying
+  step1: attempt 4/10 failed (<urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1032)>); retrying
+  step1: attempt 5/10 failed (<urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1032)>); retrying
+  step1: attempt 6/10 failed (<urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1032)>); retrying
+download pytorch_model-00001-of-00002.bin: 9.23 GiB, 591 ranges, 24 threads
+  pytorch_model-00001-of-00002.bin: resuming, 47/591 ranges already done
+  pytorch_model-00001-of-00002.bin: 1/544 ranges
+  step1: attempt 7/10 failed (range 721420288-738197503 failed); retrying
+  step1: attempt 8/10 failed (<urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1032)>); retrying
+  step1: attempt 9/10 failed (<urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1032)>); retrying
+  step1: attempt 10/10 failed (<urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1032)>); retrying
+step 1: DOWNLOAD FAILED after retries (<urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1032)>); skipped
+  step2: attempt 1/10 failed (<urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1032)>); retrying
+  step2: attempt 2/10 failed (<urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1032)>); retrying
+  step2: attempt 3/10 failed (<urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1032)>); retrying
+  step2: attempt 4/10 failed (<urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1032)>); retrying
+  step2: attempt 5/10 failed (<urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1032)>); retrying
+  step2: attempt 6/10 failed (<urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1032)>); retrying
+  step2: attempt 7/10 failed (<urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1032)>); retrying
+  step2: attempt 8/10 failed (<urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1032)>); retrying
+  step2: attempt 9/10 failed (<urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1032)>); retrying
+  step2: attempt 10/10 failed (<urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1032)>); retrying
+step 2: DOWNLOAD FAILED after retries (<urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1032)>); skipped
+  step4: attempt 1/10 failed (<urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1032)>); retrying
+  step4: attempt 2/10 failed (<urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1032)>); retrying
+  step4: attempt 3/10 failed (<urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1032)>); retrying
+  step4: attempt 4/10 failed (<urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1032)>); retrying
+  step4: attempt 5/10 failed (<urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1032)>); retrying
+  step4: attempt 6/10 failed (<urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1032)>); retrying
+  step4: attempt 7/10 failed (<urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1032)>); retrying
+  step4: attempt 8/10 failed (<urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1032)>); retrying
+  step4: attempt 9/10 failed (<urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1032)>); retrying
+  step4: attempt 10/10 failed (<urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1032)>); retrying
+step 4: DOWNLOAD FAILED after retries (<urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1032)>); skipped
+  step8: attempt 1/10 failed (<urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1032)>); retrying
+  step8: attempt 2/10 failed (<urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1032)>); retrying
+  step8: attempt 3/10 failed (no weight object found for step8); retrying
+  step8: attempt 4/10 failed (no weight object found for step8); retrying
+  step8: attempt 5/10 failed (no weight object found for step8); retrying
+  step8: attempt 6/10 failed (no weight object found for step8); retrying
+  step8: attempt 7/10 failed (no weight object found for step8); retrying
+  step8: attempt 8/10 failed (no weight object found for step8); retrying
+  step8: attempt 9/10 failed (no weight object found for step8); retrying
+download pytorch_model-00001-of-00002.bin: 9.23 GiB, 591 ranges, 24 threads
+  pytorch_model-00001-of-00002.bin: 1/591 ranges
+  pytorch_model-00001-of-00002.bin: 25/591 ranges
+  pytorch_model-00001-of-00002.bin: 50/591 ranges
+  pytorch_model-00001-of-00002.bin: 75/591 ranges
+  pytorch_model-00001-of-00002.bin: 100/591 ranges
+  pytorch_model-00001-of-00002.bin: 125/591 ranges
+  pytorch_model-00001-of-00002.bin: 150/591 ranges
+  pytorch_model-00001-of-00002.bin: 175/591 ranges
+  pytorch_model-00001-of-00002.bin: 200/591 ranges
+  pytorch_model-00001-of-00002.bin: 225/591 ranges
+  pytorch_model-00001-of-00002.bin: 250/591 ranges
+  pytorch_model-00001-of-00002.bin: 275/591 ranges
+  pytorch_model-00001-of-00002.bin: 300/591 ranges
+  pytorch_model-00001-of-00002.bin: 325/591 ranges
+  pytorch_model-00001-of-00002.bin: 350/591 ranges
+  pytorch_model-00001-of-00002.bin: 375/591 ranges
+  pytorch_model-00001-of-00002.bin: 400/591 ranges
+  pytorch_model-00001-of-00002.bin: 425/591 ranges
+  pytorch_model-00001-of-00002.bin: 450/591 ranges
+  pytorch_model-00001-of-00002.bin: 475/591 ranges
+  pytorch_model-00001-of-00002.bin: 500/591 ranges
+  pytorch_model-00001-of-00002.bin: 525/591 ranges
+  pytorch_model-00001-of-00002.bin: 550/591 ranges
+  pytorch_model-00001-of-00002.bin: 575/591 ranges
+  pytorch_model-00001-of-00002.bin: 591/591 ranges
+download pytorch_model-00002-of-00002.bin: 3.67 GiB, 235 ranges, 24 threads
+  pytorch_model-00002-of-00002.bin: 1/235 ranges
+  pytorch_model-00002-of-00002.bin: 25/235 ranges
+  pytorch_model-00002-of-00002.bin: 50/235 ranges
+  pytorch_model-00002-of-00002.bin: 75/235 ranges
+  pytorch_model-00002-of-00002.bin: 100/235 ranges
+  pytorch_model-00002-of-00002.bin: 125/235 ranges
+  pytorch_model-00002-of-00002.bin: 150/235 ranges
+  pytorch_model-00002-of-00002.bin: 175/235 ranges
+  pytorch_model-00002-of-00002.bin: 200/235 ranges
+  pytorch_model-00002-of-00002.bin: 225/235 ranges
+  pytorch_model-00002-of-00002.bin: 235/235 ranges
+Loading weights:   0%|          | 0/388 [00:00<?, ?it/s]Loading weights:  19%|█▊        | 72/388 [00:00<00:00, 681.96it/s]Loading weights:  40%|████      | 156/388 [00:00<00:00, 756.39it/s]Loading weights:  64%|██████▍   | 248/388 [00:00<00:00, 818.89it/s]Loading weights:  87%|████████▋ | 336/388 [00:00<00:00, 833.75it/s]Loading weights: 100%|██████████| 388/388 [00:00<00:00, 823.75it/s]
+step        8 H  13.01 C   1.62 agree 0.497 (attractor 0.507) rand 0.493 perm 0.521 [2676s]
+download pytorch_model-00001-of-00002.bin: 9.23 GiB, 591 ranges, 24 threads
+  pytorch_model-00001-of-00002.bin: 1/591 ranges
+  pytorch_model-00001-of-00002.bin: 25/591 ranges
+  pytorch_model-00001-of-00002.bin: 50/591 ranges
+  pytorch_model-00001-of-00002.bin: 75/591 ranges
+  pytorch_model-00001-of-00002.bin: 100/591 ranges
+  pytorch_model-00001-of-00002.bin: 125/591 ranges
+  pytorch_model-00001-of-00002.bin: 150/591 ranges
+  pytorch_model-00001-of-00002.bin: 175/591 ranges
+  pytorch_model-00001-of-00002.bin: 200/591 ranges
+  pytorch_model-00001-of-00002.bin: 225/591 ranges
+  pytorch_model-00001-of-00002.bin: 250/591 ranges
+  pytorch_model-00001-of-00002.bin: 275/591 ranges
+  pytorch_model-00001-of-00002.bin: 300/591 ranges
+  pytorch_model-00001-of-00002.bin: 325/591 ranges
+  pytorch_model-00001-of-00002.bin: 350/591 ranges
+  pytorch_model-00001-of-00002.bin: 375/591 ranges
+  pytorch_model-00001-of-00002.bin: 400/591 ranges
+  pytorch_model-00001-of-00002.bin: 425/591 ranges
+  pytorch_model-00001-of-00002.bin: 450/591 ranges
+  pytorch_model-00001-of-00002.bin: 475/591 ranges
+  pytorch_model-00001-of-00002.bin: 500/591 ranges
+  pytorch_model-00001-of-00002.bin: 525/591 ranges
+  pytorch_model-00001-of-00002.bin: 550/591 ranges
+  pytorch_model-00001-of-00002.bin: 575/591 ranges
+  pytorch_model-00001-of-00002.bin: 591/591 ranges
+download pytorch_model-00002-of-00002.bin: 3.67 GiB, 235 ranges, 24 threads
+  pytorch_model-00002-of-00002.bin: 1/235 ranges
+  pytorch_model-00002-of-00002.bin: 25/235 ranges
+  pytorch_model-00002-of-00002.bin: 50/235 ranges
+  pytorch_model-00002-of-00002.bin: 75/235 ranges
+  pytorch_model-00002-of-00002.bin: 100/235 ranges
+  pytorch_model-00002-of-00002.bin: 125/235 ranges
+  pytorch_model-00002-of-00002.bin: 150/235 ranges
+  pytorch_model-00002-of-00002.bin: 175/235 ranges
+  pytorch_model-00002-of-00002.bin: 200/235 ranges
+  pytorch_model-00002-of-00002.bin: 225/235 ranges
+  pytorch_model-00002-of-00002.bin: 235/235 ranges
+Traceback (most recent call last):
+  File "/home/Yixiang/miniconda3/lib/python3.13/site-packages/transformers/configuration_utils.py", line 794, in _get_config_dict
+    config_dict = cls._dict_from_json_file(resolved_config_file)
+  File "/home/Yixiang/miniconda3/lib/python3.13/site-packages/transformers/configuration_utils.py", line 907, in _dict_from_json_file
+    config_dict = json.loads(text)
+  File "/home/Yixiang/miniconda3/lib/python3.13/json/__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^
+  File "/home/Yixiang/miniconda3/lib/python3.13/json/decoder.py", line 345, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+               ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/Yixiang/miniconda3/lib/python3.13/json/decoder.py", line 363, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/Yixiang/MPARL/GOGOGO/pythia_collapse_probe.py", line 441, in <module>
+    main()
+    ~~~~^^
+  File "/home/Yixiang/MPARL/GOGOGO/pythia_collapse_probe.py", line 388, in main
+    model = GPTNeoXForCausalLM.from_pretrained(ckpt, dtype=dtype).to(device)
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "/home/Yixiang/miniconda3/lib/python3.13/site-packages/transformers/modeling_utils.py", line 4217, in from_pretrained
+    config, model_kwargs = config_class.from_pretrained(
+                           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        config_path,
+        ^^^^^^^^^^^^
+    ...<5 lines>...
+        **kwargs,
+        ^^^^^^^^^
+    )
+    ^
+  File "/home/Yixiang/miniconda3/lib/python3.13/site-packages/transformers/configuration_utils.py", line 664, in from_pretrained
+    config_dict, kwargs = cls.get_config_dict(pretrained_model_name_or_path, **kwargs)
+                          ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/Yixiang/miniconda3/lib/python3.13/site-packages/transformers/configuration_utils.py", line 705, in get_config_dict
+    config_dict, kwargs = cls._get_config_dict(pretrained_model_name_or_path, **kwargs)
+                          ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/Yixiang/miniconda3/lib/python3.13/site-packages/transformers/configuration_utils.py", line 798, in _get_config_dict
+    raise OSError(f"It looks like the config file at '{resolved_config_file}' is not a valid JSON file.")
+OSError: It looks like the config file at '/home/Yixiang/MPARL/GOGOGO/external_pythia_6.9b/step16/config.json' is not a valid JSON file.
+288 probes in 2 length-batches; dropped verb pairs: none
+Loading weights:   0%|          | 0/388 [00:00<?, ?it/s]Loading weights:  19%|█▉        | 74/388 [00:00<00:00, 724.61it/s]Loading weights:  38%|███▊      | 147/388 [00:00<00:00, 667.40it/s]Loading weights:  58%|█████▊    | 224/388 [00:00<00:00, 700.03it/s]Loading weights:  76%|███████▌  | 295/388 [00:00<00:00, 689.19it/s]Loading weights:  96%|█████████▌| 372/388 [00:00<00:00, 684.68it/s]Loading weights: 100%|██████████| 388/388 [00:00<00:00, 707.13it/s]
+step        0 H  14.43 C   0.00 agree 0.542 (attractor 0.549) rand 0.490 perm 0.510 [5s]
+download pytorch_model-00001-of-00002.bin: 9.23 GiB, 591 ranges, 24 threads
+  pytorch_model-00001-of-00002.bin: resuming, 51/591 ranges already done
+  pytorch_model-00001-of-00002.bin: 1/540 ranges
+  pytorch_model-00001-of-00002.bin: 25/540 ranges
+  pytorch_model-00001-of-00002.bin: 50/540 ranges
+  pytorch_model-00001-of-00002.bin: 75/540 ranges
+  pytorch_model-00001-of-00002.bin: 100/540 ranges
+  pytorch_model-00001-of-00002.bin: 125/540 ranges
+  pytorch_model-00001-of-00002.bin: 150/540 ranges
+  pytorch_model-00001-of-00002.bin: 175/540 ranges
+  pytorch_model-00001-of-00002.bin: 200/540 ranges
+  pytorch_model-00001-of-00002.bin: 225/540 ranges
+  pytorch_model-00001-of-00002.bin: 250/540 ranges
+  pytorch_model-00001-of-00002.bin: 275/540 ranges
+  pytorch_model-00001-of-00002.bin: 300/540 ranges
+  pytorch_model-00001-of-00002.bin: 325/540 ranges
+  pytorch_model-00001-of-00002.bin: 350/540 ranges
+  pytorch_model-00001-of-00002.bin: 375/540 ranges
+  pytorch_model-00001-of-00002.bin: 400/540 ranges
+  pytorch_model-00001-of-00002.bin: 425/540 ranges
+  pytorch_model-00001-of-00002.bin: 450/540 ranges
+  pytorch_model-00001-of-00002.bin: 475/540 ranges
+  pytorch_model-00001-of-00002.bin: 500/540 ranges
+  pytorch_model-00001-of-00002.bin: 525/540 ranges
+  pytorch_model-00001-of-00002.bin: 540/540 ranges
+download pytorch_model-00002-of-00002.bin: 3.67 GiB, 235 ranges, 24 threads
+  pytorch_model-00002-of-00002.bin: 1/235 ranges
+  pytorch_model-00002-of-00002.bin: 25/235 ranges
+  pytorch_model-00002-of-00002.bin: 50/235 ranges
+  pytorch_model-00002-of-00002.bin: 75/235 ranges
+  pytorch_model-00002-of-00002.bin: 100/235 ranges
+  pytorch_model-00002-of-00002.bin: 125/235 ranges
+  pytorch_model-00002-of-00002.bin: 150/235 ranges
+  pytorch_model-00002-of-00002.bin: 175/235 ranges
+  pytorch_model-00002-of-00002.bin: 200/235 ranges
+  pytorch_model-00002-of-00002.bin: 225/235 ranges
+  pytorch_model-00002-of-00002.bin: 235/235 ranges
+Loading weights:   0%|          | 0/388 [00:00<?, ?it/s]Loading weights:  16%|█▌        | 62/388 [00:00<00:00, 590.25it/s]Loading weights:  40%|████      | 156/388 [00:00<00:00, 749.36it/s]Loading weights:  62%|██████▏   | 240/388 [00:00<00:00, 782.60it/s]Loading weights:  82%|████████▏ | 319/388 [00:00<00:00, 781.12it/s]Loading weights: 100%|██████████| 388/388 [00:00<00:00, 770.20it/s]
+step        1 H  14.43 C   0.00 agree 0.542 (attractor 0.549) rand 0.490 perm 0.510 [813s]
+download pytorch_model-00001-of-00002.bin: 9.23 GiB, 591 ranges, 24 threads
+  pytorch_model-00001-of-00002.bin: 1/591 ranges
+  pytorch_model-00001-of-00002.bin: 25/591 ranges
+  pytorch_model-00001-of-00002.bin: 50/591 ranges
+  pytorch_model-00001-of-00002.bin: 75/591 ranges
+  pytorch_model-00001-of-00002.bin: 100/591 ranges
+  pytorch_model-00001-of-00002.bin: 125/591 ranges
+  pytorch_model-00001-of-00002.bin: 150/591 ranges
+  pytorch_model-00001-of-00002.bin: 175/591 ranges
+  pytorch_model-00001-of-00002.bin: 200/591 ranges
+  pytorch_model-00001-of-00002.bin: 225/591 ranges
+  pytorch_model-00001-of-00002.bin: 250/591 ranges
+  pytorch_model-00001-of-00002.bin: 275/591 ranges
+  pytorch_model-00001-of-00002.bin: 300/591 ranges
+  pytorch_model-00001-of-00002.bin: 325/591 ranges
+  pytorch_model-00001-of-00002.bin: 350/591 ranges
+  pytorch_model-00001-of-00002.bin: 375/591 ranges
+  pytorch_model-00001-of-00002.bin: 400/591 ranges
+  pytorch_model-00001-of-00002.bin: 425/591 ranges
+  pytorch_model-00001-of-00002.bin: 450/591 ranges
+  pytorch_model-00001-of-00002.bin: 475/591 ranges
+  pytorch_model-00001-of-00002.bin: 500/591 ranges
+  pytorch_model-00001-of-00002.bin: 525/591 ranges
+  pytorch_model-00001-of-00002.bin: 550/591 ranges
+  pytorch_model-00001-of-00002.bin: 575/591 ranges
+  pytorch_model-00001-of-00002.bin: 591/591 ranges
+download pytorch_model-00002-of-00002.bin: 3.67 GiB, 235 ranges, 24 threads
+  pytorch_model-00002-of-00002.bin: 1/235 ranges
+  pytorch_model-00002-of-00002.bin: 25/235 ranges
+  pytorch_model-00002-of-00002.bin: 50/235 ranges
+  pytorch_model-00002-of-00002.bin: 75/235 ranges
+  pytorch_model-00002-of-00002.bin: 100/235 ranges
+  pytorch_model-00002-of-00002.bin: 125/235 ranges
+  pytorch_model-00002-of-00002.bin: 150/235 ranges
+  pytorch_model-00002-of-00002.bin: 175/235 ranges
+  pytorch_model-00002-of-00002.bin: 200/235 ranges
+  pytorch_model-00002-of-00002.bin: 225/235 ranges
+  pytorch_model-00002-of-00002.bin: 235/235 ranges
+Loading weights:   0%|          | 0/388 [00:00<?, ?it/s]Loading weights:  19%|█▊        | 72/388 [00:00<00:00, 714.94it/s]Loading weights:  40%|████      | 156/388 [00:00<00:00, 769.64it/s]Loading weights:  62%|██████▏   | 242/388 [00:00<00:00, 801.89it/s]Loading weights:  84%|████████▎ | 324/388 [00:00<00:00, 803.86it/s]Loading weights: 100%|██████████| 388/388 [00:00<00:00, 815.76it/s]
+step        2 H  14.43 C   0.00 agree 0.538 (attractor 0.549) rand 0.490 perm 0.507 [780s]
+download pytorch_model-00001-of-00002.bin: 9.23 GiB, 591 ranges, 24 threads
+  pytorch_model-00001-of-00002.bin: 1/591 ranges
+  pytorch_model-00001-of-00002.bin: 25/591 ranges
+  pytorch_model-00001-of-00002.bin: 50/591 ranges
+  pytorch_model-00001-of-00002.bin: 75/591 ranges
+  pytorch_model-00001-of-00002.bin: 100/591 ranges
+  pytorch_model-00001-of-00002.bin: 125/591 ranges
+  pytorch_model-00001-of-00002.bin: 150/591 ranges
+  pytorch_model-00001-of-00002.bin: 175/591 ranges
+  pytorch_model-00001-of-00002.bin: 200/591 ranges
+  pytorch_model-00001-of-00002.bin: 225/591 ranges
+  pytorch_model-00001-of-00002.bin: 250/591 ranges
+  pytorch_model-00001-of-00002.bin: 275/591 ranges
+  pytorch_model-00001-of-00002.bin: 300/591 ranges
+  pytorch_model-00001-of-00002.bin: 325/591 ranges
+  pytorch_model-00001-of-00002.bin: 350/591 ranges
+  pytorch_model-00001-of-00002.bin: 375/591 ranges
+  pytorch_model-00001-of-00002.bin: 400/591 ranges
+  pytorch_model-00001-of-00002.bin: 425/591 ranges
+  pytorch_model-00001-of-00002.bin: 450/591 ranges
+  pytorch_model-00001-of-00002.bin: 475/591 ranges
+  pytorch_model-00001-of-00002.bin: 500/591 ranges
+  pytorch_model-00001-of-00002.bin: 525/591 ranges
+  pytorch_model-00001-of-00002.bin: 550/591 ranges
+  pytorch_model-00001-of-00002.bin: 575/591 ranges
+  pytorch_model-00001-of-00002.bin: 591/591 ranges
+download pytorch_model-00002-of-00002.bin: 3.67 GiB, 235 ranges, 24 threads
+  pytorch_model-00002-of-00002.bin: 1/235 ranges
+  pytorch_model-00002-of-00002.bin: 25/235 ranges
+  pytorch_model-00002-of-00002.bin: 50/235 ranges
+  pytorch_model-00002-of-00002.bin: 75/235 ranges
+  pytorch_model-00002-of-00002.bin: 100/235 ranges
+  pytorch_model-00002-of-00002.bin: 125/235 ranges
+  pytorch_model-00002-of-00002.bin: 150/235 ranges
+  pytorch_model-00002-of-00002.bin: 175/235 ranges
+  pytorch_model-00002-of-00002.bin: 200/235 ranges
+  pytorch_model-00002-of-00002.bin: 225/235 ranges
+  pytorch_model-00002-of-00002.bin: 235/235 ranges
+Loading weights:   0%|          | 0/388 [00:00<?, ?it/s]Loading weights:  19%|█▉        | 74/388 [00:00<00:00, 663.75it/s]Loading weights:  43%|████▎     | 168/388 [00:00<00:00, 803.72it/s]Loading weights:  65%|██████▌   | 254/388 [00:00<00:00, 814.53it/s]Loading weights:  89%|████████▊ | 344/388 [00:00<00:00, 841.80it/s]Loading weights: 100%|██████████| 388/388 [00:00<00:00, 829.05it/s]
+step        4 H  14.44 C   0.00 agree 0.535 (attractor 0.535) rand 0.490 perm 0.507 [701s]
+Loading weights:   0%|          | 0/388 [00:00<?, ?it/s]Loading weights:  22%|██▏       | 84/388 [00:00<00:00, 815.07it/s]Loading weights:  43%|████▎     | 168/388 [00:00<00:00, 827.67it/s]Loading weights:  65%|██████▍   | 252/388 [00:00<00:00, 806.49it/s]Loading weights:  89%|████████▊ | 344/388 [00:00<00:00, 843.56it/s]Loading weights: 100%|██████████| 388/388 [00:00<00:00, 842.98it/s]
+step        8 H  13.01 C   1.62 agree 0.497 (attractor 0.507) rand 0.493 perm 0.521 [4s]
+Loading weights:   0%|          | 0/388 [00:00<?, ?it/s]Loading weights:  21%|██        | 80/388 [00:00<00:00, 753.06it/s]Loading weights:  43%|████▎     | 168/388 [00:00<00:00, 804.82it/s]Loading weights:  65%|██████▌   | 254/388 [00:00<00:00, 819.01it/s]Loading weights:  89%|████████▊ | 344/388 [00:00<00:00, 849.60it/s]Loading weights: 100%|██████████| 388/388 [00:00<00:00, 842.20it/s]
+step       16 H  13.44 C   1.83 agree 0.503 (attractor 0.528) rand 0.503 perm 0.517 [10s]
+download pytorch_model-00001-of-00002.bin: 9.23 GiB, 591 ranges, 24 threads
+  pytorch_model-00001-of-00002.bin: 1/591 ranges
+  pytorch_model-00001-of-00002.bin: 25/591 ranges
+  pytorch_model-00001-of-00002.bin: 50/591 ranges
+  pytorch_model-00001-of-00002.bin: 75/591 ranges
+  pytorch_model-00001-of-00002.bin: 100/591 ranges
+  pytorch_model-00001-of-00002.bin: 125/591 ranges
+  pytorch_model-00001-of-00002.bin: 150/591 ranges
+  pytorch_model-00001-of-00002.bin: 175/591 ranges
+  pytorch_model-00001-of-00002.bin: 200/591 ranges
+  pytorch_model-00001-of-00002.bin: 225/591 ranges
+  pytorch_model-00001-of-00002.bin: 250/591 ranges
+  pytorch_model-00001-of-00002.bin: 275/591 ranges
+  pytorch_model-00001-of-00002.bin: 300/591 ranges
+  pytorch_model-00001-of-00002.bin: 325/591 ranges
+  pytorch_model-00001-of-00002.bin: 350/591 ranges
+  pytorch_model-00001-of-00002.bin: 375/591 ranges
+  pytorch_model-00001-of-00002.bin: 400/591 ranges
+  pytorch_model-00001-of-00002.bin: 425/591 ranges
+  pytorch_model-00001-of-00002.bin: 450/591 ranges
+  pytorch_model-00001-of-00002.bin: 475/591 ranges
+  pytorch_model-00001-of-00002.bin: 500/591 ranges
+  pytorch_model-00001-of-00002.bin: 525/591 ranges
+  pytorch_model-00001-of-00002.bin: 550/591 ranges
+  pytorch_model-00001-of-00002.bin: 575/591 ranges
+  pytorch_model-00001-of-00002.bin: 591/591 ranges
+download pytorch_model-00002-of-00002.bin: 3.67 GiB, 235 ranges, 24 threads
+  pytorch_model-00002-of-00002.bin: 1/235 ranges
+  pytorch_model-00002-of-00002.bin: 25/235 ranges
+  pytorch_model-00002-of-00002.bin: 50/235 ranges
+  pytorch_model-00002-of-00002.bin: 75/235 ranges
+  pytorch_model-00002-of-00002.bin: 100/235 ranges
+  pytorch_model-00002-of-00002.bin: 125/235 ranges
+  pytorch_model-00002-of-00002.bin: 150/235 ranges
+  pytorch_model-00002-of-00002.bin: 175/235 ranges
+  pytorch_model-00002-of-00002.bin: 200/235 ranges
+  pytorch_model-00002-of-00002.bin: 225/235 ranges
+  pytorch_model-00002-of-00002.bin: 235/235 ranges
+Loading weights:   0%|          | 0/388 [00:00<?, ?it/s]Loading weights:  19%|█▊        | 72/388 [00:00<00:00, 672.06it/s]Loading weights:  43%|████▎     | 168/388 [00:00<00:00, 805.90it/s]Loading weights:  64%|██████▍   | 249/388 [00:00<00:00, 786.29it/s]Loading weights:  85%|████████▍ | 328/388 [00:00<00:00, 771.60it/s]Loading weights: 100%|██████████| 388/388 [00:00<00:00, 790.54it/s]
+step       32 H  11.98 C   4.24 agree 0.497 (attractor 0.500) rand 0.521 perm 0.524 [667s]
+download pytorch_model-00001-of-00002.bin: 9.23 GiB, 591 ranges, 24 threads
+  pytorch_model-00001-of-00002.bin: 1/591 ranges
+  pytorch_model-00001-of-00002.bin: 25/591 ranges
+  pytorch_model-00001-of-00002.bin: 50/591 ranges
+  pytorch_model-00001-of-00002.bin: 75/591 ranges
+  pytorch_model-00001-of-00002.bin: 100/591 ranges
+  pytorch_model-00001-of-00002.bin: 125/591 ranges
+  pytorch_model-00001-of-00002.bin: 150/591 ranges
+  pytorch_model-00001-of-00002.bin: 175/591 ranges
+  pytorch_model-00001-of-00002.bin: 200/591 ranges
+  pytorch_model-00001-of-00002.bin: 225/591 ranges
+  pytorch_model-00001-of-00002.bin: 250/591 ranges
+  pytorch_model-00001-of-00002.bin: 275/591 ranges
+  pytorch_model-00001-of-00002.bin: 300/591 ranges
+  pytorch_model-00001-of-00002.bin: 325/591 ranges
+  pytorch_model-00001-of-00002.bin: 350/591 ranges
+  pytorch_model-00001-of-00002.bin: 375/591 ranges
+  pytorch_model-00001-of-00002.bin: 400/591 ranges
+  pytorch_model-00001-of-00002.bin: 425/591 ranges
+  pytorch_model-00001-of-00002.bin: 450/591 ranges
+  pytorch_model-00001-of-00002.bin: 475/591 ranges
+  pytorch_model-00001-of-00002.bin: 500/591 ranges
+  pytorch_model-00001-of-00002.bin: 525/591 ranges
+  pytorch_model-00001-of-00002.bin: 550/591 ranges
+  pytorch_model-00001-of-00002.bin: 575/591 ranges
+  pytorch_model-00001-of-00002.bin: 591/591 ranges
+download pytorch_model-00002-of-00002.bin: 3.67 GiB, 235 ranges, 24 threads
+  pytorch_model-00002-of-00002.bin: 1/235 ranges
+  pytorch_model-00002-of-00002.bin: 25/235 ranges
+  pytorch_model-00002-of-00002.bin: 50/235 ranges
+  pytorch_model-00002-of-00002.bin: 75/235 ranges
+  pytorch_model-00002-of-00002.bin: 100/235 ranges
+  pytorch_model-00002-of-00002.bin: 125/235 ranges
+  pytorch_model-00002-of-00002.bin: 150/235 ranges
+  pytorch_model-00002-of-00002.bin: 175/235 ranges
+  pytorch_model-00002-of-00002.bin: 200/235 ranges
+  pytorch_model-00002-of-00002.bin: 225/235 ranges
+  pytorch_model-00002-of-00002.bin: 235/235 ranges
+Loading weights:   0%|          | 0/388 [00:00<?, ?it/s]Loading weights:   4%|▎         | 14/388 [00:00<00:02, 138.20it/s]Loading weights:  22%|██▏       | 84/388 [00:00<00:00, 452.23it/s]Loading weights:  41%|████      | 158/388 [00:00<00:00, 554.39it/s]Loading weights:  59%|█████▉    | 230/388 [00:00<00:00, 615.18it/s]Loading weights:  77%|███████▋  | 300/388 [00:00<00:00, 612.79it/s]Loading weights:  93%|█████████▎| 362/388 [00:00<00:00, 565.48it/s]Loading weights: 100%|██████████| 388/388 [00:00<00:00, 564.42it/s]
+step       64 H  12.13 C   4.28 agree 0.490 (attractor 0.493) rand 0.531 perm 0.510 [660s]
+download pytorch_model-00001-of-00002.bin: 9.23 GiB, 591 ranges, 24 threads
+  pytorch_model-00001-of-00002.bin: 1/591 ranges
+  pytorch_model-00001-of-00002.bin: 25/591 ranges
+  pytorch_model-00001-of-00002.bin: 50/591 ranges
+  pytorch_model-00001-of-00002.bin: 75/591 ranges
+  pytorch_model-00001-of-00002.bin: 100/591 ranges
+  pytorch_model-00001-of-00002.bin: 125/591 ranges
+  pytorch_model-00001-of-00002.bin: 150/591 ranges
+  pytorch_model-00001-of-00002.bin: 175/591 ranges
+  pytorch_model-00001-of-00002.bin: 200/591 ranges
+  pytorch_model-00001-of-00002.bin: 225/591 ranges
+  pytorch_model-00001-of-00002.bin: 250/591 ranges
+  pytorch_model-00001-of-00002.bin: 275/591 ranges
+  pytorch_model-00001-of-00002.bin: 300/591 ranges
+  pytorch_model-00001-of-00002.bin: 325/591 ranges
+  pytorch_model-00001-of-00002.bin: 350/591 ranges
+  pytorch_model-00001-of-00002.bin: 375/591 ranges
+  pytorch_model-00001-of-00002.bin: 400/591 ranges
+  pytorch_model-00001-of-00002.bin: 425/591 ranges
+  pytorch_model-00001-of-00002.bin: 450/591 ranges
+  pytorch_model-00001-of-00002.bin: 475/591 ranges
+  pytorch_model-00001-of-00002.bin: 500/591 ranges
+  pytorch_model-00001-of-00002.bin: 525/591 ranges
+  pytorch_model-00001-of-00002.bin: 550/591 ranges
+  pytorch_model-00001-of-00002.bin: 575/591 ranges
+  pytorch_model-00001-of-00002.bin: 591/591 ranges
+download pytorch_model-00002-of-00002.bin: 3.67 GiB, 235 ranges, 24 threads
+  pytorch_model-00002-of-00002.bin: 1/235 ranges
+  pytorch_model-00002-of-00002.bin: 25/235 ranges
+  pytorch_model-00002-of-00002.bin: 50/235 ranges
+  pytorch_model-00002-of-00002.bin: 75/235 ranges
+  pytorch_model-00002-of-00002.bin: 100/235 ranges
+  pytorch_model-00002-of-00002.bin: 125/235 ranges
+  pytorch_model-00002-of-00002.bin: 150/235 ranges
+  pytorch_model-00002-of-00002.bin: 175/235 ranges
+  pytorch_model-00002-of-00002.bin: 200/235 ranges
+  pytorch_model-00002-of-00002.bin: 225/235 ranges
+  pytorch_model-00002-of-00002.bin: 235/235 ranges
+Loading weights:   0%|          | 0/388 [00:00<?, ?it/s]Loading weights:  10%|▉         | 38/388 [00:00<00:00, 370.13it/s]Loading weights:  27%|██▋       | 104/388 [00:00<00:00, 536.30it/s]Loading weights:  41%|████      | 158/388 [00:00<00:00, 484.02it/s]Loading weights:  53%|█████▎    | 207/388 [00:00<00:00, 484.08it/s]Loading weights:  67%|██████▋   | 260/388 [00:00<00:00, 486.31it/s]Loading weights:  80%|███████▉  | 309/388 [00:00<00:00, 477.75it/s]Loading weights:  92%|█████████▏| 357/388 [00:00<00:00, 416.95it/s]Loading weights: 100%|██████████| 388/388 [00:00<00:00, 442.34it/s]
+step      128 H  11.11 C   5.42 agree 0.503 (attractor 0.479) rand 0.556 perm 0.507 [637s]
+download pytorch_model-00001-of-00002.bin: 9.23 GiB, 591 ranges, 24 threads
+  pytorch_model-00001-of-00002.bin: 1/591 ranges
+  pytorch_model-00001-of-00002.bin: 25/591 ranges
+  pytorch_model-00001-of-00002.bin: 50/591 ranges
+  pytorch_model-00001-of-00002.bin: 75/591 ranges
+  pytorch_model-00001-of-00002.bin: 100/591 ranges
+  pytorch_model-00001-of-00002.bin: 125/591 ranges
+  pytorch_model-00001-of-00002.bin: 150/591 ranges
+  pytorch_model-00001-of-00002.bin: 175/591 ranges
+  pytorch_model-00001-of-00002.bin: 200/591 ranges
+  pytorch_model-00001-of-00002.bin: 225/591 ranges
+  pytorch_model-00001-of-00002.bin: 250/591 ranges
+  pytorch_model-00001-of-00002.bin: 275/591 ranges
+  pytorch_model-00001-of-00002.bin: 300/591 ranges
+  pytorch_model-00001-of-00002.bin: 325/591 ranges
+  pytorch_model-00001-of-00002.bin: 350/591 ranges
+  pytorch_model-00001-of-00002.bin: 375/591 ranges
+  pytorch_model-00001-of-00002.bin: 400/591 ranges
+  pytorch_model-00001-of-00002.bin: 425/591 ranges
+  pytorch_model-00001-of-00002.bin: 450/591 ranges
+  pytorch_model-00001-of-00002.bin: 475/591 ranges
+  pytorch_model-00001-of-00002.bin: 500/591 ranges
+  pytorch_model-00001-of-00002.bin: 525/591 ranges
+  pytorch_model-00001-of-00002.bin: 550/591 ranges
+  pytorch_model-00001-of-00002.bin: 575/591 ranges
+  pytorch_model-00001-of-00002.bin: 591/591 ranges
+download pytorch_model-00002-of-00002.bin: 3.67 GiB, 235 ranges, 24 threads
+  pytorch_model-00002-of-00002.bin: 1/235 ranges
+  pytorch_model-00002-of-00002.bin: 25/235 ranges
+  pytorch_model-00002-of-00002.bin: 50/235 ranges
+  pytorch_model-00002-of-00002.bin: 75/235 ranges
+  pytorch_model-00002-of-00002.bin: 100/235 ranges
+  pytorch_model-00002-of-00002.bin: 125/235 ranges
+  pytorch_model-00002-of-00002.bin: 150/235 ranges
+  pytorch_model-00002-of-00002.bin: 175/235 ranges
+  pytorch_model-00002-of-00002.bin: 200/235 ranges
+  pytorch_model-00002-of-00002.bin: 225/235 ranges
+  pytorch_model-00002-of-00002.bin: 235/235 ranges
+Loading weights:   0%|          | 0/388 [00:00<?, ?it/s]Loading weights:  19%|█▊        | 72/388 [00:00<00:00, 644.32it/s]Loading weights:  35%|███▌      | 137/388 [00:00<00:00, 523.85it/s]Loading weights:  49%|████▉     | 191/388 [00:00<00:00, 512.18it/s]Loading weights:  63%|██████▎   | 243/388 [00:00<00:00, 477.27it/s]Loading weights:  75%|███████▌  | 292/388 [00:00<00:00, 395.94it/s]Loading weights:  86%|████████▌ | 334/388 [00:00<00:00, 384.84it/s]Loading weights:  96%|█████████▋| 374/388 [00:00<00:00, 349.07it/s]Loading weights: 100%|██████████| 388/388 [00:00<00:00, 421.38it/s]
+step      256 H   8.24 C   8.25 agree 0.469 (attractor 0.396) rand 0.503 perm 0.486 [643s]
+download pytorch_model-00001-of-00002.bin: 9.23 GiB, 591 ranges, 24 threads
+  pytorch_model-00001-of-00002.bin: 1/591 ranges
+  pytorch_model-00001-of-00002.bin: 25/591 ranges
+  pytorch_model-00001-of-00002.bin: 50/591 ranges
+  pytorch_model-00001-of-00002.bin: 75/591 ranges
+  pytorch_model-00001-of-00002.bin: 100/591 ranges
+  pytorch_model-00001-of-00002.bin: 125/591 ranges
+  pytorch_model-00001-of-00002.bin: 150/591 ranges
+  pytorch_model-00001-of-00002.bin: 175/591 ranges
+  pytorch_model-00001-of-00002.bin: 200/591 ranges
+  pytorch_model-00001-of-00002.bin: 225/591 ranges
+  pytorch_model-00001-of-00002.bin: 250/591 ranges
+  pytorch_model-00001-of-00002.bin: 275/591 ranges
+  pytorch_model-00001-of-00002.bin: 300/591 ranges
+  pytorch_model-00001-of-00002.bin: 325/591 ranges
+  pytorch_model-00001-of-00002.bin: 350/591 ranges
+  pytorch_model-00001-of-00002.bin: 375/591 ranges
+  pytorch_model-00001-of-00002.bin: 400/591 ranges
+  pytorch_model-00001-of-00002.bin: 425/591 ranges
+  pytorch_model-00001-of-00002.bin: 450/591 ranges
+  pytorch_model-00001-of-00002.bin: 475/591 ranges
+  pytorch_model-00001-of-00002.bin: 500/591 ranges
+  pytorch_model-00001-of-00002.bin: 525/591 ranges
+  pytorch_model-00001-of-00002.bin: 550/591 ranges
+  pytorch_model-00001-of-00002.bin: 575/591 ranges
+  pytorch_model-00001-of-00002.bin: 591/591 ranges
+download pytorch_model-00002-of-00002.bin: 3.67 GiB, 235 ranges, 24 threads
+  pytorch_model-00002-of-00002.bin: 1/235 ranges
+  pytorch_model-00002-of-00002.bin: 25/235 ranges
+  pytorch_model-00002-of-00002.bin: 50/235 ranges
+  pytorch_model-00002-of-00002.bin: 75/235 ranges
+  pytorch_model-00002-of-00002.bin: 100/235 ranges
+  pytorch_model-00002-of-00002.bin: 125/235 ranges
+  pytorch_model-00002-of-00002.bin: 150/235 ranges
+  pytorch_model-00002-of-00002.bin: 175/235 ranges
+  pytorch_model-00002-of-00002.bin: 200/235 ranges
+  pytorch_model-00002-of-00002.bin: 225/235 ranges
+  pytorch_model-00002-of-00002.bin: 235/235 ranges
+Loading weights:   0%|          | 0/388 [00:00<?, ?it/s]Loading weights:  12%|█▏        | 48/388 [00:00<00:00, 473.36it/s]Loading weights:  36%|███▌      | 140/388 [00:00<00:00, 717.93it/s]Loading weights:  56%|█████▌    | 218/388 [00:00<00:00, 744.08it/s]Loading weights:  76%|███████▌  | 293/388 [00:00<00:00, 545.34it/s]Loading weights:  91%|█████████ | 354/388 [00:00<00:00, 386.51it/s]Loading weights: 100%|██████████| 388/388 [00:00<00:00, 440.31it/s]
+step      512 H   7.54 C   9.21 agree 0.476 (attractor 0.167) rand 0.510 perm 0.531 [634s]
+download pytorch_model-00001-of-00002.bin: 9.23 GiB, 591 ranges, 24 threads
+  pytorch_model-00001-of-00002.bin: 1/591 ranges
+  pytorch_model-00001-of-00002.bin: 25/591 ranges
+  pytorch_model-00001-of-00002.bin: 50/591 ranges
+  pytorch_model-00001-of-00002.bin: 75/591 ranges
+  pytorch_model-00001-of-00002.bin: 100/591 ranges
+  pytorch_model-00001-of-00002.bin: 125/591 ranges
+  pytorch_model-00001-of-00002.bin: 150/591 ranges
+  pytorch_model-00001-of-00002.bin: 175/591 ranges
+  pytorch_model-00001-of-00002.bin: 200/591 ranges
+  pytorch_model-00001-of-00002.bin: 225/591 ranges
+  pytorch_model-00001-of-00002.bin: 250/591 ranges
+  pytorch_model-00001-of-00002.bin: 275/591 ranges
+  pytorch_model-00001-of-00002.bin: 300/591 ranges
+  pytorch_model-00001-of-00002.bin: 325/591 ranges
+  pytorch_model-00001-of-00002.bin: 350/591 ranges
+  pytorch_model-00001-of-00002.bin: 375/591 ranges
+  pytorch_model-00001-of-00002.bin: 400/591 ranges
+  pytorch_model-00001-of-00002.bin: 425/591 ranges
+  pytorch_model-00001-of-00002.bin: 450/591 ranges
+  pytorch_model-00001-of-00002.bin: 475/591 ranges
+  pytorch_model-00001-of-00002.bin: 500/591 ranges
+  pytorch_model-00001-of-00002.bin: 525/591 ranges
+  pytorch_model-00001-of-00002.bin: 550/591 ranges
+  pytorch_model-00001-of-00002.bin: 575/591 ranges
+  pytorch_model-00001-of-00002.bin: 591/591 ranges
+download pytorch_model-00002-of-00002.bin: 3.67 GiB, 235 ranges, 24 threads
+  pytorch_model-00002-of-00002.bin: 1/235 ranges
+  pytorch_model-00002-of-00002.bin: 25/235 ranges
+  pytorch_model-00002-of-00002.bin: 50/235 ranges
+  pytorch_model-00002-of-00002.bin: 75/235 ranges
+  pytorch_model-00002-of-00002.bin: 100/235 ranges
+  pytorch_model-00002-of-00002.bin: 125/235 ranges
+  pytorch_model-00002-of-00002.bin: 150/235 ranges
+  pytorch_model-00002-of-00002.bin: 175/235 ranges
+  pytorch_model-00002-of-00002.bin: 200/235 ranges
+  pytorch_model-00002-of-00002.bin: 225/235 ranges
+  pytorch_model-00002-of-00002.bin: 235/235 ranges
+Loading weights:   0%|          | 0/388 [00:00<?, ?it/s]Loading weights:  15%|█▍        | 58/388 [00:00<00:00, 576.96it/s]Loading weights:  33%|███▎      | 128/388 [00:00<00:00, 621.25it/s]Loading weights:  49%|████▉     | 191/388 [00:00<00:00, 604.75it/s]Loading weights:  65%|██████▍   | 252/388 [00:00<00:00, 454.20it/s]Loading weights:  78%|███████▊  | 302/388 [00:00<00:00, 404.74it/s]Loading weights:  89%|████████▉ | 346/388 [00:00<00:00, 395.21it/s]Loading weights: 100%|██████████| 388/388 [00:00<00:00, 387.01it/s]Loading weights: 100%|██████████| 388/388 [00:00<00:00, 435.87it/s]
+step     1000 H   7.47 C   9.56 agree 0.667 (attractor 0.431) rand 0.528 perm 0.479 [685s]
+download pytorch_model-00001-of-00002.bin: 9.23 GiB, 591 ranges, 24 threads
+  pytorch_model-00001-of-00002.bin: 1/591 ranges
+  pytorch_model-00001-of-00002.bin: 25/591 ranges
+  pytorch_model-00001-of-00002.bin: 50/591 ranges
+  pytorch_model-00001-of-00002.bin: 75/591 ranges
+  pytorch_model-00001-of-00002.bin: 100/591 ranges
+  pytorch_model-00001-of-00002.bin: 125/591 ranges
+  pytorch_model-00001-of-00002.bin: 150/591 ranges
+  pytorch_model-00001-of-00002.bin: 175/591 ranges
+  pytorch_model-00001-of-00002.bin: 200/591 ranges
+  pytorch_model-00001-of-00002.bin: 225/591 ranges
+  pytorch_model-00001-of-00002.bin: 250/591 ranges
+  pytorch_model-00001-of-00002.bin: 275/591 ranges
+  pytorch_model-00001-of-00002.bin: 300/591 ranges
+  pytorch_model-00001-of-00002.bin: 325/591 ranges
+  pytorch_model-00001-of-00002.bin: 350/591 ranges
+  pytorch_model-00001-of-00002.bin: 375/591 ranges
+  pytorch_model-00001-of-00002.bin: 400/591 ranges
+  pytorch_model-00001-of-00002.bin: 425/591 ranges
+  pytorch_model-00001-of-00002.bin: 450/591 ranges
+  pytorch_model-00001-of-00002.bin: 475/591 ranges
+  pytorch_model-00001-of-00002.bin: 500/591 ranges
+  pytorch_model-00001-of-00002.bin: 525/591 ranges
+  pytorch_model-00001-of-00002.bin: 550/591 ranges
+  pytorch_model-00001-of-00002.bin: 575/591 ranges
+  pytorch_model-00001-of-00002.bin: 591/591 ranges
+download pytorch_model-00002-of-00002.bin: 3.67 GiB, 235 ranges, 24 threads
+  pytorch_model-00002-of-00002.bin: 1/235 ranges
+  pytorch_model-00002-of-00002.bin: 25/235 ranges
+  pytorch_model-00002-of-00002.bin: 50/235 ranges
+  pytorch_model-00002-of-00002.bin: 75/235 ranges
+  pytorch_model-00002-of-00002.bin: 100/235 ranges
+  pytorch_model-00002-of-00002.bin: 125/235 ranges
+  pytorch_model-00002-of-00002.bin: 150/235 ranges
+  pytorch_model-00002-of-00002.bin: 175/235 ranges
+  pytorch_model-00002-of-00002.bin: 200/235 ranges
+  pytorch_model-00002-of-00002.bin: 225/235 ranges
+  pytorch_model-00002-of-00002.bin: 235/235 ranges
+Loading weights:   0%|          | 0/388 [00:00<?, ?it/s]Loading weights:  15%|█▌        | 60/388 [00:00<00:00, 584.68it/s]Loading weights:  31%|███       | 119/388 [00:00<00:00, 553.60it/s]Loading weights:  45%|████▌     | 175/388 [00:00<00:00, 495.98it/s]Loading weights:  58%|█████▊    | 226/388 [00:00<00:00, 410.05it/s]Loading weights:  69%|██████▉   | 269/388 [00:00<00:00, 361.08it/s]Loading weights:  79%|███████▉  | 307/388 [00:00<00:00, 347.94it/s]Loading weights:  88%|████████▊ | 343/388 [00:00<00:00, 334.90it/s]Loading weights:  97%|█████████▋| 377/388 [00:00<00:00, 330.27it/s]Loading weights: 100%|██████████| 388/388 [00:01<00:00, 380.30it/s]
+step     2000 H   6.77 C  10.28 agree 0.906 (attractor 0.833) rand 0.545 perm 0.472 [638s]
+download pytorch_model-00001-of-00002.bin: 9.23 GiB, 591 ranges, 24 threads
+  pytorch_model-00001-of-00002.bin: 1/591 ranges
+  pytorch_model-00001-of-00002.bin: 25/591 ranges
+  pytorch_model-00001-of-00002.bin: 50/591 ranges
+  pytorch_model-00001-of-00002.bin: 75/591 ranges
+  pytorch_model-00001-of-00002.bin: 100/591 ranges
+  pytorch_model-00001-of-00002.bin: 125/591 ranges
+  pytorch_model-00001-of-00002.bin: 150/591 ranges
+  pytorch_model-00001-of-00002.bin: 175/591 ranges
+  pytorch_model-00001-of-00002.bin: 200/591 ranges
+  pytorch_model-00001-of-00002.bin: 225/591 ranges
+  pytorch_model-00001-of-00002.bin: 250/591 ranges
+  pytorch_model-00001-of-00002.bin: 275/591 ranges
+  pytorch_model-00001-of-00002.bin: 300/591 ranges
+  pytorch_model-00001-of-00002.bin: 325/591 ranges
+  pytorch_model-00001-of-00002.bin: 350/591 ranges
+  pytorch_model-00001-of-00002.bin: 375/591 ranges
+  pytorch_model-00001-of-00002.bin: 400/591 ranges
+  pytorch_model-00001-of-00002.bin: 425/591 ranges
+  pytorch_model-00001-of-00002.bin: 450/591 ranges
+  pytorch_model-00001-of-00002.bin: 475/591 ranges
+  pytorch_model-00001-of-00002.bin: 500/591 ranges
+  pytorch_model-00001-of-00002.bin: 525/591 ranges
+  pytorch_model-00001-of-00002.bin: 550/591 ranges
+  pytorch_model-00001-of-00002.bin: 575/591 ranges
+  pytorch_model-00001-of-00002.bin: 591/591 ranges
+download pytorch_model-00002-of-00002.bin: 3.67 GiB, 235 ranges, 24 threads
+  pytorch_model-00002-of-00002.bin: 1/235 ranges
+  pytorch_model-00002-of-00002.bin: 25/235 ranges
+  pytorch_model-00002-of-00002.bin: 50/235 ranges
+  pytorch_model-00002-of-00002.bin: 75/235 ranges
+  pytorch_model-00002-of-00002.bin: 100/235 ranges
+  pytorch_model-00002-of-00002.bin: 125/235 ranges
+  pytorch_model-00002-of-00002.bin: 150/235 ranges
+  pytorch_model-00002-of-00002.bin: 175/235 ranges
+  pytorch_model-00002-of-00002.bin: 200/235 ranges
+  pytorch_model-00002-of-00002.bin: 225/235 ranges
+  pytorch_model-00002-of-00002.bin: 235/235 ranges
+Loading weights:   0%|          | 0/388 [00:00<?, ?it/s]Loading weights:  12%|█▏        | 48/388 [00:00<00:00, 451.60it/s]Loading weights:  25%|██▌       | 98/388 [00:00<00:00, 477.23it/s]Loading weights:  38%|███▊      | 146/388 [00:00<00:00, 458.82it/s]Loading weights:  49%|████▉     | 192/388 [00:00<00:00, 383.85it/s]Loading weights:  60%|█████▉    | 232/388 [00:00<00:00, 362.16it/s]Loading weights:  70%|██████▉   | 270/388 [00:00<00:00, 356.55it/s]Loading weights:  79%|███████▉  | 307/388 [00:00<00:00, 352.83it/s]Loading weights:  88%|████████▊ | 343/388 [00:00<00:00, 338.63it/s]Loading weights:  97%|█████████▋| 378/388 [00:01<00:00, 325.20it/s]Loading weights: 100%|██████████| 388/388 [00:01<00:00, 367.89it/s]
+step     4000 H   6.92 C  10.12 agree 0.896 (attractor 0.812) rand 0.528 perm 0.493 [631s]
+download pytorch_model-00001-of-00002.bin: 9.23 GiB, 591 ranges, 24 threads
+  pytorch_model-00001-of-00002.bin: 1/591 ranges
+  pytorch_model-00001-of-00002.bin: 25/591 ranges
+  pytorch_model-00001-of-00002.bin: 50/591 ranges
+  pytorch_model-00001-of-00002.bin: 75/591 ranges
+  pytorch_model-00001-of-00002.bin: 100/591 ranges
+  pytorch_model-00001-of-00002.bin: 125/591 ranges
+  pytorch_model-00001-of-00002.bin: 150/591 ranges
+  pytorch_model-00001-of-00002.bin: 175/591 ranges
+  pytorch_model-00001-of-00002.bin: 200/591 ranges
+  pytorch_model-00001-of-00002.bin: 225/591 ranges
+  pytorch_model-00001-of-00002.bin: 250/591 ranges
+  pytorch_model-00001-of-00002.bin: 275/591 ranges
+  pytorch_model-00001-of-00002.bin: 300/591 ranges
+  pytorch_model-00001-of-00002.bin: 325/591 ranges
+  pytorch_model-00001-of-00002.bin: 350/591 ranges
+  pytorch_model-00001-of-00002.bin: 375/591 ranges
+  pytorch_model-00001-of-00002.bin: 400/591 ranges
+  pytorch_model-00001-of-00002.bin: 425/591 ranges
+  pytorch_model-00001-of-00002.bin: 450/591 ranges
+  pytorch_model-00001-of-00002.bin: 475/591 ranges
+  pytorch_model-00001-of-00002.bin: 500/591 ranges
+  pytorch_model-00001-of-00002.bin: 525/591 ranges
+  pytorch_model-00001-of-00002.bin: 550/591 ranges
+  pytorch_model-00001-of-00002.bin: 575/591 ranges
+  pytorch_model-00001-of-00002.bin: 591/591 ranges
+download pytorch_model-00002-of-00002.bin: 3.67 GiB, 235 ranges, 24 threads
+  pytorch_model-00002-of-00002.bin: 1/235 ranges
+  pytorch_model-00002-of-00002.bin: 25/235 ranges
+  pytorch_model-00002-of-00002.bin: 50/235 ranges
+  pytorch_model-00002-of-00002.bin: 75/235 ranges
+  pytorch_model-00002-of-00002.bin: 100/235 ranges
+  pytorch_model-00002-of-00002.bin: 125/235 ranges
+  pytorch_model-00002-of-00002.bin: 150/235 ranges
+  pytorch_model-00002-of-00002.bin: 175/235 ranges
+  pytorch_model-00002-of-00002.bin: 200/235 ranges
+  pytorch_model-00002-of-00002.bin: 225/235 ranges
+  pytorch_model-00002-of-00002.bin: 235/235 ranges
+Loading weights:   0%|          | 0/388 [00:00<?, ?it/s]Loading weights:  14%|█▍        | 55/388 [00:00<00:00, 546.85it/s]Loading weights:  36%|███▌      | 140/388 [00:00<00:00, 718.38it/s]Loading weights:  55%|█████▍    | 212/388 [00:00<00:00, 528.33it/s]Loading weights:  70%|██████▉   | 270/388 [00:00<00:00, 443.69it/s]Loading weights:  82%|████████▏ | 319/388 [00:00<00:00, 400.69it/s]Loading weights:  93%|█████████▎| 362/388 [00:00<00:00, 352.69it/s]Loading weights: 100%|██████████| 388/388 [00:00<00:00, 419.22it/s]
+step     8000 H   6.79 C  10.19 agree 0.899 (attractor 0.826) rand 0.503 perm 0.451 [654s]
+download pytorch_model-00001-of-00002.bin: 9.23 GiB, 591 ranges, 24 threads
+  pytorch_model-00001-of-00002.bin: 1/591 ranges
+  pytorch_model-00001-of-00002.bin: 25/591 ranges
+  pytorch_model-00001-of-00002.bin: 50/591 ranges
+  pytorch_model-00001-of-00002.bin: 75/591 ranges
+  pytorch_model-00001-of-00002.bin: 100/591 ranges
+  pytorch_model-00001-of-00002.bin: 125/591 ranges
+  pytorch_model-00001-of-00002.bin: 150/591 ranges
+  pytorch_model-00001-of-00002.bin: 175/591 ranges
+  pytorch_model-00001-of-00002.bin: 200/591 ranges
+  pytorch_model-00001-of-00002.bin: 225/591 ranges
+  pytorch_model-00001-of-00002.bin: 250/591 ranges
+  pytorch_model-00001-of-00002.bin: 275/591 ranges
+  pytorch_model-00001-of-00002.bin: 300/591 ranges
+  pytorch_model-00001-of-00002.bin: 325/591 ranges
+  pytorch_model-00001-of-00002.bin: 350/591 ranges
+  pytorch_model-00001-of-00002.bin: 375/591 ranges
+  pytorch_model-00001-of-00002.bin: 400/591 ranges
+  pytorch_model-00001-of-00002.bin: 425/591 ranges
+  pytorch_model-00001-of-00002.bin: 450/591 ranges
+  pytorch_model-00001-of-00002.bin: 475/591 ranges
+  pytorch_model-00001-of-00002.bin: 500/591 ranges
+  pytorch_model-00001-of-00002.bin: 525/591 ranges
+  pytorch_model-00001-of-00002.bin: 550/591 ranges
+  pytorch_model-00001-of-00002.bin: 575/591 ranges
+  pytorch_model-00001-of-00002.bin: 591/591 ranges
+download pytorch_model-00002-of-00002.bin: 3.67 GiB, 235 ranges, 24 threads
+  pytorch_model-00002-of-00002.bin: 1/235 ranges
+  pytorch_model-00002-of-00002.bin: 25/235 ranges
+  pytorch_model-00002-of-00002.bin: 50/235 ranges
+  pytorch_model-00002-of-00002.bin: 75/235 ranges
+  pytorch_model-00002-of-00002.bin: 100/235 ranges
+  pytorch_model-00002-of-00002.bin: 125/235 ranges
+  pytorch_model-00002-of-00002.bin: 150/235 ranges
+  pytorch_model-00002-of-00002.bin: 175/235 ranges
+  pytorch_model-00002-of-00002.bin: 200/235 ranges
+  pytorch_model-00002-of-00002.bin: 225/235 ranges
+  pytorch_model-00002-of-00002.bin: 235/235 ranges
+Loading weights:   0%|          | 0/388 [00:00<?, ?it/s]Loading weights:  11%|█         | 42/388 [00:00<00:00, 419.94it/s]Loading weights:  27%|██▋       | 104/388 [00:00<00:00, 525.95it/s]Loading weights:  40%|████      | 157/388 [00:00<00:00, 502.79it/s]Loading weights:  59%|█████▉    | 230/388 [00:00<00:00, 587.66it/s]Loading weights:  81%|████████  | 314/388 [00:00<00:00, 671.24it/s]Loading weights:  98%|█████████▊| 382/388 [00:00<00:00, 631.41it/s]Loading weights: 100%|██████████| 388/388 [00:00<00:00, 605.42it/s]
+step    16000 H   6.93 C  10.08 agree 0.938 (attractor 0.882) rand 0.500 perm 0.458 [630s]
+download pytorch_model-00001-of-00002.bin: 9.23 GiB, 591 ranges, 24 threads
+  pytorch_model-00001-of-00002.bin: 1/591 ranges
+  pytorch_model-00001-of-00002.bin: 25/591 ranges
+  pytorch_model-00001-of-00002.bin: 50/591 ranges
+  pytorch_model-00001-of-00002.bin: 75/591 ranges
+  pytorch_model-00001-of-00002.bin: 100/591 ranges
+  pytorch_model-00001-of-00002.bin: 125/591 ranges
+  pytorch_model-00001-of-00002.bin: 150/591 ranges
+  pytorch_model-00001-of-00002.bin: 175/591 ranges
+  pytorch_model-00001-of-00002.bin: 200/591 ranges
+  pytorch_model-00001-of-00002.bin: 225/591 ranges
+  pytorch_model-00001-of-00002.bin: 250/591 ranges
+  pytorch_model-00001-of-00002.bin: 275/591 ranges
+  pytorch_model-00001-of-00002.bin: 300/591 ranges
+  pytorch_model-00001-of-00002.bin: 325/591 ranges
+  pytorch_model-00001-of-00002.bin: 350/591 ranges
+  pytorch_model-00001-of-00002.bin: 375/591 ranges
+  pytorch_model-00001-of-00002.bin: 400/591 ranges
+  pytorch_model-00001-of-00002.bin: 425/591 ranges
+  pytorch_model-00001-of-00002.bin: 450/591 ranges
+  pytorch_model-00001-of-00002.bin: 475/591 ranges
+  pytorch_model-00001-of-00002.bin: 500/591 ranges
+  pytorch_model-00001-of-00002.bin: 525/591 ranges
+  pytorch_model-00001-of-00002.bin: 550/591 ranges
+  pytorch_model-00001-of-00002.bin: 575/591 ranges
+  pytorch_model-00001-of-00002.bin: 591/591 ranges
+download pytorch_model-00002-of-00002.bin: 3.67 GiB, 235 ranges, 24 threads
+  pytorch_model-00002-of-00002.bin: 1/235 ranges
+  pytorch_model-00002-of-00002.bin: 25/235 ranges
+  pytorch_model-00002-of-00002.bin: 50/235 ranges
+  pytorch_model-00002-of-00002.bin: 75/235 ranges
+  pytorch_model-00002-of-00002.bin: 100/235 ranges
+  pytorch_model-00002-of-00002.bin: 125/235 ranges
+  pytorch_model-00002-of-00002.bin: 150/235 ranges
+  pytorch_model-00002-of-00002.bin: 175/235 ranges
+  pytorch_model-00002-of-00002.bin: 200/235 ranges
+  pytorch_model-00002-of-00002.bin: 225/235 ranges
+  pytorch_model-00002-of-00002.bin: 235/235 ranges
+Loading weights:   0%|          | 0/388 [00:00<?, ?it/s]Loading weights:   9%|▉         | 36/388 [00:00<00:01, 319.10it/s]Loading weights:  22%|██▏       | 86/388 [00:00<00:00, 412.91it/s]Loading weights:  35%|███▍      | 134/388 [00:00<00:00, 439.18it/s]Loading weights:  49%|████▉     | 192/388 [00:00<00:00, 476.01it/s]Loading weights:  62%|██████▏   | 240/388 [00:00<00:00, 443.33it/s]Loading weights:  73%|███████▎  | 285/388 [00:00<00:00, 386.03it/s]Loading weights:  84%|████████▍ | 325/388 [00:00<00:00, 346.56it/s]Loading weights:  93%|█████████▎| 361/388 [00:00<00:00, 339.25it/s]Loading weights: 100%|██████████| 388/388 [00:01<00:00, 383.23it/s]
+step    32000 H   6.98 C   9.96 agree 0.941 (attractor 0.882) rand 0.528 perm 0.469 [630s]
+download pytorch_model-00001-of-00002.bin: 9.23 GiB, 591 ranges, 24 threads
+  pytorch_model-00001-of-00002.bin: 1/591 ranges
+  pytorch_model-00001-of-00002.bin: 25/591 ranges
+  pytorch_model-00001-of-00002.bin: 50/591 ranges
+  pytorch_model-00001-of-00002.bin: 75/591 ranges
+  pytorch_model-00001-of-00002.bin: 100/591 ranges
+  pytorch_model-00001-of-00002.bin: 125/591 ranges
+  pytorch_model-00001-of-00002.bin: 150/591 ranges
+  pytorch_model-00001-of-00002.bin: 175/591 ranges
+  pytorch_model-00001-of-00002.bin: 200/591 ranges
+  pytorch_model-00001-of-00002.bin: 225/591 ranges
+  pytorch_model-00001-of-00002.bin: 250/591 ranges
+  pytorch_model-00001-of-00002.bin: 275/591 ranges
+  pytorch_model-00001-of-00002.bin: 300/591 ranges
+  pytorch_model-00001-of-00002.bin: 325/591 ranges
+  pytorch_model-00001-of-00002.bin: 350/591 ranges
+  pytorch_model-00001-of-00002.bin: 375/591 ranges
+  pytorch_model-00001-of-00002.bin: 400/591 ranges
+  pytorch_model-00001-of-00002.bin: 425/591 ranges
+  pytorch_model-00001-of-00002.bin: 450/591 ranges
+  pytorch_model-00001-of-00002.bin: 475/591 ranges
+  pytorch_model-00001-of-00002.bin: 500/591 ranges
+  pytorch_model-00001-of-00002.bin: 525/591 ranges
+  pytorch_model-00001-of-00002.bin: 550/591 ranges
+  pytorch_model-00001-of-00002.bin: 575/591 ranges
+  pytorch_model-00001-of-00002.bin: 591/591 ranges
+download pytorch_model-00002-of-00002.bin: 3.67 GiB, 235 ranges, 24 threads
+  pytorch_model-00002-of-00002.bin: 1/235 ranges
+  pytorch_model-00002-of-00002.bin: 25/235 ranges
+  pytorch_model-00002-of-00002.bin: 50/235 ranges
+  pytorch_model-00002-of-00002.bin: 75/235 ranges
+  pytorch_model-00002-of-00002.bin: 100/235 ranges
+  pytorch_model-00002-of-00002.bin: 125/235 ranges
+  pytorch_model-00002-of-00002.bin: 150/235 ranges
+  pytorch_model-00002-of-00002.bin: 175/235 ranges
+  pytorch_model-00002-of-00002.bin: 200/235 ranges
+  pytorch_model-00002-of-00002.bin: 225/235 ranges
+  pytorch_model-00002-of-00002.bin: 235/235 ranges
+Loading weights:   0%|          | 0/388 [00:00<?, ?it/s]Loading weights:  15%|█▌        | 60/388 [00:00<00:00, 584.02it/s]Loading weights:  33%|███▎      | 128/388 [00:00<00:00, 618.07it/s]Loading weights:  49%|████▉     | 190/388 [00:00<00:00, 468.60it/s]Loading weights:  62%|██████▏   | 241/388 [00:00<00:00, 393.81it/s]Loading weights:  73%|███████▎  | 284/388 [00:00<00:00, 358.56it/s]Loading weights:  83%|████████▎ | 322/388 [00:00<00:00, 348.48it/s]Loading weights:  92%|█████████▏| 358/388 [00:00<00:00, 346.54it/s]Loading weights: 100%|██████████| 388/388 [00:00<00:00, 388.23it/s]
+step    64000 H   6.79 C  10.18 agree 0.931 (attractor 0.868) rand 0.538 perm 0.455 [628s]
+download pytorch_model-00001-of-00002.bin: 9.23 GiB, 591 ranges, 24 threads
+  pytorch_model-00001-of-00002.bin: 1/591 ranges
+  pytorch_model-00001-of-00002.bin: 25/591 ranges
+  pytorch_model-00001-of-00002.bin: 50/591 ranges
+  pytorch_model-00001-of-00002.bin: 75/591 ranges
+  pytorch_model-00001-of-00002.bin: 100/591 ranges
+  pytorch_model-00001-of-00002.bin: 125/591 ranges
+  pytorch_model-00001-of-00002.bin: 150/591 ranges
+  pytorch_model-00001-of-00002.bin: 175/591 ranges
+  pytorch_model-00001-of-00002.bin: 200/591 ranges
+  pytorch_model-00001-of-00002.bin: 225/591 ranges
+  pytorch_model-00001-of-00002.bin: 250/591 ranges
+  pytorch_model-00001-of-00002.bin: 275/591 ranges
+  pytorch_model-00001-of-00002.bin: 300/591 ranges
+  pytorch_model-00001-of-00002.bin: 325/591 ranges
+  pytorch_model-00001-of-00002.bin: 350/591 ranges
+  pytorch_model-00001-of-00002.bin: 375/591 ranges
+  pytorch_model-00001-of-00002.bin: 400/591 ranges
+  pytorch_model-00001-of-00002.bin: 425/591 ranges
+  pytorch_model-00001-of-00002.bin: 450/591 ranges
+  pytorch_model-00001-of-00002.bin: 475/591 ranges
+  pytorch_model-00001-of-00002.bin: 500/591 ranges
+  pytorch_model-00001-of-00002.bin: 525/591 ranges
+  pytorch_model-00001-of-00002.bin: 550/591 ranges
+  pytorch_model-00001-of-00002.bin: 575/591 ranges
+  pytorch_model-00001-of-00002.bin: 591/591 ranges
+download pytorch_model-00002-of-00002.bin: 3.67 GiB, 235 ranges, 24 threads
+  pytorch_model-00002-of-00002.bin: 1/235 ranges
+  pytorch_model-00002-of-00002.bin: 25/235 ranges
+  pytorch_model-00002-of-00002.bin: 50/235 ranges
+  pytorch_model-00002-of-00002.bin: 75/235 ranges
+  pytorch_model-00002-of-00002.bin: 100/235 ranges
+  pytorch_model-00002-of-00002.bin: 125/235 ranges
+  pytorch_model-00002-of-00002.bin: 150/235 ranges
+  pytorch_model-00002-of-00002.bin: 175/235 ranges
+  pytorch_model-00002-of-00002.bin: 200/235 ranges
+  pytorch_model-00002-of-00002.bin: 225/235 ranges
+  pytorch_model-00002-of-00002.bin: 235/235 ranges
+Loading weights:   0%|          | 0/388 [00:00<?, ?it/s]Loading weights:  15%|█▌        | 60/388 [00:00<00:00, 588.82it/s]Loading weights:  38%|███▊      | 146/388 [00:00<00:00, 710.99it/s]Loading weights:  59%|█████▉    | 230/388 [00:00<00:00, 749.37it/s]Loading weights:  84%|████████▎ | 324/388 [00:00<00:00, 802.28it/s]Loading weights: 100%|██████████| 388/388 [00:00<00:00, 784.40it/s]
+step    96000 H   6.74 C  10.21 agree 0.913 (attractor 0.826) rand 0.535 perm 0.458 [632s]
+download pytorch_model-00001-of-00002.bin: 9.23 GiB, 591 ranges, 24 threads
+  pytorch_model-00001-of-00002.bin: 1/591 ranges
+  pytorch_model-00001-of-00002.bin: 25/591 ranges
+  pytorch_model-00001-of-00002.bin: 50/591 ranges
+  pytorch_model-00001-of-00002.bin: 75/591 ranges
+  pytorch_model-00001-of-00002.bin: 100/591 ranges
+  pytorch_model-00001-of-00002.bin: 125/591 ranges
+  pytorch_model-00001-of-00002.bin: 150/591 ranges
+  pytorch_model-00001-of-00002.bin: 175/591 ranges
+  pytorch_model-00001-of-00002.bin: 200/591 ranges
+  pytorch_model-00001-of-00002.bin: 225/591 ranges
+  pytorch_model-00001-of-00002.bin: 250/591 ranges
+  pytorch_model-00001-of-00002.bin: 275/591 ranges
+  pytorch_model-00001-of-00002.bin: 300/591 ranges
+  pytorch_model-00001-of-00002.bin: 325/591 ranges
+  pytorch_model-00001-of-00002.bin: 350/591 ranges
+  pytorch_model-00001-of-00002.bin: 375/591 ranges
+  pytorch_model-00001-of-00002.bin: 400/591 ranges
+  pytorch_model-00001-of-00002.bin: 425/591 ranges
+  pytorch_model-00001-of-00002.bin: 450/591 ranges
+  pytorch_model-00001-of-00002.bin: 475/591 ranges
+  pytorch_model-00001-of-00002.bin: 500/591 ranges
+  pytorch_model-00001-of-00002.bin: 525/591 ranges
+  pytorch_model-00001-of-00002.bin: 550/591 ranges
+  pytorch_model-00001-of-00002.bin: 575/591 ranges
+  pytorch_model-00001-of-00002.bin: 591/591 ranges
+download pytorch_model-00002-of-00002.bin: 3.67 GiB, 235 ranges, 24 threads
+  pytorch_model-00002-of-00002.bin: 1/235 ranges
+  pytorch_model-00002-of-00002.bin: 25/235 ranges
+  pytorch_model-00002-of-00002.bin: 50/235 ranges
+  pytorch_model-00002-of-00002.bin: 75/235 ranges
+  pytorch_model-00002-of-00002.bin: 100/235 ranges
+  pytorch_model-00002-of-00002.bin: 125/235 ranges
+  pytorch_model-00002-of-00002.bin: 150/235 ranges
+  pytorch_model-00002-of-00002.bin: 175/235 ranges
+  pytorch_model-00002-of-00002.bin: 200/235 ranges
+  pytorch_model-00002-of-00002.bin: 225/235 ranges
+  pytorch_model-00002-of-00002.bin: 235/235 ranges
+Loading weights:   0%|          | 0/388 [00:00<?, ?it/s]Loading weights:  14%|█▍        | 56/388 [00:00<00:00, 559.58it/s]Loading weights:  34%|███▍      | 132/388 [00:00<00:00, 646.44it/s]Loading weights:  55%|█████▍    | 212/388 [00:00<00:00, 706.47it/s]Loading weights:  73%|███████▎  | 283/388 [00:00<00:00, 628.58it/s]Loading weights:  89%|████████▉ | 347/388 [00:00<00:00, 487.07it/s]Loading weights: 100%|██████████| 388/388 [00:00<00:00, 516.13it/s]
+step   128000 H   6.79 C  10.18 agree 0.927 (attractor 0.861) rand 0.524 perm 0.441 [628s]
+download pytorch_model-00001-of-00002.bin: 9.23 GiB, 591 ranges, 24 threads
+  pytorch_model-00001-of-00002.bin: 1/591 ranges
+  pytorch_model-00001-of-00002.bin: 25/591 ranges
+  pytorch_model-00001-of-00002.bin: 50/591 ranges
+  pytorch_model-00001-of-00002.bin: 75/591 ranges
+  pytorch_model-00001-of-00002.bin: 100/591 ranges
+  pytorch_model-00001-of-00002.bin: 125/591 ranges
+  pytorch_model-00001-of-00002.bin: 150/591 ranges
+  pytorch_model-00001-of-00002.bin: 175/591 ranges
+  pytorch_model-00001-of-00002.bin: 200/591 ranges
+  pytorch_model-00001-of-00002.bin: 225/591 ranges
+  pytorch_model-00001-of-00002.bin: 250/591 ranges
+  pytorch_model-00001-of-00002.bin: 275/591 ranges
+  pytorch_model-00001-of-00002.bin: 300/591 ranges
+  pytorch_model-00001-of-00002.bin: 325/591 ranges
+  pytorch_model-00001-of-00002.bin: 350/591 ranges
+  pytorch_model-00001-of-00002.bin: 375/591 ranges
+  pytorch_model-00001-of-00002.bin: 400/591 ranges
+  pytorch_model-00001-of-00002.bin: 425/591 ranges
+  pytorch_model-00001-of-00002.bin: 450/591 ranges
+  pytorch_model-00001-of-00002.bin: 475/591 ranges
+  pytorch_model-00001-of-00002.bin: 500/591 ranges
+  pytorch_model-00001-of-00002.bin: 525/591 ranges
+  pytorch_model-00001-of-00002.bin: 550/591 ranges
+  pytorch_model-00001-of-00002.bin: 575/591 ranges
+  pytorch_model-00001-of-00002.bin: 591/591 ranges
+download pytorch_model-00002-of-00002.bin: 3.67 GiB, 235 ranges, 24 threads
+  pytorch_model-00002-of-00002.bin: 1/235 ranges
+  pytorch_model-00002-of-00002.bin: 25/235 ranges
+  pytorch_model-00002-of-00002.bin: 50/235 ranges
+  pytorch_model-00002-of-00002.bin: 75/235 ranges
+  pytorch_model-00002-of-00002.bin: 100/235 ranges
+  pytorch_model-00002-of-00002.bin: 125/235 ranges
+  pytorch_model-00002-of-00002.bin: 150/235 ranges
+  pytorch_model-00002-of-00002.bin: 175/235 ranges
+  pytorch_model-00002-of-00002.bin: 200/235 ranges
+  pytorch_model-00002-of-00002.bin: 225/235 ranges
+  pytorch_model-00002-of-00002.bin: 235/235 ranges
+Loading weights:   0%|          | 0/388 [00:00<?, ?it/s]Loading weights:  19%|█▊        | 72/388 [00:00<00:00, 657.79it/s]Loading weights:  42%|████▏     | 164/388 [00:00<00:00, 783.38it/s]Loading weights:  63%|██████▎   | 243/388 [00:00<00:00, 627.49it/s]Loading weights:  80%|███████▉  | 309/388 [00:00<00:00, 486.74it/s]Loading weights:  94%|█████████▎| 363/388 [00:00<00:00, 419.17it/s]Loading weights: 100%|██████████| 388/388 [00:00<00:00, 493.57it/s]
+step   143000 H   6.79 C  10.17 agree 0.917 (attractor 0.833) rand 0.542 perm 0.458 [627s]
+/home/Yixiang/miniconda3/lib/python3.13/site-packages/numpy/lib/_function_base_impl.py:3023: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[:, None]
+/home/Yixiang/miniconda3/lib/python3.13/site-packages/numpy/lib/_function_base_impl.py:3024: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[None, :]
+pythia_agreement: emergent=1 failed=-
+pythia_random_target: emergent=0 failed=burstiness;usefulness
+shuffled_vocab: emergent=0 failed=usefulness
+Wrote /home/Yixiang/MPARL/GOGOGO/outputs/pythia_collapse_summary_6.9b.json

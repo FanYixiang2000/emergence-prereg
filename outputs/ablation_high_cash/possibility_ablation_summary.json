@@ -1,0 +1,9 @@
+{
+  "summary": {
+    "n_conditions": 4275.0,
+    "possibility_preserving_win_rate": 0.2573099415204678,
+    "local_optimum_trap_rate": 0.2573099415204678,
+    "mean_positive_option_value": 2.084090909090909,
+    "max_option_value": 6.800000000000001
+  }
+}

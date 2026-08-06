@@ -1,0 +1,31 @@
+  seed 95201 ckpt 0: r=0.438 Ctot=0.037 Cpair=0.004 Chigh=0.008 Chigh2=0.000
+  seed 95201 ckpt 50: r=0.443 Ctot=0.035 Cpair=0.005 Chigh=0.009 Chigh2=0.000
+  seed 95201 ckpt 100: r=0.445 Ctot=0.037 Cpair=0.005 Chigh=0.008 Chigh2=0.000
+  seed 95201 ckpt 200: r=0.451 Ctot=0.048 Cpair=0.006 Chigh=0.008 Chigh2=0.000
+  seed 95201 ckpt 400: r=0.641 Ctot=0.731 Cpair=0.156 Chigh=0.016 Chigh2=0.008
+  seed 95201 ckpt 800: r=0.987 Ctot=3.484 Cpair=0.927 Chigh=0.003 Chigh2=0.000
+  seed 95201 ckpt 1600: r=1.000 Ctot=5.063 Cpair=1.004 Chigh=0.001 Chigh2=0.000
+  seed 95201 ckpt 3000: r=1.000 Ctot=4.896 Cpair=1.010 Chigh=0.001 Chigh2=0.000
+  seed 95202 ckpt 0: r=0.442 Ctot=0.039 Cpair=0.004 Chigh=0.009 Chigh2=0.000
+  seed 95202 ckpt 50: r=0.442 Ctot=0.039 Cpair=0.004 Chigh=0.008 Chigh2=0.000
+  seed 95202 ckpt 100: r=0.443 Ctot=0.036 Cpair=0.004 Chigh=0.009 Chigh2=0.000
+  seed 95202 ckpt 200: r=0.454 Ctot=0.031 Cpair=0.005 Chigh=0.008 Chigh2=0.000
+  seed 95202 ckpt 400: r=0.513 Ctot=0.065 Cpair=0.010 Chigh=0.019 Chigh2=0.010
+  seed 95202 ckpt 800: r=0.985 Ctot=2.937 Cpair=0.970 Chigh=0.004 Chigh2=0.000
+  seed 95202 ckpt 1600: r=1.000 Ctot=4.129 Cpair=1.006 Chigh=0.001 Chigh2=0.000
+  seed 95202 ckpt 3000: r=1.000 Ctot=3.936 Cpair=1.002 Chigh=0.001 Chigh2=0.000
+  seed 95203 ckpt 0: r=0.440 Ctot=0.032 Cpair=0.004 Chigh=0.009 Chigh2=0.000
+  seed 95203 ckpt 50: r=0.442 Ctot=0.032 Cpair=0.004 Chigh=0.008 Chigh2=0.000
+  seed 95203 ckpt 100: r=0.446 Ctot=0.036 Cpair=0.005 Chigh=0.009 Chigh2=0.000
+  seed 95203 ckpt 200: r=0.453 Ctot=0.035 Cpair=0.006 Chigh=0.009 Chigh2=0.000
+  seed 95203 ckpt 400: r=0.551 Ctot=0.208 Cpair=0.037 Chigh=0.025 Chigh2=0.017
+  seed 95203 ckpt 800: r=0.986 Ctot=3.620 Cpair=0.976 Chigh=0.004 Chigh2=0.000
+  seed 95203 ckpt 1600: r=1.000 Ctot=4.446 Cpair=1.008 Chigh=0.002 Chigh2=0.000
+  seed 95203 ckpt 3000: r=1.000 Ctot=4.122 Cpair=1.014 Chigh=0.001 Chigh2=0.000
+{
+  "TRIB1_formation": true,
+  "TRIB2_relational_carrier": true,
+  "TRIB3_higher_order": false,
+  "training_failure_seeds": []
+}
+Wrote /home/Yixiang/MPARL/GOGOGO/outputs/triad_relational_collapse_sequential.json

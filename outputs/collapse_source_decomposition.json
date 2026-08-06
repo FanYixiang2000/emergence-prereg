@@ -1,0 +1,273 @@
+{
+  "status": "collapse-source decomposition battery on analytic ground truth; registered in COLLAPSE_SOURCE_PREREGISTRATION.md; instrument validation for the multi-source possibility-collapse ontology, not a real-system emergence claim",
+  "system": {
+    "agents": 3,
+    "actions": 10,
+    "env_states": 2,
+    "exact_enumeration": true
+  },
+  "results": {
+    "SD1_nesting": {
+      "pass": true,
+      "n_violations": 0,
+      "violations": []
+    },
+    "SD2_diagonal_dominance": {
+      "pass": true,
+      "detail": {
+        "lambda_ind": {
+          "deltas_bits": {
+            "C_individual": 3.805120903844781,
+            "C_env": 1.7763568394002505e-15,
+            "C_pair": -0.06405088339335041,
+            "C_high": 7.930375140574597e-06
+          },
+          "own": "C_individual",
+          "own_delta": 3.805120903844781,
+          "max_other_delta": 7.930375140574597e-06,
+          "pass": true
+        },
+        "rho_env": {
+          "deltas_bits": {
+            "C_individual": 0.005279550599931682,
+            "C_env": 0.19617047229704276,
+            "C_pair": 0.015012645229560917,
+            "C_high": -0.005275882942612498
+          },
+          "own": "C_env",
+          "own_delta": 0.19617047229704276,
+          "max_other_delta": 0.015012645229560917,
+          "pass": true
+        },
+        "kappa_pair": {
+          "deltas_bits": {
+            "C_individual": 0.017282364713613774,
+            "C_env": 0.00014188754346911026,
+            "C_pair": 1.819865610932716,
+            "C_high": -0.017208569448163402
+          },
+          "own": "C_pair",
+          "own_delta": 1.819865610932716,
+          "max_other_delta": 0.017282364713613774,
+          "pass": true
+        },
+        "gamma_high": {
+          "deltas_bits": {
+            "C_individual": 0.030711763881168253,
+            "C_env": -0.00534639154408012,
+            "C_pair": 0.003492333474437004,
+            "C_high": 0.468726233038522
+          },
+          "own": "C_high",
+          "own_delta": 0.468726233038522,
+          "max_other_delta": 0.030711763881168253,
+          "pass": true
+        }
+      }
+    },
+    "SD3_dissociations": {
+      "pass": true,
+      "detail": {
+        "components": {
+          "pure_env": {
+            "C_individual": 1.7763568394002505e-14,
+            "C_env": 0.26478772758035696,
+            "C_pair": 1.0658141036401503e-14,
+            "C_high": 0.0,
+            "C_total": 0.2647877275803854
+          },
+          "pure_pair": {
+            "C_individual": -1.5987211554602254e-14,
+            "C_env": 0.0,
+            "C_pair": 2.0712645488994825,
+            "C_high": -8.881784197001252e-16,
+            "C_total": 2.0712645488994657
+          },
+          "pure_high": {
+            "C_individual": 0.0,
+            "C_env": 0.0,
+            "C_pair": 0.0,
+            "C_high": 0.5310044064107178,
+            "C_total": 0.5310044064107178
+          }
+        },
+        "checks": {
+          "env_no_pair": true,
+          "env_no_high": true,
+          "pair_no_high": true,
+          "pair_positive": true,
+          "high_no_pair": true,
+          "high_positive": true
+        }
+      }
+    },
+    "SD4_hidden_env_misattribution": {
+      "pass": true,
+      "detail": {
+        "declared": {
+          "C_individual": 1.7763568394002505e-14,
+          "C_env": 0.26478772758035696,
+          "C_pair": 1.0658141036401503e-14,
+          "C_high": 0.0,
+          "C_total": 0.2647877275803854
+        },
+        "hidden": {
+          "C_individual": 1.7763568394002505e-14,
+          "C_env": 0.0,
+          "C_pair": 0.26478772758037117,
+          "C_high": -3.552713678800501e-15,
+          "C_total": 0.2647877275803854
+        },
+        "misattributed_bits": 0.2647877275803676
+      }
+    },
+    "SD5_time_phenotype": {
+      "pass": true,
+      "detail": {
+        "widths_10_90": {
+          "linear": 0.625,
+          "sigmoid": 0.325,
+          "step": 0.0
+        },
+        "curves_C_high": {
+          "linear": [
+            0.0,
+            0.00029,
+            0.00115,
+            0.0026,
+            0.00462,
+            0.00723,
+            0.01041,
+            0.01418,
+            0.01855,
+            0.0235,
+            0.02905,
+            0.0352,
+            0.04196,
+            0.04933,
+            0.05732,
+            0.06593,
+            0.07518,
+            0.08507,
+            0.09562,
+            0.10683,
+            0.11871,
+            0.13128,
+            0.14455,
+            0.15854,
+            0.17325,
+            0.18872,
+            0.20496,
+            0.22199,
+            0.23983,
+            0.25852,
+            0.27807,
+            0.29853,
+            0.31992,
+            0.3423,
+            0.36569,
+            0.39016,
+            0.41576,
+            0.44256,
+            0.47064,
+            0.50008,
+            0.531
+          ],
+          "sigmoid": [
+            0.0,
+            1e-05,
+            1e-05,
+            2e-05,
+            3e-05,
+            6e-05,
+            0.0001,
+            0.00018,
+            0.00033,
+            0.00058,
+            0.00104,
+            0.00183,
+            0.0032,
+            0.0055,
+            0.00931,
+            0.01542,
+            0.02488,
+            0.03892,
+            0.05877,
+            0.0853,
+            0.11871,
+            0.15822,
+            0.20208,
+            0.24791,
+            0.29314,
+            0.33555,
+            0.37355,
+            0.40631,
+            0.43366,
+            0.4559,
+            0.47361,
+            0.48746,
+            0.49816,
+            0.50634,
+            0.51255,
+            0.51723,
+            0.52074,
+            0.52337,
+            0.52533,
+            0.52679,
+            0.52788
+          ],
+          "step": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.531,
+            0.531,
+            0.531,
+            0.531,
+            0.531,
+            0.531,
+            0.531,
+            0.531,
+            0.531,
+            0.531,
+            0.531,
+            0.531,
+            0.531,
+            0.531,
+            0.531,
+            0.531,
+            0.531,
+            0.531,
+            0.531,
+            0.531,
+            0.531
+          ]
+        }
+      }
+    }
+  },
+  "registered_outcomes": {
+    "SD1": true,
+    "SD2": true,
+    "SD3": true,
+    "SD4": true,
+    "SD5": true
+  }
+}

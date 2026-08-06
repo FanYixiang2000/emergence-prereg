@@ -1,0 +1,44 @@
+Gym has been unmaintained since 2022 and does not support NumPy 2.0 amongst other critical functionality.
+Please upgrade to Gymnasium, the maintained drop-in replacement of Gym, or contact the authors of your software and request that they upgrade.
+Users of this version of Gym should be able to simply replace 'import gym' with 'import gymnasium as gym' in the vast majority of cases.
+See the migration guide at https://gymnasium.farama.org/introduction/migration_guide/ for additional information.
+training seed 93001 for 2000000 steps
+  checkpoint 40000 saved at step 40960
+  checkpoint 80000 saved at step 81920
+  checkpoint 120000 saved at step 120832
+  checkpoint 160000 saved at step 161792
+  checkpoint 240000 saved at step 241664
+  checkpoint 320000 saved at step 321536
+  checkpoint 480000 saved at step 481280
+  checkpoint 640000 saved at step 641024
+  checkpoint 820000 saved at step 821248
+  checkpoint 1000000 saved at step 1001472
+  checkpoint 1250000 saved at step 1251328
+  checkpoint 1500000 saved at step 1501184
+  checkpoint 1750000 saved at step 1751040
+  checkpoint 2000000 saved at step 2000896
+training done in 25.44 min; evaluating 14 checkpoints
+  ckpt 40000: G=0.0115 CI=[0.0015354798596017715, 0.045673360181558674] M=0.20 score=0.20
+  ckpt 80000: G=0.0102 CI=[0.0020707209487181655, 0.05343117434550602] M=-0.20 score=1.00
+  ckpt 120000: G=0.0324 CI=[0.007430829435927962, 0.09172963238592831] M=-0.20 score=0.40
+  ckpt 160000: G=0.0167 CI=[0.0031428172961402187, 0.06124722572477058] M=0.20 score=0.60
+  ckpt 240000: G=0.0113 CI=[0.0022088033457608007, 0.05155276586211083] M=0.20 score=1.40
+  ckpt 320000: G=0.0143 CI=[0.0027025420832495098, 0.0660979862955126] M=0.80 score=1.60
+  ckpt 480000: G=0.0375 CI=[0.016020619485771426, 0.0824823653362632] M=0.00 score=2.60
+  ckpt 640000: G=0.0318 CI=[0.010552202652060581, 0.08337087528702265] M=-0.60 score=5.00
+  ckpt 820000: G=0.0239 CI=[0.007119598540731556, 0.07443900085647612] M=2.20 score=4.20
+  ckpt 1000000: G=0.0136 CI=[0.002553778174622055, 0.06219750041805507] M=2.60 score=11.20
+  ckpt 1250000: G=0.0338 CI=[0.009841469857528097, 0.0882347950114994] M=4.60 score=13.20
+  ckpt 1500000: G=0.0166 CI=[0.0031401318035897455, 0.058755485169777064] M=8.00 score=18.00
+  ckpt 1750000: G=0.0093 CI=[0.0019895948281984425, 0.04382983329164991] M=4.80 score=18.60
+  ckpt 2000000: G=0.0028 CI=[0.0013257267143136184, 0.022792920140724933] M=7.40 score=19.60
+{
+  "t_seed_steps": 40000,
+  "t_visible_steps": 1000000,
+  "registered_outcomes": {
+    "OTC_G1_all_finite_normalized": true,
+    "OTC_G2_seed_no_later_than_visible": true,
+    "OTC_G3_final_M_positive": true
+  }
+}
+Wrote /home/Yixiang/MPARL/GOGOGO/outputs/overcooked_genesis_curve_dense_s93001.json

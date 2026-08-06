@@ -1,0 +1,48 @@
+{
+  "D1_potential": {
+    "trained_early_potential": [
+      1.5951415329389724,
+      1.5138985508081155,
+      1.4097964626498665
+    ],
+    "untrained_early_potential": 2.7450145204769285,
+    "noise_early_potential": 2.721604159096998,
+    "pass": true
+  },
+  "D2_useful_collapse": {
+    "trained_win_shift": [
+      -0.04791666666666661,
+      -0.02239583333333328,
+      0.046875
+    ],
+    "trained_bijection_rate": [
+      0.5,
+      0.45,
+      0.525
+    ],
+    "untrained_bijection_rate": 0.25,
+    "noise_bijection_rate": 0.2,
+    "pass": false
+  },
+  "D3_counterfactual": {
+    "pooled_do_gap_median": 0.08333333333333334,
+    "pooled_do_gap_mean": 0.09097222222222223,
+    "per_seed_do_gap_median": [
+      0.09375000000000004,
+      0.10416666666666669,
+      0.0625
+    ],
+    "pooled_sign_wins": 74,
+    "pooled_sign_losses": 44,
+    "pooled_sign_p": 0.0036650099845345467,
+    "pass": true
+  },
+  "D4_greedy_contrast": {
+    "greedy_bijection_rate": 0.425,
+    "greedy_early_potential": 0.0,
+    "trained_min_bijection": 0.45,
+    "trained_min_potential": 1.4097964626498665,
+    "pass": true
+  },
+  "all_pass": false
+}

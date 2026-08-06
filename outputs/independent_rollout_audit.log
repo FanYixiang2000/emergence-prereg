@@ -1,0 +1,39 @@
+rollout models, seed 1101
+  near-greedy: learned pot 1.64 verdict 1 (failed -); diffuse verdict 1
+rollout models, seed 1102
+  near-greedy: learned pot 1.67 verdict 1 (failed -); diffuse verdict 1
+rollout models, seed 1103
+  near-greedy: learned pot 1.61 verdict 1 (failed -); diffuse verdict 1
+rollout models, seed 1104
+  near-greedy: learned pot 0.81 verdict 1 (failed -); diffuse verdict 0
+rollout models, seed 1105
+  near-greedy: learned pot 1.00 verdict 1 (failed -); diffuse verdict 1
+rollout models, seed 1106
+  near-greedy: learned pot 1.50 verdict 1 (failed -); diffuse verdict 1
+rollout models, seed 1107
+  near-greedy: learned pot 1.50 verdict 0 (failed usefulness); diffuse verdict 1
+rollout models, seed 1108
+  near-greedy: learned pot 0.81 verdict 1 (failed -); diffuse verdict 0
+rollout models, seed 1109
+  near-greedy: learned pot 1.50 verdict 1 (failed -); diffuse verdict 1
+rollout models, seed 1110
+  near-greedy: learned pot 1.49 verdict 1 (failed -); diffuse verdict 1
+rollout models, seed 1201
+  near-greedy: learned pot 1.50 verdict 1 (failed -); diffuse verdict 0
+rollout models, seed 1202
+  near-greedy: learned pot 1.99 verdict 1 (failed -); diffuse verdict 0
+rollout models, seed 1203
+  near-greedy: learned pot 1.50 verdict 1 (failed -); diffuse verdict 1
+rollout models, seed 1204
+  near-greedy: learned pot 0.81 verdict 1 (failed -); diffuse verdict 0
+rollout models, seed 1205
+  near-greedy: learned pot 0.81 verdict 0 (failed acquisition); diffuse verdict 0
+{
+  "IR1_potential_survives_greedy": "15/15",
+  "IR2_learned_accepted_both_models": "8/15",
+  "IR3_twins_rejected_both_models": "15/15",
+  "IR1_pass": true,
+  "IR2_pass": false,
+  "IR3_pass": true
+}
+Wrote /home/Yixiang/MPARL/GOGOGO/outputs/independent_rollout_audit.json

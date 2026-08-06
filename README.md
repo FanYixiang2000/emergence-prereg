@@ -1,0 +1,1530 @@
+# GOGOGO: Latent Possibility Emergence Experiments
+
+This folder starts the experimental version of the theory:
+
+> Emergence is not just micro-to-macro structure. It is also the temporal
+> actualization of latent possibilities: potential -> trigger -> collapse.
+
+The first code is deliberately small and controllable. It builds a toy world
+with ground-truth future basins so we can test whether the proposed metrics can
+distinguish reward-induced coordination from latent possibility emergence.
+
+## Research Question
+
+Can we measure emergence before a visible macro-structure appears?
+
+The first measurable version is:
+
+1. **Potential**: does the current state preserve multiple structured future
+   basins instead of a single obvious path?
+2. **Trigger**: does one key action activate a low-obviousness future?
+3. **Collapse**: after the trigger, does the future distribution reorganize into
+   a more predictable macro trajectory?
+
+## Why This Toy Experiment Exists
+
+Real emergence lacks a clean ground truth. The first step is therefore a
+controlled world where we know:
+
+- which basin is selfish escape;
+- which basin is direct team coordination;
+- which basin is sacrifice-triggered rescue;
+- which trajectories are unstructured noise;
+- which intervention is the intended trigger.
+
+Once the metric behaves sensibly here, the same interface can be connected to
+MARL trajectories, Go search trees, or LLM tool-use traces.
+
+## Files
+
+- `ptc_gridworld.py`: controlled latent-possibility trajectory generator.
+- `ptc_metrics.py`: potential, trigger, and collapse metrics.
+- `run_ptc_experiment.py`: command-line experiment runner.
+- `learned_sacrifice_gridworld.py`: tabular Q-learning version of the sacrifice
+  testbed.
+- `run_learned_ptc_experiment.py`: learned-policy experiment runner.
+- `spatial_sacrifice_gridworld.py`: second controlled benchmark where two
+  agents move in a grid and basin labels are inferred from event sequences.
+- `run_spatial_sweep.py`: multi-seed summary utility for the spatial benchmark.
+- `contextual_sacrifice_gridworld.py`: selective-trigger benchmark where always
+  sacrificing is not optimal.
+- `run_contextual_sweep.py`: multi-seed summary utility for the contextual
+  benchmark.
+- `possibility_preservation_tree.py`: minimal finite-horizon benchmark showing
+  that local optimality can close globally valuable futures.
+- `possibility_ablation.py`: closed-form controlled ablation over cash-out value,
+  preservation cost, and context probability.
+- `planning_horizon_ablation.py`: exact Bellman-control experiment where the
+  only variable is planning horizon.
+- `ptc_ground_truth_validation.py`: validates PTC evidence against analytic
+  ground-truth labels and negative controls.
+- `performance_closure_benchmark.py`: capability ablation showing the full
+  option-preserve + context-use structure improves task completion.
+- `performance_robustness_sweep.py`: robustness sweep over mismatch payoff and
+  payoff asymmetry.
+- `external_sacrifice_ptc_adapter.py`: summary-level adapter for existing
+  sacrifice MARL results outside `GOGOGO`.
+- `external_decoy_ptc_adapter.py`: summary-level adapter for external
+  role-aware decoy/targeting swarm results.
+- `external_decoy_trajectory_ptc.py`: trajectory-level adapter for external
+  decoy target-role records.
+- `collapse_burst_experiment.py`: information-theoretic test separating burst
+  collapse from gradual convergence and reward-shaped convergence.
+- `synergy_pid_proxy_experiment.py`: PID-inspired proxy test for joint
+  micro-state information about future basins.
+- `representation_jump_bridge.py`: controlled bridge from possibility collapse
+  to representation-space macro jumps.
+- `learned_representation_jump_probe.py`: stress test using learned spatial
+  Q-vectors as representations.
+- `contextual_learned_representation_probe.py`: stricter stress test using
+  contextual rescue/bridge Q-vectors.
+- `within_episode_collapse_probe.py`: state-level future-basin distributions
+  `P_t(B | s_t)` estimated by Monte Carlo rollouts inside real episodes, with a
+  minimal do-operator contrast (force vs forbid the trigger).
+- `unsupervised_basin_discovery.py`: recovers basins from raw event sequences
+  by k-means, without hand labels.
+- `run_within_episode_sweep.py`: multi-seed sweep with 95% bootstrap CIs for
+  the within-episode probe.
+- `neural_within_episode_probe.py`: DQN (PyTorch) version of the probe plus a
+  neural-embedding jump bridge measured at training checkpoints.
+- `criterion_ablation_battery.py`: the original nine-system,
+  five-component harness and its registered ablations; unique accuracy drops
+  occur for selectivity, usefulness and endogeneity.
+- `estimator_robustness_check.py`: rollout-sample and probe-temperature grid
+  verifying the sign conclusions are not estimator artifacts.
+- `EXTERNAL_TRANSFER_PREREGISTRATION.md`: protocol, thresholds, audit rules,
+  and falsifiable predictions registered before the external transfer ran.
+- `run_external_transfer_sweep.py`: multi-seed replication of the external
+  transfer battery with bootstrap CIs and per-prediction pass rates.
+- `refined_selectivity_check.py`: registered-failure analysis; upgrades
+  marginal tension to conditional selectivity and re-scores both batteries.
+- `refined_criterion_confirmation.py`: out-of-sample confirmation of the
+  frozen refined criterion on fresh external seeds and a fresh internal
+  battery seed, adding a measured acquisition component.
+- `phase_boundary_prediction.py`: prospective phase-boundary test; closed-form
+  payoff accounting predicts where the criterion flips before any training.
+- `grokking_collapse_bridge.py`: grokking (modular arithmetic) measured as
+  useful possibility collapse, bridging to large-model emergent abilities.
+- `grokking_generality_sweep.py`: grokking-collapse result repeated across a
+  second task (modular multiplication) and multiple seeds.
+- `scale_emergence_decomposition.py`: model-scale sweep separating the
+  discontinuous accuracy observable from the continuous collapse mechanism
+  (the Wei vs Schaeffer debate made measurable).
+- `threshold_sensitivity_analysis.py`: rescoring sweep over every numeric
+  threshold on both batteries (no retraining).
+- `prior_metrics_comparison.py`: literature-style single-signal emergence
+  detectors (representation jump, sharp metric jump, specificity-only,
+  PID-style synergy), each given its hindsight-optimal threshold, on the
+  same 10-system battery.
+- `exact_prior_formalisms.py`: the two formal rivals in their EXACT
+  published forms -- Hoel's effective information (max-entropy
+  interventions, candidate coarse-graining family) and Rosas' practical
+  criterion Psi -- computed with zero Monte-Carlo error on the
+  enumerated policy-closed chains of all 10 battery systems (Prop. 5).
+- `external_unsupervised_basins.py`: label-free clustering of external swarm
+  episodes; purity against hand basins and verdict invariance.
+- `external_swarm_criterion_transfer.py`: pre-registered transfer of the full
+  criterion (thresholds unchanged) to the external continuous swarm decoy
+  benchmark from `examples_6.29_MARL_SWARM`, with a REINFORCE learner and
+  external hand-rule controllers.
+- `induction_head_emergence.py`: induction-head formation in attention-only
+  transformers measured as useful possibility collapse, with the one-layer
+  architectural-impossibility control (Elhage et al. 2021), a no-structure
+  control, and a memorizer control; criterion imported frozen from the
+  grokking bridge.
+- `run_induction_seed_sweep.py`: multi-seed replication of all four
+  induction-head conditions on fresh seeds.
+- `transformer_grokking_replication.py`: grokking bridge repeated with a
+  412k-parameter causal transformer instead of the MLP (architecture-family
+  control for the process-level results).
+- `MULTIBERTS_PREREGISTRATION.md`: protocol, probes, thresholds, and
+  predictions frozen before measuring the public MultiBERTs checkpoint
+  series.
+- `multiberts_collapse_probe.py`: zero-authorial-control validation on the
+  published MultiBERTs seed_0 series (110M-parameter BERT-base, 29 public
+  checkpoints trained and released by Google Research), measuring
+  subject-verb-agreement acquisition as useful possibility collapse with
+  random-target and shuffled-vocabulary controls.
+- `multiberts_phenomena_battery.py`: four more probe families on the same
+  public series (reflexive agreement, determiner-noun agreement,
+  country-capital facts, NPI licensing), including two registered
+  auxiliary-prediction failures reported as such.
+- `burst_alignment_test.py`: empirical window-rank audit quantifying that
+  ability jumps land inside the largest collapse-burst windows, with
+  noise-jump controls; no invalid omnibus product is reported.
+- `generate_paper_figures.py`: generates paper-style figures from raw outputs.
+- `FIGURE_MANIFEST.md`: explains what each generated figure proves and does not
+  prove.
+- `EVIDENCE_AUDIT.md`: reviewer-facing audit of usefulness, truth, completeness,
+  and academic significance.
+- `outputs/`: generated result files.
+
+## Quick Start
+
+```bash
+cd /home/Yixiang/MPARL/GOGOGO
+python3 run_ptc_experiment.py --episodes 4000 --seed 7
+```
+
+Learned-policy version:
+
+```bash
+cd /home/Yixiang/MPARL/GOGOGO
+python3 run_learned_ptc_experiment.py \
+  --train_episodes 8000 \
+  --eval_episodes 3000 \
+  --seed 11 \
+  --eval_temperature 0.35
+```
+
+Spatial learned benchmark:
+
+```bash
+cd /home/Yixiang/MPARL/GOGOGO
+python3 spatial_sacrifice_gridworld.py \
+  --train_episodes 80000 \
+  --eval_episodes 3000 \
+  --seed 23 \
+  --eval_temperature 0.25
+```
+
+Spatial multi-seed smoke sweep:
+
+```bash
+cd /home/Yixiang/MPARL/GOGOGO
+python3 run_spatial_sweep.py \
+  --seeds 23,29 \
+  --train_episodes 25000 \
+  --eval_episodes 1200 \
+  --eval_temperature 0.25
+```
+
+Contextual selective-trigger sweep:
+
+```bash
+cd /home/Yixiang/MPARL/GOGOGO
+python3 run_contextual_sweep.py \
+  --seeds 53,59,61 \
+  --train_episodes 60000 \
+  --eval_episodes 2000 \
+  --eval_temperature 0.25
+```
+
+Possibility-preservation tree:
+
+```bash
+cd /home/Yixiang/MPARL/GOGOGO
+python3 possibility_preservation_tree.py --episodes 5000 --seed 71
+```
+
+Closed-form possibility ablation:
+
+```bash
+cd /home/Yixiang/MPARL/GOGOGO
+python3 possibility_ablation.py
+```
+
+Planning-horizon ablation:
+
+```bash
+cd /home/Yixiang/MPARL/GOGOGO
+python3 planning_horizon_ablation.py
+```
+
+Ground-truth validation:
+
+```bash
+cd /home/Yixiang/MPARL/GOGOGO
+python3 ptc_ground_truth_validation.py
+```
+
+Performance closure:
+
+```bash
+cd /home/Yixiang/MPARL/GOGOGO
+python3 performance_closure_benchmark.py
+```
+
+Robustness and figures:
+
+```bash
+cd /home/Yixiang/MPARL/GOGOGO
+python3 performance_robustness_sweep.py
+python3 external_sacrifice_ptc_adapter.py
+python3 external_decoy_ptc_adapter.py
+python3 external_decoy_trajectory_ptc.py
+python3 collapse_burst_experiment.py
+python3 synergy_pid_proxy_experiment.py
+python3 representation_jump_bridge.py
+python3 learned_representation_jump_probe.py
+python3 contextual_learned_representation_probe.py
+python3 within_episode_collapse_probe.py
+python3 unsupervised_basin_discovery.py
+python3 run_within_episode_sweep.py
+python3 neural_within_episode_probe.py
+python3 criterion_ablation_battery.py
+python3 estimator_robustness_check.py
+python3 external_swarm_criterion_transfer.py
+python3 run_external_transfer_sweep.py
+python3 phase_boundary_prediction.py
+python3 grokking_collapse_bridge.py
+python3 generate_paper_figures.py
+```
+
+The runner writes:
+
+- `outputs/ptc_results.json`
+- `outputs/ptc_summary.csv`
+- `outputs/learned_ptc_results.json`
+- `outputs/learned_ptc_summary.csv`
+- `outputs/spatial_ptc_results.json`
+- `outputs/spatial_ptc_summary.csv`
+- `outputs/spatial_sweep_records.json`
+- `outputs/spatial_sweep_summary.csv`
+- `outputs/contextual_ptc_results.json`
+- `outputs/contextual_ptc_summary.csv`
+- `outputs/contextual_sweep_records.json`
+- `outputs/contextual_sweep_summary.csv`
+- `outputs/possibility_tree_results.json`
+- `outputs/possibility_tree_summary.csv`
+- `outputs/possibility_ablation_summary.json`
+- `outputs/possibility_ablation_grid.csv`
+- `outputs/planning_horizon_summary.json`
+- `outputs/planning_horizon_grid.csv`
+- `outputs/ptc_ground_truth_validation_summary.json`
+- `outputs/ptc_ground_truth_validation_grid.csv`
+- `outputs/performance_closure_summary.json`
+- `outputs/performance_closure_grid.csv`
+- `outputs/performance_robustness_summary.json`
+- `outputs/performance_robustness_grid.csv`
+- `outputs/external_sacrifice_ptc_summary.json`
+- `outputs/external_sacrifice_ptc_scores.csv`
+- `outputs/external_decoy_ptc_summary.json`
+- `outputs/external_decoy_ptc_scores.csv`
+- `outputs/external_decoy_trajectory_ptc_summary.json`
+- `outputs/external_decoy_trajectory_ptc_summary.csv`
+- `outputs/external_decoy_trajectory_ptc_timeseries.csv`
+- `outputs/collapse_burst_summary.csv`
+- `outputs/collapse_burst_timeseries.csv`
+- `outputs/synergy_pid_proxy_summary.csv`
+- `outputs/representation_jump_bridge_summary.json`
+- `outputs/representation_jump_bridge_summary.csv`
+- `outputs/representation_jump_bridge_timeseries.csv`
+- `outputs/learned_representation_jump_summary.csv`
+- `outputs/learned_representation_jump_timeseries.csv`
+- `outputs/contextual_learned_representation_summary.csv`
+- `outputs/contextual_learned_representation_timeseries.csv`
+- `outputs/within_episode_collapse_summary.csv`
+- `outputs/within_episode_collapse_aligned.csv`
+- `outputs/unsupervised_basin_summary.csv`
+- `outputs/unsupervised_basin_clusters.csv`
+- `outputs/within_episode_sweep_ci.csv`
+- `outputs/within_episode_sweep_per_seed.csv`
+- `outputs/neural_within_episode_summary.csv`
+- `outputs/neural_checkpoint_bridge_summary.csv`
+- `outputs/neural_checkpoint_bridge_timeseries.csv`
+- `outputs/criterion_battery_measurements.csv`
+- `outputs/criterion_battery_matrix.csv`
+- `outputs/criterion_battery_summary.json`
+- `outputs/estimator_robustness_grid.csv`
+- `outputs/estimator_robustness_summary.json`
+- `outputs/external_transfer_measurements.csv`
+- `outputs/external_transfer_summary.json`
+- `outputs/external_transfer_sweep_per_seed.csv`
+- `outputs/external_transfer_sweep_summary.json`
+- `outputs/phase_boundary_grid.csv`
+- `outputs/phase_boundary_summary.json`
+- `outputs/grokking_collapse_timeseries.csv`
+- `outputs/grokking_collapse_summary.json`
+- `figures/*.png`
+
+It also prints a compact CSV summary.
+
+## Experimental Conditions
+
+The first experiment compares five reward/design regimes:
+
+- `pure_individual`: the individual keeps local reward, so sacrifice is
+  predictably suppressed.
+- `pure_team`: team reward erases individual conflict, so sacrifice is expected
+  rather than surprising.
+- `linear_mixed`: scalarized reward creates a predictable trade-off.
+- `dense_shaping`: process reward directly points to a safe coordination path,
+  compressing the future into a single mode.
+- `uncertain_preference`: multiple futures remain viable before the trigger,
+  giving the system latent possibility.
+
+## Core Metrics
+
+- `potential_effective_modes`: perplexity-style count of active future basins.
+  Higher means the pre-trigger future is less single-mode.
+- `trigger_effect_js_bits`: Jensen-Shannon divergence between the pre-trigger
+  future and trigger-conditioned future.
+- `collapse_bits`: entropy decrease after the trigger.
+- `trigger_specificity_js_bits`: how different the trigger-conditioned future is
+  from a non-trigger intervention.
+- `sacrifice_probability_shift`: whether the trigger makes the sacrifice-rescue
+  basin dominate.
+- `macro_predictability_gain`: whether event-order concentration increases after
+  the trigger.
+
+## First Expected Pattern
+
+The key prediction is not simply "sacrifice happens".
+
+The stronger claim is:
+
+- dense shaping and pure team reward can produce coordination, but they should
+  look single-mode before the trigger;
+- pure individual reward should suppress sacrifice;
+- uncertain preference should preserve more pre-trigger modes, then show a
+  sharper trigger-specific collapse into the sacrifice-rescue basin.
+
+If this pattern holds, it supports the distinction:
+
+> Single-mode coordination is not emergence; multimodal collapse is.
+
+## Learned Experiment: First Evidence Shape
+
+The learned experiment trains the same tabular Q learner under five reward
+regimes, then evaluates three futures:
+
+- natural policy rollout;
+- forced `trigger` rollout, where the sacrifice switch is selected;
+- forced `non_trigger` rollout, where the sacrifice switch is masked out.
+
+This adds an important reviewer-facing distinction:
+
+- if `pure_team` naturally sacrifices almost always, it is not surprising
+  emergence; it is team-reward optimization;
+- if `dense_shaping` or `linear_mixed` only succeeds after an externally forced
+  trigger, it is not endogenous emergence;
+- if `uncertain_preference` preserves multiple natural futures and sometimes
+  selects the trigger internally, it better matches latent possibility
+  emergence.
+
+The current diagnostic score is:
+
+```text
+endogenous_emergence_score
+  = potential_effective_modes
+  * trigger_choice_tension
+  * trigger_specificity_js_bits
+```
+
+where `trigger_choice_tension = 4p(1-p)` and `p` is the natural trigger rate.
+This deliberately downweights both extremes:
+
+- `p = 0`: the trigger never appears naturally;
+- `p = 1`: the trigger is mandatory and unsurprising.
+
+In the current smoke run, `uncertain_preference` is the only condition with high
+multimodality and non-saturated trigger choice. This is the evidence pattern we
+want to strengthen with larger learned environments.
+
+## Spatial Benchmark: Second Evidence Source
+
+The spatial benchmark is the next step toward a reviewer-facing testbed. The
+agents do not choose "sacrifice" as a macro action. They move on a grid:
+
+- agent 0 may escape for local reward;
+- both agents may take a visible bridge for moderate team reward;
+- agent 0 may step on a costly switch that opens a gate;
+- agent 1 can then reach a delayed high-value goal.
+
+Basins are inferred from events:
+
+- `a0_reaches_safe_exit` -> selfish escape;
+- `both_take_visible_bridge` -> direct teamwork;
+- `hidden_gate_opens` + `a1_reaches_high_value_goal` -> sacrifice rescue;
+- timeout or incoherent events -> failed noise.
+
+Current full smoke result:
+
+```text
+regime                 potential  trigger_rate  tension  necessity  score
+pure_individual        1.0000     0.0000        0.0000   3.9997     0.0000
+pure_team              1.0056     0.9993        0.0027   9.0000     0.0027
+linear_mixed           1.2397     0.0000        0.0000   4.0033     0.0000
+dense_shaping          1.2232     0.0500        0.1900   9.0000     0.2324
+uncertain_preference   2.9993     0.3370        0.8937   5.6580     2.6526
+random_noise           1.0741     0.9883        0.0461   7.5040     0.0493
+```
+
+This is stronger than the macro-action benchmark because it shows the same
+pattern when the trigger must be discovered through spatial movement. The
+`random_noise` control is also useful: noisy reward can create irregularity or
+even frequent trigger use, but it does not preserve structured multimodal
+choice.
+
+Current 5-seed stratified sweep:
+
+```text
+regime                 n  potential  trigger_rate  tension  necessity  score ± 95%CI
+dense_shaping          5  1.1388     0.0287        0.1110   9.0000     0.1287 ± 0.0842
+linear_mixed           5  1.2202     0.0000        0.0000   4.0052     0.0000 ± 0.0000
+pure_individual        5  1.0007     0.0000        0.0000   3.9969     0.0000 ± 0.0000
+pure_team              5  1.0040     0.9995        0.0019   9.0000     0.0019 ± 0.0017
+random_noise           5  1.3745     0.7193        0.2443   8.6879     0.4733 ± 1.0820
+uncertain_preference   5  2.9953     0.3427        0.9006   6.8512     2.6635 ± 0.0663
+```
+
+This is the current strongest controlled result.
+
+## Contextual Benchmark: Performance Matters
+
+The contextual benchmark asks a stricter question:
+
+> Can the policy trigger sacrifice only when it is actually important?
+
+Episodes have a visible mode:
+
+- `rescue`: the costly switch opens the high-value goal.
+- `bridge`: the switch is a decoy and direct teamwork is better.
+
+Current 3-seed result:
+
+```text
+regime                 return  rescue  bridge  over_sacrifice  selective  emergence
+dense_shaping          9.4942  0.4992  0.5008  0.0000          1.0000     1.5489
+linear_mixed           5.7207  0.0000  0.4303  0.0000          0.0000     0.0000
+pure_individual        4.0027  0.0000  0.0007  0.0000          0.0000     0.0000
+pure_team              9.5000  0.5000  0.5000  0.0000          1.0000     1.5443
+random_noise           8.9452  0.4978  0.4375  0.0138          0.8707     1.0354
+uncertain_preference   6.1083  0.1110  0.5757  0.0000          0.2421     0.3305
+```
+
+This benchmark changes the interpretation. It shows that the framework is
+fact-driven, not designed to make one method win. `pure_team` and
+`dense_shaping` can be genuinely strong when the environment requires
+context-selective triggering. The claim is therefore not "uncertain preference
+is always best"; the claim is that PTC metrics can distinguish selective
+performance-relevant triggering from mere sacrifice frequency.
+
+## Mathematical Core: Local Optimum Trap
+
+The possibility-preservation tree isolates the mathematical idea:
+
+> The current optimum can close future options and become globally suboptimal.
+
+At the start, `cash_out` gives the best immediate reward. The alternative
+`preserve_option` is locally costly, but it keeps the future open until context
+is revealed.
+
+Current result:
+
+```text
+policy                   immediate  expected  option_value  success  emergence
+myopic_greedy             5.0000     5.0000    0.0000        0.0000   0.0000
+always_trigger           -1.0000     5.4428    0.4428        0.4956   0.9911
+always_direct            -1.0000     3.5450   -1.4550        0.5050   0.0000
+random_preserve          -1.0000     4.4124   -0.5876        0.4900   1.0336
+possibility_preserving   -1.0000    10.0088    5.0088        1.0000   1.9999
+```
+
+This table expresses the theory most directly. Emergence is not merely
+"sacrifice"; it is preserving future branching structure long enough to select
+the right basin after context becomes visible.
+
+The closed-form condition is:
+
+```text
+preserve wins iff
+  -c + p * R_trigger + (1 - p) * R_direct > R_cash
+```
+
+where `R_cash` is the immediate local optimum, `c` is preservation cost, and `p`
+is the probability that the trigger basin is needed.
+
+Default analytic sweep:
+
+```text
+n_conditions                         4275
+possibility_preserving_win_rate      0.7364
+local_optimum_trap_rate              0.7319
+mean_positive_option_value           4.8023
+max_option_value                    12.8000
+```
+
+Boundary ablations:
+
+```text
+condition          win_rate  trap_rate  mean_positive_option_value
+default            0.7364    0.7319     4.8023
+high_cash_out      0.2573    0.2573     2.0841
+high_preserve_cost 0.4568    0.4568     3.2171
+```
+
+This is a controlled-variable result: no RL algorithm, no heuristic-vs-learning
+confound, only the value of preserving future options.
+
+The planning-horizon ablation uses the same Bellman solver and same reward
+function in every condition. The only change is whether the solver sees one or
+two steps ahead.
+
+Default result:
+
+```text
+n_conditions                 4275
+horizon_reversal_rate        0.5158
+h2_preserve_rate             0.5158
+mean_positive_option_value   3.6693
+max_option_value            12.3500
+```
+
+Boundary ablations:
+
+```text
+condition           reversal_rate  mean_positive_option_value
+default             0.5158         3.6693
+high_cash_out       0.0966         1.7013
+high_preserve_cost  0.2457         2.4512
+```
+
+This gives a sharper control:
+
+```text
+same environment + same Bellman solver + same reward
+different horizon -> different optimal action
+```
+
+The reversal is exactly the theory: short-horizon optimality favors immediate
+cash-out, while longer-horizon optimality values the future option set.
+
+Ground-truth validation shows why the evidence must include utility:
+
+```text
+auc_structure_only       0.4978
+auc_option_value         0.9838
+auc_combined_evidence    1.0000
+combined_accuracy        1.0000
+```
+
+So the framework should not claim that multimodality alone is emergence.
+The stronger evidence is:
+
+```text
+structured possibility + positive option value + local-optimality trap
+```
+
+The performance-closure benchmark checks whether the discovered structure
+actually improves task completion:
+
+```text
+n_conditions                    4275
+full_best_return_rate           0.7427
+performance_closure_rate        0.7364
+full_mean_return                9.0000
+myopic_mean_return              6.0000
+no_context_mean_return          6.2053
+full_mean_success               1.0000
+no_context_mean_success         0.7316
+full_return_gain_vs_myopic      3.0000
+full_return_gain_vs_no_context  2.7947
+full_success_gain_vs_no_context 0.2684
+```
+
+This is the current closed-loop analytic evidence: the full structure is not
+only detectable; it improves final return and success rate in the predicted
+region.
+
+Robustness sweep:
+
+```text
+n_settings                         20
+mean_performance_closure_rate      0.7313
+mean_full_best_return_rate         0.7437
+mean_full_return_gain_vs_myopic    3.0000
+mean_full_return_gain_vs_no_context 2.4613
+min_performance_closure_rate       0.7209
+max_performance_closure_rate       0.7368
+```
+
+External sacrifice MARL summary-level validation:
+
+```text
+method          regime                              completion blind  high   external_ptc
+rusp            conditional_sacrifice               0.7000     0.1245 0.6235 0.1810
+fixed_altruism  conditional_sacrifice               0.7010     0.1298 0.5838 0.1517
+spc             conditional_sacrifice               0.5724     0.3750 0.6868 0.0720
+team            blind_sacrifice                     0.6253     0.8261 0.8422 0.0005
+individual      no_sacrifice                        0.0993     0.0005 0.0000 0.0000
+```
+
+This is external to the analytic toy benchmarks, but it is still summary-level:
+it validates conditional sacrifice patterns, not full trajectory-level future
+distribution collapse.
+
+Collapse burst experiment:
+
+```text
+regime              total_collapse  max_burst  burst_fraction  guidance  score
+ordinary_gradual    1.3788          0.0393     0.0285          0.7500    0.0014
+reward_shaped       1.3788          0.0537     0.0390          0.9500    0.0004
+collapse_emergence  1.2178          0.1526     0.1253          0.1000    0.0977
+random_instability  0.0052          0.0021     0.4043          0.0500    0.0000
+```
+
+PID-inspired spatial synergy:
+
+```text
+system            I(X1;B)  I(X2;B)  I(X1,X2;B)  synergy
+synergistic_xor   0.0000   0.0000   0.9999      0.9999
+unique_x1         1.0000   0.0000   1.0000      0.0000
+redundant         1.0000   1.0000   1.0000      0.0000
+noise             0.0000   0.0000   0.0000      0.0000
+```
+
+External decoy/role-aware swarm validation:
+
+```text
+controller    mean_win  decoy_damage  win_gain  decoy_reduction  score
+role_oracle   0.9988    0.0001        0.8895    0.9998           0.8883
+role_mined    0.9988    0.0001        0.8895    0.9998           0.8883
+nearest_only  0.1094    0.8023        0.0000    0.0000           0.0000
+```
+
+This supports the local-optimality-trap story in an external swarm setting:
+nearest targeting follows immediate proximity and damages decoys; role-aware
+targeting avoids the decoy trap and preserves a high-win future.
+
+Trajectory-level decoy role-collapse validation:
+
+```text
+controller    win     p_decoy  non_decoy  collapse  useful_consensus  trap_consensus  score
+role_oracle   0.9988  0.0189   0.9811     1.5140    0.9471            0.0082          0.938274
+nearest_only  0.1094  0.8939   0.1061     1.5800    0.1040            0.8928          0.001220
+```
+
+This is the first external trajectory-level result. Both controllers show
+strong target-role collapse, but the collapse has opposite meaning: nearest-only
+collapses into the decoy trap, while role-aware targeting collapses into useful
+non-decoy targets and wins. This directly supports the paper's distinction
+between ordinary collapse and useful possibility collapse.
+
+Representation-jump bridge:
+
+We treat representation jump as an observable projection of future possibility
+collapse:
+
+```text
+C_t = KL(P_t(B) || P_0(B))
+B_t = max(C_t - C_{t-1}, 0)
+R_t = E_{B ~ P_t}[phi(B)]
+J_t = ||R_t - R_{t-1}||_2
+```
+
+Current controlled result:
+
+```text
+regime              collapse  max_burst  max_jump  corr    guidance  score
+ordinary_gradual    1.3788    0.0393     0.0083    0.1844  0.7500    0.000000
+reward_shaped       1.3788    0.0517     0.0112    0.6491  0.9500    0.000000
+collapse_emergence  1.2178    0.1657     0.1010    0.8991  0.1000    0.003362
+random_instability  0.0271    0.0086     0.0451    0.1037  0.0500    0.000000
+```
+
+This supports the stronger positioning: representation jumps are not competing
+with the possibility-collapse theory. They can be treated as an observable
+consequence of a burst-like contraction in future possibility space.
+
+Learned Q-representation stress test:
+
+```text
+spatial pure_team          raw_rep=5.266947  gated=0.396733
+spatial uncertain_pref     raw_rep=0.400152  gated=0.004182
+contextual pure_team       raw_rep=9.191955  gated=18.383911
+contextual uncertain_pref  raw_rep=1.019919  gated=0.534328
+```
+
+This is a warning result, not a headline positive result. Learned Q-vector
+jumps can be large under ordinary team-reward convergence. Therefore,
+representation jump alone is not a reliable emergence definition in these
+benchmarks. A Nature-scale version must validate the bridge on richer learned
+embeddings and stricter counterfactual future distributions.
+
+Within-episode future-distribution collapse (state-level `P_t(B | s_t)` from
+learned rollouts, observer marginalizes over latent contexts):
+
+```text
+regime               mode    H0_bits  do_js   do_return_gap  do_trig_p_rescue
+pure_team            rescue  0.0423   0.9776  +10.75         0.9933
+pure_team            bridge  0.0873   0.0361  -2.62          0.0000
+uncertain_preference rescue  1.3054   0.5482  +2.56          0.5322
+uncertain_preference bridge  1.0342   0.5025  -7.34          0.0000
+```
+
+Three findings:
+
+1. Under uncertain preference the initial future entropy is high (>1 bit): the
+   possibility space is genuinely open before the trigger.
+2. Forcing versus forbidding the trigger produces divergent futures
+   (JS ~0.5-1.0) and a positive return gap only in rescue mode.
+3. In bridge mode the same physical action produces a negative return gap:
+   collapse happens but it is harmful, so useful collapse is a property of the
+   action-context pair, not the action.
+
+Unsupervised basin discovery (k-means on raw event sequences, no hand labels):
+
+```text
+regime                purity  hand_modes  cluster_modes
+pure_team             1.0000  2.0000      3.6876
+uncertain_preference  1.0000  2.7922      2.7922
+random_noise          1.0000  2.5040      2.6773
+```
+
+Clusters recover the hand basins with perfect purity, and the effective-modes
+count agrees for the key uncertain-preference regime. This answers the
+circularity objection: the basins are discoverable structures, not labels we
+imposed.
+
+Multi-seed sweep with 95% bootstrap CIs (5 seeds, 24 probe episodes each):
+
+```text
+regime               mode    H0      iv_js   iv_gap  [lo95, hi95]      sign_consistency
+pure_team            rescue  0.0590  0.9888  +10.15  [+9.25, +10.80]   1.000
+pure_team            bridge  0.0682  0.0216  -2.32   [-2.56, -2.11]    1.000
+uncertain_preference rescue  1.5762  0.5351  +0.58   [-1.58, +2.64]    0.600
+uncertain_preference bridge  0.9169  0.4227  -7.00   [-7.65, -6.29]    1.000
+```
+
+The bridge-mode harmful collapse is extremely stable (5/5 seeds negative). The
+uncertain-preference rescue gap is positive on average but seed-noisy (3/5
+positive): two seeds under-learned the latent-sacrifice context. This is an
+honest limitation and motivates longer training or more seeds for the paper
+version.
+
+Neural DQN replication (PyTorch MLP, 16k episodes, same environment):
+
+```text
+probe:  regime               mode    trig_rate  H0      iv_js   iv_gap
+        pure_team            rescue  0.917      0.8957  0.7926  +9.60
+        pure_team            bridge  0.000      1.0427  0.2616  -5.67
+        uncertain_preference rescue  0.667      1.5307  0.4916  +3.89
+        uncertain_preference bridge  0.000      1.3895  0.5716  -6.06
+
+bridge: regime               burst-jump corr  peak alignment
+        pure_team            0.8976           1.0
+        uncertain_preference 0.8720           1.0
+```
+
+Two conclusions:
+
+1. The rescue/bridge sign flip replicates with a deep (function-approximation)
+   learner, so the mechanism evidence is not a tabular artifact.
+2. Neural embedding jumps at checkpoints track future-basin collapse bursts
+   (correlation ~0.9) in both regimes. Consistent with the false-positive
+   audit, this alignment alone does not separate regimes; separation comes from
+   the open potential (H0) and the do-operator contrast.
+
+Criterion-ablation battery (nine measured systems, pre-registered thresholds):
+
+```text
+system              truth  H0     tension  JS     usefulness  full_prediction
+latent_conditional  1      1.148  0.889    0.539  +3.433      1
+converged_team      0      0.148  1.000    0.074  +5.348      0
+shaped_process      0      0.595  1.000    0.498  +3.052      0
+noise_policy        1      0.508  1.000    0.739  +4.924      1
+untrained_uniform   0      0.249  0.993    0.038  -0.766      0
+blind_trigger       0      0.729  0.000    0.519  -2.027      0
+harmful_decoy       0      0.335  0.000    0.654  -8.387      0
+useful_habit        0      1.106  0.000    0.488  +4.426      0
+wrong_selector      0      0.710  0.556    0.580  -0.666      0
+
+criterion         accuracy  named counterexample
+full              1.000     -
+drop_selectivity  0.889     useful_habit (useful reflex, no choice)
+drop_usefulness   0.889     wrong_selector (selective but harmful)
+drop_endogeneity  0.889     shaped_process (process-rewarded trigger)
+only_potential    0.556     four false positives
+only_specificity  0.444     five false positives
+only_usefulness   0.667     three false positives
+```
+
+Notes on honesty: the `noise_policy` label was corrected to emergent after a
+behavioral audit showed it genuinely learned selective triggering (rescue
+trigger rate 0.985, bridge 0.0) despite sigma=4 reward noise; labels are
+structure-based, not regime-name-based. On this battery `drop_potential` and
+`drop_specificity` did not produce unique counterexamples (their exclusions
+overlap with other components); their necessity is supported instead by the
+earlier ground-truth validation (fig4) and the converged_team H0 contrast.
+
+Estimator robustness (12 cells: samples in {12,24,48,96} x probe temperature
+in {0.6,0.9,1.2}):
+
+```text
+rescue_gap_positive_rate  12/12
+bridge_gap_negative_rate  12/12
+h0_ordering_rate          12/12
+```
+
+The sign conclusions and the potential ordering are stable across every
+estimator setting tested.
+
+Pre-registered external transfer (continuous swarm decoy benchmark from
+`examples_6.29_MARL_SWARM`, thresholds copied unchanged, protocol frozen in
+`EXTERNAL_TRANSFER_PREREGISTRATION.md` before measurement):
+
+```text
+system          truth  H0     p_trig (pas/agg)  JS     usefulness  verdict  failed components
+marl_learned    1      1.504  0.50 (0.00/1.00)  1.000  +14.93      1        -
+marl_untrained  0      0.687  1.00 (1.00/1.00)  1.000  -2.21       0        selectivity, usefulness
+nearest_only    0      0.960  1.00 (1.00/1.00)  1.000  +2.60       0        selectivity, endogeneity
+role_oracle     0      1.000  0.00 (0.00/0.00)  1.000  +2.31       0        selectivity, endogeneity
+damage_aware    0      1.430  0.50 (0.00/1.00)  1.000  +3.18       0        endogeneity only
+
+pre-registered prediction checks:
+p1 full criterion matches all audited labels        PASS (5/5)
+p2 damage_aware excluded only by endogeneity        PASS
+p3 forced-engagement gap sign flips across context  PASS (passive ~ -20, aggressive ~ +22)
+```
+
+Design: the external decoy env gains one latent per-episode context that no
+controller ever sees as a label. In `passive` context the front high-HP
+enemies are classic decoys (engaging wastes the 25-step horizon); in
+`aggressive` context the same enemies are fragile-but-deadly ambushers
+(bypassing costs sustained transit damage). A REINFORCE target-selection
+learner trained with the external project's own team reward (decoy-damage
+coefficient exactly 0, so the trigger is never process-rewarded) acquires
+the conditional engagement structure (audit: engagement rate 1.00 in
+aggressive, 0.00 in passive) and is the only system the transferred
+criterion accepts. `damage_aware` is the external analogue of
+`shaped_process`: it passes all four measured components and is excluded
+purely by endogeneity, pinning that component with an external
+counterexample. State space, action space, dynamics, and observation model
+share nothing with the gridworld family.
+
+Prospective phase-boundary prediction (closed-form payoff accounting first,
+independent learners second; boundaries registered in the module docstring of
+`phase_boundary_prediction.py` before training):
+
+```text
+Control parameter: G = high-goal reward in rescue mode (benchmark default 16).
+Derived boundaries:  behavioral onset G = 5 (latent_sacrifice context starts
+                     valuing the trigger), usefulness sign G = 9
+                     (G - 5 vs alternative 4), second onset G = 11
+                     (visible_teamwork context).
+
+G     trigger_rate  tension  usefulness_gap  accepted  predicted  match
+3.0   0.000         0.000    -0.046          0         0          yes
+5.0   0.000         0.000    -0.019          0         tie        --
+7.0   0.167         0.556    -0.060          0         0          yes
+9.0   0.167         0.556    +0.433          1         tie        --
+11.0  0.167         0.556    +0.738          1         tie        --
+13.0  0.167         0.556    +0.877          1         1          yes
+16.0  0.333         0.889    +3.553          1         1          yes
+
+Non-tie prediction match rate: 1.000
+```
+
+Three phases appear exactly as derived: no structure (G <= 5, rejected via
+selectivity), selective-but-harmful (G = 7: trigger rate 1/6, tension passes,
+usefulness gap negative -- the `wrong_selector` pattern arising naturally
+from payoffs rather than by construction, rejected via usefulness), and
+emergent (G >= 9 side, accepted). The second behavioral onset (rate rising
+toward 1/3) is measured at G = 16 rather than immediately above the G = 11
+tie: with only a +2 payoff margin, the learner needs a larger gap before the
+visible_teamwork context reliably adopts the trigger. Registered boundary
+ties (G = 5, 9, 11) were excluded from scoring in advance.
+
+Multi-seed external replication, registered failure, and out-of-sample
+confirmation of the refined criterion:
+
+```text
+Replication (5 seeds, original criterion):
+  learner audit selective         5/5
+  damage_aware endogeneity-only   5/5
+  usefulness sign flip            5/5
+  all verdicts correct            3/5   <- REGISTERED FAILURE
+  (failing seeds accepted marl_untrained: marginal tension and marginal
+   usefulness can both be satisfied by a random network by accident)
+
+Refinement (frozen before new data):
+  conditional selectivity  |p_trig(ctx A) - p_trig(ctx B)| >= 0.5
+  acquisition              separation gain over own initialization >= 0.3
+
+Out-of-sample confirmation (5 FRESH external seeds + fresh internal seed):
+  external verdicts               25/25
+  untrained excluded via acquisition on every seed (even seed 8231 where
+    its accidental separation was 0.57)
+  damage_aware fails exactly {endogeneity, acquisition}     5/5
+  internal battery (10 systems incl. new anti_selector)     10/10
+  anti_selector fails exactly {usefulness}                  yes
+  seed 8431: the learner itself failed to train (separation 0.00); the
+    audit says non-emergent and the criterion agrees -- a training failure
+    correctly rejected, per the registered protocol
+```
+
+Grokking bridge (fig23) and generality sweep (fig27):
+
+```text
+run           emergent  failed                              test_acc
+grokking      1         -                                   1.000
+memorizer     0         potential;burstiness;usefulness     0.000
+no_structure  0         burstiness;usefulness               0.009
+prewired      0         endogeneity (only)                  1.000
+
+Generality (2 tasks x 3 seeds): grokking emergent 6/6, memorizer fails
+usefulness 6/6, delayed generalization (test90 >= 3x train99) 6/6.
+```
+
+The grokking run itself contains the sharpest internal control: its early
+memorization phase is a large possibility collapse on held-out inputs
+(entropy 6.6 -> 2.8 bits) with ZERO accuracy gain -- collapse without
+usefulness inside the same system. The registered window, anchored at the
+held-out accuracy jump, refuses to credit it. `prewired` (trained with the
+evaluation distribution included) is excluded only by endogeneity: the
+process-level analogue of shaped_process and damage_aware.
+
+Transformer replication of the grokking bridge (fig30, process proxy imported
+frozen): a 412k-parameter causal transformer on the same modular-addition
+task grokks (train accuracy 1.0 by epoch 1500, held-out accuracy 1.0 only by
+epoch ~13500) and passes all four process-level components; the same
+transformer without weight decay memorizes (held-out accuracy 0.107 at epoch
+15000) and fails usefulness. The process-level result is not an artifact of
+the MLP architecture. Honest note recorded in the module docstring: the
+first pilot at weight_decay 1.0 grokked but then repeatedly destabilized
+("slingshot" crashes to chance and re-grokking); optimizer hyperparameters
+only were retuned (wd 0.5, lr 5e-4), thresholds untouched, and the unstable
+pilot log is preserved.
+
+Induction heads (fig29): the first target phenomenon that is entirely
+external -- discovered, named, and mechanistically explained by other labs
+(Olsson et al. 2022: abrupt in-context-copying phase change; Elhage et al.
+2021: one-layer attention-only transformers provably cannot implement the
+circuit). Attention-only transformers are trained on sequences whose prefix
+(distinct random tokens, random length k in [8, 32]) repeats cyclically, so
+only content-based induction -- not positional lookup -- predicts the
+repeated region. The training-process proxy is imported frozen from the
+grokking bridge.
+
+```text
+run               emergent  failed                   copy_acc  params
+induction_2layer  1         -                        0.987     46k
+induction_1layer  0         usefulness (+burst.)     0.112     29k
+no_structure      0         usefulness (+burst.)     0.013     46k
+memorizer         0         usefulness               0.015     46k
+
+Seed sweep (3 fresh seeds x 4 conditions): 12/12 registered predictions.
+```
+
+The two-layer model shows the full training-process proxy signature: held-out
+entropy 5.8 -> 0.1
+bits in a sharp burst that coincides exactly with the copy-accuracy jump
+(0.02 -> 0.99 within ~600 steps). The one-layer control -- identical data,
+objective, optimizer, and training length -- collapses only partially
+(to ~3.9 bits) and plateaus at 0.11 copy accuracy: the architectural
+impossibility of the two-head circuit shows up as an inability to usefully
+collapse the possibility space. The memorizer control collapses (4.4 bits of
+KL from initialization) with zero transfer -- collapse without usefulness
+again. Honest note recorded in the module docstring: a first pilot used a
+FIXED repeat offset, and the one-layer control solved that task perfectly
+via a purely positional head; the task (not the proxy) was revised to
+variable offsets, and the pilot log is preserved.
+
+Public checkpoint series (fig31, no authorial control over training): the process proxy
+applied to Google Research's published MultiBERTs seed_0 series -- a
+110M-parameter BERT-base with 29 public intermediate checkpoints that we
+did not train, checkpoint, or influence in any way. Protocol frozen in
+`MULTIBERTS_PREREGISTRATION.md` before download; thresholds imported
+unchanged from the grokking bridge. The externally documented ability is
+long-range subject-verb agreement (Linzen/Marvin & Linzen/Goldberg line),
+acquired during pretraining with no supervision on the task.
+The 288 minimal pairs form one fixed templated evaluation battery. For
+bridge-analyser compatibility the CSV stores the same score in `train_acc`
+and `test_acc`; there is no separate probe-training/test split.
+
+```text
+condition                 emergent  failed        acc trajectory
+multiberts_agreement      1         -             0.50 -> 0.98 (peak), 0.93 end
+multiberts_random_target  0         usefulness    0.48 -> 0.54 (chance)
+shuffled_vocab            0         usefulness    0.50 -> 0.52 (chance)
+
+All four registered predictions passed: P1 (agreement emergent), P2
+(random-target fails usefulness), P3 (shuffled-vocab fails usefulness with
+its perturbed ability readout), P4 (the jump lands in the
+dense early region: window at step 20k; potential 14.7 bits >> 1.0).
+
+Replication across ALL remaining published seeds (1-4, same frozen
+protocol, 29 checkpoints each): agreement emergent 5/5 seeds, both
+controls rejected via usefulness 5/5, anchor window at step 20k on every
+seed, H_pre 14.7 bits on every seed. 15/15 verdicts, no skipped
+checkpoints.
+```
+
+The masked-verb possibility space collapses from 14.7 bits (near-uniform
+over 30522 tokens) to ~4 bits, and the largest collapse burst coincides
+with the accuracy jump 0.50 -> 0.86 -> 0.98 inside the first 40k steps --
+about 2% of total pretraining, consistent with the external
+probing-across-time literature. The two controls pin the components on the
+same measured distributions: the shuffled-vocab condition shares every
+entropy and KL value with the real condition yet fails usefulness, so
+collapse alone cannot pass; the random-target condition shows the collapse
+does not help arbitrary predictions, only the structured ability. Honest
+notes: agreement accuracy drifts from a 0.98 peak (step 40k-60k) down to
+0.93 by step 2M -- a real, externally replicable drift we report rather
+than crop; the checkpoint grid is the published one (dense to 200k, sparse
+after), so burst timing is resolution-limited to the grid.
+
+Phenomena battery on the same public series (fig32, registered extension
+in the pre-registration doc): four more probe families on seed_0.
+Reflexive agreement and determiner-noun agreement pass as registered
+(windows at step 20k). Two auxiliary predictions FAILED and are reported
+as registered failures: country-capital facts (R3) and NPI licensing (R5)
+were both predicted non-emergent on gradualism grounds but came out
+abrupt and burst-coincident. The NPI case is the most informative: its
+possibility space collapses at 20k while accuracy is still exactly 0.5,
+and usefulness arrives one interval later at 40k -- collapse-then-jump,
+the last family to become useful. What these failures say (and all they
+say): at the published grid with templated probes, every ability we
+probed on BERT-base is acquired abruptly in the first 2-4% of training;
+finding a genuinely gradual ability the criterion rejects on this system
+remains open, while the within-system negative controls (random-target,
+shuffled-vocab) still pin the usefulness component.
+
+Burst-jump alignment test (fig32 right, `burst_alignment_test.py`): the
+ability-jump window has empirical window-rank 0.023-0.051 in each of 11
+accepted runs (5 MultiBERTs agreement seeds, 3 phenomena families, MLP +
+transformer grokking, induction), while noise-jump controls have ranks
+0.54-0.99. The registered R4 top-three-window bound holds for every accepted
+MultiBERTs family. These values are not combined into an omnibus p value:
+runs are dependent and three phenomena were exploratory additions. The script
+records that this is a descriptive coincidence statistic, not a verdict;
+a control sharing its collapse series with an emergent run (random_target)
+shows small p with a noise-level jump, and is excluded by usefulness, not
+by this test.
+
+Scale-emergence decomposition (fig26, the Wei-vs-Schaeffer debate made
+measurable): across a width sweep (2.5k -> 130k parameters, fine grid near
+the transition), exact-match accuracy and the continuous collapse mechanism
+transition in the SAME scale region (max normalized jumps 0.29 vs 0.37,
+verdict "comparable"). At this task the ability jump is not a metric
+artifact: the underlying possibility collapse moves with it. The registered
+R2 operationalization (acc <= normalized collapse + 0.15 everywhere) failed
+at the smallest scales, where min-max normalization pins collapse to zero
+while raw accuracy is 0.27 -- an operationalization artifact reported as a
+failed check.
+
+Positioning and robustness follow-ups (fig28):
+
+```text
+Threshold sensitivity (rescoring only, both batteries):
+  external fresh seeds: accuracy 1.00 across every threshold multiplier in
+    [0.4, 1.6] except separation x1.6 (0.96)
+  internal battery: 1.00 across [0.4, 1.0] for all thresholds; potential
+    x1.2+ drops to 0.90 because noise_policy sits at H0 = 0.508 bits, just
+    above the 0.5 threshold -- an honest knife edge, reported
+  usefulness offset: 1.00 across [-1.0, +1.0] return units on both
+
+Prior single-signal detectors (hindsight-OPTIMAL threshold each,
+same 10-system battery, our criterion = 1.000 with registered thresholds):
+  rep_jump             0.900   misses latent_conditional
+  metric_jump          0.800   misses latent_conditional + noise_policy
+  specificity_only     0.900   misses latent_conditional
+  synergy (PID/Rosas)  0.900   misses latent_conditional
+  causal_emergence_ei  0.900   misses shaped_process (Hoel-style
+                               macro-beats-micro EI gain; its top scorer
+                               is the reward-shaped system, because EI
+                               only compares intervened models and never
+                               sees natural selectivity, usefulness sign,
+                               or provenance)
+  All five detectors misclassify a named system: each reads one
+  projection of the mechanism and cannot separate selective useful
+  collapse from convergence, forcing, or shaping.
+
+External unsupervised basins (label-free episode clustering):
+  purity vs hand basins: 0.84-0.99 across all five systems (U1 PASS)
+  potential-component verdicts unchanged under cluster basins (U3 PASS)
+  effective-mode agreement (U2) FAILED: k=4 clusters split loss episodes
+  finer than the hand basins (more modes, 3.8 vs 2.9) -- the discovered
+  structure is richer, not contradictory; reported as a failed check
+
+Phase boundary, 3 seeds pooled: 11/12 non-tie predictions match.
+  Outer phases 3/3 stable (G <= 5 reject, G >= 13 accept). One seed
+  accepted G = 7 where the registered middle-phase usefulness margin is
+  ~ -0.3 return units and sampling noise can flip the sign.
+```
+
+Chess within-state probe (fig33, `chess_collapse_probe.py`, protocol
+frozen in `CHESS_PREREGISTRATION.md` before measurement): the roadmap's
+external-strategic-system slot, filled with chess instead of Go/KataGo
+(KataGo binaries unreachable in this environment; substitution recorded
+in the registration). 240 sacrificial key moves externally annotated by
+the lichess puzzle pipeline (real rated human games, ratings 1800-2400,
+>= 1000 plays each) plus 120 balanced quiet middlegame controls. Future
+basin distributions P(B | s) and P(B | s, do a) estimated by stochastic
+playouts of an imperfect-play observer (softmax over Stockfish multipv
+scores; pilot-tuned estimator, frozen thresholds). Registered results:
+
+```text
+C1 PASS  key move locally costly: median -3.0 pawns vs best reply
+         (80% strictly costly); greedy move median 0.0
+C2 PASS  useful shift: key beats greedy 238/240 (p = 1.6e-68),
+         beats random 239/240 (p = 1.1e-72)
+C3 PASS  selectivity: P(win | do key) = 0.78 vs 0.24 for the best
+         deep alternative; gap 0.54; sign test 240/240 (p = 5.7e-73)
+C4 PASS  median potential 1.19 bits before the key move
+C5 REGISTERED FAILURE (effect-size margin): quiet control passed its
+         absolute half (best-move shift -0.02 < 0.10) but the frozen
+         0.25 margin failed (0.078) via a route recorded before the
+         main run -- the observer plays the key move endogenously, so
+         the base P(win) already contains it and shift-vs-base is
+         compressed; the do-contrast (C3: 0.54 sacrifice vs ~0 quiet)
+         is the correct within-state measurement, matching the
+         gridworld do_trigger/do_non_trigger design
+```
+
+The quiet control carries a conceptual point: balanced positions have
+HIGHER potential (1.93 vs 1.03 bits) but no move that usefully collapses
+it -- emergence opportunities are (state, action) structure, not raw
+openness. And the key moves are exactly the "locally costly, selectively
+decisive, retrospectively necessary" triggers the possibility-preservation
+tree predicts, found in a system nobody in this project designed.
+
+Chess robustness grid (fig34 middle, `chess_robustness_grid.py`): the
+core conclusions (C1 cost order, C2 sign tests, C3 gap >= 0.15) hold in
+12/12 perturbation cells -- observer temperature {200,300,450} x playout
+depth {3,4,6}, basin thresholds {300/100, 400/150, 500/200 cp}, and a
+cross-engine cell replacing Stockfish 14.1 NNUE with Stockfish 11's
+classical handcrafted evaluation (gap 0.430). C4 potential fails only in
+the three strongest-observer cells (temp 200), the exact direction
+recorded in the pilot note: absolute entropy depends on observer scale,
+the contrasts do not.
+
+Exploratory move-ranking diagnostic (`chess_prior_detectors.py`): retained
+for audit but removed from the manuscript's main evidence. Its preferred
+score subtracts a common within-position baseline, which does not change
+move ranking and therefore cannot fairly test the martingale/do-contrast
+lesson. The load-bearing chess result is the key-versus-best-alternative
+do-contrast and its 12-cell robustness grid.
+
+Tail-gradualism rejection test (fig34 left, `multiberts_tail_gradualism.py`,
+registered follow-up + amendment): the direct answer to "does the
+criterion ever reject anything on a public system?". Frequency-selected
+probes on the same MultiBERTs series: binary-pair versions of tail facts
+and tail words came out emergent (two REGISTERED FAILURES, reported --
+two-way forced choice saturates by 20k even for tail knowledge), which
+motivated the registered top-1-recall amendment, the metric family on
+which the gradualism literature actually operates. Outcome: tail words
+are correctly rejected (top-1 grows 0 -> ~0.2 across two orders of
+magnitude of steps, no window pairs a burst with a >= 0.2 gain; route
+burstiness+usefulness); tail facts stayed emergent at top-1 (third
+registered failure: a textbook sigmoid whose steepest segment still
+exceeds one 20k grid interval); head facts emergent as predicted. Net:
+the criterion separates slow continuous accrual from windowed jumps on
+a system trained by another lab, and the abrupt-vs-gradual verdict is
+measurably metric- and resolution-dependent -- the Schaeffer point,
+confirmed from the mechanism side with frozen thresholds.
+
+Deep MARL within-episode probe (fig35, `deep_marl_collapse_probe.py`,
+protocol frozen in `DEEP_MARL_PREREGISTRATION.md`): the same P_t(B)
+measurement that anchors the gridworld mechanism evidence, repeated in
+PettingZoo/MPE simple_spread with MAPPO-style neural policies (3 seeds).
+Basins = coverage assignments (which agent ends nearest which landmark,
+27 outcomes); useful structure = the assignment is a bijection. Results:
+trained policies start episodes with 1.4-1.6 bits of genuine assignment
+openness and collapse it into bijections at ~0.5 rate (untrained 0.25,
+noise 0.20, scripted greed 0.425 with ZERO openness -- the double
+dissociation again); forcing vs blocking one agent's commitment at the
+maximal-collapse step shifts the coverage probability by median +0.083
+(positive medians in 3/3 policy seeds; episode-level sign-test p = 0.0037
+conditional on those policies, D3 pass). D2 is a registered failure with a
+diagnosis that strengthens the methodology: under a converged behaving
+policy P_t(win) is approximately a martingale (the start-of-episode
+future already prices in the coordination to come), so the predicted
+within-episode win-mass rise was mis-designed; useful collapse in
+converged systems must be read from do-contrasts -- exactly the chess
+C5 lesson, now confirmed in a second domain.
+
+Theory root (Proposition 0, `THEORY.md` + `verify_theory_bounds.py`):
+the framework's root definition now lives in trajectory space, where
+the original formulation was stated: C(m) = KL(P(tau|m) || P(tau)).
+Three identities are proved and machine-verified on measured rollouts:
+(0a) E_m[C(m)] = I(tau; M) -- average specific information equals
+mutual information for the declared macro-readout (gap < 1e-9 on empirical
+distributions); (0b) the rarity law C(m) = -log2 P(A_m) for
+deterministic macro-readouts -- the untrained policy gives the
+sacrifice-rescue structure 7.16 bits of prior rarity while "something
+happened" (failed_noise) carries 0.06 bits. Rarity alone does not certify
+endogeneity, so hardwiring and acquisition remain separate audited
+components; (0c) by data processing, basin-level KL/JS contrasts
+lower-bound their trajectory-space counterparts (rescue JS: 0.90 vs
+1.00 bits). Entropy drops do not inherit this guarantee and remain
+partition-scale dependent. Training raises the rescue
+structure's mass from 0.007 to the 1/3 ecological rate of the contexts
+where it pays, a 5.58-bit log-likelihood gain.
+
+Cross-task deep MARL replication (fig36, `lbf_collapse_probe.py`,
+protocol frozen in `LBF_PREREGISTRATION.md`): the simple_spread
+measurement pipeline repeated on Level-Based Foraging
+(`Foraging-5x5-2p-2f-coop-v3`) -- discrete grid, irreversible
+consumption, FORCED cooperation, sparse reward. Basins = consumption
+orders; win = full clearance. 4/4 registered predictions pass (the
+project's first clean sweep): trained openness 1.41-1.46 bits with
+0.90-0.93 clearance; untrained 0.03 / noise 0.0 clearance; scripted
+greed 0.0 bits openness and 0.10 clearance; do-contrast median +0.042,
+mean +0.109 [0.082, 0.137], with 69 positive, 21 tied and 0 negative
+episode contrasts and positive medians in 3/3 policy seeds. The
+martingale lesson from chess C5 / spread D2 was priced into the design
+(no within-episode win-rise prediction), and the two pilot estimator
+fixes (probe temperature; do-release on consumed targets) are
+documented with logs before the main run.
+
+Statistical hardening (`bootstrap_intervals.py`,
+outputs/bootstrap_intervals.json): headline effect sizes carry
+20,000-resample percentile bootstrap 95% CIs. Chess resamples independent
+positions; MARL intervals resample evaluation episodes conditional on three
+trained policies and are accompanied by per-seed medians -- chess do-gap
++0.539 [0.508, 0.570]; simple_spread do-gap median
++0.083 [0.042, 0.177]; LBF as above.
+The seed-aware follow-up (`hierarchical_marl_analysis.py`) treats policy seed
+as the population unit: LBF's two-stage cluster mean CI remains positive
+[0.072, 0.153], while simple_spread crosses zero [-0.005, 0.187].
+With only three seeds, either exact one-sided seed sign test is p=0.125;
+episode-level significance is not promoted to training-population inference.
+A post-hoc seed extension (2026-07-14; three more simple_spread and five
+more LBF policies, unchanged frozen probes;
+`deep_marl_collapse_seed_extension.json`, `lbf_collapse_seed_extension.json`)
+found every new seed's mean do-contrast positive. Combined seed-level
+inference over 6 and 8 policies (`hierarchical_marl_analysis_combined.json`):
+exact one-sided sign tests p=0.016 and p=0.004; cluster-bootstrap mean
+intervals [0.032, 0.156] and [0.159, 0.390], both excluding zero. The
+extension's simple_spread win-shift reading failed again while its
+do-contrast stayed positive on 3/3 new seeds -- the martingale diagnosis
+replicated on fresh data. Reported separately from the registered runs.
+
+Published-form rival audits (fig37, `exact_prior_formalisms.py`, Prop. 5
+in `THEORY.md`): the "flavored strawman" risk is reduced, not eliminated.
+Hoel's effective information and Rosas' practical criterion Psi were computed
+from their published equations, with zero Monte-Carlo error, on the
+enumerated policy-closed chains of all 10 battery systems (up to
+75,004 states; softmax policy in closed form). Exact CE is negative
+everywhere and its hindsight-best threshold is the trivial classifier
+(0.8, missing both true positives); exact Psi's published verdict
+(Psi > 0) scores 0.3 with `wrong_selector` as top scorer, and its
+hindsight optimum requires inverting the theory's own sign convention.
+Both audits perform at or below the charitable proxies within declared
+candidate families: the blind spots (value sign, natural selectivity,
+provenance) are structural on this testbed.
+Proposition 5 states the corresponding scoped coverage result: the
+performance-jump, representation-jump, exact EI, exact Psi and PID-style
+signatures audited here are derivable projections of the augmented root object
+`{P(tau | c, do w)}` plus declared observer maps, and no scalar projection
+reproduces all predeclared battery labels. This is not a claim about every
+published definition or every application domain.
+
+LBF estimator-robustness grid (`lbf_robustness_grid.py`, saved
+main-run nets, success criteria frozen in-script): the cross-task
+deep-MARL result is not a probe-temperature artifact. Across
+T in {2, 3, 4.5, 8} the pooled do-contrast stays positive with
+sign-test p <= 2.7e-20 in every cell (worst cell 20W/0L), and the
+trained-vs-greedy double dissociation holds everywhere. The absolute
+0.8-bit potential threshold fails at T <= 3 -- the declared
+observer-scale dependence of the potential component, same direction
+as the chess grid's C4 cells.
+
+Prior detectors on the deep-MARL domain (`lbf_prior_detectors.py`):
+extends the detector comparison to LBF with a blind_trigger analogue
+(forced_commit: trained policy + permanent observer-imposed
+commitment) and, after a recorded round-1 set-composition failure
+(performance alone separated a set with no competent imitation;
+archive kept), a scripted_coop control (structure 100% prespecified).
+The frozen round-2 prediction passed: performance accepts
+scripted_coop (win 0.85, in the trained range); specificity/Psi/EI
+score it ABOVE the trained systems (0.94/0.95/0.68 vs 0.55-0.72) --
+hand-coded coordination is tighter than learned coordination and no
+single signal sees who wrote it; best single-detector accuracy on the
+8-system set is 0.875, with every detector's miss a named system.
+The composite criterion rejects both imposed-structure systems on
+endogeneity/acquisition by construction.
+
+Second full six-component domain (`contextual_lbf_transfer.py`,
+`CONTEXTUAL_LBF_PREREGISTRATION.md`): after two disclosed and excluded
+engineering pilots, the exact protocol was frozen before ten fresh policies
+were trained. The standard LBF dynamics, observations, actions and sparse
+reward are retained; balanced finite-horizon layouts make food identity 0 or 1
+geometrically preferable without exposing a context label. 9/10 learned
+policies pass all six components; seed 1104 is retained at selectivity
+0.4875 < 0.5. All ten have the predicted context ordering, positive usefulness
+and positive acquisition. All 40 initialization/scripted controls reject; the
+competent team-nearest rule passes all behavioral components and fails exactly
+endogeneity/acquisition on 10/10 seeds. Seed-bootstrap 95% CIs:
+selectivity [0.644, 0.939], specificity [0.769, 0.822], usefulness
+[0.053, 0.108], acquisition [0.634, 0.933]. All six registered predictions
+pass (`outputs/contextual_lbf_confirmation_analysis.json`).
+
+Post-confirmation Contextual LBF extension: five additional fresh training
+seeds were run under the same thresholds and evaluation code but are reported as
+supportive robustness evidence, not a new registered claim. Learned policies
+pass the full rule on 4/5 seeds, all 20 controls reject, and every learned seed
+has positive usefulness and acquisition
+(`outputs/contextual_lbf_extension_analysis.json`).
+
+Contextual LBF single-signal audit
+(`contextual_lbf_single_signal_audit.py`): each behavior-only signal is given a
+hindsight-optimal threshold against the full six-component verdict. On the
+registered confirmation set no behavior-only signal exceeds 0.86 accuracy; on
+the extension set the maximum is 0.88. Acquisition alone reaches 1.0 in these
+runs because it is a definition-internal learning/provenance component using
+the same-seed initialization twin, not a prior standalone detector.
+
+Process-proxy robustness (`process_proxy_robustness.py`): the bounded
+reparameterization q=b/(b+m), threshold 5/6, preserves 27/27 primary verdicts;
+window-radius accuracy is 96.3%-100%, and 228/243 checkpoint-thinning cells
+agree. Conservative multiplicity analysis also limits the claim: no local
+burst-alignment rank survives Holm adjustment. These are exploratory
+robustness results, not new confirmatory trials.
+
+Pythia decoder-side validation (fig38, `pythia_collapse_probe.py` +
+`pythia_tail_gradualism.py`, PYTHIA_PREREGISTRATION.md): the last
+architecture-family gap is closed. The frozen grokking-bridge
+thresholds, applied unchanged to EleutherAI Pythia-160m's 21 published
+checkpoints (a public autoregressive decoder we did not train),
+score the same fixed templated evaluation battery (not a separate
+probe-training/test split) and recognize subject-verb agreement as emergent (accuracy 0.49 -> 0.83 ->
+0.93 across steps 512/1000/2000; H_pre 8.86 bits, burstiness 27.6,
+usefulness gain 0.47) while random-target and shuffled-vocab controls
+sharing the relevant collapse/burst substrate fail usefulness. The largest
+single burst (4.1 bits) precedes the jump -- the grokking foreshadow
+shape on a public decoder. The decoder tail test completes the double
+dissociation MultiBERTs only partially showed: head facts ACCEPTED
+(burstiness 16.4), tail facts REJECTED via burstiness (3.2 < 5; ramp
+with no dominant burst -- registered verdict correct, route miss
+recorded), tail words REJECTED via usefulness (gain 0.056). 7/8
+registered predictions pass, 1 verdict-correct route miss
+(PREDICTION_LEDGER.md PY-*). Scaling replication (registered S1-S3,
+3/3): Pythia-410m under the identical frozen protocol reproduces the
+same accept/reject pattern with the anchored window at the same step
+(1000); the pre-jump attractor dip replicates and deepens.
+Pythia-1b also completed under the scaling protocol. An old 2.8B mirror run is
+quarantined as invalid because early checkpoints reused a single-file weight
+object. The downloader now uses official Hugging Face revisions and
+revision-specific safetensors shards; a 2.8B smoke test confirmed step0 and
+step1000 are distinct (agreement about 0.50 -> 0.77). Official 1.4B/2.8B
+collapse and tail runs are in progress and must pass
+`summarize_pythia_scaling.py` before being cited.
+
+## Reframing revision (2026-07-17)
+
+Triggered by a strong external mock review; executed without touching
+any frozen threshold or stored confirmatory output:
+
+- Theory reframed: Eq. 1 positioned as the known specific-information
+  substrate (Bayesian surprise lineage; semantic information,
+  empowerment and causal-entropic literature now cited and compared);
+  definition split into structural collapse + adaptive qualification;
+  title/claim narrowed to adaptive emergence acquired during learning.
+- `fair_baseline_comparison.py`: multivariate prior-signal baselines
+  with matched freedom; frozen transfer to a fresh battery caps at 0.9
+  and always misses the true conditional emergence (six-component
+  stored reference: 10/10).
+- `dual_observer_contracts.py`: second plausible observer contract on
+  all 75 stored CLBF systems; 60/60 controls rejected, 14/15
+  structural agreement, 5 conservative value flips kept as registered
+  misses DO-1/DO-3 -- measured evidence for the layered definition.
+- `chess_realized_outcome.py`: engine-free realized-outcome referee;
+  directionally consistent, registered interaction null (RO-1 miss).
+- Figure hierarchy aligned with claims (5 main figures + 1 main table;
+  mechanism/public-checkpoint/episode-level panels moved to ED); main
+  text compressed to ~3,900 words before Methods; rebuttal-style
+  language removed. Ledger: ~161 checks, 21 retained misses;
+  `verify_manuscript_numbers.py` 57/57.
+
+## Story-alignment pass (2026-07-17 evening)
+
+- `strength_gradient_battery.py` + `strength_gradient_fine.py`: the
+  rarity identity's GRADED prediction -- same macro-pattern, three
+  provenances (scripted / process-shaped / outcome-only); seed-mean
+  provenance rarity 0 < 0.39 < 0.65 bits at matched competence, with
+  identical open-space rarity (6.28 bits); discovery ~2x later without
+  process shaping; ST-3 suddenness-ordering miss retained (both
+  acquisitions step-like). Operationalizes "prescribed < shaped <
+  discovered" as measured emergence strength (ED Fig. 14).
+- `chess_clustered_inference.py`: mover-cluster bootstrap CIs
+  [0.615, 0.829] / [0.613, 0.834] -- discovery AUROC excludes chance
+  under honest clustering.
+- `chess_discovery_toga_referee.py`: different-lineage (Toga II/Fruit)
+  referee; frozen 150 cp rule fails via referee-scale mismatch (TG-1
+  retained miss); quantile-matched follow-up reported separately.
+- Figure 1 redesigned: four schematic regimes + a measured
+  six-component walkthrough (CLBF seed 1101, layered checklist).
+- Methods: terminology + declared system boundary; power planning for
+  seed extensions disclosed. Consistency audit 62/62.
+
+## Public-Environment Round (2026-07-18/19)
+
+- **Overcooked-AI externally timestamped confirmation: OC-1..5 ALL
+  PASS.** Preregistration pushed to the public repo (tag
+  `v1.0-overcooked-prereg`, commit `8415e45`) before any confirmatory
+  seed; 12 self-play PPO seeds on unmodified `cramped_room` +
+  `asymmetric_advantages`; learned accepted 8/12 (registered line
+  8/12), controls 48/48 rejected with layered routes, trigger
+  direction 12/12, contract-B twins 12/12 rejected, usefulness
+  do-contrast positive 12/12 (p=2.4e-4). Scripts:
+  `overcooked_criterion.py`, `overcooked_confirmation.py`,
+  `overcooked_aggregate.py`, `generate_overcooked_figure.py`.
+- Continuous-profile ranking stability (RS-1 pass rho 0.76; RS-2
+  retained miss + E_adapt follow-up 15/15) and predictive-validity
+  battery (PV-1..3 retained misses; early value axis 0.81
+  descriptive): `contract_ranking_stability.py`,
+  `predictive_validity.py`.
+- Ledger ~208 checks / 31 retained misses; verification 82/82;
+  manifest 43 claims / 229 hashed outputs; manuscript 37 pages with
+  the new ED Overcooked figure.
+
+## Construct-Validity Round (2026-07-19, GPT round-6 triage)
+
+- **Six-knob ground-truth generator calibration** (GC-1..5): the
+  continuous record measures the constructs it names -- diagonal
+  dominance with zero violations against known generative truth;
+  GC-2 retained miss (exemption-list specification error + one stated
+  structural coupling). `generator_calibration.py`, ED figure
+  `fig46_generator_calibration.png`.
+- **Record axioms A1-A8 machine-verified** (`verify_record_axioms.py`):
+  nullity, boundedness, monotonicity, data processing, context
+  sensitivity, value/provenance separability, abstention.
+- **Admissible contract family + identification intervals** formalized
+  in THEORY.md (median per-seed E_struct interval width 0.14 across
+  five stored contracts).
+- **Convergent validity** (`convergent_validity.py`): CV-1 pass
+  (matched structure prediction 0.56 vs -0.09 for performance);
+  CV-2/3 retained misses -- predictive content is axis-specific.
+- **Overcooked round-1 continuous profiles** (`overcooked_profiles.py`):
+  rejected learned seeds rank strictly below accepted (0.653 < 0.695)
+  without the record seeing the verdicts; all 48 controls at zero.
+- **Collective-control domain** (`crowd_vote_domain.py`,
+  Twitch-Plays-Pokemon-inspired): 50/50 controls rejected with declared
+  routes; do-block reproduces the historical counterfactual 10/10;
+  CR-1 (7/10) and CR-5 retained misses; two design pilots quarantined.
+- **Independent audit package** (`INDEPENDENT_AUDIT_INSTRUCTIONS.md` +
+  `overcooked_criterion.py --demo-episode`): turnkey instructions for a
+  non-author auditor; requires the corresponding author to recruit the
+  auditor.
+- **Overcooked round-2 held-out replication**: layout-pair pilots
+  running; new preregistration drafted
+  (`OVERCOOKED_ROUND2_PREREGISTRATION.md`), to be frozen and externally
+  timestamped before ~20 fresh seeds.
+- Ledger ~225 checks / 36 retained misses; verification 88/88;
+  manuscript 39 pages.
+
+## Next Steps
+
+1. Manuscript writing: FULL LATEX DRAFT DONE (`paper/main.tex` ->
+   `paper/main.pdf`, 37 pages after the public-environment round:
+   abstract, introduction, Results with the layered definition +
+   coverage, unification table, five composite main figures, flattened
+   Discussion, full Methods, references, and fifteen Extended Data
+   figures with captions). Cover letter updated
+   (`paper/cover_letter.tex` -> .pdf). Remaining: author/affiliation
+   fill-in, referee suggestions, polish passes.
+2. Go/KataGo replication of the chess within-state probe (nice-to-have;
+   the chess result fills the external-strategic-system slot).
+3. SMACv2-class deep MARL scale-up (nice-to-have; two task families
+   now measured with frozen protocols).
+4. Pythia scaling-family sweep COMPLETE (160m/410m/1b/1.4b/2.8b).
+   Agreement transfers to 1B/1.4B (same window, step 1000); the registered
+   2.8B S1 prediction FAILED via burstiness (3.2 < 5, usefulness passes) and
+   is kept -- the grid-resolution scope of the process proxy, measured across
+   a 17.5x parameter range. Controls 10/10 and frequency tails 8/8 rejected.
+   SHA-256 revision audits detected and worked around two upstream 2.8B
+   repository defects (PYTHIA_SCALING_PREREGISTRATION.md outcomes).

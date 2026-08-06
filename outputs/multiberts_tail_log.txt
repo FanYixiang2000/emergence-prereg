@@ -1,0 +1,49 @@
+head_facts: 20 probes
+tail_facts: 54 probes
+tail_words: 36 probes
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1783392881.942985 1399792 port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+I0000 00:00:1783392881.987909 1399792 cpu_feature_guard.cc:227] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 AVX512F AVX512_VNNI AVX512_BF16 AVX512_FP16 AVX_VNNI AMX_TILE AMX_INT8 AMX_BF16 FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1783392883.329880 1399792 port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+step        0 | head_facts pair 0.500 top1 0.000 | tail_facts pair 0.611 top1 0.000 | tail_words pair 0.472 top1 0.000 [22s]
+step    20000 | head_facts pair 0.900 top1 0.000 | tail_facts pair 1.000 top1 0.056 | tail_words pair 0.889 top1 0.000 [28s]
+step    40000 | head_facts pair 1.000 top1 0.000 | tail_facts pair 1.000 top1 0.167 | tail_words pair 0.833 top1 0.056 [17s]
+step    60000 | head_facts pair 1.000 top1 0.350 | tail_facts pair 1.000 top1 0.259 | tail_words pair 0.917 top1 0.083 [15s]
+step    80000 | head_facts pair 1.000 top1 0.150 | tail_facts pair 1.000 top1 0.463 | tail_words pair 0.972 top1 0.056 [17s]
+step   100000 | head_facts pair 1.000 top1 0.600 | tail_facts pair 1.000 top1 0.537 | tail_words pair 0.972 top1 0.083 [16s]
+step   120000 | head_facts pair 1.000 top1 0.750 | tail_facts pair 1.000 top1 0.852 | tail_words pair 0.972 top1 0.139 [20s]
+step   140000 | head_facts pair 1.000 top1 0.750 | tail_facts pair 1.000 top1 0.815 | tail_words pair 0.944 top1 0.111 [30s]
+step   160000 | head_facts pair 1.000 top1 0.650 | tail_facts pair 1.000 top1 0.833 | tail_words pair 0.972 top1 0.083 [33s]
+step   180000 | head_facts pair 1.000 top1 0.850 | tail_facts pair 1.000 top1 0.926 | tail_words pair 1.000 top1 0.083 [35s]
+step   200000 | head_facts pair 1.000 top1 0.800 | tail_facts pair 1.000 top1 0.907 | tail_words pair 0.944 top1 0.139 [22s]
+step   300000 | head_facts pair 1.000 top1 0.800 | tail_facts pair 1.000 top1 0.944 | tail_words pair 0.972 top1 0.194 [24s]
+step   400000 | head_facts pair 1.000 top1 0.800 | tail_facts pair 1.000 top1 0.981 | tail_words pair 0.944 top1 0.111 [24s]
+step   500000 | head_facts pair 1.000 top1 0.800 | tail_facts pair 1.000 top1 0.981 | tail_words pair 0.972 top1 0.083 [37s]
+step   600000 | head_facts pair 1.000 top1 0.850 | tail_facts pair 1.000 top1 0.963 | tail_words pair 0.944 top1 0.083 [33s]
+step   700000 | head_facts pair 1.000 top1 0.900 | tail_facts pair 1.000 top1 0.963 | tail_words pair 0.917 top1 0.222 [39s]
+step   800000 | head_facts pair 1.000 top1 0.900 | tail_facts pair 1.000 top1 0.963 | tail_words pair 0.972 top1 0.139 [45s]
+step   900000 | head_facts pair 1.000 top1 0.850 | tail_facts pair 1.000 top1 0.963 | tail_words pair 0.917 top1 0.222 [27s]
+step  1000000 | head_facts pair 1.000 top1 0.850 | tail_facts pair 1.000 top1 0.963 | tail_words pair 0.889 top1 0.111 [19s]
+step  1100000 | head_facts pair 1.000 top1 0.600 | tail_facts pair 1.000 top1 0.963 | tail_words pair 0.889 top1 0.194 [29s]
+step  1200000 | head_facts pair 1.000 top1 0.900 | tail_facts pair 1.000 top1 0.963 | tail_words pair 0.972 top1 0.250 [46s]
+step  1300000 | head_facts pair 1.000 top1 0.850 | tail_facts pair 1.000 top1 0.944 | tail_words pair 1.000 top1 0.222 [44s]
+step  1400000 | head_facts pair 1.000 top1 0.750 | tail_facts pair 1.000 top1 0.963 | tail_words pair 0.917 top1 0.083 [25s]
+step  1500000 | head_facts pair 1.000 top1 0.800 | tail_facts pair 1.000 top1 0.926 | tail_words pair 0.944 top1 0.167 [24s]
+step  1600000 | head_facts pair 1.000 top1 0.900 | tail_facts pair 1.000 top1 0.963 | tail_words pair 0.972 top1 0.111 [20s]
+step  1700000 | head_facts pair 1.000 top1 0.600 | tail_facts pair 1.000 top1 0.944 | tail_words pair 0.972 top1 0.111 [24s]
+step  1800000 | head_facts pair 1.000 top1 0.700 | tail_facts pair 1.000 top1 0.963 | tail_words pair 0.972 top1 0.167 [27s]
+step  1900000 | head_facts pair 1.000 top1 0.850 | tail_facts pair 1.000 top1 0.981 | tail_words pair 0.972 top1 0.194 [22s]
+step  2000000 | head_facts pair 1.000 top1 0.950 | tail_facts pair 1.000 top1 0.981 | tail_words pair 0.972 top1 0.194 [22s]
+/home/Yixiang/miniconda3/lib/python3.13/site-packages/numpy/lib/_function_base_impl.py:3023: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[:, None]
+/home/Yixiang/miniconda3/lib/python3.13/site-packages/numpy/lib/_function_base_impl.py:3024: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[None, :]
+head_facts: emergent=1 failed=- final_acc=1.000 (window 20000, acc gain +0.500)
+tail_facts: emergent=1 failed=- final_acc=1.000 (window 20000, acc gain +0.389)
+tail_words: emergent=1 failed=- final_acc=0.972 (window 20000, acc gain +0.361)
+head_facts_top1: emergent=1 failed=- final_acc=0.950 (window 100000, acc gain +0.400)
+tail_facts_top1: emergent=1 failed=- final_acc=0.981 (window 120000, acc gain +0.352)
+tail_words_top1: emergent=0 failed=burstiness;usefulness final_acc=0.194 (window 700000, acc gain +0.056)
+Wrote /home/Yixiang/MPARL/GOGOGO/outputs/multiberts_tail_summary.json

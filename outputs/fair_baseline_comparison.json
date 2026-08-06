@@ -1,0 +1,317 @@
+{
+  "status": "fair multivariate baselines; fitted with hindsight on the original battery, frozen, then applied to a fresh battery (seed 7011)",
+  "labels": {
+    "latent_conditional": 1,
+    "converged_team": 0,
+    "shaped_process": 0,
+    "noise_policy": 1,
+    "untrained_uniform": 0,
+    "blind_trigger": 0,
+    "harmful_decoy": 0,
+    "useful_habit": 0,
+    "wrong_selector": 0,
+    "anti_selector": 0
+  },
+  "original_battery": {
+    "prior5_conjunctions": {
+      "conj_1": {
+        "accuracy": 0.9,
+        "signals": [
+          "rep_jump"
+        ],
+        "rule": [
+          {
+            "signal": "rep_jump",
+            "threshold": 0.9009912883833041,
+            "direction": 1
+          }
+        ]
+      },
+      "conj_2": {
+        "accuracy": 1.0,
+        "signals": [
+          "specificity_only",
+          "causal_emergence_ei"
+        ],
+        "rule": [
+          {
+            "signal": "specificity_only",
+            "threshold": 0.5087006129413114,
+            "direction": 1
+          },
+          {
+            "signal": "causal_emergence_ei",
+            "threshold": 0.6906351428028656,
+            "direction": 1
+          }
+        ]
+      },
+      "conj_3": {
+        "accuracy": 1.0,
+        "signals": [
+          "rep_jump",
+          "specificity_only",
+          "causal_emergence_ei"
+        ],
+        "rule": [
+          {
+            "signal": "rep_jump",
+            "threshold": -1.0,
+            "direction": 1
+          },
+          {
+            "signal": "specificity_only",
+            "threshold": 0.5087006129413114,
+            "direction": 1
+          },
+          {
+            "signal": "causal_emergence_ei",
+            "threshold": 0.6906351428028656,
+            "direction": 1
+          }
+        ]
+      }
+    },
+    "learned_models": {
+      "prior5": {
+        "logistic_in_sample": 0.9,
+        "logistic_loocv": 0.8,
+        "tree_in_sample": 1.0,
+        "tree_loocv": 0.8
+      },
+      "prior7": {
+        "logistic_in_sample": 0.9,
+        "logistic_loocv": 0.7,
+        "tree_in_sample": 1.0,
+        "tree_loocv": 0.8
+      }
+    },
+    "own_two_component": {
+      "h0_bits+specificity_js": {
+        "accuracy": 0.9,
+        "signals": [
+          "own_h0_bits",
+          "own_specificity_js"
+        ],
+        "rule": [
+          {
+            "signal": "own_h0_bits",
+            "threshold": -0.8521710500347852,
+            "direction": 1
+          },
+          {
+            "signal": "own_specificity_js",
+            "threshold": 0.696364660149259,
+            "direction": 1
+          }
+        ]
+      },
+      "h0_bits+usefulness_gap": {
+        "accuracy": 0.9,
+        "signals": [
+          "own_h0_bits",
+          "own_usefulness_gap"
+        ],
+        "rule": [
+          {
+            "signal": "own_h0_bits",
+            "threshold": 0.19836359394688402,
+            "direction": 1
+          },
+          {
+            "signal": "own_usefulness_gap",
+            "threshold": 3.242476851851852,
+            "direction": 1
+          }
+        ]
+      },
+      "specificity_js+usefulness_gap": {
+        "accuracy": 1.0,
+        "signals": [
+          "own_specificity_js",
+          "own_usefulness_gap"
+        ],
+        "rule": [
+          {
+            "signal": "own_specificity_js",
+            "threshold": 0.4931472674903375,
+            "direction": 1
+          },
+          {
+            "signal": "own_usefulness_gap",
+            "threshold": 3.242476851851852,
+            "direction": 1
+          }
+        ]
+      }
+    }
+  },
+  "fresh_battery": {
+    "features": {
+      "latent_conditional": {
+        "rep_jump": 0.08413252479776862,
+        "metric_jump": 0.325,
+        "specificity_only": 0.5712055860739393,
+        "synergy": -0.2306663917875582,
+        "causal_emergence_ei": 0.5303826137526628,
+        "own_h0_bits": 1.086194972879352,
+        "own_specificity_js": 0.5712055860739393,
+        "own_usefulness_gap": 2.636574074074074
+      },
+      "converged_team": {
+        "rep_jump": 0.38915513763975845,
+        "metric_jump": 0.5,
+        "specificity_only": 0.9706067205711615,
+        "synergy": 0.3531578835389295,
+        "causal_emergence_ei": 0.9078950715798006,
+        "own_h0_bits": 0.08915079000902883,
+        "own_specificity_js": 0.9706067205711615,
+        "own_usefulness_gap": 5.068287037037037
+      },
+      "shaped_process": {
+        "rep_jump": 0.34569337313761256,
+        "metric_jump": 0.5,
+        "specificity_only": 0.4553181048026573,
+        "synergy": 0.209756066353866,
+        "causal_emergence_ei": 0.9165369193131276,
+        "own_h0_bits": 0.5518225210128039,
+        "own_specificity_js": 0.4553181048026573,
+        "own_usefulness_gap": 3.0682870370370368
+      },
+      "noise_policy": {
+        "rep_jump": 1.4009962217219554,
+        "metric_jump": 1.0,
+        "specificity_only": 0.46937535879586917,
+        "synergy": -0.8327642115498044,
+        "causal_emergence_ei": 0.7766924126736783,
+        "own_h0_bits": 0.6264934351679302,
+        "own_specificity_js": 0.46937535879586917,
+        "own_usefulness_gap": 4.545138888888889
+      },
+      "untrained_uniform": {
+        "rep_jump": 0.0,
+        "metric_jump": 0.0,
+        "specificity_only": 0.030188761901388052,
+        "synergy": -0.06902550962718479,
+        "causal_emergence_ei": -0.07941478175471794,
+        "own_h0_bits": 0.24653737555252844,
+        "own_specificity_js": 0.030188761901388052,
+        "own_usefulness_gap": -0.7048611111111112
+      },
+      "blind_trigger": {
+        "rep_jump": 0.08413252479776862,
+        "metric_jump": 0.325,
+        "specificity_only": 0.5766468365705223,
+        "synergy": 0.04520658008379641,
+        "causal_emergence_ei": 0.6181996405941779,
+        "own_h0_bits": 0.7496877918009566,
+        "own_specificity_js": 0.5766468365705223,
+        "own_usefulness_gap": -1.8252314814814816
+      },
+      "harmful_decoy": {
+        "rep_jump": 0.08413252479776862,
+        "metric_jump": 0.325,
+        "specificity_only": 0.6679616430676677,
+        "synergy": 0.04605427044276755,
+        "causal_emergence_ei": 0.5888762356717299,
+        "own_h0_bits": 0.26614923855594524,
+        "own_specificity_js": 0.6679616430676677,
+        "own_usefulness_gap": -8.449074074074074
+      },
+      "useful_habit": {
+        "rep_jump": 0.08413252479776862,
+        "metric_jump": 0.325,
+        "specificity_only": 0.4430808872795578,
+        "synergy": -0.023594658030641202,
+        "causal_emergence_ei": 0.30119579011403275,
+        "own_h0_bits": 1.1529383655723187,
+        "own_specificity_js": 0.4430808872795578,
+        "own_usefulness_gap": 4.929398148148148
+      },
+      "wrong_selector": {
+        "rep_jump": 0.08413252479776862,
+        "metric_jump": 0.325,
+        "specificity_only": 0.5635793593938072,
+        "synergy": -0.37277694780295345,
+        "causal_emergence_ei": 0.5563944272176924,
+        "own_h0_bits": 0.7057707953238636,
+        "own_specificity_js": 0.5635793593938072,
+        "own_usefulness_gap": -1.4444444444444444
+      },
+      "anti_selector": {
+        "rep_jump": 0.08413252479776862,
+        "metric_jump": 0.325,
+        "specificity_only": 0.589601482562921,
+        "synergy": -0.06962057293554214,
+        "causal_emergence_ei": 0.6277766636768143,
+        "own_h0_bits": 0.7448381010211559,
+        "own_specificity_js": 0.589601482562921,
+        "own_usefulness_gap": -4.256944444444444
+      }
+    },
+    "frozen_baselines": {
+      "conj_1_frozen": {
+        "accuracy": 0.9,
+        "misclassified": [
+          "latent_conditional"
+        ]
+      },
+      "conj_2_frozen": {
+        "accuracy": 0.7,
+        "misclassified": [
+          "latent_conditional",
+          "converged_team",
+          "noise_policy"
+        ]
+      },
+      "conj_3_frozen": {
+        "accuracy": 0.7,
+        "misclassified": [
+          "latent_conditional",
+          "converged_team",
+          "noise_policy"
+        ]
+      },
+      "logistic_frozen": {
+        "accuracy": 0.9,
+        "misclassified": [
+          "latent_conditional"
+        ]
+      },
+      "tree_frozen": {
+        "accuracy": 0.9,
+        "misclassified": [
+          "latent_conditional"
+        ]
+      },
+      "two_component_h0_bits+specificity_js_frozen": {
+        "accuracy": 0.7,
+        "misclassified": [
+          "latent_conditional",
+          "converged_team",
+          "noise_policy"
+        ]
+      },
+      "two_component_h0_bits+usefulness_gap_frozen": {
+        "accuracy": 0.8,
+        "misclassified": [
+          "latent_conditional",
+          "useful_habit"
+        ]
+      },
+      "two_component_specificity_js+usefulness_gap_frozen": {
+        "accuracy": 0.7,
+        "misclassified": [
+          "latent_conditional",
+          "converged_team",
+          "noise_policy"
+        ]
+      }
+    },
+    "six_component_reference": {
+      "accuracy": 1.0,
+      "source": "refined_confirmation_summary.json",
+      "note": "stored fresh-seed confirmation (same seed 7011), thresholds frozen before that run and untouched here"
+    }
+  }
+}

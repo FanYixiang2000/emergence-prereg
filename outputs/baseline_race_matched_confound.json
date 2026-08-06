@@ -1,0 +1,67 @@
+{
+  "status": "baseline race on the analytic matched confound; registered in V2_ALIGNMENT_PREREGISTRATION.md wave 3 (E5); mechanism definitions imported from the frozen battery, stored outputs untouched",
+  "observational_profiles": {
+    "central_script": {
+      "H_joint": 3.169925001,
+      "marginal_entropies": [
+        1.584962501,
+        1.584962501,
+        1.584962501
+      ],
+      "total_correlation": 1.584962501,
+      "MI_01": 0.0,
+      "MI_02": 0.0,
+      "MI_12": 0.0,
+      "O_information": -1.584962501,
+      "P_macro_success": 1.0
+    },
+    "common_cause": {
+      "H_joint": 3.169925001,
+      "marginal_entropies": [
+        1.584962501,
+        1.584962501,
+        1.584962501
+      ],
+      "total_correlation": 1.584962501,
+      "MI_01": 0.0,
+      "MI_02": 0.0,
+      "MI_12": 0.0,
+      "O_information": -1.584962501,
+      "P_macro_success": 1.0
+    },
+    "local_feedback": {
+      "H_joint": 3.169925001,
+      "marginal_entropies": [
+        1.584962501,
+        1.584962501,
+        1.584962501
+      ],
+      "total_correlation": 1.584962501,
+      "MI_01": 0.0,
+      "MI_02": 0.0,
+      "MI_12": 0.0,
+      "O_information": -1.584962501,
+      "P_macro_success": 1.0
+    }
+  },
+  "identical_across_mechanisms": {
+    "H_joint": true,
+    "marginal_entropies": true,
+    "total_correlation": true,
+    "MI_01": true,
+    "MI_02": true,
+    "MI_12": true,
+    "O_information": true,
+    "P_macro_success": true
+  },
+  "stored_certificate_G": {
+    "central_script": 0.0,
+    "common_cause": 0.0,
+    "local_feedback": 0.4591479170272448
+  },
+  "registered_outcomes": {
+    "E5_1_all_observational_baselines_identical": true,
+    "E5_2_cut_certificate_separates": true
+  },
+  "reading": "Reward, marginal entropies, MI, total correlation and O-information are constant across a prewired script, a common environment driver and genuine local feedback, because the three share one joint distribution by construction. Only the mechanism-matched cut separates them. This is the R7 answer: the certificate knows something no observational baseline can know."
+}

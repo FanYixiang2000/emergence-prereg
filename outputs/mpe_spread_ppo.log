@@ -1,0 +1,76 @@
+=== seed 98101
+  seed 98101 upd 150: R=-170.1 form_open=0.9377
+  seed 98101 upd 300: R=-160.3 form_open=0.9233
+  seed 98101 upd 450: R=-144.9 form_open=0.9759
+  seed 98101 upd 600: R=-147.6 form_open=0.9259
+  seed 98101 upd 750: R=-136.8 form_open=0.9263
+  seed 98101 upd 900: R=-138.2 form_open=0.9578
+  seed 98101 upd 1050: R=-113.5 form_open=0.9632
+  seed 98101 upd 1200: R=-132.9 form_open=0.9389
+  seed 98101 upd 1350: R=-125.4 form_open=0.9118
+  seed 98101 upd 1500: R=-128.9 form_open=0.9399
+  seed 98101 upd 1650: R=-128.9 form_open=0.9262
+  seed 98101 upd 1800: R=-122.2 form_open=0.9473
+  seed 98101 upd 1950: R=-108.3 form_open=0.9206
+  seed 98101 upd 2100: R=-132.4 form_open=0.9534
+  seed 98101 upd 2250: R=-106.3 form_open=0.9196
+  seed 98101 upd 2400: R=-111.1 form_open=0.9407
+  seed 98101 upd 2550: R=-110.9 form_open=0.9693
+  seed 98101 upd 2700: R=-111.2 form_open=0.9497
+  seed 98101 upd 2850: R=-111.4 form_open=0.9249
+  seed 98101 upd 3000: R=-111.2 form_open=0.9375
+seed 98101: covRate=0.041 B5=False t*=None dBIC=None cover_t=18.0 perms=5
+=== seed 98202
+  seed 98202 upd 150: R=-167.8 form_open=0.9453
+  seed 98202 upd 300: R=-149.8 form_open=0.9452
+  seed 98202 upd 450: R=-142.7 form_open=0.9474
+  seed 98202 upd 600: R=-134.5 form_open=0.9360
+  seed 98202 upd 750: R=-132.5 form_open=0.9615
+  seed 98202 upd 900: R=-114.7 form_open=0.9256
+  seed 98202 upd 1050: R=-124.6 form_open=0.9592
+  seed 98202 upd 1200: R=-137.5 form_open=0.9573
+  seed 98202 upd 1350: R=-129.7 form_open=0.9206
+  seed 98202 upd 1500: R=-140.0 form_open=0.9454
+  seed 98202 upd 1650: R=-129.4 form_open=0.9538
+  seed 98202 upd 1800: R=-143.9 form_open=0.9310
+  seed 98202 upd 1950: R=-132.2 form_open=0.9496
+  seed 98202 upd 2100: R=-129.8 form_open=0.9351
+  seed 98202 upd 2250: R=-121.1 form_open=0.9577
+  seed 98202 upd 2400: R=-123.3 form_open=0.9767
+  seed 98202 upd 2550: R=-111.9 form_open=0.9440
+  seed 98202 upd 2700: R=-105.3 form_open=0.9377
+  seed 98202 upd 2850: R=-112.9 form_open=0.9422
+  seed 98202 upd 3000: R=-103.5 form_open=0.9290
+seed 98202: covRate=0.080 B5=False t*=None dBIC=None cover_t=17.0 perms=6
+=== seed 98303
+  seed 98303 upd 150: R=-163.1 form_open=0.9211
+  seed 98303 upd 300: R=-146.4 form_open=0.9574
+  seed 98303 upd 450: R=-133.7 form_open=0.9488
+  seed 98303 upd 600: R=-138.4 form_open=0.9518
+  seed 98303 upd 750: R=-132.8 form_open=0.9513
+  seed 98303 upd 900: R=-138.3 form_open=0.9589
+  seed 98303 upd 1050: R=-126.5 form_open=0.9334
+  seed 98303 upd 1200: R=-126.5 form_open=0.9491
+  seed 98303 upd 1350: R=-120.3 form_open=0.9783
+  seed 98303 upd 1500: R=-121.5 form_open=0.9693
+  seed 98303 upd 1650: R=-120.3 form_open=0.9516
+  seed 98303 upd 1800: R=-115.8 form_open=0.9365
+  seed 98303 upd 1950: R=-112.6 form_open=0.9399
+  seed 98303 upd 2100: R=-118.2 form_open=0.9318
+  seed 98303 upd 2250: R=-115.3 form_open=0.9743
+  seed 98303 upd 2400: R=-106.9 form_open=0.9386
+  seed 98303 upd 2550: R=-112.6 form_open=0.9612
+  seed 98303 upd 2700: R=-120.5 form_open=0.9553
+  seed 98303 upd 2850: R=-108.2 form_open=0.9304
+  seed 98303 upd 3000: R=-109.1 form_open=0.9503
+seed 98303: covRate=0.030 B5=False t*=None dBIC=None cover_t=10.5 perms=2
+{
+  "competence_met": false,
+  "n_competent": 0,
+  "SR1_onset_ge_2of3_competent": false,
+  "SR2_collapse_before_coverage": false,
+  "SR3_ge3_permutations": false,
+  "SR5_formation_no_onset": true,
+  "n_onset": 0
+}
+Wrote /home/Yixiang/MPARL/GOGOGO/outputs/mpe_spread_ppo.json

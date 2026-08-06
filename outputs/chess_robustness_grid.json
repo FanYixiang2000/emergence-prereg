@@ -1,0 +1,881 @@
+{
+  "n_cells": 12,
+  "core_conclusions_hold": "12/12",
+  "grid": {
+    "temp200_depth3": {
+      "overrides": {
+        "TEMPERATURE_CP": "200.0",
+        "PLAYOUT_DEPTH": "3"
+      },
+      "summary": {
+        "n_sacrifice_analyzed": 240,
+        "n_quiet_analyzed": 120,
+        "C1_local_cost": {
+          "median_local_cost_key": -3.0,
+          "median_local_cost_greedy": 0.0,
+          "pass": true
+        },
+        "C2_useful_collapse": {
+          "mean_useful_shift_key": 0.018489583333333334,
+          "mean_useful_shift_greedy": -0.5825520833333333,
+          "mean_useful_shift_random": -0.7046875,
+          "sign_vs_greedy": {
+            "wins": 239,
+            "losses": 1,
+            "ties": 0,
+            "p_one_sided": 1.3640116612482736e-70
+          },
+          "sign_vs_random": {
+            "wins": 240,
+            "losses": 0,
+            "ties": 0,
+            "p_one_sided": 5.659799424266695e-73
+          },
+          "pass": true
+        },
+        "C3_selectivity": {
+          "mean_p_win_key": 0.818359375,
+          "mean_p_win_deep_alt": 0.22890625,
+          "gap": 0.589453125,
+          "sign_vs_deep_alt": {
+            "wins": 239,
+            "losses": 1,
+            "ties": 0,
+            "p_one_sided": 1.3640116612482736e-70
+          },
+          "mean_specificity_js_bits": 0.41295760063876086,
+          "pass": true
+        },
+        "C4_potential": {
+          "median_potential_bits": 0.7975324498955887,
+          "pass": false
+        },
+        "C5_quiet_control": {
+          "mean_useful_shift_quiet_best": -0.05755208333333333,
+          "mean_useful_shift_sacrifice_key": 0.018489583333333334,
+          "gap": 0.07604166666666666,
+          "mean_quiet_potential_bits": 1.9777531081700443,
+          "pass": false
+        },
+        "all_pass": false,
+        "estimator": {
+          "multipv": 6,
+          "playout_depth": 4,
+          "temperature_cp": 300.0,
+          "horizon_plies": 12,
+          "n_rollouts": 32,
+          "classify_depth": 12
+        }
+      },
+      "checks": {
+        "c1_cost_order": true,
+        "c2_sign_tests": true,
+        "c3_gap_and_sign": true,
+        "c4_potential": false
+      },
+      "elapsed_s": 102.6
+    },
+    "temp200_depth4": {
+      "overrides": {
+        "TEMPERATURE_CP": "200.0",
+        "PLAYOUT_DEPTH": "4"
+      },
+      "summary": {
+        "n_sacrifice_analyzed": 240,
+        "n_quiet_analyzed": 120,
+        "C1_local_cost": {
+          "median_local_cost_key": -3.0,
+          "median_local_cost_greedy": 0.0,
+          "pass": true
+        },
+        "C2_useful_collapse": {
+          "mean_useful_shift_key": 0.027083333333333334,
+          "mean_useful_shift_greedy": -0.6071614583333333,
+          "mean_useful_shift_random": -0.726953125,
+          "sign_vs_greedy": {
+            "wins": 240,
+            "losses": 0,
+            "ties": 0,
+            "p_one_sided": 5.659799424266695e-73
+          },
+          "sign_vs_random": {
+            "wins": 240,
+            "losses": 0,
+            "ties": 0,
+            "p_one_sided": 5.659799424266695e-73
+          },
+          "pass": true
+        },
+        "C3_selectivity": {
+          "mean_p_win_key": 0.8373697916666667,
+          "mean_p_win_deep_alt": 0.21809895833333334,
+          "gap": 0.6192708333333333,
+          "sign_vs_deep_alt": {
+            "wins": 238,
+            "losses": 1,
+            "ties": 1,
+            "p_one_sided": 2.7167037236480137e-70
+          },
+          "mean_specificity_js_bits": 0.4419723869379955,
+          "pass": true
+        },
+        "C4_potential": {
+          "median_potential_bits": 0.7345640566245849,
+          "pass": false
+        },
+        "C5_quiet_control": {
+          "mean_useful_shift_quiet_best": -0.036458333333333336,
+          "mean_useful_shift_sacrifice_key": 0.027083333333333334,
+          "gap": 0.06354166666666666,
+          "mean_quiet_potential_bits": 1.9803908884309687,
+          "pass": false
+        },
+        "all_pass": false,
+        "estimator": {
+          "multipv": 6,
+          "playout_depth": 4,
+          "temperature_cp": 300.0,
+          "horizon_plies": 12,
+          "n_rollouts": 32,
+          "classify_depth": 12
+        }
+      },
+      "checks": {
+        "c1_cost_order": true,
+        "c2_sign_tests": true,
+        "c3_gap_and_sign": true,
+        "c4_potential": false
+      },
+      "elapsed_s": 118.2
+    },
+    "temp200_depth6": {
+      "overrides": {
+        "TEMPERATURE_CP": "200.0",
+        "PLAYOUT_DEPTH": "6"
+      },
+      "summary": {
+        "n_sacrifice_analyzed": 240,
+        "n_quiet_analyzed": 120,
+        "C1_local_cost": {
+          "median_local_cost_key": -3.0,
+          "median_local_cost_greedy": 0.0,
+          "pass": true
+        },
+        "C2_useful_collapse": {
+          "mean_useful_shift_key": 0.021223958333333334,
+          "mean_useful_shift_greedy": -0.6651041666666667,
+          "mean_useful_shift_random": -0.7740885416666666,
+          "sign_vs_greedy": {
+            "wins": 240,
+            "losses": 0,
+            "ties": 0,
+            "p_one_sided": 5.659799424266695e-73
+          },
+          "sign_vs_random": {
+            "wins": 240,
+            "losses": 0,
+            "ties": 0,
+            "p_one_sided": 5.659799424266695e-73
+          },
+          "pass": true
+        },
+        "C3_selectivity": {
+          "mean_p_win_key": 0.8576822916666667,
+          "mean_p_win_deep_alt": 0.17955729166666667,
+          "gap": 0.678125,
+          "sign_vs_deep_alt": {
+            "wins": 239,
+            "losses": 1,
+            "ties": 0,
+            "p_one_sided": 1.3640116612482736e-70
+          },
+          "mean_specificity_js_bits": 0.518182849650369,
+          "pass": true
+        },
+        "C4_potential": {
+          "median_potential_bits": 0.5349547231656377,
+          "pass": false
+        },
+        "C5_quiet_control": {
+          "mean_useful_shift_quiet_best": -0.016145833333333335,
+          "mean_useful_shift_sacrifice_key": 0.021223958333333334,
+          "gap": 0.037369791666666666,
+          "mean_quiet_potential_bits": 1.978339834086683,
+          "pass": false
+        },
+        "all_pass": false,
+        "estimator": {
+          "multipv": 6,
+          "playout_depth": 4,
+          "temperature_cp": 300.0,
+          "horizon_plies": 12,
+          "n_rollouts": 32,
+          "classify_depth": 12
+        }
+      },
+      "checks": {
+        "c1_cost_order": true,
+        "c2_sign_tests": true,
+        "c3_gap_and_sign": true,
+        "c4_potential": false
+      },
+      "elapsed_s": 153.2
+    },
+    "temp300_depth3": {
+      "overrides": {
+        "TEMPERATURE_CP": "300.0",
+        "PLAYOUT_DEPTH": "3"
+      },
+      "summary": {
+        "n_sacrifice_analyzed": 240,
+        "n_quiet_analyzed": 120,
+        "C1_local_cost": {
+          "median_local_cost_key": -3.0,
+          "median_local_cost_greedy": 0.0,
+          "pass": true
+        },
+        "C2_useful_collapse": {
+          "mean_useful_shift_key": 0.040755208333333334,
+          "mean_useful_shift_greedy": -0.46432291666666664,
+          "mean_useful_shift_random": -0.6018229166666667,
+          "sign_vs_greedy": {
+            "wins": 233,
+            "losses": 6,
+            "ties": 1,
+            "p_one_sided": 2.8225897517879003e-61
+          },
+          "sign_vs_random": {
+            "wins": 240,
+            "losses": 0,
+            "ties": 0,
+            "p_one_sided": 5.659799424266695e-73
+          },
+          "pass": true
+        },
+        "C3_selectivity": {
+          "mean_p_win_key": 0.7563802083333333,
+          "mean_p_win_deep_alt": 0.2604166666666667,
+          "gap": 0.4959635416666666,
+          "sign_vs_deep_alt": {
+            "wins": 236,
+            "losses": 3,
+            "ties": 1,
+            "p_one_sided": 2.57579735718147e-66
+          },
+          "mean_specificity_js_bits": 0.3327963894714202,
+          "pass": true
+        },
+        "C4_potential": {
+          "median_potential_bits": 1.1998508931209515,
+          "pass": true
+        },
+        "C5_quiet_control": {
+          "mean_useful_shift_quiet_best": -0.026302083333333334,
+          "mean_useful_shift_sacrifice_key": 0.040755208333333334,
+          "gap": 0.06705729166666667,
+          "mean_quiet_potential_bits": 1.9412114123626254,
+          "pass": false
+        },
+        "all_pass": false,
+        "estimator": {
+          "multipv": 6,
+          "playout_depth": 4,
+          "temperature_cp": 300.0,
+          "horizon_plies": 12,
+          "n_rollouts": 32,
+          "classify_depth": 12
+        }
+      },
+      "checks": {
+        "c1_cost_order": true,
+        "c2_sign_tests": true,
+        "c3_gap_and_sign": true,
+        "c4_potential": true
+      },
+      "elapsed_s": 99.9
+    },
+    "temp300_depth4_registered": {
+      "overrides": {
+        "TEMPERATURE_CP": "300.0",
+        "PLAYOUT_DEPTH": "4"
+      },
+      "summary": {
+        "n_sacrifice_analyzed": 240,
+        "n_quiet_analyzed": 120,
+        "C1_local_cost": {
+          "median_local_cost_key": -3.0,
+          "median_local_cost_greedy": 0.0,
+          "pass": true
+        },
+        "C2_useful_collapse": {
+          "mean_useful_shift_key": 0.06861979166666667,
+          "mean_useful_shift_greedy": -0.47734375,
+          "mean_useful_shift_random": -0.6149739583333333,
+          "sign_vs_greedy": {
+            "wins": 236,
+            "losses": 3,
+            "ties": 1,
+            "p_one_sided": 2.57579735718147e-66
+          },
+          "sign_vs_random": {
+            "wins": 240,
+            "losses": 0,
+            "ties": 0,
+            "p_one_sided": 5.659799424266695e-73
+          },
+          "pass": true
+        },
+        "C3_selectivity": {
+          "mean_p_win_key": 0.7809895833333333,
+          "mean_p_win_deep_alt": 0.2506510416666667,
+          "gap": 0.5303385416666666,
+          "sign_vs_deep_alt": {
+            "wins": 234,
+            "losses": 4,
+            "ties": 2,
+            "p_one_sided": 3.00177521061521e-64
+          },
+          "mean_specificity_js_bits": 0.36226194768096487,
+          "pass": true
+        },
+        "C4_potential": {
+          "median_potential_bits": 1.2316493147305256,
+          "pass": true
+        },
+        "C5_quiet_control": {
+          "mean_useful_shift_quiet_best": -0.023697916666666666,
+          "mean_useful_shift_sacrifice_key": 0.06861979166666667,
+          "gap": 0.09231770833333333,
+          "mean_quiet_potential_bits": 1.9534803711121673,
+          "pass": false
+        },
+        "all_pass": false,
+        "estimator": {
+          "multipv": 6,
+          "playout_depth": 4,
+          "temperature_cp": 300.0,
+          "horizon_plies": 12,
+          "n_rollouts": 32,
+          "classify_depth": 12
+        }
+      },
+      "checks": {
+        "c1_cost_order": true,
+        "c2_sign_tests": true,
+        "c3_gap_and_sign": true,
+        "c4_potential": true
+      },
+      "elapsed_s": 121.2
+    },
+    "temp300_depth6": {
+      "overrides": {
+        "TEMPERATURE_CP": "300.0",
+        "PLAYOUT_DEPTH": "6"
+      },
+      "summary": {
+        "n_sacrifice_analyzed": 240,
+        "n_quiet_analyzed": 120,
+        "C1_local_cost": {
+          "median_local_cost_key": -3.0,
+          "median_local_cost_greedy": 0.0,
+          "pass": true
+        },
+        "C2_useful_collapse": {
+          "mean_useful_shift_key": 0.06354166666666666,
+          "mean_useful_shift_greedy": -0.5197916666666667,
+          "mean_useful_shift_random": -0.648046875,
+          "sign_vs_greedy": {
+            "wins": 238,
+            "losses": 2,
+            "ties": 0,
+            "p_one_sided": 1.636870591492171e-68
+          },
+          "sign_vs_random": {
+            "wins": 240,
+            "losses": 0,
+            "ties": 0,
+            "p_one_sided": 5.659799424266695e-73
+          },
+          "pass": true
+        },
+        "C3_selectivity": {
+          "mean_p_win_key": 0.7983072916666667,
+          "mean_p_win_deep_alt": 0.21770833333333334,
+          "gap": 0.5805989583333333,
+          "sign_vs_deep_alt": {
+            "wins": 239,
+            "losses": 1,
+            "ties": 0,
+            "p_one_sided": 1.3640116612482736e-70
+          },
+          "mean_specificity_js_bits": 0.41180318957697853,
+          "pass": true
+        },
+        "C4_potential": {
+          "median_potential_bits": 1.1617925036562062,
+          "pass": true
+        },
+        "C5_quiet_control": {
+          "mean_useful_shift_quiet_best": -0.0171875,
+          "mean_useful_shift_sacrifice_key": 0.06354166666666666,
+          "gap": 0.08072916666666666,
+          "mean_quiet_potential_bits": 1.9700634245874782,
+          "pass": false
+        },
+        "all_pass": false,
+        "estimator": {
+          "multipv": 6,
+          "playout_depth": 4,
+          "temperature_cp": 300.0,
+          "horizon_plies": 12,
+          "n_rollouts": 32,
+          "classify_depth": 12
+        }
+      },
+      "checks": {
+        "c1_cost_order": true,
+        "c2_sign_tests": true,
+        "c3_gap_and_sign": true,
+        "c4_potential": true
+      },
+      "elapsed_s": 169.7
+    },
+    "temp450_depth3": {
+      "overrides": {
+        "TEMPERATURE_CP": "450.0",
+        "PLAYOUT_DEPTH": "3"
+      },
+      "summary": {
+        "n_sacrifice_analyzed": 240,
+        "n_quiet_analyzed": 120,
+        "C1_local_cost": {
+          "median_local_cost_key": -3.0,
+          "median_local_cost_greedy": 0.0,
+          "pass": true
+        },
+        "C2_useful_collapse": {
+          "mean_useful_shift_key": 0.05182291666666667,
+          "mean_useful_shift_greedy": -0.35260416666666666,
+          "mean_useful_shift_random": -0.49166666666666664,
+          "sign_vs_greedy": {
+            "wins": 219,
+            "losses": 16,
+            "ties": 5,
+            "p_one_sided": 4.788760916053794e-47
+          },
+          "sign_vs_random": {
+            "wins": 237,
+            "losses": 3,
+            "ties": 0,
+            "p_one_sided": 1.3041315493194743e-66
+          },
+          "pass": true
+        },
+        "C3_selectivity": {
+          "mean_p_win_key": 0.6822916666666666,
+          "mean_p_win_deep_alt": 0.28463541666666664,
+          "gap": 0.39765625,
+          "sign_vs_deep_alt": {
+            "wins": 223,
+            "losses": 11,
+            "ties": 6,
+            "p_one_sided": 8.656047862141965e-53
+          },
+          "mean_specificity_js_bits": 0.2534971789675352,
+          "pass": true
+        },
+        "C4_potential": {
+          "median_potential_bits": 1.4489936062491884,
+          "pass": true
+        },
+        "C5_quiet_control": {
+          "mean_useful_shift_quiet_best": -0.036458333333333336,
+          "mean_useful_shift_sacrifice_key": 0.05182291666666667,
+          "gap": 0.08828125,
+          "mean_quiet_potential_bits": 1.886849629385217,
+          "pass": false
+        },
+        "all_pass": false,
+        "estimator": {
+          "multipv": 6,
+          "playout_depth": 4,
+          "temperature_cp": 300.0,
+          "horizon_plies": 12,
+          "n_rollouts": 32,
+          "classify_depth": 12
+        }
+      },
+      "checks": {
+        "c1_cost_order": true,
+        "c2_sign_tests": true,
+        "c3_gap_and_sign": true,
+        "c4_potential": true
+      },
+      "elapsed_s": 114.0
+    },
+    "temp450_depth4": {
+      "overrides": {
+        "TEMPERATURE_CP": "450.0",
+        "PLAYOUT_DEPTH": "4"
+      },
+      "summary": {
+        "n_sacrifice_analyzed": 240,
+        "n_quiet_analyzed": 120,
+        "C1_local_cost": {
+          "median_local_cost_key": -3.0,
+          "median_local_cost_greedy": 0.0,
+          "pass": true
+        },
+        "C2_useful_collapse": {
+          "mean_useful_shift_key": 0.0625,
+          "mean_useful_shift_greedy": -0.36380208333333336,
+          "mean_useful_shift_random": -0.50234375,
+          "sign_vs_greedy": {
+            "wins": 232,
+            "losses": 5,
+            "ties": 3,
+            "p_one_sided": 2.7630500353534193e-62
+          },
+          "sign_vs_random": {
+            "wins": 238,
+            "losses": 1,
+            "ties": 1,
+            "p_one_sided": 2.7167037236480137e-70
+          },
+          "pass": true
+        },
+        "C3_selectivity": {
+          "mean_p_win_key": 0.694140625,
+          "mean_p_win_deep_alt": 0.27903645833333335,
+          "gap": 0.4151041666666666,
+          "sign_vs_deep_alt": {
+            "wins": 232,
+            "losses": 6,
+            "ties": 2,
+            "p_one_sided": 5.504075460124665e-61
+          },
+          "mean_specificity_js_bits": 0.2636381771858668,
+          "pass": true
+        },
+        "C4_potential": {
+          "median_potential_bits": 1.4375645833032595,
+          "pass": true
+        },
+        "C5_quiet_control": {
+          "mean_useful_shift_quiet_best": -0.014583333333333334,
+          "mean_useful_shift_sacrifice_key": 0.0625,
+          "gap": 0.07708333333333334,
+          "mean_quiet_potential_bits": 1.921091315132173,
+          "pass": false
+        },
+        "all_pass": false,
+        "estimator": {
+          "multipv": 6,
+          "playout_depth": 4,
+          "temperature_cp": 300.0,
+          "horizon_plies": 12,
+          "n_rollouts": 32,
+          "classify_depth": 12
+        }
+      },
+      "checks": {
+        "c1_cost_order": true,
+        "c2_sign_tests": true,
+        "c3_gap_and_sign": true,
+        "c4_potential": true
+      },
+      "elapsed_s": 127.6
+    },
+    "temp450_depth6": {
+      "overrides": {
+        "TEMPERATURE_CP": "450.0",
+        "PLAYOUT_DEPTH": "6"
+      },
+      "summary": {
+        "n_sacrifice_analyzed": 240,
+        "n_quiet_analyzed": 120,
+        "C1_local_cost": {
+          "median_local_cost_key": -3.0,
+          "median_local_cost_greedy": 0.0,
+          "pass": true
+        },
+        "C2_useful_collapse": {
+          "mean_useful_shift_key": 0.08229166666666667,
+          "mean_useful_shift_greedy": -0.38515625,
+          "mean_useful_shift_random": -0.523828125,
+          "sign_vs_greedy": {
+            "wins": 234,
+            "losses": 4,
+            "ties": 2,
+            "p_one_sided": 3.00177521061521e-64
+          },
+          "sign_vs_random": {
+            "wins": 239,
+            "losses": 1,
+            "ties": 0,
+            "p_one_sided": 1.3640116612482736e-70
+          },
+          "pass": true
+        },
+        "C3_selectivity": {
+          "mean_p_win_key": 0.71796875,
+          "mean_p_win_deep_alt": 0.26119791666666664,
+          "gap": 0.4567708333333334,
+          "sign_vs_deep_alt": {
+            "wins": 233,
+            "losses": 6,
+            "ties": 1,
+            "p_one_sided": 2.8225897517879003e-61
+          },
+          "mean_specificity_js_bits": 0.3007193629942853,
+          "pass": true
+        },
+        "C4_potential": {
+          "median_potential_bits": 1.439297099947975,
+          "pass": true
+        },
+        "C5_quiet_control": {
+          "mean_useful_shift_quiet_best": -0.0067708333333333336,
+          "mean_useful_shift_sacrifice_key": 0.08229166666666667,
+          "gap": 0.0890625,
+          "mean_quiet_potential_bits": 1.9074588652537456,
+          "pass": false
+        },
+        "all_pass": false,
+        "estimator": {
+          "multipv": 6,
+          "playout_depth": 4,
+          "temperature_cp": 300.0,
+          "horizon_plies": 12,
+          "n_rollouts": 32,
+          "classify_depth": 12
+        }
+      },
+      "checks": {
+        "c1_cost_order": true,
+        "c2_sign_tests": true,
+        "c3_gap_and_sign": true,
+        "c4_potential": true
+      },
+      "elapsed_s": 173.0
+    },
+    "basin400_150": {
+      "overrides": {
+        "WIN_CP": "400",
+        "ADV_CP": "150"
+      },
+      "summary": {
+        "n_sacrifice_analyzed": 240,
+        "n_quiet_analyzed": 120,
+        "C1_local_cost": {
+          "median_local_cost_key": -3.0,
+          "median_local_cost_greedy": 0.0,
+          "pass": true
+        },
+        "C2_useful_collapse": {
+          "mean_useful_shift_key": 0.07291666666666667,
+          "mean_useful_shift_greedy": -0.46901041666666665,
+          "mean_useful_shift_random": -0.59609375,
+          "sign_vs_greedy": {
+            "wins": 236,
+            "losses": 4,
+            "ties": 0,
+            "p_one_sided": 7.760408002103922e-65
+          },
+          "sign_vs_random": {
+            "wins": 238,
+            "losses": 1,
+            "ties": 1,
+            "p_one_sided": 2.7167037236480137e-70
+          },
+          "pass": true
+        },
+        "C3_selectivity": {
+          "mean_p_win_key": 0.7626302083333333,
+          "mean_p_win_deep_alt": 0.23177083333333334,
+          "gap": 0.5308593749999999,
+          "sign_vs_deep_alt": {
+            "wins": 237,
+            "losses": 1,
+            "ties": 2,
+            "p_one_sided": 5.4107682495989606e-70
+          },
+          "mean_specificity_js_bits": 0.36873415788053404,
+          "pass": true
+        },
+        "C4_potential": {
+          "median_potential_bits": 1.3575459152884144,
+          "pass": true
+        },
+        "C5_quiet_control": {
+          "mean_useful_shift_quiet_best": -0.015885416666666666,
+          "mean_useful_shift_sacrifice_key": 0.07291666666666667,
+          "gap": 0.08880208333333334,
+          "mean_quiet_potential_bits": 1.945039605911972,
+          "pass": false
+        },
+        "all_pass": false,
+        "estimator": {
+          "multipv": 6,
+          "playout_depth": 4,
+          "temperature_cp": 300.0,
+          "horizon_plies": 12,
+          "n_rollouts": 32,
+          "classify_depth": 12
+        }
+      },
+      "checks": {
+        "c1_cost_order": true,
+        "c2_sign_tests": true,
+        "c3_gap_and_sign": true,
+        "c4_potential": true
+      },
+      "elapsed_s": 107.7
+    },
+    "basin500_200": {
+      "overrides": {
+        "WIN_CP": "500",
+        "ADV_CP": "200"
+      },
+      "summary": {
+        "n_sacrifice_analyzed": 240,
+        "n_quiet_analyzed": 120,
+        "C1_local_cost": {
+          "median_local_cost_key": -3.0,
+          "median_local_cost_greedy": 0.0,
+          "pass": true
+        },
+        "C2_useful_collapse": {
+          "mean_useful_shift_key": 0.0515625,
+          "mean_useful_shift_greedy": -0.473046875,
+          "mean_useful_shift_random": -0.5927083333333333,
+          "sign_vs_greedy": {
+            "wins": 236,
+            "losses": 3,
+            "ties": 1,
+            "p_one_sided": 2.57579735718147e-66
+          },
+          "sign_vs_random": {
+            "wins": 238,
+            "losses": 2,
+            "ties": 0,
+            "p_one_sided": 1.636870591492171e-68
+          },
+          "pass": true
+        },
+        "C3_selectivity": {
+          "mean_p_win_key": 0.7305989583333333,
+          "mean_p_win_deep_alt": 0.20703125,
+          "gap": 0.5235677083333333,
+          "sign_vs_deep_alt": {
+            "wins": 235,
+            "losses": 3,
+            "ties": 2,
+            "p_one_sided": 5.087204308272943e-66
+          },
+          "mean_specificity_js_bits": 0.3775353033381687,
+          "pass": true
+        },
+        "C4_potential": {
+          "median_potential_bits": 1.407668588711771,
+          "pass": true
+        },
+        "C5_quiet_control": {
+          "mean_useful_shift_quiet_best": -0.019270833333333334,
+          "mean_useful_shift_sacrifice_key": 0.0515625,
+          "gap": 0.07083333333333333,
+          "mean_quiet_potential_bits": 1.9145058315919739,
+          "pass": false
+        },
+        "all_pass": false,
+        "estimator": {
+          "multipv": 6,
+          "playout_depth": 4,
+          "temperature_cp": 300.0,
+          "horizon_plies": 12,
+          "n_rollouts": 32,
+          "classify_depth": 12
+        }
+      },
+      "checks": {
+        "c1_cost_order": true,
+        "c2_sign_tests": true,
+        "c3_gap_and_sign": true,
+        "c4_potential": true
+      },
+      "elapsed_s": 107.5
+    },
+    "engine_sf11_classical": {
+      "overrides": {
+        "ENGINE_PATH": "/home/Yixiang/MPARL/GOGOGO/external_chess/stockfish_11_x/usr/games/stockfish"
+      },
+      "summary": {
+        "n_sacrifice_analyzed": 240,
+        "n_quiet_analyzed": 120,
+        "C1_local_cost": {
+          "median_local_cost_key": -3.0,
+          "median_local_cost_greedy": 0.0,
+          "pass": true
+        },
+        "C2_useful_collapse": {
+          "mean_useful_shift_key": 0.11796875,
+          "mean_useful_shift_greedy": -0.31536458333333334,
+          "mean_useful_shift_random": -0.43125,
+          "sign_vs_greedy": {
+            "wins": 218,
+            "losses": 15,
+            "ties": 7,
+            "p_one_sided": 1.2150568569687915e-47
+          },
+          "sign_vs_random": {
+            "wins": 230,
+            "losses": 5,
+            "ties": 5,
+            "p_one_sided": 1.059180733786221e-61
+          },
+          "pass": true
+        },
+        "C3_selectivity": {
+          "mean_p_win_key": 0.655859375,
+          "mean_p_win_deep_alt": 0.22604166666666667,
+          "gap": 0.4298177083333333,
+          "sign_vs_deep_alt": {
+            "wins": 215,
+            "losses": 15,
+            "ties": 10,
+            "p_one_sided": 7.962315338521153e-47
+          },
+          "mean_specificity_js_bits": 0.3319712811127451,
+          "pass": true
+        },
+        "C4_potential": {
+          "median_potential_bits": 1.6925232864663098,
+          "pass": true
+        },
+        "C5_quiet_control": {
+          "mean_useful_shift_quiet_best": -0.06458333333333334,
+          "mean_useful_shift_sacrifice_key": 0.11796875,
+          "gap": 0.18255208333333334,
+          "mean_quiet_potential_bits": 1.9982809836254873,
+          "pass": false
+        },
+        "all_pass": false,
+        "estimator": {
+          "multipv": 6,
+          "playout_depth": 4,
+          "temperature_cp": 300.0,
+          "horizon_plies": 12,
+          "n_rollouts": 32,
+          "classify_depth": 12
+        }
+      },
+      "checks": {
+        "c1_cost_order": true,
+        "c2_sign_tests": true,
+        "c3_gap_and_sign": true,
+        "c4_potential": true
+      },
+      "elapsed_s": 67.4
+    }
+  }
+}

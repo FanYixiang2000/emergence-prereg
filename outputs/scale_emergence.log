@@ -1,0 +1,18 @@
+scale  0.0625 seed 1234 params     2453 train 0.763 test 0.661 C 4.38 logp -1.58
+scale  0.0625 seed 2345 params     2453 train 0.727 test 0.545 C 3.96 logp -2.02
+scale  0.1250 seed 1234 params     5577 train 1.000 test 1.000 C 6.53 logp -0.01
+scale  0.1250 seed 2345 params     5577 train 1.000 test 1.000 C 6.54 logp -0.01
+scale  0.2500 seed 1234 params    14129 train 1.000 test 1.000 C 6.59 logp -0.00
+scale  0.2500 seed 2345 params    14129 train 1.000 test 1.000 C 6.49 logp -0.02
+scale  0.5000 seed 1234 params    40449 train 1.000 test 1.000 C 6.61 logp -0.00
+scale  0.5000 seed 2345 params    40449 train 1.000 test 1.000 C 6.60 logp -0.00
+scale  1.0000 seed 1234 params   129953 train 1.000 test 1.000 C 6.60 logp -0.00
+scale  1.0000 seed 2345 params   129953 train 1.000 test 1.000 C 6.61 logp -0.00
+scale  2.0000 seed 1234 params   456417 train 1.000 test 1.000 C 6.61 logp -0.00
+scale  2.0000 seed 2345 params   456417 train 1.000 test 1.000 C 6.61 logp -0.00
+
+max normalized jump: accuracy 1.000 vs collapse 0.970
+R1 accuracy sharper: True
+R2 collapse necessary: False
+data verdict: comparable
+Wrote /home/Yixiang/MPARL/GOGOGO/outputs/scale_emergence_summary.json

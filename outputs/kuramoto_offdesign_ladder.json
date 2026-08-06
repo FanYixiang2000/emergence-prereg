@@ -1,0 +1,52 @@
+{
+  "status": "off-design generator test (Kuramoto) for the collapse-source ladder; registered in V2_ALIGNMENT_PREREGISTRATION.md (KUR); KUR-4 preregistered as may-miss",
+  "n_samples": 100000,
+  "conditions": {
+    "uncoupled": {
+      "declared_E": "binary split of iid samples (E carries nothing)",
+      "components_bits": {
+        "C_individual": 0.00022,
+        "C_env": 0.0,
+        "C_pair": 0.00185,
+        "C_high": 0.00527,
+        "C_total": 0.00734
+      }
+    },
+    "driven": {
+      "declared_E": "driver phi0 (binary)",
+      "components_bits": {
+        "C_individual": 6.48399,
+        "C_env": 2.0,
+        "C_pair": 0.0,
+        "C_high": 0.0,
+        "C_total": 8.48399
+      }
+    },
+    "pair12": {
+      "declared_E": "binary split of iid samples (E carries nothing)",
+      "components_bits": {
+        "C_individual": 0.00021,
+        "C_env": 0.0,
+        "C_pair": 2.89608,
+        "C_high": 0.00076,
+        "C_total": 2.89705
+      }
+    },
+    "allcoupled": {
+      "declared_E": "binary split of iid samples (E carries nothing)",
+      "components_bits": {
+        "C_individual": 0.00022,
+        "C_env": 0.0,
+        "C_pair": 5.99669,
+        "C_high": 8e-05,
+        "C_total": 5.99698
+      }
+    }
+  },
+  "registered_outcomes": {
+    "KUR1_uncoupled_all_null": true,
+    "KUR2_driven_env_dominant": true,
+    "KUR3_pair12_pair_dominant": true,
+    "KUR4_allcoupled_highorder_beyond_pairwise_MAY_MISS": false
+  }
+}

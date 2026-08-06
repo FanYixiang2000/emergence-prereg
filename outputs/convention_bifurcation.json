@@ -1,0 +1,448 @@
+{
+  "status": "convention bifurcation battery; BF-1..BF-4 frozen in the docstring",
+  "costs": {
+    "1.0": {
+      "reference_value_gap_selective_minus_blanket": -0.8175,
+      "selective_fraction": 0.1,
+      "rows": [
+        {
+          "seed": 6201,
+          "selectivity": 0.0,
+          "selective": 0,
+          "early_cliff_dem": 1,
+          "early_field_dem": 1,
+          "final_cliff_dem": 1
+        },
+        {
+          "seed": 6202,
+          "selectivity": 0.0,
+          "selective": 0,
+          "early_cliff_dem": 0,
+          "early_field_dem": 0,
+          "final_cliff_dem": 1
+        },
+        {
+          "seed": 6203,
+          "selectivity": 0.0,
+          "selective": 0,
+          "early_cliff_dem": 1,
+          "early_field_dem": 1,
+          "final_cliff_dem": 0
+        },
+        {
+          "seed": 6204,
+          "selectivity": 0.0,
+          "selective": 0,
+          "early_cliff_dem": 0,
+          "early_field_dem": 1,
+          "final_cliff_dem": 0
+        },
+        {
+          "seed": 6205,
+          "selectivity": 0.0,
+          "selective": 0,
+          "early_cliff_dem": 1,
+          "early_field_dem": 0,
+          "final_cliff_dem": 0
+        },
+        {
+          "seed": 6206,
+          "selectivity": 0.9166666666666666,
+          "selective": 1,
+          "early_cliff_dem": 0,
+          "early_field_dem": 0,
+          "final_cliff_dem": 0
+        },
+        {
+          "seed": 6207,
+          "selectivity": 0.0,
+          "selective": 0,
+          "early_cliff_dem": 1,
+          "early_field_dem": 0,
+          "final_cliff_dem": 1
+        },
+        {
+          "seed": 6208,
+          "selectivity": 0.0,
+          "selective": 0,
+          "early_cliff_dem": 0,
+          "early_field_dem": 1,
+          "final_cliff_dem": 1
+        },
+        {
+          "seed": 6209,
+          "selectivity": 0.0,
+          "selective": 0,
+          "early_cliff_dem": 1,
+          "early_field_dem": 1,
+          "final_cliff_dem": 0
+        },
+        {
+          "seed": 6210,
+          "selectivity": 0.0,
+          "selective": 0,
+          "early_cliff_dem": 1,
+          "early_field_dem": 0,
+          "final_cliff_dem": 1
+        }
+      ]
+    },
+    "1.5": {
+      "reference_value_gap_selective_minus_blanket": 0.12,
+      "selective_fraction": 0.2,
+      "rows": [
+        {
+          "seed": 6301,
+          "selectivity": 0.0,
+          "selective": 0,
+          "early_cliff_dem": 1,
+          "early_field_dem": 1,
+          "final_cliff_dem": 1
+        },
+        {
+          "seed": 6302,
+          "selectivity": 0.0,
+          "selective": 0,
+          "early_cliff_dem": 0,
+          "early_field_dem": 0,
+          "final_cliff_dem": 1
+        },
+        {
+          "seed": 6303,
+          "selectivity": 0.0,
+          "selective": 0,
+          "early_cliff_dem": 0,
+          "early_field_dem": 0,
+          "final_cliff_dem": 1
+        },
+        {
+          "seed": 6304,
+          "selectivity": 0.9333333333333333,
+          "selective": 1,
+          "early_cliff_dem": 1,
+          "early_field_dem": 0,
+          "final_cliff_dem": 0
+        },
+        {
+          "seed": 6305,
+          "selectivity": 0.0,
+          "selective": 0,
+          "early_cliff_dem": 0,
+          "early_field_dem": 0,
+          "final_cliff_dem": 0
+        },
+        {
+          "seed": 6306,
+          "selectivity": 1.0,
+          "selective": 1,
+          "early_cliff_dem": 1,
+          "early_field_dem": 1,
+          "final_cliff_dem": 0
+        },
+        {
+          "seed": 6307,
+          "selectivity": 0.0,
+          "selective": 0,
+          "early_cliff_dem": 1,
+          "early_field_dem": 1,
+          "final_cliff_dem": 0
+        },
+        {
+          "seed": 6308,
+          "selectivity": 0.0,
+          "selective": 0,
+          "early_cliff_dem": 0,
+          "early_field_dem": 1,
+          "final_cliff_dem": 1
+        },
+        {
+          "seed": 6309,
+          "selectivity": 0.0,
+          "selective": 0,
+          "early_cliff_dem": 1,
+          "early_field_dem": 0,
+          "final_cliff_dem": 1
+        },
+        {
+          "seed": 6310,
+          "selectivity": 0.0,
+          "selective": 0,
+          "early_cliff_dem": 0,
+          "early_field_dem": 1,
+          "final_cliff_dem": 0
+        }
+      ]
+    },
+    "2.0": {
+      "reference_value_gap_selective_minus_blanket": 1.0575,
+      "selective_fraction": 0.8,
+      "rows": [
+        {
+          "seed": 6401,
+          "selectivity": 1.0,
+          "selective": 1,
+          "early_cliff_dem": 1,
+          "early_field_dem": 0,
+          "final_cliff_dem": 1
+        },
+        {
+          "seed": 6402,
+          "selectivity": 1.0,
+          "selective": 1,
+          "early_cliff_dem": 1,
+          "early_field_dem": 1,
+          "final_cliff_dem": 0
+        },
+        {
+          "seed": 6403,
+          "selectivity": 1.0,
+          "selective": 1,
+          "early_cliff_dem": 1,
+          "early_field_dem": 1,
+          "final_cliff_dem": 0
+        },
+        {
+          "seed": 6404,
+          "selectivity": 0.0,
+          "selective": 0,
+          "early_cliff_dem": 0,
+          "early_field_dem": 0,
+          "final_cliff_dem": 1
+        },
+        {
+          "seed": 6405,
+          "selectivity": 1.0,
+          "selective": 1,
+          "early_cliff_dem": 1,
+          "early_field_dem": 0,
+          "final_cliff_dem": 0
+        },
+        {
+          "seed": 6406,
+          "selectivity": 1.0,
+          "selective": 1,
+          "early_cliff_dem": 0,
+          "early_field_dem": 1,
+          "final_cliff_dem": 0
+        },
+        {
+          "seed": 6407,
+          "selectivity": 0.0,
+          "selective": 0,
+          "early_cliff_dem": 1,
+          "early_field_dem": 1,
+          "final_cliff_dem": 1
+        },
+        {
+          "seed": 6408,
+          "selectivity": 1.0,
+          "selective": 1,
+          "early_cliff_dem": 1,
+          "early_field_dem": 1,
+          "final_cliff_dem": 0
+        },
+        {
+          "seed": 6409,
+          "selectivity": 1.0,
+          "selective": 1,
+          "early_cliff_dem": 1,
+          "early_field_dem": 0,
+          "final_cliff_dem": 0
+        },
+        {
+          "seed": 6410,
+          "selectivity": 1.0,
+          "selective": 1,
+          "early_cliff_dem": 0,
+          "early_field_dem": 1,
+          "final_cliff_dem": 0
+        }
+      ]
+    },
+    "2.5": {
+      "reference_value_gap_selective_minus_blanket": 1.995,
+      "selective_fraction": 1.0,
+      "rows": [
+        {
+          "seed": 6501,
+          "selectivity": 1.0,
+          "selective": 1,
+          "early_cliff_dem": 1,
+          "early_field_dem": 1,
+          "final_cliff_dem": 1
+        },
+        {
+          "seed": 6502,
+          "selectivity": 1.0,
+          "selective": 1,
+          "early_cliff_dem": 1,
+          "early_field_dem": 0,
+          "final_cliff_dem": 1
+        },
+        {
+          "seed": 6503,
+          "selectivity": 1.0,
+          "selective": 1,
+          "early_cliff_dem": 1,
+          "early_field_dem": 0,
+          "final_cliff_dem": 1
+        },
+        {
+          "seed": 6504,
+          "selectivity": 1.0,
+          "selective": 1,
+          "early_cliff_dem": 0,
+          "early_field_dem": 1,
+          "final_cliff_dem": 0
+        },
+        {
+          "seed": 6505,
+          "selectivity": 1.0,
+          "selective": 1,
+          "early_cliff_dem": 1,
+          "early_field_dem": 0,
+          "final_cliff_dem": 0
+        },
+        {
+          "seed": 6506,
+          "selectivity": 1.0,
+          "selective": 1,
+          "early_cliff_dem": 0,
+          "early_field_dem": 1,
+          "final_cliff_dem": 1
+        },
+        {
+          "seed": 6507,
+          "selectivity": 1.0,
+          "selective": 1,
+          "early_cliff_dem": 0,
+          "early_field_dem": 1,
+          "final_cliff_dem": 1
+        },
+        {
+          "seed": 6508,
+          "selectivity": 1.0,
+          "selective": 1,
+          "early_cliff_dem": 0,
+          "early_field_dem": 0,
+          "final_cliff_dem": 1
+        },
+        {
+          "seed": 6509,
+          "selectivity": 1.0,
+          "selective": 1,
+          "early_cliff_dem": 0,
+          "early_field_dem": 1,
+          "final_cliff_dem": 1
+        },
+        {
+          "seed": 6510,
+          "selectivity": 1.0,
+          "selective": 1,
+          "early_cliff_dem": 1,
+          "early_field_dem": 0,
+          "final_cliff_dem": 1
+        }
+      ]
+    },
+    "3.0": {
+      "reference_value_gap_selective_minus_blanket": 2.9325,
+      "selective_fraction": 0.9,
+      "rows": [
+        {
+          "seed": 6601,
+          "selectivity": 1.0,
+          "selective": 1,
+          "early_cliff_dem": 1,
+          "early_field_dem": 1,
+          "final_cliff_dem": 1
+        },
+        {
+          "seed": 6602,
+          "selectivity": 0.9833333333333333,
+          "selective": 1,
+          "early_cliff_dem": 1,
+          "early_field_dem": 1,
+          "final_cliff_dem": 0
+        },
+        {
+          "seed": 6603,
+          "selectivity": 1.0,
+          "selective": 1,
+          "early_cliff_dem": 0,
+          "early_field_dem": 1,
+          "final_cliff_dem": 0
+        },
+        {
+          "seed": 6604,
+          "selectivity": 1.0,
+          "selective": 1,
+          "early_cliff_dem": 1,
+          "early_field_dem": 0,
+          "final_cliff_dem": 1
+        },
+        {
+          "seed": 6605,
+          "selectivity": 0.0,
+          "selective": 0,
+          "early_cliff_dem": 0,
+          "early_field_dem": 0,
+          "final_cliff_dem": 0
+        },
+        {
+          "seed": 6606,
+          "selectivity": 0.9833333333333333,
+          "selective": 1,
+          "early_cliff_dem": 0,
+          "early_field_dem": 0,
+          "final_cliff_dem": 0
+        },
+        {
+          "seed": 6607,
+          "selectivity": 1.0,
+          "selective": 1,
+          "early_cliff_dem": 0,
+          "early_field_dem": 1,
+          "final_cliff_dem": 1
+        },
+        {
+          "seed": 6608,
+          "selectivity": 1.0,
+          "selective": 1,
+          "early_cliff_dem": 0,
+          "early_field_dem": 0,
+          "final_cliff_dem": 0
+        },
+        {
+          "seed": 6609,
+          "selectivity": 1.0,
+          "selective": 1,
+          "early_cliff_dem": 0,
+          "early_field_dem": 0,
+          "final_cliff_dem": 0
+        },
+        {
+          "seed": 6610,
+          "selectivity": 1.0,
+          "selective": 1,
+          "early_cliff_dem": 0,
+          "early_field_dem": 0,
+          "final_cliff_dem": 0
+        }
+      ]
+    }
+  },
+  "registered_outcomes": {
+    "BF1_monotone_nondecreasing": true,
+    "BF2_endpoints": true,
+    "BF3_gap_sign_predicts_majority": "4/5 -> True",
+    "BF4_early_snapshot_predicts_basin": "0.50 -> False",
+    "selective_fractions_by_cost": {
+      "1.0": 0.1,
+      "1.5": 0.2,
+      "2.0": 0.8,
+      "2.5": 1.0,
+      "3.0": 0.9
+    }
+  }
+}

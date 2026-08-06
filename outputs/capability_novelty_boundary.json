@@ -1,0 +1,53 @@
+{
+  "status": "capability novelty boundary; lower-order additive / architectural controls distinguish ordinary learning from capability-emergence candidates",
+  "novelty_threshold": 0.3,
+  "values": {
+    "ordinary": {
+      "full_acc": [
+        0.9281615018844604,
+        0.9215728044509888,
+        0.9226354956626892
+      ],
+      "additive_acc": [
+        0.9283740520477295,
+        0.9209351539611816,
+        0.9315621852874756
+      ],
+      "mean_full": 0.9241232673327128,
+      "mean_additive": 0.9269571304321289,
+      "novelty_gap": -0.002833863099416134,
+      "old_proxy_accepted": "6/6"
+    },
+    "modular_addition": {
+      "full_acc": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "additive_acc": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "mean_full": 1.0,
+      "mean_additive": 0.0,
+      "novelty_gap": 1.0
+    },
+    "induction": {
+      "two_layer_acc": 0.9868951439857483,
+      "one_layer_acc": 0.11554939299821854,
+      "novelty_gap": 0.8713457509875298
+    }
+  },
+  "novelty_qualified_verdict": {
+    "ordinary": false,
+    "modular_grokking": true,
+    "induction": true
+  },
+  "registered_outcomes": {
+    "CN1_ordinary_low_order_suffices": true,
+    "CN2_modular_rule_requires_interaction": true,
+    "CN3_induction_requires_composition": true,
+    "CN4_old_proxy_false_positive_repaired": true
+  }
+}

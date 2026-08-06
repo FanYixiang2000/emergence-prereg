@@ -1,0 +1,19 @@
+{
+  "status": "adversarial observer audit (recorded episodes; partitions post-hoc)",
+  "n_random_observers": 1000,
+  "n_micro_cells": 10,
+  "bijection_max_deviation": 2.220446049250313e-16,
+  "declared_partition": {
+    "mean_potential": 1.3674067728294097,
+    "mean_specificity": 0.7927099225517218,
+    "specificity_percentile_vs_random": 1.0
+  },
+  "random_observers": {
+    "mean_potential_pass_rate": 0.9931,
+    "mean_specificity_pass_rate": 0.8015,
+    "mean_full_pass_rate": 0.7229000000000001,
+    "p_full_pass_ge_9_of_10": 0.476,
+    "mean_specificity_bits": 0.40668692023056063
+  },
+  "reading_rule": "declared before running: low random full-pass -> nonsense observers cannot manufacture emergence; high random specificity-pass -> the do-contrast survives any partition (reported either way)"
+}

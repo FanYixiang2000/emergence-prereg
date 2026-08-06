@@ -1,0 +1,1052 @@
+{
+  "status": "prospective 2-D phase diagram; derivation, grid, predictions and the single fragile cell frozen in the docstring before any training",
+  "grid": {
+    "G": [
+      3.0,
+      7.0,
+      10.0,
+      13.0
+    ],
+    "w": [
+      0.1,
+      0.25,
+      0.4,
+      0.7
+    ]
+  },
+  "predicted": {
+    "3.0|0.1": 0,
+    "3.0|0.25": 0,
+    "3.0|0.4": 0,
+    "3.0|0.7": 0,
+    "7.0|0.1": 0,
+    "7.0|0.25": 0,
+    "7.0|0.4": 0,
+    "7.0|0.7": 0,
+    "10.0|0.1": 0,
+    "10.0|0.25": 0,
+    "10.0|0.4": 1,
+    "10.0|0.7": 1,
+    "13.0|0.1": 1,
+    "13.0|0.25": 1,
+    "13.0|0.4": 1,
+    "13.0|0.7": 1
+  },
+  "fragile_cells": [
+    "10.0|0.25"
+  ],
+  "cells": {
+    "3.0|0.1": {
+      "seeds": {
+        "9501": {
+          "h0_bits": 1.2455074353053073,
+          "natural_trigger_rate": 0.0,
+          "selectivity_tension": 0.0,
+          "specificity_js": 0.44880813907799255,
+          "usefulness_gap": -0.19212962962962968,
+          "accepted": 0,
+          "failed": [
+            "selectivity",
+            "usefulness"
+          ]
+        },
+        "9502": {
+          "h0_bits": 1.1224049645477814,
+          "natural_trigger_rate": 0.0,
+          "selectivity_tension": 0.0,
+          "specificity_js": 0.24930433808241645,
+          "usefulness_gap": -0.21759259259259278,
+          "accepted": 0,
+          "failed": [
+            "selectivity",
+            "usefulness"
+          ]
+        },
+        "9503": {
+          "h0_bits": 1.268458435860546,
+          "natural_trigger_rate": 0.0,
+          "selectivity_tension": 0.0,
+          "specificity_js": 0.29443255184484035,
+          "usefulness_gap": -0.14814814814814828,
+          "accepted": 0,
+          "failed": [
+            "selectivity",
+            "usefulness"
+          ]
+        },
+        "9504": {
+          "h0_bits": 1.2971217980282759,
+          "natural_trigger_rate": 0.0,
+          "selectivity_tension": 0.0,
+          "specificity_js": 0.6351665261396743,
+          "usefulness_gap": -0.10879629629629632,
+          "accepted": 0,
+          "failed": [
+            "selectivity",
+            "usefulness"
+          ]
+        },
+        "9505": {
+          "h0_bits": 1.253778691532186,
+          "natural_trigger_rate": 0.0,
+          "selectivity_tension": 0.0,
+          "specificity_js": 0.5563544973817373,
+          "usefulness_gap": -0.09953703703703697,
+          "accepted": 0,
+          "failed": [
+            "selectivity",
+            "usefulness"
+          ]
+        }
+      },
+      "accepts": 0,
+      "majority_verdict": 0,
+      "predicted": 0,
+      "fragile": false,
+      "match": true
+    },
+    "3.0|0.25": {
+      "seeds": {
+        "9501": {
+          "h0_bits": 1.2584493006656279,
+          "natural_trigger_rate": 0.0,
+          "selectivity_tension": 0.0,
+          "specificity_js": 0.31626207115999627,
+          "usefulness_gap": -0.19675925925925922,
+          "accepted": 0,
+          "failed": [
+            "selectivity",
+            "usefulness"
+          ]
+        },
+        "9502": {
+          "h0_bits": 1.2802630724406472,
+          "natural_trigger_rate": 0.0,
+          "selectivity_tension": 0.0,
+          "specificity_js": 0.40395741799001156,
+          "usefulness_gap": 0.01620370370370361,
+          "accepted": 0,
+          "failed": [
+            "selectivity"
+          ]
+        },
+        "9503": {
+          "h0_bits": 1.179856252353891,
+          "natural_trigger_rate": 0.0,
+          "selectivity_tension": 0.0,
+          "specificity_js": 0.203008421686409,
+          "usefulness_gap": -0.19907407407407407,
+          "accepted": 0,
+          "failed": [
+            "selectivity",
+            "usefulness"
+          ]
+        },
+        "9504": {
+          "h0_bits": 1.22447239613916,
+          "natural_trigger_rate": 0.0,
+          "selectivity_tension": 0.0,
+          "specificity_js": 0.37492638645983556,
+          "usefulness_gap": 0.01157407407407407,
+          "accepted": 0,
+          "failed": [
+            "selectivity"
+          ]
+        },
+        "9505": {
+          "h0_bits": 1.152699388481037,
+          "natural_trigger_rate": 0.0,
+          "selectivity_tension": 0.0,
+          "specificity_js": 0.31454217397922296,
+          "usefulness_gap": -0.23379629629629628,
+          "accepted": 0,
+          "failed": [
+            "selectivity",
+            "usefulness"
+          ]
+        }
+      },
+      "accepts": 0,
+      "majority_verdict": 0,
+      "predicted": 0,
+      "fragile": false,
+      "match": true
+    },
+    "3.0|0.4": {
+      "seeds": {
+        "9501": {
+          "h0_bits": 1.272704014348533,
+          "natural_trigger_rate": 0.0,
+          "selectivity_tension": 0.0,
+          "specificity_js": 0.6470453742281221,
+          "usefulness_gap": -0.041666666666666664,
+          "accepted": 0,
+          "failed": [
+            "selectivity",
+            "usefulness"
+          ]
+        },
+        "9502": {
+          "h0_bits": 1.2628230737707586,
+          "natural_trigger_rate": 0.0,
+          "selectivity_tension": 0.0,
+          "specificity_js": 0.45998695751755775,
+          "usefulness_gap": -0.0856481481481482,
+          "accepted": 0,
+          "failed": [
+            "selectivity",
+            "usefulness"
+          ]
+        },
+        "9503": {
+          "h0_bits": 1.1867582379512214,
+          "natural_trigger_rate": 0.0,
+          "selectivity_tension": 0.0,
+          "specificity_js": 0.14775458236022557,
+          "usefulness_gap": -0.2083333333333333,
+          "accepted": 0,
+          "failed": [
+            "selectivity",
+            "specificity",
+            "usefulness"
+          ]
+        },
+        "9504": {
+          "h0_bits": 1.216296296775491,
+          "natural_trigger_rate": 0.0,
+          "selectivity_tension": 0.0,
+          "specificity_js": 0.36383044070401166,
+          "usefulness_gap": -0.1967592592592593,
+          "accepted": 0,
+          "failed": [
+            "selectivity",
+            "usefulness"
+          ]
+        },
+        "9505": {
+          "h0_bits": 1.2734056773557862,
+          "natural_trigger_rate": 0.0,
+          "selectivity_tension": 0.0,
+          "specificity_js": 0.42594036082897313,
+          "usefulness_gap": -0.17592592592592596,
+          "accepted": 0,
+          "failed": [
+            "selectivity",
+            "usefulness"
+          ]
+        }
+      },
+      "accepts": 0,
+      "majority_verdict": 0,
+      "predicted": 0,
+      "fragile": false,
+      "match": true
+    },
+    "3.0|0.7": {
+      "seeds": {
+        "9501": {
+          "h0_bits": 1.0898118255821476,
+          "natural_trigger_rate": 0.0,
+          "selectivity_tension": 0.0,
+          "specificity_js": 0.39421557555377773,
+          "usefulness_gap": -0.17129629629629636,
+          "accepted": 0,
+          "failed": [
+            "selectivity",
+            "usefulness"
+          ]
+        },
+        "9502": {
+          "h0_bits": 1.1637998647017684,
+          "natural_trigger_rate": 0.0,
+          "selectivity_tension": 0.0,
+          "specificity_js": 0.26204906434105607,
+          "usefulness_gap": -0.1527777777777777,
+          "accepted": 0,
+          "failed": [
+            "selectivity",
+            "usefulness"
+          ]
+        },
+        "9503": {
+          "h0_bits": 1.1119559191973931,
+          "natural_trigger_rate": 0.0,
+          "selectivity_tension": 0.0,
+          "specificity_js": 0.38746531790175437,
+          "usefulness_gap": -0.28472222222222227,
+          "accepted": 0,
+          "failed": [
+            "selectivity",
+            "usefulness"
+          ]
+        },
+        "9504": {
+          "h0_bits": 1.1971394268577116,
+          "natural_trigger_rate": 0.0,
+          "selectivity_tension": 0.0,
+          "specificity_js": 0.37852546830422745,
+          "usefulness_gap": -0.011574074074074098,
+          "accepted": 0,
+          "failed": [
+            "selectivity",
+            "usefulness"
+          ]
+        },
+        "9505": {
+          "h0_bits": 1.170927262437559,
+          "natural_trigger_rate": 0.0,
+          "selectivity_tension": 0.0,
+          "specificity_js": 0.5832269622241658,
+          "usefulness_gap": -0.23842592592592596,
+          "accepted": 0,
+          "failed": [
+            "selectivity",
+            "usefulness"
+          ]
+        }
+      },
+      "accepts": 0,
+      "majority_verdict": 0,
+      "predicted": 0,
+      "fragile": false,
+      "match": true
+    },
+    "7.0|0.1": {
+      "seeds": {
+        "9501": {
+          "h0_bits": 1.257981169305512,
+          "natural_trigger_rate": 0.0,
+          "selectivity_tension": 0.0,
+          "specificity_js": 0.54353541933287,
+          "usefulness_gap": -0.025462962962963038,
+          "accepted": 0,
+          "failed": [
+            "selectivity",
+            "usefulness"
+          ]
+        },
+        "9502": {
+          "h0_bits": 1.3006125090525342,
+          "natural_trigger_rate": 0.0,
+          "selectivity_tension": 0.0,
+          "specificity_js": 0.6341982370080022,
+          "usefulness_gap": -0.14120370370370364,
+          "accepted": 0,
+          "failed": [
+            "selectivity",
+            "usefulness"
+          ]
+        },
+        "9503": {
+          "h0_bits": 1.2953727414588825,
+          "natural_trigger_rate": 0.0,
+          "selectivity_tension": 0.0,
+          "specificity_js": 0.4718574523826542,
+          "usefulness_gap": -0.09259259259259263,
+          "accepted": 0,
+          "failed": [
+            "selectivity",
+            "usefulness"
+          ]
+        },
+        "9504": {
+          "h0_bits": 1.2497751504953332,
+          "natural_trigger_rate": 0.0,
+          "selectivity_tension": 0.0,
+          "specificity_js": 0.5341782508012952,
+          "usefulness_gap": -0.020833333333333297,
+          "accepted": 0,
+          "failed": [
+            "selectivity",
+            "usefulness"
+          ]
+        },
+        "9505": {
+          "h0_bits": 1.2731979098820934,
+          "natural_trigger_rate": 0.0,
+          "selectivity_tension": 0.0,
+          "specificity_js": 0.454848878679082,
+          "usefulness_gap": -0.027777777777777773,
+          "accepted": 0,
+          "failed": [
+            "selectivity",
+            "usefulness"
+          ]
+        }
+      },
+      "accepts": 0,
+      "majority_verdict": 0,
+      "predicted": 0,
+      "fragile": false,
+      "match": true
+    },
+    "7.0|0.25": {
+      "seeds": {
+        "9501": {
+          "h0_bits": 1.4304620599530224,
+          "natural_trigger_rate": 0.125,
+          "selectivity_tension": 0.4375,
+          "specificity_js": 0.4092698356142274,
+          "usefulness_gap": 0.006944444444444531,
+          "accepted": 0,
+          "failed": [
+            "selectivity"
+          ]
+        },
+        "9502": {
+          "h0_bits": 1.3465210415334867,
+          "natural_trigger_rate": 0.125,
+          "selectivity_tension": 0.4375,
+          "specificity_js": 0.3757106932645314,
+          "usefulness_gap": 0.05555555555555558,
+          "accepted": 0,
+          "failed": [
+            "selectivity"
+          ]
+        },
+        "9503": {
+          "h0_bits": 1.1360119102494448,
+          "natural_trigger_rate": 0.0,
+          "selectivity_tension": 0.0,
+          "specificity_js": 0.2055421321768337,
+          "usefulness_gap": 0.0717592592592592,
+          "accepted": 0,
+          "failed": [
+            "selectivity"
+          ]
+        },
+        "9504": {
+          "h0_bits": 1.2595445981852795,
+          "natural_trigger_rate": 0.0,
+          "selectivity_tension": 0.0,
+          "specificity_js": 0.3386194316021365,
+          "usefulness_gap": -0.08564814814814825,
+          "accepted": 0,
+          "failed": [
+            "selectivity",
+            "usefulness"
+          ]
+        },
+        "9505": {
+          "h0_bits": 1.3140707832357243,
+          "natural_trigger_rate": 0.125,
+          "selectivity_tension": 0.4375,
+          "specificity_js": 0.28117615799149503,
+          "usefulness_gap": -0.03009259259259267,
+          "accepted": 0,
+          "failed": [
+            "selectivity",
+            "usefulness"
+          ]
+        }
+      },
+      "accepts": 0,
+      "majority_verdict": 0,
+      "predicted": 0,
+      "fragile": false,
+      "match": true
+    },
+    "7.0|0.4": {
+      "seeds": {
+        "9501": {
+          "h0_bits": 1.3845427973818047,
+          "natural_trigger_rate": 0.16666666666666666,
+          "selectivity_tension": 0.5555555555555556,
+          "specificity_js": 0.6558515113920931,
+          "usefulness_gap": -0.09259259259259267,
+          "accepted": 0,
+          "failed": [
+            "usefulness"
+          ]
+        },
+        "9502": {
+          "h0_bits": 1.2936972343689022,
+          "natural_trigger_rate": 0.0,
+          "selectivity_tension": 0.0,
+          "specificity_js": 0.5007041554279722,
+          "usefulness_gap": -0.02777777777777783,
+          "accepted": 0,
+          "failed": [
+            "selectivity",
+            "usefulness"
+          ]
+        },
+        "9503": {
+          "h0_bits": 1.4001916948875595,
+          "natural_trigger_rate": 0.16666666666666666,
+          "selectivity_tension": 0.5555555555555556,
+          "specificity_js": 0.21132055017718945,
+          "usefulness_gap": -0.1226851851851851,
+          "accepted": 0,
+          "failed": [
+            "usefulness"
+          ]
+        },
+        "9504": {
+          "h0_bits": 1.491763693476367,
+          "natural_trigger_rate": 0.16666666666666666,
+          "selectivity_tension": 0.5555555555555556,
+          "specificity_js": 0.4728482114280632,
+          "usefulness_gap": -0.22222222222222232,
+          "accepted": 0,
+          "failed": [
+            "usefulness"
+          ]
+        },
+        "9505": {
+          "h0_bits": 1.4267813328463925,
+          "natural_trigger_rate": 0.16666666666666666,
+          "selectivity_tension": 0.5555555555555556,
+          "specificity_js": 0.38097444163192024,
+          "usefulness_gap": -0.09953703703703703,
+          "accepted": 0,
+          "failed": [
+            "usefulness"
+          ]
+        }
+      },
+      "accepts": 0,
+      "majority_verdict": 0,
+      "predicted": 0,
+      "fragile": false,
+      "match": true
+    },
+    "7.0|0.7": {
+      "seeds": {
+        "9501": {
+          "h0_bits": 1.183781325665879,
+          "natural_trigger_rate": 0.375,
+          "selectivity_tension": 0.9375,
+          "specificity_js": 0.39615889315921177,
+          "usefulness_gap": -0.030092592592592542,
+          "accepted": 0,
+          "failed": [
+            "usefulness"
+          ]
+        },
+        "9502": {
+          "h0_bits": 1.4608350969056676,
+          "natural_trigger_rate": 0.375,
+          "selectivity_tension": 0.9375,
+          "specificity_js": 0.2828582581464983,
+          "usefulness_gap": -0.22222222222222224,
+          "accepted": 0,
+          "failed": [
+            "usefulness"
+          ]
+        },
+        "9503": {
+          "h0_bits": 1.2827894065437742,
+          "natural_trigger_rate": 0.375,
+          "selectivity_tension": 0.9375,
+          "specificity_js": 0.41498911817191525,
+          "usefulness_gap": -0.22685185185185178,
+          "accepted": 0,
+          "failed": [
+            "usefulness"
+          ]
+        },
+        "9504": {
+          "h0_bits": 1.4610230321389592,
+          "natural_trigger_rate": 0.375,
+          "selectivity_tension": 0.9375,
+          "specificity_js": 0.5313518156681,
+          "usefulness_gap": 0.046296296296296176,
+          "accepted": 1,
+          "failed": []
+        },
+        "9505": {
+          "h0_bits": 1.202582361074748,
+          "natural_trigger_rate": 0.375,
+          "selectivity_tension": 0.9375,
+          "specificity_js": 0.6159411437798118,
+          "usefulness_gap": 0.07175925925925918,
+          "accepted": 1,
+          "failed": []
+        }
+      },
+      "accepts": 2,
+      "majority_verdict": 0,
+      "predicted": 0,
+      "fragile": false,
+      "match": true
+    },
+    "10.0|0.1": {
+      "seeds": {
+        "9501": {
+          "h0_bits": 1.2955110545862702,
+          "natural_trigger_rate": 0.0,
+          "selectivity_tension": 0.0,
+          "specificity_js": 0.5572605065699611,
+          "usefulness_gap": -0.1435185185185186,
+          "accepted": 0,
+          "failed": [
+            "selectivity",
+            "usefulness"
+          ]
+        },
+        "9502": {
+          "h0_bits": 1.3065210407251138,
+          "natural_trigger_rate": 0.0,
+          "selectivity_tension": 0.0,
+          "specificity_js": 0.6870076575555081,
+          "usefulness_gap": -0.17361111111111108,
+          "accepted": 0,
+          "failed": [
+            "selectivity",
+            "usefulness"
+          ]
+        },
+        "9503": {
+          "h0_bits": 1.3089719769027925,
+          "natural_trigger_rate": 0.0,
+          "selectivity_tension": 0.0,
+          "specificity_js": 0.6110166556877762,
+          "usefulness_gap": -0.08912037037037028,
+          "accepted": 0,
+          "failed": [
+            "selectivity",
+            "usefulness"
+          ]
+        },
+        "9504": {
+          "h0_bits": 1.2497751504953332,
+          "natural_trigger_rate": 0.0,
+          "selectivity_tension": 0.0,
+          "specificity_js": 0.5371875946918097,
+          "usefulness_gap": -0.01851851851851849,
+          "accepted": 0,
+          "failed": [
+            "selectivity",
+            "usefulness"
+          ]
+        },
+        "9505": {
+          "h0_bits": 1.2789453661362504,
+          "natural_trigger_rate": 0.0,
+          "selectivity_tension": 0.0,
+          "specificity_js": 0.47792208078641746,
+          "usefulness_gap": -0.009259259259259264,
+          "accepted": 0,
+          "failed": [
+            "selectivity",
+            "usefulness"
+          ]
+        }
+      },
+      "accepts": 0,
+      "majority_verdict": 0,
+      "predicted": 0,
+      "fragile": false,
+      "match": true
+    },
+    "10.0|0.25": {
+      "seeds": {
+        "9501": {
+          "h0_bits": 1.394913529735563,
+          "natural_trigger_rate": 0.125,
+          "selectivity_tension": 0.4375,
+          "specificity_js": 0.3805487055553867,
+          "usefulness_gap": 0.7199074074074074,
+          "accepted": 0,
+          "failed": [
+            "selectivity"
+          ]
+        },
+        "9502": {
+          "h0_bits": 1.398879949806059,
+          "natural_trigger_rate": 0.125,
+          "selectivity_tension": 0.4375,
+          "specificity_js": 0.30644996198387614,
+          "usefulness_gap": 0.798611111111111,
+          "accepted": 0,
+          "failed": [
+            "selectivity"
+          ]
+        },
+        "9503": {
+          "h0_bits": 1.3848075813341778,
+          "natural_trigger_rate": 0.125,
+          "selectivity_tension": 0.4375,
+          "specificity_js": 0.3667989366493261,
+          "usefulness_gap": 0.7789351851851851,
+          "accepted": 0,
+          "failed": [
+            "selectivity"
+          ]
+        },
+        "9504": {
+          "h0_bits": 1.2645855335025982,
+          "natural_trigger_rate": 0.0,
+          "selectivity_tension": 0.0,
+          "specificity_js": 0.3333903809111849,
+          "usefulness_gap": -0.09027777777777786,
+          "accepted": 0,
+          "failed": [
+            "selectivity",
+            "usefulness"
+          ]
+        },
+        "9505": {
+          "h0_bits": 1.4481322966490522,
+          "natural_trigger_rate": 0.125,
+          "selectivity_tension": 0.4375,
+          "specificity_js": 0.3083005522196988,
+          "usefulness_gap": 0.6145833333333334,
+          "accepted": 0,
+          "failed": [
+            "selectivity"
+          ]
+        }
+      },
+      "accepts": 0,
+      "majority_verdict": 0,
+      "predicted": 0,
+      "fragile": true,
+      "match": true
+    },
+    "10.0|0.4": {
+      "seeds": {
+        "9501": {
+          "h0_bits": 1.4541192108806253,
+          "natural_trigger_rate": 0.16666666666666666,
+          "selectivity_tension": 0.5555555555555556,
+          "specificity_js": 0.7396950137200805,
+          "usefulness_gap": 0.17824074074074067,
+          "accepted": 1,
+          "failed": []
+        },
+        "9502": {
+          "h0_bits": 1.4546014866350818,
+          "natural_trigger_rate": 0.16666666666666666,
+          "selectivity_tension": 0.5555555555555556,
+          "specificity_js": 0.5249959445349799,
+          "usefulness_gap": 0.11689814814814814,
+          "accepted": 1,
+          "failed": []
+        },
+        "9503": {
+          "h0_bits": 1.4421594642146625,
+          "natural_trigger_rate": 0.16666666666666666,
+          "selectivity_tension": 0.5555555555555556,
+          "specificity_js": 0.19074708516509564,
+          "usefulness_gap": 0.7118055555555555,
+          "accepted": 0,
+          "failed": [
+            "specificity"
+          ]
+        },
+        "9504": {
+          "h0_bits": 1.4252638805517757,
+          "natural_trigger_rate": 0.16666666666666666,
+          "selectivity_tension": 0.5555555555555556,
+          "specificity_js": 0.3874513184712729,
+          "usefulness_gap": 0.8159722222222222,
+          "accepted": 1,
+          "failed": []
+        },
+        "9505": {
+          "h0_bits": 1.4385668776600127,
+          "natural_trigger_rate": 0.16666666666666666,
+          "selectivity_tension": 0.5555555555555556,
+          "specificity_js": 0.3443675109750846,
+          "usefulness_gap": 0.6076388888888888,
+          "accepted": 1,
+          "failed": []
+        }
+      },
+      "accepts": 4,
+      "majority_verdict": 1,
+      "predicted": 1,
+      "fragile": false,
+      "match": true
+    },
+    "10.0|0.7": {
+      "seeds": {
+        "9501": {
+          "h0_bits": 1.342904467724325,
+          "natural_trigger_rate": 0.375,
+          "selectivity_tension": 0.9375,
+          "specificity_js": 0.32886251692178287,
+          "usefulness_gap": 0.5231481481481481,
+          "accepted": 1,
+          "failed": []
+        },
+        "9502": {
+          "h0_bits": 1.4257763378765604,
+          "natural_trigger_rate": 0.375,
+          "selectivity_tension": 0.9375,
+          "specificity_js": 0.4917969625433552,
+          "usefulness_gap": 0.5347222222222222,
+          "accepted": 1,
+          "failed": []
+        },
+        "9503": {
+          "h0_bits": 1.3925920069729376,
+          "natural_trigger_rate": 0.375,
+          "selectivity_tension": 0.9375,
+          "specificity_js": 0.4648433433223315,
+          "usefulness_gap": 0.3506944444444444,
+          "accepted": 1,
+          "failed": []
+        },
+        "9504": {
+          "h0_bits": 1.4511037378373952,
+          "natural_trigger_rate": 0.375,
+          "selectivity_tension": 0.9375,
+          "specificity_js": 0.5293497658621916,
+          "usefulness_gap": 0.6261574074074074,
+          "accepted": 1,
+          "failed": []
+        },
+        "9505": {
+          "h0_bits": 1.2598584030988833,
+          "natural_trigger_rate": 0.375,
+          "selectivity_tension": 0.9375,
+          "specificity_js": 0.6465681474105797,
+          "usefulness_gap": 0.3136574074074073,
+          "accepted": 1,
+          "failed": []
+        }
+      },
+      "accepts": 5,
+      "majority_verdict": 1,
+      "predicted": 1,
+      "fragile": false,
+      "match": true
+    },
+    "13.0|0.1": {
+      "seeds": {
+        "9501": {
+          "h0_bits": 1.4260691126274179,
+          "natural_trigger_rate": 0.25,
+          "selectivity_tension": 0.75,
+          "specificity_js": 0.5355688712055432,
+          "usefulness_gap": 0.23842592592592596,
+          "accepted": 1,
+          "failed": []
+        },
+        "9502": {
+          "h0_bits": 1.4185366816171558,
+          "natural_trigger_rate": 0.25,
+          "selectivity_tension": 0.75,
+          "specificity_js": 0.6779222947869913,
+          "usefulness_gap": 0.2916666666666667,
+          "accepted": 1,
+          "failed": []
+        },
+        "9503": {
+          "h0_bits": 1.4045452101569083,
+          "natural_trigger_rate": 0.2916666666666667,
+          "selectivity_tension": 0.8263888888888888,
+          "specificity_js": 0.6026791451811065,
+          "usefulness_gap": 1.0509259259259258,
+          "accepted": 1,
+          "failed": []
+        },
+        "9504": {
+          "h0_bits": 1.2497751504953332,
+          "natural_trigger_rate": 0.0,
+          "selectivity_tension": 0.0,
+          "specificity_js": 0.5578338860938099,
+          "usefulness_gap": -0.03472222222222221,
+          "accepted": 0,
+          "failed": [
+            "selectivity",
+            "usefulness"
+          ]
+        },
+        "9505": {
+          "h0_bits": 1.3276160898786757,
+          "natural_trigger_rate": 0.20833333333333334,
+          "selectivity_tension": 0.6597222222222222,
+          "specificity_js": 0.47838859598811717,
+          "usefulness_gap": -0.009259259259259281,
+          "accepted": 0,
+          "failed": [
+            "usefulness"
+          ]
+        }
+      },
+      "accepts": 3,
+      "majority_verdict": 1,
+      "predicted": 1,
+      "fragile": false,
+      "match": true
+    },
+    "13.0|0.25": {
+      "seeds": {
+        "9501": {
+          "h0_bits": 1.3788611032714135,
+          "natural_trigger_rate": 0.125,
+          "selectivity_tension": 0.4375,
+          "specificity_js": 0.3910087060833591,
+          "usefulness_gap": 1.375,
+          "accepted": 0,
+          "failed": [
+            "selectivity"
+          ]
+        },
+        "9502": {
+          "h0_bits": 1.3679307288467155,
+          "natural_trigger_rate": 0.125,
+          "selectivity_tension": 0.4375,
+          "specificity_js": 0.32698866613329614,
+          "usefulness_gap": 1.3541666666666667,
+          "accepted": 0,
+          "failed": [
+            "selectivity"
+          ]
+        },
+        "9503": {
+          "h0_bits": 1.3281740086609313,
+          "natural_trigger_rate": 0.2916666666666667,
+          "selectivity_tension": 0.8263888888888888,
+          "specificity_js": 0.36832166837581104,
+          "usefulness_gap": 1.5416666666666667,
+          "accepted": 1,
+          "failed": []
+        },
+        "9504": {
+          "h0_bits": 1.2226901642513097,
+          "natural_trigger_rate": 0.0,
+          "selectivity_tension": 0.0,
+          "specificity_js": 0.36151587790008993,
+          "usefulness_gap": -0.027777777777777846,
+          "accepted": 0,
+          "failed": [
+            "selectivity",
+            "usefulness"
+          ]
+        },
+        "9505": {
+          "h0_bits": 1.3558207499097927,
+          "natural_trigger_rate": 0.2916666666666667,
+          "selectivity_tension": 0.8263888888888888,
+          "specificity_js": 0.32019743213113006,
+          "usefulness_gap": 1.3171296296296298,
+          "accepted": 1,
+          "failed": []
+        }
+      },
+      "accepts": 2,
+      "majority_verdict": 0,
+      "predicted": 1,
+      "fragile": false,
+      "match": false
+    },
+    "13.0|0.4": {
+      "seeds": {
+        "9501": {
+          "h0_bits": 1.399316134672352,
+          "natural_trigger_rate": 0.16666666666666666,
+          "selectivity_tension": 0.5555555555555556,
+          "specificity_js": 0.7051489223678299,
+          "usefulness_gap": 0.9722222222222222,
+          "accepted": 1,
+          "failed": []
+        },
+        "9502": {
+          "h0_bits": 1.4784121657300933,
+          "natural_trigger_rate": 0.16666666666666666,
+          "selectivity_tension": 0.5555555555555556,
+          "specificity_js": 0.6974766992108724,
+          "usefulness_gap": 0.8541666666666666,
+          "accepted": 1,
+          "failed": []
+        },
+        "9503": {
+          "h0_bits": 1.3875306596334671,
+          "natural_trigger_rate": 0.16666666666666666,
+          "selectivity_tension": 0.5555555555555556,
+          "specificity_js": 0.4397535667982197,
+          "usefulness_gap": 1.224537037037037,
+          "accepted": 1,
+          "failed": []
+        },
+        "9504": {
+          "h0_bits": 1.4586853223275174,
+          "natural_trigger_rate": 0.16666666666666666,
+          "selectivity_tension": 0.5555555555555556,
+          "specificity_js": 0.3819813662925257,
+          "usefulness_gap": 1.2083333333333333,
+          "accepted": 1,
+          "failed": []
+        },
+        "9505": {
+          "h0_bits": 1.3488501233771233,
+          "natural_trigger_rate": 0.2916666666666667,
+          "selectivity_tension": 0.8263888888888888,
+          "specificity_js": 0.47973491919176164,
+          "usefulness_gap": 1.25,
+          "accepted": 1,
+          "failed": []
+        }
+      },
+      "accepts": 5,
+      "majority_verdict": 1,
+      "predicted": 1,
+      "fragile": false,
+      "match": true
+    },
+    "13.0|0.7": {
+      "seeds": {
+        "9501": {
+          "h0_bits": 1.3392828520364093,
+          "natural_trigger_rate": 0.375,
+          "selectivity_tension": 0.9375,
+          "specificity_js": 0.4114699784648832,
+          "usefulness_gap": 1.1921296296296295,
+          "accepted": 1,
+          "failed": []
+        },
+        "9502": {
+          "h0_bits": 1.4487648591234565,
+          "natural_trigger_rate": 0.375,
+          "selectivity_tension": 0.9375,
+          "specificity_js": 0.40317368513624463,
+          "usefulness_gap": 1.2939814814814816,
+          "accepted": 1,
+          "failed": []
+        },
+        "9503": {
+          "h0_bits": 1.2883645867853595,
+          "natural_trigger_rate": 0.375,
+          "selectivity_tension": 0.9375,
+          "specificity_js": 0.2947068530272244,
+          "usefulness_gap": 1.3032407407407407,
+          "accepted": 1,
+          "failed": []
+        },
+        "9504": {
+          "h0_bits": 1.3164904935572286,
+          "natural_trigger_rate": 0.375,
+          "selectivity_tension": 0.9375,
+          "specificity_js": 0.6117809506801302,
+          "usefulness_gap": 0.9490740740740741,
+          "accepted": 1,
+          "failed": []
+        },
+        "9505": {
+          "h0_bits": 1.2456189099689372,
+          "natural_trigger_rate": 0.375,
+          "selectivity_tension": 0.9375,
+          "specificity_js": 0.6880749991336584,
+          "usefulness_gap": 0.8796296296296297,
+          "accepted": 1,
+          "failed": []
+        }
+      },
+      "accepts": 5,
+      "majority_verdict": 1,
+      "predicted": 1,
+      "fragile": false,
+      "match": true
+    }
+  },
+  "registered_outcomes": {
+    "P2D1_nonfragile_match": "14/15",
+    "P2D1_pass": false,
+    "P2D2_nonrectangular": true
+  }
+}

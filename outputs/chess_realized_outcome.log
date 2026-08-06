@@ -1,0 +1,12 @@
+2015_08: matched 400, delta_flag 0.0017857142857142794, delta_unflag -0.0025369978858351683
+2016_03: matched 400, delta_flag 0.02398255813953487, delta_unflag 0.04715768425061889
+{
+  "n": 800,
+  "interaction_delta_flag_minus_unflag": -0.008667828644235043,
+  "permutation_p_one_sided": 0.5366463353664633
+}
+{
+  "RO1_interaction_positive_pooled": false,
+  "RO2_delta_flagged_positive_each_month": true
+}
+Wrote /home/Yixiang/MPARL/GOGOGO/outputs/chess_realized_outcome.json

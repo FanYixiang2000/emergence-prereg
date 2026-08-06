@@ -1,0 +1,229 @@
+{
+  "status": "universal recipe on public Overcooked (U-4a..c frozen in docstring); reduced 20-episode budget disclosed",
+  "seeds": {
+    "77002": {
+      "learned": {
+        "universal": 1,
+        "hand": 1,
+        "universal_failed": [],
+        "k": 4
+      },
+      "initial_twin": {
+        "universal": 0,
+        "hand": 0,
+        "universal_failed": [
+          "potential",
+          "conditional_selectivity",
+          "specificity",
+          "usefulness",
+          "acquisition"
+        ],
+        "k": 4
+      },
+      "scripted_roles": {
+        "universal": 0,
+        "hand": 0,
+        "universal_failed": [
+          "conditional_selectivity",
+          "endogeneity",
+          "acquisition"
+        ],
+        "k": 4
+      },
+      "bc_clone": {
+        "universal": 0,
+        "hand": 0,
+        "universal_failed": [
+          "conditional_selectivity",
+          "endogeneity",
+          "acquisition"
+        ],
+        "k": 4
+      },
+      "untrained_other": {
+        "universal": 0,
+        "hand": 0,
+        "universal_failed": [
+          "potential",
+          "conditional_selectivity",
+          "specificity",
+          "usefulness",
+          "acquisition"
+        ],
+        "k": 4
+      }
+    },
+    "77007": {
+      "learned": {
+        "universal": 0,
+        "hand": 1,
+        "universal_failed": [
+          "specificity"
+        ],
+        "k": 4
+      },
+      "initial_twin": {
+        "universal": 0,
+        "hand": 0,
+        "universal_failed": [
+          "potential",
+          "conditional_selectivity",
+          "specificity",
+          "usefulness",
+          "acquisition"
+        ],
+        "k": 4
+      },
+      "scripted_roles": {
+        "universal": 0,
+        "hand": 0,
+        "universal_failed": [
+          "conditional_selectivity",
+          "endogeneity",
+          "acquisition"
+        ],
+        "k": 4
+      },
+      "bc_clone": {
+        "universal": 0,
+        "hand": 0,
+        "universal_failed": [
+          "conditional_selectivity",
+          "endogeneity",
+          "acquisition"
+        ],
+        "k": 4
+      },
+      "untrained_other": {
+        "universal": 0,
+        "hand": 0,
+        "universal_failed": [
+          "potential",
+          "conditional_selectivity",
+          "specificity",
+          "usefulness",
+          "acquisition"
+        ],
+        "k": 4
+      }
+    },
+    "77010": {
+      "learned": {
+        "universal": 0,
+        "hand": 0,
+        "universal_failed": [
+          "conditional_selectivity",
+          "specificity",
+          "acquisition"
+        ],
+        "k": 4
+      },
+      "initial_twin": {
+        "universal": 0,
+        "hand": 0,
+        "universal_failed": [
+          "potential",
+          "conditional_selectivity",
+          "specificity",
+          "usefulness",
+          "acquisition"
+        ],
+        "k": 4
+      },
+      "scripted_roles": {
+        "universal": 0,
+        "hand": 0,
+        "universal_failed": [
+          "conditional_selectivity",
+          "endogeneity",
+          "acquisition"
+        ],
+        "k": 4
+      },
+      "bc_clone": {
+        "universal": 0,
+        "hand": 0,
+        "universal_failed": [
+          "conditional_selectivity",
+          "endogeneity",
+          "acquisition"
+        ],
+        "k": 4
+      },
+      "untrained_other": {
+        "universal": 0,
+        "hand": 0,
+        "universal_failed": [
+          "potential",
+          "conditional_selectivity",
+          "specificity",
+          "usefulness",
+          "acquisition"
+        ],
+        "k": 4
+      }
+    },
+    "77005": {
+      "learned": {
+        "universal": 0,
+        "hand": 0,
+        "universal_failed": [
+          "conditional_selectivity",
+          "specificity",
+          "usefulness",
+          "acquisition"
+        ],
+        "k": 4
+      },
+      "initial_twin": {
+        "universal": 0,
+        "hand": 0,
+        "universal_failed": [
+          "potential",
+          "conditional_selectivity",
+          "specificity",
+          "usefulness",
+          "acquisition"
+        ],
+        "k": 4
+      },
+      "scripted_roles": {
+        "universal": 0,
+        "hand": 0,
+        "universal_failed": [
+          "conditional_selectivity",
+          "endogeneity",
+          "acquisition"
+        ],
+        "k": 4
+      },
+      "bc_clone": {
+        "universal": 0,
+        "hand": 0,
+        "universal_failed": [
+          "conditional_selectivity",
+          "endogeneity",
+          "acquisition"
+        ],
+        "k": 4
+      },
+      "untrained_other": {
+        "universal": 0,
+        "hand": 0,
+        "universal_failed": [
+          "potential",
+          "conditional_selectivity",
+          "specificity",
+          "usefulness",
+          "acquisition"
+        ],
+        "k": 4
+      }
+    }
+  },
+  "registered_outcomes": {
+    "U4a_agreement": "19/20 -> True",
+    "U4b_controls_rejected": "16/16 -> True",
+    "U4c_learned_pattern_preserved": false
+  }
+}

@@ -1,0 +1,17 @@
+seed 95311 trained; final O=0.6789 r3=0.996
+seed 95311: dBIC=48.323 t*=550 onset=True persist=True r3_cross=1150
+seed 95312 trained; final O=0.6805 r3=0.995
+seed 95312: dBIC=38.117 t*=525 onset=True persist=True r3_cross=1125
+seed 95313 trained; final O=0.6809 r3=0.995
+seed 95313: dBIC=72.642 t*=550 onset=True persist=True r3_cross=1225
+{
+  "TRICBP1_onset_breakpoint": true,
+  "TRICBP2_persistence": true,
+  "TRICBP3_collapse_leads_capability": true,
+  "passing_seeds": [
+    "95311",
+    "95312",
+    "95313"
+  ]
+}
+Wrote /home/Yixiang/MPARL/GOGOGO/outputs/tri_c_breakpoint.json

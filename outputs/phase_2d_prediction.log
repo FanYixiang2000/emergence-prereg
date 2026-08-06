@@ -1,0 +1,22 @@
+G=3.0 w=0.1: accepts 0/5, majority 0, predicted 0, MATCH
+G=3.0 w=0.25: accepts 0/5, majority 0, predicted 0, MATCH
+G=3.0 w=0.4: accepts 0/5, majority 0, predicted 0, MATCH
+G=3.0 w=0.7: accepts 0/5, majority 0, predicted 0, MATCH
+G=7.0 w=0.1: accepts 0/5, majority 0, predicted 0, MATCH
+G=7.0 w=0.25: accepts 0/5, majority 0, predicted 0, MATCH
+G=7.0 w=0.4: accepts 0/5, majority 0, predicted 0, MATCH
+G=7.0 w=0.7: accepts 2/5, majority 0, predicted 0, MATCH
+G=10.0 w=0.1: accepts 0/5, majority 0, predicted 0, MATCH
+G=10.0 w=0.25: accepts 0/5, majority 0, predicted 0, MATCH (fragile, unscored)
+G=10.0 w=0.4: accepts 4/5, majority 1, predicted 1, MATCH
+G=10.0 w=0.7: accepts 5/5, majority 1, predicted 1, MATCH
+G=13.0 w=0.1: accepts 3/5, majority 1, predicted 1, MATCH
+G=13.0 w=0.25: accepts 2/5, majority 0, predicted 1, MISS
+G=13.0 w=0.4: accepts 5/5, majority 1, predicted 1, MATCH
+G=13.0 w=0.7: accepts 5/5, majority 1, predicted 1, MATCH
+{
+  "P2D1_nonfragile_match": "14/15",
+  "P2D1_pass": false,
+  "P2D2_nonrectangular": true
+}
+Wrote /home/Yixiang/MPARL/GOGOGO/outputs/phase_2d_prediction.json

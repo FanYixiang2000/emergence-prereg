@@ -1,0 +1,646 @@
+{
+  "scales": {
+    "160m": {
+      "collapse": {
+        "agreement": {
+          "status": "ok",
+          "emergent": 1,
+          "passes": {
+            "potential": true,
+            "burstiness": true,
+            "usefulness": true,
+            "endogeneity": true
+          },
+          "window_epoch": 1000,
+          "usefulness_acc_gain": 0.46875,
+          "burstiness_ratio": 27.612616770261408,
+          "final_acc": 0.9305555820465088
+        },
+        "random_target": {
+          "status": "ok",
+          "emergent": 0,
+          "passes": {
+            "potential": true,
+            "burstiness": true,
+            "usefulness": false,
+            "endogeneity": true
+          },
+          "window_epoch": 1000,
+          "usefulness_acc_gain": 0.0451388955116272,
+          "burstiness_ratio": 27.612616770261408,
+          "final_acc": 0.5069444179534912
+        },
+        "shuffled_vocab": {
+          "status": "ok",
+          "emergent": 0,
+          "passes": {
+            "potential": true,
+            "burstiness": true,
+            "usefulness": false,
+            "endogeneity": true
+          },
+          "window_epoch": 2000,
+          "usefulness_acc_gain": -0.024305522441864014,
+          "burstiness_ratio": 20.54689210352584,
+          "final_acc": 0.5104166865348816
+        },
+        "integrity": {
+          "n_steps": 21,
+          "diff_step0_step1": {
+            "test_acc": 0.0,
+            "test_entropy_bits": 0.0,
+            "collapse_bits": 0.0
+          },
+          "identical_step0_step1": true,
+          "diff_step0_step1000": {
+            "test_acc": 0.3333333134651184,
+            "test_entropy_bits": 8.384048461914062,
+            "collapse_bits": 9.01368522644043
+          },
+          "identical_step0_step1000": false,
+          "diff_step1000_step143000": {
+            "test_acc": 0.09722226858139038,
+            "test_entropy_bits": 0.11853837966918945,
+            "collapse_bits": 0.17400169372558594
+          },
+          "identical_step1000_step143000": false
+        },
+        "skipped_steps": [],
+        "download_base": null
+      },
+      "tail": {
+        "head_facts": {
+          "status": "ok",
+          "emergent": 1,
+          "passes": {
+            "potential": true,
+            "burstiness": true,
+            "usefulness": true,
+            "endogeneity": true
+          },
+          "window_epoch": 2000,
+          "usefulness_acc_gain": 0.35,
+          "burstiness_ratio": 16.41662466514563,
+          "final_acc": 0.9
+        },
+        "tail_facts": {
+          "status": "ok",
+          "emergent": 0,
+          "passes": {
+            "potential": true,
+            "burstiness": false,
+            "usefulness": true,
+            "endogeneity": true
+          },
+          "window_epoch": 2000,
+          "usefulness_acc_gain": 0.37037037037037035,
+          "burstiness_ratio": 3.161643889538774,
+          "final_acc": 0.9259259259259259
+        },
+        "tail_words": {
+          "status": "ok",
+          "emergent": 0,
+          "passes": {
+            "potential": true,
+            "burstiness": true,
+            "usefulness": false,
+            "endogeneity": true
+          },
+          "window_epoch": 512,
+          "usefulness_acc_gain": 0.05555555555555558,
+          "burstiness_ratio": 21.26573433292148,
+          "final_acc": 0.7222222222222222
+        },
+        "integrity": {
+          "n_steps": 21,
+          "diff_step0_step1": {
+            "test_acc": 0.0,
+            "test_entropy_bits": 0.0,
+            "collapse_bits": 0.0
+          },
+          "identical_step0_step1": true,
+          "diff_step0_step1000": {
+            "test_acc": 0.14999999999999997,
+            "test_entropy_bits": 7.049716949462891,
+            "collapse_bits": 7.7244415283203125
+          },
+          "identical_step0_step1000": false,
+          "diff_step1000_step143000": {
+            "test_acc": 0.30000000000000004,
+            "test_entropy_bits": 0.34989356994628906,
+            "collapse_bits": 0.4868764877319336
+          },
+          "identical_step1000_step143000": false
+        },
+        "skipped_steps": []
+      }
+    },
+    "410m": {
+      "collapse": {
+        "agreement": {
+          "status": "ok",
+          "emergent": 1,
+          "passes": {
+            "potential": true,
+            "burstiness": true,
+            "usefulness": true,
+            "endogeneity": true
+          },
+          "window_epoch": 1000,
+          "usefulness_acc_gain": 0.4618055820465088,
+          "burstiness_ratio": 10.962970345061612,
+          "final_acc": 0.8715277910232544
+        },
+        "random_target": {
+          "status": "ok",
+          "emergent": 0,
+          "passes": {
+            "potential": true,
+            "burstiness": false,
+            "usefulness": false,
+            "endogeneity": true
+          },
+          "window_epoch": 4000,
+          "usefulness_acc_gain": 0.0034722089767456055,
+          "burstiness_ratio": 3.5456238362856154,
+          "final_acc": 0.5277777910232544
+        },
+        "shuffled_vocab": {
+          "status": "ok",
+          "emergent": 0,
+          "passes": {
+            "potential": true,
+            "burstiness": false,
+            "usefulness": false,
+            "endogeneity": true
+          },
+          "window_epoch": 8,
+          "usefulness_acc_gain": 0.04166668653488159,
+          "burstiness_ratio": 3.7807951224722984,
+          "final_acc": 0.4618055522441864
+        },
+        "integrity": {
+          "n_steps": 21,
+          "diff_step0_step1": {
+            "test_acc": 0.0,
+            "test_entropy_bits": 0.0,
+            "collapse_bits": 0.0
+          },
+          "identical_step0_step1": true,
+          "diff_step0_step1000": {
+            "test_acc": 0.2638888657093048,
+            "test_entropy_bits": 7.914475440979004,
+            "collapse_bits": 8.417116165161133
+          },
+          "identical_step0_step1000": false,
+          "diff_step1000_step143000": {
+            "test_acc": 0.11805558204650879,
+            "test_entropy_bits": 0.6181092262268066,
+            "collapse_bits": 0.6932573318481445
+          },
+          "identical_step1000_step143000": false
+        },
+        "skipped_steps": [],
+        "download_base": null
+      },
+      "tail": {
+        "head_facts": {
+          "status": "missing"
+        },
+        "tail_facts": {
+          "status": "missing"
+        },
+        "tail_words": {
+          "status": "missing"
+        },
+        "integrity": {
+          "n_steps": 0
+        },
+        "skipped_steps": []
+      }
+    },
+    "1b": {
+      "collapse": {
+        "agreement": {
+          "status": "ok",
+          "emergent": 1,
+          "passes": {
+            "potential": true,
+            "burstiness": true,
+            "usefulness": true,
+            "endogeneity": true
+          },
+          "window_epoch": 1000,
+          "usefulness_acc_gain": 0.4652777910232544,
+          "burstiness_ratio": 11.876944529311578,
+          "final_acc": 0.9270833134651184
+        },
+        "random_target": {
+          "status": "ok",
+          "emergent": 0,
+          "passes": {
+            "potential": true,
+            "burstiness": true,
+            "usefulness": false,
+            "endogeneity": true
+          },
+          "window_epoch": 2000,
+          "usefulness_acc_gain": 0.0659722089767456,
+          "burstiness_ratio": 11.876944529311578,
+          "final_acc": 0.5451388955116272
+        },
+        "shuffled_vocab": {
+          "status": "ok",
+          "emergent": 0,
+          "passes": {
+            "potential": true,
+            "burstiness": true,
+            "usefulness": false,
+            "endogeneity": true
+          },
+          "window_epoch": 1000,
+          "usefulness_acc_gain": -0.027777761220932007,
+          "burstiness_ratio": 11.876944529311578,
+          "final_acc": 0.440972238779068
+        },
+        "integrity": {
+          "n_steps": 21,
+          "diff_step0_step1": {
+            "test_acc": 0.0,
+            "test_entropy_bits": 0.0,
+            "collapse_bits": 0.0
+          },
+          "identical_step0_step1": true,
+          "diff_step0_step1000": {
+            "test_acc": 0.347222238779068,
+            "test_entropy_bits": 8.094332695007324,
+            "collapse_bits": 8.695857048034668
+          },
+          "identical_step0_step1000": false,
+          "diff_step1000_step143000": {
+            "test_acc": 0.09027773141860962,
+            "test_entropy_bits": 0.050438880920410156,
+            "collapse_bits": 0.04214191436767578
+          },
+          "identical_step1000_step143000": false
+        },
+        "skipped_steps": [],
+        "download_base": null
+      },
+      "tail": {
+        "head_facts": {
+          "status": "ok",
+          "emergent": 0,
+          "passes": {
+            "potential": true,
+            "burstiness": false,
+            "usefulness": true,
+            "endogeneity": true
+          },
+          "window_epoch": 2000,
+          "usefulness_acc_gain": 0.3999999999999999,
+          "burstiness_ratio": 2.5827717038795357,
+          "final_acc": 1.0
+        },
+        "tail_facts": {
+          "status": "ok",
+          "emergent": 0,
+          "passes": {
+            "potential": true,
+            "burstiness": false,
+            "usefulness": true,
+            "endogeneity": true
+          },
+          "window_epoch": 2000,
+          "usefulness_acc_gain": 0.5185185185185186,
+          "burstiness_ratio": 1.262175130458978,
+          "final_acc": 1.0
+        },
+        "tail_words": {
+          "status": "ok",
+          "emergent": 0,
+          "passes": {
+            "potential": true,
+            "burstiness": true,
+            "usefulness": false,
+            "endogeneity": true
+          },
+          "window_epoch": 512,
+          "usefulness_acc_gain": 0.13888888888888884,
+          "burstiness_ratio": 31.960949219867423,
+          "final_acc": 0.8055555555555556
+        },
+        "integrity": {
+          "n_steps": 21,
+          "diff_step0_step1": {
+            "test_acc": 0.0,
+            "test_entropy_bits": 0.0,
+            "collapse_bits": 0.0
+          },
+          "identical_step0_step1": true,
+          "diff_step0_step1000": {
+            "test_acc": 0.04999999999999993,
+            "test_entropy_bits": 6.167108535766602,
+            "collapse_bits": 6.8192338943481445
+          },
+          "identical_step0_step1000": false,
+          "diff_step1000_step143000": {
+            "test_acc": 0.44999999999999996,
+            "test_entropy_bits": 1.7230401039123535,
+            "collapse_bits": 1.6741456985473633
+          },
+          "identical_step1000_step143000": false
+        },
+        "skipped_steps": []
+      }
+    },
+    "1.4b": {
+      "collapse": {
+        "agreement": {
+          "status": "ok",
+          "emergent": 1,
+          "passes": {
+            "potential": true,
+            "burstiness": true,
+            "usefulness": true,
+            "endogeneity": true
+          },
+          "window_epoch": 1000,
+          "usefulness_acc_gain": 0.4305555820465088,
+          "burstiness_ratio": 7.259677497604792,
+          "final_acc": 0.9201388955116272
+        },
+        "random_target": {
+          "status": "ok",
+          "emergent": 0,
+          "passes": {
+            "potential": true,
+            "burstiness": false,
+            "usefulness": false,
+            "endogeneity": true
+          },
+          "window_epoch": 2000,
+          "usefulness_acc_gain": 0.04166668653488159,
+          "burstiness_ratio": 3.471440610482608,
+          "final_acc": 0.5590277910232544
+        },
+        "shuffled_vocab": {
+          "status": "ok",
+          "emergent": 0,
+          "passes": {
+            "potential": true,
+            "burstiness": false,
+            "usefulness": false,
+            "endogeneity": true
+          },
+          "window_epoch": 16,
+          "usefulness_acc_gain": -0.017361104488372803,
+          "burstiness_ratio": 4.950281916476291,
+          "final_acc": 0.4513888955116272
+        },
+        "integrity": {
+          "n_steps": 21,
+          "diff_step0_step1": {
+            "test_acc": 0.0,
+            "test_entropy_bits": 0.0,
+            "collapse_bits": 0.0
+          },
+          "identical_step0_step1": true,
+          "diff_step0_step1000": {
+            "test_acc": 0.3993055522441864,
+            "test_entropy_bits": 7.423748970031738,
+            "collapse_bits": 8.028326988220215
+          },
+          "identical_step0_step1000": false,
+          "diff_step1000_step143000": {
+            "test_acc": 0.04166668653488159,
+            "test_entropy_bits": 1.0591378211975098,
+            "collapse_bits": 1.0320072174072266
+          },
+          "identical_step1000_step143000": false
+        },
+        "skipped_steps": [],
+        "download_base": "https://huggingface.co"
+      },
+      "tail": {
+        "head_facts": {
+          "status": "ok",
+          "emergent": 0,
+          "passes": {
+            "potential": true,
+            "burstiness": false,
+            "usefulness": true,
+            "endogeneity": true
+          },
+          "window_epoch": 2000,
+          "usefulness_acc_gain": 0.4,
+          "burstiness_ratio": 2.7628647330392795,
+          "final_acc": 1.0
+        },
+        "tail_facts": {
+          "status": "ok",
+          "emergent": 0,
+          "passes": {
+            "potential": true,
+            "burstiness": false,
+            "usefulness": true,
+            "endogeneity": true
+          },
+          "window_epoch": 2000,
+          "usefulness_acc_gain": 0.40740740740740744,
+          "burstiness_ratio": 4.4071486042882295,
+          "final_acc": 1.0
+        },
+        "tail_words": {
+          "status": "ok",
+          "emergent": 0,
+          "passes": {
+            "potential": true,
+            "burstiness": false,
+            "usefulness": false,
+            "endogeneity": true
+          },
+          "window_epoch": 2000,
+          "usefulness_acc_gain": 0.08333333333333326,
+          "burstiness_ratio": 3.398898779571316,
+          "final_acc": 0.8611111111111112
+        },
+        "integrity": {
+          "n_steps": 21,
+          "diff_step0_step1": {
+            "test_acc": 0.0,
+            "test_entropy_bits": 0.0,
+            "collapse_bits": 0.0
+          },
+          "identical_step0_step1": true,
+          "diff_step0_step1000": {
+            "test_acc": 0.19999999999999996,
+            "test_entropy_bits": 6.183887481689453,
+            "collapse_bits": 6.772247314453125
+          },
+          "identical_step0_step1000": false,
+          "diff_step1000_step143000": {
+            "test_acc": 0.4,
+            "test_entropy_bits": 4.109604835510254,
+            "collapse_bits": 3.9899539947509766
+          },
+          "identical_step1000_step143000": false
+        },
+        "skipped_steps": []
+      }
+    },
+    "2.8b": {
+      "collapse": {
+        "agreement": {
+          "status": "ok",
+          "emergent": 0,
+          "passes": {
+            "potential": true,
+            "burstiness": false,
+            "usefulness": true,
+            "endogeneity": true
+          },
+          "window_epoch": 1000,
+          "usefulness_acc_gain": 0.4166666567325592,
+          "burstiness_ratio": 3.178651425015971,
+          "final_acc": 0.9513888955116272
+        },
+        "random_target": {
+          "status": "ok",
+          "emergent": 0,
+          "passes": {
+            "potential": true,
+            "burstiness": false,
+            "usefulness": false,
+            "endogeneity": true
+          },
+          "window_epoch": 2000,
+          "usefulness_acc_gain": 0.0381944477558136,
+          "burstiness_ratio": 2.7846859679127256,
+          "final_acc": 0.5138888955116272
+        },
+        "shuffled_vocab": {
+          "status": "ok",
+          "emergent": 0,
+          "passes": {
+            "potential": true,
+            "burstiness": true,
+            "usefulness": false,
+            "endogeneity": true
+          },
+          "window_epoch": 512,
+          "usefulness_acc_gain": -0.020833373069763184,
+          "burstiness_ratio": 13.349510184819335,
+          "final_acc": 0.4236111044883728
+        },
+        "integrity": {
+          "n_steps": 20,
+          "diff_step0_step1": {
+            "test_acc": 0.0,
+            "test_entropy_bits": 0.0,
+            "collapse_bits": 0.0
+          },
+          "identical_step0_step1": true,
+          "diff_step0_step1000": {
+            "test_acc": 0.274305522441864,
+            "test_entropy_bits": 8.266951560974121,
+            "collapse_bits": 8.97885799407959
+          },
+          "identical_step0_step1000": false,
+          "diff_step1000_step143000": {
+            "test_acc": 0.1805555820465088,
+            "test_entropy_bits": 0.5111427307128906,
+            "collapse_bits": 0.4606962203979492
+          },
+          "identical_step1000_step143000": false
+        },
+        "skipped_steps": [],
+        "download_base": "https://huggingface.co"
+      },
+      "tail": {
+        "head_facts": {
+          "status": "ok",
+          "emergent": 0,
+          "passes": {
+            "potential": true,
+            "burstiness": false,
+            "usefulness": true,
+            "endogeneity": true
+          },
+          "window_epoch": 2000,
+          "usefulness_acc_gain": 0.4,
+          "burstiness_ratio": 3.715836523222817,
+          "final_acc": 1.0
+        },
+        "tail_facts": {
+          "status": "ok",
+          "emergent": 0,
+          "passes": {
+            "potential": true,
+            "burstiness": false,
+            "usefulness": true,
+            "endogeneity": true
+          },
+          "window_epoch": 2000,
+          "usefulness_acc_gain": 0.5185185185185186,
+          "burstiness_ratio": 3.7913280643167324,
+          "final_acc": 1.0
+        },
+        "tail_words": {
+          "status": "ok",
+          "emergent": 0,
+          "passes": {
+            "potential": true,
+            "burstiness": false,
+            "usefulness": false,
+            "endogeneity": true
+          },
+          "window_epoch": 2000,
+          "usefulness_acc_gain": 0.16666666666666663,
+          "burstiness_ratio": 4.627160186834412,
+          "final_acc": 0.8888888888888888
+        },
+        "integrity": {
+          "n_steps": 20,
+          "diff_step0_step1": {
+            "test_acc": 0.0,
+            "test_entropy_bits": 0.0,
+            "collapse_bits": 0.0
+          },
+          "identical_step0_step1": true,
+          "diff_step0_step1000": {
+            "test_acc": 0.14999999999999997,
+            "test_entropy_bits": 7.170607566833496,
+            "collapse_bits": 7.650820732116699
+          },
+          "identical_step0_step1000": false,
+          "diff_step1000_step143000": {
+            "test_acc": 0.4,
+            "test_entropy_bits": 3.436230182647705,
+            "collapse_bits": 3.3792009353637695
+          },
+          "identical_step1000_step143000": false
+        },
+        "skipped_steps": []
+      }
+    }
+  },
+  "prediction_counts": {
+    "agreement_passes": [
+      4,
+      5
+    ],
+    "controls_rejected": [
+      10,
+      10
+    ],
+    "head_fact_passes": [
+      1,
+      4
+    ],
+    "tail_rejections": {
+      "tail_facts": 4,
+      "tail_words": 4
+    }
+  }
+}

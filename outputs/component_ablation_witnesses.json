@@ -1,0 +1,75 @@
+{
+  "status": "leave-one-component-out audit, second full-criterion domain",
+  "n_systems": 75,
+  "n_frozen_accepts": 13,
+  "components": {
+    "potential": {
+      "newly_accepted_total": 0,
+      "false_positive_controls": [],
+      "borderline_learned_admitted": [],
+      "empirically_redundant_here": true
+    },
+    "conditional_selectivity": {
+      "newly_accepted_total": 2,
+      "false_positive_controls": [],
+      "borderline_learned_admitted": [
+        "conf:seed1104:learned",
+        "ext:seed1205:learned"
+      ],
+      "empirically_redundant_here": false
+    },
+    "specificity": {
+      "newly_accepted_total": 0,
+      "false_positive_controls": [],
+      "borderline_learned_admitted": [],
+      "empirically_redundant_here": true
+    },
+    "usefulness": {
+      "newly_accepted_total": 0,
+      "false_positive_controls": [],
+      "borderline_learned_admitted": [],
+      "empirically_redundant_here": true
+    },
+    "endogeneity": {
+      "newly_accepted_total": 0,
+      "false_positive_controls": [],
+      "borderline_learned_admitted": [],
+      "empirically_redundant_here": true
+    },
+    "acquisition": {
+      "newly_accepted_total": 0,
+      "false_positive_controls": [],
+      "borderline_learned_admitted": [],
+      "empirically_redundant_here": true
+    }
+  },
+  "five_of_six_witnesses": {
+    "potential": {
+      "n": 0,
+      "examples": []
+    },
+    "conditional_selectivity": {
+      "n": 2,
+      "examples": [
+        "conf:seed1104:learned",
+        "ext:seed1205:learned"
+      ]
+    },
+    "specificity": {
+      "n": 0,
+      "examples": []
+    },
+    "usefulness": {
+      "n": 0,
+      "examples": []
+    },
+    "endogeneity": {
+      "n": 0,
+      "examples": []
+    },
+    "acquisition": {
+      "n": 0,
+      "examples": []
+    }
+  }
+}

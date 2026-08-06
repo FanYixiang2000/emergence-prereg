@@ -1,0 +1,159 @@
+{
+  "status": "ANT-INT-B openness-leverage law; registered before run; paired same-seed counterfactuals; openness reference frozen from RE-2",
+  "n_paired": 200,
+  "sweep": [
+    {
+      "start": 0,
+      "midpoint": 15,
+      "openness_mid": 0.6054,
+      "flips": 56,
+      "flip_rate": 0.28
+    },
+    {
+      "start": 10,
+      "midpoint": 25,
+      "openness_mid": 0.6873,
+      "flips": 46,
+      "flip_rate": 0.23
+    },
+    {
+      "start": 20,
+      "midpoint": 35,
+      "openness_mid": 0.2108,
+      "flips": 26,
+      "flip_rate": 0.13
+    },
+    {
+      "start": 30,
+      "midpoint": 45,
+      "openness_mid": 0.0,
+      "flips": 17,
+      "flip_rate": 0.085
+    },
+    {
+      "start": 40,
+      "midpoint": 55,
+      "openness_mid": 0.0,
+      "flips": 15,
+      "flip_rate": 0.075
+    },
+    {
+      "start": 50,
+      "midpoint": 65,
+      "openness_mid": 0.0,
+      "flips": 9,
+      "flip_rate": 0.045
+    },
+    {
+      "start": 60,
+      "midpoint": 75,
+      "openness_mid": 0.0,
+      "flips": 4,
+      "flip_rate": 0.02
+    },
+    {
+      "start": 70,
+      "midpoint": 85,
+      "openness_mid": 0.0,
+      "flips": 4,
+      "flip_rate": 0.02
+    },
+    {
+      "start": 80,
+      "midpoint": 95,
+      "openness_mid": 0.0,
+      "flips": 5,
+      "flip_rate": 0.025
+    },
+    {
+      "start": 90,
+      "midpoint": 105,
+      "openness_mid": 0.0,
+      "flips": 5,
+      "flip_rate": 0.025
+    },
+    {
+      "start": 100,
+      "midpoint": 115,
+      "openness_mid": 0.0,
+      "flips": 5,
+      "flip_rate": 0.025
+    },
+    {
+      "start": 110,
+      "midpoint": 125,
+      "openness_mid": 0.0,
+      "flips": 4,
+      "flip_rate": 0.02
+    },
+    {
+      "start": 120,
+      "midpoint": 135,
+      "openness_mid": 0.0,
+      "flips": 5,
+      "flip_rate": 0.025
+    },
+    {
+      "start": 130,
+      "midpoint": 145,
+      "openness_mid": 0.0,
+      "flips": 3,
+      "flip_rate": 0.015
+    },
+    {
+      "start": 140,
+      "midpoint": 155,
+      "openness_mid": 0.0,
+      "flips": 2,
+      "flip_rate": 0.01
+    },
+    {
+      "start": 150,
+      "midpoint": 165,
+      "openness_mid": 0.0,
+      "flips": 2,
+      "flip_rate": 0.01
+    },
+    {
+      "start": 160,
+      "midpoint": 175,
+      "openness_mid": 0.0,
+      "flips": 2,
+      "flip_rate": 0.01
+    },
+    {
+      "start": 170,
+      "midpoint": 185,
+      "openness_mid": 0.0,
+      "flips": 2,
+      "flip_rate": 0.01
+    },
+    {
+      "start": 180,
+      "midpoint": 195,
+      "openness_mid": 0.0,
+      "flips": 2,
+      "flip_rate": 0.01
+    },
+    {
+      "start": 190,
+      "midpoint": 205,
+      "openness_mid": 0.0,
+      "flips": 2,
+      "flip_rate": 0.01
+    },
+    {
+      "start": 200,
+      "midpoint": 215,
+      "openness_mid": 0.0,
+      "flips": 2,
+      "flip_rate": 0.01
+    }
+  ],
+  "registered_outcomes": {
+    "AIB1_openness_leverage": false,
+    "AIB2_closed_means_uncontrollable": false,
+    "spearman_rho": 0.6211,
+    "spearman_p": 0.0026584060654375077
+  }
+}

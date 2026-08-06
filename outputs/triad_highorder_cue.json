@@ -1,0 +1,694 @@
+{
+  "status": "TRI-C high-order carrier with blocked low-order compilation; registered before run",
+  "seeds": {
+    "95301": {
+      "0": {
+        "reward_total": 1.5038,
+        "bit_entropy_1": 0.9995,
+        "bit_entropy_2": 0.9983,
+        "ladder2_hidden": {
+          "C_individual": 0.00223,
+          "C_env": 0.0,
+          "C_pair": 0.00048,
+          "C_high": 0.0003,
+          "C_total": 0.00302,
+          "H_P": 2.99698
+        },
+        "ladder2_declared_e": {
+          "C_individual": 0.00223,
+          "C_env": 0.0,
+          "C_pair": 0.00049,
+          "C_high": 0.0003,
+          "C_total": 0.00302
+        },
+        "ladder10_hidden": {
+          "C_individual": 0.01935,
+          "C_env": 0.0,
+          "C_pair": 0.02309,
+          "C_high": 0.07225,
+          "C_total": 0.11469,
+          "H_P": 9.85109
+        }
+      },
+      "100": {
+        "reward_total": 1.6113,
+        "bit_entropy_1": 0.9985,
+        "bit_entropy_2": 0.9984,
+        "ladder2_hidden": {
+          "C_individual": 0.00333,
+          "C_env": 0.0,
+          "C_pair": 0.00022,
+          "C_high": 0.00023,
+          "C_total": 0.00378,
+          "H_P": 2.99622
+        },
+        "ladder2_declared_e": {
+          "C_individual": 0.00333,
+          "C_env": 0.0,
+          "C_pair": 0.00022,
+          "C_high": 0.00023,
+          "C_total": 0.00378
+        },
+        "ladder10_hidden": {
+          "C_individual": 0.01771,
+          "C_env": 0.0,
+          "C_pair": 0.02262,
+          "C_high": 0.07074,
+          "C_total": 0.11107,
+          "H_P": 9.85472
+        }
+      },
+      "200": {
+        "reward_total": 1.7819,
+        "bit_entropy_1": 0.997,
+        "bit_entropy_2": 0.9995,
+        "ladder2_hidden": {
+          "C_individual": 0.00415,
+          "C_env": 0.0,
+          "C_pair": 0.00023,
+          "C_high": 0.00032,
+          "C_total": 0.0047,
+          "H_P": 2.9953
+        },
+        "ladder2_declared_e": {
+          "C_individual": 0.00415,
+          "C_env": 2e-05,
+          "C_pair": 0.00025,
+          "C_high": 0.00029,
+          "C_total": 0.0047
+        },
+        "ladder10_hidden": {
+          "C_individual": 0.02728,
+          "C_env": 0.0,
+          "C_pair": 0.02317,
+          "C_high": 0.06436,
+          "C_total": 0.11482,
+          "H_P": 9.85097
+        }
+      },
+      "400": {
+        "reward_total": 2.2948,
+        "bit_entropy_1": 0.9998,
+        "bit_entropy_2": 1.0,
+        "ladder2_hidden": {
+          "C_individual": 0.00276,
+          "C_env": 0.0,
+          "C_pair": 0.00022,
+          "C_high": 0.00203,
+          "C_total": 0.00501,
+          "H_P": 2.99499
+        },
+        "ladder2_declared_e": {
+          "C_individual": 0.00276,
+          "C_env": 0.00026,
+          "C_pair": 0.00148,
+          "C_high": 0.00052,
+          "C_total": 0.00501
+        },
+        "ladder10_hidden": {
+          "C_individual": 0.06762,
+          "C_env": 0.0,
+          "C_pair": 0.02434,
+          "C_high": 0.06682,
+          "C_total": 0.15878,
+          "H_P": 9.80701
+        }
+      },
+      "800": {
+        "reward_total": 2.7329,
+        "bit_entropy_1": 1.0,
+        "bit_entropy_2": 1.0,
+        "ladder2_hidden": {
+          "C_individual": 0.00325,
+          "C_env": 0.0,
+          "C_pair": 0.00079,
+          "C_high": 0.18691,
+          "C_total": 0.19095,
+          "H_P": 2.80905
+        },
+        "ladder2_declared_e": {
+          "C_individual": 0.00325,
+          "C_env": 0.16529,
+          "C_pair": 0.0224,
+          "C_high": 0.0,
+          "C_total": 0.19095
+        },
+        "ladder10_hidden": {
+          "C_individual": 0.30414,
+          "C_env": 0.0,
+          "C_pair": 0.03105,
+          "C_high": 0.26253,
+          "C_total": 0.59772,
+          "H_P": 9.36806
+        }
+      },
+      "1200": {
+        "reward_total": 2.9525,
+        "bit_entropy_1": 1.0,
+        "bit_entropy_2": 0.9999,
+        "ladder2_hidden": {
+          "C_individual": 9e-05,
+          "C_env": 0.0,
+          "C_pair": 0.00012,
+          "C_high": 0.7391,
+          "C_total": 0.73931,
+          "H_P": 2.26069
+        },
+        "ladder2_declared_e": {
+          "C_individual": 9e-05,
+          "C_env": 0.71488,
+          "C_pair": 0.02434,
+          "C_high": 0.0,
+          "C_total": 0.73931
+        },
+        "ladder10_hidden": {
+          "C_individual": 0.64101,
+          "C_env": 0.0,
+          "C_pair": 0.10718,
+          "C_high": 0.77189,
+          "C_total": 1.52007,
+          "H_P": 8.44572
+        }
+      },
+      "1600": {
+        "reward_total": 2.9871,
+        "bit_entropy_1": 1.0,
+        "bit_entropy_2": 1.0,
+        "ladder2_hidden": {
+          "C_individual": 0.00051,
+          "C_env": 0.0,
+          "C_pair": 0.00035,
+          "C_high": 0.9156,
+          "C_total": 0.91647,
+          "H_P": 2.08353
+        },
+        "ladder2_declared_e": {
+          "C_individual": 0.00051,
+          "C_env": 0.88702,
+          "C_pair": 0.02893,
+          "C_high": 0.0,
+          "C_total": 0.91647
+        },
+        "ladder10_hidden": {
+          "C_individual": 1.20156,
+          "C_env": 0.0,
+          "C_pair": 0.20084,
+          "C_high": 0.87278,
+          "C_total": 2.27518,
+          "H_P": 7.6906
+        }
+      },
+      "2000": {
+        "reward_total": 2.9948,
+        "bit_entropy_1": 0.9999,
+        "bit_entropy_2": 0.9999,
+        "ladder2_hidden": {
+          "C_individual": 0.00036,
+          "C_env": 0.0,
+          "C_pair": 0.00042,
+          "C_high": 0.96301,
+          "C_total": 0.96379,
+          "H_P": 2.03621
+        },
+        "ladder2_declared_e": {
+          "C_individual": 0.00036,
+          "C_env": 0.94309,
+          "C_pair": 0.02034,
+          "C_high": 0.0,
+          "C_total": 0.96379
+        },
+        "ladder10_hidden": {
+          "C_individual": 1.58157,
+          "C_env": 0.0,
+          "C_pair": 0.2844,
+          "C_high": 0.86619,
+          "C_total": 2.73216,
+          "H_P": 7.23362
+        }
+      }
+    },
+    "95302": {
+      "0": {
+        "reward_total": 1.5171,
+        "bit_entropy_1": 0.9978,
+        "bit_entropy_2": 0.9987,
+        "ladder2_hidden": {
+          "C_individual": 0.00462,
+          "C_env": 0.0,
+          "C_pair": 0.00016,
+          "C_high": 0.00011,
+          "C_total": 0.0049,
+          "H_P": 2.9951
+        },
+        "ladder2_declared_e": {
+          "C_individual": 0.00462,
+          "C_env": 0.0,
+          "C_pair": 0.00016,
+          "C_high": 0.00011,
+          "C_total": 0.0049
+        },
+        "ladder10_hidden": {
+          "C_individual": 0.03023,
+          "C_env": 0.0,
+          "C_pair": 0.02606,
+          "C_high": 0.06833,
+          "C_total": 0.12462,
+          "H_P": 9.84116
+        }
+      },
+      "100": {
+        "reward_total": 1.6217,
+        "bit_entropy_1": 0.9976,
+        "bit_entropy_2": 0.9999,
+        "ladder2_hidden": {
+          "C_individual": 0.00267,
+          "C_env": 0.0,
+          "C_pair": 0.00071,
+          "C_high": 8e-05,
+          "C_total": 0.00346,
+          "H_P": 2.99654
+        },
+        "ladder2_declared_e": {
+          "C_individual": 0.00267,
+          "C_env": 0.0,
+          "C_pair": 0.00071,
+          "C_high": 7e-05,
+          "C_total": 0.00346
+        },
+        "ladder10_hidden": {
+          "C_individual": 0.02689,
+          "C_env": 0.0,
+          "C_pair": 0.02082,
+          "C_high": 0.06116,
+          "C_total": 0.10887,
+          "H_P": 9.85692
+        }
+      },
+      "200": {
+        "reward_total": 1.7917,
+        "bit_entropy_1": 0.9978,
+        "bit_entropy_2": 0.999,
+        "ladder2_hidden": {
+          "C_individual": 0.0036,
+          "C_env": 0.0,
+          "C_pair": 0.00066,
+          "C_high": 7e-05,
+          "C_total": 0.00434,
+          "H_P": 2.99566
+        },
+        "ladder2_declared_e": {
+          "C_individual": 0.0036,
+          "C_env": 5e-05,
+          "C_pair": 0.00061,
+          "C_high": 7e-05,
+          "C_total": 0.00434
+        },
+        "ladder10_hidden": {
+          "C_individual": 0.03992,
+          "C_env": 0.0,
+          "C_pair": 0.02432,
+          "C_high": 0.06858,
+          "C_total": 0.13283,
+          "H_P": 9.83296
+        }
+      },
+      "400": {
+        "reward_total": 2.2579,
+        "bit_entropy_1": 0.9993,
+        "bit_entropy_2": 0.9999,
+        "ladder2_hidden": {
+          "C_individual": 0.00074,
+          "C_env": 0.0,
+          "C_pair": 0.00116,
+          "C_high": 0.00118,
+          "C_total": 0.00308,
+          "H_P": 2.99692
+        },
+        "ladder2_declared_e": {
+          "C_individual": 0.00074,
+          "C_env": 0.00104,
+          "C_pair": 0.00094,
+          "C_high": 0.00035,
+          "C_total": 0.00308
+        },
+        "ladder10_hidden": {
+          "C_individual": 0.07254,
+          "C_env": 0.0,
+          "C_pair": 0.02702,
+          "C_high": 0.0678,
+          "C_total": 0.16736,
+          "H_P": 9.79842
+        }
+      },
+      "800": {
+        "reward_total": 2.7112,
+        "bit_entropy_1": 0.9999,
+        "bit_entropy_2": 1.0,
+        "ladder2_hidden": {
+          "C_individual": 0.00265,
+          "C_env": 0.0,
+          "C_pair": 0.01653,
+          "C_high": 0.16028,
+          "C_total": 0.17946,
+          "H_P": 2.82054
+        },
+        "ladder2_declared_e": {
+          "C_individual": 0.00265,
+          "C_env": 0.15678,
+          "C_pair": 0.02002,
+          "C_high": 0.0,
+          "C_total": 0.17946
+        },
+        "ladder10_hidden": {
+          "C_individual": 0.31803,
+          "C_env": 0.0,
+          "C_pair": 0.04464,
+          "C_high": 0.229,
+          "C_total": 0.59167,
+          "H_P": 9.37411
+        }
+      },
+      "1200": {
+        "reward_total": 2.9404,
+        "bit_entropy_1": 1.0,
+        "bit_entropy_2": 1.0,
+        "ladder2_hidden": {
+          "C_individual": 0.00027,
+          "C_env": 0.0,
+          "C_pair": 0.00148,
+          "C_high": 0.6968,
+          "C_total": 0.69854,
+          "H_P": 2.30146
+        },
+        "ladder2_declared_e": {
+          "C_individual": 0.00027,
+          "C_env": 0.66482,
+          "C_pair": 0.03345,
+          "C_high": 0.0,
+          "C_total": 0.69854
+        },
+        "ladder10_hidden": {
+          "C_individual": 0.6255,
+          "C_env": 0.0,
+          "C_pair": 0.05383,
+          "C_high": 0.75469,
+          "C_total": 1.43402,
+          "H_P": 8.53177
+        }
+      },
+      "1600": {
+        "reward_total": 2.9835,
+        "bit_entropy_1": 0.9998,
+        "bit_entropy_2": 0.9995,
+        "ladder2_hidden": {
+          "C_individual": 0.00091,
+          "C_env": 0.0,
+          "C_pair": 0.00124,
+          "C_high": 0.89025,
+          "C_total": 0.8924,
+          "H_P": 2.1076
+        },
+        "ladder2_declared_e": {
+          "C_individual": 0.00091,
+          "C_env": 0.8703,
+          "C_pair": 0.0212,
+          "C_high": 0.0,
+          "C_total": 0.8924
+        },
+        "ladder10_hidden": {
+          "C_individual": 0.8317,
+          "C_env": 0.0,
+          "C_pair": 0.07423,
+          "C_high": 0.92011,
+          "C_total": 1.82604,
+          "H_P": 8.13974
+        }
+      },
+      "2000": {
+        "reward_total": 2.9928,
+        "bit_entropy_1": 1.0,
+        "bit_entropy_2": 1.0,
+        "ladder2_hidden": {
+          "C_individual": 0.00046,
+          "C_env": 0.0,
+          "C_pair": 0.00033,
+          "C_high": 0.95273,
+          "C_total": 0.95352,
+          "H_P": 2.04648
+        },
+        "ladder2_declared_e": {
+          "C_individual": 0.00046,
+          "C_env": 0.92674,
+          "C_pair": 0.02631,
+          "C_high": 0.0,
+          "C_total": 0.95352
+        },
+        "ladder10_hidden": {
+          "C_individual": 1.08065,
+          "C_env": 0.0,
+          "C_pair": 0.07142,
+          "C_high": 0.97151,
+          "C_total": 2.12357,
+          "H_P": 7.84221
+        }
+      }
+    },
+    "95303": {
+      "0": {
+        "reward_total": 1.4878,
+        "bit_entropy_1": 0.9984,
+        "bit_entropy_2": 0.9997,
+        "ladder2_hidden": {
+          "C_individual": 0.00274,
+          "C_env": 0.0,
+          "C_pair": 0.00031,
+          "C_high": 1e-05,
+          "C_total": 0.00306,
+          "H_P": 2.99694
+        },
+        "ladder2_declared_e": {
+          "C_individual": 0.00274,
+          "C_env": 0.0,
+          "C_pair": 0.00031,
+          "C_high": 1e-05,
+          "C_total": 0.00306
+        },
+        "ladder10_hidden": {
+          "C_individual": 0.01873,
+          "C_env": 0.0,
+          "C_pair": 0.02274,
+          "C_high": 0.06909,
+          "C_total": 0.11056,
+          "H_P": 9.85522
+        }
+      },
+      "100": {
+        "reward_total": 1.5879,
+        "bit_entropy_1": 0.9996,
+        "bit_entropy_2": 0.9983,
+        "ladder2_hidden": {
+          "C_individual": 0.0025,
+          "C_env": 0.0,
+          "C_pair": 0.00026,
+          "C_high": 0.00028,
+          "C_total": 0.00303,
+          "H_P": 2.99697
+        },
+        "ladder2_declared_e": {
+          "C_individual": 0.0025,
+          "C_env": 0.0,
+          "C_pair": 0.00025,
+          "C_high": 0.00028,
+          "C_total": 0.00303
+        },
+        "ladder10_hidden": {
+          "C_individual": 0.02789,
+          "C_env": 0.0,
+          "C_pair": 0.02464,
+          "C_high": 0.06483,
+          "C_total": 0.11736,
+          "H_P": 9.84842
+        }
+      },
+      "200": {
+        "reward_total": 1.7521,
+        "bit_entropy_1": 0.9995,
+        "bit_entropy_2": 0.9928,
+        "ladder2_hidden": {
+          "C_individual": 0.01055,
+          "C_env": 0.0,
+          "C_pair": 0.00038,
+          "C_high": 9e-05,
+          "C_total": 0.01102,
+          "H_P": 2.98898
+        },
+        "ladder2_declared_e": {
+          "C_individual": 0.01055,
+          "C_env": 0.0,
+          "C_pair": 0.00041,
+          "C_high": 5e-05,
+          "C_total": 0.01102
+        },
+        "ladder10_hidden": {
+          "C_individual": 0.05048,
+          "C_env": 0.0,
+          "C_pair": 0.02171,
+          "C_high": 0.06862,
+          "C_total": 0.14081,
+          "H_P": 9.82497
+        }
+      },
+      "400": {
+        "reward_total": 2.2192,
+        "bit_entropy_1": 0.9999,
+        "bit_entropy_2": 0.9935,
+        "ladder2_hidden": {
+          "C_individual": 0.00991,
+          "C_env": 0.0,
+          "C_pair": 0.00285,
+          "C_high": 6e-05,
+          "C_total": 0.01282,
+          "H_P": 2.98718
+        },
+        "ladder2_declared_e": {
+          "C_individual": 0.00991,
+          "C_env": 0.00112,
+          "C_pair": 0.00176,
+          "C_high": 3e-05,
+          "C_total": 0.01282
+        },
+        "ladder10_hidden": {
+          "C_individual": 0.11088,
+          "C_env": 0.0,
+          "C_pair": 0.03144,
+          "C_high": 0.06855,
+          "C_total": 0.21087,
+          "H_P": 9.75491
+        }
+      },
+      "800": {
+        "reward_total": 2.6084,
+        "bit_entropy_1": 1.0,
+        "bit_entropy_2": 1.0,
+        "ladder2_hidden": {
+          "C_individual": 0.00111,
+          "C_env": 0.0,
+          "C_pair": 0.04655,
+          "C_high": 0.05316,
+          "C_total": 0.10082,
+          "H_P": 2.89918
+        },
+        "ladder2_declared_e": {
+          "C_individual": 0.00111,
+          "C_env": 0.08654,
+          "C_pair": 0.01317,
+          "C_high": -0.0,
+          "C_total": 0.10082
+        },
+        "ladder10_hidden": {
+          "C_individual": 0.41217,
+          "C_env": 0.0,
+          "C_pair": 0.08487,
+          "C_high": 0.11894,
+          "C_total": 0.61598,
+          "H_P": 9.3498
+        }
+      },
+      "1200": {
+        "reward_total": 2.8615,
+        "bit_entropy_1": 0.9998,
+        "bit_entropy_2": 0.9998,
+        "ladder2_hidden": {
+          "C_individual": 0.00084,
+          "C_env": 0.0,
+          "C_pair": 0.00991,
+          "C_high": 0.43806,
+          "C_total": 0.44881,
+          "H_P": 2.55119
+        },
+        "ladder2_declared_e": {
+          "C_individual": 0.00084,
+          "C_env": 0.43244,
+          "C_pair": 0.01553,
+          "C_high": 0.0,
+          "C_total": 0.44881
+        },
+        "ladder10_hidden": {
+          "C_individual": 0.75282,
+          "C_env": 0.0,
+          "C_pair": 0.11909,
+          "C_high": 0.48487,
+          "C_total": 1.35679,
+          "H_P": 8.609
+        }
+      },
+      "1600": {
+        "reward_total": 2.9725,
+        "bit_entropy_1": 1.0,
+        "bit_entropy_2": 1.0,
+        "ladder2_hidden": {
+          "C_individual": 0.00014,
+          "C_env": 0.0,
+          "C_pair": 0.00023,
+          "C_high": 0.82695,
+          "C_total": 0.82731,
+          "H_P": 2.17269
+        },
+        "ladder2_declared_e": {
+          "C_individual": 0.00014,
+          "C_env": 0.81222,
+          "C_pair": 0.01495,
+          "C_high": 0.0,
+          "C_total": 0.82731
+        },
+        "ladder10_hidden": {
+          "C_individual": 1.22133,
+          "C_env": 0.0,
+          "C_pair": 0.35149,
+          "C_high": 0.73136,
+          "C_total": 2.30418,
+          "H_P": 7.66161
+        }
+      },
+      "2000": {
+        "reward_total": 2.9922,
+        "bit_entropy_1": 1.0,
+        "bit_entropy_2": 1.0,
+        "ladder2_hidden": {
+          "C_individual": 0.00028,
+          "C_env": 0.0,
+          "C_pair": 0.00021,
+          "C_high": 0.9388,
+          "C_total": 0.93929,
+          "H_P": 2.06071
+        },
+        "ladder2_declared_e": {
+          "C_individual": 0.00028,
+          "C_env": 0.93078,
+          "C_pair": 0.00823,
+          "C_high": 0.0,
+          "C_total": 0.93929
+        },
+        "ladder10_hidden": {
+          "C_individual": 1.60374,
+          "C_env": 0.0,
+          "C_pair": 0.507,
+          "C_high": 0.72006,
+          "C_total": 2.83081,
+          "H_P": 7.13498
+        }
+      }
+    }
+  },
+  "registered_outcomes": {
+    "TRIC1_formation": true,
+    "TRIC2_mixed_marginals": true,
+    "TRIC3_learned_high_order": true,
+    "TRIC4_contract_relativity": true,
+    "learning_seeds": [
+      "95301",
+      "95302",
+      "95303"
+    ]
+  }
+}

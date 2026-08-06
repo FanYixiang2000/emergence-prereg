@@ -1,0 +1,48 @@
+reflexive: 144 probes
+determiner: 140 probes
+facts: 20 probes
+npi: 108 probes
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1783345661.612089 3569699 port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+I0000 00:00:1783345661.650815 3569699 cpu_feature_guard.cc:227] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 AVX512F AVX512_VNNI AVX512_BF16 AVX512_FP16 AVX_VNNI AMX_TILE AMX_INT8 AMX_BF16 FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1783345662.891359 3569699 port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+step        0 | reflexive acc 0.500 H 14.73 | determiner acc 0.550 H 14.72 | facts acc 0.500 H 14.72 | npi acc 0.500 H 14.73 [64s]
+step    20000 | reflexive acc 0.806 H 6.80 | determiner acc 1.000 H 7.82 | facts acc 0.900 H 9.49 | npi acc 0.500 H 4.65 [22s]
+step    40000 | reflexive acc 0.972 H 6.78 | determiner acc 1.000 H 7.68 | facts acc 1.000 H 8.58 | npi acc 1.000 H 3.12 [69s]
+step    60000 | reflexive acc 0.965 H 6.41 | determiner acc 1.000 H 7.56 | facts acc 1.000 H 6.13 | npi acc 1.000 H 2.96 [23s]
+step    80000 | reflexive acc 0.986 H 5.87 | determiner acc 1.000 H 6.97 | facts acc 1.000 H 4.96 | npi acc 1.000 H 2.46 [40s]
+step   100000 | reflexive acc 0.972 H 7.27 | determiner acc 1.000 H 7.38 | facts acc 1.000 H 4.25 | npi acc 1.000 H 2.26 [62s]
+step   120000 | reflexive acc 0.986 H 7.61 | determiner acc 1.000 H 7.83 | facts acc 1.000 H 4.80 | npi acc 1.000 H 2.76 [155s]
+step   140000 | reflexive acc 0.986 H 6.55 | determiner acc 1.000 H 6.61 | facts acc 1.000 H 4.70 | npi acc 1.000 H 2.11 [124s]
+step   160000 | reflexive acc 0.972 H 7.09 | determiner acc 1.000 H 7.61 | facts acc 1.000 H 4.37 | npi acc 1.000 H 1.85 [23s]
+step   180000 | reflexive acc 0.972 H 7.16 | determiner acc 1.000 H 6.70 | facts acc 1.000 H 3.34 | npi acc 1.000 H 1.79 [32s]
+step   200000 | reflexive acc 0.965 H 7.94 | determiner acc 1.000 H 6.90 | facts acc 1.000 H 4.04 | npi acc 1.000 H 2.45 [70s]
+step   300000 | reflexive acc 0.972 H 6.66 | determiner acc 1.000 H 7.68 | facts acc 1.000 H 3.12 | npi acc 1.000 H 2.37 [77s]
+step   400000 | reflexive acc 0.924 H 7.11 | determiner acc 1.000 H 8.11 | facts acc 1.000 H 2.96 | npi acc 1.000 H 2.20 [34s]
+step   500000 | reflexive acc 0.965 H 7.24 | determiner acc 0.993 H 7.52 | facts acc 1.000 H 2.77 | npi acc 1.000 H 2.30 [49s]
+step   600000 | reflexive acc 0.931 H 6.36 | determiner acc 0.993 H 7.94 | facts acc 1.000 H 2.59 | npi acc 1.000 H 2.27 [35s]
+step   700000 | reflexive acc 0.944 H 6.76 | determiner acc 0.993 H 6.68 | facts acc 1.000 H 2.35 | npi acc 1.000 H 2.56 [28s]
+step   800000 | reflexive acc 0.951 H 6.74 | determiner acc 0.993 H 7.16 | facts acc 1.000 H 3.03 | npi acc 1.000 H 2.16 [53s]
+step   900000 | reflexive acc 0.944 H 6.30 | determiner acc 0.993 H 7.21 | facts acc 1.000 H 3.29 | npi acc 1.000 H 2.04 [38s]
+step  1000000 | reflexive acc 0.931 H 6.41 | determiner acc 0.979 H 7.58 | facts acc 1.000 H 3.44 | npi acc 1.000 H 1.95 [28s]
+step  1100000 | reflexive acc 0.931 H 7.05 | determiner acc 0.993 H 6.69 | facts acc 1.000 H 3.13 | npi acc 1.000 H 1.95 [17s]
+step  1200000 | reflexive acc 0.951 H 6.01 | determiner acc 0.993 H 6.74 | facts acc 1.000 H 3.32 | npi acc 1.000 H 1.94 [26s]
+step  1300000 | reflexive acc 0.993 H 6.33 | determiner acc 0.993 H 7.14 | facts acc 1.000 H 3.10 | npi acc 1.000 H 2.19 [29s]
+step  1400000 | reflexive acc 0.931 H 6.49 | determiner acc 1.000 H 6.48 | facts acc 1.000 H 3.73 | npi acc 1.000 H 2.35 [22s]
+step  1500000 | reflexive acc 0.986 H 6.30 | determiner acc 0.993 H 7.00 | facts acc 1.000 H 3.16 | npi acc 1.000 H 2.14 [20s]
+step  1600000 | reflexive acc 0.931 H 6.01 | determiner acc 0.993 H 6.63 | facts acc 1.000 H 3.50 | npi acc 1.000 H 2.22 [28s]
+step  1700000 | reflexive acc 0.944 H 6.66 | determiner acc 1.000 H 7.03 | facts acc 1.000 H 3.59 | npi acc 1.000 H 1.91 [71s]
+step  1800000 | reflexive acc 0.958 H 5.87 | determiner acc 0.993 H 6.49 | facts acc 1.000 H 3.44 | npi acc 1.000 H 1.94 [55s]
+step  1900000 | reflexive acc 0.965 H 5.78 | determiner acc 0.993 H 6.77 | facts acc 1.000 H 3.28 | npi acc 1.000 H 2.11 [81s]
+step  2000000 | reflexive acc 0.965 H 5.88 | determiner acc 0.993 H 6.63 | facts acc 1.000 H 3.28 | npi acc 1.000 H 2.01 [48s]
+/home/Yixiang/miniconda3/lib/python3.13/site-packages/numpy/lib/_function_base_impl.py:3023: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[:, None]
+/home/Yixiang/miniconda3/lib/python3.13/site-packages/numpy/lib/_function_base_impl.py:3024: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[None, :]
+reflexive: emergent=1 failed=- (window 20000, acc gain +0.472)
+determiner: emergent=1 failed=- (window 20000, acc gain +0.450)
+facts: emergent=1 failed=- (window 20000, acc gain +0.500)
+npi: emergent=1 failed=- (window 40000, acc gain +0.500)
+Wrote /home/Yixiang/MPARL/GOGOGO/outputs/multiberts_phenomena_summary.json

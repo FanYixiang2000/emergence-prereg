@@ -1,0 +1,167 @@
+{
+  "status": "KUR-BP-R amended detector contract; registered before run; fresh seeds",
+  "gate": 0.1,
+  "seeds": {
+    "81011": {
+      "super": {
+        "drop": 0.5938,
+        "gate_passed": true,
+        "hinge": {
+          "delta_bic": 17.725,
+          "t_star": 2.4,
+          "slope_before": 0.001037,
+          "slope_after": -0.074251,
+          "onset_type": true
+        },
+        "thinning": {
+          "parity0": {
+            "delta_bic": 6.191,
+            "t_star": 2.4,
+            "slope_before": -0.000301,
+            "slope_after": -0.073508,
+            "onset_type": true,
+            "ok": true
+          },
+          "parity1": {
+            "delta_bic": 6.099,
+            "t_star": 2.6,
+            "slope_before": -0.004695,
+            "slope_after": -0.075478,
+            "onset_type": true,
+            "ok": true
+          }
+        },
+        "t_r90": 6.8,
+        "onset_pass": true,
+        "final_ladder": {
+          "C_individual": 0.00095,
+          "C_pair": 5.9511,
+          "C_high": 0.00208,
+          "C_total": 5.95413,
+          "H_P": 4.01165
+        }
+      },
+      "sub": {
+        "drop": 0.0005,
+        "gate_passed": false,
+        "verdict": "no_collapse_B5_not_applicable",
+        "final_ladder": {
+          "C_individual": 0.00087,
+          "C_pair": 0.01316,
+          "C_high": 0.02742,
+          "C_total": 0.04145,
+          "H_P": 9.92434
+        }
+      }
+    },
+    "81012": {
+      "super": {
+        "drop": 0.6008,
+        "gate_passed": true,
+        "hinge": {
+          "delta_bic": 15.056,
+          "t_star": 9.2,
+          "slope_before": -0.078047,
+          "slope_after": -0.008463,
+          "onset_type": false
+        },
+        "thinning": {
+          "parity0": {
+            "delta_bic": 4.699,
+            "t_star": 9.2,
+            "slope_before": -0.077156,
+            "slope_after": -0.009633,
+            "onset_type": false,
+            "ok": false
+          },
+          "parity1": {
+            "delta_bic": 4.837,
+            "t_star": 9.4,
+            "slope_before": -0.07837,
+            "slope_after": -0.001109,
+            "onset_type": false,
+            "ok": false
+          }
+        },
+        "t_r90": 6.0,
+        "onset_pass": false,
+        "final_ladder": {
+          "C_individual": 0.00038,
+          "C_pair": 6.02042,
+          "C_high": 0.00061,
+          "C_total": 6.02141,
+          "H_P": 3.94437
+        }
+      },
+      "sub": {
+        "drop": 0.0009,
+        "gate_passed": false,
+        "verdict": "no_collapse_B5_not_applicable",
+        "final_ladder": {
+          "C_individual": 0.00089,
+          "C_pair": 0.01493,
+          "C_high": 0.02779,
+          "C_total": 0.04361,
+          "H_P": 9.92218
+        }
+      }
+    },
+    "81013": {
+      "super": {
+        "drop": 0.5991,
+        "gate_passed": true,
+        "hinge": {
+          "delta_bic": 12.878,
+          "t_star": 9.4,
+          "slope_before": -0.076372,
+          "slope_after": -0.006608,
+          "onset_type": false
+        },
+        "thinning": {
+          "parity0": {
+            "delta_bic": 3.564,
+            "t_star": 9.2,
+            "slope_before": -0.076018,
+            "slope_after": -0.013251,
+            "onset_type": false,
+            "ok": false
+          },
+          "parity1": {
+            "delta_bic": 3.793,
+            "t_star": 9.4,
+            "slope_before": -0.07718,
+            "slope_after": -0.005356,
+            "onset_type": false,
+            "ok": false
+          }
+        },
+        "t_r90": 6.2,
+        "onset_pass": false,
+        "final_ladder": {
+          "C_individual": 0.00124,
+          "C_pair": 6.00279,
+          "C_high": 0.00075,
+          "C_total": 6.00479,
+          "H_P": 3.961
+        }
+      },
+      "sub": {
+        "drop": 0.0011,
+        "gate_passed": false,
+        "verdict": "no_collapse_B5_not_applicable",
+        "final_ladder": {
+          "C_individual": 0.00067,
+          "C_pair": 0.01661,
+          "C_high": 0.02726,
+          "C_total": 0.04455,
+          "H_P": 9.92124
+        }
+      }
+    }
+  },
+  "registered_outcomes": {
+    "KURR1_onset_3of3": false,
+    "KURR2_subcritical_gated_null_3of3": true,
+    "KURR3_relational_carrier_3of3": true
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "status": "cross-implementation validation (chain rule vs full path enumeration)",
+  "n_trials": 2000,
+  "n_states_per_layer": 4,
+  "n_steps": 5,
+  "max_abs_gap_bits": 7.549516567451064e-15,
+  "singular_cases_agreeing": 200,
+  "zero_kl_cases_verified": 200,
+  "pass": true
+}

@@ -1,0 +1,20 @@
+
+=== run: grokking ===
+  final train/test acc 1.000/1.000 | H_pre 2.41 bits | burstiness 3974.2 | acc gain @burst +0.783 | emergent=1
+
+=== run: memorizer ===
+  final train/test acc 1.000/0.001 | H_pre 0.88 bits | burstiness 0.5 | acc gain @burst +0.000 | emergent=0
+
+=== run: no_structure ===
+  final train/test acc 1.000/0.009 | H_pre 2.41 bits | burstiness 0.9 | acc gain @burst +0.002 | emergent=0
+
+=== run: prewired ===
+  final train/test acc 1.000/1.000 | H_pre 6.59 bits | burstiness 28375.8 | acc gain @burst +0.987 | emergent=0
+
+run,emergent,failed_components
+grokking,1,-
+memorizer,0,potential;burstiness;usefulness
+no_structure,0,burstiness;usefulness
+prewired,0,endogeneity
+
+Wrote /home/Yixiang/MPARL/GOGOGO/outputs/grokking_collapse_summary.json

@@ -1,0 +1,14 @@
+alpha=1.0: drop=0.1194 gate=True b5=False t*=None dBIC=None slope_after=None
+alpha=1.5: drop=0.9629 gate=True b5=False t*=30.0 dBIC=-0.814 slope_after=-0.00816509
+alpha=2.0: drop=0.6755 gate=True b5=False t*=None dBIC=None slope_after=None
+alpha=3.0: drop=0.6264 gate=True b5=False t*=None dBIC=None slope_after=None
+alpha=4.0: drop=0.6195 gate=True b5=False t*=None dBIC=None slope_after=None
+{
+  "AG1_existence_boundary": false,
+  "AG2_onset_law": false,
+  "AG3_sharpness_law": false,
+  "passing_alphas": [],
+  "t_stars": [],
+  "post_slopes": []
+}
+Wrote /home/Yixiang/MPARL/GOGOGO/outputs/ant_gain_scaling.json

@@ -1,0 +1,31 @@
+1/24: blind_dem cliff_final +2.21 far_final +0.69
+2/24: blind_dem cliff_final +3.26 far_final +0.72
+3/24: selective cliff_final +2.41 far_final -1.02
+4/24: blind_dem cliff_final +2.25 far_final +0.16
+5/24: blind_dem cliff_final +3.98 far_final +0.61
+6/24: selective cliff_final +4.51 far_final -1.69
+7/24: blind_dem cliff_final +2.68 far_final +2.09
+8/24: blind_dem cliff_final +2.36 far_final +0.50
+9/24: blind_dem cliff_final +3.26 far_final +0.88
+10/24: blind_dem cliff_final +4.06 far_final +0.58
+11/24: blind_dem cliff_final +3.57 far_final +0.24
+12/24: selective cliff_final +2.57 far_final -0.78
+13/24: selective cliff_final +3.64 far_final -1.57
+14/24: blind_dem cliff_final +3.06 far_final +1.02
+15/24: selective cliff_final +2.92 far_final -1.05
+16/24: selective cliff_final +1.55 far_final -0.82
+17/24: selective cliff_final +3.02 far_final -1.53
+18/24: selective cliff_final +3.06 far_final -1.05
+19/24: selective cliff_final +2.42 far_final -1.88
+20/24: selective cliff_final +2.75 far_final -1.56
+21/24: selective cliff_final +2.67 far_final -0.81
+22/24: selective cliff_final +3.34 far_final -1.12
+23/24: blind_dem cliff_final +2.90 far_final +0.97
+24/24: selective cliff_final +2.43 far_final -0.83
+{
+  "F1_moat_after_last_flip": "0.00 of seeds >= 3x",
+  "F2_midtraining_stochastic": "median 0.82 in [0.2,0.8]: False; IQR 0.16 >= 0.15: True",
+  "F3_basin_lives_in_field_state": "1.00 >= 0.9: True"
+}
+classes: {'blind_dem': 11, 'selective': 13}
+Wrote /home/Yixiang/MPARL/GOGOGO/outputs/meta_collapse_margins.json

@@ -1,0 +1,46 @@
+{
+  "status": "ANT-INT-C per-episode conditional openness-leverage; registered before run; fresh seeds 710000+; paired same-seed counterfactuals",
+  "n_committing": 299,
+  "n_pairs": 8372,
+  "bins": [
+    {
+      "bin": [
+        0.0,
+        0.1
+      ],
+      "n": 2600,
+      "flip_rate": 0.0
+    },
+    {
+      "bin": [
+        0.1,
+        0.5
+      ],
+      "n": 3164,
+      "flip_rate": 0.0006
+    },
+    {
+      "bin": [
+        0.5,
+        0.9
+      ],
+      "n": 1433,
+      "flip_rate": 0.0537
+    },
+    {
+      "bin": [
+        0.9,
+        1.0
+      ],
+      "n": 1175,
+      "flip_rate": 0.2051
+    }
+  ],
+  "registered_outcomes": {
+    "AIC1_conditional_monotone": true,
+    "AIC2_closed_uncontrollable": true,
+    "AIC3_separation": true,
+    "mean_openness_flipped_minus_not": 0.5771,
+    "permutation_p": 0.0
+  }
+}

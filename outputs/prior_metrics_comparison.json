@@ -1,0 +1,119 @@
+{
+  "note": "Each detector gets its hindsight-optimal threshold (either direction). The full refined criterion scores 1.000 on the same battery with pre-registered thresholds.",
+  "truth": {
+    "latent_conditional": 1,
+    "converged_team": 0,
+    "shaped_process": 0,
+    "noise_policy": 1,
+    "untrained_uniform": 0,
+    "blind_trigger": 0,
+    "harmful_decoy": 0,
+    "useful_habit": 0,
+    "wrong_selector": 0,
+    "anti_selector": 0
+  },
+  "detectors": {
+    "rep_jump": {
+      "scores": {
+        "latent_conditional": 0.10173133363201133,
+        "converged_team": 0.32821475396110905,
+        "shaped_process": 0.40304044754326857,
+        "noise_policy": 1.3989421292233397,
+        "untrained_uniform": 0.0,
+        "blind_trigger": 0.10173133363201133,
+        "harmful_decoy": 0.10173133363201133,
+        "useful_habit": 0.10173133363201133,
+        "wrong_selector": 0.10173133363201133,
+        "anti_selector": 0.10173133363201133
+      },
+      "best_accuracy": 0.9,
+      "best_threshold": 0.9009912883833041,
+      "direction": 1,
+      "misclassified": [
+        "latent_conditional"
+      ]
+    },
+    "metric_jump": {
+      "scores": {
+        "latent_conditional": 0.35,
+        "converged_team": 0.5,
+        "shaped_process": 0.5,
+        "noise_policy": 0.5,
+        "untrained_uniform": 0.0,
+        "blind_trigger": 0.35,
+        "harmful_decoy": 0.35,
+        "useful_habit": 0.35,
+        "wrong_selector": 0.35,
+        "anti_selector": 0.35
+      },
+      "best_accuracy": 0.8,
+      "best_threshold": 1.5,
+      "direction": 1,
+      "misclassified": [
+        "latent_conditional",
+        "noise_policy"
+      ]
+    },
+    "specificity_only": {
+      "scores": {
+        "latent_conditional": 0.5385275314741641,
+        "converged_team": 0.07448979667169421,
+        "shaped_process": 0.4981498042619296,
+        "noise_policy": 0.7392258990788504,
+        "untrained_uniform": 0.03809805195862056,
+        "blind_trigger": 0.5192514216206933,
+        "harmful_decoy": 0.6535034212196676,
+        "useful_habit": 0.48814473071874537,
+        "wrong_selector": 0.5795776764561973,
+        "anti_selector": 0.5437276976001187
+      },
+      "best_accuracy": 0.9,
+      "best_threshold": 0.696364660149259,
+      "direction": 1,
+      "misclassified": [
+        "latent_conditional"
+      ]
+    },
+    "synergy": {
+      "scores": {
+        "latent_conditional": 0.03934095004655891,
+        "converged_team": 0.26677033376720516,
+        "shaped_process": 0.2075770363354339,
+        "noise_policy": -0.741882459101586,
+        "untrained_uniform": -0.07529110319387744,
+        "blind_trigger": -0.009263595553097304,
+        "harmful_decoy": 0.04717283037248654,
+        "useful_habit": -0.18579568665890944,
+        "wrong_selector": -0.4121704703126685,
+        "anti_selector": -0.07309832000431271
+      },
+      "best_accuracy": 0.9,
+      "best_threshold": -0.5770264647071273,
+      "direction": -1,
+      "misclassified": [
+        "latent_conditional"
+      ]
+    },
+    "causal_emergence_ei": {
+      "scores": {
+        "latent_conditional": 0.7066340078505275,
+        "converged_team": 0.5738873003502099,
+        "shaped_process": 0.9332629100290744,
+        "noise_policy": 0.7910031205546597,
+        "untrained_uniform": -0.0833584324686969,
+        "blind_trigger": 0.6536710520777205,
+        "harmful_decoy": 0.5501400195080193,
+        "useful_habit": 0.3212756335019553,
+        "wrong_selector": 0.5510555249216385,
+        "anti_selector": 0.6746362777552037
+      },
+      "best_accuracy": 0.9,
+      "best_threshold": 0.6906351428028656,
+      "direction": 1,
+      "misclassified": [
+        "shaped_process"
+      ]
+    }
+  },
+  "full_criterion_accuracy": 1.0
+}

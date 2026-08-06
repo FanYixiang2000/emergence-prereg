@@ -1,0 +1,6 @@
+regime,potential_effective_modes,natural_trigger_rate,natural_sacrifice_rate,trigger_choice_tension,collapse_bits,trigger_effect_js_bits,trigger_specificity_js_bits,sacrifice_probability_shift,endogenous_emergence_score,macro_predictability_gain,team_return_gain_after_trigger
+pure_individual,1.0000,0.0000,0.0000,0.0000,-0.3127,1.0000,1.0000,0.0563,0.0000,-0.0563,-6.3240
+pure_team,1.0030,0.9997,0.9997,0.0013,0.0043,0.0002,1.0000,0.0003,0.0013,0.0003,0.0010
+linear_mixed,1.1073,0.0000,0.0000,0.0000,0.1470,1.0000,1.0000,1.0000,0.0000,0.0210,4.9580
+dense_shaping,1.0000,0.0000,0.0000,0.0000,0.0000,1.0000,1.0000,1.0000,0.0000,0.0000,3.0000
+uncertain_preference,2.9997,0.3297,0.3297,0.8839,0.6723,0.5421,1.0000,0.3427,2.6516,0.3323,-1.2410

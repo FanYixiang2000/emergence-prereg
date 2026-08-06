@@ -1,0 +1,208 @@
+{
+  "status": "LGT-B side-openness B5 adjudication; preregistered follow-up",
+  "seeds": {
+    "0": {
+      "final_success": 0.99902,
+      "final_side_mean": -0.00293,
+      "plateau_len": 19,
+      "side_openness_first": 1.0,
+      "side_openness_final": 0.0946,
+      "adj": {
+        "drop": 0.5712,
+        "gate_passed": true,
+        "t_sat": 21.0,
+        "window_points": 22,
+        "hinge": {
+          "delta_bic": 52.742,
+          "t_star": 18.0,
+          "slope_before": -0.00150965,
+          "slope_after": -0.20638017,
+          "onset_type": true
+        },
+        "thinning": {
+          "parity0": {
+            "delta_bic": 9.496,
+            "t_star": 16.0,
+            "slope_before": 0.00314801,
+            "slope_after": -0.11227915,
+            "onset_type": true,
+            "ok": true
+          },
+          "parity1": {
+            "delta_bic": 44.359,
+            "t_star": 17.0,
+            "slope_before": -0.00067331,
+            "slope_after": -0.14106808,
+            "onset_type": true,
+            "ok": true
+          }
+        },
+        "b5_onset": true
+      }
+    },
+    "1": {
+      "final_success": 0.99854,
+      "final_side_mean": 0.00732,
+      "plateau_len": 19,
+      "side_openness_first": 1.0,
+      "side_openness_final": 0.09459,
+      "adj": {
+        "drop": 0.5713,
+        "gate_passed": true,
+        "t_sat": 21.0,
+        "window_points": 22,
+        "hinge": {
+          "delta_bic": 45.807,
+          "t_star": 17.0,
+          "slope_before": 0.00082981,
+          "slope_after": -0.15877498,
+          "onset_type": true
+        },
+        "thinning": {
+          "parity0": {
+            "delta_bic": 9.496,
+            "t_star": 16.0,
+            "slope_before": 0.0033315,
+            "slope_after": -0.11882367,
+            "onset_type": true,
+            "ok": true
+          },
+          "parity1": {
+            "delta_bic": 28.216,
+            "t_star": 17.0,
+            "slope_before": -0.00148905,
+            "slope_after": -0.14763675,
+            "onset_type": true,
+            "ok": true
+          }
+        },
+        "b5_onset": true
+      }
+    },
+    "2": {
+      "final_success": 0.99536,
+      "final_side_mean": -0.01196,
+      "plateau_len": 18,
+      "side_openness_first": 1.0,
+      "side_openness_final": 0.09459,
+      "adj": {
+        "drop": 0.5713,
+        "gate_passed": true,
+        "t_sat": 20.0,
+        "window_points": 21,
+        "hinge": {
+          "delta_bic": 46.219,
+          "t_star": 16.0,
+          "slope_before": 0.00112652,
+          "slope_after": -0.1545072,
+          "onset_type": true
+        },
+        "thinning": {
+          "parity0": {
+            "delta_bic": 36.018,
+            "t_star": 16.0,
+            "slope_before": -0.00100814,
+            "slope_after": -0.14393668,
+            "onset_type": true,
+            "ok": true
+          },
+          "parity1": {
+            "delta_bic": 8.051,
+            "t_star": 15.0,
+            "slope_before": 0.00401029,
+            "slope_after": -0.11629831,
+            "onset_type": true,
+            "ok": true
+          }
+        },
+        "b5_onset": true
+      }
+    },
+    "3": {
+      "final_success": 0.99927,
+      "final_side_mean": -0.01318,
+      "plateau_len": 19,
+      "side_openness_first": 1.0,
+      "side_openness_final": 0.09461,
+      "adj": {
+        "drop": 0.5712,
+        "gate_passed": true,
+        "t_sat": 22.0,
+        "window_points": 23,
+        "hinge": {
+          "delta_bic": 52.479,
+          "t_star": 17.0,
+          "slope_before": 0.00048675,
+          "slope_after": -0.12818887,
+          "onset_type": true
+        },
+        "thinning": {
+          "parity0": {
+            "delta_bic": 20.749,
+            "t_star": 18.0,
+            "slope_before": -0.00206449,
+            "slope_after": -0.15182243,
+            "onset_type": true,
+            "ok": true
+          },
+          "parity1": {
+            "delta_bic": 65.781,
+            "t_star": 17.0,
+            "slope_before": -0.00024434,
+            "slope_after": -0.13581537,
+            "onset_type": true,
+            "ok": true
+          }
+        },
+        "b5_onset": true
+      }
+    },
+    "4": {
+      "final_success": 0.99976,
+      "final_side_mean": -0.03564,
+      "plateau_len": 18,
+      "side_openness_first": 1.0,
+      "side_openness_final": 0.0946,
+      "adj": {
+        "drop": 0.5712,
+        "gate_passed": true,
+        "t_sat": 20.0,
+        "window_points": 21,
+        "hinge": {
+          "delta_bic": 52.627,
+          "t_star": 17.0,
+          "slope_before": -0.00150656,
+          "slope_after": -0.20446007,
+          "onset_type": true
+        },
+        "thinning": {
+          "parity0": {
+            "delta_bic": 51.989,
+            "t_star": 16.0,
+            "slope_before": -0.00047093,
+            "slope_after": -0.13977821,
+            "onset_type": true,
+            "ok": true
+          },
+          "parity1": {
+            "delta_bic": 8.051,
+            "t_star": 15.0,
+            "slope_before": 0.00386071,
+            "slope_after": -0.11196052,
+            "onset_type": true,
+            "ok": true
+          }
+        },
+        "b5_onset": true
+      }
+    }
+  },
+  "registered_outcomes": {
+    "LGTB1_plateau_then_collapse": true,
+    "LGTB2_resolvable_onset": true,
+    "LGTB3_symmetry": true,
+    "n_learned": 5,
+    "b5_count_learned": 5,
+    "median_plateau_len": 19.0
+  }
+}

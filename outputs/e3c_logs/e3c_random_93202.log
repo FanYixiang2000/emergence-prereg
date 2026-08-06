@@ -1,0 +1,15 @@
+Gym has been unmaintained since 2022 and does not support NumPy 2.0 amongst other critical functionality.
+Please upgrade to Gymnasium, the maintained drop-in replacement of Gym, or contact the authors of your software and request that they upgrade.
+Users of this version of Gym should be able to simply replace 'import gym' with 'import gymnasium as gym' in the vast majority of cases.
+See the migration guide at https://gymnasium.farama.org/introduction/migration_guide/ for additional information.
+E3C condition=random seed=93202 window=(1160000, 1520000)
+trained in 26.58 min; evaluating
+{
+  "condition": "random",
+  "seed": 93202,
+  "G": 0.04201798674383471,
+  "M": 13.8,
+  "score": 37.6,
+  "C_rel": 0.015680301729837254
+}
+Wrote /home/Yixiang/MPARL/GOGOGO/outputs/overcooked_e3c_random_s93202.json

@@ -1,0 +1,170 @@
+{
+  "status": "BP-FRESH frozen analysis; fresh seeds, ladder-only curves; detector identical to BP",
+  "window": [
+    480000,
+    1250000
+  ],
+  "per_seed": {
+    "93004": {
+      "detail": {
+        "C_env": {
+          "delta_bic": 20.266,
+          "breakpoint_step": 1000000,
+          "verdict": true,
+          "rss_1seg": 0.001179,
+          "rss_2seg": 0.00019
+        },
+        "collapse_norm": {
+          "delta_bic": 2.124,
+          "breakpoint_step": 1500000,
+          "verdict": true,
+          "rss_1seg": 0.00437,
+          "rss_2seg": 0.002575
+        },
+        "C_individual": {
+          "delta_bic": 0.825,
+          "breakpoint_step": 1500000,
+          "verdict": false,
+          "rss_1seg": 0.117337,
+          "rss_2seg": 0.075877
+        },
+        "C_relational": {
+          "delta_bic": 6.442,
+          "breakpoint_step": 120000,
+          "verdict": true,
+          "rss_1seg": 0.000957,
+          "rss_2seg": 0.000414
+        }
+      },
+      "env_positive": true,
+      "thinning": {
+        "parity0": {
+          "delta_bic": 6.165,
+          "breakpoint_step": 820000,
+          "verdict": true,
+          "rss_1seg": 0.000274,
+          "rss_2seg": 6.5e-05,
+          "hinge_ok": true
+        },
+        "parity1": {
+          "delta_bic": 33.127,
+          "breakpoint_step": 1000000,
+          "verdict": true,
+          "rss_1seg": 0.000827,
+          "rss_2seg": 4e-06,
+          "hinge_ok": true
+        }
+      },
+      "thinning_ok": true
+    },
+    "93005": {
+      "detail": {
+        "C_env": {
+          "delta_bic": 4.284,
+          "breakpoint_step": 640000,
+          "verdict": true,
+          "rss_1seg": 7.6e-05,
+          "rss_2seg": 3.8e-05
+        },
+        "collapse_norm": {
+          "delta_bic": -2.009,
+          "breakpoint_step": 820000,
+          "verdict": false,
+          "rss_1seg": 0.002973,
+          "rss_2seg": 0.002354
+        },
+        "C_individual": {
+          "delta_bic": -2.176,
+          "breakpoint_step": 820000,
+          "verdict": false,
+          "rss_1seg": 0.081521,
+          "rss_2seg": 0.065318
+        },
+        "C_relational": {
+          "delta_bic": 0.91,
+          "breakpoint_step": 160000,
+          "verdict": false,
+          "rss_1seg": 0.001115,
+          "rss_2seg": 0.000717
+        }
+      },
+      "env_positive": true,
+      "thinning": {
+        "parity0": {
+          "delta_bic": 7.502,
+          "breakpoint_step": 1250000,
+          "verdict": true,
+          "rss_1seg": 4e-05,
+          "rss_2seg": 8e-06,
+          "hinge_ok": false
+        },
+        "parity1": {
+          "delta_bic": 1.424,
+          "breakpoint_step": 640000,
+          "verdict": false,
+          "rss_1seg": 3.6e-05,
+          "rss_2seg": 1.7e-05,
+          "hinge_ok": true
+        }
+      },
+      "thinning_ok": false
+    },
+    "93006": {
+      "detail": {
+        "C_env": {
+          "delta_bic": 5.845,
+          "breakpoint_step": 640000,
+          "verdict": true,
+          "rss_1seg": 0.003135,
+          "rss_2seg": 0.001416
+        },
+        "collapse_norm": {
+          "delta_bic": -4.353,
+          "breakpoint_step": 1000000,
+          "verdict": false,
+          "rss_1seg": 0.005917,
+          "rss_2seg": 0.005538
+        },
+        "C_individual": {
+          "delta_bic": -4.377,
+          "breakpoint_step": 80000,
+          "verdict": false,
+          "rss_1seg": 0.141828,
+          "rss_2seg": 0.132991
+        },
+        "C_relational": {
+          "delta_bic": 5.836,
+          "breakpoint_step": 640000,
+          "verdict": true,
+          "rss_1seg": 0.000424,
+          "rss_2seg": 0.000192
+        }
+      },
+      "env_positive": true,
+      "thinning": {
+        "parity0": {
+          "delta_bic": 1.576,
+          "breakpoint_step": 480000,
+          "verdict": false,
+          "rss_1seg": 0.002226,
+          "rss_2seg": 0.001019,
+          "hinge_ok": true
+        },
+        "parity1": {
+          "delta_bic": 7.679,
+          "breakpoint_step": 640000,
+          "verdict": true,
+          "rss_1seg": 0.000741,
+          "rss_2seg": 0.000142,
+          "hinge_ok": true
+        }
+      },
+      "thinning_ok": false
+    }
+  },
+  "registered_outcomes": {
+    "BPF1_env_breakpoint_majority": true,
+    "BPF2_thinning_persistence": false,
+    "n_positive_seeds": 3
+  }
+}

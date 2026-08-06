@@ -1,0 +1,267 @@
+{
+  "size": "2.8b",
+  "steps": {
+    "step0": {
+      "complete": true,
+      "shards": {
+        "model-00001-of-00002.safetensors": {
+          "bytes": 4978208880,
+          "sha256": "dee700d6e97069cd01c87ad78b7af4e64650c4d835e3dc02b882ab424cb8c3ee"
+        },
+        "model-00002-of-00002.safetensors": {
+          "bytes": 572254832,
+          "sha256": "82c4f17fa7c235739c970d6bcc341d04a9b45326a3b4dedcee38999e191cd09f"
+        }
+      }
+    },
+    "step1": {
+      "complete": true,
+      "shards": {
+        "model-00001-of-00002.safetensors": {
+          "bytes": 4978208880,
+          "sha256": "763509284d151a6fec7748f439318b6243066db7b54da58b791176c5397c3777"
+        },
+        "model-00002-of-00002.safetensors": {
+          "bytes": 572254832,
+          "sha256": "c3fd96ed139d1d1c0a5316215af8843abc01b5f6e752a057b324f3083919c2cb"
+        }
+      }
+    },
+    "step2": {
+      "complete": true,
+      "shards": {
+        "model-00001-of-00002.safetensors": {
+          "bytes": 4978208880,
+          "sha256": "ade39f01d5e9d646db81a187b0f46eb8e50c8066475c95d09abd7bf8059d536a"
+        },
+        "model-00002-of-00002.safetensors": {
+          "bytes": 572254832,
+          "sha256": "db9a78826151f473402386a2303532b61c971cabaae4b2d8cb3d5c45d6d115af"
+        }
+      }
+    },
+    "step4": {
+      "complete": true,
+      "shards": {
+        "model-00001-of-00002.safetensors": {
+          "bytes": 4978208880,
+          "sha256": "a61e11faeb3fda42dd7d0cb1c060302e97cb8efcf63b12e9686ce5eb45cb162c"
+        },
+        "model-00002-of-00002.safetensors": {
+          "bytes": 572254832,
+          "sha256": "93d0b60a4500f7362ddacb18a8a513f8fcfc05ee051f52649a620d036ce26e6f"
+        }
+      }
+    },
+    "step8": {
+      "complete": true,
+      "shards": {
+        "model-00001-of-00002.safetensors": {
+          "bytes": 4978208880,
+          "sha256": "e584c9f15163544e6320255976686f2f536d038e3d470b8bccfdddc0eacbff67"
+        },
+        "model-00002-of-00002.safetensors": {
+          "bytes": 572254832,
+          "sha256": "7a5f6919a0535500d0ee6e71b0c50b375ce554108fd441c59e651733c853efc2"
+        }
+      }
+    },
+    "step16": {
+      "complete": true,
+      "shards": {
+        "model-00001-of-00002.safetensors": {
+          "bytes": 4978208880,
+          "sha256": "7db85fadd7f62054f21ab6f0ba923ac5b0925ff6b485c97eac5dc8122e8d4011"
+        },
+        "model-00002-of-00002.safetensors": {
+          "bytes": 572254832,
+          "sha256": "8ac7235dfa988ee3783e83c4bea5e97a08dbcb2fa14658fe46a62d99993c01e8"
+        }
+      }
+    },
+    "step32": {
+      "complete": true,
+      "shards": {
+        "model-00001-of-00002.safetensors": {
+          "bytes": 4978208880,
+          "sha256": "763ef0755d204b165932b515ddcbfbd301c5a0c645c3f0bdf4ea6ba99cd8c608"
+        },
+        "model-00002-of-00002.safetensors": {
+          "bytes": 572254832,
+          "sha256": "5ddcfd1a5bc0d415bf813682b02bc3d161f8fdee5d57cf40cfcf9c519f12c5e8"
+        }
+      }
+    },
+    "step64": {
+      "complete": true,
+      "shards": {
+        "model-00001-of-00002.safetensors": {
+          "bytes": 4978208880,
+          "sha256": "449332f9aecc6c5e6074bc1ba8c031407fa6c3061977eb1c781c6b037aa03d8f"
+        },
+        "model-00002-of-00002.safetensors": {
+          "bytes": 572254832,
+          "sha256": "85cfa05ba809c2c8eb4cdeafd95be3c1097c3f0cd3d5dfe687b0ae6a212df2a4"
+        }
+      }
+    },
+    "step128": {
+      "complete": true,
+      "shards": {
+        "model-00001-of-00002.safetensors": {
+          "bytes": 4978208880,
+          "sha256": "629c7a9621672a8a96359cd963a229bcfc177709c5b230d3e1cdb30a524b8221"
+        },
+        "model-00002-of-00002.safetensors": {
+          "bytes": 572254832,
+          "sha256": "c7a6d1665b1120252dfc3a63372f67c0573e15be458779293579543d27bc60d6"
+        }
+      }
+    },
+    "step256": {
+      "complete": true,
+      "shards": {
+        "model-00001-of-00002.safetensors": {
+          "bytes": 4978208880,
+          "sha256": "63ea92057835d7ce8512f451d7090898f49cd8c685c71150be2456b08c0831d9"
+        },
+        "model-00002-of-00002.safetensors": {
+          "bytes": 572254832,
+          "sha256": "c15ffce38b084f033c006cd895d301abd61d8e4ca771e20e634a0ddf32703a2d"
+        }
+      }
+    },
+    "step512": {
+      "complete": true,
+      "shards": {
+        "model-00001-of-00002.safetensors": {
+          "bytes": 4978208880,
+          "sha256": "b74044270c342c2b438942f3341709fd1a3f6ecfa8c4fcbd59ac908da93a8f4e"
+        },
+        "model-00002-of-00002.safetensors": {
+          "bytes": 572254832,
+          "sha256": "167b29f6429055d1221c8296b319ac5ba76e6a0d2904b8446ca445907bf2382c"
+        }
+      }
+    },
+    "step1000": {
+      "complete": true,
+      "shards": {
+        "model-00001-of-00002.safetensors": {
+          "bytes": 4978208880,
+          "sha256": "f6a6c2f8f40825a56d414cb2d26b0c7c2b41c98259b74c779735b15a30d7138c"
+        },
+        "model-00002-of-00002.safetensors": {
+          "bytes": 572254832,
+          "sha256": "a17e4ecc75e66cd34ea41aae147ea3cbe7165788d1f84054ab83c023385c8669"
+        }
+      }
+    },
+    "step2000": {
+      "complete": true,
+      "shards": {
+        "model-00001-of-00002.safetensors": {
+          "bytes": 4978208880,
+          "sha256": "cea5d388079b20b2f5fd355a2dbb573f473dbf11fe2faea13570c3c3f847029c"
+        },
+        "model-00002-of-00002.safetensors": {
+          "bytes": 572254832,
+          "sha256": "2b68a2c2cb0eaca9e5eb2e3beb81dd5de15216e3984ec80d2760c2a05d31b958"
+        }
+      }
+    },
+    "step4000": {
+      "complete": true,
+      "shards": {
+        "model-00001-of-00002.safetensors": {
+          "bytes": 4978208880,
+          "sha256": "08390693471430e08822e2200872146ab15fe0d585470c9cee809da1dcae77c8"
+        },
+        "model-00002-of-00002.safetensors": {
+          "bytes": 572254832,
+          "sha256": "06a586b805cd5aecb84e76c4cc726399cd40702f5af9a6c9de9e7e2ac5e6f6c2"
+        }
+      }
+    },
+    "step8000": {
+      "complete": true,
+      "shards": {
+        "model-00001-of-00002.safetensors": {
+          "bytes": 4978208880,
+          "sha256": "eb902ef1cd8f2bc32537898a2ac2ead61f4ef97f628466b9316877a99731d5f7"
+        },
+        "model-00002-of-00002.safetensors": {
+          "bytes": 572254832,
+          "sha256": "763b57832b4eeb9456e6e6bafd06fde0378f06c064dc4f5b5e4155769d4f936a"
+        }
+      }
+    },
+    "step16000": {
+      "complete": true,
+      "shards": {
+        "model-00001-of-00002.safetensors": {
+          "bytes": 4978208880,
+          "sha256": "28af6ff1fea4e0ea646c8e5f4391e15eeffd1ca070f33bc2d128852aabf34e79"
+        },
+        "model-00002-of-00002.safetensors": {
+          "bytes": 572254832,
+          "sha256": "7789b48040f6623401d825d78ce9562dc2b4ea4ea9be3ffab7f32ca2b2fded9a"
+        }
+      }
+    },
+    "step32000": {
+      "complete": true,
+      "shards": {
+        "model.safetensors": {
+          "bytes": 5684693096,
+          "sha256": "ab496f1c3fd79e3c749a9d5414136a2c8e4224f94eecb261970315cdb0f813fe"
+        }
+      }
+    },
+    "step64000": {
+      "complete": true,
+      "shards": {
+        "model.safetensors": {
+          "bytes": 5550463728,
+          "sha256": "462f2b960062159c3779eb1cfe5829783ea72da66b020bcbabf86bc6dd33063c"
+        }
+      }
+    },
+    "step96000": {
+      "complete": true,
+      "shards": {
+        "model.safetensors": {
+          "bytes": 5550463728,
+          "sha256": "0e208b1cba10e62c4388879866d75d0d3e94d96d8491660f2c65f1a17930ed92"
+        }
+      }
+    },
+    "step128000": {
+      "complete": true,
+      "shards": {
+        "model.safetensors": {
+          "bytes": 5550463728,
+          "sha256": "3df7a173d5bec3fb3d899cd399a860be662c07f46c6467c8a82b727ffb056b4b"
+        }
+      }
+    },
+    "step143000": {
+      "complete": true,
+      "shards": {
+        "model.safetensors": {
+          "bytes": 5550463728,
+          "sha256": "462f2b960062159c3779eb1cfe5829783ea72da66b020bcbabf86bc6dd33063c"
+        }
+      }
+    }
+  },
+  "n_complete": 21,
+  "duplicate_revision_groups": [
+    [
+      "step64000",
+      "step143000"
+    ]
+  ],
+  "problems": [],
+  "all_revisions_distinct": false
+}

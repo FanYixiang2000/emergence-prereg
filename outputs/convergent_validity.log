@@ -1,0 +1,54 @@
+convergent validity: cell (7.0,0.7) seed 10570
+  M 0.679->0.738  U -0.24->-0.22
+convergent validity: cell (7.0,0.7) seed 10571
+  M 0.540->0.569  U -0.23->-0.17
+convergent validity: cell (7.0,0.7) seed 10572
+  M 0.567->0.667  U -0.12->-0.04
+convergent validity: cell (7.0,0.7) seed 10573
+  M 0.575->0.404  U -0.03->-0.24
+convergent validity: cell (7.0,0.7) seed 10574
+  M 0.593->0.608  U -0.12->-0.15
+convergent validity: cell (10.0,0.4) seed 10840
+  M 0.684->0.593  U -0.00->-0.05
+convergent validity: cell (10.0,0.4) seed 10841
+  M 0.551->0.317  U +0.27->+0.61
+convergent validity: cell (10.0,0.4) seed 10842
+  M 0.476->0.404  U +0.65->+0.39
+convergent validity: cell (10.0,0.4) seed 10843
+  M 0.709->0.444  U -0.05->+0.51
+convergent validity: cell (10.0,0.4) seed 10844
+  M 0.413->0.455  U +0.78->+0.69
+convergent validity: cell (13.0,0.1) seed 11110
+  M 0.618->0.596  U -0.02->+1.33
+convergent validity: cell (13.0,0.1) seed 11111
+  M 0.333->0.309  U -0.24->+0.34
+convergent validity: cell (13.0,0.1) seed 11112
+  M 0.599->0.605  U -0.10->+0.16
+convergent validity: cell (13.0,0.1) seed 11113
+  M 0.337->0.405  U +0.39->+0.36
+convergent validity: cell (13.0,0.1) seed 11114
+  M 0.570->0.494  U -0.11->+1.41
+convergent validity: cell (13.0,0.25) seed 11125
+  M 0.532->0.494  U -0.16->+0.97
+convergent validity: cell (13.0,0.25) seed 11126
+  M 0.593->0.475  U -0.02->+1.45
+convergent validity: cell (13.0,0.25) seed 11127
+  M 0.641->0.507  U -0.02->+1.28
+convergent validity: cell (13.0,0.25) seed 11128
+  M 0.463->0.348  U +0.19->+0.13
+convergent validity: cell (13.0,0.25) seed 11129
+  M 0.487->0.571  U +1.35->+1.31
+{
+ "M_early->M_final": 0.5609022556390978,
+ "perf_early->M_final": -0.0887218045112782,
+ "U_early->U_final": 0.3849624060150376,
+ "perf_early->U_final": 0.4150375939849624,
+ "M_early->U_final": -0.08270676691729323
+}
+{
+ "CV1_M_matched_beats_crossed": true,
+ "CV2_U_matched_beats_crossed": false,
+ "CV3_record_adds_loo_r2": false
+}
+LOO R2: perf 0.057 vs perf+record -0.029
+Wrote /home/Yixiang/MPARL/GOGOGO/outputs/convergent_validity.json

@@ -1,0 +1,269 @@
+{
+  "status": "LEARN-TRANSPORT-EQ-UTILITY learned controllability + baseline race; preregistered",
+  "config": {
+    "seeds": 5,
+    "updates": 700,
+    "taus": [
+      0,
+      2,
+      4,
+      6,
+      8,
+      12,
+      20
+    ],
+    "eval_batch": 2048,
+    "kick_x": 1.0,
+    "kick_v": 0.35
+  },
+  "seeds": {
+    "0": {
+      "final_success": 1.0,
+      "final_entropy0": 0.91544,
+      "final_side_mean": -0.02832,
+      "per_tau": {
+        "0": {
+          "switch_rate": 1.0,
+          "success": 1.0,
+          "mean_entropy": 0.91544
+        },
+        "2": {
+          "switch_rate": 1.0,
+          "success": 1.0,
+          "mean_entropy": 0.85728
+        },
+        "4": {
+          "switch_rate": 1.0,
+          "success": 1.0,
+          "mean_entropy": 0.74085
+        },
+        "6": {
+          "switch_rate": 1.0,
+          "success": 1.0,
+          "mean_entropy": 0.62254
+        },
+        "8": {
+          "switch_rate": 1.0,
+          "success": 1.0,
+          "mean_entropy": 0.51658
+        },
+        "12": {
+          "switch_rate": 0.83984,
+          "success": 1.0,
+          "mean_entropy": 0.3755
+        },
+        "20": {
+          "switch_rate": 0.24365,
+          "success": 1.0,
+          "mean_entropy": 0.24621
+        }
+      }
+    },
+    "1": {
+      "final_success": 1.0,
+      "final_entropy0": 0.91764,
+      "final_side_mean": -0.0498,
+      "per_tau": {
+        "0": {
+          "switch_rate": 1.0,
+          "success": 1.0,
+          "mean_entropy": 0.91764
+        },
+        "2": {
+          "switch_rate": 1.0,
+          "success": 1.0,
+          "mean_entropy": 0.86153
+        },
+        "4": {
+          "switch_rate": 1.0,
+          "success": 1.0,
+          "mean_entropy": 0.75902
+        },
+        "6": {
+          "switch_rate": 1.0,
+          "success": 1.0,
+          "mean_entropy": 0.63488
+        },
+        "8": {
+          "switch_rate": 1.0,
+          "success": 1.0,
+          "mean_entropy": 0.51679
+        },
+        "12": {
+          "switch_rate": 0.89014,
+          "success": 1.0,
+          "mean_entropy": 0.37911
+        },
+        "20": {
+          "switch_rate": 0.26611,
+          "success": 1.0,
+          "mean_entropy": 0.24952
+        }
+      }
+    },
+    "2": {
+      "final_success": 1.0,
+      "final_entropy0": 0.92043,
+      "final_side_mean": -0.02539,
+      "per_tau": {
+        "0": {
+          "switch_rate": 1.0,
+          "success": 1.0,
+          "mean_entropy": 0.92043
+        },
+        "2": {
+          "switch_rate": 1.0,
+          "success": 1.0,
+          "mean_entropy": 0.86482
+        },
+        "4": {
+          "switch_rate": 1.0,
+          "success": 1.0,
+          "mean_entropy": 0.74877
+        },
+        "6": {
+          "switch_rate": 1.0,
+          "success": 1.0,
+          "mean_entropy": 0.61861
+        },
+        "8": {
+          "switch_rate": 1.0,
+          "success": 1.0,
+          "mean_entropy": 0.51957
+        },
+        "12": {
+          "switch_rate": 0.90479,
+          "success": 1.0,
+          "mean_entropy": 0.38084
+        },
+        "20": {
+          "switch_rate": 0.27588,
+          "success": 1.0,
+          "mean_entropy": 0.25523
+        }
+      }
+    },
+    "3": {
+      "final_success": 0.99951,
+      "final_entropy0": 0.91853,
+      "final_side_mean": -0.00488,
+      "per_tau": {
+        "0": {
+          "switch_rate": 1.0,
+          "success": 1.0,
+          "mean_entropy": 0.91854
+        },
+        "2": {
+          "switch_rate": 1.0,
+          "success": 1.0,
+          "mean_entropy": 0.8552
+        },
+        "4": {
+          "switch_rate": 1.0,
+          "success": 1.0,
+          "mean_entropy": 0.72732
+        },
+        "6": {
+          "switch_rate": 1.0,
+          "success": 1.0,
+          "mean_entropy": 0.59521
+        },
+        "8": {
+          "switch_rate": 1.0,
+          "success": 1.0,
+          "mean_entropy": 0.51237
+        },
+        "12": {
+          "switch_rate": 0.91553,
+          "success": 1.0,
+          "mean_entropy": 0.37159
+        },
+        "20": {
+          "switch_rate": 0.3125,
+          "success": 1.0,
+          "mean_entropy": 0.2595
+        }
+      }
+    },
+    "4": {
+      "final_success": 1.0,
+      "final_entropy0": 0.91558,
+      "final_side_mean": -0.01855,
+      "per_tau": {
+        "0": {
+          "switch_rate": 1.0,
+          "success": 1.0,
+          "mean_entropy": 0.91558
+        },
+        "2": {
+          "switch_rate": 1.0,
+          "success": 1.0,
+          "mean_entropy": 0.85643
+        },
+        "4": {
+          "switch_rate": 1.0,
+          "success": 1.0,
+          "mean_entropy": 0.74436
+        },
+        "6": {
+          "switch_rate": 1.0,
+          "success": 1.0,
+          "mean_entropy": 0.6227
+        },
+        "8": {
+          "switch_rate": 1.0,
+          "success": 1.0,
+          "mean_entropy": 0.5221
+        },
+        "12": {
+          "switch_rate": 0.94043,
+          "success": 1.0,
+          "mean_entropy": 0.37479
+        },
+        "20": {
+          "switch_rate": 0.30176,
+          "success": 1.0,
+          "mean_entropy": 0.25696
+        }
+      }
+    }
+  },
+  "registered_outcomes": {
+    "LTEQU1_learnability": true,
+    "LTEQU2_timing_law": true,
+    "LTEQU3_openness_utility": false,
+    "LTEQU4_beats_tau_baseline": true,
+    "n_learned": 5,
+    "mean_switch_by_tau": {
+      "0": 1.0,
+      "2": 1.0,
+      "4": 1.0,
+      "6": 1.0,
+      "8": 1.0,
+      "12": 0.89815,
+      "20": 0.27998
+    },
+    "baseline_race": {
+      "entropy": {
+        "rank_corr": 0.26559,
+        "auc": 0.99554,
+        "oriented": "high predicts switch"
+      },
+      "absx": {
+        "rank_corr": 0.40445,
+        "auc": 0.99936,
+        "oriented": "low predicts switch (sign-flipped for AUC)"
+      },
+      "absv": {
+        "rank_corr": 0.39754,
+        "auc": 0.99939,
+        "oriented": "low predicts switch (sign-flipped for AUC)"
+      },
+      "tau": {
+        "rank_corr": 0.33058,
+        "auc": 0.97999,
+        "oriented": "low predicts switch (sign-flipped for AUC)"
+      }
+    }
+  }
+}

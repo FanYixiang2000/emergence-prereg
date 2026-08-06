@@ -1,0 +1,181 @@
+{
+  "status": "REPR-ROBUSTNESS contract-invariance re-analysis of stored curves; registered before run",
+  "config": {
+    "strides": [
+      1,
+      2,
+      3
+    ],
+    "sat_fracs": [
+      0.02,
+      0.05,
+      0.1
+    ],
+    "window_fracs": [
+      0.75,
+      0.875,
+      1.0
+    ],
+    "gates": [
+      0.05,
+      0.1,
+      0.15
+    ],
+    "dbics": [
+      8.0,
+      10.0,
+      12.0
+    ],
+    "frozen_cell": {
+      "stride": 1,
+      "sat": 0.05,
+      "window": 1.0,
+      "gate": 0.1,
+      "dbic": 10.0
+    }
+  },
+  "systems": {
+    "grip:side_openness": {
+      "n_cells": 243,
+      "n_gated": 243,
+      "n_gated_stride1": 81,
+      "frac_onset_among_gated": 1.0,
+      "t_star_range_frac": 0.0127,
+      "t_star_min": 16.0,
+      "t_star_max": 17.0,
+      "onset_rate_by_axis_level": {
+        "stride": {
+          "1": 1.0,
+          "2": 0.0,
+          "3": 0.0
+        },
+        "sat": {
+          "0.02": 0.3333333333333333,
+          "0.05": 0.3333333333333333,
+          "0.1": 0.3333333333333333
+        },
+        "window": {
+          "0.75": 0.3333333333333333,
+          "0.875": 0.3333333333333333,
+          "1.0": 0.3333333333333333
+        },
+        "gate": {
+          "0.05": 0.3333333333333333,
+          "0.1": 0.3333333333333333,
+          "0.15": 0.3333333333333333
+        },
+        "dbic": {
+          "8.0": 0.3333333333333333,
+          "10.0": 0.3333333333333333,
+          "12.0": 0.3333333333333333
+        }
+      },
+      "frozen_cell_verdict": {
+        "collapse": true,
+        "onset": true,
+        "t_star": 17.0,
+        "delta_bic": 62.19
+      }
+    },
+    "ant_N100": {
+      "n_cells": 243,
+      "n_gated": 243,
+      "n_gated_stride1": 81,
+      "frac_onset_among_gated": 1.0,
+      "t_star_range_frac": 0.0778,
+      "t_star_min": 32.0,
+      "t_star_max": 39.0,
+      "onset_rate_by_axis_level": {
+        "stride": {
+          "1": 1.0,
+          "2": 1.0,
+          "3": 1.0
+        },
+        "sat": {
+          "0.02": 1.0,
+          "0.05": 1.0,
+          "0.1": 1.0
+        },
+        "window": {
+          "0.75": 1.0,
+          "0.875": 1.0,
+          "1.0": 1.0
+        },
+        "gate": {
+          "0.05": 1.0,
+          "0.1": 1.0,
+          "0.15": 1.0
+        },
+        "dbic": {
+          "8.0": 1.0,
+          "10.0": 1.0,
+          "12.0": 1.0
+        }
+      },
+      "frozen_cell_verdict": {
+        "collapse": true,
+        "onset": true,
+        "t_star": 35.0,
+        "delta_bic": 217.17
+      }
+    },
+    "tri_c_bp": {
+      "n_cells": 243,
+      "n_gated": 243,
+      "n_gated_stride1": 81,
+      "frac_onset_among_gated": 1.0,
+      "t_star_range_frac": 0.1125,
+      "t_star_min": 550.0,
+      "t_star_max": 775.0,
+      "onset_rate_by_axis_level": {
+        "stride": {
+          "1": 1.0,
+          "2": 1.0,
+          "3": 1.0
+        },
+        "sat": {
+          "0.02": 1.0,
+          "0.05": 1.0,
+          "0.1": 1.0
+        },
+        "window": {
+          "0.75": 1.0,
+          "0.875": 1.0,
+          "1.0": 1.0
+        },
+        "gate": {
+          "0.05": 1.0,
+          "0.1": 1.0,
+          "0.15": 1.0
+        },
+        "dbic": {
+          "8.0": 1.0,
+          "10.0": 1.0,
+          "12.0": 1.0
+        }
+      },
+      "frozen_cell_verdict": {
+        "collapse": true,
+        "onset": true,
+        "t_star": 650.0,
+        "delta_bic": 116.04
+      }
+    }
+  },
+  "object_semantics_note": {
+    "grip_full_action_entropy_first": 0.0009,
+    "grip_full_action_entropy_last": 0.4608,
+    "grip_full_action_entropy_drop": -0.46,
+    "comment": "raw 3-action entropy rises (drop < 0); it conflates the grip action with side commitment and is not the theory-specified collapse object -- side-openness is"
+  },
+  "registered_outcomes": {
+    "RR1_verdict_invariance_ge_0.90_all": true,
+    "RR2_location_stability_le_0.20_all": true,
+    "RR3_frozen_reproduces_all": true,
+    "per_system_rr1": {
+      "grip:side_openness": 1.0,
+      "ant_N100": 1.0,
+      "tri_c_bp": 1.0
+    }
+  }
+}

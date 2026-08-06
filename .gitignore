@@ -1,0 +1,16 @@
+external_checkpoints/
+external_chess/
+external_pythia*/
+external_text/
+__pycache__/
+*.pyc
+.cache/
+*.aux
+*.bbl
+*.blg
+*.fls
+*.fdb_latexmk
+*.synctex.gz
+*.toc
+main.log
+main.out

@@ -1,0 +1,21 @@
+training exploiter, seed 9301
+  trig bridge 1.00 rescue 0.00 | pot 1.00 spec 0.90 | U_priv +7.50 U_team -2.00 | acq 0.95
+training exploiter, seed 9302
+  trig bridge 1.00 rescue 0.00 | pot 1.00 spec 0.87 | U_priv +7.50 U_team -2.00 | acq 0.98
+training exploiter, seed 9303
+  trig bridge 1.00 rescue 0.00 | pot 1.00 spec 0.92 | U_priv +7.50 U_team -2.00 | acq 0.98
+training exploiter, seed 9304
+  trig bridge 1.00 rescue 0.00 | pot 1.00 spec 0.94 | U_priv +7.50 U_team -2.00 | acq 0.96
+training exploiter, seed 9305
+  trig bridge 1.00 rescue 0.00 | pot 1.00 spec 0.88 | U_priv +7.50 U_team -2.00 | acq 0.94
+{
+  "HE1_harmful_direction_selectivity": "5/5",
+  "HE2_structural_components": "5/5",
+  "HE3_value_sign_split": "5/5",
+  "HE4_acquisition": "5/5",
+  "HE1_pass": true,
+  "HE2_pass": true,
+  "HE3_pass": true,
+  "HE4_pass": true
+}
+Wrote /home/Yixiang/MPARL/GOGOGO/outputs/learned_harmful_emergence.json

@@ -1,0 +1,21 @@
+seed=0: S=0.99999 O=1e-05 B5=True dBIC=20.231 t*=150.0 s090=225 assign=[5, 0, 2, 1, 4, 3]
+seed=1: S=0.99999 O=1e-05 B5=False dBIC=27.513 t*=150.0 s090=225 assign=[1, 4, 3, 2, 5, 0]
+seed=2: S=0.99999 O=1e-05 B5=False dBIC=None t*=None s090=125 assign=[2, 0, 5, 3, 4, 1]
+seed=3: S=0.99999 O=1e-05 B5=False dBIC=None t*=None s090=175 assign=[0, 5, 4, 2, 3, 1]
+seed=4: S=0.99999 O=1e-05 B5=False dBIC=None t*=None s090=200 assign=[0, 5, 2, 3, 1, 4]
+seed=5: S=0.99999 O=1e-05 B5=False dBIC=None t*=None s090=150 assign=[5, 1, 0, 3, 4, 2]
+seed=6: S=0.99999 O=1e-05 B5=False dBIC=None t*=None s090=200 assign=[3, 4, 2, 5, 0, 1]
+seed=7: S=0.99999 O=1e-05 B5=False dBIC=29.481 t*=200.0 s090=275 assign=[5, 3, 4, 1, 2, 0]
+seed=8: S=0.99999 O=1e-05 B5=False dBIC=None t*=None s090=175 assign=[5, 1, 4, 2, 3, 0]
+seed=9: S=0.99999 O=1e-05 B5=False dBIC=None t*=None s090=125 assign=[1, 2, 3, 0, 5, 4]
+{
+  "NN1_learnability": true,
+  "NN2_onset_rate": false,
+  "NN3_collapse_leads_capability": true,
+  "NN4_symmetry_breaking": true,
+  "n_learned": 10,
+  "n_onset": 1,
+  "onset_rate_learned": 0.1,
+  "n_distinct_assignments": 10
+}
+Wrote /home/Yixiang/MPARL/GOGOGO/outputs/learn_roles_nn.json

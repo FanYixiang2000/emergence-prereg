@@ -1,0 +1,36 @@
+seed 95301 ckpt 0: r=1.504 Chigh2=0.0003 Hb1=1.000
+seed 95301 ckpt 100: r=1.611 Chigh2=0.0002 Hb1=0.999
+seed 95301 ckpt 200: r=1.782 Chigh2=0.0003 Hb1=0.997
+seed 95301 ckpt 400: r=2.295 Chigh2=0.0020 Hb1=1.000
+seed 95301 ckpt 800: r=2.733 Chigh2=0.1869 Hb1=1.000
+seed 95301 ckpt 1200: r=2.953 Chigh2=0.7391 Hb1=1.000
+seed 95301 ckpt 1600: r=2.987 Chigh2=0.9156 Hb1=1.000
+seed 95301 ckpt 2000: r=2.995 Chigh2=0.9630 Hb1=1.000
+seed 95302 ckpt 0: r=1.517 Chigh2=0.0001 Hb1=0.998
+seed 95302 ckpt 100: r=1.622 Chigh2=0.0001 Hb1=0.998
+seed 95302 ckpt 200: r=1.792 Chigh2=0.0001 Hb1=0.998
+seed 95302 ckpt 400: r=2.258 Chigh2=0.0012 Hb1=0.999
+seed 95302 ckpt 800: r=2.711 Chigh2=0.1603 Hb1=1.000
+seed 95302 ckpt 1200: r=2.940 Chigh2=0.6968 Hb1=1.000
+seed 95302 ckpt 1600: r=2.983 Chigh2=0.8902 Hb1=1.000
+seed 95302 ckpt 2000: r=2.993 Chigh2=0.9527 Hb1=1.000
+seed 95303 ckpt 0: r=1.488 Chigh2=0.0000 Hb1=0.998
+seed 95303 ckpt 100: r=1.588 Chigh2=0.0003 Hb1=1.000
+seed 95303 ckpt 200: r=1.752 Chigh2=0.0001 Hb1=1.000
+seed 95303 ckpt 400: r=2.219 Chigh2=0.0001 Hb1=1.000
+seed 95303 ckpt 800: r=2.608 Chigh2=0.0532 Hb1=1.000
+seed 95303 ckpt 1200: r=2.861 Chigh2=0.4381 Hb1=1.000
+seed 95303 ckpt 1600: r=2.973 Chigh2=0.8269 Hb1=1.000
+seed 95303 ckpt 2000: r=2.992 Chigh2=0.9388 Hb1=1.000
+{
+  "TRIC1_formation": true,
+  "TRIC2_mixed_marginals": true,
+  "TRIC3_learned_high_order": true,
+  "TRIC4_contract_relativity": true,
+  "learning_seeds": [
+    "95301",
+    "95302",
+    "95303"
+  ]
+}
+Wrote /home/Yixiang/MPARL/GOGOGO/outputs/triad_highorder_cue.json

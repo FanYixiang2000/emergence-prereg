@@ -1,0 +1,33 @@
+{
+  "status": "DEEP-MARL-UTILITY-AUDIT retrospective, not confirmatory",
+  "pooled": {
+    "rank_commit_vs_assignment_js": 0.01089,
+    "rank_commit_vs_abs_gap": -0.10134,
+    "rank_early_vs_assignment_js": 0.1407,
+    "median_do_gap": 0.08333,
+    "median_abs_do_gap": 0.30208,
+    "n": 120
+  },
+  "per_seed": {
+    "11": {
+      "rank_commit_vs_assignment_js": -0.00919,
+      "rank_commit_vs_abs_gap": -0.0955,
+      "rank_early_vs_assignment_js": 0.03996
+    },
+    "22": {
+      "rank_commit_vs_assignment_js": 0.07542,
+      "rank_commit_vs_abs_gap": -0.01032,
+      "rank_early_vs_assignment_js": 0.27467
+    },
+    "33": {
+      "rank_commit_vs_assignment_js": -0.01538,
+      "rank_commit_vs_abs_gap": -0.14916,
+      "rank_early_vs_assignment_js": 0.11238
+    }
+  },
+  "registered_audit_outcomes": {
+    "DMA1_commit_predicts_assignment_js": false,
+    "DMA2_commit_predicts_abs_gap": false,
+    "DMA3_early_predicts_assignment_js": true
+  }
+}

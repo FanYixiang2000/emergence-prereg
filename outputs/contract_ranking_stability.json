@@ -1,0 +1,148 @@
+{
+  "status": "cross-contract ranking stability of E_struct; read-only over stored outputs; expectation declared in the docstring",
+  "pairwise_spearman_learned_ranking": {
+    "A_hand vs B_speed": 0.8607142857142858,
+    "A_hand vs C_summary_kmeans": 0.8571428571428571,
+    "A_hand vs D_lowlevel_kmeans": 0.8714285714285714,
+    "A_hand vs G_neargreedy": 0.6285714285714286,
+    "B_speed vs C_summary_kmeans": 0.925,
+    "B_speed vs D_lowlevel_kmeans": 0.8607142857142858,
+    "B_speed vs G_neargreedy": 0.7142857142857143,
+    "C_summary_kmeans vs D_lowlevel_kmeans": 0.8464285714285714,
+    "C_summary_kmeans vs G_neargreedy": 0.5857142857142857,
+    "D_lowlevel_kmeans vs G_neargreedy": 0.4357142857142857
+  },
+  "mean_pairwise_spearman": 0.7585714285714287,
+  "class_separation_by_contract": {
+    "A_hand": {
+      "n_seeds_with_controls": 15,
+      "min_learned_minus_best_control": -0.15243171503447162,
+      "mean_gap": -0.007382756953711208,
+      "class_separated_all_seeds": false
+    },
+    "B_speed": {
+      "n_seeds_with_controls": 15,
+      "min_learned_minus_best_control": -0.137436927058469,
+      "mean_gap": 0.009642064354541484,
+      "class_separated_all_seeds": false
+    },
+    "C_summary_kmeans": {
+      "n_seeds_with_controls": 15,
+      "min_learned_minus_best_control": -0.19014784651062577,
+      "mean_gap": 0.004570371341920184,
+      "class_separated_all_seeds": false
+    },
+    "D_lowlevel_kmeans": {
+      "n_seeds_with_controls": 15,
+      "min_learned_minus_best_control": -0.5788164847863948,
+      "mean_gap": -0.16594337578555116,
+      "class_separated_all_seeds": false
+    },
+    "G_neargreedy": {
+      "n_seeds_with_controls": 15,
+      "min_learned_minus_best_control": 0.17853337921779616,
+      "mean_gap": 0.6776053089987851,
+      "class_separated_all_seeds": true
+    }
+  },
+  "per_seed_score_intervals": {
+    "1101": {
+      "min": 0.8405299629178845,
+      "max": 1.0,
+      "range": 0.1594700370821155
+    },
+    "1102": {
+      "min": 0.8217932564681957,
+      "max": 0.8700516769128441,
+      "range": 0.04825842044464845
+    },
+    "1103": {
+      "min": 0.5980270772172395,
+      "max": 0.7711911097269355,
+      "range": 0.17316403250969603
+    },
+    "1104": {
+      "min": 0.5455353292312242,
+      "max": 0.6578297586309029,
+      "range": 0.11229442939967871
+    },
+    "1105": {
+      "min": 0.7383360694690349,
+      "max": 0.7702196909416369,
+      "range": 0.03188362147260204
+    },
+    "1106": {
+      "min": 0.8444294888377839,
+      "max": 0.9670802293611436,
+      "range": 0.12265074052335967
+    },
+    "1107": {
+      "min": 0.7074870430557534,
+      "max": 0.8582461804044171,
+      "range": 0.15075913734866375
+    },
+    "1108": {
+      "min": 0.5551135140606541,
+      "max": 0.6955825486330293,
+      "range": 0.14046903457237514
+    },
+    "1109": {
+      "min": 0.8218600491012981,
+      "max": 0.9638511068992074,
+      "range": 0.14199105779790933
+    },
+    "1110": {
+      "min": 0.5020935783433951,
+      "max": 0.7082048369328495,
+      "range": 0.20611125858945445
+    },
+    "1201": {
+      "min": 0.8432258833369138,
+      "max": 0.9704209294399846,
+      "range": 0.12719504610307075
+    },
+    "1202": {
+      "min": 0.575959140598967,
+      "max": 0.9033121068606772,
+      "range": 0.3273529662617102
+    },
+    "1203": {
+      "min": 0.8429732798242479,
+      "max": 0.9471837839180693,
+      "range": 0.10421050409382149
+    },
+    "1204": {
+      "min": 0.5474860025463174,
+      "max": 0.6795747313090686,
+      "range": 0.13208872876275124
+    },
+    "1205": {
+      "min": 0.42118351521360514,
+      "max": 0.6226761305265078,
+      "range": 0.2014926153129027
+    }
+  },
+  "E_adapt_learned_by_seed": {
+    "1101": 0.3852816884825435,
+    "1102": 0.4260064549471621,
+    "1103": 0.2903880011766413,
+    "1104": 0.14139226095270008,
+    "1105": 0.21799433074292784,
+    "1106": 0.29253841061551733,
+    "1107": 0.09271625221026449,
+    "1108": 0.2399130133713645,
+    "1109": 0.3802321818756608,
+    "1110": 0.2874400328875566,
+    "1201": 0.3498307785275885,
+    "1202": 0.21093699835681246,
+    "1203": 0.3918886589153795,
+    "1204": 0.22310301267355764,
+    "1205": 0.11472055918035143
+  },
+  "declared_outcomes": {
+    "RS1_mean_spearman_ge_0.5": true,
+    "RS2_class_separation_every_contract": false,
+    "RS2_note": "FAIL retained: the competent scripted coordinator has high structure by design; a structure-only score cannot separate learned from scripted, which is the layered definition's own claim",
+    "RS2b_followup_E_adapt_positive_learned": "15/15 (controls are 0 by construction: Q = 0)"
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "status": "cross-engine-family referee (SF11 classical eval; predictor scores untouched)",
+  "referee": {
+    "engine": "Stockfish 11 classical",
+    "depth": 18,
+    "gap_cp": 150,
+    "floor_cp": -50
+  },
+  "months": {
+    "main": {
+      "n": 400,
+      "sf11_base_rate": 0.075,
+      "auroc_do_gap_vs_sf11": 0.7426126126126126,
+      "auroc_shallow_gap_vs_sf11": 0.8157657657657658,
+      "flag_precision_vs_sf11": 0.2,
+      "flag_lift_vs_sf11": 2.666666666666667,
+      "label_agreement_nnue_vs_sf11": 0.96
+    },
+    "replication_2016_03": {
+      "n": 400,
+      "sf11_base_rate": 0.0875,
+      "auroc_do_gap_vs_sf11": 0.6693933463796478,
+      "auroc_shallow_gap_vs_sf11": 0.6671624266144814,
+      "flag_precision_vs_sf11": 0.22666666666666666,
+      "flag_lift_vs_sf11": 2.5904761904761906,
+      "label_agreement_nnue_vs_sf11": 0.955
+    }
+  },
+  "do_gap_transfers_across_engine_families": true
+}

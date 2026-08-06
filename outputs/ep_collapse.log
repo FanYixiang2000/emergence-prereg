@@ -1,0 +1,98 @@
+Gym has been unmaintained since 2022 and does not support NumPy 2.0 amongst other critical functionality.
+Please upgrade to Gymnasium, the maintained drop-in replacement of Gym, or contact the authors of your software and request that they upgrade.
+Users of this version of Gym should be able to simply replace 'import gym' with 'import gymnasium as gym' in the vast majority of cases.
+See the migration guide at https://gymnasium.farama.org/introduction/migration_guide/ for additional information.
+cramped_room: 40 snapshots
+  ep0 t=0: H=0.980 {'pot0_deliver': 10, 'pot1_deliver': 14}
+  ep0 t=40: H=-0.000 {'pot1_deliver': 24}
+  ep0 t=80: H=1.099 {'potnone_nodeliver': 1, 'pot1_deliver': 16, 'pot0_deliver': 7}
+  ep0 t=120: H=1.189 {'potnone_nodeliver': 2, 'pot0_deliver': 6, 'pot1_deliver': 16}
+  ep0 t=160: H=0.650 {'pot0_deliver': 4, 'pot1_deliver': 20}
+  ep1 t=0: H=1.462 {'pot0_deliver': 7, 'pot1_deliver': 14, 'pot1_nodeliver': 2, 'pot0_nodeliver': 1}
+  ep1 t=40: H=0.871 {'pot0_deliver': 7, 'pot1_deliver': 17}
+  ep1 t=80: H=0.544 {'pot0_deliver': 21, 'pot1_deliver': 3}
+  ep1 t=120: H=1.822 {'pot0_nodeliver': 4, 'pot1_deliver': 11, 'pot0_deliver': 6, 'pot1_nodeliver': 3}
+  ep1 t=160: H=0.650 {'pot1_deliver': 20, 'pot0_deliver': 4}
+  ep2 t=0: H=1.594 {'pot0_deliver': 8, 'pot0_nodeliver': 1, 'pot1_deliver': 12, 'pot1_nodeliver': 3}
+  ep2 t=40: H=0.544 {'pot1_deliver': 21, 'pot0_deliver': 3}
+  ep2 t=80: H=0.954 {'pot1_deliver': 15, 'pot0_deliver': 9}
+  ep2 t=120: H=0.544 {'pot0_deliver': 21, 'pot1_deliver': 3}
+  ep2 t=160: H=1.679 {'pot1_deliver': 10, 'pot0_deliver': 9, 'pot1_nodeliver': 4, 'pot0_nodeliver': 1}
+  ep3 t=0: H=1.325 {'pot1_deliver': 12, 'pot0_deliver': 10, 'pot1_nodeliver': 2}
+  ep3 t=40: H=0.980 {'pot1_deliver': 14, 'pot0_deliver': 10}
+  ep3 t=80: H=0.650 {'pot0_deliver': 20, 'pot1_deliver': 4}
+  ep3 t=120: H=0.785 {'pot1_deliver': 3, 'pot0_deliver': 20, 'pot0_nodeliver': 1}
+  ep3 t=160: H=0.954 {'pot0_deliver': 9, 'pot1_deliver': 15}
+  ep4 t=0: H=0.954 {'pot1_deliver': 15, 'pot0_deliver': 9}
+  ep4 t=40: H=1.000 {'pot0_deliver': 12, 'pot1_deliver': 12}
+  ep4 t=80: H=0.738 {'pot0_deliver': 19, 'pot1_deliver': 5}
+  ep4 t=120: H=0.785 {'pot1_deliver': 20, 'pot0_deliver': 1, 'pot1_nodeliver': 3}
+  ep4 t=160: H=1.408 {'pot1_deliver': 17, 'pot1_nodeliver': 3, 'pot0_nodeliver': 1, 'pot0_deliver': 2, 'potnone_nodeliver': 1}
+  ep5 t=0: H=1.196 {'pot1_deliver': 13, 'pot0_deliver': 10, 'pot0_nodeliver': 1}
+  ep5 t=40: H=1.613 {'pot1_deliver': 9, 'pot1_nodeliver': 1, 'pot0_deliver': 11, 'pot0_nodeliver': 3}
+  ep5 t=80: H=0.995 {'pot0_deliver': 13, 'pot1_deliver': 11}
+  ep5 t=120: H=0.544 {'pot1_deliver': 21, 'pot0_deliver': 3}
+  ep5 t=160: H=1.143 {'pot1_deliver': 15, 'pot0_deliver': 8, 'potnone_nodeliver': 1}
+  ep6 t=0: H=1.175 {'pot0_deliver': 9, 'pot1_deliver': 14, 'pot0_nodeliver': 1}
+  ep6 t=40: H=1.099 {'pot0_deliver': 7, 'pot1_deliver': 16, 'pot0_nodeliver': 1}
+  ep6 t=80: H=0.871 {'pot1_deliver': 17, 'pot0_deliver': 7}
+  ep6 t=120: H=0.497 {'pot0_deliver': 22, 'pot1_deliver': 1, 'pot0_nodeliver': 1}
+  ep6 t=160: H=0.738 {'pot0_deliver': 19, 'pot1_deliver': 5}
+  ep7 t=0: H=1.000 {'pot0_deliver': 12, 'pot1_deliver': 12}
+  ep7 t=40: H=0.918 {'pot0_deliver': 8, 'pot1_deliver': 16}
+  ep7 t=80: H=0.918 {'pot0_deliver': 16, 'pot1_deliver': 8}
+  ep7 t=120: H=1.382 {'pot0_deliver': 13, 'pot1_deliver': 8, 'pot0_nodeliver': 3}
+  ep7 t=160: H=1.896 {'pot1_deliver': 9, 'pot0_nodeliver': 3, 'pot0_deliver': 5, 'pot1_nodeliver': 7}
+asymmetric_advantages: 40 snapshots
+  ep0 t=0: H=-0.000 {'pot0_deliver': 24}
+  ep0 t=40: H=-0.000 {'pot0_deliver': 24}
+  ep0 t=80: H=-0.000 {'pot0_deliver': 24}
+  ep0 t=120: H=-0.000 {'pot0_deliver': 24}
+  ep0 t=160: H=-0.000 {'pot0_deliver': 24}
+  ep1 t=0: H=-0.000 {'pot0_deliver': 24}
+  ep1 t=40: H=-0.000 {'pot0_deliver': 24}
+  ep1 t=80: H=-0.000 {'pot0_deliver': 24}
+  ep1 t=120: H=-0.000 {'pot0_deliver': 24}
+  ep1 t=160: H=-0.000 {'pot0_deliver': 24}
+  ep2 t=0: H=0.250 {'pot0_deliver': 23, 'pot0_nodeliver': 1}
+  ep2 t=40: H=-0.000 {'pot0_deliver': 24}
+  ep2 t=80: H=-0.000 {'pot0_deliver': 24}
+  ep2 t=120: H=-0.000 {'pot0_deliver': 24}
+  ep2 t=160: H=-0.000 {'pot0_deliver': 24}
+  ep3 t=0: H=-0.000 {'pot0_deliver': 24}
+  ep3 t=40: H=-0.000 {'pot0_deliver': 24}
+  ep3 t=80: H=-0.000 {'pot0_deliver': 24}
+  ep3 t=120: H=-0.000 {'pot0_deliver': 24}
+  ep3 t=160: H=-0.000 {'pot0_deliver': 24}
+  ep4 t=0: H=-0.000 {'pot0_deliver': 24}
+  ep4 t=40: H=-0.000 {'pot0_deliver': 24}
+  ep4 t=80: H=-0.000 {'pot0_deliver': 24}
+  ep4 t=120: H=-0.000 {'pot0_deliver': 24}
+  ep4 t=160: H=-0.000 {'pot0_deliver': 24}
+  ep5 t=0: H=0.250 {'pot0_deliver': 23, 'pot0_nodeliver': 1}
+  ep5 t=40: H=-0.000 {'pot0_deliver': 24}
+  ep5 t=80: H=-0.000 {'pot0_deliver': 24}
+  ep5 t=120: H=-0.000 {'pot0_deliver': 24}
+  ep5 t=160: H=-0.000 {'pot0_deliver': 24}
+  ep6 t=0: H=-0.000 {'pot0_deliver': 24}
+  ep6 t=40: H=-0.000 {'pot0_deliver': 24}
+  ep6 t=80: H=-0.000 {'pot0_deliver': 24}
+  ep6 t=120: H=0.250 {'pot0_deliver': 23, 'pot0_nodeliver': 1}
+  ep6 t=160: H=-0.000 {'pot0_deliver': 24}
+  ep7 t=0: H=-0.000 {'pot0_deliver': 24}
+  ep7 t=40: H=-0.000 {'pot0_deliver': 24}
+  ep7 t=80: H=-0.000 {'pot0_deliver': 24}
+  ep7 t=120: H=-0.000 {'pot0_deliver': 24}
+  ep7 t=160: H=-0.000 {'pot0_deliver': 24}
+{
+  "medians": {
+    "0": 0.6021581478790753,
+    "40": 0.0,
+    "80": 0.2717822215997982,
+    "120": 0.37351623823507624,
+    "160": 0.32501121082417705
+  },
+  "EP1_monotone_commitment": false,
+  "EP2_substantial": false
+}
+Wrote /home/Yixiang/MPARL/GOGOGO/outputs/overcooked_episode_collapse.json

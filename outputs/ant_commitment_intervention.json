@@ -1,0 +1,62 @@
+{
+  "status": "ANT-INT episode-time commitment-window intervention; registered before run; paired same-seed counterfactuals; E3C's training-time withdrawal unaffected",
+  "config": {
+    "W": 30,
+    "N_EP": 200,
+    "starts": {
+      "early": 5,
+      "commit": 30,
+      "late": 150
+    },
+    "random_start_range": [
+      0,
+      270
+    ],
+    "hinge_from_RE2": 40
+  },
+  "n_control_committing": 200,
+  "stats": {
+    "early": {
+      "n_paired": 200,
+      "flips": 55,
+      "flip_rate": 0.275,
+      "median_delay": 109.5,
+      "median_reentry": 172.0,
+      "n_no_completion": 13
+    },
+    "commit": {
+      "n_paired": 200,
+      "flips": 17,
+      "flip_rate": 0.085,
+      "median_delay": 113.0,
+      "median_reentry": 149.5,
+      "n_no_completion": 10
+    },
+    "late": {
+      "n_paired": 200,
+      "flips": 2,
+      "flip_rate": 0.01,
+      "median_delay": 0.0,
+      "median_reentry": 46.0,
+      "n_no_completion": 7
+    },
+    "random": {
+      "n_paired": 200,
+      "flips": 10,
+      "flip_rate": 0.05,
+      "median_delay": 21.0,
+      "median_reentry": 68.5,
+      "n_no_completion": 8
+    }
+  },
+  "permutation_pvals": {
+    "commit_vs_early": 0.0,
+    "commit_vs_late": 0.0006,
+    "commit_vs_random": 0.22865
+  },
+  "registered_outcomes": {
+    "AI1_commit_flip_maximal": false,
+    "AI2_commit_delay_maximal": true,
+    "AI3_late_robust": true
+  }
+}

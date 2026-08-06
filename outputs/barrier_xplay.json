@@ -1,0 +1,222 @@
+{
+  "status": "BARRIER-XPLAY direct measurement of the joint exploration barrier; registered before run",
+  "convention_seeds": {
+    "0": {
+      "pre_checkpoint": 150,
+      "t_star": 300.0,
+      "adoption_gain_pre": 0.01272,
+      "majority_code": [
+        0,
+        4,
+        1,
+        3,
+        2
+      ],
+      "deviation_cost_post": 0.39958,
+      "final_openness": 0.00401,
+      "determinism_ok": true
+    },
+    "1": {
+      "pre_checkpoint": 125,
+      "t_star": 275.0,
+      "adoption_gain_pre": 0.01052,
+      "majority_code": [
+        2,
+        3,
+        0,
+        1,
+        4
+      ],
+      "deviation_cost_post": 0.39963,
+      "final_openness": 0.00398,
+      "determinism_ok": true
+    },
+    "2": {
+      "pre_checkpoint": 150,
+      "t_star": 300.0,
+      "adoption_gain_pre": 0.00952,
+      "majority_code": [
+        0,
+        2,
+        3,
+        1,
+        4
+      ],
+      "deviation_cost_post": 0.39957,
+      "final_openness": 0.00442,
+      "determinism_ok": true
+    },
+    "3": {
+      "pre_checkpoint": 125,
+      "t_star": 275.0,
+      "adoption_gain_pre": 0.01279,
+      "majority_code": [
+        1,
+        3,
+        4,
+        2,
+        0
+      ],
+      "deviation_cost_post": 0.39961,
+      "final_openness": 0.00405,
+      "determinism_ok": true
+    },
+    "4": {
+      "majority_code": [
+        1,
+        2,
+        0,
+        4,
+        3
+      ],
+      "deviation_cost_post": 0.39966,
+      "final_openness": 0.00382,
+      "determinism_ok": true
+    }
+  },
+  "roles_seeds": {
+    "0": {
+      "pre_checkpoint": 225,
+      "t_star": 475.0,
+      "success_pre": 0.01597,
+      "adoption_gain_pre": 0.00099,
+      "assignment": [
+        0,
+        2,
+        5,
+        4,
+        3,
+        1
+      ],
+      "success_post": 0.99986,
+      "deviation_cost_post": 0.99986,
+      "determinism_ok": true
+    },
+    "1": {
+      "pre_checkpoint": 175,
+      "t_star": 375.0,
+      "success_pre": 0.01584,
+      "adoption_gain_pre": 0.00093,
+      "assignment": [
+        4,
+        2,
+        0,
+        3,
+        5,
+        1
+      ],
+      "success_post": 0.99985,
+      "deviation_cost_post": 0.99984,
+      "determinism_ok": true
+    },
+    "2": {
+      "pre_checkpoint": 250,
+      "t_star": 500.0,
+      "success_pre": 0.01585,
+      "adoption_gain_pre": 0.00099,
+      "assignment": [
+        5,
+        0,
+        3,
+        4,
+        1,
+        2
+      ],
+      "success_post": 0.99984,
+      "deviation_cost_post": 0.99983,
+      "determinism_ok": true
+    },
+    "3": {
+      "pre_checkpoint": 200,
+      "t_star": 400.0,
+      "success_pre": 0.01602,
+      "adoption_gain_pre": 0.00124,
+      "assignment": [
+        3,
+        5,
+        1,
+        2,
+        4,
+        0
+      ],
+      "success_post": 0.99986,
+      "deviation_cost_post": 0.99985,
+      "determinism_ok": true
+    },
+    "4": {
+      "pre_checkpoint": 250,
+      "t_star": 500.0,
+      "success_pre": 0.01593,
+      "adoption_gain_pre": 0.00094,
+      "assignment": [
+        3,
+        2,
+        0,
+        1,
+        5,
+        4
+      ],
+      "success_post": 0.99986,
+      "deviation_cost_post": 0.99985,
+      "determinism_ok": true
+    }
+  },
+  "crossplay": {
+    "conv_within": [
+      0.9987,
+      0.9987,
+      0.9985,
+      0.9987,
+      0.9987
+    ],
+    "conv_cross": [
+      0.0003,
+      0.2,
+      0.0004,
+      0.0003,
+      0.0003,
+      0.3997,
+      0.2,
+      0.2,
+      0.2001,
+      0.3997,
+      0.0003,
+      0.2001,
+      0.0004,
+      0.2,
+      0.0003,
+      0.1999,
+      0.0003,
+      0.2,
+      0.2001,
+      0.2
+    ],
+    "roles_within": [
+      0.9999,
+      0.9999,
+      0.9998,
+      0.9999,
+      0.9999
+    ],
+    "roles_hybrid_mean": 0.0516,
+    "roles_hybrid_min": 0.0,
+    "roles_hybrid_max": 0.9999
+  },
+  "registered_outcomes": {
+    "determinism_ok": true,
+    "BX1_regime_exclusivity": true,
+    "BX2_no_unilateral_gradient_pre": true,
+    "BX3_lockin_post": false,
+    "BX4_barrier_asymmetry": true,
+    "conv_within_intel": 0.9987,
+    "conv_cross_intel": 0.1401,
+    "conv_adoption_gain_pre": 0.0114,
+    "conv_deviation_cost_post": 0.3996,
+    "roles_within_success": 0.9999,
+    "roles_hybrid_success": 0.0516,
+    "roles_adoption_gain_pre": 0.001,
+    "roles_deviation_cost_post": 0.9998,
+    "n_cross_pairs_conv": 20,
+    "n_hybrid_teams_roles": 620
+  }
+}

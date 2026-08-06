@@ -1,0 +1,5658 @@
+{
+  "status": "different-lineage engine referee (Toga II 3.0 / Fruit family; predictor scores untouched)",
+  "referee": {
+    "engine": "Toga II 3.0 (Fruit 2.1 lineage)",
+    "depth": 18,
+    "gap_cp": 150,
+    "floor_cp": -50
+  },
+  "months": {
+    "main": {
+      "n": 400,
+      "frozen_rule": {
+        "toga_base_rate": 0.0075,
+        "auroc_do_gap_vs_toga": 0.6633081444164568,
+        "auroc_shallow_gap_vs_toga": 0.6838790931989924,
+        "flag_precision_vs_toga": 0.0,
+        "flag_lift_vs_toga": 0.0,
+        "label_agreement_nnue_vs_toga": 0.8975
+      },
+      "quantile_matched": {
+        "k_positives": 38,
+        "auroc_do_gap_vs_toga_topk": 0.6151861006106426,
+        "auroc_shallow_gap_vs_toga_topk": 0.6030822913637686,
+        "flag_precision_vs_toga_topk": 0.12,
+        "flag_lift_vs_toga_topk": 1.263157894736842,
+        "label_agreement_nnue_vs_toga_topk": 0.875
+      },
+      "records": [
+        {
+          "eligible_index": 16,
+          "toga_gap_cp": 64.0,
+          "toga_best_cp": 703.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 1
+        },
+        {
+          "eligible_index": 17,
+          "toga_gap_cp": 32.0,
+          "toga_best_cp": 79.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 18,
+          "toga_gap_cp": 64.0,
+          "toga_best_cp": 26.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 19,
+          "toga_gap_cp": 195.0,
+          "toga_best_cp": 975.0,
+          "toga_label_frozen": 1,
+          "toga_label_topk": 1
+        },
+        {
+          "eligible_index": 20,
+          "toga_gap_cp": 2.0,
+          "toga_best_cp": -149.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 21,
+          "toga_gap_cp": 8.0,
+          "toga_best_cp": 159.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 22,
+          "toga_gap_cp": 3.0,
+          "toga_best_cp": -42.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 23,
+          "toga_gap_cp": 12.0,
+          "toga_best_cp": -399.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 24,
+          "toga_gap_cp": 6.0,
+          "toga_best_cp": -229.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 25,
+          "toga_gap_cp": 64.0,
+          "toga_best_cp": -38.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 26,
+          "toga_gap_cp": 5.0,
+          "toga_best_cp": -87.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 27,
+          "toga_gap_cp": 17.0,
+          "toga_best_cp": 55.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 28,
+          "toga_gap_cp": 32.0,
+          "toga_best_cp": -154.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 29,
+          "toga_gap_cp": 32.0,
+          "toga_best_cp": -52.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 30,
+          "toga_gap_cp": 32.0,
+          "toga_best_cp": 388.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 31,
+          "toga_gap_cp": 32.0,
+          "toga_best_cp": -77.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 32,
+          "toga_gap_cp": 16.0,
+          "toga_best_cp": 58.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 33,
+          "toga_gap_cp": 64.0,
+          "toga_best_cp": -77.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 1
+        },
+        {
+          "eligible_index": 34,
+          "toga_gap_cp": 72.0,
+          "toga_best_cp": 641.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 1
+        },
+        {
+          "eligible_index": 35,
+          "toga_gap_cp": 28.0,
+          "toga_best_cp": 28.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 36,
+          "toga_gap_cp": 36.0,
+          "toga_best_cp": -152.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 37,
+          "toga_gap_cp": 64.0,
+          "toga_best_cp": 97.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 1
+        },
+        {
+          "eligible_index": 38,
+          "toga_gap_cp": 4.0,
+          "toga_best_cp": -57.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 39,
+          "toga_gap_cp": 32.0,
+          "toga_best_cp": -258.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 40,
+          "toga_gap_cp": 16.0,
+          "toga_best_cp": 177.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 41,
+          "toga_gap_cp": 64.0,
+          "toga_best_cp": -361.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 1
+        },
+        {
+          "eligible_index": 42,
+          "toga_gap_cp": 6.0,
+          "toga_best_cp": 14.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 43,
+          "toga_gap_cp": 5.0,
+          "toga_best_cp": -57.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 44,
+          "toga_gap_cp": 32.0,
+          "toga_best_cp": -7.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 45,
+          "toga_gap_cp": 17.0,
+          "toga_best_cp": -10.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 46,
+          "toga_gap_cp": 0.0,
+          "toga_best_cp": 0.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 47,
+          "toga_gap_cp": 30.0,
+          "toga_best_cp": 248.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 48,
+          "toga_gap_cp": 13.0,
+          "toga_best_cp": -66.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 49,
+          "toga_gap_cp": 16.0,
+          "toga_best_cp": -15.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 50,
+          "toga_gap_cp": 70.0,
+          "toga_best_cp": -930.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 1
+        },
+        {
+          "eligible_index": 51,
+          "toga_gap_cp": 15.0,
+          "toga_best_cp": -20.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 52,
+          "toga_gap_cp": 1.0,
+          "toga_best_cp": -9.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 53,
+          "toga_gap_cp": 64.0,
+          "toga_best_cp": 89.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 1
+        },
+        {
+          "eligible_index": 54,
+          "toga_gap_cp": 4.0,
+          "toga_best_cp": -63.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 55,
+          "toga_gap_cp": 0.0,
+          "toga_best_cp": 174.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 56,
+          "toga_gap_cp": 1.0,
+          "toga_best_cp": -39.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 57,
+          "toga_gap_cp": 28.0,
+          "toga_best_cp": -92.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 58,
+          "toga_gap_cp": 60.0,
+          "toga_best_cp": 834.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 59,
+          "toga_gap_cp": 2.0,
+          "toga_best_cp": 24.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 60,
+          "toga_gap_cp": 0.0,
+          "toga_best_cp": 1000.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 61,
+          "toga_gap_cp": 5.0,
+          "toga_best_cp": 122.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 62,
+          "toga_gap_cp": 16.0,
+          "toga_best_cp": 43.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 63,
+          "toga_gap_cp": 1.0,
+          "toga_best_cp": 22.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 64,
+          "toga_gap_cp": 0.0,
+          "toga_best_cp": -76.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 65,
+          "toga_gap_cp": 4.0,
+          "toga_best_cp": -33.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 66,
+          "toga_gap_cp": 5.0,
+          "toga_best_cp": 16.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 67,
+          "toga_gap_cp": 2.0,
+          "toga_best_cp": 3.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 68,
+          "toga_gap_cp": 26.0,
+          "toga_best_cp": -644.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 69,
+          "toga_gap_cp": 32.0,
+          "toga_best_cp": 78.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 70,
+          "toga_gap_cp": 64.0,
+          "toga_best_cp": -146.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 71,
+          "toga_gap_cp": 32.0,
+          "toga_best_cp": 123.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 72,
+          "toga_gap_cp": 4.0,
+          "toga_best_cp": 377.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 73,
+          "toga_gap_cp": 32.0,
+          "toga_best_cp": 168.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 74,
+          "toga_gap_cp": 2.0,
+          "toga_best_cp": -23.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 75,
+          "toga_gap_cp": 32.0,
+          "toga_best_cp": 173.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 76,
+          "toga_gap_cp": 43.0,
+          "toga_best_cp": -100.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 77,
+          "toga_gap_cp": 32.0,
+          "toga_best_cp": 201.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 78,
+          "toga_gap_cp": 4.0,
+          "toga_best_cp": 0.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 79,
+          "toga_gap_cp": 10.0,
+          "toga_best_cp": -30.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 80,
+          "toga_gap_cp": 1.0,
+          "toga_best_cp": 7.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 81,
+          "toga_gap_cp": 0.0,
+          "toga_best_cp": -353.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 82,
+          "toga_gap_cp": 50.0,
+          "toga_best_cp": 42.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 83,
+          "toga_gap_cp": 15.0,
+          "toga_best_cp": -36.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 84,
+          "toga_gap_cp": 64.0,
+          "toga_best_cp": -441.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 85,
+          "toga_gap_cp": 12.0,
+          "toga_best_cp": -17.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 86,
+          "toga_gap_cp": 20.0,
+          "toga_best_cp": 134.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 87,
+          "toga_gap_cp": 18.0,
+          "toga_best_cp": 0.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 88,
+          "toga_gap_cp": 3.0,
+          "toga_best_cp": -175.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 89,
+          "toga_gap_cp": 32.0,
+          "toga_best_cp": -689.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 90,
+          "toga_gap_cp": 64.0,
+          "toga_best_cp": 291.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 91,
+          "toga_gap_cp": 15.0,
+          "toga_best_cp": -363.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 92,
+          "toga_gap_cp": 64.0,
+          "toga_best_cp": -15.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 93,
+          "toga_gap_cp": 32.0,
+          "toga_best_cp": 0.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 94,
+          "toga_gap_cp": 256.0,
+          "toga_best_cp": -320.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 1
+        },
+        {
+          "eligible_index": 95,
+          "toga_gap_cp": 19.0,
+          "toga_best_cp": 500.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 96,
+          "toga_gap_cp": 3.0,
+          "toga_best_cp": 642.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 97,
+          "toga_gap_cp": 29.0,
+          "toga_best_cp": 14.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 98,
+          "toga_gap_cp": 45.0,
+          "toga_best_cp": -386.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 99,
+          "toga_gap_cp": 8.0,
+          "toga_best_cp": -23.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 100,
+          "toga_gap_cp": 87.0,
+          "toga_best_cp": -26.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 1
+        },
+        {
+          "eligible_index": 101,
+          "toga_gap_cp": 19.0,
+          "toga_best_cp": 90.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 102,
+          "toga_gap_cp": 2.0,
+          "toga_best_cp": -25.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 103,
+          "toga_gap_cp": 28.0,
+          "toga_best_cp": 30.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 104,
+          "toga_gap_cp": 16.0,
+          "toga_best_cp": 22.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 105,
+          "toga_gap_cp": 4.0,
+          "toga_best_cp": -44.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 106,
+          "toga_gap_cp": 32.0,
+          "toga_best_cp": -34.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 107,
+          "toga_gap_cp": 0.0,
+          "toga_best_cp": 90.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 108,
+          "toga_gap_cp": 8.0,
+          "toga_best_cp": 84.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 109,
+          "toga_gap_cp": 2.0,
+          "toga_best_cp": 107.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 110,
+          "toga_gap_cp": 32.0,
+          "toga_best_cp": -527.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 111,
+          "toga_gap_cp": 55.0,
+          "toga_best_cp": 197.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 112,
+          "toga_gap_cp": 1.0,
+          "toga_best_cp": 92.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 113,
+          "toga_gap_cp": 32.0,
+          "toga_best_cp": 95.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 114,
+          "toga_gap_cp": 6.0,
+          "toga_best_cp": 78.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 115,
+          "toga_gap_cp": 64.0,
+          "toga_best_cp": 279.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 1
+        },
+        {
+          "eligible_index": 116,
+          "toga_gap_cp": 32.0,
+          "toga_best_cp": -367.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 117,
+          "toga_gap_cp": 12.0,
+          "toga_best_cp": -188.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 118,
+          "toga_gap_cp": 0.0,
+          "toga_best_cp": -39.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 119,
+          "toga_gap_cp": 32.0,
+          "toga_best_cp": 88.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 120,
+          "toga_gap_cp": 10.0,
+          "toga_best_cp": 274.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 121,
+          "toga_gap_cp": 68.0,
+          "toga_best_cp": 399.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 1
+        },
+        {
+          "eligible_index": 122,
+          "toga_gap_cp": 8.0,
+          "toga_best_cp": -36.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 123,
+          "toga_gap_cp": 2.0,
+          "toga_best_cp": -6.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 124,
+          "toga_gap_cp": 1.0,
+          "toga_best_cp": -114.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 125,
+          "toga_gap_cp": 64.0,
+          "toga_best_cp": 0.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 126,
+          "toga_gap_cp": 15.0,
+          "toga_best_cp": 27.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 127,
+          "toga_gap_cp": 6.0,
+          "toga_best_cp": -85.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 128,
+          "toga_gap_cp": 1.0,
+          "toga_best_cp": 68.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 129,
+          "toga_gap_cp": 18.0,
+          "toga_best_cp": 9.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 130,
+          "toga_gap_cp": 3.0,
+          "toga_best_cp": 27.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 131,
+          "toga_gap_cp": 3.0,
+          "toga_best_cp": 59.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 132,
+          "toga_gap_cp": 0.0,
+          "toga_best_cp": 34.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 133,
+          "toga_gap_cp": 41.0,
+          "toga_best_cp": 36.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 134,
+          "toga_gap_cp": 20.0,
+          "toga_best_cp": 41.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 135,
+          "toga_gap_cp": 32.0,
+          "toga_best_cp": -70.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 136,
+          "toga_gap_cp": 5.0,
+          "toga_best_cp": 57.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 137,
+          "toga_gap_cp": 32.0,
+          "toga_best_cp": -560.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 138,
+          "toga_gap_cp": 32.0,
+          "toga_best_cp": -183.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 139,
+          "toga_gap_cp": 1.0,
+          "toga_best_cp": 5.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 140,
+          "toga_gap_cp": 2.0,
+          "toga_best_cp": 2.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 141,
+          "toga_gap_cp": 32.0,
+          "toga_best_cp": -31.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 142,
+          "toga_gap_cp": 16.0,
+          "toga_best_cp": 27.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 143,
+          "toga_gap_cp": 4.0,
+          "toga_best_cp": -9.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 144,
+          "toga_gap_cp": 10.0,
+          "toga_best_cp": -601.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 145,
+          "toga_gap_cp": 9.0,
+          "toga_best_cp": -163.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 146,
+          "toga_gap_cp": 16.0,
+          "toga_best_cp": 43.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 147,
+          "toga_gap_cp": 7.0,
+          "toga_best_cp": 0.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 148,
+          "toga_gap_cp": 16.0,
+          "toga_best_cp": -171.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 149,
+          "toga_gap_cp": 2.0,
+          "toga_best_cp": -24.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 150,
+          "toga_gap_cp": 128.0,
+          "toga_best_cp": 100.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 1
+        },
+        {
+          "eligible_index": 151,
+          "toga_gap_cp": 21.0,
+          "toga_best_cp": 32.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 152,
+          "toga_gap_cp": 0.0,
+          "toga_best_cp": 250.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 153,
+          "toga_gap_cp": 0.0,
+          "toga_best_cp": 1000.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 154,
+          "toga_gap_cp": 3.0,
+          "toga_best_cp": 83.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 155,
+          "toga_gap_cp": 5.0,
+          "toga_best_cp": 5.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 156,
+          "toga_gap_cp": 32.0,
+          "toga_best_cp": 3.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 157,
+          "toga_gap_cp": 4.0,
+          "toga_best_cp": 13.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 158,
+          "toga_gap_cp": 64.0,
+          "toga_best_cp": 0.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 1
+        },
+        {
+          "eligible_index": 159,
+          "toga_gap_cp": 3.0,
+          "toga_best_cp": 0.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 160,
+          "toga_gap_cp": 0.0,
+          "toga_best_cp": -17.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 161,
+          "toga_gap_cp": 41.0,
+          "toga_best_cp": 32.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 162,
+          "toga_gap_cp": 10.0,
+          "toga_best_cp": -23.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 163,
+          "toga_gap_cp": 0.0,
+          "toga_best_cp": 1000.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 164,
+          "toga_gap_cp": 9.0,
+          "toga_best_cp": 23.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 165,
+          "toga_gap_cp": 17.0,
+          "toga_best_cp": -19.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 166,
+          "toga_gap_cp": 23.0,
+          "toga_best_cp": 24.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 167,
+          "toga_gap_cp": 1.0,
+          "toga_best_cp": 1.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 168,
+          "toga_gap_cp": 51.0,
+          "toga_best_cp": 9.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 169,
+          "toga_gap_cp": 18.0,
+          "toga_best_cp": 105.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 170,
+          "toga_gap_cp": 5.0,
+          "toga_best_cp": -124.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 171,
+          "toga_gap_cp": 2.0,
+          "toga_best_cp": 840.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 172,
+          "toga_gap_cp": 0.0,
+          "toga_best_cp": -32.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 173,
+          "toga_gap_cp": 14.0,
+          "toga_best_cp": 179.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 174,
+          "toga_gap_cp": 32.0,
+          "toga_best_cp": -337.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 175,
+          "toga_gap_cp": 1.0,
+          "toga_best_cp": -94.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 176,
+          "toga_gap_cp": 3.0,
+          "toga_best_cp": 33.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 177,
+          "toga_gap_cp": 28.0,
+          "toga_best_cp": 163.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 178,
+          "toga_gap_cp": 64.0,
+          "toga_best_cp": 202.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 1
+        },
+        {
+          "eligible_index": 179,
+          "toga_gap_cp": 32.0,
+          "toga_best_cp": -373.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 180,
+          "toga_gap_cp": 32.0,
+          "toga_best_cp": 291.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 181,
+          "toga_gap_cp": 6.0,
+          "toga_best_cp": -424.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 182,
+          "toga_gap_cp": 0.0,
+          "toga_best_cp": 21.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 183,
+          "toga_gap_cp": 8.0,
+          "toga_best_cp": -94.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 184,
+          "toga_gap_cp": 2.0,
+          "toga_best_cp": 401.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 185,
+          "toga_gap_cp": 3.0,
+          "toga_best_cp": -470.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 186,
+          "toga_gap_cp": 64.0,
+          "toga_best_cp": -58.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 1
+        },
+        {
+          "eligible_index": 187,
+          "toga_gap_cp": 2.0,
+          "toga_best_cp": -5.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 188,
+          "toga_gap_cp": 32.0,
+          "toga_best_cp": -354.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 189,
+          "toga_gap_cp": 20.0,
+          "toga_best_cp": -324.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 190,
+          "toga_gap_cp": 0.0,
+          "toga_best_cp": -20.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 191,
+          "toga_gap_cp": 13.0,
+          "toga_best_cp": 43.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 192,
+          "toga_gap_cp": 16.0,
+          "toga_best_cp": 0.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 193,
+          "toga_gap_cp": 7.0,
+          "toga_best_cp": -49.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 194,
+          "toga_gap_cp": 9.0,
+          "toga_best_cp": 70.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 195,
+          "toga_gap_cp": 10.0,
+          "toga_best_cp": -6.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 196,
+          "toga_gap_cp": 5.0,
+          "toga_best_cp": -165.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 197,
+          "toga_gap_cp": 14.0,
+          "toga_best_cp": -214.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 198,
+          "toga_gap_cp": 23.0,
+          "toga_best_cp": -4.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 199,
+          "toga_gap_cp": 0.0,
+          "toga_best_cp": -1000.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 200,
+          "toga_gap_cp": 21.0,
+          "toga_best_cp": 21.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 201,
+          "toga_gap_cp": 64.0,
+          "toga_best_cp": 242.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 1
+        },
+        {
+          "eligible_index": 202,
+          "toga_gap_cp": 3.0,
+          "toga_best_cp": -259.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 203,
+          "toga_gap_cp": 3.0,
+          "toga_best_cp": -43.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 204,
+          "toga_gap_cp": 48.0,
+          "toga_best_cp": 153.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 205,
+          "toga_gap_cp": 11.0,
+          "toga_best_cp": -168.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 206,
+          "toga_gap_cp": 6.0,
+          "toga_best_cp": -96.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 207,
+          "toga_gap_cp": 32.0,
+          "toga_best_cp": 467.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 208,
+          "toga_gap_cp": 10.0,
+          "toga_best_cp": 10.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 209,
+          "toga_gap_cp": 32.0,
+          "toga_best_cp": -94.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 210,
+          "toga_gap_cp": 1.0,
+          "toga_best_cp": 35.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 211,
+          "toga_gap_cp": 0.0,
+          "toga_best_cp": 0.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 212,
+          "toga_gap_cp": 4.0,
+          "toga_best_cp": 6.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 213,
+          "toga_gap_cp": 3.0,
+          "toga_best_cp": 9.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 214,
+          "toga_gap_cp": 53.0,
+          "toga_best_cp": -6.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 215,
+          "toga_gap_cp": 11.0,
+          "toga_best_cp": -416.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 216,
+          "toga_gap_cp": 70.0,
+          "toga_best_cp": -197.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 1
+        },
+        {
+          "eligible_index": 217,
+          "toga_gap_cp": 128.0,
+          "toga_best_cp": 956.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 1
+        },
+        {
+          "eligible_index": 218,
+          "toga_gap_cp": 253.0,
+          "toga_best_cp": 745.0,
+          "toga_label_frozen": 1,
+          "toga_label_topk": 1
+        },
+        {
+          "eligible_index": 219,
+          "toga_gap_cp": 11.0,
+          "toga_best_cp": 450.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 220,
+          "toga_gap_cp": 25.0,
+          "toga_best_cp": 4.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 221,
+          "toga_gap_cp": 10.0,
+          "toga_best_cp": -11.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 222,
+          "toga_gap_cp": 2.0,
+          "toga_best_cp": 12.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 223,
+          "toga_gap_cp": 32.0,
+          "toga_best_cp": 83.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 224,
+          "toga_gap_cp": 64.0,
+          "toga_best_cp": 90.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 1
+        },
+        {
+          "eligible_index": 225,
+          "toga_gap_cp": 12.0,
+          "toga_best_cp": 32.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 226,
+          "toga_gap_cp": 11.0,
+          "toga_best_cp": -11.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 227,
+          "toga_gap_cp": 64.0,
+          "toga_best_cp": -256.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 1
+        },
+        {
+          "eligible_index": 228,
+          "toga_gap_cp": 64.0,
+          "toga_best_cp": 19.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 1
+        },
+        {
+          "eligible_index": 229,
+          "toga_gap_cp": 3.0,
+          "toga_best_cp": 78.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 230,
+          "toga_gap_cp": 128.0,
+          "toga_best_cp": 103.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 1
+        },
+        {
+          "eligible_index": 231,
+          "toga_gap_cp": 5.0,
+          "toga_best_cp": 100.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 232,
+          "toga_gap_cp": 8.0,
+          "toga_best_cp": -172.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 233,
+          "toga_gap_cp": 16.0,
+          "toga_best_cp": -258.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 234,
+          "toga_gap_cp": 65.0,
+          "toga_best_cp": 606.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 1
+        },
+        {
+          "eligible_index": 235,
+          "toga_gap_cp": 59.0,
+          "toga_best_cp": 828.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 236,
+          "toga_gap_cp": 32.0,
+          "toga_best_cp": 81.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 237,
+          "toga_gap_cp": 1.0,
+          "toga_best_cp": -127.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 238,
+          "toga_gap_cp": 1.0,
+          "toga_best_cp": -33.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 239,
+          "toga_gap_cp": 64.0,
+          "toga_best_cp": -39.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 1
+        },
+        {
+          "eligible_index": 240,
+          "toga_gap_cp": 26.0,
+          "toga_best_cp": 0.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 241,
+          "toga_gap_cp": 1.0,
+          "toga_best_cp": -18.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 242,
+          "toga_gap_cp": 32.0,
+          "toga_best_cp": -43.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 243,
+          "toga_gap_cp": 5.0,
+          "toga_best_cp": 39.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 244,
+          "toga_gap_cp": 11.0,
+          "toga_best_cp": 74.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 245,
+          "toga_gap_cp": 2.0,
+          "toga_best_cp": -30.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 246,
+          "toga_gap_cp": 24.0,
+          "toga_best_cp": -42.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 247,
+          "toga_gap_cp": 25.0,
+          "toga_best_cp": 488.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 248,
+          "toga_gap_cp": 32.0,
+          "toga_best_cp": 120.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 249,
+          "toga_gap_cp": 4.0,
+          "toga_best_cp": -3.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 250,
+          "toga_gap_cp": 8.0,
+          "toga_best_cp": 169.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 251,
+          "toga_gap_cp": 16.0,
+          "toga_best_cp": 90.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 252,
+          "toga_gap_cp": 14.0,
+          "toga_best_cp": -310.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 253,
+          "toga_gap_cp": 11.0,
+          "toga_best_cp": 99.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 254,
+          "toga_gap_cp": 2.0,
+          "toga_best_cp": -3.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 255,
+          "toga_gap_cp": 9.0,
+          "toga_best_cp": 2.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 256,
+          "toga_gap_cp": 89.0,
+          "toga_best_cp": -889.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 1
+        },
+        {
+          "eligible_index": 257,
+          "toga_gap_cp": 3.0,
+          "toga_best_cp": -2.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 258,
+          "toga_gap_cp": 14.0,
+          "toga_best_cp": -91.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 259,
+          "toga_gap_cp": 70.0,
+          "toga_best_cp": 112.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 1
+        },
+        {
+          "eligible_index": 260,
+          "toga_gap_cp": 1.0,
+          "toga_best_cp": 38.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 261,
+          "toga_gap_cp": 32.0,
+          "toga_best_cp": 116.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 262,
+          "toga_gap_cp": 5.0,
+          "toga_best_cp": -40.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 263,
+          "toga_gap_cp": 7.0,
+          "toga_best_cp": 254.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 264,
+          "toga_gap_cp": 16.0,
+          "toga_best_cp": -97.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 265,
+          "toga_gap_cp": 46.0,
+          "toga_best_cp": 715.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 266,
+          "toga_gap_cp": 20.0,
+          "toga_best_cp": 23.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 267,
+          "toga_gap_cp": 16.0,
+          "toga_best_cp": 118.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 268,
+          "toga_gap_cp": 10.0,
+          "toga_best_cp": 283.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 269,
+          "toga_gap_cp": 112.0,
+          "toga_best_cp": 97.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 1
+        },
+        {
+          "eligible_index": 270,
+          "toga_gap_cp": 32.0,
+          "toga_best_cp": 109.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 271,
+          "toga_gap_cp": 7.0,
+          "toga_best_cp": 39.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 272,
+          "toga_gap_cp": 1.0,
+          "toga_best_cp": 32.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 273,
+          "toga_gap_cp": 17.0,
+          "toga_best_cp": -257.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 274,
+          "toga_gap_cp": 4.0,
+          "toga_best_cp": -287.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 275,
+          "toga_gap_cp": 31.0,
+          "toga_best_cp": 152.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 276,
+          "toga_gap_cp": 185.0,
+          "toga_best_cp": 699.0,
+          "toga_label_frozen": 1,
+          "toga_label_topk": 1
+        },
+        {
+          "eligible_index": 277,
+          "toga_gap_cp": 32.0,
+          "toga_best_cp": -636.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 278,
+          "toga_gap_cp": 42.0,
+          "toga_best_cp": 76.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 279,
+          "toga_gap_cp": 32.0,
+          "toga_best_cp": -189.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 280,
+          "toga_gap_cp": 8.0,
+          "toga_best_cp": -65.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 281,
+          "toga_gap_cp": 10.0,
+          "toga_best_cp": 174.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 282,
+          "toga_gap_cp": 3.0,
+          "toga_best_cp": 7.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 283,
+          "toga_gap_cp": 36.0,
+          "toga_best_cp": 250.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 284,
+          "toga_gap_cp": 13.0,
+          "toga_best_cp": 66.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 285,
+          "toga_gap_cp": 8.0,
+          "toga_best_cp": 32.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 286,
+          "toga_gap_cp": 2.0,
+          "toga_best_cp": -37.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 287,
+          "toga_gap_cp": 4.0,
+          "toga_best_cp": 271.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 288,
+          "toga_gap_cp": 5.0,
+          "toga_best_cp": -15.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 289,
+          "toga_gap_cp": 32.0,
+          "toga_best_cp": -302.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 290,
+          "toga_gap_cp": 9.0,
+          "toga_best_cp": 74.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 291,
+          "toga_gap_cp": 2.0,
+          "toga_best_cp": 101.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 292,
+          "toga_gap_cp": 0.0,
+          "toga_best_cp": 3.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 293,
+          "toga_gap_cp": 32.0,
+          "toga_best_cp": 229.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 294,
+          "toga_gap_cp": 64.0,
+          "toga_best_cp": 1.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 1
+        },
+        {
+          "eligible_index": 295,
+          "toga_gap_cp": 5.0,
+          "toga_best_cp": 327.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 296,
+          "toga_gap_cp": 0.0,
+          "toga_best_cp": 75.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 297,
+          "toga_gap_cp": 1.0,
+          "toga_best_cp": 5.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 298,
+          "toga_gap_cp": 5.0,
+          "toga_best_cp": 59.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 299,
+          "toga_gap_cp": 21.0,
+          "toga_best_cp": 0.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 300,
+          "toga_gap_cp": 14.0,
+          "toga_best_cp": -45.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 301,
+          "toga_gap_cp": 28.0,
+          "toga_best_cp": -12.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 302,
+          "toga_gap_cp": 0.0,
+          "toga_best_cp": -21.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 303,
+          "toga_gap_cp": 32.0,
+          "toga_best_cp": 177.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 304,
+          "toga_gap_cp": 22.0,
+          "toga_best_cp": 74.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 305,
+          "toga_gap_cp": 2.0,
+          "toga_best_cp": -15.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 306,
+          "toga_gap_cp": 25.0,
+          "toga_best_cp": 29.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 307,
+          "toga_gap_cp": 14.0,
+          "toga_best_cp": -122.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 308,
+          "toga_gap_cp": 21.0,
+          "toga_best_cp": 205.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 309,
+          "toga_gap_cp": 18.0,
+          "toga_best_cp": 159.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 310,
+          "toga_gap_cp": 0.0,
+          "toga_best_cp": 0.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 311,
+          "toga_gap_cp": 0.0,
+          "toga_best_cp": -1000.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 312,
+          "toga_gap_cp": 7.0,
+          "toga_best_cp": -31.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 313,
+          "toga_gap_cp": 16.0,
+          "toga_best_cp": -6.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 314,
+          "toga_gap_cp": 64.0,
+          "toga_best_cp": -339.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 1
+        },
+        {
+          "eligible_index": 315,
+          "toga_gap_cp": 20.0,
+          "toga_best_cp": -55.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 316,
+          "toga_gap_cp": 4.0,
+          "toga_best_cp": 52.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 317,
+          "toga_gap_cp": 64.0,
+          "toga_best_cp": -29.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 1
+        },
+        {
+          "eligible_index": 318,
+          "toga_gap_cp": 39.0,
+          "toga_best_cp": -165.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 319,
+          "toga_gap_cp": 32.0,
+          "toga_best_cp": 137.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 320,
+          "toga_gap_cp": 25.0,
+          "toga_best_cp": 25.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 321,
+          "toga_gap_cp": 2.0,
+          "toga_best_cp": 2.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 322,
+          "toga_gap_cp": 16.0,
+          "toga_best_cp": 253.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 323,
+          "toga_gap_cp": 7.0,
+          "toga_best_cp": 53.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 324,
+          "toga_gap_cp": 4.0,
+          "toga_best_cp": 0.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 325,
+          "toga_gap_cp": 32.0,
+          "toga_best_cp": -686.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 326,
+          "toga_gap_cp": 12.0,
+          "toga_best_cp": -3.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 327,
+          "toga_gap_cp": 20.0,
+          "toga_best_cp": 188.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 328,
+          "toga_gap_cp": 3.0,
+          "toga_best_cp": 58.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 329,
+          "toga_gap_cp": 6.0,
+          "toga_best_cp": 6.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 330,
+          "toga_gap_cp": 11.0,
+          "toga_best_cp": -17.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 331,
+          "toga_gap_cp": 4.0,
+          "toga_best_cp": 29.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 332,
+          "toga_gap_cp": 2.0,
+          "toga_best_cp": 31.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 333,
+          "toga_gap_cp": 16.0,
+          "toga_best_cp": 79.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 334,
+          "toga_gap_cp": 32.0,
+          "toga_best_cp": -102.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 335,
+          "toga_gap_cp": 5.0,
+          "toga_best_cp": -122.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 336,
+          "toga_gap_cp": 33.0,
+          "toga_best_cp": 75.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 337,
+          "toga_gap_cp": 29.0,
+          "toga_best_cp": -14.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 338,
+          "toga_gap_cp": 0.0,
+          "toga_best_cp": -18.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 339,
+          "toga_gap_cp": 128.0,
+          "toga_best_cp": 463.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 1
+        },
+        {
+          "eligible_index": 340,
+          "toga_gap_cp": 16.0,
+          "toga_best_cp": 14.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 341,
+          "toga_gap_cp": 26.0,
+          "toga_best_cp": 87.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 342,
+          "toga_gap_cp": 28.0,
+          "toga_best_cp": 79.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 343,
+          "toga_gap_cp": 21.0,
+          "toga_best_cp": 310.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 344,
+          "toga_gap_cp": 14.0,
+          "toga_best_cp": -43.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 345,
+          "toga_gap_cp": 128.0,
+          "toga_best_cp": -820.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 1
+        },
+        {
+          "eligible_index": 346,
+          "toga_gap_cp": 1.0,
+          "toga_best_cp": 5.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 347,
+          "toga_gap_cp": 0.0,
+          "toga_best_cp": 0.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 348,
+          "toga_gap_cp": 32.0,
+          "toga_best_cp": -39.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 349,
+          "toga_gap_cp": 1.0,
+          "toga_best_cp": -201.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 350,
+          "toga_gap_cp": 32.0,
+          "toga_best_cp": 9.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 351,
+          "toga_gap_cp": 18.0,
+          "toga_best_cp": 7.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 352,
+          "toga_gap_cp": 2.0,
+          "toga_best_cp": 16.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 353,
+          "toga_gap_cp": 4.0,
+          "toga_best_cp": 78.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 354,
+          "toga_gap_cp": 16.0,
+          "toga_best_cp": 19.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 355,
+          "toga_gap_cp": 2.0,
+          "toga_best_cp": 119.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 356,
+          "toga_gap_cp": 51.0,
+          "toga_best_cp": -152.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 357,
+          "toga_gap_cp": 32.0,
+          "toga_best_cp": 137.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 358,
+          "toga_gap_cp": 0.0,
+          "toga_best_cp": 1000.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 359,
+          "toga_gap_cp": 8.0,
+          "toga_best_cp": -43.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 360,
+          "toga_gap_cp": 1.0,
+          "toga_best_cp": -13.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 361,
+          "toga_gap_cp": 3.0,
+          "toga_best_cp": 102.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 362,
+          "toga_gap_cp": 6.0,
+          "toga_best_cp": 23.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 363,
+          "toga_gap_cp": 8.0,
+          "toga_best_cp": 15.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 364,
+          "toga_gap_cp": 8.0,
+          "toga_best_cp": 27.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 365,
+          "toga_gap_cp": 3.0,
+          "toga_best_cp": 231.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 366,
+          "toga_gap_cp": 11.0,
+          "toga_best_cp": 56.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 367,
+          "toga_gap_cp": 31.0,
+          "toga_best_cp": 183.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 368,
+          "toga_gap_cp": 1.0,
+          "toga_best_cp": -115.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 369,
+          "toga_gap_cp": 4.0,
+          "toga_best_cp": 28.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 370,
+          "toga_gap_cp": 27.0,
+          "toga_best_cp": -59.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 371,
+          "toga_gap_cp": 16.0,
+          "toga_best_cp": -40.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 372,
+          "toga_gap_cp": 64.0,
+          "toga_best_cp": -10.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 1
+        },
+        {
+          "eligible_index": 373,
+          "toga_gap_cp": 5.0,
+          "toga_best_cp": 53.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 374,
+          "toga_gap_cp": 32.0,
+          "toga_best_cp": 166.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 375,
+          "toga_gap_cp": 3.0,
+          "toga_best_cp": -32.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 376,
+          "toga_gap_cp": 20.0,
+          "toga_best_cp": 146.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 377,
+          "toga_gap_cp": 5.0,
+          "toga_best_cp": 46.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 378,
+          "toga_gap_cp": 16.0,
+          "toga_best_cp": -189.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 379,
+          "toga_gap_cp": 32.0,
+          "toga_best_cp": 520.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 380,
+          "toga_gap_cp": 9.0,
+          "toga_best_cp": 33.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 381,
+          "toga_gap_cp": 23.0,
+          "toga_best_cp": -107.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 382,
+          "toga_gap_cp": 16.0,
+          "toga_best_cp": -86.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 383,
+          "toga_gap_cp": 64.0,
+          "toga_best_cp": 186.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 384,
+          "toga_gap_cp": 35.0,
+          "toga_best_cp": -69.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 385,
+          "toga_gap_cp": 5.0,
+          "toga_best_cp": -115.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 386,
+          "toga_gap_cp": 64.0,
+          "toga_best_cp": 127.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 387,
+          "toga_gap_cp": 7.0,
+          "toga_best_cp": 19.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 388,
+          "toga_gap_cp": 5.0,
+          "toga_best_cp": -14.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 389,
+          "toga_gap_cp": 8.0,
+          "toga_best_cp": 380.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 390,
+          "toga_gap_cp": 8.0,
+          "toga_best_cp": 65.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 391,
+          "toga_gap_cp": 26.0,
+          "toga_best_cp": -39.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 392,
+          "toga_gap_cp": 5.0,
+          "toga_best_cp": 14.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 393,
+          "toga_gap_cp": 16.0,
+          "toga_best_cp": -1.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 394,
+          "toga_gap_cp": 13.0,
+          "toga_best_cp": 186.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 395,
+          "toga_gap_cp": 13.0,
+          "toga_best_cp": 44.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 396,
+          "toga_gap_cp": 32.0,
+          "toga_best_cp": 57.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 397,
+          "toga_gap_cp": 7.0,
+          "toga_best_cp": 52.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 398,
+          "toga_gap_cp": 64.0,
+          "toga_best_cp": -66.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 399,
+          "toga_gap_cp": 32.0,
+          "toga_best_cp": 96.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 400,
+          "toga_gap_cp": 19.0,
+          "toga_best_cp": -44.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 401,
+          "toga_gap_cp": 13.0,
+          "toga_best_cp": -98.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 402,
+          "toga_gap_cp": 61.0,
+          "toga_best_cp": 315.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 403,
+          "toga_gap_cp": 64.0,
+          "toga_best_cp": -161.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 1
+        },
+        {
+          "eligible_index": 404,
+          "toga_gap_cp": 24.0,
+          "toga_best_cp": 59.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 405,
+          "toga_gap_cp": 8.0,
+          "toga_best_cp": -163.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 406,
+          "toga_gap_cp": 128.0,
+          "toga_best_cp": -32.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 1
+        },
+        {
+          "eligible_index": 407,
+          "toga_gap_cp": 11.0,
+          "toga_best_cp": 83.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 408,
+          "toga_gap_cp": 17.0,
+          "toga_best_cp": 166.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 409,
+          "toga_gap_cp": 5.0,
+          "toga_best_cp": -360.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 410,
+          "toga_gap_cp": 2.0,
+          "toga_best_cp": 169.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 411,
+          "toga_gap_cp": 16.0,
+          "toga_best_cp": 31.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 412,
+          "toga_gap_cp": 64.0,
+          "toga_best_cp": -105.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 413,
+          "toga_gap_cp": 24.0,
+          "toga_best_cp": 45.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 414,
+          "toga_gap_cp": 4.0,
+          "toga_best_cp": 8.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 415,
+          "toga_gap_cp": 21.0,
+          "toga_best_cp": 212.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        }
+      ]
+    },
+    "replication_2016_03": {
+      "n": 400,
+      "frozen_rule": {
+        "toga_base_rate": 0.0125,
+        "auroc_do_gap_vs_toga": 0.5336708860759494,
+        "auroc_shallow_gap_vs_toga": 0.6177215189873417,
+        "flag_precision_vs_toga": 0.02666666666666667,
+        "flag_lift_vs_toga": 2.1333333333333333,
+        "label_agreement_nnue_vs_toga": 0.895
+      },
+      "quantile_matched": {
+        "k_positives": 47,
+        "auroc_do_gap_vs_toga_topk": 0.5615695256464348,
+        "auroc_shallow_gap_vs_toga_topk": 0.6257308179133265,
+        "flag_precision_vs_toga_topk": 0.2,
+        "flag_lift_vs_toga_topk": 1.7021276595744683,
+        "label_agreement_nnue_vs_toga_topk": 0.88
+      },
+      "records": [
+        {
+          "eligible_index": 16,
+          "toga_gap_cp": 0.0,
+          "toga_best_cp": 1000.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 17,
+          "toga_gap_cp": 30.0,
+          "toga_best_cp": 61.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 18,
+          "toga_gap_cp": 64.0,
+          "toga_best_cp": 364.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 19,
+          "toga_gap_cp": 9.0,
+          "toga_best_cp": 593.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 20,
+          "toga_gap_cp": 4.0,
+          "toga_best_cp": -329.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 21,
+          "toga_gap_cp": 32.0,
+          "toga_best_cp": 30.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 22,
+          "toga_gap_cp": 107.0,
+          "toga_best_cp": -193.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 1
+        },
+        {
+          "eligible_index": 23,
+          "toga_gap_cp": 16.0,
+          "toga_best_cp": 147.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 24,
+          "toga_gap_cp": 14.0,
+          "toga_best_cp": 904.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 25,
+          "toga_gap_cp": 31.0,
+          "toga_best_cp": -66.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 26,
+          "toga_gap_cp": 5.0,
+          "toga_best_cp": 49.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 27,
+          "toga_gap_cp": 16.0,
+          "toga_best_cp": 76.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 28,
+          "toga_gap_cp": 18.0,
+          "toga_best_cp": -131.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 29,
+          "toga_gap_cp": 4.0,
+          "toga_best_cp": 8.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 30,
+          "toga_gap_cp": 56.0,
+          "toga_best_cp": 367.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 31,
+          "toga_gap_cp": 0.0,
+          "toga_best_cp": 4.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 32,
+          "toga_gap_cp": 12.0,
+          "toga_best_cp": 128.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 33,
+          "toga_gap_cp": 33.0,
+          "toga_best_cp": 304.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 34,
+          "toga_gap_cp": 6.0,
+          "toga_best_cp": 343.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 35,
+          "toga_gap_cp": 64.0,
+          "toga_best_cp": -187.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 36,
+          "toga_gap_cp": 3.0,
+          "toga_best_cp": 23.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 37,
+          "toga_gap_cp": 13.0,
+          "toga_best_cp": -145.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 38,
+          "toga_gap_cp": 13.0,
+          "toga_best_cp": 632.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 39,
+          "toga_gap_cp": 16.0,
+          "toga_best_cp": 53.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 40,
+          "toga_gap_cp": 32.0,
+          "toga_best_cp": -201.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 41,
+          "toga_gap_cp": 64.0,
+          "toga_best_cp": -152.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 42,
+          "toga_gap_cp": 25.0,
+          "toga_best_cp": 237.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 43,
+          "toga_gap_cp": 128.0,
+          "toga_best_cp": 114.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 1
+        },
+        {
+          "eligible_index": 44,
+          "toga_gap_cp": 0.0,
+          "toga_best_cp": -129.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 45,
+          "toga_gap_cp": 26.0,
+          "toga_best_cp": 21.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 46,
+          "toga_gap_cp": 22.0,
+          "toga_best_cp": -23.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 47,
+          "toga_gap_cp": 17.0,
+          "toga_best_cp": 155.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 48,
+          "toga_gap_cp": 2.0,
+          "toga_best_cp": -110.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 49,
+          "toga_gap_cp": 64.0,
+          "toga_best_cp": 81.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 50,
+          "toga_gap_cp": 8.0,
+          "toga_best_cp": 74.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 51,
+          "toga_gap_cp": 65.0,
+          "toga_best_cp": 390.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 1
+        },
+        {
+          "eligible_index": 52,
+          "toga_gap_cp": 5.0,
+          "toga_best_cp": 104.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 53,
+          "toga_gap_cp": 7.0,
+          "toga_best_cp": 390.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 54,
+          "toga_gap_cp": 31.0,
+          "toga_best_cp": 198.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 55,
+          "toga_gap_cp": 53.0,
+          "toga_best_cp": -39.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 56,
+          "toga_gap_cp": 3.0,
+          "toga_best_cp": -4.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 57,
+          "toga_gap_cp": 8.0,
+          "toga_best_cp": 28.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 58,
+          "toga_gap_cp": 4.0,
+          "toga_best_cp": -26.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 59,
+          "toga_gap_cp": 32.0,
+          "toga_best_cp": -544.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 60,
+          "toga_gap_cp": 32.0,
+          "toga_best_cp": 66.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 61,
+          "toga_gap_cp": 0.0,
+          "toga_best_cp": 84.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 62,
+          "toga_gap_cp": 9.0,
+          "toga_best_cp": -143.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 63,
+          "toga_gap_cp": 88.0,
+          "toga_best_cp": -140.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 1
+        },
+        {
+          "eligible_index": 64,
+          "toga_gap_cp": 21.0,
+          "toga_best_cp": -356.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 65,
+          "toga_gap_cp": 32.0,
+          "toga_best_cp": -63.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 66,
+          "toga_gap_cp": 2.0,
+          "toga_best_cp": 170.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 67,
+          "toga_gap_cp": 64.0,
+          "toga_best_cp": 110.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 1
+        },
+        {
+          "eligible_index": 68,
+          "toga_gap_cp": 6.0,
+          "toga_best_cp": -143.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 69,
+          "toga_gap_cp": 3.0,
+          "toga_best_cp": -22.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 70,
+          "toga_gap_cp": 1.0,
+          "toga_best_cp": -108.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 71,
+          "toga_gap_cp": 64.0,
+          "toga_best_cp": -40.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 1
+        },
+        {
+          "eligible_index": 72,
+          "toga_gap_cp": 1.0,
+          "toga_best_cp": 25.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 73,
+          "toga_gap_cp": 18.0,
+          "toga_best_cp": 565.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 74,
+          "toga_gap_cp": 37.0,
+          "toga_best_cp": -12.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 75,
+          "toga_gap_cp": 45.0,
+          "toga_best_cp": -308.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 76,
+          "toga_gap_cp": 2.0,
+          "toga_best_cp": 67.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 77,
+          "toga_gap_cp": 1.0,
+          "toga_best_cp": -198.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 78,
+          "toga_gap_cp": 32.0,
+          "toga_best_cp": 51.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 79,
+          "toga_gap_cp": 15.0,
+          "toga_best_cp": -93.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 80,
+          "toga_gap_cp": 128.0,
+          "toga_best_cp": -872.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 1
+        },
+        {
+          "eligible_index": 81,
+          "toga_gap_cp": 1.0,
+          "toga_best_cp": 76.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 82,
+          "toga_gap_cp": 2.0,
+          "toga_best_cp": -45.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 83,
+          "toga_gap_cp": 64.0,
+          "toga_best_cp": 450.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 1
+        },
+        {
+          "eligible_index": 84,
+          "toga_gap_cp": 64.0,
+          "toga_best_cp": 150.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 1
+        },
+        {
+          "eligible_index": 85,
+          "toga_gap_cp": 5.0,
+          "toga_best_cp": -48.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 86,
+          "toga_gap_cp": 32.0,
+          "toga_best_cp": -112.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 87,
+          "toga_gap_cp": 3.0,
+          "toga_best_cp": 43.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 88,
+          "toga_gap_cp": 17.0,
+          "toga_best_cp": 57.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 89,
+          "toga_gap_cp": 3.0,
+          "toga_best_cp": -41.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 90,
+          "toga_gap_cp": 16.0,
+          "toga_best_cp": -642.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 91,
+          "toga_gap_cp": 10.0,
+          "toga_best_cp": -183.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 92,
+          "toga_gap_cp": 6.0,
+          "toga_best_cp": 90.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 93,
+          "toga_gap_cp": 64.0,
+          "toga_best_cp": 177.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 1
+        },
+        {
+          "eligible_index": 94,
+          "toga_gap_cp": 39.0,
+          "toga_best_cp": 141.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 95,
+          "toga_gap_cp": 9.0,
+          "toga_best_cp": 9.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 96,
+          "toga_gap_cp": 4.0,
+          "toga_best_cp": -504.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 97,
+          "toga_gap_cp": 28.0,
+          "toga_best_cp": 2.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 98,
+          "toga_gap_cp": 64.0,
+          "toga_best_cp": 135.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 1
+        },
+        {
+          "eligible_index": 99,
+          "toga_gap_cp": 13.0,
+          "toga_best_cp": -19.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 100,
+          "toga_gap_cp": 31.0,
+          "toga_best_cp": -775.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 101,
+          "toga_gap_cp": 32.0,
+          "toga_best_cp": 620.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 102,
+          "toga_gap_cp": 4.0,
+          "toga_best_cp": -3.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 103,
+          "toga_gap_cp": 32.0,
+          "toga_best_cp": -44.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 104,
+          "toga_gap_cp": 28.0,
+          "toga_best_cp": 23.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 105,
+          "toga_gap_cp": 11.0,
+          "toga_best_cp": 331.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 106,
+          "toga_gap_cp": 24.0,
+          "toga_best_cp": 118.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 107,
+          "toga_gap_cp": 32.0,
+          "toga_best_cp": 220.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 108,
+          "toga_gap_cp": 16.0,
+          "toga_best_cp": -78.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 109,
+          "toga_gap_cp": 32.0,
+          "toga_best_cp": 279.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 110,
+          "toga_gap_cp": 16.0,
+          "toga_best_cp": 15.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 111,
+          "toga_gap_cp": 12.0,
+          "toga_best_cp": 22.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 112,
+          "toga_gap_cp": 22.0,
+          "toga_best_cp": 148.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 113,
+          "toga_gap_cp": 1.0,
+          "toga_best_cp": -365.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 114,
+          "toga_gap_cp": 64.0,
+          "toga_best_cp": -323.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 1
+        },
+        {
+          "eligible_index": 115,
+          "toga_gap_cp": 18.0,
+          "toga_best_cp": 110.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 116,
+          "toga_gap_cp": 19.0,
+          "toga_best_cp": 34.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 117,
+          "toga_gap_cp": 32.0,
+          "toga_best_cp": -14.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 118,
+          "toga_gap_cp": 2.0,
+          "toga_best_cp": -48.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 119,
+          "toga_gap_cp": 0.0,
+          "toga_best_cp": 82.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 120,
+          "toga_gap_cp": 32.0,
+          "toga_best_cp": -164.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 121,
+          "toga_gap_cp": 16.0,
+          "toga_best_cp": -295.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 122,
+          "toga_gap_cp": 30.0,
+          "toga_best_cp": 95.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 123,
+          "toga_gap_cp": 9.0,
+          "toga_best_cp": 8.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 124,
+          "toga_gap_cp": 28.0,
+          "toga_best_cp": -43.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 125,
+          "toga_gap_cp": 18.0,
+          "toga_best_cp": -64.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 126,
+          "toga_gap_cp": 125.0,
+          "toga_best_cp": 132.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 1
+        },
+        {
+          "eligible_index": 127,
+          "toga_gap_cp": 32.0,
+          "toga_best_cp": 459.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 128,
+          "toga_gap_cp": 32.0,
+          "toga_best_cp": 3.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 129,
+          "toga_gap_cp": 13.0,
+          "toga_best_cp": 389.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 130,
+          "toga_gap_cp": 73.0,
+          "toga_best_cp": -700.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 1
+        },
+        {
+          "eligible_index": 131,
+          "toga_gap_cp": 32.0,
+          "toga_best_cp": 45.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 132,
+          "toga_gap_cp": 0.0,
+          "toga_best_cp": 0.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 133,
+          "toga_gap_cp": 17.0,
+          "toga_best_cp": 22.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 134,
+          "toga_gap_cp": 1.0,
+          "toga_best_cp": -33.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 135,
+          "toga_gap_cp": 12.0,
+          "toga_best_cp": 225.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 136,
+          "toga_gap_cp": 14.0,
+          "toga_best_cp": 70.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 137,
+          "toga_gap_cp": 64.0,
+          "toga_best_cp": -140.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 1
+        },
+        {
+          "eligible_index": 138,
+          "toga_gap_cp": 11.0,
+          "toga_best_cp": 16.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 139,
+          "toga_gap_cp": 1.0,
+          "toga_best_cp": 30.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 140,
+          "toga_gap_cp": 9.0,
+          "toga_best_cp": -32.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 141,
+          "toga_gap_cp": 27.0,
+          "toga_best_cp": 74.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 142,
+          "toga_gap_cp": 1.0,
+          "toga_best_cp": 59.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 143,
+          "toga_gap_cp": 2.0,
+          "toga_best_cp": -292.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 144,
+          "toga_gap_cp": 16.0,
+          "toga_best_cp": -56.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 145,
+          "toga_gap_cp": 12.0,
+          "toga_best_cp": -158.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 146,
+          "toga_gap_cp": 99.0,
+          "toga_best_cp": 1000.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 1
+        },
+        {
+          "eligible_index": 147,
+          "toga_gap_cp": 256.0,
+          "toga_best_cp": 980.0,
+          "toga_label_frozen": 1,
+          "toga_label_topk": 1
+        },
+        {
+          "eligible_index": 148,
+          "toga_gap_cp": 2.0,
+          "toga_best_cp": -30.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 149,
+          "toga_gap_cp": 64.0,
+          "toga_best_cp": -38.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 1
+        },
+        {
+          "eligible_index": 150,
+          "toga_gap_cp": 18.0,
+          "toga_best_cp": -138.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 151,
+          "toga_gap_cp": 30.0,
+          "toga_best_cp": 424.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 152,
+          "toga_gap_cp": 40.0,
+          "toga_best_cp": 81.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 153,
+          "toga_gap_cp": 32.0,
+          "toga_best_cp": 0.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 154,
+          "toga_gap_cp": 16.0,
+          "toga_best_cp": 82.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 155,
+          "toga_gap_cp": 6.0,
+          "toga_best_cp": -25.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 156,
+          "toga_gap_cp": 32.0,
+          "toga_best_cp": 64.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 157,
+          "toga_gap_cp": 3.0,
+          "toga_best_cp": -68.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 158,
+          "toga_gap_cp": 3.0,
+          "toga_best_cp": -29.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 159,
+          "toga_gap_cp": 7.0,
+          "toga_best_cp": -78.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 160,
+          "toga_gap_cp": 32.0,
+          "toga_best_cp": -801.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 161,
+          "toga_gap_cp": 8.0,
+          "toga_best_cp": -129.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 162,
+          "toga_gap_cp": 193.0,
+          "toga_best_cp": 258.0,
+          "toga_label_frozen": 1,
+          "toga_label_topk": 1
+        },
+        {
+          "eligible_index": 163,
+          "toga_gap_cp": 16.0,
+          "toga_best_cp": -26.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 164,
+          "toga_gap_cp": 5.0,
+          "toga_best_cp": -13.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 165,
+          "toga_gap_cp": 32.0,
+          "toga_best_cp": -8.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 166,
+          "toga_gap_cp": 32.0,
+          "toga_best_cp": 235.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 167,
+          "toga_gap_cp": 1.0,
+          "toga_best_cp": 36.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 168,
+          "toga_gap_cp": 32.0,
+          "toga_best_cp": -95.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 169,
+          "toga_gap_cp": 32.0,
+          "toga_best_cp": -78.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 170,
+          "toga_gap_cp": 0.0,
+          "toga_best_cp": 23.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 171,
+          "toga_gap_cp": 8.0,
+          "toga_best_cp": 25.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 172,
+          "toga_gap_cp": 85.0,
+          "toga_best_cp": -663.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 1
+        },
+        {
+          "eligible_index": 173,
+          "toga_gap_cp": 32.0,
+          "toga_best_cp": 93.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 174,
+          "toga_gap_cp": 8.0,
+          "toga_best_cp": 37.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 175,
+          "toga_gap_cp": 4.0,
+          "toga_best_cp": 55.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 176,
+          "toga_gap_cp": 16.0,
+          "toga_best_cp": -33.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 177,
+          "toga_gap_cp": 31.0,
+          "toga_best_cp": -25.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 178,
+          "toga_gap_cp": 1.0,
+          "toga_best_cp": 15.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 179,
+          "toga_gap_cp": 2.0,
+          "toga_best_cp": -42.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 180,
+          "toga_gap_cp": 3.0,
+          "toga_best_cp": -337.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 181,
+          "toga_gap_cp": 210.0,
+          "toga_best_cp": 1000.0,
+          "toga_label_frozen": 1,
+          "toga_label_topk": 1
+        },
+        {
+          "eligible_index": 182,
+          "toga_gap_cp": 32.0,
+          "toga_best_cp": 104.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 183,
+          "toga_gap_cp": 32.0,
+          "toga_best_cp": 116.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 184,
+          "toga_gap_cp": 12.0,
+          "toga_best_cp": -3.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 185,
+          "toga_gap_cp": 23.0,
+          "toga_best_cp": 263.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 186,
+          "toga_gap_cp": 36.0,
+          "toga_best_cp": 14.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 187,
+          "toga_gap_cp": 46.0,
+          "toga_best_cp": 168.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 188,
+          "toga_gap_cp": 64.0,
+          "toga_best_cp": -1.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 1
+        },
+        {
+          "eligible_index": 189,
+          "toga_gap_cp": 7.0,
+          "toga_best_cp": -422.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 190,
+          "toga_gap_cp": 128.0,
+          "toga_best_cp": 284.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 1
+        },
+        {
+          "eligible_index": 191,
+          "toga_gap_cp": 1.0,
+          "toga_best_cp": -10.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 192,
+          "toga_gap_cp": 3.0,
+          "toga_best_cp": 87.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 193,
+          "toga_gap_cp": 64.0,
+          "toga_best_cp": 43.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 1
+        },
+        {
+          "eligible_index": 194,
+          "toga_gap_cp": 32.0,
+          "toga_best_cp": 123.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 195,
+          "toga_gap_cp": 0.0,
+          "toga_best_cp": -144.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 196,
+          "toga_gap_cp": 32.0,
+          "toga_best_cp": -229.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 197,
+          "toga_gap_cp": 46.0,
+          "toga_best_cp": 428.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 198,
+          "toga_gap_cp": 65.0,
+          "toga_best_cp": 588.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 1
+        },
+        {
+          "eligible_index": 199,
+          "toga_gap_cp": 20.0,
+          "toga_best_cp": 174.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 200,
+          "toga_gap_cp": 1.0,
+          "toga_best_cp": -2.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 201,
+          "toga_gap_cp": 13.0,
+          "toga_best_cp": -30.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 202,
+          "toga_gap_cp": 8.0,
+          "toga_best_cp": 69.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 203,
+          "toga_gap_cp": 1.0,
+          "toga_best_cp": 16.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 204,
+          "toga_gap_cp": 14.0,
+          "toga_best_cp": 100.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 205,
+          "toga_gap_cp": 3.0,
+          "toga_best_cp": 71.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 206,
+          "toga_gap_cp": 6.0,
+          "toga_best_cp": -355.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 207,
+          "toga_gap_cp": 9.0,
+          "toga_best_cp": -213.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 208,
+          "toga_gap_cp": 12.0,
+          "toga_best_cp": 19.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 209,
+          "toga_gap_cp": 3.0,
+          "toga_best_cp": 19.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 210,
+          "toga_gap_cp": 15.0,
+          "toga_best_cp": -63.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 211,
+          "toga_gap_cp": 3.0,
+          "toga_best_cp": 182.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 212,
+          "toga_gap_cp": 32.0,
+          "toga_best_cp": -95.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 213,
+          "toga_gap_cp": 9.0,
+          "toga_best_cp": -50.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 214,
+          "toga_gap_cp": 4.0,
+          "toga_best_cp": 76.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 215,
+          "toga_gap_cp": 11.0,
+          "toga_best_cp": 332.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 216,
+          "toga_gap_cp": 6.0,
+          "toga_best_cp": 15.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 217,
+          "toga_gap_cp": 128.0,
+          "toga_best_cp": 862.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 1
+        },
+        {
+          "eligible_index": 218,
+          "toga_gap_cp": 2.0,
+          "toga_best_cp": 51.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 219,
+          "toga_gap_cp": 14.0,
+          "toga_best_cp": -195.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 220,
+          "toga_gap_cp": 11.0,
+          "toga_best_cp": -585.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 221,
+          "toga_gap_cp": 0.0,
+          "toga_best_cp": 29.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 222,
+          "toga_gap_cp": 16.0,
+          "toga_best_cp": -257.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 223,
+          "toga_gap_cp": 32.0,
+          "toga_best_cp": 139.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 224,
+          "toga_gap_cp": 8.0,
+          "toga_best_cp": 17.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 225,
+          "toga_gap_cp": 29.0,
+          "toga_best_cp": 65.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 226,
+          "toga_gap_cp": 16.0,
+          "toga_best_cp": 76.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 227,
+          "toga_gap_cp": 1.0,
+          "toga_best_cp": -52.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 228,
+          "toga_gap_cp": 1.0,
+          "toga_best_cp": -136.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 229,
+          "toga_gap_cp": 8.0,
+          "toga_best_cp": -262.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 230,
+          "toga_gap_cp": 15.0,
+          "toga_best_cp": 136.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 231,
+          "toga_gap_cp": 0.0,
+          "toga_best_cp": -240.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 232,
+          "toga_gap_cp": 14.0,
+          "toga_best_cp": -144.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 233,
+          "toga_gap_cp": 59.0,
+          "toga_best_cp": 245.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 234,
+          "toga_gap_cp": 10.0,
+          "toga_best_cp": -6.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 235,
+          "toga_gap_cp": 7.0,
+          "toga_best_cp": 46.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 236,
+          "toga_gap_cp": 4.0,
+          "toga_best_cp": -78.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 237,
+          "toga_gap_cp": 21.0,
+          "toga_best_cp": -12.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 238,
+          "toga_gap_cp": 32.0,
+          "toga_best_cp": 314.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 239,
+          "toga_gap_cp": 1.0,
+          "toga_best_cp": -58.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 240,
+          "toga_gap_cp": 69.0,
+          "toga_best_cp": -18.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 1
+        },
+        {
+          "eligible_index": 241,
+          "toga_gap_cp": 27.0,
+          "toga_best_cp": 102.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 242,
+          "toga_gap_cp": 7.0,
+          "toga_best_cp": 11.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 243,
+          "toga_gap_cp": 3.0,
+          "toga_best_cp": -125.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 244,
+          "toga_gap_cp": 14.0,
+          "toga_best_cp": -48.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 245,
+          "toga_gap_cp": 1.0,
+          "toga_best_cp": 12.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 246,
+          "toga_gap_cp": 32.0,
+          "toga_best_cp": -245.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 247,
+          "toga_gap_cp": 32.0,
+          "toga_best_cp": 41.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 248,
+          "toga_gap_cp": 0.0,
+          "toga_best_cp": 281.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 249,
+          "toga_gap_cp": 64.0,
+          "toga_best_cp": 17.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 1
+        },
+        {
+          "eligible_index": 250,
+          "toga_gap_cp": 28.0,
+          "toga_best_cp": 280.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 251,
+          "toga_gap_cp": 16.0,
+          "toga_best_cp": -8.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 252,
+          "toga_gap_cp": 0.0,
+          "toga_best_cp": 82.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 253,
+          "toga_gap_cp": 23.0,
+          "toga_best_cp": -110.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 254,
+          "toga_gap_cp": 12.0,
+          "toga_best_cp": -27.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 255,
+          "toga_gap_cp": 10.0,
+          "toga_best_cp": -28.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 256,
+          "toga_gap_cp": 10.0,
+          "toga_best_cp": 379.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 257,
+          "toga_gap_cp": 12.0,
+          "toga_best_cp": -17.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 258,
+          "toga_gap_cp": 111.0,
+          "toga_best_cp": 1000.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 1
+        },
+        {
+          "eligible_index": 259,
+          "toga_gap_cp": 0.0,
+          "toga_best_cp": -34.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 260,
+          "toga_gap_cp": 14.0,
+          "toga_best_cp": 15.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 261,
+          "toga_gap_cp": 32.0,
+          "toga_best_cp": 176.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 262,
+          "toga_gap_cp": 32.0,
+          "toga_best_cp": -291.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 263,
+          "toga_gap_cp": 1.0,
+          "toga_best_cp": 187.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 264,
+          "toga_gap_cp": 1.0,
+          "toga_best_cp": -175.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 265,
+          "toga_gap_cp": 32.0,
+          "toga_best_cp": -281.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 266,
+          "toga_gap_cp": 24.0,
+          "toga_best_cp": -18.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 267,
+          "toga_gap_cp": 12.0,
+          "toga_best_cp": 57.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 268,
+          "toga_gap_cp": 4.0,
+          "toga_best_cp": 522.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 269,
+          "toga_gap_cp": 31.0,
+          "toga_best_cp": 18.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 270,
+          "toga_gap_cp": 0.0,
+          "toga_best_cp": -1000.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 271,
+          "toga_gap_cp": 4.0,
+          "toga_best_cp": 40.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 272,
+          "toga_gap_cp": 1.0,
+          "toga_best_cp": 32.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 273,
+          "toga_gap_cp": 1.0,
+          "toga_best_cp": 238.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 274,
+          "toga_gap_cp": 0.0,
+          "toga_best_cp": -25.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 275,
+          "toga_gap_cp": 16.0,
+          "toga_best_cp": -163.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 276,
+          "toga_gap_cp": 563.0,
+          "toga_best_cp": 1000.0,
+          "toga_label_frozen": 1,
+          "toga_label_topk": 1
+        },
+        {
+          "eligible_index": 277,
+          "toga_gap_cp": 64.0,
+          "toga_best_cp": 488.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 1
+        },
+        {
+          "eligible_index": 278,
+          "toga_gap_cp": 8.0,
+          "toga_best_cp": -47.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 279,
+          "toga_gap_cp": 3.0,
+          "toga_best_cp": -12.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 280,
+          "toga_gap_cp": 32.0,
+          "toga_best_cp": 581.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 281,
+          "toga_gap_cp": 64.0,
+          "toga_best_cp": 700.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 1
+        },
+        {
+          "eligible_index": 282,
+          "toga_gap_cp": 2.0,
+          "toga_best_cp": 66.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 283,
+          "toga_gap_cp": 20.0,
+          "toga_best_cp": 20.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 284,
+          "toga_gap_cp": 32.0,
+          "toga_best_cp": 60.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 285,
+          "toga_gap_cp": 128.0,
+          "toga_best_cp": 101.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 1
+        },
+        {
+          "eligible_index": 286,
+          "toga_gap_cp": 6.0,
+          "toga_best_cp": 251.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 287,
+          "toga_gap_cp": 64.0,
+          "toga_best_cp": 206.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 1
+        },
+        {
+          "eligible_index": 288,
+          "toga_gap_cp": 4.0,
+          "toga_best_cp": 12.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 289,
+          "toga_gap_cp": 25.0,
+          "toga_best_cp": 42.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 290,
+          "toga_gap_cp": 2.0,
+          "toga_best_cp": 12.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 291,
+          "toga_gap_cp": 8.0,
+          "toga_best_cp": 12.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 292,
+          "toga_gap_cp": 5.0,
+          "toga_best_cp": -1.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 293,
+          "toga_gap_cp": 1.0,
+          "toga_best_cp": 136.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 294,
+          "toga_gap_cp": 13.0,
+          "toga_best_cp": 25.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 295,
+          "toga_gap_cp": 45.0,
+          "toga_best_cp": -323.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 296,
+          "toga_gap_cp": 32.0,
+          "toga_best_cp": 100.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 297,
+          "toga_gap_cp": 10.0,
+          "toga_best_cp": -98.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 298,
+          "toga_gap_cp": 2.0,
+          "toga_best_cp": 55.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 299,
+          "toga_gap_cp": 33.0,
+          "toga_best_cp": 25.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 300,
+          "toga_gap_cp": 64.0,
+          "toga_best_cp": 150.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 1
+        },
+        {
+          "eligible_index": 301,
+          "toga_gap_cp": 11.0,
+          "toga_best_cp": -48.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 302,
+          "toga_gap_cp": 16.0,
+          "toga_best_cp": -345.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 303,
+          "toga_gap_cp": 23.0,
+          "toga_best_cp": -7.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 304,
+          "toga_gap_cp": 32.0,
+          "toga_best_cp": 100.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 305,
+          "toga_gap_cp": 20.0,
+          "toga_best_cp": 48.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 306,
+          "toga_gap_cp": 32.0,
+          "toga_best_cp": -17.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 307,
+          "toga_gap_cp": 29.0,
+          "toga_best_cp": 16.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 308,
+          "toga_gap_cp": 0.0,
+          "toga_best_cp": -19.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 309,
+          "toga_gap_cp": 64.0,
+          "toga_best_cp": -66.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 1
+        },
+        {
+          "eligible_index": 310,
+          "toga_gap_cp": 3.0,
+          "toga_best_cp": 89.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 311,
+          "toga_gap_cp": 14.0,
+          "toga_best_cp": -61.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 312,
+          "toga_gap_cp": 32.0,
+          "toga_best_cp": -71.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 313,
+          "toga_gap_cp": 32.0,
+          "toga_best_cp": -234.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 314,
+          "toga_gap_cp": 1.0,
+          "toga_best_cp": -168.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 315,
+          "toga_gap_cp": 64.0,
+          "toga_best_cp": -408.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 1
+        },
+        {
+          "eligible_index": 316,
+          "toga_gap_cp": 26.0,
+          "toga_best_cp": -2.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 317,
+          "toga_gap_cp": 113.0,
+          "toga_best_cp": 184.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 1
+        },
+        {
+          "eligible_index": 318,
+          "toga_gap_cp": 1.0,
+          "toga_best_cp": 112.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 319,
+          "toga_gap_cp": 2.0,
+          "toga_best_cp": -68.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 320,
+          "toga_gap_cp": 5.0,
+          "toga_best_cp": -2.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 321,
+          "toga_gap_cp": 16.0,
+          "toga_best_cp": -7.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 322,
+          "toga_gap_cp": 12.0,
+          "toga_best_cp": -156.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 323,
+          "toga_gap_cp": 41.0,
+          "toga_best_cp": -450.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 324,
+          "toga_gap_cp": 12.0,
+          "toga_best_cp": 118.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 325,
+          "toga_gap_cp": 64.0,
+          "toga_best_cp": -406.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 1
+        },
+        {
+          "eligible_index": 326,
+          "toga_gap_cp": 58.0,
+          "toga_best_cp": 428.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 327,
+          "toga_gap_cp": 2.0,
+          "toga_best_cp": 5.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 328,
+          "toga_gap_cp": 128.0,
+          "toga_best_cp": 192.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 1
+        },
+        {
+          "eligible_index": 329,
+          "toga_gap_cp": 12.0,
+          "toga_best_cp": -123.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 330,
+          "toga_gap_cp": 32.0,
+          "toga_best_cp": 100.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 331,
+          "toga_gap_cp": 32.0,
+          "toga_best_cp": 61.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 332,
+          "toga_gap_cp": 1.0,
+          "toga_best_cp": -82.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 333,
+          "toga_gap_cp": 32.0,
+          "toga_best_cp": 379.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 334,
+          "toga_gap_cp": 512.0,
+          "toga_best_cp": 471.0,
+          "toga_label_frozen": 1,
+          "toga_label_topk": 1
+        },
+        {
+          "eligible_index": 335,
+          "toga_gap_cp": 0.0,
+          "toga_best_cp": 1000.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 336,
+          "toga_gap_cp": 5.0,
+          "toga_best_cp": 115.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 337,
+          "toga_gap_cp": 64.0,
+          "toga_best_cp": 33.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 1
+        },
+        {
+          "eligible_index": 338,
+          "toga_gap_cp": 1.0,
+          "toga_best_cp": 261.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 339,
+          "toga_gap_cp": 64.0,
+          "toga_best_cp": 478.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 1
+        },
+        {
+          "eligible_index": 340,
+          "toga_gap_cp": 49.0,
+          "toga_best_cp": 58.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 341,
+          "toga_gap_cp": 0.0,
+          "toga_best_cp": -202.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 342,
+          "toga_gap_cp": 18.0,
+          "toga_best_cp": -4.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 343,
+          "toga_gap_cp": 14.0,
+          "toga_best_cp": -11.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 344,
+          "toga_gap_cp": 9.0,
+          "toga_best_cp": 136.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 345,
+          "toga_gap_cp": 3.0,
+          "toga_best_cp": -33.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 346,
+          "toga_gap_cp": 32.0,
+          "toga_best_cp": -321.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 347,
+          "toga_gap_cp": 9.0,
+          "toga_best_cp": 129.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 348,
+          "toga_gap_cp": 32.0,
+          "toga_best_cp": -38.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 349,
+          "toga_gap_cp": 1.0,
+          "toga_best_cp": -27.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 350,
+          "toga_gap_cp": 32.0,
+          "toga_best_cp": -1.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 351,
+          "toga_gap_cp": 16.0,
+          "toga_best_cp": 398.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 352,
+          "toga_gap_cp": 32.0,
+          "toga_best_cp": 421.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 353,
+          "toga_gap_cp": 6.0,
+          "toga_best_cp": -664.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 354,
+          "toga_gap_cp": 32.0,
+          "toga_best_cp": 98.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 355,
+          "toga_gap_cp": 32.0,
+          "toga_best_cp": -105.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 356,
+          "toga_gap_cp": 3.0,
+          "toga_best_cp": -12.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 357,
+          "toga_gap_cp": 32.0,
+          "toga_best_cp": 733.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 358,
+          "toga_gap_cp": 44.0,
+          "toga_best_cp": 51.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 359,
+          "toga_gap_cp": 24.0,
+          "toga_best_cp": 47.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 360,
+          "toga_gap_cp": 0.0,
+          "toga_best_cp": 15.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 361,
+          "toga_gap_cp": 32.0,
+          "toga_best_cp": 216.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 362,
+          "toga_gap_cp": 13.0,
+          "toga_best_cp": -98.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 363,
+          "toga_gap_cp": 34.0,
+          "toga_best_cp": -338.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 364,
+          "toga_gap_cp": 2.0,
+          "toga_best_cp": 35.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 365,
+          "toga_gap_cp": 32.0,
+          "toga_best_cp": -110.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 366,
+          "toga_gap_cp": 3.0,
+          "toga_best_cp": -251.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 367,
+          "toga_gap_cp": 12.0,
+          "toga_best_cp": 246.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 368,
+          "toga_gap_cp": 6.0,
+          "toga_best_cp": -105.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 369,
+          "toga_gap_cp": 7.0,
+          "toga_best_cp": -42.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 370,
+          "toga_gap_cp": 32.0,
+          "toga_best_cp": -56.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 371,
+          "toga_gap_cp": 38.0,
+          "toga_best_cp": 16.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 372,
+          "toga_gap_cp": 125.0,
+          "toga_best_cp": 183.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 1
+        },
+        {
+          "eligible_index": 373,
+          "toga_gap_cp": 2.0,
+          "toga_best_cp": -58.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 374,
+          "toga_gap_cp": 11.0,
+          "toga_best_cp": -18.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 375,
+          "toga_gap_cp": 64.0,
+          "toga_best_cp": 601.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 376,
+          "toga_gap_cp": 1.0,
+          "toga_best_cp": -80.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 377,
+          "toga_gap_cp": 32.0,
+          "toga_best_cp": -371.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 378,
+          "toga_gap_cp": 8.0,
+          "toga_best_cp": 330.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 379,
+          "toga_gap_cp": 2.0,
+          "toga_best_cp": 197.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 380,
+          "toga_gap_cp": 13.0,
+          "toga_best_cp": 13.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 381,
+          "toga_gap_cp": 3.0,
+          "toga_best_cp": 204.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 382,
+          "toga_gap_cp": 77.0,
+          "toga_best_cp": 477.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 1
+        },
+        {
+          "eligible_index": 383,
+          "toga_gap_cp": 10.0,
+          "toga_best_cp": 56.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 384,
+          "toga_gap_cp": 13.0,
+          "toga_best_cp": -170.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 385,
+          "toga_gap_cp": 16.0,
+          "toga_best_cp": -22.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 386,
+          "toga_gap_cp": 16.0,
+          "toga_best_cp": 131.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 387,
+          "toga_gap_cp": 38.0,
+          "toga_best_cp": 217.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 388,
+          "toga_gap_cp": 8.0,
+          "toga_best_cp": -191.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 389,
+          "toga_gap_cp": 1.0,
+          "toga_best_cp": 51.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 390,
+          "toga_gap_cp": 17.0,
+          "toga_best_cp": 238.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 391,
+          "toga_gap_cp": 0.0,
+          "toga_best_cp": -1000.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 392,
+          "toga_gap_cp": 50.0,
+          "toga_best_cp": -190.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 393,
+          "toga_gap_cp": 40.0,
+          "toga_best_cp": 35.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 394,
+          "toga_gap_cp": 32.0,
+          "toga_best_cp": -44.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 395,
+          "toga_gap_cp": 0.0,
+          "toga_best_cp": 1000.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 396,
+          "toga_gap_cp": 2.0,
+          "toga_best_cp": 206.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 397,
+          "toga_gap_cp": 14.0,
+          "toga_best_cp": -65.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 398,
+          "toga_gap_cp": 34.0,
+          "toga_best_cp": -966.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 399,
+          "toga_gap_cp": 20.0,
+          "toga_best_cp": 21.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 400,
+          "toga_gap_cp": 26.0,
+          "toga_best_cp": 61.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 401,
+          "toga_gap_cp": 32.0,
+          "toga_best_cp": -26.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 402,
+          "toga_gap_cp": 5.0,
+          "toga_best_cp": -28.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 403,
+          "toga_gap_cp": 6.0,
+          "toga_best_cp": 20.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 404,
+          "toga_gap_cp": 4.0,
+          "toga_best_cp": 9.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 405,
+          "toga_gap_cp": 151.0,
+          "toga_best_cp": -217.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 1
+        },
+        {
+          "eligible_index": 406,
+          "toga_gap_cp": 11.0,
+          "toga_best_cp": -45.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 407,
+          "toga_gap_cp": 20.0,
+          "toga_best_cp": -71.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 408,
+          "toga_gap_cp": 32.0,
+          "toga_best_cp": -124.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 409,
+          "toga_gap_cp": 22.0,
+          "toga_best_cp": -22.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 410,
+          "toga_gap_cp": 64.0,
+          "toga_best_cp": 233.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 1
+        },
+        {
+          "eligible_index": 411,
+          "toga_gap_cp": 6.0,
+          "toga_best_cp": 0.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 412,
+          "toga_gap_cp": 6.0,
+          "toga_best_cp": 45.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 413,
+          "toga_gap_cp": 3.0,
+          "toga_best_cp": -61.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 414,
+          "toga_gap_cp": 0.0,
+          "toga_best_cp": -23.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        },
+        {
+          "eligible_index": 415,
+          "toga_gap_cp": 64.0,
+          "toga_best_cp": 159.0,
+          "toga_label_frozen": 0,
+          "toga_label_topk": 0
+        }
+      ]
+    }
+  },
+  "registered_outcomes": {
+    "TG1_auroc_gt_0.60_both_months": false,
+    "TG1_note": "frozen 150 cp rule fails through referee-scale mismatch (Toga cp scale compressed; base rate ~0.005) -- retained as a registered miss",
+    "followup_quantile_matched_auroc_gt_0.60_both_months": false
+  }
+}

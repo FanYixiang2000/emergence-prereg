@@ -1,0 +1,71 @@
+{
+  "status": "learned harmful emergence with two declared value functions; predictions HE-1..HE-4 frozen in the docstring",
+  "seeds": {
+    "9301": {
+      "potential_bits": 1.0,
+      "trigger_rate_rescue": 0.0,
+      "trigger_rate_bridge": 1.0,
+      "selectivity_separation": 1.0,
+      "specificity_js_bits": 0.9021547608988222,
+      "usefulness_private": 7.5,
+      "usefulness_team": -2.0,
+      "acquisition": 0.95,
+      "untrained_separation": 0.04999999999999999
+    },
+    "9302": {
+      "potential_bits": 1.0,
+      "trigger_rate_rescue": 0.0,
+      "trigger_rate_bridge": 1.0,
+      "selectivity_separation": 1.0,
+      "specificity_js_bits": 0.8718769426059012,
+      "usefulness_private": 7.5,
+      "usefulness_team": -2.0,
+      "acquisition": 0.98,
+      "untrained_separation": 0.020000000000000018
+    },
+    "9303": {
+      "potential_bits": 1.0,
+      "trigger_rate_rescue": 0.0,
+      "trigger_rate_bridge": 1.0,
+      "selectivity_separation": 1.0,
+      "specificity_js_bits": 0.9152186450769133,
+      "usefulness_private": 7.5,
+      "usefulness_team": -2.0,
+      "acquisition": 0.9750000000000001,
+      "untrained_separation": 0.024999999999999967
+    },
+    "9304": {
+      "potential_bits": 1.0,
+      "trigger_rate_rescue": 0.0,
+      "trigger_rate_bridge": 1.0,
+      "selectivity_separation": 1.0,
+      "specificity_js_bits": 0.9361972147099131,
+      "usefulness_private": 7.5,
+      "usefulness_team": -2.0,
+      "acquisition": 0.96,
+      "untrained_separation": 0.040000000000000036
+    },
+    "9305": {
+      "potential_bits": 1.0,
+      "trigger_rate_rescue": 0.0,
+      "trigger_rate_bridge": 1.0,
+      "selectivity_separation": 1.0,
+      "specificity_js_bits": 0.8776994414539944,
+      "usefulness_private": 7.5,
+      "usefulness_team": -2.0,
+      "acquisition": 0.935,
+      "untrained_separation": 0.065
+    }
+  },
+  "registered_outcomes": {
+    "HE1_harmful_direction_selectivity": "5/5",
+    "HE2_structural_components": "5/5",
+    "HE3_value_sign_split": "5/5",
+    "HE4_acquisition": "5/5",
+    "HE1_pass": true,
+    "HE2_pass": true,
+    "HE3_pass": true,
+    "HE4_pass": true
+  },
+  "reading": "The same learned structure is structurally emergent under both value functions, adaptive under the declared beneficiary's value and maladaptive under the team value: adaptivity is relative to the declared value subject, which the layered definition states and this system now measures."
+}

@@ -1,0 +1,820 @@
+{
+  "status": "EP episode-time collapse; registered Wave 4; fixed continuation horizon H=200 at every in-episode t removes the time-budget confound; learned 2M policy",
+  "config": {
+    "layouts": [
+      "cramped_room",
+      "asymmetric_advantages"
+    ],
+    "snapshot_ts": [
+      0,
+      40,
+      80,
+      120,
+      160
+    ],
+    "episodes_per_layout": 8,
+    "continuations_per_snapshot": 24,
+    "horizon": 200
+  },
+  "median_entropy_bits_by_t": {
+    "0": 0.6021581478790753,
+    "40": 0.0,
+    "80": 0.2717822215997982,
+    "120": 0.37351623823507624,
+    "160": 0.32501121082417705
+  },
+  "per_snapshot": [
+    {
+      "layout": "cramped_room",
+      "episode": 0,
+      "t": 0,
+      "basin_counts": {
+        "pot0_deliver": 10,
+        "pot1_deliver": 14
+      },
+      "entropy_bits": 0.9798687566511528
+    },
+    {
+      "layout": "cramped_room",
+      "episode": 0,
+      "t": 40,
+      "basin_counts": {
+        "pot1_deliver": 24
+      },
+      "entropy_bits": -0.0
+    },
+    {
+      "layout": "cramped_room",
+      "episode": 0,
+      "t": 80,
+      "basin_counts": {
+        "potnone_nodeliver": 1,
+        "pot1_deliver": 16,
+        "pot0_deliver": 7
+      },
+      "entropy_bits": 1.0994839817876882
+    },
+    {
+      "layout": "cramped_room",
+      "episode": 0,
+      "t": 120,
+      "basin_counts": {
+        "potnone_nodeliver": 2,
+        "pot0_deliver": 6,
+        "pot1_deliver": 16
+      },
+      "entropy_bits": 1.188721875540867
+    },
+    {
+      "layout": "cramped_room",
+      "episode": 0,
+      "t": 160,
+      "basin_counts": {
+        "pot0_deliver": 4,
+        "pot1_deliver": 20
+      },
+      "entropy_bits": 0.6500224216483541
+    },
+    {
+      "layout": "cramped_room",
+      "episode": 1,
+      "t": 0,
+      "basin_counts": {
+        "pot0_deliver": 7,
+        "pot1_deliver": 14,
+        "pot1_nodeliver": 2,
+        "pot0_nodeliver": 1
+      },
+      "entropy_bits": 1.4618602772540858
+    },
+    {
+      "layout": "cramped_room",
+      "episode": 1,
+      "t": 40,
+      "basin_counts": {
+        "pot0_deliver": 7,
+        "pot1_deliver": 17
+      },
+      "entropy_bits": 0.8708644692353644
+    },
+    {
+      "layout": "cramped_room",
+      "episode": 1,
+      "t": 80,
+      "basin_counts": {
+        "pot0_deliver": 21,
+        "pot1_deliver": 3
+      },
+      "entropy_bits": 0.5435644431995964
+    },
+    {
+      "layout": "cramped_room",
+      "episode": 1,
+      "t": 120,
+      "basin_counts": {
+        "pot0_nodeliver": 4,
+        "pot1_deliver": 11,
+        "pot0_deliver": 6,
+        "pot1_nodeliver": 3
+      },
+      "entropy_bits": 1.821695404408628
+    },
+    {
+      "layout": "cramped_room",
+      "episode": 1,
+      "t": 160,
+      "basin_counts": {
+        "pot1_deliver": 20,
+        "pot0_deliver": 4
+      },
+      "entropy_bits": 0.6500224216483541
+    },
+    {
+      "layout": "cramped_room",
+      "episode": 2,
+      "t": 0,
+      "basin_counts": {
+        "pot0_deliver": 8,
+        "pot0_nodeliver": 1,
+        "pot1_deliver": 12,
+        "pot1_nodeliver": 3
+      },
+      "entropy_bits": 1.5943609377704335
+    },
+    {
+      "layout": "cramped_room",
+      "episode": 2,
+      "t": 40,
+      "basin_counts": {
+        "pot1_deliver": 21,
+        "pot0_deliver": 3
+      },
+      "entropy_bits": 0.5435644431995964
+    },
+    {
+      "layout": "cramped_room",
+      "episode": 2,
+      "t": 80,
+      "basin_counts": {
+        "pot1_deliver": 15,
+        "pot0_deliver": 9
+      },
+      "entropy_bits": 0.954434002924965
+    },
+    {
+      "layout": "cramped_room",
+      "episode": 2,
+      "t": 120,
+      "basin_counts": {
+        "pot0_deliver": 21,
+        "pot1_deliver": 3
+      },
+      "entropy_bits": 0.5435644431995964
+    },
+    {
+      "layout": "cramped_room",
+      "episode": 2,
+      "t": 160,
+      "basin_counts": {
+        "pot1_deliver": 10,
+        "pot0_deliver": 9,
+        "pot1_nodeliver": 4,
+        "pot0_nodeliver": 1
+      },
+      "entropy_bits": 1.678770585643888
+    },
+    {
+      "layout": "cramped_room",
+      "episode": 3,
+      "t": 0,
+      "basin_counts": {
+        "pot1_deliver": 12,
+        "pot0_deliver": 10,
+        "pot1_nodeliver": 2
+      },
+      "entropy_bits": 1.3250112108241772
+    },
+    {
+      "layout": "cramped_room",
+      "episode": 3,
+      "t": 40,
+      "basin_counts": {
+        "pot1_deliver": 14,
+        "pot0_deliver": 10
+      },
+      "entropy_bits": 0.9798687566511528
+    },
+    {
+      "layout": "cramped_room",
+      "episode": 3,
+      "t": 80,
+      "basin_counts": {
+        "pot0_deliver": 20,
+        "pot1_deliver": 4
+      },
+      "entropy_bits": 0.6500224216483541
+    },
+    {
+      "layout": "cramped_room",
+      "episode": 3,
+      "t": 120,
+      "basin_counts": {
+        "pot1_deliver": 3,
+        "pot0_deliver": 20,
+        "pot0_nodeliver": 1
+      },
+      "entropy_bits": 0.785235442391543
+    },
+    {
+      "layout": "cramped_room",
+      "episode": 3,
+      "t": 160,
+      "basin_counts": {
+        "pot0_deliver": 9,
+        "pot1_deliver": 15
+      },
+      "entropy_bits": 0.954434002924965
+    },
+    {
+      "layout": "cramped_room",
+      "episode": 4,
+      "t": 0,
+      "basin_counts": {
+        "pot1_deliver": 15,
+        "pot0_deliver": 9
+      },
+      "entropy_bits": 0.954434002924965
+    },
+    {
+      "layout": "cramped_room",
+      "episode": 4,
+      "t": 40,
+      "basin_counts": {
+        "pot0_deliver": 12,
+        "pot1_deliver": 12
+      },
+      "entropy_bits": 1.0
+    },
+    {
+      "layout": "cramped_room",
+      "episode": 4,
+      "t": 80,
+      "basin_counts": {
+        "pot0_deliver": 19,
+        "pot1_deliver": 5
+      },
+      "entropy_bits": 0.7382848661434506
+    },
+    {
+      "layout": "cramped_room",
+      "episode": 4,
+      "t": 120,
+      "basin_counts": {
+        "pot1_deliver": 20,
+        "pot0_deliver": 1,
+        "pot1_nodeliver": 3
+      },
+      "entropy_bits": 0.785235442391543
+    },
+    {
+      "layout": "cramped_room",
+      "episode": 4,
+      "t": 160,
+      "basin_counts": {
+        "pot1_deliver": 17,
+        "pot1_nodeliver": 3,
+        "pot0_nodeliver": 1,
+        "pot0_deliver": 2,
+        "potnone_nodeliver": 1
+      },
+      "entropy_bits": 1.408222675578688
+    },
+    {
+      "layout": "cramped_room",
+      "episode": 5,
+      "t": 0,
+      "basin_counts": {
+        "pot1_deliver": 13,
+        "pot0_deliver": 10,
+        "pot0_nodeliver": 1
+      },
+      "entropy_bits": 1.1964209471916636
+    },
+    {
+      "layout": "cramped_room",
+      "episode": 5,
+      "t": 40,
+      "basin_counts": {
+        "pot1_deliver": 9,
+        "pot1_nodeliver": 1,
+        "pot0_deliver": 11,
+        "pot0_nodeliver": 3
+      },
+      "entropy_bits": 1.6125474873813834
+    },
+    {
+      "layout": "cramped_room",
+      "episode": 5,
+      "t": 80,
+      "basin_counts": {
+        "pot0_deliver": 13,
+        "pot1_deliver": 11
+      },
+      "entropy_bits": 0.9949848281859701
+    },
+    {
+      "layout": "cramped_room",
+      "episode": 5,
+      "t": 120,
+      "basin_counts": {
+        "pot1_deliver": 21,
+        "pot0_deliver": 3
+      },
+      "entropy_bits": 0.5435644431995964
+    },
+    {
+      "layout": "cramped_room",
+      "episode": 5,
+      "t": 160,
+      "basin_counts": {
+        "pot1_deliver": 15,
+        "pot0_deliver": 8,
+        "potnone_nodeliver": 1
+      },
+      "entropy_bits": 1.1431558784658322
+    },
+    {
+      "layout": "cramped_room",
+      "episode": 6,
+      "t": 0,
+      "basin_counts": {
+        "pot0_deliver": 9,
+        "pot1_deliver": 14,
+        "pot0_nodeliver": 1
+      },
+      "entropy_bits": 1.1752835873133534
+    },
+    {
+      "layout": "cramped_room",
+      "episode": 6,
+      "t": 40,
+      "basin_counts": {
+        "pot0_deliver": 7,
+        "pot1_deliver": 16,
+        "pot0_nodeliver": 1
+      },
+      "entropy_bits": 1.0994839817876882
+    },
+    {
+      "layout": "cramped_room",
+      "episode": 6,
+      "t": 80,
+      "basin_counts": {
+        "pot1_deliver": 17,
+        "pot0_deliver": 7
+      },
+      "entropy_bits": 0.8708644692353644
+    },
+    {
+      "layout": "cramped_room",
+      "episode": 6,
+      "t": 120,
+      "basin_counts": {
+        "pot0_deliver": 22,
+        "pot1_deliver": 1,
+        "pot0_nodeliver": 1
+      },
+      "entropy_bits": 0.49715018363696706
+    },
+    {
+      "layout": "cramped_room",
+      "episode": 6,
+      "t": 160,
+      "basin_counts": {
+        "pot0_deliver": 19,
+        "pot1_deliver": 5
+      },
+      "entropy_bits": 0.7382848661434506
+    },
+    {
+      "layout": "cramped_room",
+      "episode": 7,
+      "t": 0,
+      "basin_counts": {
+        "pot0_deliver": 12,
+        "pot1_deliver": 12
+      },
+      "entropy_bits": 1.0
+    },
+    {
+      "layout": "cramped_room",
+      "episode": 7,
+      "t": 40,
+      "basin_counts": {
+        "pot0_deliver": 8,
+        "pot1_deliver": 16
+      },
+      "entropy_bits": 0.9182958340544896
+    },
+    {
+      "layout": "cramped_room",
+      "episode": 7,
+      "t": 80,
+      "basin_counts": {
+        "pot0_deliver": 16,
+        "pot1_deliver": 8
+      },
+      "entropy_bits": 0.9182958340544896
+    },
+    {
+      "layout": "cramped_room",
+      "episode": 7,
+      "t": 120,
+      "basin_counts": {
+        "pot0_deliver": 13,
+        "pot1_deliver": 8,
+        "pot0_nodeliver": 3
+      },
+      "entropy_bits": 1.3824373408045867
+    },
+    {
+      "layout": "cramped_room",
+      "episode": 7,
+      "t": 160,
+      "basin_counts": {
+        "pot1_deliver": 9,
+        "pot0_nodeliver": 3,
+        "pot0_deliver": 5,
+        "pot1_nodeliver": 7
+      },
+      "entropy_bits": 1.8955734405551428
+    },
+    {
+      "layout": "asymmetric_advantages",
+      "episode": 0,
+      "t": 0,
+      "basin_counts": {
+        "pot0_deliver": 24
+      },
+      "entropy_bits": -0.0
+    },
+    {
+      "layout": "asymmetric_advantages",
+      "episode": 0,
+      "t": 40,
+      "basin_counts": {
+        "pot0_deliver": 24
+      },
+      "entropy_bits": -0.0
+    },
+    {
+      "layout": "asymmetric_advantages",
+      "episode": 0,
+      "t": 80,
+      "basin_counts": {
+        "pot0_deliver": 24
+      },
+      "entropy_bits": -0.0
+    },
+    {
+      "layout": "asymmetric_advantages",
+      "episode": 0,
+      "t": 120,
+      "basin_counts": {
+        "pot0_deliver": 24
+      },
+      "entropy_bits": -0.0
+    },
+    {
+      "layout": "asymmetric_advantages",
+      "episode": 0,
+      "t": 160,
+      "basin_counts": {
+        "pot0_deliver": 24
+      },
+      "entropy_bits": -0.0
+    },
+    {
+      "layout": "asymmetric_advantages",
+      "episode": 1,
+      "t": 0,
+      "basin_counts": {
+        "pot0_deliver": 24
+      },
+      "entropy_bits": -0.0
+    },
+    {
+      "layout": "asymmetric_advantages",
+      "episode": 1,
+      "t": 40,
+      "basin_counts": {
+        "pot0_deliver": 24
+      },
+      "entropy_bits": -0.0
+    },
+    {
+      "layout": "asymmetric_advantages",
+      "episode": 1,
+      "t": 80,
+      "basin_counts": {
+        "pot0_deliver": 24
+      },
+      "entropy_bits": -0.0
+    },
+    {
+      "layout": "asymmetric_advantages",
+      "episode": 1,
+      "t": 120,
+      "basin_counts": {
+        "pot0_deliver": 24
+      },
+      "entropy_bits": -0.0
+    },
+    {
+      "layout": "asymmetric_advantages",
+      "episode": 1,
+      "t": 160,
+      "basin_counts": {
+        "pot0_deliver": 24
+      },
+      "entropy_bits": -0.0
+    },
+    {
+      "layout": "asymmetric_advantages",
+      "episode": 2,
+      "t": 0,
+      "basin_counts": {
+        "pot0_deliver": 23,
+        "pot0_nodeliver": 1
+      },
+      "entropy_bits": 0.24988229283318544
+    },
+    {
+      "layout": "asymmetric_advantages",
+      "episode": 2,
+      "t": 40,
+      "basin_counts": {
+        "pot0_deliver": 24
+      },
+      "entropy_bits": -0.0
+    },
+    {
+      "layout": "asymmetric_advantages",
+      "episode": 2,
+      "t": 80,
+      "basin_counts": {
+        "pot0_deliver": 24
+      },
+      "entropy_bits": -0.0
+    },
+    {
+      "layout": "asymmetric_advantages",
+      "episode": 2,
+      "t": 120,
+      "basin_counts": {
+        "pot0_deliver": 24
+      },
+      "entropy_bits": -0.0
+    },
+    {
+      "layout": "asymmetric_advantages",
+      "episode": 2,
+      "t": 160,
+      "basin_counts": {
+        "pot0_deliver": 24
+      },
+      "entropy_bits": -0.0
+    },
+    {
+      "layout": "asymmetric_advantages",
+      "episode": 3,
+      "t": 0,
+      "basin_counts": {
+        "pot0_deliver": 24
+      },
+      "entropy_bits": -0.0
+    },
+    {
+      "layout": "asymmetric_advantages",
+      "episode": 3,
+      "t": 40,
+      "basin_counts": {
+        "pot0_deliver": 24
+      },
+      "entropy_bits": -0.0
+    },
+    {
+      "layout": "asymmetric_advantages",
+      "episode": 3,
+      "t": 80,
+      "basin_counts": {
+        "pot0_deliver": 24
+      },
+      "entropy_bits": -0.0
+    },
+    {
+      "layout": "asymmetric_advantages",
+      "episode": 3,
+      "t": 120,
+      "basin_counts": {
+        "pot0_deliver": 24
+      },
+      "entropy_bits": -0.0
+    },
+    {
+      "layout": "asymmetric_advantages",
+      "episode": 3,
+      "t": 160,
+      "basin_counts": {
+        "pot0_deliver": 24
+      },
+      "entropy_bits": -0.0
+    },
+    {
+      "layout": "asymmetric_advantages",
+      "episode": 4,
+      "t": 0,
+      "basin_counts": {
+        "pot0_deliver": 24
+      },
+      "entropy_bits": -0.0
+    },
+    {
+      "layout": "asymmetric_advantages",
+      "episode": 4,
+      "t": 40,
+      "basin_counts": {
+        "pot0_deliver": 24
+      },
+      "entropy_bits": -0.0
+    },
+    {
+      "layout": "asymmetric_advantages",
+      "episode": 4,
+      "t": 80,
+      "basin_counts": {
+        "pot0_deliver": 24
+      },
+      "entropy_bits": -0.0
+    },
+    {
+      "layout": "asymmetric_advantages",
+      "episode": 4,
+      "t": 120,
+      "basin_counts": {
+        "pot0_deliver": 24
+      },
+      "entropy_bits": -0.0
+    },
+    {
+      "layout": "asymmetric_advantages",
+      "episode": 4,
+      "t": 160,
+      "basin_counts": {
+        "pot0_deliver": 24
+      },
+      "entropy_bits": -0.0
+    },
+    {
+      "layout": "asymmetric_advantages",
+      "episode": 5,
+      "t": 0,
+      "basin_counts": {
+        "pot0_deliver": 23,
+        "pot0_nodeliver": 1
+      },
+      "entropy_bits": 0.24988229283318544
+    },
+    {
+      "layout": "asymmetric_advantages",
+      "episode": 5,
+      "t": 40,
+      "basin_counts": {
+        "pot0_deliver": 24
+      },
+      "entropy_bits": -0.0
+    },
+    {
+      "layout": "asymmetric_advantages",
+      "episode": 5,
+      "t": 80,
+      "basin_counts": {
+        "pot0_deliver": 24
+      },
+      "entropy_bits": -0.0
+    },
+    {
+      "layout": "asymmetric_advantages",
+      "episode": 5,
+      "t": 120,
+      "basin_counts": {
+        "pot0_deliver": 24
+      },
+      "entropy_bits": -0.0
+    },
+    {
+      "layout": "asymmetric_advantages",
+      "episode": 5,
+      "t": 160,
+      "basin_counts": {
+        "pot0_deliver": 24
+      },
+      "entropy_bits": -0.0
+    },
+    {
+      "layout": "asymmetric_advantages",
+      "episode": 6,
+      "t": 0,
+      "basin_counts": {
+        "pot0_deliver": 24
+      },
+      "entropy_bits": -0.0
+    },
+    {
+      "layout": "asymmetric_advantages",
+      "episode": 6,
+      "t": 40,
+      "basin_counts": {
+        "pot0_deliver": 24
+      },
+      "entropy_bits": -0.0
+    },
+    {
+      "layout": "asymmetric_advantages",
+      "episode": 6,
+      "t": 80,
+      "basin_counts": {
+        "pot0_deliver": 24
+      },
+      "entropy_bits": -0.0
+    },
+    {
+      "layout": "asymmetric_advantages",
+      "episode": 6,
+      "t": 120,
+      "basin_counts": {
+        "pot0_deliver": 23,
+        "pot0_nodeliver": 1
+      },
+      "entropy_bits": 0.24988229283318544
+    },
+    {
+      "layout": "asymmetric_advantages",
+      "episode": 6,
+      "t": 160,
+      "basin_counts": {
+        "pot0_deliver": 24
+      },
+      "entropy_bits": -0.0
+    },
+    {
+      "layout": "asymmetric_advantages",
+      "episode": 7,
+      "t": 0,
+      "basin_counts": {
+        "pot0_deliver": 24
+      },
+      "entropy_bits": -0.0
+    },
+    {
+      "layout": "asymmetric_advantages",
+      "episode": 7,
+      "t": 40,
+      "basin_counts": {
+        "pot0_deliver": 24
+      },
+      "entropy_bits": -0.0
+    },
+    {
+      "layout": "asymmetric_advantages",
+      "episode": 7,
+      "t": 80,
+      "basin_counts": {
+        "pot0_deliver": 24
+      },
+      "entropy_bits": -0.0
+    },
+    {
+      "layout": "asymmetric_advantages",
+      "episode": 7,
+      "t": 120,
+      "basin_counts": {
+        "pot0_deliver": 24
+      },
+      "entropy_bits": -0.0
+    },
+    {
+      "layout": "asymmetric_advantages",
+      "episode": 7,
+      "t": 160,
+      "basin_counts": {
+        "pot0_deliver": 24
+      },
+      "entropy_bits": -0.0
+    }
+  ],
+  "registered_outcomes": {
+    "EP1_monotone_commitment": false,
+    "EP2_substantial": false
+  }
+}

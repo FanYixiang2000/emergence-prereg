@@ -1,0 +1,98 @@
+selecting positions (sacrifice=240, quiet=120) ...
+selected 240 sacrifice + 120 quiet
+measured 10/360
+measured 20/360
+measured 30/360
+measured 40/360
+measured 50/360
+measured 60/360
+measured 70/360
+measured 80/360
+measured 90/360
+measured 100/360
+measured 110/360
+measured 120/360
+measured 130/360
+measured 140/360
+measured 150/360
+measured 160/360
+measured 170/360
+measured 180/360
+measured 190/360
+measured 200/360
+measured 210/360
+measured 220/360
+measured 230/360
+measured 240/360
+measured 250/360
+measured 260/360
+measured 270/360
+measured 280/360
+measured 290/360
+measured 300/360
+measured 310/360
+measured 320/360
+measured 330/360
+measured 340/360
+measured 350/360
+measured 360/360
+{
+  "n_sacrifice_analyzed": 240,
+  "n_quiet_analyzed": 120,
+  "C1_local_cost": {
+    "median_local_cost_key": -3.0,
+    "median_local_cost_greedy": 0.0,
+    "pass": true
+  },
+  "C2_useful_collapse": {
+    "mean_useful_shift_key": 0.056901041666666666,
+    "mean_useful_shift_greedy": -0.4798177083333333,
+    "mean_useful_shift_random": -0.622265625,
+    "sign_vs_greedy": {
+      "wins": 238,
+      "losses": 2,
+      "ties": 0,
+      "p_one_sided": 1.636870591492171e-68
+    },
+    "sign_vs_random": {
+      "wins": 239,
+      "losses": 0,
+      "ties": 1,
+      "p_one_sided": 1.131959884853339e-72
+    },
+    "pass": true
+  },
+  "C3_selectivity": {
+    "mean_p_win_key": 0.7772135416666667,
+    "mean_p_win_deep_alt": 0.23815104166666667,
+    "gap": 0.5390625,
+    "sign_vs_deep_alt": {
+      "wins": 240,
+      "losses": 0,
+      "ties": 0,
+      "p_one_sided": 5.659799424266695e-73
+    },
+    "mean_specificity_js_bits": 0.36955791945514715,
+    "pass": true
+  },
+  "C4_potential": {
+    "median_potential_bits": 1.1853827380988147,
+    "pass": true
+  },
+  "C5_quiet_control": {
+    "mean_useful_shift_quiet_best": -0.020833333333333332,
+    "mean_useful_shift_sacrifice_key": 0.056901041666666666,
+    "gap": 0.077734375,
+    "mean_quiet_potential_bits": 1.933132763306928,
+    "pass": false
+  },
+  "all_pass": false,
+  "estimator": {
+    "multipv": 6,
+    "playout_depth": 4,
+    "temperature_cp": 300.0,
+    "horizon_plies": 12,
+    "n_rollouts": 32,
+    "classify_depth": 12
+  }
+}

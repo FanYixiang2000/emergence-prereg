@@ -1,0 +1,173 @@
+{
+  "thresholds": {
+    "potential_bits": 1.0,
+    "burstiness_ratio": 5.0,
+    "usefulness_acc_gain": 0.2
+  },
+  "checks": {
+    "g1_grokking_emergent_all_cells": true,
+    "g2_memorizer_fails_usefulness_all_cells": true,
+    "g3_delayed_generalization_all_cells": true
+  },
+  "cells": [
+    {
+      "op": "add",
+      "condition": "grokking",
+      "seed": 1234,
+      "emergent": 1,
+      "failed": [],
+      "final_test_acc": 1.0,
+      "burstiness_ratio": 3974.216970968381,
+      "usefulness_acc_gain": 0.7825717478990555,
+      "train_acc_99_epoch": 150,
+      "test_acc_90_epoch": 2550
+    },
+    {
+      "op": "add",
+      "condition": "memorizer",
+      "seed": 1234,
+      "emergent": 0,
+      "failed": [
+        "potential",
+        "burstiness",
+        "usefulness"
+      ],
+      "final_test_acc": 0.0006376195815391839,
+      "burstiness_ratio": 0.5425517560579689,
+      "usefulness_acc_gain": 0.00021253988961689174,
+      "train_acc_99_epoch": 150,
+      "test_acc_90_epoch": NaN
+    },
+    {
+      "op": "add",
+      "condition": "grokking",
+      "seed": 2345,
+      "emergent": 1,
+      "failed": [],
+      "final_test_acc": 1.0,
+      "burstiness_ratio": 2386.6384915630047,
+      "usefulness_acc_gain": 0.6499468982219696,
+      "train_acc_99_epoch": 150,
+      "test_acc_90_epoch": 3000
+    },
+    {
+      "op": "add",
+      "condition": "memorizer",
+      "seed": 2345,
+      "emergent": 0,
+      "failed": [
+        "usefulness"
+      ],
+      "final_test_acc": 0.00021253984596114606,
+      "burstiness_ratio": 621.8582752015445,
+      "usefulness_acc_gain": -0.011264612039667554,
+      "train_acc_99_epoch": 150,
+      "test_acc_90_epoch": NaN
+    },
+    {
+      "op": "add",
+      "condition": "grokking",
+      "seed": 3456,
+      "emergent": 1,
+      "failed": [],
+      "final_test_acc": 1.0,
+      "burstiness_ratio": 4082.8018146555887,
+      "usefulness_acc_gain": 0.8301806449890137,
+      "train_acc_99_epoch": 150,
+      "test_acc_90_epoch": 2100
+    },
+    {
+      "op": "add",
+      "condition": "memorizer",
+      "seed": 3456,
+      "emergent": 0,
+      "failed": [
+        "usefulness"
+      ],
+      "final_test_acc": 0.00021253984596114606,
+      "burstiness_ratio": 24.772424137635337,
+      "usefulness_acc_gain": 0.00021253984596114606,
+      "train_acc_99_epoch": 150,
+      "test_acc_90_epoch": NaN
+    },
+    {
+      "op": "mul",
+      "condition": "grokking",
+      "seed": 1234,
+      "emergent": 1,
+      "failed": [],
+      "final_test_acc": 1.0,
+      "burstiness_ratio": 3084.4451639860918,
+      "usefulness_acc_gain": 0.8070746287703514,
+      "train_acc_99_epoch": 150,
+      "test_acc_90_epoch": 2400
+    },
+    {
+      "op": "mul",
+      "condition": "memorizer",
+      "seed": 1234,
+      "emergent": 0,
+      "failed": [
+        "usefulness"
+      ],
+      "final_test_acc": 0.0006510416860692203,
+      "burstiness_ratio": 614.2898277912512,
+      "usefulness_acc_gain": -0.008680555241880938,
+      "train_acc_99_epoch": 150,
+      "test_acc_90_epoch": NaN
+    },
+    {
+      "op": "mul",
+      "condition": "grokking",
+      "seed": 2345,
+      "emergent": 1,
+      "failed": [],
+      "final_test_acc": 1.0,
+      "burstiness_ratio": 3150.23698831199,
+      "usefulness_acc_gain": 0.7267795205116272,
+      "train_acc_99_epoch": 150,
+      "test_acc_90_epoch": 2700
+    },
+    {
+      "op": "mul",
+      "condition": "memorizer",
+      "seed": 2345,
+      "emergent": 0,
+      "failed": [
+        "usefulness"
+      ],
+      "final_test_acc": 0.0006510416860692203,
+      "burstiness_ratio": 614.3318975890705,
+      "usefulness_acc_gain": -0.011935763468500227,
+      "train_acc_99_epoch": 150,
+      "test_acc_90_epoch": NaN
+    },
+    {
+      "op": "mul",
+      "condition": "grokking",
+      "seed": 3456,
+      "emergent": 1,
+      "failed": [],
+      "final_test_acc": 1.0,
+      "burstiness_ratio": 4760.980213255438,
+      "usefulness_acc_gain": 0.8430989570915699,
+      "train_acc_99_epoch": 150,
+      "test_acc_90_epoch": 2250
+    },
+    {
+      "op": "mul",
+      "condition": "memorizer",
+      "seed": 3456,
+      "emergent": 0,
+      "failed": [
+        "burstiness",
+        "usefulness"
+      ],
+      "final_test_acc": 0.0004340277810115367,
+      "burstiness_ratio": 3.358248388712423,
+      "usefulness_acc_gain": 0.00021701389050576836,
+      "train_acc_99_epoch": 150,
+      "test_acc_90_epoch": NaN
+    }
+  ]
+}

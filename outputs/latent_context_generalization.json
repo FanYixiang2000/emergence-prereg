@@ -1,0 +1,342 @@
+{
+  "status": "prospectively frozen generalization audit (saved models; no retraining)",
+  "results": {
+    "2101": {
+      "G0": {
+        "trigger_rate_ctx0": 0.0125,
+        "trigger_rate_ctx1": 0.9875,
+        "conditional_selectivity": 0.9750000000000001,
+        "usefulness_gap": 0.48750000000000004
+      },
+      "G1": {
+        "trigger_rate_ctx0": 0.0125,
+        "trigger_rate_ctx1": 0.025,
+        "conditional_selectivity": 0.0125,
+        "usefulness_gap": 0.006249999999999978
+      },
+      "G2": {
+        "trigger_rate_ctx0": 0.0125,
+        "trigger_rate_ctx1": 0.05,
+        "conditional_selectivity": 0.037500000000000006,
+        "usefulness_gap": 0.018750000000000044
+      },
+      "G3": {
+        "trigger_rate_ctx0": 0.0125,
+        "trigger_rate_ctx1": 0.9875,
+        "conditional_selectivity": 0.9750000000000001,
+        "usefulness_gap": 0.48124999999999996
+      },
+      "G4": {
+        "trigger_rate_ctx0": 0.0125,
+        "trigger_rate_ctx1": 1.0,
+        "conditional_selectivity": 0.9875,
+        "usefulness_gap": 0.49375
+      }
+    },
+    "2102": {
+      "G0": {
+        "trigger_rate_ctx0": 0.0,
+        "trigger_rate_ctx1": 1.0,
+        "conditional_selectivity": 1.0,
+        "usefulness_gap": 0.5125
+      },
+      "G1": {
+        "trigger_rate_ctx0": 0.0125,
+        "trigger_rate_ctx1": 0.175,
+        "conditional_selectivity": 0.16249999999999998,
+        "usefulness_gap": 0.07499999999999996
+      },
+      "G2": {
+        "trigger_rate_ctx0": 0.0125,
+        "trigger_rate_ctx1": 0.0875,
+        "conditional_selectivity": 0.075,
+        "usefulness_gap": 0.03125
+      },
+      "G3": {
+        "trigger_rate_ctx0": 0.0,
+        "trigger_rate_ctx1": 1.0,
+        "conditional_selectivity": 1.0,
+        "usefulness_gap": 0.5125
+      },
+      "G4": {
+        "trigger_rate_ctx0": 0.0,
+        "trigger_rate_ctx1": 0.9875,
+        "conditional_selectivity": 0.9875,
+        "usefulness_gap": 0.5062500000000001
+      }
+    },
+    "2103": {
+      "G0": {
+        "trigger_rate_ctx0": 0.0,
+        "trigger_rate_ctx1": 1.0,
+        "conditional_selectivity": 1.0,
+        "usefulness_gap": 0.5
+      },
+      "G1": {
+        "trigger_rate_ctx0": 0.0125,
+        "trigger_rate_ctx1": 0.25,
+        "conditional_selectivity": 0.2375,
+        "usefulness_gap": 0.11875000000000002
+      },
+      "G2": {
+        "trigger_rate_ctx0": 0.0125,
+        "trigger_rate_ctx1": 0.35,
+        "conditional_selectivity": 0.33749999999999997,
+        "usefulness_gap": 0.16874999999999996
+      },
+      "G3": {
+        "trigger_rate_ctx0": 0.0,
+        "trigger_rate_ctx1": 1.0,
+        "conditional_selectivity": 1.0,
+        "usefulness_gap": 0.5
+      },
+      "G4": {
+        "trigger_rate_ctx0": 0.0,
+        "trigger_rate_ctx1": 1.0,
+        "conditional_selectivity": 1.0,
+        "usefulness_gap": 0.5
+      }
+    },
+    "2104": {
+      "G0": {
+        "trigger_rate_ctx0": 0.0,
+        "trigger_rate_ctx1": 1.0,
+        "conditional_selectivity": 1.0,
+        "usefulness_gap": 0.5
+      },
+      "G1": {
+        "trigger_rate_ctx0": 0.0,
+        "trigger_rate_ctx1": 0.1125,
+        "conditional_selectivity": 0.1125,
+        "usefulness_gap": 0.05625000000000002
+      },
+      "G2": {
+        "trigger_rate_ctx0": 0.0,
+        "trigger_rate_ctx1": 0.025,
+        "conditional_selectivity": 0.025,
+        "usefulness_gap": 0.012499999999999956
+      },
+      "G3": {
+        "trigger_rate_ctx0": 0.0,
+        "trigger_rate_ctx1": 1.0,
+        "conditional_selectivity": 1.0,
+        "usefulness_gap": 0.5
+      },
+      "G4": {
+        "trigger_rate_ctx0": 0.0,
+        "trigger_rate_ctx1": 1.0,
+        "conditional_selectivity": 1.0,
+        "usefulness_gap": 0.5
+      }
+    },
+    "2105": {
+      "G0": {
+        "trigger_rate_ctx0": 0.0,
+        "trigger_rate_ctx1": 1.0,
+        "conditional_selectivity": 1.0,
+        "usefulness_gap": 0.5
+      },
+      "G1": {
+        "trigger_rate_ctx0": 0.0,
+        "trigger_rate_ctx1": 0.45,
+        "conditional_selectivity": 0.45,
+        "usefulness_gap": 0.22499999999999998
+      },
+      "G2": {
+        "trigger_rate_ctx0": 0.0,
+        "trigger_rate_ctx1": 0.65,
+        "conditional_selectivity": 0.65,
+        "usefulness_gap": 0.32499999999999996
+      },
+      "G3": {
+        "trigger_rate_ctx0": 0.0,
+        "trigger_rate_ctx1": 1.0,
+        "conditional_selectivity": 1.0,
+        "usefulness_gap": 0.5
+      },
+      "G4": {
+        "trigger_rate_ctx0": 0.0,
+        "trigger_rate_ctx1": 1.0,
+        "conditional_selectivity": 1.0,
+        "usefulness_gap": 0.5
+      }
+    },
+    "2106": {
+      "G0": {
+        "trigger_rate_ctx0": 0.0,
+        "trigger_rate_ctx1": 0.9875,
+        "conditional_selectivity": 0.9875,
+        "usefulness_gap": 0.48124999999999996
+      },
+      "G1": {
+        "trigger_rate_ctx0": 0.0375,
+        "trigger_rate_ctx1": 0.15,
+        "conditional_selectivity": 0.11249999999999999,
+        "usefulness_gap": 0.05625000000000002
+      },
+      "G2": {
+        "trigger_rate_ctx0": 0.0375,
+        "trigger_rate_ctx1": 0.25,
+        "conditional_selectivity": 0.2125,
+        "usefulness_gap": 0.10624999999999996
+      },
+      "G3": {
+        "trigger_rate_ctx0": 0.025,
+        "trigger_rate_ctx1": 0.9875,
+        "conditional_selectivity": 0.9625,
+        "usefulness_gap": 0.48124999999999996
+      },
+      "G4": {
+        "trigger_rate_ctx0": 0.0,
+        "trigger_rate_ctx1": 1.0,
+        "conditional_selectivity": 1.0,
+        "usefulness_gap": 0.48750000000000004
+      }
+    },
+    "2107": {
+      "G0": {
+        "trigger_rate_ctx0": 0.0,
+        "trigger_rate_ctx1": 1.0,
+        "conditional_selectivity": 1.0,
+        "usefulness_gap": 0.5
+      },
+      "G1": {
+        "trigger_rate_ctx0": 0.0,
+        "trigger_rate_ctx1": 0.1875,
+        "conditional_selectivity": 0.1875,
+        "usefulness_gap": 0.09375
+      },
+      "G2": {
+        "trigger_rate_ctx0": 0.0,
+        "trigger_rate_ctx1": 0.0375,
+        "conditional_selectivity": 0.0375,
+        "usefulness_gap": 0.018750000000000044
+      },
+      "G3": {
+        "trigger_rate_ctx0": 0.0,
+        "trigger_rate_ctx1": 1.0,
+        "conditional_selectivity": 1.0,
+        "usefulness_gap": 0.5
+      },
+      "G4": {
+        "trigger_rate_ctx0": 0.0,
+        "trigger_rate_ctx1": 1.0,
+        "conditional_selectivity": 1.0,
+        "usefulness_gap": 0.5
+      }
+    },
+    "2108": {
+      "G0": {
+        "trigger_rate_ctx0": 0.025,
+        "trigger_rate_ctx1": 1.0,
+        "conditional_selectivity": 0.975,
+        "usefulness_gap": 0.48124999999999996
+      },
+      "G1": {
+        "trigger_rate_ctx0": 0.05,
+        "trigger_rate_ctx1": 0.075,
+        "conditional_selectivity": 0.024999999999999994,
+        "usefulness_gap": 0.006249999999999978
+      },
+      "G2": {
+        "trigger_rate_ctx0": 0.05,
+        "trigger_rate_ctx1": 0.075,
+        "conditional_selectivity": 0.024999999999999994,
+        "usefulness_gap": 0.006249999999999978
+      },
+      "G3": {
+        "trigger_rate_ctx0": 0.05,
+        "trigger_rate_ctx1": 1.0,
+        "conditional_selectivity": 0.95,
+        "usefulness_gap": 0.475
+      },
+      "G4": {
+        "trigger_rate_ctx0": 0.025,
+        "trigger_rate_ctx1": 1.0,
+        "conditional_selectivity": 0.975,
+        "usefulness_gap": 0.48124999999999996
+      }
+    },
+    "2109": {
+      "G0": {
+        "trigger_rate_ctx0": 0.0,
+        "trigger_rate_ctx1": 1.0,
+        "conditional_selectivity": 1.0,
+        "usefulness_gap": 0.5
+      },
+      "G1": {
+        "trigger_rate_ctx0": 0.0,
+        "trigger_rate_ctx1": 0.4,
+        "conditional_selectivity": 0.4,
+        "usefulness_gap": 0.19999999999999996
+      },
+      "G2": {
+        "trigger_rate_ctx0": 0.0,
+        "trigger_rate_ctx1": 0.325,
+        "conditional_selectivity": 0.325,
+        "usefulness_gap": 0.16249999999999998
+      },
+      "G3": {
+        "trigger_rate_ctx0": 0.0,
+        "trigger_rate_ctx1": 1.0,
+        "conditional_selectivity": 1.0,
+        "usefulness_gap": 0.49375
+      },
+      "G4": {
+        "trigger_rate_ctx0": 0.0,
+        "trigger_rate_ctx1": 1.0,
+        "conditional_selectivity": 1.0,
+        "usefulness_gap": 0.5
+      }
+    },
+    "2110": {
+      "G0": {
+        "trigger_rate_ctx0": 0.0,
+        "trigger_rate_ctx1": 1.0,
+        "conditional_selectivity": 1.0,
+        "usefulness_gap": 0.49375
+      },
+      "G1": {
+        "trigger_rate_ctx0": 0.0,
+        "trigger_rate_ctx1": 0.2,
+        "conditional_selectivity": 0.2,
+        "usefulness_gap": 0.09999999999999998
+      },
+      "G2": {
+        "trigger_rate_ctx0": 0.0,
+        "trigger_rate_ctx1": 0.1375,
+        "conditional_selectivity": 0.1375,
+        "usefulness_gap": 0.06874999999999998
+      },
+      "G3": {
+        "trigger_rate_ctx0": 0.0,
+        "trigger_rate_ctx1": 1.0,
+        "conditional_selectivity": 1.0,
+        "usefulness_gap": 0.5
+      },
+      "G4": {
+        "trigger_rate_ctx0": 0.0,
+        "trigger_rate_ctx1": 1.0,
+        "conditional_selectivity": 1.0,
+        "usefulness_gap": 0.49375
+      }
+    }
+  },
+  "predictions": {
+    "LG1_no_false_triggers": {
+      "pass": true
+    },
+    "LG2_positional_generality": {
+      "pass": false,
+      "counts": {
+        "G1": 0,
+        "G2": 1
+      }
+    },
+    "LG3_causal_retention_where_activated": {
+      "pass": true,
+      "violations": []
+    }
+  },
+  "all_pass": false
+}

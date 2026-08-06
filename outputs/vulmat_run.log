@@ -1,0 +1,73 @@
+TRI-B seed 95221: base r=0.9999 C_pair=0.04378
+  comm_q0.25: r=0.9999 C_pair=0.02732
+  comm_q0.5: r=0.9999 C_pair=0.01732
+  comm_q1.0: r=0.9999 C_pair=0.00923
+  ind_q0.25: r=0.7113 C_pair=0.03824
+  ind_q0.5: r=0.5542 C_pair=0.04223
+  ind_q1.0: r=0.4342 C_pair=0.00558
+TRI-B seed 95222: base r=1.0 C_pair=0.0513
+  comm_q0.25: r=0.9999 C_pair=0.02536
+  comm_q0.5: r=0.9999 C_pair=0.0152
+  comm_q1.0: r=0.9999 C_pair=0.00658
+  ind_q0.25: r=0.6997 C_pair=0.02372
+  ind_q0.5: r=0.5295 C_pair=0.01409
+  ind_q1.0: r=0.4406 C_pair=0.00546
+TRI-B seed 95223: base r=0.9999 C_pair=1.00629
+  comm_q0.25: r=0.8673 C_pair=0.4675
+  comm_q0.5: r=0.7359 C_pair=0.19507
+  comm_q1.0: r=0.4836 C_pair=0.00307
+  ind_q0.25: r=0.7671 C_pair=0.48526
+  ind_q0.5: r=0.5975 C_pair=0.19784
+  ind_q1.0: r=0.4477 C_pair=0.00562
+TRI-C seed 95321: base r=2.9941 C_high=0.96028
+  comm_q0.25: r=2.7738 C_high=0.23138
+  comm_q0.5: r=2.6215 C_high=0.04412
+  comm_q1.0: r=2.4926 C_high=0.00011
+  cue_q0.25: r=2.7441 C_high=0.95441
+  cue_q0.5: r=2.4991 C_high=0.95468
+  cue_q1.0: r=1.9922 C_high=0.96224
+  ind_q0.25: r=2.6237 C_high=0.43741
+  ind_q0.5: r=2.2798 C_high=0.19142
+  ind_q1.0: r=1.5013 C_high=0.00016
+TRI-C seed 95322: base r=2.9944 C_high=0.95602
+  comm_q0.25: r=2.7804 C_high=0.24225
+  comm_q0.5: r=2.6278 C_high=0.04836
+  comm_q1.0: r=2.5006 C_high=1e-05
+  cue_q0.25: r=2.7411 C_high=0.95386
+  cue_q0.5: r=2.4902 C_high=0.95645
+  cue_q1.0: r=1.9891 C_high=0.95171
+  ind_q0.25: r=2.6216 C_high=0.4562
+  ind_q0.5: r=2.2362 C_high=0.17245
+  ind_q1.0: r=1.5057 C_high=4e-05
+TRI-C seed 95323: base r=2.9934 C_high=0.95261
+  comm_q0.25: r=2.7759 C_high=0.23469
+  comm_q0.5: r=2.6104 C_high=0.03617
+  comm_q1.0: r=2.5009 C_high=1e-05
+  cue_q0.25: r=2.741 C_high=0.94818
+  cue_q0.5: r=2.5015 C_high=0.95004
+  cue_q1.0: r=1.9976 C_high=0.95076
+  ind_q0.25: r=2.613 C_high=0.43753
+  ind_q0.5: r=2.2352 C_high=0.16989
+  ind_q1.0: r=1.5043 C_high=1e-05
+{
+  "VM1_dominant_destruction": true,
+  "VM2_tric_cue_dissociation": true,
+  "VM3_dose_monotone": true,
+  "VM4_profile_predicts_channel": false,
+  "per_system": {
+    "TRI-B": {
+      "VM1": true,
+      "VM3": true,
+      "VM4_hits": 0,
+      "VM4": false
+    },
+    "TRI-C": {
+      "VM1": true,
+      "VM3": true,
+      "VM4_hits": 3,
+      "VM4": true
+    }
+  },
+  "VM2_hits": 3
+}
+Wrote /home/Yixiang/MPARL/GOGOGO/outputs/vulnerability_matrix.json

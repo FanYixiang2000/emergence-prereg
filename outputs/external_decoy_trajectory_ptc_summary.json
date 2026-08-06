@@ -1,0 +1,32 @@
+{
+  "summary": [
+    {
+      "controller": "role_oracle",
+      "n_timepoints": 1121.0,
+      "mean_win": 0.9988425925925927,
+      "mean_p_decoy": 0.018911685994647636,
+      "mean_non_decoy_rate": 0.9810883140053523,
+      "mean_entropy_norm": 0.044764959000200534,
+      "mean_role_collapse_kl": 1.5140117193551907,
+      "mean_useful_nondecoy_consensus": 0.947082301573299,
+      "mean_decoy_trap_consensus": 0.008152739426500494,
+      "mean_max_burst": 0.502222021676444,
+      "max_burst": 0.9709505944532262,
+      "trajectory_level_ptc_score": 0.9382737629892869
+    },
+    {
+      "controller": "nearest_only",
+      "n_timepoints": 1014.0,
+      "mean_win": 0.109375,
+      "mean_p_decoy": 0.8938856015779092,
+      "mean_non_decoy_rate": 0.10611439842209072,
+      "mean_entropy_norm": 0.003160022289891808,
+      "mean_role_collapse_kl": 1.579953983885907,
+      "mean_useful_nondecoy_consensus": 0.10403244930298919,
+      "mean_decoy_trap_consensus": 0.8928075284071191,
+      "mean_max_burst": 0.01760800231429073,
+      "max_burst": 0.7219280948859199,
+      "trajectory_level_ptc_score": 0.001219694805727179
+    }
+  ]
+}

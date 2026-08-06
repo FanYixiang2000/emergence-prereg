@@ -1,0 +1,392 @@
+{
+  "status": "CEB-LIFE perturbation-ensemble boundary test; preregistered",
+  "config": {
+    "size": 60,
+    "save_grid": [
+      0,
+      15,
+      30,
+      45,
+      60,
+      75,
+      90,
+      105,
+      120
+    ],
+    "h_cont": 60,
+    "n_cont": 60,
+    "margin": 5,
+    "classes": [
+      "empty",
+      "bounded_small",
+      "translator",
+      "complex",
+      "other"
+    ]
+  },
+  "cases": {
+    "block": {
+      "openness": [
+        0.20199,
+        0.22382,
+        0.27995,
+        0.24398,
+        0.24398,
+        0.17822,
+        0.05267,
+        0.33755,
+        0.12334
+      ],
+      "class_counts": {
+        "0": {
+          "empty": 6,
+          "bounded_small": 54,
+          "translator": 0,
+          "complex": 0,
+          "other": 0
+        },
+        "15": {
+          "empty": 7,
+          "bounded_small": 53,
+          "translator": 0,
+          "complex": 0,
+          "other": 0
+        },
+        "30": {
+          "empty": 10,
+          "bounded_small": 50,
+          "translator": 0,
+          "complex": 0,
+          "other": 0
+        },
+        "45": {
+          "empty": 8,
+          "bounded_small": 52,
+          "translator": 0,
+          "complex": 0,
+          "other": 0
+        },
+        "60": {
+          "empty": 8,
+          "bounded_small": 52,
+          "translator": 0,
+          "complex": 0,
+          "other": 0
+        },
+        "75": {
+          "empty": 5,
+          "bounded_small": 55,
+          "translator": 0,
+          "complex": 0,
+          "other": 0
+        },
+        "90": {
+          "empty": 1,
+          "bounded_small": 59,
+          "translator": 0,
+          "complex": 0,
+          "other": 0
+        },
+        "105": {
+          "empty": 14,
+          "bounded_small": 46,
+          "translator": 0,
+          "complex": 0,
+          "other": 0
+        },
+        "120": {
+          "empty": 3,
+          "bounded_small": 57,
+          "translator": 0,
+          "complex": 0,
+          "other": 0
+        }
+      },
+      "adj": {
+        "drop": 0.0786,
+        "max_drop_from_peak": 0.2142,
+        "gate_passed": true,
+        "hinge": {
+          "delta_bic": -3.651,
+          "t_star": 30.0,
+          "slope_before": 0.00195553,
+          "slope_after": -0.00111069,
+          "onset_type": true
+        },
+        "b5_onset": false
+      }
+    },
+    "blinker": {
+      "openness": [
+        0.29057,
+        0.29057,
+        0.21307,
+        0.24153,
+        0.30141,
+        0.34321,
+        0.32197,
+        0.2752,
+        0.27333
+      ],
+      "class_counts": {
+        "0": {
+          "empty": 6,
+          "bounded_small": 52,
+          "translator": 0,
+          "complex": 0,
+          "other": 2
+        },
+        "15": {
+          "empty": 6,
+          "bounded_small": 52,
+          "translator": 0,
+          "complex": 0,
+          "other": 2
+        },
+        "30": {
+          "empty": 3,
+          "bounded_small": 55,
+          "translator": 0,
+          "complex": 0,
+          "other": 2
+        },
+        "45": {
+          "empty": 4,
+          "bounded_small": 54,
+          "translator": 0,
+          "complex": 0,
+          "other": 2
+        },
+        "60": {
+          "empty": 4,
+          "bounded_small": 52,
+          "translator": 0,
+          "complex": 0,
+          "other": 4
+        },
+        "75": {
+          "empty": 3,
+          "bounded_small": 50,
+          "translator": 0,
+          "complex": 0,
+          "other": 7
+        },
+        "90": {
+          "empty": 6,
+          "bounded_small": 51,
+          "translator": 0,
+          "complex": 0,
+          "other": 3
+        },
+        "105": {
+          "empty": 7,
+          "bounded_small": 52,
+          "translator": 0,
+          "complex": 0,
+          "other": 1
+        },
+        "120": {
+          "empty": 3,
+          "bounded_small": 53,
+          "translator": 0,
+          "complex": 0,
+          "other": 4
+        }
+      },
+      "adj": {
+        "drop": 0.0172,
+        "max_drop_from_peak": 0.0699,
+        "gate_passed": false,
+        "b5_onset": false
+      }
+    },
+    "glider": {
+      "openness": [
+        0.40041,
+        0.41249,
+        0.33364,
+        0.44347,
+        0.33292,
+        0.43734,
+        0.43017,
+        0.70956,
+        0.51796
+      ],
+      "class_counts": {
+        "0": {
+          "empty": 6,
+          "bounded_small": 0,
+          "translator": 49,
+          "complex": 4,
+          "other": 1
+        },
+        "15": {
+          "empty": 3,
+          "bounded_small": 4,
+          "translator": 50,
+          "complex": 2,
+          "other": 1
+        },
+        "30": {
+          "empty": 3,
+          "bounded_small": 0,
+          "translator": 52,
+          "complex": 2,
+          "other": 3
+        },
+        "45": {
+          "empty": 4,
+          "bounded_small": 3,
+          "translator": 49,
+          "complex": 3,
+          "other": 1
+        },
+        "60": {
+          "empty": 5,
+          "bounded_small": 1,
+          "translator": 52,
+          "complex": 1,
+          "other": 1
+        },
+        "75": {
+          "empty": 5,
+          "bounded_small": 2,
+          "translator": 49,
+          "complex": 3,
+          "other": 1
+        },
+        "90": {
+          "empty": 7,
+          "bounded_small": 2,
+          "translator": 48,
+          "complex": 0,
+          "other": 3
+        },
+        "105": {
+          "empty": 4,
+          "bounded_small": 4,
+          "translator": 38,
+          "complex": 9,
+          "other": 5
+        },
+        "120": {
+          "empty": 4,
+          "bounded_small": 6,
+          "translator": 45,
+          "complex": 5,
+          "other": 0
+        }
+      },
+      "adj": {
+        "drop": -0.1176,
+        "max_drop_from_peak": 0.1916,
+        "gate_passed": true,
+        "hinge": {
+          "delta_bic": -1.532,
+          "t_star": 60.0,
+          "slope_before": -0.00050497,
+          "slope_after": 0.00394583,
+          "onset_type": false
+        },
+        "b5_onset": false
+      }
+    },
+    "r_pentomino": {
+      "openness": [
+        0.40093,
+        0.40635,
+        -0.0,
+        -0.0,
+        -0.0,
+        -0.0,
+        -0.0,
+        -0.0,
+        -0.0
+      ],
+      "class_counts": {
+        "0": {
+          "empty": 3,
+          "bounded_small": 5,
+          "translator": 1,
+          "complex": 50,
+          "other": 1
+        },
+        "15": {
+          "empty": 1,
+          "bounded_small": 2,
+          "translator": 2,
+          "complex": 50,
+          "other": 5
+        },
+        "30": {
+          "empty": 0,
+          "bounded_small": 0,
+          "translator": 0,
+          "complex": 60,
+          "other": 0
+        },
+        "45": {
+          "empty": 0,
+          "bounded_small": 0,
+          "translator": 0,
+          "complex": 60,
+          "other": 0
+        },
+        "60": {
+          "empty": 0,
+          "bounded_small": 0,
+          "translator": 0,
+          "complex": 60,
+          "other": 0
+        },
+        "75": {
+          "empty": 0,
+          "bounded_small": 0,
+          "translator": 0,
+          "complex": 60,
+          "other": 0
+        },
+        "90": {
+          "empty": 0,
+          "bounded_small": 0,
+          "translator": 0,
+          "complex": 60,
+          "other": 0
+        },
+        "105": {
+          "empty": 0,
+          "bounded_small": 0,
+          "translator": 0,
+          "complex": 60,
+          "other": 0
+        },
+        "120": {
+          "empty": 0,
+          "bounded_small": 0,
+          "translator": 0,
+          "complex": 60,
+          "other": 0
+        }
+      },
+      "adj": {
+        "drop": 0.4009,
+        "max_drop_from_peak": 0.4064,
+        "gate_passed": true,
+        "hinge": {
+          "delta_bic": 7.827,
+          "t_star": 30.0,
+          "slope_before": -0.01471005,
+          "slope_after": -0.00053826,
+          "onset_type": false
+        },
+        "b5_onset": false
+      }
+    }
+  },
+  "registered_outcomes": {
+    "LIFE1_seeded_low_G_caveat": true,
+    "LIFE2_r_pentomino_b5": false,
+    "LIFE2_r_pentomino_drop": 0.4009,
+    "LIFE3_no_posthoc_classifier_change": true
+  }
+}

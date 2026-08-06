@@ -1,0 +1,468 @@
+{
+  "status": "post-confirmation single-signal diagnostic",
+  "source": "outputs/contextual_lbf_extension.json",
+  "truth": "full six-component verdict in the same run",
+  "n_systems": 25,
+  "n_positive_full_criterion": 4,
+  "n_negative_full_criterion": 21,
+  "detectors": {
+    "performance_level": {
+      "accuracy": 0.84,
+      "threshold": 1.3716199258391666,
+      "direction": 1,
+      "misclassified": [
+        "seed1201:learned",
+        "seed1202:learned",
+        "seed1203:learned",
+        "seed1204:learned"
+      ]
+    },
+    "potential_bits": {
+      "accuracy": 0.96,
+      "threshold": 1.0682410751702676,
+      "direction": 1,
+      "misclassified": [
+        "seed1205:learned"
+      ]
+    },
+    "conditional_selectivity": {
+      "accuracy": 0.84,
+      "threshold": 2.0,
+      "direction": 1,
+      "misclassified": [
+        "seed1201:learned",
+        "seed1202:learned",
+        "seed1203:learned",
+        "seed1204:learned"
+      ]
+    },
+    "specificity_js_bits": {
+      "accuracy": 0.84,
+      "threshold": 1.8547053077680187,
+      "direction": 1,
+      "misclassified": [
+        "seed1201:learned",
+        "seed1202:learned",
+        "seed1203:learned",
+        "seed1204:learned"
+      ]
+    },
+    "usefulness_gap": {
+      "accuracy": 0.84,
+      "threshold": 1.098474289375,
+      "direction": 1,
+      "misclassified": [
+        "seed1201:learned",
+        "seed1202:learned",
+        "seed1203:learned",
+        "seed1204:learned"
+      ]
+    },
+    "min_context_usefulness": {
+      "accuracy": 0.88,
+      "threshold": 0.0004555430740754707,
+      "direction": 1,
+      "misclassified": [
+        "seed1201:learned",
+        "seed1202:learned",
+        "seed1204:learned"
+      ]
+    },
+    "acquisition": {
+      "accuracy": 1.0,
+      "threshold": 0.4875,
+      "direction": 1,
+      "misclassified": []
+    },
+    "trigger_rate_context0": {
+      "accuracy": 0.84,
+      "threshold": 2.0,
+      "direction": 1,
+      "misclassified": [
+        "seed1201:learned",
+        "seed1202:learned",
+        "seed1203:learned",
+        "seed1204:learned"
+      ]
+    },
+    "trigger_rate_context1": {
+      "accuracy": 0.84,
+      "threshold": 1.775,
+      "direction": 1,
+      "misclassified": [
+        "seed1201:learned",
+        "seed1202:learned",
+        "seed1203:learned",
+        "seed1204:learned"
+      ]
+    },
+    "endogeneity_flag": {
+      "accuracy": 0.84,
+      "threshold": 2.0,
+      "direction": 1,
+      "misclassified": [
+        "seed1201:learned",
+        "seed1202:learned",
+        "seed1203:learned",
+        "seed1204:learned"
+      ]
+    }
+  },
+  "grouped_max_accuracy": {
+    "behavior_only_single_signals": 0.88,
+    "definition_internal_signals": 1.0
+  },
+  "per_system_scores": [
+    {
+      "system": "seed1201:learned",
+      "truth_full_criterion": 1,
+      "performance_level": 0.3187534526807818,
+      "potential_bits": 1.6077338886180146,
+      "conditional_selectivity": 0.9625,
+      "specificity_js_bits": 0.8088396199852369,
+      "usefulness_gap": 0.0637818352591683,
+      "min_context_usefulness": -0.00223625080713441,
+      "acquisition": 0.9625,
+      "trigger_rate_context0": 0.9625,
+      "trigger_rate_context1": 0.0,
+      "endogeneity_flag": 1.0
+    },
+    {
+      "system": "seed1201:initial_twin",
+      "truth_full_criterion": 0,
+      "performance_level": 0.0024121966633333333,
+      "potential_bits": -0.0,
+      "conditional_selectivity": 0.0,
+      "specificity_js_bits": 0.717449773930181,
+      "usefulness_gap": -0.13679887159110446,
+      "min_context_usefulness": -0.18290997234887563,
+      "acquisition": 0.0,
+      "trigger_rate_context0": 0.0,
+      "trigger_rate_context1": 0.0,
+      "endogeneity_flag": 1.0
+    },
+    {
+      "system": "seed1201:team_nearest",
+      "truth_full_criterion": 0,
+      "performance_level": 0.3662088657208333,
+      "potential_bits": 1.0,
+      "conditional_selectivity": 1.0,
+      "specificity_js_bits": 0.8328493957455436,
+      "usefulness_gap": 0.09847428937499997,
+      "min_context_usefulness": 0.0,
+      "acquisition": 0.0,
+      "trigger_rate_context0": 1.0,
+      "trigger_rate_context1": 0.0,
+      "endogeneity_flag": 0.0
+    },
+    {
+      "system": "seed1201:fixed_food0",
+      "truth_full_criterion": 0,
+      "performance_level": 0.3151209669473833,
+      "potential_bits": 0.5257570733644998,
+      "conditional_selectivity": 0.23750000000000004,
+      "specificity_js_bits": 0.813595042513472,
+      "usefulness_gap": 0.04738639060154998,
+      "min_context_usefulness": -0.10217579754689998,
+      "acquisition": 0.0,
+      "trigger_rate_context0": 1.0,
+      "trigger_rate_context1": 0.7625,
+      "endogeneity_flag": 0.0
+    },
+    {
+      "system": "seed1201:fixed_food1",
+      "truth_full_criterion": 0,
+      "performance_level": 0.2677345763458333,
+      "potential_bits": 0.8112781244591328,
+      "conditional_selectivity": 0.0,
+      "specificity_js_bits": 0.8047488146656658,
+      "usefulness_gap": 0.0,
+      "min_context_usefulness": 0.0,
+      "acquisition": 0.0,
+      "trigger_rate_context0": 0.0,
+      "trigger_rate_context1": 0.0,
+      "endogeneity_flag": 0.0
+    },
+    {
+      "system": "seed1202:learned",
+      "truth_full_criterion": 1,
+      "performance_level": 0.24625249160268795,
+      "potential_bits": 1.631151224538569,
+      "conditional_selectivity": 0.55,
+      "specificity_js_bits": 0.7296005947317532,
+      "usefulness_gap": 0.06436266172199198,
+      "min_context_usefulness": -0.023996550185592824,
+      "acquisition": 0.55,
+      "trigger_rate_context0": 1.0,
+      "trigger_rate_context1": 0.45,
+      "endogeneity_flag": 1.0
+    },
+    {
+      "system": "seed1202:initial_twin",
+      "truth_full_criterion": 0,
+      "performance_level": 0.003540400085552239,
+      "potential_bits": 0.16866093149667025,
+      "conditional_selectivity": 0.0,
+      "specificity_js_bits": 0.6974917696119869,
+      "usefulness_gap": -0.13701640616444777,
+      "min_context_usefulness": -0.18774767516222884,
+      "acquisition": 0.0,
+      "trigger_rate_context0": 0.025,
+      "trigger_rate_context1": 0.025,
+      "endogeneity_flag": 1.0
+    },
+    {
+      "system": "seed1202:team_nearest",
+      "truth_full_criterion": 0,
+      "performance_level": 0.36225520672249995,
+      "potential_bits": 1.0,
+      "conditional_selectivity": 1.0,
+      "specificity_js_bits": 0.8091131994150069,
+      "usefulness_gap": 0.08854590937499995,
+      "min_context_usefulness": 0.0,
+      "acquisition": 0.0,
+      "trigger_rate_context0": 1.0,
+      "trigger_rate_context1": 0.0,
+      "endogeneity_flag": 0.0
+    },
+    {
+      "system": "seed1202:fixed_food0",
+      "truth_full_criterion": 0,
+      "performance_level": 0.28770516363575,
+      "potential_bits": 0.6828039570117025,
+      "conditional_selectivity": 0.36250000000000004,
+      "specificity_js_bits": 0.813595042513472,
+      "usefulness_gap": 0.013995866288250003,
+      "min_context_usefulness": -0.14910008617349993,
+      "acquisition": 0.0,
+      "trigger_rate_context0": 1.0,
+      "trigger_rate_context1": 0.6375,
+      "endogeneity_flag": 0.0
+    },
+    {
+      "system": "seed1202:fixed_food1",
+      "truth_full_criterion": 0,
+      "performance_level": 0.2737092973475,
+      "potential_bits": 0.8112781244591328,
+      "conditional_selectivity": 0.0,
+      "specificity_js_bits": 0.813595042513472,
+      "usefulness_gap": 0.0,
+      "min_context_usefulness": 0.0,
+      "acquisition": 0.0,
+      "trigger_rate_context0": 0.0,
+      "trigger_rate_context1": 0.0,
+      "endogeneity_flag": 0.0
+    },
+    {
+      "system": "seed1203:learned",
+      "truth_full_criterion": 1,
+      "performance_level": 0.3104506844772235,
+      "potential_bits": 1.5421652328741675,
+      "conditional_selectivity": 0.9875,
+      "specificity_js_bits": 0.786689601515379,
+      "usefulness_gap": 0.07636304020871779,
+      "min_context_usefulness": 0.0004555430740754707,
+      "acquisition": 0.9750000000000001,
+      "trigger_rate_context0": 0.9875,
+      "trigger_rate_context1": 0.0,
+      "endogeneity_flag": 1.0
+    },
+    {
+      "system": "seed1203:initial_twin",
+      "truth_full_criterion": 0,
+      "performance_level": 0.002148835572849,
+      "potential_bits": 0.05475065807353418,
+      "conditional_selectivity": 0.0125,
+      "specificity_js_bits": 0.7169171866886992,
+      "usefulness_gap": -0.13882743109381765,
+      "min_context_usefulness": -0.18489210833333336,
+      "acquisition": 0.0,
+      "trigger_rate_context0": 0.0125,
+      "trigger_rate_context1": 0.0,
+      "endogeneity_flag": 1.0
+    },
+    {
+      "system": "seed1203:team_nearest",
+      "truth_full_criterion": 0,
+      "performance_level": 0.36270737909,
+      "potential_bits": 1.0,
+      "conditional_selectivity": 1.0,
+      "specificity_js_bits": 0.8229400377578513,
+      "usefulness_gap": 0.08814145725000005,
+      "min_context_usefulness": 0.0,
+      "acquisition": 0.0,
+      "trigger_rate_context0": 1.0,
+      "trigger_rate_context1": 0.0,
+      "endogeneity_flag": 0.0
+    },
+    {
+      "system": "seed1203:fixed_food0",
+      "truth_full_criterion": 0,
+      "performance_level": 0.3102489825879499,
+      "potential_bits": 0.5608563762191029,
+      "conditional_selectivity": 0.26249999999999996,
+      "specificity_js_bits": 0.8229400377578513,
+      "usefulness_gap": 0.03568306074794997,
+      "min_context_usefulness": -0.10491679300410006,
+      "acquisition": 0.0,
+      "trigger_rate_context0": 1.0,
+      "trigger_rate_context1": 0.7375,
+      "endogeneity_flag": 0.0
+    },
+    {
+      "system": "seed1203:fixed_food1",
+      "truth_full_criterion": 0,
+      "performance_level": 0.27456592183999995,
+      "potential_bits": 0.8112781244591328,
+      "conditional_selectivity": 0.0,
+      "specificity_js_bits": 0.8328493957455436,
+      "usefulness_gap": 0.0,
+      "min_context_usefulness": 0.0,
+      "acquisition": 0.0,
+      "trigger_rate_context0": 0.0,
+      "trigger_rate_context1": 0.0,
+      "endogeneity_flag": 0.0
+    },
+    {
+      "system": "seed1204:learned",
+      "truth_full_criterion": 1,
+      "performance_level": 0.34648524911407125,
+      "potential_bits": 1.0682410751702676,
+      "conditional_selectivity": 0.5,
+      "specificity_js_bits": 0.8106014842262614,
+      "usefulness_gap": 0.08157860310225612,
+      "min_context_usefulness": -0.009585863195169353,
+      "acquisition": 0.4875,
+      "trigger_rate_context0": 0.5,
+      "trigger_rate_context1": 0.0,
+      "endogeneity_flag": 1.0
+    },
+    {
+      "system": "seed1204:initial_twin",
+      "truth_full_criterion": 0,
+      "performance_level": 0.002551693082633333,
+      "potential_bits": 0.05475065807353418,
+      "conditional_selectivity": 0.0125,
+      "specificity_js_bits": 0.6880542180165922,
+      "usefulness_gap": -0.13689332358403333,
+      "min_context_usefulness": -0.18107982341306667,
+      "acquisition": 0.0,
+      "trigger_rate_context0": 0.0125,
+      "trigger_rate_context1": 0.0,
+      "endogeneity_flag": 1.0
+    },
+    {
+      "system": "seed1204:team_nearest",
+      "truth_full_criterion": 0,
+      "performance_level": 0.36369819583999996,
+      "potential_bits": 1.0,
+      "conditional_selectivity": 1.0,
+      "specificity_js_bits": 0.8328493957455436,
+      "usefulness_gap": 0.09210472424999999,
+      "min_context_usefulness": 0.0,
+      "acquisition": 0.0,
+      "trigger_rate_context0": 1.0,
+      "trigger_rate_context1": 0.0,
+      "endogeneity_flag": 0.0
+    },
+    {
+      "system": "seed1204:fixed_food0",
+      "truth_full_criterion": 0,
+      "performance_level": 0.3240873238084999,
+      "potential_bits": 0.507410963664697,
+      "conditional_selectivity": 0.22499999999999998,
+      "specificity_js_bits": 0.813595042513472,
+      "usefulness_gap": 0.05249385221849995,
+      "min_context_usefulness": -0.07922174406300003,
+      "acquisition": 0.0,
+      "trigger_rate_context0": 1.0,
+      "trigger_rate_context1": 0.775,
+      "endogeneity_flag": 0.0
+    },
+    {
+      "system": "seed1204:fixed_food1",
+      "truth_full_criterion": 0,
+      "performance_level": 0.27159347158999997,
+      "potential_bits": 0.8112781244591328,
+      "conditional_selectivity": 0.0,
+      "specificity_js_bits": 0.8547053077680187,
+      "usefulness_gap": 0.0,
+      "min_context_usefulness": 0.0,
+      "acquisition": 0.0,
+      "trigger_rate_context0": 0.0,
+      "trigger_rate_context1": 0.0,
+      "endogeneity_flag": 0.0
+    },
+    {
+      "system": "seed1205:learned",
+      "truth_full_criterion": 0,
+      "performance_level": 0.29640850412193176,
+      "potential_bits": 1.1734015129803843,
+      "conditional_selectivity": 0.4875,
+      "specificity_js_bits": 0.8441028868382766,
+      "usefulness_gap": 0.03503316362016423,
+      "min_context_usefulness": -0.005808778160151629,
+      "acquisition": 0.46249999999999997,
+      "trigger_rate_context0": 0.4875,
+      "trigger_rate_context1": 0.0,
+      "endogeneity_flag": 1.0
+    },
+    {
+      "system": "seed1205:initial_twin",
+      "truth_full_criterion": 0,
+      "performance_level": 0.0029091656495884165,
+      "potential_bits": 0.09694460606247315,
+      "conditional_selectivity": 0.025,
+      "specificity_js_bits": 0.7076671825913283,
+      "usefulness_gap": -0.13909724678944793,
+      "min_context_usefulness": -0.18776859420362524,
+      "acquisition": 0.0,
+      "trigger_rate_context0": 0.025,
+      "trigger_rate_context1": 0.0,
+      "endogeneity_flag": 1.0
+    },
+    {
+      "system": "seed1205:team_nearest",
+      "truth_full_criterion": 0,
+      "performance_level": 0.37161992583916664,
+      "potential_bits": 1.0,
+      "conditional_selectivity": 1.0,
+      "specificity_js_bits": 0.813595042513472,
+      "usefulness_gap": 0.09657350587500002,
+      "min_context_usefulness": 0.0,
+      "acquisition": 0.0,
+      "trigger_rate_context0": 1.0,
+      "trigger_rate_context1": 0.0,
+      "endogeneity_flag": 0.0
+    },
+    {
+      "system": "seed1205:fixed_food0",
+      "truth_full_criterion": 0,
+      "performance_level": 0.3234048011506666,
+      "potential_bits": 0.507410963664697,
+      "conditional_selectivity": 0.22499999999999998,
+      "specificity_js_bits": 0.8489539005008395,
+      "usefulness_gap": 0.04835838118649999,
+      "min_context_usefulness": -0.09643024937700007,
+      "acquisition": 0.0,
+      "trigger_rate_context0": 1.0,
+      "trigger_rate_context1": 0.775,
+      "endogeneity_flag": 0.0
+    },
+    {
+      "system": "seed1205:fixed_food1",
+      "truth_full_criterion": 0,
+      "performance_level": 0.2750464199641666,
+      "potential_bits": 0.8112781244591328,
+      "conditional_selectivity": 0.0,
+      "specificity_js_bits": 0.8380402378251779,
+      "usefulness_gap": 0.0,
+      "min_context_usefulness": 0.0,
+      "acquisition": 0.0,
+      "trigger_rate_context0": 0.0,
+      "trigger_rate_context1": 0.0,
+      "endogeneity_flag": 0.0
+    }
+  ],
+  "interpretation": "Each signal receives a hindsight-optimal threshold and direction. Behavior-only single signals exclude potential, acquisition and endogeneity, which are internal components of the proposed criterion rather than stand-alone prior definitions. Failures are blind spots relative to the full conjunctive verdict, not claims that the signal is useless."
+}

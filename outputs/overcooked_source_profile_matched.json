@@ -1,0 +1,78 @@
+{
+  "status": "E1-B source-profile comparison at matched product; registered Wave 4 as ESTIMATION ONLY (hypothesis-generating, no directional prediction); E1's falsification of single-point G stands",
+  "eps_star": 0.45,
+  "scores_from_e1": {
+    "noisy": 40.4,
+    "learned": 39.4
+  },
+  "noisy_scripted": {
+    "H_Q0": 5.169925001442312,
+    "H_QI": 5.005573438830837,
+    "H_QE": 5.004977380216694,
+    "H_P": 4.999931468686777,
+    "C_individual": 0.16435156261147554,
+    "C_env": 0.0005960586141426916,
+    "C_relational": 0.005045911529917291,
+    "C_high": 0.0,
+    "C_total": 0.16999353275553553,
+    "openness": 0.967118762320902,
+    "collapse_norm": 0.03288123767909801,
+    "collapse_norm_ci95": [
+      0.03049816055986241,
+      0.03623487080745708
+    ],
+    "C_individual_ci95": [
+      0.15011471182468977,
+      0.17950043978310187
+    ],
+    "C_env_ci95": [
+      0.0004677332104444876,
+      0.0007954696286047724
+    ],
+    "C_relational_ci95": [
+      0.0042248361764621436,
+      0.009219289184324018
+    ]
+  },
+  "learned": {
+    "H_Q0": 5.169925001442312,
+    "H_QI": 4.776694511200809,
+    "H_QE": 4.760050254408546,
+    "H_P": 4.751650844286501,
+    "C_individual": 0.39323049024150336,
+    "C_env": 0.016644256792262446,
+    "C_relational": 0.008399410122045481,
+    "C_high": 0.0,
+    "C_total": 0.4182741571558113,
+    "openness": 0.9190947340553063,
+    "collapse_norm": 0.08090526594469372,
+    "collapse_norm_ci95": [
+      0.07759929695305841,
+      0.08584996470783927
+    ],
+    "C_individual_ci95": [
+      0.3731041728926546,
+      0.4157565589394682
+    ],
+    "C_env_ci95": [
+      0.014918286739317721,
+      0.018718078760618217
+    ],
+    "C_relational_ci95": [
+      0.005010468917136124,
+      0.01478433190304329
+    ]
+  },
+  "profile_shares": {
+    "noisy_scripted": {
+      "C_individual": 0.966810677720466,
+      "C_env": 0.003506360533137882,
+      "C_relational": 0.029682961746396085
+    },
+    "learned": {
+      "C_individual": 0.9401261911933543,
+      "C_env": 0.03979269698477282,
+      "C_relational": 0.020081111821872888
+    }
+  }
+}

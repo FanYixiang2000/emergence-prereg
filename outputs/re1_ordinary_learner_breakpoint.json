@@ -1,0 +1,121 @@
+{
+  "status": "RE-1 ordinary-learner breakpoint adjudication; registered RE battery, frozen verdict mapping, no directional bet",
+  "per_seed": {
+    "111": {
+      "n_points": 601,
+      "entropy_first_last": [
+        6.5919,
+        0.0914
+      ],
+      "adjudication": {
+        "full": {
+          "delta_bic": 1456.649,
+          "hinge_step": 125,
+          "hinge_index": 25,
+          "slope_pre": -3.3238,
+          "slope_post": -0.1021,
+          "closing_verdict": false
+        },
+        "variants": {
+          "thin2_p0": {
+            "delta_bic": 988.206,
+            "hinge_step": 130,
+            "hinge_index": 13,
+            "slope_pre": -3.1027,
+            "slope_post": -0.1057,
+            "closing_verdict": false,
+            "hinge_ok": true
+          },
+          "thin2_p1": {
+            "delta_bic": 631.923,
+            "hinge_step": 105,
+            "hinge_index": 10,
+            "slope_pre": -4.0249,
+            "slope_post": -0.1114,
+            "closing_verdict": false,
+            "hinge_ok": false
+          }
+        },
+        "persistent_closing": false
+      }
+    },
+    "222": {
+      "n_points": 601,
+      "entropy_first_last": [
+        6.5934,
+        0.0909
+      ],
+      "adjudication": {
+        "full": {
+          "delta_bic": 1392.511,
+          "hinge_step": 120,
+          "hinge_index": 24,
+          "slope_pre": -3.4214,
+          "slope_post": -0.1076,
+          "closing_verdict": false
+        },
+        "variants": {
+          "thin2_p0": {
+            "delta_bic": 836.212,
+            "hinge_step": 130,
+            "hinge_index": 13,
+            "slope_pre": -3.1692,
+            "slope_post": -0.1029,
+            "closing_verdict": false,
+            "hinge_ok": true
+          },
+          "thin2_p1": {
+            "delta_bic": 634.312,
+            "hinge_step": 95,
+            "hinge_index": 9,
+            "slope_pre": -4.2431,
+            "slope_post": -0.1276,
+            "closing_verdict": false,
+            "hinge_ok": false
+          }
+        },
+        "persistent_closing": false
+      }
+    },
+    "333": {
+      "n_points": 601,
+      "entropy_first_last": [
+        6.5922,
+        0.0919
+      ],
+      "adjudication": {
+        "full": {
+          "delta_bic": 1381.336,
+          "hinge_step": 125,
+          "hinge_index": 25,
+          "slope_pre": -3.3833,
+          "slope_post": -0.1046,
+          "closing_verdict": false
+        },
+        "variants": {
+          "thin2_p0": {
+            "delta_bic": 811.259,
+            "hinge_step": 130,
+            "hinge_index": 13,
+            "slope_pre": -3.1832,
+            "slope_post": -0.1096,
+            "closing_verdict": false,
+            "hinge_ok": true
+          },
+          "thin2_p1": {
+            "delta_bic": 631.116,
+            "hinge_step": 105,
+            "hinge_index": 10,
+            "slope_pre": -4.0401,
+            "slope_post": -0.1143,
+            "closing_verdict": false,
+            "hinge_ok": false
+          }
+        },
+        "persistent_closing": false
+      }
+    }
+  },
+  "n_persistent": 0,
+  "verdict": "smooth_convergence_B5_excluded"
+}

@@ -1,0 +1,4 @@
+regime,n_trajectories,n_clusters_used,cluster_purity,hand_effective_modes,cluster_effective_modes,modes_absolute_error
+pure_team,600.0,4.0,1.0,1.999999999996,3.6875679158591215,1.6875679158631214
+uncertain_preference,600.0,4.0,1.0,2.792245901298888,2.792245901298888,0.0
+random_noise,600.0,4.0,1.0,2.5040443702999493,2.6773145683557327,0.17327019805578336

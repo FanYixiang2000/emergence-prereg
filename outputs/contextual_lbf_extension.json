@@ -1,0 +1,862 @@
+{
+  "status": "prospectively frozen fresh-seed run",
+  "environment": "Foraging-5x5-2p-2f-coop-v3",
+  "horizon": 15,
+  "thresholds": {
+    "potential_bits": 0.5,
+    "conditional_selectivity": 0.5,
+    "specificity_js_bits": 0.2,
+    "usefulness_gap": 0.0,
+    "acquisition": 0.3
+  },
+  "train_episodes": 8000,
+  "n_eval_per_context": 80,
+  "seeds": {
+    "1201": {
+      "systems": {
+        "learned": {
+          "metrics": {
+            "n_eval_per_context": 80,
+            "potential_bits": 1.6077338886180146,
+            "trigger_rates": {
+              "0": 0.9625,
+              "1": 0.0
+            },
+            "conditional_selectivity": 0.9625,
+            "specificity_js_bits": 0.8088396199852369,
+            "natural_score": 0.3187534526807818,
+            "do_non_trigger_score": 0.2549716174216135,
+            "usefulness_gap": 0.0637818352591683,
+            "context_usefulness": {
+              "0": 0.12979992132547102,
+              "1": -0.00223625080713441
+            }
+          },
+          "acquisition": 0.9625,
+          "verdict": {
+            "passes": {
+              "potential": true,
+              "conditional_selectivity": true,
+              "specificity": true,
+              "usefulness": true,
+              "endogeneity": true,
+              "acquisition": true
+            },
+            "emergent": 1
+          }
+        },
+        "initial_twin": {
+          "metrics": {
+            "n_eval_per_context": 80,
+            "potential_bits": -0.0,
+            "trigger_rates": {
+              "0": 0.0,
+              "1": 0.0
+            },
+            "conditional_selectivity": 0.0,
+            "specificity_js_bits": 0.717449773930181,
+            "natural_score": 0.0024121966633333333,
+            "do_non_trigger_score": 0.1392110682544378,
+            "usefulness_gap": -0.13679887159110446,
+            "context_usefulness": {
+              "0": -0.09068777083333332,
+              "1": -0.18290997234887563
+            }
+          },
+          "acquisition": 0.0,
+          "verdict": {
+            "passes": {
+              "potential": false,
+              "conditional_selectivity": false,
+              "specificity": true,
+              "usefulness": false,
+              "endogeneity": true,
+              "acquisition": false
+            },
+            "emergent": 0
+          }
+        },
+        "team_nearest": {
+          "metrics": {
+            "n_eval_per_context": 80,
+            "potential_bits": 1.0,
+            "trigger_rates": {
+              "0": 1.0,
+              "1": 0.0
+            },
+            "conditional_selectivity": 1.0,
+            "specificity_js_bits": 0.8328493957455436,
+            "natural_score": 0.3662088657208333,
+            "do_non_trigger_score": 0.2677345763458333,
+            "usefulness_gap": 0.09847428937499997,
+            "context_usefulness": {
+              "0": 0.19694857874999994,
+              "1": 0.0
+            }
+          },
+          "acquisition": 0.0,
+          "verdict": {
+            "passes": {
+              "potential": true,
+              "conditional_selectivity": true,
+              "specificity": true,
+              "usefulness": true,
+              "endogeneity": false,
+              "acquisition": false
+            },
+            "emergent": 0
+          }
+        },
+        "fixed_food0": {
+          "metrics": {
+            "n_eval_per_context": 80,
+            "potential_bits": 0.5257570733644998,
+            "trigger_rates": {
+              "0": 1.0,
+              "1": 0.7625
+            },
+            "conditional_selectivity": 0.23750000000000004,
+            "specificity_js_bits": 0.813595042513472,
+            "natural_score": 0.3151209669473833,
+            "do_non_trigger_score": 0.2677345763458333,
+            "usefulness_gap": 0.04738639060154998,
+            "context_usefulness": {
+              "0": 0.19694857874999994,
+              "1": -0.10217579754689998
+            }
+          },
+          "acquisition": 0.0,
+          "verdict": {
+            "passes": {
+              "potential": true,
+              "conditional_selectivity": false,
+              "specificity": true,
+              "usefulness": true,
+              "endogeneity": false,
+              "acquisition": false
+            },
+            "emergent": 0
+          }
+        },
+        "fixed_food1": {
+          "metrics": {
+            "n_eval_per_context": 80,
+            "potential_bits": 0.8112781244591328,
+            "trigger_rates": {
+              "0": 0.0,
+              "1": 0.0
+            },
+            "conditional_selectivity": 0.0,
+            "specificity_js_bits": 0.8047488146656658,
+            "natural_score": 0.2677345763458333,
+            "do_non_trigger_score": 0.2677345763458333,
+            "usefulness_gap": 0.0,
+            "context_usefulness": {
+              "0": 0.0,
+              "1": 0.0
+            }
+          },
+          "acquisition": 0.0,
+          "verdict": {
+            "passes": {
+              "potential": true,
+              "conditional_selectivity": false,
+              "specificity": true,
+              "usefulness": false,
+              "endogeneity": false,
+              "acquisition": false
+            },
+            "emergent": 0
+          }
+        }
+      },
+      "expected": {
+        "learned": 1,
+        "initial_twin": 0,
+        "team_nearest": 0,
+        "fixed_food0": 0,
+        "fixed_food1": 0
+      },
+      "all_expected": true
+    },
+    "1202": {
+      "systems": {
+        "learned": {
+          "metrics": {
+            "n_eval_per_context": 80,
+            "potential_bits": 1.631151224538569,
+            "trigger_rates": {
+              "0": 1.0,
+              "1": 0.45
+            },
+            "conditional_selectivity": 0.55,
+            "specificity_js_bits": 0.7296005947317532,
+            "natural_score": 0.24625249160268795,
+            "do_non_trigger_score": 0.18188982988069596,
+            "usefulness_gap": 0.06436266172199198,
+            "context_usefulness": {
+              "0": 0.15272187362957682,
+              "1": -0.023996550185592824
+            }
+          },
+          "acquisition": 0.55,
+          "verdict": {
+            "passes": {
+              "potential": true,
+              "conditional_selectivity": true,
+              "specificity": true,
+              "usefulness": true,
+              "endogeneity": true,
+              "acquisition": true
+            },
+            "emergent": 1
+          }
+        },
+        "initial_twin": {
+          "metrics": {
+            "n_eval_per_context": 80,
+            "potential_bits": 0.16866093149667025,
+            "trigger_rates": {
+              "0": 0.025,
+              "1": 0.025
+            },
+            "conditional_selectivity": 0.0,
+            "specificity_js_bits": 0.6974917696119869,
+            "natural_score": 0.003540400085552239,
+            "do_non_trigger_score": 0.14055680625,
+            "usefulness_gap": -0.13701640616444777,
+            "context_usefulness": {
+              "0": -0.08628513716666664,
+              "1": -0.18774767516222884
+            }
+          },
+          "acquisition": 0.0,
+          "verdict": {
+            "passes": {
+              "potential": false,
+              "conditional_selectivity": false,
+              "specificity": true,
+              "usefulness": false,
+              "endogeneity": true,
+              "acquisition": false
+            },
+            "emergent": 0
+          }
+        },
+        "team_nearest": {
+          "metrics": {
+            "n_eval_per_context": 80,
+            "potential_bits": 1.0,
+            "trigger_rates": {
+              "0": 1.0,
+              "1": 0.0
+            },
+            "conditional_selectivity": 1.0,
+            "specificity_js_bits": 0.8091131994150069,
+            "natural_score": 0.36225520672249995,
+            "do_non_trigger_score": 0.2737092973475,
+            "usefulness_gap": 0.08854590937499995,
+            "context_usefulness": {
+              "0": 0.17709181874999994,
+              "1": 0.0
+            }
+          },
+          "acquisition": 0.0,
+          "verdict": {
+            "passes": {
+              "potential": true,
+              "conditional_selectivity": true,
+              "specificity": true,
+              "usefulness": true,
+              "endogeneity": false,
+              "acquisition": false
+            },
+            "emergent": 0
+          }
+        },
+        "fixed_food0": {
+          "metrics": {
+            "n_eval_per_context": 80,
+            "potential_bits": 0.6828039570117025,
+            "trigger_rates": {
+              "0": 1.0,
+              "1": 0.6375
+            },
+            "conditional_selectivity": 0.36250000000000004,
+            "specificity_js_bits": 0.813595042513472,
+            "natural_score": 0.28770516363575,
+            "do_non_trigger_score": 0.2737092973475,
+            "usefulness_gap": 0.013995866288250003,
+            "context_usefulness": {
+              "0": 0.17709181874999994,
+              "1": -0.14910008617349993
+            }
+          },
+          "acquisition": 0.0,
+          "verdict": {
+            "passes": {
+              "potential": true,
+              "conditional_selectivity": false,
+              "specificity": true,
+              "usefulness": true,
+              "endogeneity": false,
+              "acquisition": false
+            },
+            "emergent": 0
+          }
+        },
+        "fixed_food1": {
+          "metrics": {
+            "n_eval_per_context": 80,
+            "potential_bits": 0.8112781244591328,
+            "trigger_rates": {
+              "0": 0.0,
+              "1": 0.0
+            },
+            "conditional_selectivity": 0.0,
+            "specificity_js_bits": 0.813595042513472,
+            "natural_score": 0.2737092973475,
+            "do_non_trigger_score": 0.2737092973475,
+            "usefulness_gap": 0.0,
+            "context_usefulness": {
+              "0": 0.0,
+              "1": 0.0
+            }
+          },
+          "acquisition": 0.0,
+          "verdict": {
+            "passes": {
+              "potential": true,
+              "conditional_selectivity": false,
+              "specificity": true,
+              "usefulness": false,
+              "endogeneity": false,
+              "acquisition": false
+            },
+            "emergent": 0
+          }
+        }
+      },
+      "expected": {
+        "learned": 1,
+        "initial_twin": 0,
+        "team_nearest": 0,
+        "fixed_food0": 0,
+        "fixed_food1": 0
+      },
+      "all_expected": true
+    },
+    "1203": {
+      "systems": {
+        "learned": {
+          "metrics": {
+            "n_eval_per_context": 80,
+            "potential_bits": 1.5421652328741675,
+            "trigger_rates": {
+              "0": 0.9875,
+              "1": 0.0
+            },
+            "conditional_selectivity": 0.9875,
+            "specificity_js_bits": 0.786689601515379,
+            "natural_score": 0.3104506844772235,
+            "do_non_trigger_score": 0.23408764426850573,
+            "usefulness_gap": 0.07636304020871779,
+            "context_usefulness": {
+              "0": 0.15227053734336007,
+              "1": 0.0004555430740754707
+            }
+          },
+          "acquisition": 0.9750000000000001,
+          "verdict": {
+            "passes": {
+              "potential": true,
+              "conditional_selectivity": true,
+              "specificity": true,
+              "usefulness": true,
+              "endogeneity": true,
+              "acquisition": true
+            },
+            "emergent": 1
+          }
+        },
+        "initial_twin": {
+          "metrics": {
+            "n_eval_per_context": 80,
+            "potential_bits": 0.05475065807353418,
+            "trigger_rates": {
+              "0": 0.0125,
+              "1": 0.0
+            },
+            "conditional_selectivity": 0.0125,
+            "specificity_js_bits": 0.7169171866886992,
+            "natural_score": 0.002148835572849,
+            "do_non_trigger_score": 0.14097626666666666,
+            "usefulness_gap": -0.13882743109381765,
+            "context_usefulness": {
+              "0": -0.09276275385430198,
+              "1": -0.18489210833333336
+            }
+          },
+          "acquisition": 0.0,
+          "verdict": {
+            "passes": {
+              "potential": false,
+              "conditional_selectivity": false,
+              "specificity": true,
+              "usefulness": false,
+              "endogeneity": true,
+              "acquisition": false
+            },
+            "emergent": 0
+          }
+        },
+        "team_nearest": {
+          "metrics": {
+            "n_eval_per_context": 80,
+            "potential_bits": 1.0,
+            "trigger_rates": {
+              "0": 1.0,
+              "1": 0.0
+            },
+            "conditional_selectivity": 1.0,
+            "specificity_js_bits": 0.8229400377578513,
+            "natural_score": 0.36270737909,
+            "do_non_trigger_score": 0.27456592183999995,
+            "usefulness_gap": 0.08814145725000005,
+            "context_usefulness": {
+              "0": 0.1762829145,
+              "1": 0.0
+            }
+          },
+          "acquisition": 0.0,
+          "verdict": {
+            "passes": {
+              "potential": true,
+              "conditional_selectivity": true,
+              "specificity": true,
+              "usefulness": true,
+              "endogeneity": false,
+              "acquisition": false
+            },
+            "emergent": 0
+          }
+        },
+        "fixed_food0": {
+          "metrics": {
+            "n_eval_per_context": 80,
+            "potential_bits": 0.5608563762191029,
+            "trigger_rates": {
+              "0": 1.0,
+              "1": 0.7375
+            },
+            "conditional_selectivity": 0.26249999999999996,
+            "specificity_js_bits": 0.8229400377578513,
+            "natural_score": 0.3102489825879499,
+            "do_non_trigger_score": 0.27456592183999995,
+            "usefulness_gap": 0.03568306074794997,
+            "context_usefulness": {
+              "0": 0.1762829145,
+              "1": -0.10491679300410006
+            }
+          },
+          "acquisition": 0.0,
+          "verdict": {
+            "passes": {
+              "potential": true,
+              "conditional_selectivity": false,
+              "specificity": true,
+              "usefulness": true,
+              "endogeneity": false,
+              "acquisition": false
+            },
+            "emergent": 0
+          }
+        },
+        "fixed_food1": {
+          "metrics": {
+            "n_eval_per_context": 80,
+            "potential_bits": 0.8112781244591328,
+            "trigger_rates": {
+              "0": 0.0,
+              "1": 0.0
+            },
+            "conditional_selectivity": 0.0,
+            "specificity_js_bits": 0.8328493957455436,
+            "natural_score": 0.27456592183999995,
+            "do_non_trigger_score": 0.27456592183999995,
+            "usefulness_gap": 0.0,
+            "context_usefulness": {
+              "0": 0.0,
+              "1": 0.0
+            }
+          },
+          "acquisition": 0.0,
+          "verdict": {
+            "passes": {
+              "potential": true,
+              "conditional_selectivity": false,
+              "specificity": true,
+              "usefulness": false,
+              "endogeneity": false,
+              "acquisition": false
+            },
+            "emergent": 0
+          }
+        }
+      },
+      "expected": {
+        "learned": 1,
+        "initial_twin": 0,
+        "team_nearest": 0,
+        "fixed_food0": 0,
+        "fixed_food1": 0
+      },
+      "all_expected": true
+    },
+    "1204": {
+      "systems": {
+        "learned": {
+          "metrics": {
+            "n_eval_per_context": 80,
+            "potential_bits": 1.0682410751702676,
+            "trigger_rates": {
+              "0": 0.5,
+              "1": 0.0
+            },
+            "conditional_selectivity": 0.5,
+            "specificity_js_bits": 0.8106014842262614,
+            "natural_score": 0.34648524911407125,
+            "do_non_trigger_score": 0.26490664601181513,
+            "usefulness_gap": 0.08157860310225612,
+            "context_usefulness": {
+              "0": 0.17274306939968162,
+              "1": -0.009585863195169353
+            }
+          },
+          "acquisition": 0.4875,
+          "verdict": {
+            "passes": {
+              "potential": true,
+              "conditional_selectivity": true,
+              "specificity": true,
+              "usefulness": true,
+              "endogeneity": true,
+              "acquisition": true
+            },
+            "emergent": 1
+          }
+        },
+        "initial_twin": {
+          "metrics": {
+            "n_eval_per_context": 80,
+            "potential_bits": 0.05475065807353418,
+            "trigger_rates": {
+              "0": 0.0125,
+              "1": 0.0
+            },
+            "conditional_selectivity": 0.0125,
+            "specificity_js_bits": 0.6880542180165922,
+            "natural_score": 0.002551693082633333,
+            "do_non_trigger_score": 0.13944501666666667,
+            "usefulness_gap": -0.13689332358403333,
+            "context_usefulness": {
+              "0": -0.09270682375499999,
+              "1": -0.18107982341306667
+            }
+          },
+          "acquisition": 0.0,
+          "verdict": {
+            "passes": {
+              "potential": false,
+              "conditional_selectivity": false,
+              "specificity": true,
+              "usefulness": false,
+              "endogeneity": true,
+              "acquisition": false
+            },
+            "emergent": 0
+          }
+        },
+        "team_nearest": {
+          "metrics": {
+            "n_eval_per_context": 80,
+            "potential_bits": 1.0,
+            "trigger_rates": {
+              "0": 1.0,
+              "1": 0.0
+            },
+            "conditional_selectivity": 1.0,
+            "specificity_js_bits": 0.8328493957455436,
+            "natural_score": 0.36369819583999996,
+            "do_non_trigger_score": 0.27159347158999997,
+            "usefulness_gap": 0.09210472424999999,
+            "context_usefulness": {
+              "0": 0.18420944849999998,
+              "1": 0.0
+            }
+          },
+          "acquisition": 0.0,
+          "verdict": {
+            "passes": {
+              "potential": true,
+              "conditional_selectivity": true,
+              "specificity": true,
+              "usefulness": true,
+              "endogeneity": false,
+              "acquisition": false
+            },
+            "emergent": 0
+          }
+        },
+        "fixed_food0": {
+          "metrics": {
+            "n_eval_per_context": 80,
+            "potential_bits": 0.507410963664697,
+            "trigger_rates": {
+              "0": 1.0,
+              "1": 0.775
+            },
+            "conditional_selectivity": 0.22499999999999998,
+            "specificity_js_bits": 0.813595042513472,
+            "natural_score": 0.3240873238084999,
+            "do_non_trigger_score": 0.27159347158999997,
+            "usefulness_gap": 0.05249385221849995,
+            "context_usefulness": {
+              "0": 0.18420944849999998,
+              "1": -0.07922174406300003
+            }
+          },
+          "acquisition": 0.0,
+          "verdict": {
+            "passes": {
+              "potential": true,
+              "conditional_selectivity": false,
+              "specificity": true,
+              "usefulness": true,
+              "endogeneity": false,
+              "acquisition": false
+            },
+            "emergent": 0
+          }
+        },
+        "fixed_food1": {
+          "metrics": {
+            "n_eval_per_context": 80,
+            "potential_bits": 0.8112781244591328,
+            "trigger_rates": {
+              "0": 0.0,
+              "1": 0.0
+            },
+            "conditional_selectivity": 0.0,
+            "specificity_js_bits": 0.8547053077680187,
+            "natural_score": 0.27159347158999997,
+            "do_non_trigger_score": 0.27159347158999997,
+            "usefulness_gap": 0.0,
+            "context_usefulness": {
+              "0": 0.0,
+              "1": 0.0
+            }
+          },
+          "acquisition": 0.0,
+          "verdict": {
+            "passes": {
+              "potential": true,
+              "conditional_selectivity": false,
+              "specificity": true,
+              "usefulness": false,
+              "endogeneity": false,
+              "acquisition": false
+            },
+            "emergent": 0
+          }
+        }
+      },
+      "expected": {
+        "learned": 1,
+        "initial_twin": 0,
+        "team_nearest": 0,
+        "fixed_food0": 0,
+        "fixed_food1": 0
+      },
+      "all_expected": true
+    },
+    "1205": {
+      "systems": {
+        "learned": {
+          "metrics": {
+            "n_eval_per_context": 80,
+            "potential_bits": 1.1734015129803843,
+            "trigger_rates": {
+              "0": 0.4875,
+              "1": 0.0
+            },
+            "conditional_selectivity": 0.4875,
+            "specificity_js_bits": 0.8441028868382766,
+            "natural_score": 0.29640850412193176,
+            "do_non_trigger_score": 0.26137534050176753,
+            "usefulness_gap": 0.03503316362016423,
+            "context_usefulness": {
+              "0": 0.07587510540048004,
+              "1": -0.005808778160151629
+            }
+          },
+          "acquisition": 0.46249999999999997,
+          "verdict": {
+            "passes": {
+              "potential": true,
+              "conditional_selectivity": false,
+              "specificity": true,
+              "usefulness": true,
+              "endogeneity": true,
+              "acquisition": true
+            },
+            "emergent": 0
+          }
+        },
+        "initial_twin": {
+          "metrics": {
+            "n_eval_per_context": 80,
+            "potential_bits": 0.09694460606247315,
+            "trigger_rates": {
+              "0": 0.025,
+              "1": 0.0
+            },
+            "conditional_selectivity": 0.025,
+            "specificity_js_bits": 0.7076671825913283,
+            "natural_score": 0.0029091656495884165,
+            "do_non_trigger_score": 0.14200641243903636,
+            "usefulness_gap": -0.13909724678944793,
+            "context_usefulness": {
+              "0": -0.09042589937527065,
+              "1": -0.18776859420362524
+            }
+          },
+          "acquisition": 0.0,
+          "verdict": {
+            "passes": {
+              "potential": false,
+              "conditional_selectivity": false,
+              "specificity": true,
+              "usefulness": false,
+              "endogeneity": true,
+              "acquisition": false
+            },
+            "emergent": 0
+          }
+        },
+        "team_nearest": {
+          "metrics": {
+            "n_eval_per_context": 80,
+            "potential_bits": 1.0,
+            "trigger_rates": {
+              "0": 1.0,
+              "1": 0.0
+            },
+            "conditional_selectivity": 1.0,
+            "specificity_js_bits": 0.813595042513472,
+            "natural_score": 0.37161992583916664,
+            "do_non_trigger_score": 0.2750464199641666,
+            "usefulness_gap": 0.09657350587500002,
+            "context_usefulness": {
+              "0": 0.19314701174999999,
+              "1": 0.0
+            }
+          },
+          "acquisition": 0.0,
+          "verdict": {
+            "passes": {
+              "potential": true,
+              "conditional_selectivity": true,
+              "specificity": true,
+              "usefulness": true,
+              "endogeneity": false,
+              "acquisition": false
+            },
+            "emergent": 0
+          }
+        },
+        "fixed_food0": {
+          "metrics": {
+            "n_eval_per_context": 80,
+            "potential_bits": 0.507410963664697,
+            "trigger_rates": {
+              "0": 1.0,
+              "1": 0.775
+            },
+            "conditional_selectivity": 0.22499999999999998,
+            "specificity_js_bits": 0.8489539005008395,
+            "natural_score": 0.3234048011506666,
+            "do_non_trigger_score": 0.2750464199641666,
+            "usefulness_gap": 0.04835838118649999,
+            "context_usefulness": {
+              "0": 0.19314701174999999,
+              "1": -0.09643024937700007
+            }
+          },
+          "acquisition": 0.0,
+          "verdict": {
+            "passes": {
+              "potential": true,
+              "conditional_selectivity": false,
+              "specificity": true,
+              "usefulness": true,
+              "endogeneity": false,
+              "acquisition": false
+            },
+            "emergent": 0
+          }
+        },
+        "fixed_food1": {
+          "metrics": {
+            "n_eval_per_context": 80,
+            "potential_bits": 0.8112781244591328,
+            "trigger_rates": {
+              "0": 0.0,
+              "1": 0.0
+            },
+            "conditional_selectivity": 0.0,
+            "specificity_js_bits": 0.8380402378251779,
+            "natural_score": 0.2750464199641666,
+            "do_non_trigger_score": 0.2750464199641666,
+            "usefulness_gap": 0.0,
+            "context_usefulness": {
+              "0": 0.0,
+              "1": 0.0
+            }
+          },
+          "acquisition": 0.0,
+          "verdict": {
+            "passes": {
+              "potential": true,
+              "conditional_selectivity": false,
+              "specificity": true,
+              "usefulness": false,
+              "endogeneity": false,
+              "acquisition": false
+            },
+            "emergent": 0
+          }
+        }
+      },
+      "expected": {
+        "learned": 1,
+        "initial_twin": 0,
+        "team_nearest": 0,
+        "fixed_food0": 0,
+        "fixed_food1": 0
+      },
+      "all_expected": false
+    }
+  },
+  "summary": {
+    "n_seeds": 5,
+    "learned_passes": 4,
+    "all_systems_expected_by_seed": {
+      "1201": true,
+      "1202": true,
+      "1203": true,
+      "1204": true,
+      "1205": false
+    }
+  }
+}

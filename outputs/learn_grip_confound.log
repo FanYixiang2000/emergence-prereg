@@ -1,0 +1,41 @@
+seed=0 tau=18: switch=0.992 open_mean=0.593
+seed=0 tau=20: switch=0.872 open_mean=0.470
+seed=0 tau=22: switch=0.724 open_mean=0.382
+seed=0 tau=24: switch=0.583 open_mean=0.319
+seed=0 tau=26: switch=0.437 open_mean=0.259
+seed=0 tau=28: switch=0.334 open_mean=0.224
+seed=1 tau=18: switch=0.995 open_mean=0.587
+seed=1 tau=20: switch=0.910 open_mean=0.483
+seed=1 tau=22: switch=0.755 open_mean=0.377
+seed=1 tau=24: switch=0.580 open_mean=0.313
+seed=1 tau=26: switch=0.451 open_mean=0.263
+seed=1 tau=28: switch=0.353 open_mean=0.221
+seed=2 tau=18: switch=0.996 open_mean=0.552
+seed=2 tau=20: switch=0.893 open_mean=0.447
+seed=2 tau=22: switch=0.725 open_mean=0.342
+seed=2 tau=24: switch=0.568 open_mean=0.295
+seed=2 tau=26: switch=0.444 open_mean=0.247
+seed=2 tau=28: switch=0.346 open_mean=0.215
+seed=3 tau=18: switch=1.000 open_mean=0.647
+seed=3 tau=20: switch=0.951 open_mean=0.524
+seed=3 tau=22: switch=0.787 open_mean=0.408
+seed=3 tau=24: switch=0.634 open_mean=0.346
+seed=3 tau=26: switch=0.474 open_mean=0.272
+seed=3 tau=28: switch=0.359 open_mean=0.233
+seed=4 tau=18: switch=0.974 open_mean=0.578
+seed=4 tau=20: switch=0.844 open_mean=0.459
+seed=4 tau=22: switch=0.688 open_mean=0.377
+seed=4 tau=24: switch=0.533 open_mean=0.303
+seed=4 tau=26: switch=0.411 open_mean=0.256
+seed=4 tau=28: switch=0.312 open_mean=0.208
+{
+  "CC1_fixed_time_mean_auc_ge_0.60": true,
+  "CC1_above_chance_ge_5of6": true,
+  "CC2_fixed_absx_positive_p_lt_0.05": false,
+  "CC3_openness_coef_positive": true,
+  "cc1_mean_auc": 0.9824,
+  "cc1_cells_above_chance": 6,
+  "cc2_pooled_within_cell_corr": -0.1565,
+  "cc2_permutation_p": 1.0
+}
+Wrote /home/Yixiang/MPARL/GOGOGO/outputs/learn_grip_confound.json

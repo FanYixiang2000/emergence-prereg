@@ -1,0 +1,52 @@
+{
+  "summary": {
+    "evidence_level": "summary_level_external_swarm_decoy",
+    "top_controller": "role_oracle",
+    "top_score": 0.8883021490662463,
+    "nearest_score": 0.0,
+    "interpretation": {
+      "local_trap": "nearest target selection follows immediate proximity and damages decoys",
+      "preserved_structure": "role-aware target selection avoids decoys and preserves future win path",
+      "score": "mean_win * decoy_damage_reduction * win_gain_vs_nearest",
+      "limitation": "summary-level grid; not full trajectory distribution collapse"
+    }
+  },
+  "rows": [
+    {
+      "controller": "role_oracle",
+      "mean_win": 0.9988425925925927,
+      "min_win": 0.9976851851851851,
+      "mean_decoy_damage": 0.0001227770885028949,
+      "target_decoy_rate_proxy": 0.0212,
+      "decoy_damage_reduction": 0.9998469593508543,
+      "win_gain_vs_nearest": 0.8894675925925927,
+      "local_trap_avoidance": 0.8893314678948283,
+      "external_decoy_ptc_score": 0.8883021490662463,
+      "source": "/home/Yixiang/MPARL/examples_6.29_MARL_SWARM/outputs/decoy_robustness_grid_marl.json"
+    },
+    {
+      "controller": "role_mined",
+      "mean_win": 0.9988425925925927,
+      "min_win": 0.9976851851851851,
+      "mean_decoy_damage": 0.0001227770885028949,
+      "target_decoy_rate_proxy": 0.0,
+      "decoy_damage_reduction": 0.9998469593508543,
+      "win_gain_vs_nearest": 0.8894675925925927,
+      "local_trap_avoidance": 0.8893314678948283,
+      "external_decoy_ptc_score": 0.8883021490662463,
+      "source": "/home/Yixiang/MPARL/examples_6.29_MARL_SWARM/outputs/decoy_robustness_grid_marl.json"
+    },
+    {
+      "controller": "nearest_only",
+      "mean_win": 0.109375,
+      "min_win": 0.07060185185185185,
+      "mean_decoy_damage": 0.802251488008321,
+      "target_decoy_rate_proxy": 0.8932,
+      "decoy_damage_reduction": 0.0,
+      "win_gain_vs_nearest": 0.0,
+      "local_trap_avoidance": 0.0,
+      "external_decoy_ptc_score": 0.0,
+      "source": "/home/Yixiang/MPARL/examples_6.29_MARL_SWARM/outputs/decoy_robustness_grid_marl.json"
+    }
+  ]
+}

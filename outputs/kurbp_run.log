@@ -1,0 +1,11 @@
+super K=1.5: dBIC=22.877 t*=2.6 onset=True O: 0.996->0.403 r_fin=0.901 t_r90=7.0
+  final ladder: {'C_individual': 0.00022, 'C_pair': 5.94206, 'C_high': 0.00498, 'C_total': 5.94726, 'H_P': 4.01852}
+sub K=0.3: dBIC=23.318 t*=6.8 onset=True O: 0.996->0.996 r_fin=0.076 t_r90=1.4
+  final ladder: {'C_individual': 0.00093, 'C_pair': 0.01238, 'C_high': 0.02856, 'C_total': 0.04187, 'H_P': 9.92391}
+{
+  "KURBP1_onset": true,
+  "KURBP2_persistence": false,
+  "KURBP3_subcritical_null": false,
+  "KURBP4_relational_carrier": true
+}
+Wrote /home/Yixiang/MPARL/GOGOGO/outputs/kuramoto_breakpoint.json

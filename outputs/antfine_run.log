@@ -1,0 +1,8 @@
+large_kick (Q=1.0): drop=0.7743 verdict=hinge_tested b5_onset=False t*=8.0 dBIC=1.323 commit=3/30 med_comp=28.0
+gradual (Q=0.5): drop=0.9058 verdict=hinge_tested b5_onset=False t*=25.0 dBIC=9.964 commit=25/30 med_comp=222.0
+{
+  "AF1_gradual_onset": false,
+  "AF2_large_kick_no_onset": true,
+  "AF3_gradual_lead": false
+}
+Wrote /home/Yixiang/MPARL/GOGOGO/outputs/ant_fine_onset.json

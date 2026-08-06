@@ -1,0 +1,8 @@
+2026-07-21T20:31:04+08:00 proxy OK; starting collapse probe
+2026-07-22T02:10:58+08:00 collapse probe exited (0)
+2026-07-22T02:13:02+08:00 proxy OK; starting collapse probe
+2026-07-22T05:32:03+08:00 collapse probe exited (0)
+2026-07-22T05:34:03+08:00 collapse done; starting tail probe
+2026-07-22T05:38:17+08:00 tail probe exited (0)
+2026-07-22T05:38:47+08:00 both probes done; running hash audit
+PYTHIA69B_PIPELINE_DONE

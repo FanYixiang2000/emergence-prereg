@@ -1,0 +1,95 @@
+training PPO seed 11 ...
+  seed 11 episode 500: return(100) 0.077 cleared(100) 0.00
+  seed 11 episode 1000: return(100) 0.425 cleared(100) 0.74
+  seed 11 episode 1500: return(100) 0.485 cleared(100) 0.95
+  seed 11 episode 2000: return(100) 0.482 cleared(100) 0.95
+  seed 11 episode 2500: return(100) 0.485 cleared(100) 0.97
+  seed 11 episode 3000: return(100) 0.500 cleared(100) 1.00
+  seed 11 episode 3500: return(100) 0.480 cleared(100) 0.96
+  seed 11 episode 4000: return(100) 0.490 cleared(100) 0.98
+  seed 11 episode 4500: return(100) 0.500 cleared(100) 1.00
+  seed 11 episode 5000: return(100) 0.500 cleared(100) 1.00
+  seed 11 episode 5500: return(100) 0.492 cleared(100) 0.97
+  seed 11 episode 6000: return(100) 0.495 cleared(100) 0.99
+  seed 11 episode 6500: return(100) 0.487 cleared(100) 0.96
+  seed 11 episode 7000: return(100) 0.500 cleared(100) 1.00
+  seed 11 episode 7500: return(100) 0.500 cleared(100) 1.00
+  seed 11 episode 8000: return(100) 0.500 cleared(100) 1.00
+{
+  "condition": "trained_seed11",
+  "n_episodes": 30,
+  "early_potential_bits": 0.05887462230721931,
+  "p_win_start": 0.8965277777777777,
+  "p_win_end": 0.898611111111111,
+  "final_win_rate": 0.9,
+  "mean_commit_step": 2.3,
+  "do_gap_median": 0.0,
+  "do_gap_mean": 0.06666666666666667,
+  "do_sign_wins": 2,
+  "do_sign_losses": 0,
+  "do_sign_p": 0.5
+}
+{
+  "condition": "untrained",
+  "n_episodes": 30,
+  "early_potential_bits": 0.2845661260009449,
+  "p_win_start": 0.0,
+  "p_win_end": 0.0,
+  "final_win_rate": 0.0,
+  "mean_commit_step": 15.533333333333333,
+  "do_gap_median": 0.0,
+  "do_gap_mean": 0.0,
+  "do_sign_wins": 0,
+  "do_sign_losses": 0,
+  "do_sign_p": 1.0
+}
+{
+  "condition": "greedy_nearest",
+  "n_episodes": 30,
+  "early_potential_bits": 0.0,
+  "p_win_start": 0.1,
+  "p_win_end": 0.1,
+  "final_win_rate": 0.1,
+  "mean_commit_step": 1.0
+}
+{
+  "condition": "noise",
+  "n_episodes": 30,
+  "early_potential_bits": 0.3198071466770433,
+  "p_win_start": 0.0,
+  "p_win_end": 0.0,
+  "final_win_rate": 0.0,
+  "mean_commit_step": 20.566666666666666
+}
+{
+  "L1_potential": {
+    "trained_early_potential": [
+      0.05887462230721931
+    ],
+    "pass": false
+  },
+  "L2_useful_structure": {
+    "trained_win_rate": [
+      0.9
+    ],
+    "untrained_win_rate": 0.0,
+    "noise_win_rate": 0.0,
+    "pass": true
+  },
+  "L3_counterfactual": {
+    "pooled_do_gap_median": 0.0,
+    "pooled_sign_wins": 2,
+    "pooled_sign_losses": 0,
+    "pooled_sign_p": 0.5,
+    "pass": false
+  },
+  "L4_greedy_contrast": {
+    "greedy_win_rate": 0.1,
+    "greedy_early_potential": 0.0,
+    "trained_min_win": 0.9,
+    "trained_min_potential": 0.05887462230721931,
+    "pass": true
+  },
+  "all_pass": false
+}
+Wrote /home/Yixiang/MPARL/GOGOGO/outputs/lbf_collapse_pilot3.json

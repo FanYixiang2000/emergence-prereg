@@ -1,0 +1,274 @@
+{
+  "preregistration": "EXTERNAL_TRANSFER_PREREGISTRATION.md",
+  "thresholds": {
+    "potential_bits": 0.5,
+    "selectivity_tension": 0.5,
+    "specificity_js": 0.2,
+    "usefulness_gap": 0.0
+  },
+  "n_eval": 120,
+  "train_history": [
+    {
+      "iter": 0,
+      "return": -2.556666666666667,
+      "win": 0.0
+    },
+    {
+      "iter": 20,
+      "return": -2.5150000000000006,
+      "win": 0.0
+    },
+    {
+      "iter": 40,
+      "return": 4.258333333333333,
+      "win": 0.08333333333333333
+    },
+    {
+      "iter": 60,
+      "return": 16.8,
+      "win": 0.3333333333333333
+    },
+    {
+      "iter": 80,
+      "return": 24.5,
+      "win": 0.8333333333333334
+    },
+    {
+      "iter": 100,
+      "return": 21.026666666666667,
+      "win": 0.6666666666666666
+    },
+    {
+      "iter": 120,
+      "return": 19.751666666666665,
+      "win": 0.5833333333333334
+    },
+    {
+      "iter": 140,
+      "return": 25.191666666666666,
+      "win": 0.8333333333333334
+    },
+    {
+      "iter": 160,
+      "return": 25.261666666666667,
+      "win": 0.8333333333333334
+    },
+    {
+      "iter": 180,
+      "return": 25.789999999999996,
+      "win": 0.8333333333333334
+    },
+    {
+      "iter": 200,
+      "return": 25.739999999999995,
+      "win": 0.8333333333333334
+    },
+    {
+      "iter": 220,
+      "return": 22.671666666666667,
+      "win": 0.6666666666666666
+    },
+    {
+      "iter": 240,
+      "return": 26.976666666666663,
+      "win": 0.9166666666666666
+    },
+    {
+      "iter": 260,
+      "return": 26.52333333333333,
+      "win": 0.9166666666666666
+    },
+    {
+      "iter": 280,
+      "return": 25.858333333333334,
+      "win": 0.8333333333333334
+    },
+    {
+      "iter": 299,
+      "return": 21.645,
+      "win": 0.5833333333333334
+    }
+  ],
+  "audited_labels": {
+    "marl_learned": 1,
+    "marl_untrained": 0,
+    "nearest_only": 0,
+    "role_oracle": 0,
+    "damage_aware": 0
+  },
+  "verdicts": {
+    "marl_learned": {
+      "passes": {
+        "potential": true,
+        "selectivity": true,
+        "specificity": true,
+        "usefulness": true,
+        "endogeneity": true
+      },
+      "full_criterion": 1,
+      "audited_label": 1,
+      "agrees": true
+    },
+    "marl_untrained": {
+      "passes": {
+        "potential": true,
+        "selectivity": false,
+        "specificity": true,
+        "usefulness": false,
+        "endogeneity": true
+      },
+      "full_criterion": 0,
+      "audited_label": 0,
+      "agrees": true
+    },
+    "nearest_only": {
+      "passes": {
+        "potential": true,
+        "selectivity": false,
+        "specificity": true,
+        "usefulness": true,
+        "endogeneity": false
+      },
+      "full_criterion": 0,
+      "audited_label": 0,
+      "agrees": true
+    },
+    "role_oracle": {
+      "passes": {
+        "potential": true,
+        "selectivity": false,
+        "specificity": true,
+        "usefulness": true,
+        "endogeneity": false
+      },
+      "full_criterion": 0,
+      "audited_label": 0,
+      "agrees": true
+    },
+    "damage_aware": {
+      "passes": {
+        "potential": true,
+        "selectivity": true,
+        "specificity": true,
+        "usefulness": true,
+        "endogeneity": false
+      },
+      "full_criterion": 0,
+      "audited_label": 0,
+      "agrees": true
+    }
+  },
+  "full_criterion_accuracy": 1.0,
+  "prediction_checks": {
+    "p1_full_criterion_matches_all_audited_labels": true,
+    "p2_damage_aware_excluded_only_by_endogeneity": true,
+    "p3_forced_engagement_gap_sign_flips": true
+  },
+  "measurements": [
+    {
+      "system": "marl_learned",
+      "prespecified": 0,
+      "h0_bits": 1.5041625260016591,
+      "natural_trigger_rate": 0.5,
+      "passive_trigger_rate": 0.0,
+      "aggressive_trigger_rate": 1.0,
+      "selectivity_tension": 1.0,
+      "specificity_js": 1.0,
+      "usefulness_gap": 14.932166666666667,
+      "iv_gap_passive": -20.36066666666667,
+      "iv_gap_aggressive": 22.406999999999996,
+      "natural_score": 26.091000000000005,
+      "natural_win_rate": 0.875,
+      "basin_distribution": {
+        "win_engaged": 0.4,
+        "win_bypassed": 0.475,
+        "loss_engaged": 0.1,
+        "loss_bypassed": 0.025
+      }
+    },
+    {
+      "system": "marl_untrained",
+      "prespecified": 0,
+      "h0_bits": 0.6873150928309273,
+      "natural_trigger_rate": 1.0,
+      "passive_trigger_rate": 1.0,
+      "aggressive_trigger_rate": 1.0,
+      "selectivity_tension": 0.0,
+      "specificity_js": 1.0,
+      "usefulness_gap": -2.2119999999999997,
+      "iv_gap_passive": -21.128,
+      "iv_gap_aggressive": 20.72533333333333,
+      "natural_score": 8.579333333333334,
+      "natural_win_rate": 0.18333333333333332,
+      "basin_distribution": {
+        "win_engaged": 0.18333333333333332,
+        "win_bypassed": 0.0,
+        "loss_engaged": 0.8166666666666667,
+        "loss_bypassed": 0.0
+      }
+    },
+    {
+      "system": "nearest_only",
+      "prespecified": 1,
+      "h0_bits": 0.9603622703154779,
+      "natural_trigger_rate": 1.0,
+      "passive_trigger_rate": 1.0,
+      "aggressive_trigger_rate": 1.0,
+      "selectivity_tension": 0.0,
+      "specificity_js": 1.0,
+      "usefulness_gap": 2.5951666666666675,
+      "iv_gap_passive": -19.38,
+      "iv_gap_aggressive": 25.363999999999997,
+      "natural_score": 14.040500000000002,
+      "natural_win_rate": 0.38333333333333336,
+      "basin_distribution": {
+        "win_engaged": 0.38333333333333336,
+        "win_bypassed": 0.0,
+        "loss_engaged": 0.6166666666666667,
+        "loss_bypassed": 0.0
+      }
+    },
+    {
+      "system": "role_oracle",
+      "prespecified": 1,
+      "h0_bits": 0.999799616411146,
+      "natural_trigger_rate": 0.0,
+      "passive_trigger_rate": 0.0,
+      "aggressive_trigger_rate": 0.0,
+      "selectivity_tension": 0.0,
+      "specificity_js": 1.0,
+      "usefulness_gap": 2.3086666666666673,
+      "iv_gap_passive": -22.08033333333334,
+      "iv_gap_aggressive": 22.89466666666667,
+      "natural_score": 14.066166666666668,
+      "natural_win_rate": 0.5083333333333333,
+      "basin_distribution": {
+        "win_engaged": 0.0,
+        "win_bypassed": 0.5083333333333333,
+        "loss_engaged": 0.0,
+        "loss_bypassed": 0.49166666666666664
+      }
+    },
+    {
+      "system": "damage_aware",
+      "prespecified": 1,
+      "h0_bits": 1.430432360983443,
+      "natural_trigger_rate": 0.5,
+      "passive_trigger_rate": 0.0,
+      "aggressive_trigger_rate": 1.0,
+      "selectivity_tension": 1.0,
+      "specificity_js": 1.0,
+      "usefulness_gap": 3.1813333333333365,
+      "iv_gap_passive": -22.40166666666667,
+      "iv_gap_aggressive": 21.977999999999998,
+      "natural_score": 13.870333333333338,
+      "natural_win_rate": 0.43333333333333335,
+      "basin_distribution": {
+        "win_engaged": 0.016666666666666666,
+        "win_bypassed": 0.4166666666666667,
+        "loss_engaged": 0.48333333333333334,
+        "loss_bypassed": 0.08333333333333333
+      }
+    }
+  ]
+}

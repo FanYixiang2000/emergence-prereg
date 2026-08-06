@@ -1,0 +1,106 @@
+{
+  "status": "canonical exemplars battery; CE-1..CE-5 frozen in the docstring",
+  "boids": {
+    "0.0": {
+      "mean_heading_entropy_contraction_bits": 0.0015609198533807725,
+      "tc3_bits": 0.04231376444586932,
+      "js_do_decouple_bits": 0.0,
+      "natural_order_dist": [
+        0.9616666666666667,
+        0.03833333333333333,
+        0.0
+      ]
+    },
+    "0.25": {
+      "mean_heading_entropy_contraction_bits": 1.2595973674501524,
+      "tc3_bits": 0.523142150662065,
+      "js_do_decouple_bits": 1.0,
+      "natural_order_dist": [
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    "0.5": {
+      "mean_heading_entropy_contraction_bits": 1.5172028772713941,
+      "tc3_bits": 0.8759692867240645,
+      "js_do_decouple_bits": 1.0,
+      "natural_order_dist": [
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    "0.75": {
+      "mean_heading_entropy_contraction_bits": 1.6057413874797806,
+      "tc3_bits": 2.0996606334772308,
+      "js_do_decouple_bits": 1.0,
+      "natural_order_dist": [
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    "1.0": {
+      "mean_heading_entropy_contraction_bits": 1.6429158326090312,
+      "tc3_bits": 2.7027876530618,
+      "js_do_decouple_bits": 1.0,
+      "natural_order_dist": [
+        0.0,
+        0.0,
+        1.0
+      ]
+    }
+  },
+  "schelling": {
+    "0.3": {
+      "mean_segregation": 0.7531507544628906,
+      "js_do_freeze_bits": 4.08213733544085e-05,
+      "natural_class_dist": [
+        0.0,
+        0.4575,
+        0.5425
+      ]
+    },
+    "0.5": {
+      "mean_segregation": 0.9208181391302432,
+      "js_do_freeze_bits": 0.0,
+      "natural_class_dist": [
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    "0.7": {
+      "mean_segregation": 0.9997349162299521,
+      "js_do_freeze_bits": 0.3313975829821747,
+      "natural_class_dist": [
+        0.0,
+        0.0,
+        1.0
+      ]
+    }
+  },
+  "life": {
+    "deterministic_replays_distinct_finals": 1,
+    "h_final_given_init_bits": 0.0,
+    "across_soup_class_entropy_bits": 0.7357948629753385,
+    "class_counts": {
+      "2": 328,
+      "1": 68,
+      "0": 4
+    }
+  },
+  "registered_outcomes": {
+    "CE1_boids_collapse_monotone_in_coupling": true,
+    "CE2_boids_tc3_monotone_and_range": true,
+    "CE3_boids_do_decouple_loadbearing": true,
+    "CE4_schelling_tipping_and_loadbearing": true,
+    "CE5_life_deterministic_substrate_boundary": true
+  },
+  "classification": {
+    "boids_high_coupling": "structural collapse (open initial headings, coupling-monotone contraction, counterfactually load-bearing); NOT adaptive: dynamics prewired, no acquisition",
+    "schelling": "structural collapse with tipping; NOT adaptive: preferences prewired",
+    "life": "substrate pattern formation: deterministic given the soup, no action channel, zero action-attributable collapse by the bridge identity; outside the adaptive scope for a stated reason"
+  }
+}

@@ -1,0 +1,88 @@
+{
+  "status": "observer-contract sensitivity table; registered in V2_ALIGNMENT_PREREGISTRATION.md (CS); reuses saved seed-93001 checkpoints, fresh rollouts, no stored output modified",
+  "contracts": [
+    "none",
+    "layout",
+    "layout_x_timebin (bins of 40)"
+  ],
+  "checkpoints": [
+    640000,
+    1000000,
+    2000000
+  ],
+  "table": {
+    "640000": {
+      "none": {
+        "C_individual": 0.37552,
+        "C_env": 0.0,
+        "C_relational": 0.02373,
+        "C_total": 0.39924,
+        "collapse_norm": 0.07722
+      },
+      "layout": {
+        "C_individual": 0.37552,
+        "C_env": 0.00362,
+        "C_relational": 0.02011,
+        "C_total": 0.39924,
+        "collapse_norm": 0.07722
+      },
+      "layout_x_timebin": {
+        "C_individual": 0.37552,
+        "C_env": 0.00386,
+        "C_relational": 0.01987,
+        "C_total": 0.39924,
+        "collapse_norm": 0.07722
+      }
+    },
+    "1000000": {
+      "none": {
+        "C_individual": 0.51367,
+        "C_env": 0.0,
+        "C_relational": 0.04618,
+        "C_total": 0.55985,
+        "collapse_norm": 0.10829
+      },
+      "layout": {
+        "C_individual": 0.51367,
+        "C_env": 0.03712,
+        "C_relational": 0.00906,
+        "C_total": 0.55985,
+        "collapse_norm": 0.10829
+      },
+      "layout_x_timebin": {
+        "C_individual": 0.51367,
+        "C_env": 0.03717,
+        "C_relational": 0.00901,
+        "C_total": 0.55985,
+        "collapse_norm": 0.10829
+      }
+    },
+    "2000000": {
+      "none": {
+        "C_individual": 0.34878,
+        "C_env": 0.0,
+        "C_relational": 0.06625,
+        "C_total": 0.41503,
+        "collapse_norm": 0.08028
+      },
+      "layout": {
+        "C_individual": 0.34878,
+        "C_env": 0.05692,
+        "C_relational": 0.00932,
+        "C_total": 0.41503,
+        "collapse_norm": 0.08028
+      },
+      "layout_x_timebin": {
+        "C_individual": 0.34878,
+        "C_env": 0.05683,
+        "C_relational": 0.00942,
+        "C_total": 0.41503,
+        "collapse_norm": 0.08028
+      }
+    }
+  },
+  "registered_outcomes": {
+    "CS1_relational_stable_across_declared_E_factor3": true,
+    "CS2_hidden_E_inflates_relational": true
+  }
+}

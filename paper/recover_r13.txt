@@ -1,0 +1,1271 @@
+        Useful possibility collapse identifies adaptive
+          emergent structure in learning systems
+                                                [Authors]
+                                               [Affiliations]
+
+
+
+                                                Abstract
+      Emergence is used to describe abrupt abilities, collective coordination, representational phase
+      changes, synergy and macro-causal efficacy, yet these signatures often disagree. We propose an
+      intervention-aware framework that identifies adaptive emergence in learning systems as useful
+      possibility collapse: the endogenous formation and stabilization of a valuable macro-structure
+      in an open conditional future distribution. A known trajectory-space information substrate
+      fixes what is measured; two layered criteria—structural collapse and adaptive qualification, six
+      components in all—supply the verdict. The same components and thresholds identify learned
+      systems while rejecting scripted and initialization controls in three domains (swarm control,
+      contextual foraging and a latent-context sequence model), and multivariate combinations of
+      prior emergence measures, given equal degrees of freedom, fail to transfer to fresh systems.
+      In uncurated human chess, a future-distribution score prospectively discovers value-critical
+      decisions across two months (AUROC 0.730 and 0.725). Structural verdicts survive a change of
+      observer contract; value verdicts are contract-relative, as the framework declares. Emergence
+      becomes testable rather than curve-read.
+
+
+    “Emergence” may be the most load-bearing and least agreed-upon word in the science of
+complex and learning systems [1, 2, 3, 4, 5, 6]. Four communities measure it four ways: abrupt
+performance curves in large language models [8, 9, 10, 11, 7, 22, 23], sudden representation
+jumps, informational synergy [15, 16, 17, 14, 18, 21], and macro-level causal efficacy under
+intervention [13, 19, 20].
+    These are not four estimators of one agreed-upon quantity but distinct operational definitions
+that yield conflicting verdicts: Wei et al. [7] call LLM abilities emergent; Schaeffer et al. [12]
+show the same curves can be artifacts of the metric and sampling grid, and no performance curve
+carries information about where an ability came from. Synergy and causal-emergence measures
+quantify macro-structure without encoding whether it was selected by the system, useful in
+context, or acquired rather than imposed. Here we organize these signatures on systems with an
+explicit trajectory law and value structure: each audited quantity is a deterministic functional of
+the same trajectory-law family (Proposition 4), yet none of them—alone (Proposition 1), in exact
+published form on fully enumerated chains, or in fitted multivariate combination—reproduces
+the predeclared labels on a controlled battery, because no projection retains the value sign, the
+conditional selectivity, and the provenance of the collapse together.
+    What, then, do we propose to measure? The claim is deliberately scoped: we do not
+offer an observer-free definition of all emergence in nature, but an identification framework for
+adaptive emergence acquired during learning. Its layers are explicit. A system holds an open
+possibility space—many future basins with non-trivial probability; an endogenous trigger —an
+action or learning event chosen by the system, often locally costly—collapses that distribution
+selectively (conditioned on context) and specifically (triggered futures differ from non-triggered
+ones). This much is structural collapse, and it can occur in harmful or prewired systems. The
+event qualifies as adaptive emergence only when the collapse is also useful (a positive value
+do-contrast, assessed through model-based interventions [43]), endogenous and acquired rather
+
+
+                                                     1
+than prewired. In one sentence: adaptive emergence is the stabilized, useful collapse of an
+acquired behavioural structure in an open possibility space. Six components—potential, selectivity,
+specificity, usefulness, endogeneity, acquisition—make this falsifiable; thresholds were frozen
+before the confirmatory measurements to which they applied. The layering preserves what a
+single conjunction would flatten: harmful collapse and scripted coordination are structurally
+emergent but not adaptive, and both cases are measured systems in our batteries rather than
+rhetorical categories.
+    The mathematical starting point is honest about its lineage. The trajectory-space object
+we use is a standard specific-information quantity, the same posterior–prior divergence that
+defines Bayesian surprise [44, 45]; related future-facing quantities—empowerment as an action–
+future channel capacity [47, 48], causal path-entropy forces [49], and semantic information as
+viability-relevant syntactic information [46]—have long used information and intervention to
+separate valuable from incidental structure. What these frameworks do not supply, and what
+this paper adds, is an identification protocol for when a selective, valuable, acquired contraction
+of the future distribution should count as emergence: the substrate is known mathematics; the
+contribution is the layered criterion, its falsification battery, and its cross-domain transfer under
+frozen thresholds.
+    We evaluate the account by exclusion, transfer and prediction. A controlled battery shows
+that named imitations fail exactly the components they are built to fail, and that neither
+single prior signals nor their fitted multivariate combinations transfer to fresh systems. The
+full six-component conjunction confirms under frozen thresholds in three system families—an
+external swarm, Contextual Level-Based Foraging, and a latent-context sequence model—with
+initialization twins and seed-level inference. Scoped instruments extend the framework to
+systems we did not create: the process proxy recovers grokking [26, 27] and induction-head
+formation [36, 37] and selected transitions in public MultiBERTs [38] and Pythia [39] series while
+rejecting gradual controls; an event-level chess test performs prospective discovery in uncurated
+play; and a derived phase boundary forecasts where emergence appears in a parametrized family.
+Registered failures are retained and delimit scope, including the martingale lesson that converged
+policies price their own triggers into the baseline, so useful collapse in that regime is visible only
+through do-contrasts.
+
+
+1    Results
+A trajectory-space framework for emergence
+The substrate: a known information quantity. Let τ be a system trajectory with prior law
+P (τ )—the open possibility space—and let M record which basin, ability or outcome materialized.
+The trajectory-space information associated with observing structure m is
+                                     (︁            ⃦      )︁
+                          C(m) = KL P (τ | M =m) ⃦ P (τ )       [bits].                      (1)
+
+Equation (1) is not new mathematics and is not, by itself, a definition of emergence: it is the
+specific-information form of Bayesian surprise [44, 45], and it depends only on how rare the realized
+macro-outcome is (Em C(m) = I(τ ; M ); for deterministic readouts C(m) = − log2 P (Am )). Its
+role here is to fix the space on which emergence claims must live—distributions over futures, not
+points in representation space or scores on a metric. Three statistics that the word “collapse”
+could conflate are connected by an exact bridge:
+Proposition 0 (Collapse bridge). At a declared step with action distribution π and a fixed
+rollout law thereafter (so that choosing a and do(a) induce the same future law), the action-
+attributable prospective contraction H(Pt (B)) − Ea∼π H(P (B | do(a))), the π-averaged inter-
+ventional divergence Ea∼π KL(P (B | do(a)) ∥ Pt (B)), and the expected retrospective update
+Eb KL(π(A | B=b) ∥ π(A)) all equal I(A; B). A deterministic policy has I(A; B) = 0.
+
+                                                  2
+    The bridge separates system-driven collapse from ordinary information revelation: every
+resolving stochastic process concentrates its posterior, but only the contraction attributable to
+the system’s own action choice is common to all three readings, and it vanishes for deterministic
+controllers—which is why greedy decisions carry no potential, and why all measurements below
+use the prospective, interventional forms (identities verified to machine precision on 10,000
+random systems and on trained trigger steps; Methods).
+    The substrate also shows why it cannot carry the verdict alone: on the fully enumerated
+battery chains, raw path-space KL is large in controls too (converged team 32.2 bits, shaped
+process 31.9 bits), and only the declared value-bearing basin projection separates the accepted
+system (32% of its trajectory-level contrast retained, against 3% and 0.01% for controls). The
+discriminating content lives in the observer contract—a basin partition B = g(τ ) that resolves
+the candidate macro-structure, a value function, a rollout policy, interventions and a time
+resolution—and in the component criteria built on it. This is the architecture of the framework,
+not a limitation discovered after the fact: known substrate, declared contract, layered criteria.
+    Layered identification criteria. A collapse event is scored under a declared observer
+contract in two layers:
+
+Definition 1 (Structural collapse). An episode-level event is a structural collapse iff it has
+(1) Potential, an open future before the event; (2) Selectivity, context-dependent rather than
+unconditional collapse; and (3) Specificity, triggered futures that differ from non-triggered
+futures.
+
+Definition 2 (Adaptive emergence). A structural collapse qualifies as adaptive emergence iff it
+also has (4) Usefulness, a positive value do-contrast; (5) Endogeneity, a trigger chosen by the
+system rather than imposed; and (6) Acquisition, a gain over the system’s own initialization.
+
+    The two layers are not decoration: harmful collapse (a decoy trap) and scripted coordination
+are structural collapses that fail the adaptive layer, and both are measured systems below. The
+layering also predicts an asymmetry that we test directly: structural components are properties
+of the future distribution and should survive a change of observer contract that still resolves the
+macro-structure, whereas usefulness is value-relative by declaration and may not.
+    Where six components are unavailable, we use scoped instruments instead: chess is an
+event-level test without acquisition, non-contextual deep MARL is a mechanism-level do-contrast
+test, and checkpoint series use a separate four-component process proxy in which burstiness
+measures acquisition velocity, not emergence magnitude (Table 2). The six components are
+identification criteria motivated by the substrate and validated by falsification below; they are
+not claimed to be uniquely derivable from Eq. (1).
+    The exclusions are empirical, not stipulated: deterministic greedy controllers have no open
+future; gradual frequency learning fails the burst component of the process proxy; scripted, forced
+and prewired systems fail provenance; memorization and harmful traps collapse possibilities
+without useful do-contrast. The verdict is a conjunction for a measured reason: a large factor
+would otherwise buy back a deficient one. Thresholds and analysis windows were frozen in code
+and per-domain author-maintained protocols before each confirmatory measurement; throughout,
+“registered” means internally frozen in these hash-anchored records—no protocol was third-
+party registered and no external timestamp is claimed, with one exception: the Overcooked-AI
+confirmation protocol carries a public timestamp that predates every confirmatory measurement
+(Methods).
+    Figure 1 gives the conceptual picture: four regimes of Pt (B | st ) that performance or
+representation jumps conflate—forced convergence (the future was never open), structureless
+openness (open but never collapses), harmful collapse (a structural collapse that fails the adaptive
+layer), and useful possibility collapse. Only the last is adaptive emergence under Definition 2,
+and each of the other three is a measured system in our battery, not a hypothetical.
+
+
+                                                 3
+Figure 1: Four regimes of the future-basin distribution, and one measured identification case.
+a, The observer’s future-basin distribution Pt (B | st ) separates regimes that performance or representation
+jumps conflate: forced convergence fails Potential; structureless openness fails Selectivity and Usefulness;
+harmful collapse is structural but not adaptive (fails Usefulness); useful possibility collapse passes all
+components, and the do-blocked counterfactual (dotted) shows the future would otherwise have stayed
+open. b, Where each component is read off, on one stored Contextual LBF case (fresh seed 1101):
+per-context trigger rates against the initialization twin give selectivity (0.96 vs 0.01) and acquisition
+(+0.95); potential, do-contrast specificity and the value do-contrast clear their frozen thresholds (dashed);
+and the layered checklist accepts the learned policy while rejecting the twin, a competent scripted controller
+(fails exactly the adaptive layer) and a fixed rule.
+
+
+Prior signatures diverge on a controlled battery
+Proposition 1 (Single-observable insufficiency on the audited battery). For each tested scalar
+observable O ∈ {potential H(P0 ); collapse burst; specificity JS; usefulness gap; representation
+jump; causal-emergence EI}, no one-sided threshold reproduces all predeclared labels on the
+measured battery. The best hindsight-selected threshold accuracies are 0.800–0.900.
+
+    The result follows by exhaustive threshold sweep, with measured witnesses in Methods
+(Table 3). Representation distance illustrates all three failure modes at once: the harmful decoy
+has the same jump (0.102) as the true conditional emergence (usefulness +3.43 vs −8.39; a norm
+carries no sign), the genuine case jumps less than reward-shaped (0.403) and converged-team
+(0.328) controls, and a noisy learner with the same selective structure jumps 13.7× farther.
+Collapse upper-bounds the jump (Proposition 2): a jump certifies that the distribution moved,
+never where it landed nor who moved it.
+    On the designed battery the component conjunction scores 1.000 against predeclared labels
+(Fig. 2a); after one registered selectivity failure and a disclosed refinement, the frozen rule
+confirms on a fresh internal seed (10/10) and on 25/25 fresh external swarm verdicts with
+measured acquisition (Methods). Dropping selectivity, usefulness or endogeneity re-admits its
+named counterexample; every single prior observable, even at its hindsight-optimal threshold,
+
+
+                                                      4
+caps at 0.800–0.900 (Fig. 2a,b).
+    Exact rival formalisms within declared candidate families. Because charitable proxies
+could misrepresent the rival definitions, we also computed Hoel’s EI/CE and Rosas’ Ψ exactly,
+with zero Monte-Carlo error, on fully enumerated policy-closed Markov chains of all ten systems
+(up to 75,004 states)—exact evaluations within predeclared restricted candidate families, not
+exhaustive searches over all coarse-grainings or features. Exact CE (over a five-member coarse-
+graining family containing the mechanistically privileged partitions) is negative for every system;
+its best threshold is the trivial all-negative classifier (accuracy 0.8, missing both positives). Exact
+Ψ (maximized over four supervenient features and two micro decompositions) scores 0.3 under its
+published sign rule, its top scorer is the wrong-selector system (+0.59), and its hindsight optimum
+requires inverting the published sign convention while still missing the true conditional emergence
+(Fig. 2c). The blind spots—no access to value sign, natural selectivity, or provenance—are
+structural on this testbed.
+    A graded measurement from the rarity identity. Beyond the binary verdict, the
+substrate predicts a gradient no audited signature supplies: for the same acquired macro-structure,
+the less the training signal biases search toward it, the rarer it is under that provenance’s early
+search distribution (C = − log2 P ). Tested with one macro-pattern under three provenances,
+the seed-mean ordering is as predicted—scripted 0 < process-shaped 0.39 < outcome-only 0.65
+bits—with outcome-only discovering the pattern twice as late at matched final competence.
+Three quantities a single “strength” number would conflate behave differently and are reported
+separately: outcome rarity under the open-space reference is identical for all provenances by
+construction (6.3 bits); provenance rarity and discovery time order them; structural magnitude
+(final-policy do-contrast specificity) is indistinguishable. A companion prediction failed and is
+retained: collapse suddenness does not order the provenances—both acquisitions are step-like—so
+this quantity is a provenance-adjusted discovery surprise, not a universal emergence magnitude
+(Extended Data Fig. 13).
+    Harmful emergence and matched provenance. Two constructions make the layering
+load-bearing (nine registered predictions, all passed). A policy trained on an exploiter reward
+learns a harmful structure on 5/5 seeds: it selectively lures its partner onto the decoy in exactly
+the harmful context, passes every structural component, and its value do-contrast is +7.5 under
+the declared beneficiary’s value while −2.0 under the team value—structurally emergent under
+both values, adaptive only for its beneficiary. And four systems with matched natural behaviour
+(script, behavioural clone, shaped and outcome-only learners; pattern probability ≥ 0.99 for all)
+separate what a provenance flag alone could not: the do-contrast distinguishes the clone from its
+source (specificity 0.38–0.45 vs 1.0 bits—forcing the clone off its training distribution exposes
+states it never memorized); acquisition separates static from trained provenance; and provenance
+rarity orders the trained routes (clone 0.33 < shaped 0.39 < outcome-only 0.65 bits).
+    A continuous profile under the certificate. The binary certificate prevents dimensional
+compensation; a continuous record answers how strongly, how abruptly and in which direction.
+Each system receives a declared vector—normalized potential, selectivity, causal magnitude (the
+do-law divergence), signed value effect, acquisition and temporal
+                                                              √        abruptness—with multiplicative
+summaries Estruct = (P S M )      1/3 and Eadapt = Estruct Q tanh(V /σV ) whose aggregation was
+fixed before calibration and never fitted to labels. Two construct calibrations support the
+record. On synthetic processes whose generator independently controls total reorganization and
+acquisition steepness, magnitude responds only to the former and abruptness only to the latter
+(cross-axis ranges < 10−4 ; the original rank-based cross-term rule failed on constant-series jitter
+and is retained as a recorded miss). Under graded interventions, measured magnitude and value
+degradation both track block strength monotonically (Spearman 1.0 on 5/5 seeds)—the score
+follows graded causal destruction, not a repackaged threshold. Assembled read-only from stored
+outputs, the taxonomy separates along different axes as declared: the learned system is high on all
+axes; the harmful learner has identical structure with opposite value sign under the two declared
+
+
+                                                  5
+values; the scripted controller has structure without acquisition; the behavioural clone loses
+causal magnitude relative to its source (0.42 vs 1.0) at matched natural behaviour. Two further
+audits bound what the record can and cannot do, each with a retained miss. Across the five
+stored observer contracts the learned-seed ranking of the structural score is stable (mean pairwise
+Spearman 0.76), but the registered structure-only class-separation rule failed: the competent
+scripted coordinator is structurally high by design, so no structure-only score separates learned
+from scripted—the layered definition’s own claim, re-derived by the continuous record (on the
+adaptive score, which includes acquisition, learned seeds are 15/15 positive and controls are zero
+by construction). And a predictive-validity battery on outcome-variable boundary cells failed as
+registered: early causal magnitude does not predict final acceptance (AUROC 0.63, below early
+performance at 0.78), because structure saturates early at the boundary; descriptively, the early
+value component of the same record is the strongest predictor (0.81), consistent with boundary
+acceptance flipping through usefulness.
+    Multivariate prior-signal baselines with equal freedom. Comparing one scalar against
+a six-threshold conjunction would be asymmetric, so we gave the prior signals equal or greater
+freedom and tested generalization rather than fit. Hindsight AND-rules over pairs or triples
+of prior signals, logistic regression and a depth-2 tree on all signals (including exact EI and
+Ψ) reach 0.9–1.0 in-sample, drop to 0.7–0.8 under leave-one-out CV, and—frozen and applied
+to a fresh-seed battery on which the frozen six-component protocol had already scored 10/10—
+transfer at 0.7–0.9, with every baseline misclassifying the true conditional emergence; our own
+two-component AND-rules transfer no better (0.7–0.8). What the projections lack is not fitting
+capacity but the selectivity, value and provenance information they discard (Fig. 2d).
+
+Possibility collapse within single episodes
+The definition is about futures, so it is measured while the future is still open: within single
+episodes we estimate Pt (B | st ) by rollouts and apply do-operators at the trigger step (Extended
+Data Fig. 9). The same action yields positive return gaps in the rescue context and negative
+gaps in the bridge (decoy) context—the directional content no unsigned jump carries. The basin
+partition is not hand-picked: label-free clustering recovers the designed basins with purity 1.00
+in all displayed regimes (one registered partial failure on pure-team loss episodes is retained).
+A neural replication reproduces the sign structure, and neural embedding jumps track collapse
+bursts (correlation 0.87–0.90, peak alignment 1.0)—the representation jump appearing exactly
+where Proposition 2 says it must, as a downstream symptom.
+Proposition 2 (Collapse bounds representation jump). Let Rt = EB∼Pt [ϕ(B)] for a feature map
+ϕ, Jt = ∥Rt − Rt−1 ∥2 , and Kt = KL(Pt ∥ Pt−1 ) in bits. Then
+                                                              √︂
+                        Jt ≤ diam(ϕ) TV(Pt , Pt−1 ) ≤ diam(ϕ) ln22 Kt .                   (2)
+
+     Burst-like collapse can produce representation jumps—which is why jump-based observables
+fire when collapse happens—but the converse fails: a large Jt certifies only that the distribution
+moved, not that the movement was a useful collapse. The bound was verified numerically at
+every step of every trajectory in four training regimes and both grokking conditions.
+Proposition 3 (Counterfactual necessity credits selectivity). Let a system trigger with probability
+pc in context c (contexts drawn with probability wc ), and let Vc (a) be the expected return under
+a ∈ {trigger, non-trigger}. With U = E[return | behavior] − E[return | do(non-trigger)],
+                               ∑︂      (︁                               )︁
+                          U =     wc pc Vc (trigger) − Vc (non-trigger) .                       (3)
+                                 c
+
+   A selective system (pc ≈ 1 where the trigger helps, ≈ 0 where it harms) receives the full
+positive terms and none of the negative ones: U measures exactly the value of the selection
+
+                                                6
+structure. A blind system receives the sign of the marginal effect—which is why blind triggering
+can show positive U in environments where triggering helps on average, and why usefulness
+alone cannot replace selectivity. Equation (3), applied with the closed-form Vc of a parametrized
+environment, is also what powers the within-family prospective parameter forecast of Section 1.
+
+Process probes detect acquisition in public models
+A definition of emergence in learning systems must also account for acquisition over training.
+Here the event is a checkpoint transition rather than a do-blockable action, so we use the separate
+process proxy from Table 2: potential before the window, a collapse burst in the future-basin
+distribution, usefulness gain on a fixed evaluation battery and controls that share either collapse
+or performance symptoms. This proxy measures acquisition velocity; it is not a stand-alone
+emergence verdict.
+    The proxy first recovers two cases with independently studied mechanisms (Extended Data
+Figs. 3, 4, 10). Grokking transitions in three architecture families pass the frozen potential,
+burstiness and usefulness thresholds, while the memorization phase in the same run is rejected:
+held-out entropy collapses (6.6 → 2.8 bits) with no accuracy gain. The two-layer attention-only
+model that can implement induction passes all components (copy accuracy 0.987); the one-layer
+architecture that cannot fails usefulness (0.112).
+    On public series the same protocol transfers as a resolution-limited instrument. MultiBERTs
+subject–verb agreement collapses from a 14.7-bit masked-verb space in a burst coinciding with
+the accuracy jump 0.50 → 0.98 on all five published seeds, with paired controls rejected; Pythia
+decoders repeat the accept/reject double dissociation at four scales while both frequency-tail
+families are rejected at every scale. The held-out 2.8B run marks the boundary: usefulness
+passes but burstiness fails (3.2 < 5) because collapse is spread across several early checkpoints,
+and every checkpoint thinning flips the verdict back (retained S7 failure)—checkpoint spacing
+makes abruptness non-identifiable there, a measured resolution limit, not the absence of a
+transition. An ordinary supervised learner is accepted by the proxy in 6/6 runs, confirming it
+as an acquisition-shape instrument, never a stand-alone emergence verdict. Hash audits of all
+public checkpoints, including two upstream defects detected and quarantined at 2.8B, back these
+numbers (Extended Data Figs. 10, 8).
+
+Confirmation and parameter extrapolation in multi-agent systems
+Mechanistic transfer in deep MARL. Multi-agent systems are a canonical setting for
+unprogrammed coordination [31, 32, 33, 34, 35]. In PettingZoo simple spread, trained MAPPO
+policies hold 1.4–1.6 bits of early potential (untrained and noise policies are even more open
+and correctly fail to qualify), and forcing one agent toward its eventual assignment rather than
+blocking it shifts the bijection-basin probability positively in every policy seed. Because the
+training-population unit is the seed, we report seed-level inference (Fig. 4a): all six simple spread
+seeds are positive (sign test p = 0.016; cluster-bootstrap mean [0.032, 0.156]), and all eight
+Level-Based Foraging seeds are positive (p = 0.004; [0.159, 0.390]), with the three-seed registered
+runs and the post-hoc extensions distinguished throughout. The registered win-shift prediction
+failed in both tasks, reproducing the martingale lesson. A detector comparison including a
+hand-coded cooperator shows why performance or structure alone is not a verdict: the scripted
+cooperator matches or exceeds learned policies on win rate, specificity, Ψ and EI, but is rejected
+by provenance.
+    Full six-component confirmation across domains. The first full-criterion external
+transfer, in the continuous swarm benchmark, classified 25/25 fresh verdicts. We then froze a
+Contextual LBF protocol after two disclosed pilots. The environment’s dynamics, observations,
+actions and sparse rewards are unchanged; the wrapper only balances two unlabeled geometric
+contexts. Nine of ten learned policies pass all six components; the retained miss is seed 1104
+
+
+                                                 7
+(conditional selectivity 0.4875 < 0.5). All ten learned policies have the predicted context ordering
+and positive usefulness/acquisition, all 40 initialization/scripted controls reject, and the competent
+team-nearest controller passes all behavioural components while failing exactly endogeneity and
+acquisition on every seed. Five additional post-confirmation seeds support the same direction
+(4/5 learned passes, 20/20 controls rejected) but are not pooled with the frozen result (Fig. 3a,b).
+     This domain also carries the stability and observer tests. Under horizon changes and
+observation noise up to σ = 0.2, activation and causal retention stay high (Ract ≈ 1.00, Rcausal =
+0.82–1.00; twins never acquire the structure, 70/70 cells); novel geometries expose the boundary
+(activation retention 0.37, causal usefulness negative on all ten seeds). Random observer partitions
+cannot manufacture a verdict (full acceptance rate zero across 13 controls × 1,000 groupings). A
+stronger test replaces random partitions with a second plausible contract, declared in advance:
+horizon 12, undiscounted success as value, and speed-refined basins that still resolve the trigger.
+Re-scoring all 75 stored systems under frozen thresholds gives exactly the asymmetry the layered
+definition predicts: no control is accepted under either contract (60/60), the structural layer
+agrees on 14/15 learned seeds, and the five learned flips are all conservative and concentrated in
+the declaredly value-relative usefulness component (Extended Data Fig. 12). Structural collapse
+travels across reasonable contracts; adaptive qualification is relative to the declared value—a
+property of the definition, now measured rather than asserted.
+     Three further audits ask whether the possibility space must be hand-made at all. Machine-
+partitioned basins from behavioural summary features reproduce the verdicts (60/60 controls,
+14/15 learned, 74/75 agreement); a stricter cross-fitted audit—low-level coordinates, actions
+and reward sequences only, partition fitted on a training half, cluster count by silhouette, four
+clustering methods—rejects 60/60 controls under every method and agrees with the hand-basin
+protocol on 95.7% of verdicts. A rollout-model audit shows openness is not a decoding artifact:
+under near-greedy decoding every learned seed retains ≥ 0.5 bits of potential and twins are
+rejected under all models; the diffuse-model prediction failed on 7/15 seeds and is retained
+(injected noise perturbs the behaving policy itself; Methods declares the epistemic/behavioural
+boundary). Pooling the seven stored contracts into an ensemble gives each system an acceptance
+rate: all controls are contract-invariant negative (420/420), 10/15 learned seeds are accepted
+under ≥ 6/7 contracts, and the relative band is exactly the known borderline cases.
+     Real systems cannot be simulated exactly, so a closure experiment replaces the simulator with
+learned world models (tabular MLE transition models from 200–20,000 on-policy trajectories,
+five independent models per size, three policy seeds). Calibration to the simulator improves
+monotonically with data, and at the largest size every model verdict matches the simulator
+verdict. The registered decidability rule—ensemble disagreement as the error proxy—failed and
+is retained: data-starved models share the same bias, so their mutual spread stays small while
+all five reach the same wrong verdict. A disclosed follow-up rule that adds model coverage (the
+fraction of probe rollouts hitting unseen state–action pairs) eliminates every silent wrong verdict
+at every data size, at the cost of abstaining even where verdicts are in fact correct. Verdicts from
+imperfect models are reliable when data is adequate, and the tested simulator-free decidability
+proxies are either bias-blind or conservative—a measured boundary.
+     A sequence-domain full-criterion test. To test the protocol beyond embodied RL, we
+froze a latent-context sequence task for a small causal transformer trained only by next-token
+prediction: the context is never labelled, the valued continuation rule differs by context, decoding
+interventions force or forbid the first continuation token, and an initialization twin supplies
+acquisition. Across ten fresh seeds, learned transformers pass all six components (10/10), all 40
+controls reject, and seed-bootstrap lower bounds are positive for usefulness (0.481) and acquisition
+(0.918) (Fig. 3c). One route prediction failed informatively: the deterministic oracle router is
+intervention-inert, so it fails specificity and usefulness in addition to provenance. A frozen
+generalization audit reproduces the boundary pattern of Contextual LBF; marker positions
+outside the training range collapse selectivity. The sequence domain is a controlled next-token
+
+
+                                                  8
+setting, not a claim about natural language.
+    The framework forecasts. Definitions postdict; mechanisms predict. Applying Propo-
+sition 3 with the closed-form payoffs of the parametrized gridworld yields derived boundaries
+before training: behavioural onset of the trigger at goal reward G = 5, usefulness sign change
+at G = 9, second onset at G = 11 (boundaries registered in advance). Independent learners
+trained at G ∈ {3, 5, 7, 9, 11, 13, 16} then reproduced the derived phase structure: no structure
+for G ≤ 5; a selective-but-harmful phase at G = 7—the wrong-selector pattern arising naturally
+from payoffs, rejected via usefulness as the framework requires; and accepted emergence above
+the G = 9 analytical usefulness boundary. The primary registered run matched all four non-tie
+grid points; three independent-seed replications matched 11/12 non-tie points (91.7%), with
+one false acceptance at G = 7. The outer phases were stable (reject at G ≤ 5, accept at
+G ≥ 13 in 3/3 seeds); registered tie points G ∈ {5, 9, 11} were not scored. A two-dimensional
+extension derives a non-rectangular acceptance surface over goal reward and context mix before
+training—acceptance requires both a sufficient payoff and a sufficient context frequency—and 80
+independent learners (16 cells × 5 seeds) match the derived verdict on 14/15 non-fragile cells by
+seed majority, reproducing the predicted interaction (within G=10 the verdict flips along the
+context axis; within low context weight it flips along the payoff axis). The registered all-cells
+prediction failed by one cell (G=13, context weight 0.25: 2/5 seeds acquire the structure; low
+context frequency makes discovery itself stochastic) and is retained. The experiments support a
+forecasted transition region rather than an exact noise-free boundary (Fig. 4b).
+
+Prospective discovery in uncurated chess play
+Chess supplies candidate events and an evaluator not produced by the authors [29, 30]: human
+annotations nominate costly candidate key moves, and an engine supplies the counterfactual future
+distribution. On 240 externally annotated sacrifices and 120 quiet controls under an internally
+frozen protocol, the key moves show the event-level signature (Fig. 5a). They are locally costly
+(median −3.0 pawns against the best reply; 80.0% [74.6, 85.0] strictly costly), counterfactually
+decisive (P (win | do(key)) − P (win | do(best-alternative)) mean +0.539 [0.508, 0.570], positive
+in 240/240 positions), and not mere openness: quiet positions are more open (+0.764 bits) yet
+no single move usefully collapses them—the opportunity is a property of the state–action pair.
+All core conclusions hold in 12/12 robustness cells over temperature, depth, basin thresholds
+and a classical engine (Extended Data Fig. 11). One frozen prediction failed informatively: the
+behaving policy’s future does not improve after the key move because the engine prices the move
+into its own baseline—Pt (win) is a martingale—and the identical failure appeared independently
+in the deep-MARL win-shift prediction above, forcing the do-contrast principle stated in the
+Introduction.
+    Recovery is not discovery, so a separately frozen protocol sampled 400 uncurated positions
+per month from public dumps (population filters only), scored them with the shallow observer
+alone (potential and the future-basin do-gap between the depth-4 first and second candidate
+moves), and labelled them afterwards with a deep-search referee that never feeds back into
+the scores. All four frozen predictions passed in both months (Fig. 5b): the do-gap ranks
+value-critical decisions at AUROC 0.730 and 0.725, beats tactical (0.635) and material (0.589)
+baselines, and the frozen flag lifts precision 2.5× and 3.0× over base rate with median flagged
+potential 1.9 bits. Because movers repeat within a month, inference is also reported at the
+mover-cluster level: the cluster bootstrap gives AUROC intervals [0.615, 0.829] and [0.613, 0.834],
+wider than position-level intervals but excluding chance by a clear margin. The engine-native
+eval-gap baseline is not distribution-stable (0.762 → 0.652 across months) while the do-gap
+is unchanged. Four referee-family checks bound the remaining circularity, two passing and
+two retained as informative failures. A classical (pre-NNUE) referee leaves the signal intact
+(AUROC 0.743 and 0.669), and mover-cluster bootstrap intervals exclude chance. An engine-free
+realized-outcome referee is directionally consistent (humans play the shallow-best move far more
+
+                                                9
+often at flagged positions, 0.53 vs 0.34 and 0.43 vs 0.27, with positive realized-score gains) but
+its registered interaction is an underpowered null (permutation p = 0.54; one decision 20–60
+plies before the end is washed out by subsequent play at these rating bands). A different-lineage
+engine referee (Toga II, Fruit family) fails the frozen transfer rule (0.663 and 0.534; retained):
+its compressed evaluation scale yields 3–5 positives per month and degrades every predictor
+including the engine-native baseline, so the check cannot separate predictor non-transfer from
+weak-referee label noise. A lineage-independent referee of comparable strength remains open
+(CHESS DISCOVERY PREREGISTRATION.md).
+
+Prior emergence signatures as low-dimensional projections
+Proposition 4 (Coverage and insufficiency of audited signatures). Let P = {P (τ | c, do(w))} be
+the intervened family of trajectory laws over contexts c and interventions w (including none),
+together with the observer’s declared value, representation, macro-feature and micro-decomposition
+maps. Then: (i) Derivability. Each audited emergence quantity— performance jump (Wei et al.),
+representation jump, Hoel’s exact EI and CE, Rosas’ exact Ψ, and PID synergy—is a deterministic
+functional Q = FQ (P), obtained by coarse-graining τ and/or restricting the intervention set, then
+applying a fixed information-theoretic or metric map. (ii) Audited verdict insufficiency. None
+of these scalar functionals, under either its published sign rule or a hindsight-optimal one-sided
+threshold, reproduces all predeclared labels on the battery. This is an empirical statement about
+the declared testbed and candidate families, not a universal ranking theorem.
+
+    Derivability alone is weak—any statistic computed from a sufficiently rich family is a functional
+of it. The content is the conjunction of (i) with (ii) and the transfers above, and the framework
+predicts when each signature agrees or fails: performance jumps are bounded symptoms of collapse
+(Proposition 2), with grader-dependence exactly Schaeffer et al.’s critique [12]; EI intervenes
+uniformly, so it cannot see which states the system itself selects and is sign-blind to value; Ψ
+reads behavioural marginals, so forced or wrongly-selective coordination scores highly (its exact
+top scorer is the wrong-selector); and when a converged policy prices its trigger into the baseline,
+observational value change is a martingale while the do-contrast remains nonzero—observed
+independently in chess and deep MARL. Table 1 summarizes each projection and its measured
+blind spot.
+    The scope of the claim is precise: covered means derivable-and-audited on systems with an
+explicit trajectory law and value structure, within the declared candidate families. We do not
+claim that Ψ or EI are wrong in their home use cases (quantifying macro predictive structure,
+or intervention-level compression); the claim is that as emergence verdicts they are projections
+that discard the verdict-carrying information—the value sign, the conditional selectivity, and
+the provenance of the collapse—and that the layered episode criterion adds structure that no
+audited projection, singly or in fitted combination, retains.
+
+
+2    Discussion
+The substrate (1) is agnostic to the domain of the possibility space, and two instantiations cover
+the field’s classic intuitions. Temporal collapse: a locally costly or silent act whose meaning arrives
+later, when it proves counterfactually necessary—chess sacrifices are the purest case (local cost −3
+pawns, do-contrast +0.54), and the MultiBERTs NPI result (collapse at 20k, usefulness at 40k)
+shows the same shape at training scale. Spatial collapse: a joint basin no individual can reach
+or hold alone, certified by single-agent do-blocks degrading the joint outcome—the operational
+content of “the whole exceeds the parts” without the synergy machinery the exact-form audit
+shows cannot carry a verdict. The duality is presentation, not new theory: both are contractions
+of one future distribution.
+
+
+
+                                                  10
+Table 1: Prior emergence signatures as projections of Pt (B), each with a measured blind
+spot. All numbers from our runs; rival thresholds are hindsight-optimal (best case for the rival). Chess
+percentages: fraction of 240 externally annotated positions where the signature ranks the key move first.
+
+ Prior signature              What it reads off Pt (B)      Measured blind spot (witness)
+ Performance jump [7]         usefulness only, no           accepts the reward-shaped system; misses
+                              provenance                    latent conditional ability (hindsight acc.
+                                                            0.800)
+ Representation jump          projection bounded by         direction-, provenance-, and strength-blind:
+                              collapse (Pinsker)            harmful decoy same jump as accepted
+                              (Prop. 2)                     positive; noise 13.7× larger; acc. 0.900;
+                                                            chess 5.4%
+ PID synergy / Ψ [14]         joint structure of the        exact Ψ > 0 scores 0.3; top scorer is the
+ (exact Ψ computed)           collapsed state               wrong-selector (+0.59); best threshold must
+                                                            invert the published sign and still misses the
+                                                            conditional positive
+ Causal emergence, EI [13]    macro intervention            exact CE < 0 on all 10 enumerated chains;
+ (exact EI computed)          efficacy                      best threshold = trivial classifier (0.8),
+                                                            misses both true positives; proxy’s top
+                                                            scorer was the reward-shaped system
+ Metric-artifact              grid-resolution sensitivity   confirmed from the mechanism side: our
+ critique [12]                of jumps                      tail-facts results show abruptness is metric-
+                                                            and grid-dependent; burst is a measurement
+                                                            anchor, not a definition component
+
+
+    The closest existing frameworks share parts of this architecture. Semantic information [46] also
+combines intervention with a viability-style value, but scores the information a system has about
+its environment; our criterion scores a structure the system forms, adding contextual selectivity,
+explicit future-basin collapse, acquisition against an initialization twin, and a cross-domain
+protocol with frozen thresholds. Empowerment [47, 48] and causal path-entropy forces [49] value
+keeping futures open; this framework identifies when a selective, valuable contraction, acquired
+during learning, should be recognized as adaptive emergence. Bayesian surprise [44] supplies the
+substrate quantity itself; none of its uses attach provenance, selectivity or value direction, which
+is where the layered criteria live.
+    Of the ∼203 internally frozen predictions, thirty-one failed (nineteen before this revision, plus
+the realized-outcome interaction, the second-contract value flips, the strength-gradient suddenness
+ordering, the weak different-lineage referee, the diffuse rollout model, one two-dimensional forecast
+cell, the bias-blind world-model error proxy, the constant-series calibration rule, the structure-
+only class-separation rule and the early-magnitude prediction battery reported here); none
+were discarded or re-thresholded post hoc. The failures carry the paper’s sharpest lessons.
+Abruptness proved metric- and grid-dependent, confirming the metric-sensitivity critique [12]
+from the mechanism side and consistent with quantized-computation accounts of scaling [28];
+two failures independently exposed the martingale principle for converged systems; and the
+acquisition component itself was added after a random network passed marginal selectivity by
+accident, then excluded the untrained control on every subsequent fresh seed.
+    The contribution is a scoped measurement framework, not an observer-free metaphysical
+definition. The full protocol is validated where every component is measurable (swarm, Contextual
+LBF, sequence model); the battery supplies targeted exclusions and exact rival-formalism
+evaluations within declared candidate families; chess supplies event-level recovery and prospective
+discovery but no acquisition; public checkpoints supply a resolution-limited process instrument,
+never a full verdict. We do not claim that all emergence in nature is possibility collapse, that
+prior definitions are special cases of ours, that frontier-scale language emergence is solved, or
+
+
+                                                    11
+Table 2: Scope of each empirical instrument. “Full” is reserved for settings in which all six components
+are measurable.
+
+ Evidence family          Instrument                   Scope and claim supported
+ Controlled gridworld     five informative episode     Action do-contrasts; forced constructions lack an informative
+                          components                   initialization twin. Supports exclusion and threshold audit.
+ External swarm           full six-component           Action do-contrasts and initialization twins. Supports
+                          criterion                    fresh-seed full-criterion confirmation.
+ Contextual LBF           full six-component           Balanced latent geometry, action do-contrasts, initialization
+                          criterion                    twins and ten independent policy seeds; five additional
+                                                       post-confirmation seeds reported separately. Supports
+                                                       second-domain confirmation and robustness.
+ Latent-context           full six-component           Next-token-trained transformer; decoding do-interventions and
+ sequence model           criterion                    initialization twins; ten fresh seeds. Supports third-domain
+                                                       confirmation in the sequence modality.
+ Non-contextual deep      potential + counterfactual   Action do-contrasts across policy seeds; not a full verdict.
+ MARL                     usefulness                   Supports cross-task mechanistic transfer.
+ Human chess              event-level strategic test   Forced engine alternatives; no acquisition measure. Supports
+                                                       external candidate/event transfer.
+ Grokking and public      four-component process       No action-level intervention; uses training provenance.
+ checkpoints              proxy                        Supports acquisition-process transfer.
+
+
+
+that the proxy adjudicates “true” abruptness. Acquisition deliberately restricts the verdict to
+structure acquired during learning: prewired coordination and architecture-induced transitions
+can be structural collapses under Definition 1 but sit outside the adaptive verdict, and harmful
+collapse is representable rather than denied. The battery labels are designed diagnostic controls,
+not third-party ground truth; the frozen protocols are author-maintained, hash-anchored records
+without external timestamps; a fully third-party environment with externally registered protocols
+is the natural next hardening step. Under declared, auditable observer contracts, useful possibility
+collapse can be measured, falsified and transferred, with structural verdicts stable across plausible
+contracts and value verdicts explicitly contract-relative. The collapse studied here is statistical—a
+contraction of the rollout future distribution driven endogenously by the system’s own actions or
+training dynamics—and carries no quantum connotation.
+    For machine intelligence, the framework turns “did an ability emerge?” from a curve-reading
+exercise into an intervention-aware measurement programme: a common trajectory-law substrate
+with measured blind spots for each prior projection, a conservative layered protocol where triggers,
+values, interventions and initialization twins are available, a separate velocity audit for public
+checkpoint series, a prospective-discovery test on uncurated data, and a negative-control practice
+in which frozen failures are retained and delimit scope. This is the sense in which possibility
+collapse unifies the audited uses of emergence: not by erasing their differences, but by placing
+them on one future-distribution object and showing which additional evidence turns a collapse
+into an adaptive-emergence verdict.
+
+
+Methods
+Scope of each empirical instrument
+Table 2 maps every evidence family to the instrument it supports and the claim it can carry.
+
+Proofs of the root identities
+                               ∑︁         ∑︁               P (τ |m)  ∑︁                    P (m,τ )
+(0a) Expand the definition:       m P (m)   τ P (τ | m) log P (τ ) =    m,τ P (m, τ ) log P (τ )P (m) = I(τ ; M ).
+(0b) If M is deterministic with cells Am , then P (τ | Am ) = P (τ )/P (Am ) on Am and 0 elsewhere;
+substituting, the log-ratio is the constant − log2 P (Am ) and the conditional mass sums to 1. (0c) Apply
+the data-processing inequality to the deterministic channel g : τ ↦→ B; JS is a f -divergence-based mixture
+of KLs and inherits the inequality. Numerical verification: verify theory bounds.py (MI identity gap
+< 10−9 ; rarity law exact to < 10−9 ; basin JS 0.90 ≤ trajectory JS 1.00 on do-contrast rollouts).
+
+
+
+                                                        12
+Proof of Proposition 0
+With a fixed rollout law after the declared step and no unobserved confounding (an MDP), P (B | do(a)) =
+P (B | A=a), so all three quantities are standard forms of the mutual information I(A; B): the contraction
+form is H(B) − H(B | A), the interventional form is Ea KL(P (B | a)∥P (B)), and the retrospective form is
+Eb KL(π(A | b)∥π(A)), equal by the symmetry of I. A deterministic π makes A constant, so I(A; B) = 0.
+The scientific content is the declaration that all manuscript measurements target the interventional form,
+with the identities verified numerically (104 random systems, max gap < 10−15 ; trained gridworld trigger
+steps, gap < 10−16 ; verify bridge identity.py).
+
+Proof of Proposition 2
+                                           ∑︁
+Write ∆(b) = Pt (b) − Pt−1 (b), so Jt = ∥ b ∆(b)ϕ(b)∥2 . For any unit vector u, the scalar function
+fu (b) = u⊤ ϕ(b) has range at most diam(ϕ). The total-variation duality gives
+                                ⃓              ⃓
+                                ⃓∑︂            ⃓
+                                     ∆(b)fu (b)⃓ ≤ diam(ϕ) TV(Pt , Pt−1 ).
+                                ⃓              ⃓
+                                ⃓
+                                ⃓              ⃓
+                                     b
+
+Taking the supremum over unit u yields Jt ≤ diam(ϕ)TV(Pt , Pt−1 ). The second step is Pinsker’s inequality
+with the bit-to-nat conversion KLnats = ln 2 · Kt . Verified at every step of every trajectory in four training
+regimes and both grokking conditions.
+
+Observer refinement and model-error guarantees
+Let B ′ refine B, with B = h(B ′ ). Then H(B ′ ) = H(B) + H(B ′ |B) ≥ H(B), and data processing gives
+
+                                  JS(Pa (B ′ ), Pa′ (B ′ )) ≥ JS(Pa (B), Pa′ (B)).
+
+Thus a coarse-partition Potential or JS-Specificity pass remains a pass under refinement at the same
+absolute threshold. If value is coarse-measurable, u′ (b′ ) = u(h(b′ )), its do-gap is exactly invariant. Entropy
+contraction itself is not refinement-monotone because the two conditional-entropy terms can change in
+either direction.
+    For rollout-model laws Qa , Qa′ approximating target laws Pa , Pa′ , suppose
+
+                                  TV(Pa , Qa ) ≤ ϵa ,         TV(Pa′ , Qa′ ) ≤ ϵa′ ,
+
+and u has range R. Then
+                                            |∆P u − ∆Q u| ≤ R(ϵa + ϵa′ ).
+Accordingly, a measured usefulness margin larger than this bound is stable to the declared model error;
+without an estimate of the ϵ terms the do-gap remains observer-model relative. Finally, if each signed
+component margin exceeds
+                       ∑︁ its own error bound, the full conjunctive verdict is stable; a union bound gives
+confidence at least 1 − i δi . Ten thousand random-distribution checks for each partition/model bound
+and all 27 bounded-burst checks produced zero violations (observer bounds verification.json).
+
+Witnesses for Proposition 1
+
+Table 3: Illustrative measured witness pairs: accepted and rejected systems that share, nearly share, or
+reverse a single-observable signal. Exhaustive threshold sweeps, rather than each pair alone, establish the
+best achievable battery accuracy.
+
+     Observable            S + (accepted)                     S − (rejected)             shared/reversed signal
+     potential             latent conditional (H0 = 1.15)     useful habit (H0 = 1.11)   open futures
+     collapse burst        grokking (burstiness 3974)         prewired (28376)           sudden collapse
+     specificity JS        noise policy (0.74)                harmful decoy (0.65)       trigger-contingent futures
+     usefulness gap        latent conditional (+3.4)          useful habit (+4.4)        positive gap
+     representation jump   uncertain-preference bridge        pure-team probe            large Jt
+     causal-emergence EI   latent conditional (+0.71)         shaped process (+0.93)     macro beats micro
+
+
+    The EI row uses the charitable episodic proxy; the exact-form computation (below) worsens the failure
+to the trivial classifier.
+
+
+                                                         13
+Exact rival formalisms
+For each of the ten battery systems we enumerated the policy-closed Markov chain exactly: state =
+(mode, context, agent positions, switch flag, clock), up to 75,004 states, with the learned softmax policy in
+closed form; the chain is time-inhomogeneous but exact. Hoel EI: EI(T ) = I(Xt+1 ; Xt ) with Xt uniform
+(max-entropy interventions) on the exact transition matrix; CE = maxg EI(macrog ) − EI(micro) over a
+five-member coarse-graining family including the mechanistically privileged partitions (mode-collapse,
+context-collapse, position-collapse, outcome classes, trivial). Exhaustive search over all coarse-grainings
+is super-exponential and is not performed in the∑︁     original literature either; the conclusion is stated
+for this family. Rosas Ψ: Ψ(V ) = I(Vt ; Vt+1 ) − j I(Xtj ; Vt+1 ) on the pooled one-step joint of the
+behavioural occupancy measure, maximized over four supervenient features × two micro decompositions
+(the first-order practical criterion, as in the original applications; since verdicts are also evaluated at
+hindsight-optimal thresholds, constant redundancy offsets cannot rescue the ordering failures). Script:
+exact prior formalisms.py; output: outputs/exact prior formalisms.json.
+
+Internal battery and refinement
+Ten gridworld systems with designed ground truth; 36–96 rollouts per estimate. Plug-in entropy/JS
+estimation is consistent with Miller–Madow bias O((|B| − 1)/n) < 0.09 bits at the battery setting, below
+every margin the verdicts rely on. Estimator robustness: all qualitative conclusions unchanged across
+n ∈ {12..96} and probe temperatures (12-cell grid); registered thresholds sit on wide accuracy plateaus
+(one honest edge documented: the noise policy sits at H0 = 0.508, near the 0.5 potential cutoff). After a
+registered failure in which 2/5 external replication seeds accepted an untrained network on marginal tension,
+the criterion was refined under freezing: conditional selectivity |ptrig (A) − ptrig (B)| ≥ 0.5; acquisition
+≥ 0.3 separation gain over own initialization. The full six-component rule was confirmed out-of-sample
+on 25/25 external verdicts across five fresh seeds. A fresh internal seed classified 10/10 systems with
+the five informative components; acquisition was not scored internally because the forced-behaviour
+constructions have no informative initialization twin. The battery systems are designed diagnostic controls
+with predeclared labels, not an independent gold standard; their role is falsification pressure, and the
+independent tests are the frozen-threshold transfers, the public-checkpoint and chess studies, and the
+fresh-seed confirmations.
+
+Fair multivariate baselines
+Prior-signal baselines receive equal or greater freedom than the six-component conjunction: AND-rules
+over one to three prior signals (representation jump, metric jump, specificity, synergy, EI-style contrast;
+each signal with its own hindsight threshold and direction), an ℓ2 logistic regression and a depth-2 decision
+tree on all five signals plus the exact EI and Ψ values, and two-component AND-rules over our own
+measured components. All models are fitted on the original battery scores, evaluated by leave-one-out
+cross-validation, then frozen and applied to a fresh-seed battery (seed 7011) whose five transportable prior
+signals were recomputed from scratch; the six-component reference on that seed is the stored confirmation,
+untouched by this analysis (fair baseline comparison.py, fair baseline comparison.json).
+
+Grokking, induction heads, and scale
+Grokking (modular addition, MLP + causal transformer + attention-only families): thresholds frozen in
+the bridge code (potential ≥ 1.0 bits; burstiness ≥ 5; usefulness gain ≥ 0.2; endogeneity by design flag); the
+memorization phase inside the same run is the sharpest internal control—held-out entropy 6.6 → 2.8 bits
+with zero accuracy gain, refused by the anchored window. This mirrors, in our vocabulary, the mechanistic
+progress measures that precede the grokking transition [27]: the collapse burst is a provenance-bearing
+progress measure, not a performance curve. Induction heads: attention-only transformers on cyclic-repeat
+sequences; the two-layer model passes all process-proxy components (copy accuracy 0.987), the one-layer
+model—which provably cannot implement the circuit [37]—fails usefulness (0.112); 12/12 registered
+predictions on fresh seeds. The in-context ability whose collapse we track is the same one shown to
+emerge only under bursty, heavy-tailed training distributions [24], consistent with our reading of it as an
+acquired—not prewired—collapse.
+
+
+
+
+                                                     14
+Public checkpoint series
+MultiBERTs: 29 intermediate checkpoints × 5 seeds; 288 agreement minimal pairs; random-target controls
+share the agreement entropy/KL trace, while shuffled-vocabulary controls perturb the ability readout and
+test usefulness under the same public checkpoint series. Pythia-160m/410m/1B: 21 published checkpoints
+each, fetched from public Pythia checkpoint revisions; next-token distribution at the critical verb position;
+the same 288-pair construction (all verb pairs single-token in the GPT-NeoX vocabulary); tail families
+scored by mean per-token log-probability (eval-harness convention; tokenization amendment recorded
+before any checkpoint behaviour was observed). For both public series, the train acc and test acc
+columns store the same fixed evaluation-battery score for compatibility with the bridge analyser; there
+is no separate probe-training/test split, and no such independence is claimed. Conditions within a
+model seed share checkpoints and probe construction; the five model seeds provide seed replication, while
+paired controls diagnose verdict routes. All predictions and outcomes: MULTIBERTS PREREGISTRATION.md,
+PYTHIA PREREGISTRATION.md and PYTHIA SCALING PREREGISTRATION.md. The 1B and 1.4B runs use
+official sharded checkpoint revisions verified by a per-revision SHA-256 audit (all cached revisions pairwise
+distinct, pythia 1.4b checkpoint hashes.json); byte-range spot checks confirmed the download source
+serves content identical to huggingface.co for locally verified shards. The 2.8B run uses official sharded
+revisions after two upstream defects (a duplicated shard and a mismatched revision) were detected by
+the hash audit, quarantined and rebuilt from authentic sources; the earlier 2.8B mirror output remains
+quarantined and excluded.
+
+Chess
+240 positions selected by the Lichess sacrifice theme and rating band 1800–2400, plus 120 quiet
+controls; futures estimated by Stockfish rollout ensembles (registered temperature/depth); win/draw/loss
+basins by centipawn thresholds; do-operators implemented as forced first moves. Robustness grid:
+temperature × depth × basin thresholds × engine (incl. classical Stockfish 11). Protocol frozen in
+CHESS PREREGISTRATION.md; the C5 margin failure and its martingale post-mortem are recorded there.
+Statistical intervals treat positions as independent units and are conditional on the curated annotation
+sample; no claim about population prevalence is made. The realized-outcome referee parses the same
+public PGN dumps for the game result and the human move actually played at each scored ply (never
+used by any scoring stage); the registered contrast is the realized-score gain from playing the shallow-best
+move at flagged versus unflagged positions, with a 10,000-shuffle permutation test on the interaction and
+bootstrap CIs per month; mover-rating balance between flagged and unflagged positions is reported as a
+confounder audit (chess realized outcome.py, chess realized outcome.json).
+
+Deep MARL
+simple spread: MAPPO, 3 seeds, do-commit/do-block on target assignment; Level-Based Foraging (LBF,
+forced-cooperation 5x5-2p-2f): MAPPO-style PPO, 3 seeds, sparse reward; interventions release on
+consumption (a pilot-stage semantic fix recorded with logs before the main run); probe temperature
+6.0 chosen in pilots and stress-tested across T ∈ {2, 3, 4.5, 8} with frozen success criteria. Detector
+comparison on 8 LBF systems includes forced-commit and a hand-coded cooperating imitation; the
+round-1 set-composition failure is archived and the round-2 prediction was frozen before the rerun. A
+post-hoc seed extension trained three further simple spread and five further LBF policies with unchanged
+code and probes (deep marl collapse seed extension.json, lbf collapse seed extension.json);
+combined seed-level statistics over 6 and 8 independent policies give exact one-sided sign tests p =
+0.016 and p = 0.004 with positive cluster-bootstrap mean intervals [0.032, 0.156] and [0.159, 0.390]
+(hierarchical marl analysis combined.json). The extension sizes were set by a seed-level power
+simulation from the three registered seeds (simulated one-sided power at α = 0.05: ≥ 0.99 at K = 5 for
+simple spread and ≥ 0.89 at K = 5, ≥ 0.99 at K = 8 for LBF), recorded in the same analysis file; the
+simulation’s normality assumption and its dependence on three-seed effect estimates are stated there. The
+extension is reported separately from the registered three-seed runs.
+
+Contextual LBF six-component confirmation
+Base benchmark Foraging-5x5-2p-2f-coop-v3 (lbforaging 2.0.0) with unchanged dynamics, local ob-
+servations, six discrete actions and sparse collection reward. A wrapper balances two unlabeled ge-
+ometric contexts (food identity 0 or 1 nearer to the team; two interior layouts per context selected
+
+
+                                                     15
+by episode seed; horizon 15); the context label is never given to any controller. Training: the exist-
+ing PPO implementation, 8,000 episodes per policy seed, no shaping. Trigger: food 0 collected first;
+basins: {win, loss} × {food-0-first, food-1-first}; value: discounted mean sparse team reward (γ = 0.98);
+do(trigger)/do(non-trigger): minimal shared cooperative path/load planners toward the correspond-
+ing food, released once the target is consumed. Thresholds are copied unchanged from the previ-
+ously frozen refined criterion. Evaluation: 80 episodes per context and condition; the training seed
+is the population unit. Two disclosed design pilots preceded the freeze and are excluded; confirma-
+tion seeds 1101–1110 were fixed in CONTEXTUAL LBF PREREGISTRATION.md (code SHA-256 recorded)
+before any confirmation training. The post-confirmation extension (seeds 1201–1205), the one-at-a-
+time threshold-sensitivity rescoring and the hindsight-optimal single-signal audit are post-hoc analyses
+stored in contextual lbf extension analysis.json, contextual lbf threshold sensitivity.json
+and contextual lbf single signal audit.json.
+
+Strength-gradient battery
+Same benchmark dynamics; rewards defined per provenance (shaped: team +2.0×[trigger action]; outcome-
+only: team +4.0×[rescue outcome]); five seeds each; pattern probability pt = P (sacrifice-rescue basin)
+under near-greedy checkpoint policies (200 evaluation episodes, Laplace-smoothed); Ct = − log2 pt .
+Open-space reference: 20,000 uniform-random episodes. Provenance rarity: mean Ct over the first
+quarter of training. Predictions ST-1–ST-4 were frozen in the script docstring; the ST-3 suddenness
+ordering failed on the 20-point/60k-episode grid because both provenances complete acquisition inside
+one checkpoint interval, and a disclosed fine-grid follow-up (40 checkpoints over 10k episodes) confirms
+later discovery and higher pre-discovery rarity for outcome-only while suddenness remains unordered
+(strength gradient battery.py, strength gradient fine.py).
+
+Dual observer contracts
+The second contract was declared before running: horizon 12, undiscounted success probability as value,
+and speed-refined basins (first-food identity × completion within 10 steps) that still resolve the trigger.
+Any admissible contract must resolve the declared macro-structure; contracts that erase the trigger
+identity are excluded by the measurement contract itself. All 75 stored systems (15 policy seeds × 5
+systems, confirmation plus extension) were re-scored with frozen thresholds from saved policy networks and
+reconstructed initialization twins; registered predictions DO1–DO3 and the five conservative learned-side
+flips are recorded in dual observer contracts.py and dual observer contracts.json.
+
+Learned basins, rollout models and the contract ensemble
+For the machine-partitioned-basin audit, a k-means partition (k = 4, fixed initialization per seed) is fitted on
+the pooled natural episodes of each seed’s five systems using behavioural summary features (first-consumed-
+food one-hot, foods collected, normalized episode length); the identifiability rule (mutual information
+between cluster and trigger ≥ 0.1 bits) is checked, and only potential and specificity depend on the partition.
+The cross-fitted audit uses low-level features only (padded per-step agent coordinates, per-agent action
+histograms, per-step reward sequences), fits on even-indexed natural episodes, freezes the partition, scores
+odd-indexed natural and all do-episodes, selects k ∈ [2, 8] by silhouette on the training half, and repeats
+over k-means, Gaussian mixture, Ward agglomerative (nearest-centroid assignment) and PCA-10+k-
+means. For the rollout-model audit, learned policies and initialization twins are re-scored under softmax
+temperatures 0.2 and 2.0 with all thresholds frozen; the epistemic-versus-behavioural rollout distinction is
+declared in Terminology, and the IR-2 miss is retained. The contract ensemble pools the seven stored
+frozen-threshold contracts read-only and reports per-system acceptance rates (learned basin clbf.py,
+crossfit lowlevel basins.py, independent rollout audit.py, contract ensemble analysis.py).
+
+Harmful emergence, matched provenance and the 2-D surface
+The learned-harmful construction trains agent 0 on an exploiter reward (r0 plus a bonus when its partner
+is lured onto the decoy goal); both value functions (uprivate , uteam ) were declared before training, and
+predictions HE-1–HE-4 passed 5/5 seeds (learned harmful emergence.py). The matched-provenance
+battery compares a hand script, a tabular behavioural clone of it, and the shaped and outcome-only
+learners of the strength battery, with a disclosed design pilot and predictions MP-1–MP-5 frozen after
+it (matched provenance.py). The 2-D phase surface derives per-cell verdicts over goal reward G ∈
+
+
+                                                      16
+{3, 7, 10, 13} and latent-context weight w ∈ {0.10, 0.25, 0.40, 0.70} in closed form before training, declares
+one fragile cell (predicted margin 0.0625), and trains 5 fresh seeds per cell (phase 2d prediction.py).
+
+Continuous profile and calibration
+The profile record and its fixed aggregation live in emergence profile.py: potential normalized by log2 |B|;
+causal magnitude as the do-law JS divergence (bounded by 1 bit); signed value as tanh of the do-contrast
+over a per-domain scale declared before assembly (σV = 5 gridworld return units, 0.1 CLBF discounted-
+reward units); acquisition as the clipped structure gain over the initialization twin; abruptness as one
+minus the normalized entropy of positive collapse increments (bounded, thinning-stable). The certificate
+margin (soft-min over standardized component margins) measures evidence strength, not phenomenon
+strength, and is reported separately. Calibration: profile calibration.py (orthogonal generator grid;
+dose–response; the original cross-term rank rule failure is retained) and profile existing systems.py
+(read-only taxonomy assembly). “Strong/weak emergence” is deliberately avoided as terminology.
+
+World-model closure
+Tabular MLE models of (s, a) ↦→ (s′ , events, r, done) are fitted on K ∈ {200, 1000, 5000, 20000} on-policy
+trajectories (five data seeds per K, three policy seeds); components are recomputed with the model
+replacing the simulator in probe rollouts. The registered error proxy was mean pairwise TV between
+the five models’ natural-basin distributions; WM-1/WM-2 passed, WM-3 failed and is retained. The
+disclosed follow-up adds an incomplete-rollout fraction cut of 0.10; it catches all 20 mismatches but
+abstains at K=20000, where forced interventions still hit unseen state–action pairs in 39–50% of rollouts
+(world model closure.py, world model closure followup.py).
+
+Terminology and the system boundary
+Observer contract: the declared measurement setting—a basin partition B = g(τ ) that resolves the
+candidate macro-structure, a value function, a rollout policy, an intervention set, a time resolution, and
+a system boundary. Trajectory-law family: the set of trajectory distributions {P (τ | c, do(w))} over
+declared contexts and interventions. Collapse names three related statistics that the text keeps separate:
+retrospective conditioning (Eq. 1, bookkeeping only), the within-run contraction of Pt (B | st ), and the
+interventional divergence between do-laws (both measured). Process proxy: the four-component checkpoint
+instrument; its burst component measures acquisition velocity, not emergence magnitude.
+     The rollout model requires the same discipline: it is an epistemic choice when it approximates the
+fixed target policy’s own conditional futures (rollout counts, horizons, mild decoding changes that preserve
+the behaving distribution), and it becomes a behavioural intervention—defining a different system—when
+it alters the policy’s action distribution itself, as strong temperature inflation does. The rollout-model
+audit is scored under this declaration.
+     The system boundary deserves an explicit statement because endogeneity depends on it. The contract
+declares the system to be the policy with its learned parameters at measurement time; endogeneity
+holds when the trigger is selected by that system’s own action distribution rather than forced by the
+measurement apparatus, and it is deliberately paired with the measured acquisition component, which
+compares the same system against its own initialization and therefore does not rely on a design flag. The
+pairing has a known boundary: a network supervised to clone a script would pass acquisition, and the
+framework then classifies it as adaptive with respect to its declared training signal —provenance is relative
+to the declared boundary, not an absolute property. Reward, architecture and curriculum shape every
+learned system; the criterion does not adjudicate those upstream choices and no claim depends on it doing
+so.
+
+Statistics and internal protocol freezing
+Sign tests are exact binomial. All headline effect sizes carry 20,000- resample percentile bootstrap
+95% CIs over their natural independent units. For chess the position is the independent unit. For
+deep MARL, episode-level intervals and sign tests quantify intervention effects conditional on the
+three trained policies; policy-seed medians are reported separately, and the episode-level p values
+are not used as population-level inference over training randomness. Confirmatory stages use author-
+maintained protocols frozen before their reported measurements, with outcomes recorded in place.
+These records are not third-party registered reports and do not provide an external timestamp; they
+
+
+                                                     17
+are supplied for auditability. The exception is the Overcooked-AI confirmation, whose full protocol,
+thresholds and predictions were frozen with a public external timestamp before any confirmatory seed
+was launched (github.com/FanYixiang2000/emergence-prereg, tag v1.0-overcooked-prereg, com-
+mit 8415e45, 2026-07-18); the confirmation script refuses to run without an explicit flag asserting that
+this timestamp exists. A single-page audit (PREDICTION LEDGER.md) indexes ∼203 frozen verdicts/checks
+with 31 recorded misses, stratified into four tiers— roughly twenty primary confirmatory hypotheses
+(Tier 1), the replication/transfer hypotheses (Tier 2), diagnostic and mechanistic predictions (Tier 3),
+and software/artifact invariants (Tier 4); the main text’s claims rest on Tiers 1–2 only, and the count
+is a transparency record, not a sample size—each row pointing to its primary document. Ledger rows
+are heterogeneous and dependent, so the count is not treated as a sample size or combined significance
+test. Reported p values test their local contrasts; no family-wise significance claim is made across the
+heterogeneous ledger. When a miss motivated a refinement, the miss remains counted as a miss; the
+revised component or threshold is recorded as a method change and contributes only through later frozen
+tests on fresh seeds, public checkpoints, or new task families. Code and outputs sufficient to regenerate
+every figure are provided (REPRODUCIBILITY.md).
+
+
+
+
+                                                   18
+19
+Figure 3: The full six-component criterion confirms in three system families under frozen
+thresholds. a, External swarm: refined out-of-sample confirmation, 25/25 fresh verdicts across five policy
+seeds, with measured acquisition against initialization twins. b, Contextual Level-Based Foraging: 9/10
+fresh learned policies pass all six components (retained miss: seed 1104 selectivity 0.4875 < 0.5); 40/40
+initialization and scripted controls reject; the competent team-nearest controller fails exactly endogeneity
+and acquisition. c, Latent-context sequence model (causal transformer, next-token training only): 10/10
+fresh seeds accepted, 40/40 controls rejected (left); per-seed component values clear every frozen threshold
+(right). Thresholds are identical across the three domains and were frozen before each confirmatory run.
+
+
+
+
+                                                    20
+Figure 4: Deep multi-agent RL: seed-level inference and within-family parameter extrapola-
+tion. a, The training-population unit is the policy seed. Per-seed mean do-contrasts are positive for all
+six simple spread seeds (seed-level sign test p = 0.016; cluster-bootstrap mean interval [0.032, 0.156]) and
+all eight LBF seeds (p = 0.004; [0.159, 0.390]); registered and post-hoc extension seeds are distinguished by
+colour and never pooled silently. Episode-level conditional tests and control panels are in Extended Data
+Fig. 11. b, The prospective phase-boundary prediction, shown for the primary registered run: behavioural
+onset follows the payoff accounting derived before training (left); criterion acceptance changes around the
+predicted usefulness boundary G = 9 (right). Three independent-seed replications matched 11/12 scored
+non-tie points, with stable outer phases.
+
+
+
+
+                                                    21
+Figure 5: Chess: event-level recovery on curated positions and prospective discovery on
+uncurated months. a, Curated recovery: P (win-basin | do(move)) for the annotated key move vs.
+counterfactual alternatives across 240 sacrifice and 120 quiet positions (left); the key move is locally costly—
+median −3 pawns vs. best reply—yet globally decisive (middle); the do-contrast distribution separates
+sacrifices from quiet controls, mean gap +0.54 (right). b, Uncurated discovery under a separately frozen
+protocol: the collapse do-gap ranks value-critical decisions above tactical, material and eval-magnitude
+baselines in both months and is the distribution-stable predictor (left); the frozen binary flag lifts precision
+2.5×/3.0× over base rate (middle); referee families—NNUE, classical SF11, and the engine-free realized
+game outcome—agree in direction, with the realized-outcome interaction registered as an underpowered
+null (right). Acquisition is not tested in this domain; estimator/engine robustness cells are in Extended
+Data Fig. 11.
+
+
+
+
+                                                      22
+References
+ [1] Anderson, P. W. More is different. Science 177, 393–396 (1972).
+ [2] Bedau, M. A. Weak emergence. Philos. Perspect. 11, 375–399 (1997).
+ [3] Holland, J. H. Emergence: From Chaos to Order (Addison-Wesley, 1998).
+ [4] Mitchell, M. Complexity: A Guided Tour (Oxford Univ. Press, 2009).
+ [5] Crutchfield, J. P. The calculi of emergence: computation, dynamics and induction. Physica D 75,
+     11–54 (1994).
+ [6] Batterman, R. W. The Devil in the Details: Asymptotic Reasoning in Explanation, Reduction, and
+     Emergence (Oxford Univ. Press, 2002).
+ [7] Wei, J. et al. Emergent abilities of large language models. Trans. Mach. Learn. Res. (2022).
+ [8] Kaplan, J. et al. Scaling laws for neural language models. Preprint at arXiv:2001.08361 (2020).
+ [9] Brown, T. B. et al. Language models are few-shot learners. Adv. Neural Inf. Process. Syst. 33,
+     1877–1901 (2020).
+[10] Bommasani, R. et al. On the opportunities and risks of foundation models. Preprint at
+     arXiv:2108.07258 (2021).
+[11] Hoffmann, J. et al. Training compute-optimal large language models. Adv. Neural Inf. Process. Syst.
+     35, 30016–30030 (2022).
+[12] Schaeffer, R., Miranda, B. & Koyejo, S. Are emergent abilities of large language models a mirage?
+     Adv. Neural Inf. Process. Syst. 36 (2023).
+[13] Hoel, E. P., Albantakis, L. & Tononi, G. Quantifying causal emergence shows that macro can beat
+     micro. Proc. Natl Acad. Sci. USA 110, 19790–19795 (2013).
+[14] Rosas, F. E. et al. Reconciling emergences: an information-theoretic approach to identify causal
+     emergence in multivariate data. PLoS Comput. Biol. 16, e1008289 (2020).
+[15] Williams, P. L. & Beer, R. D. Nonnegative decomposition of multivariate information. Preprint at
+     arXiv:1004.2515 (2010).
+[16] Bertschinger, N., Rauh, J., Olbrich, E., Jost, J. & Ay, N. Quantifying unique information. Entropy
+     16, 2161–2183 (2014).
+[17] Lizier, J. T., Bertschinger, N., Jost, J. & Wibral, M. Information decomposition of target effects from
+     multi-source interactions: perspectives on previous, current and future work. Entropy 20, 307 (2018).
+[18] Mediano, P. A. M. et al. Towards an extended taxonomy of information dynamics via integrated
+     information decomposition. Preprint at arXiv:2109.13186 (2021).
+[19] Hoel, E. Causal emergence 2.0: quantifying emergent complexity. Patterns 6, 101472 (2025).
+[20] Barnett, L. & Seth, A. K. Dynamical independence: discovering emergent macroscopic processes in
+     complex dynamical systems. Phys. Rev. E 108, 014304 (2023).
+[21] Luppi, A. I. et al. A synergistic core for human brain evolution and cognition. Nat. Neurosci. 25,
+     771–782 (2022).
+[22] Ganguli, D. et al. Predictability and surprise in large generative models. In Proc. ACM Conf. on
+     Fairness, Accountability, and Transparency (FAccT) 1747–1764 (2022).
+[23] Srivastava, A. et al. Beyond the imitation game: quantifying and extrapolating the capabilities of
+     language models. Trans. Mach. Learn. Res. (2023).
+[24] Chan, S. C. Y. et al. Data distributional properties drive emergent in-context learning in transformers.
+     Adv. Neural Inf. Process. Syst. 35, 18878–18891 (2022).
+[25] Bialek, W., Nemenman, I. & Tishby, N. Predictability, complexity, and learning. Neural Comput. 13,
+     2409–2463 (2001).
+[26] Power, A., Burda, Y., Edwards, H., Babuschkin, I. & Misra, V. Grokking: generalization beyond
+     overfitting on small algorithmic datasets. Preprint at arXiv:2201.02177 (2022).
+
+
+                                                    23
+[27] Nanda, N., Chan, L., Lieberum, T., Smith, J. & Steinhardt, J. Progress measures for grokking via
+     mechanistic interpretability. Int. Conf. Learn. Represent. (2023).
+[28] Michaud, E. J., Liu, Z., Girit, U. & Tegmark, M. The quantization model of neural scaling. Adv.
+     Neural Inf. Process. Syst. 36 (2023).
+[29] McGrath, T. et al. Acquisition of chess knowledge in AlphaZero. Proc. Natl Acad. Sci. USA 119,
+     e2206625119 (2022).
+[30] Silver, D. et al. A general reinforcement learning algorithm that masters chess, shogi, and Go through
+     self-play. Science 362, 1140–1144 (2018).
+[31] Rashid, T. et al. QMIX: monotonic value function factorisation for deep multi-agent reinforcement
+     learning. In Proc. 35th Int. Conf. Mach. Learn. 4295–4304 (2018).
+[32] Samvelyan, M. et al. The StarCraft multi-agent challenge. Preprint at arXiv:1902.04043 (2019).
+[33] Terry, J. K. et al. PettingZoo: Gym for multi-agent reinforcement learning. Adv. Neural Inf. Process.
+     Syst. 34, 15032–15043 (2021).
+[34] Carroll, M. et al. On the utility of learning about humans for human-AI coordination. Adv. Neural
+     Inf. Process. Syst. 32 (2019).
+[35] Baker, B. et al. Emergent tool use from multi-agent autocurricula. Int. Conf. Learn. Represent.
+     (2020).
+[36] Olsson, C. et al. In-context learning and induction heads. Transformer Circuits Thread (2022).
+[37] Elhage, N. et al. A mathematical framework for transformer circuits. Transformer Circuits Thread
+     (2021).
+[38] Sellam, T. et al. The MultiBERTs: BERT reproductions for robustness analysis. Int. Conf. Learn.
+     Represent. (2022).
+[39] Biderman, S. et al. Pythia: a suite for analyzing large language models across training and scaling.
+     Proc. Mach. Learn. Res. 202, 2397–2430 (2023).
+[40] Linzen, T., Dupoux, E. & Goldberg, Y. Assessing the ability of LSTMs to learn syntax-sensitive
+     dependencies. Trans. Assoc. Comput. Linguist. 4, 521–535 (2016).
+[41] Kandpal, N., Deng, H., Roberts, A., Wallace, E. & Raffel, C. Large language models struggle to learn
+     long-tail knowledge. Proc. Mach. Learn. Res. 202, 15696–15707 (2023).
+[42] Chang, T. A. & Bergen, B. K. Word acquisition in neural language models. Trans. Assoc. Comput.
+     Linguist. 10, 1–16 (2022).
+[43] Pearl, J. Causality: Models, Reasoning and Inference 2nd edn (Cambridge Univ. Press, 2009).
+[44] Itti, L. & Baldi, P. Bayesian surprise attracts human attention. Vision Res. 49, 1295–1306 (2009).
+[45] DeWeese, M. R. & Meister, M. How to measure the information gained from one symbol. Network:
+     Comput. Neural Syst. 10, 325–340 (1999).
+[46] Kolchinsky, A. & Wolpert, D. H. Semantic information, autonomous agency and non-equilibrium
+     statistical physics. Interface Focus 8, 20180041 (2018).
+[47] Klyubin, A. S., Polani, D. & Nehaniv, C. L. Empowerment: a universal agent-centric measure of
+     control. In Proc. IEEE Congr. Evol. Comput. 128–135 (2005).
+[48] Salge, C., Glackin, C. & Polani, D. Empowerment: an introduction. In Guided Self-Organization:
+     Inception 67–114 (Springer, 2014).
+[49] Wissner-Gross, A. D. & Freer, C. E. Causal entropic forces. Phys. Rev. Lett. 110, 168702 (2013).
+
+
+
+
+                                                    24
+Extended Data
+Extended Data Figs. 1–13 provide, in order: the analytic option-value core; the representation-jump
+bridge and false-positive audit; the grokking bridge, generality sweep and scale decomposition; induction
+heads and transformer grokking; the external swarm transfer; the estimator-robustness grid; process-grid
+robustness and hierarchical MARL inference; Pythia scaling; the within-episode mechanism; the public
+checkpoint series; episode-level MARL detail with the chess robustness grid; the dual observer contracts;
+and the emergence-strength gradient. The Contextual LBF full-criterion panels appear in main Fig. 3b. At
+submission, items beyond the Extended Data limit will move to Supplementary Information together with
+the full prediction ledger (∼203 frozen verdicts/checks, 31 registered misses), the per-domain internally
+frozen protocols with outcomes recorded in place, the theory document with numerical verification of
+every proposition, and reproduction commands for every figure.
+
+
+
+
+                                                   25
+Extended Data Fig. 1: Analytic core: option value of preserving possibility. a, In the
+finite-horizon possibility tree, the myopically greedy policy maximizes immediate reward but closes the
+higher-return futures; the possibility-preserving policy pays a local cost and doubles the expected final
+return—local optimality can close better future options. b, The closed-form option-value boundary
+V (preserve) − V (cash-out) over context probability and immediate reward (left); the same Bellman solver
+reverses its action as the horizon expands (right): possibility preservation is a rational consequence of long
+horizons, not an added preference. These closed-form structures are what the phase-boundary prediction
+of Fig. 6c instantiates empirically.
+
+
+
+
+                                                     26
+Extended Data Fig. 2: Representation jumps are a bounded symptom, not a definition. a,
+Training-time bridge across four regimes (collapse emergence, ordinary gradual, reward-shaped, random
+instability): collapse bursts and representation jumps co-occur in the emergence regime, and the Pinsker
+bound of Proposition 2 holds at every step of every trajectory. b, False-positive audit on learned
+representations: ordinary converged team reward and reward-shaped convergence produce jumps as large
+as (or larger than) true conditional emergence, and a noisy learner with the same acquired structure posts
+a 13.7× larger jump—unsigned distance measures noise, not emergence.
+
+
+
+
+                                                   27
+Extended Data Fig. 3: Grokking as useful possibility collapse. a, Modular-addition grokking
+(MLP family): the grokking run passes all process-level components; the memorizer fails potential,
+burstiness and usefulness; the no-structure control fails burstiness and usefulness; the prewired run
+(evaluation distribution included in training) is excluded only by endogeneity—the process-level analogue
+of reward shaping. The early memorization phase inside the grokking run itself is the sharpest internal
+control: held-out entropy drops 6.6 → 2.8 bits with zero accuracy gain, and the anchored window refuses
+to credit it. b, Generality sweep: 2 tasks × 3 seeds reproduce all verdicts (left); scale decomposition: the
+ability jump and the collapse transition land in the same scale region (right).
+
+
+
+
+                                                    28
+Extended Data Fig. 4: Externally discovered phase changes pass exactly when the architec-
+ture permits the circuit. a, Induction-head formation (attention-only transformers on cyclic-repeat
+sequences): the two-layer model—which can implement the induction circuit—passes all process-proxy
+components (copy accuracy 0.987); the one-layer model, provably unable to implement the circuit, fails
+usefulness (0.112); memorizer and no-structure controls fail as registered. 12/12 registered predictions
+on fresh seeds. b, Transformer replication of the grokking bridge: a 412k- parameter causal transformer
+grokks and passes; the same architecture without weight decay memorizes and fails usefulness. The
+process-level result spans MLP, causal-transformer, and attention-only families.
+
+
+
+
+                                                  29
+Extended Data Fig. 5: Prospectively frozen transfer to an external swarm benchmark. a,
+Five controllers on a continuous decoy/targeting swarm environment sharing no state space, action space,
+or dynamics with the internal family, thresholds copied unchanged: only the learned controller (audited
+engagement rate 1.00 in the aggressive context, 0.00 in the passive one) is accepted; the damage-aware
+controller—the external analogue of reward shaping—passes all four measured components and is excluded
+purely by endogeneity, pinning that component with an external counterexample. b, Multi-seed sweep
+with the registered failure (2/5 seeds accepted an untrained network on marginal tension; kept and
+reported) (left); the refined criterion (conditional selectivity, acquisition; frozen before new data) confirmed
+out-of-sample: 25/25 external verdicts on five fresh seeds (right).
+
+
+
+
+                                                      30
+Extended Data Fig. 6: Estimator robustness. All qualitative conclusions of the within-episode
+probes (do-contrast signs, potential ordering) are unchanged across rollout counts n ∈ {12..96} and probe
+temperatures (12-cell grid). Together with the 12-cell chess grid (Fig. 5b) and the LBF probe-temperature
+grid (Methods), this documents where the framework is estimator-robust and where its one declared
+observer-dependence lies: the absolute scale of the potential component.
+
+
+
+
+                                                   31
+Extended Data Fig. 7: Exploratory process-grid robustness and seed-aware MARL inference.
+a, The bounded burst statistic is a monotone reparameterization of the frozen ratio; its threshold 5/6 is
+exactly the legacy ratio threshold 5, and 27/27 primary verdicts are unchanged. b, Verdict agreement
+under window radii 0–2 and checkpoint thinning factors 2–4. Full-grid agreement is perfect; 228/243
+thinning cells agree, with disagreements concentrated in two Pythia tail controls. c, Per-policy-seed mean
+do-gaps for the three registered seeds (filled circles; diamonds/lines give their two-stage seed–episode
+bootstrap intervals) and for the post-hoc seed extension (open circles; squares/lines give the combined-seed
+intervals). With three seeds the exact positive-seed sign test is p = 0.125 in either domain and the
+simple spread mean interval crosses zero; the extension (three more simple spread and five more LBF
+policies, all positive) tightens these to p = 0.016 and p = 0.004 with positive combined mean intervals
+(Methods). All panels are post-hoc robustness analyses and are not counted as prospectively registered
+confirmations.
+
+
+
+
+Extended Data Fig. 8: Held-out scaling of the frozen process proxy (Pythia agreement
+condition, 160m–2.8B). a, The same templated subject–verb-agreement battery under identical frozen
+thresholds at five public scales; every scale crosses from chance to > 0.85 within the same checkpoint region.
+b, Collapse bursts along the published checkpoint grid. At 160m–1.4B one dominant burst precedes the
+ability jump; at 2.8B the same total collapse is spread over several early intervals. c, Component values
+against the frozen cutoffs (dashed: burstiness 5; dotted: usefulness 0.2). Usefulness passes at every scale;
+burstiness declines monotonically with scale and fails registered prediction S1 at 2.8B (3.2 < 5), kept as a
+registered failure. Under every 2–4× checkpoint thinning the 2.8B verdict flips back to accept (registered
+S7 failure, 80.2% < 90% agreement), identifying the failure as grid-relative: larger models acquire the
+ability faster and more diffusely than the published log-spaced grid can resolve.
+
+
+                                                     32
+Extended Data Fig. 9: The mechanism within single episodes. a, State-level future distributions
+from learned rollouts: initial future entropy and intervention JS (left); the same action produces a useful
+collapse in the rescue context and a harmful one in the bridge context—the sign flip no unsigned signature
+carries (right). b, Intervention gaps with bootstrap 95% CIs over five seeds (left); basins are recoverable
+without hand labels: label-free clustering matches hand basins with purity 1.00 in the internal regimes and
+preserves effective-mode counts in the key uncertain-preference condition (right; pure-team loss episodes
+split more finely). c, Neural (DQN) replication shows the same sign structure (left), and neural embedding
+jumps track collapse bursts (correlation 0.87–0.90, peak alignment 1.0; right)—the representation jump as
+a downstream symptom, as Proposition 2 requires.
+
+
+
+
+                                                    33
+Extended Data Fig. 10: Training-time acquisition in public checkpoint series (no authorial
+control over training; observer protocol author-defined). a, MultiBERTs: subject–verb agreement
+accuracy jumps 0.50 → 0.98 while random-target and shuffled-vocabulary controls stay at chance (left);
+the masked-verb possibility space collapses from 14.7 bits (middle); the collapse burst coincides with
+the ability jump (right; agreement accepted 5/5 seeds and paired controls rejected, not 15 independent
+trials). b, Five-ability battery on the published checkpoint grid, NPI last (left); the NPI case shows
+collapse at 20k preceding usefulness at 40k (middle); a permutation test puts every accepted run’s jump
+in a top collapse-burst window (right; descriptive per-run empirical ranks, not an omnibus significance
+test). c, The rejection side. Left: MultiBERTs tail-gradualism test—tail words accrue slowly and are
+correctly not emergent. Right three panels: Pythia decoder series—agreement emerges with both controls
+at chance; the foreshadow burst precedes the jump (dotted anchored window); head facts are accepted
+while both frequency-tail families are rejected, through two different components. Verified at two scales
+(160m, 410m).
+
+
+
+
+                                                   34
+                                                 35
+
+Extended Data Fig. 11: Episode-level MARL detail and the chess robustness grid. a,
+simple spread (MAPPO): potential and usefulness are different axes—untrained openness does not qualify
+Extended Data Fig. 12: Two plausible observer contracts on the Contextual LBF systems.
+Contract B (declared before running) changes the horizon (15 to 12), the value function (discounted
+reward to undiscounted success) and the basin refinement (win/loss to completion speed) while still
+resolving the trigger identity. Left: verdict grid across all 75 stored systems; every disagreement (amber)
+is a conservative rejection of a learned seed, routed through usefulness (U) in four cases and borderline
+selectivity (S) in one. Right: controls are rejected under both contracts (60/60); structural components
+agree on 14/15 learned seeds; the value component is contract-relative, as the layered definition declares.
+
+
+
+
+Extended Data Fig. 13: Provenance-adjusted discovery surprise: one macro-pattern, three
+provenances. Left: under the frozen open-space reference the sacrifice–rescue pattern is equally rare for
+every system (6.3 bits, dashed); under each provenance’s own early search distribution the seed-mean
+rarity orders as the substrate predicts—scripted 0 < process-shaped 0.39 < outcome-only 0.65 bits (dots:
+individual seeds). Middle: fine-grid acquisition traces; the outcome-only provenance discovers the same
+pattern about twice as late as the process-shaped one, at matched final competence. Right: the retained
+ST-3 miss—collapse suddenness does not order the provenances, because both acquisitions are step-like at
+this grid; strength is carried by provenance rarity and discovery time, not burst shape.
+
+
+
+
+                                                   36
+

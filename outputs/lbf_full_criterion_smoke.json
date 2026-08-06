@@ -1,0 +1,184 @@
+{
+  "status": "exploratory pilot on previously measured policy seeds",
+  "thresholds": {
+    "potential_bits": 0.5,
+    "conditional_selectivity": 0.3,
+    "specificity_js_bits": 0.1,
+    "usefulness": 0.0,
+    "acquisition": 0.2
+  },
+  "seeds": {
+    "11": {
+      "metrics": {
+        "n_states": 12,
+        "context_counts": {
+          "0": 5,
+          "1": 7
+        },
+        "potential_bits": 1.3814838178470275,
+        "natural_trigger_rates": {
+          "0": 1.0,
+          "1": 1.0
+        },
+        "initial_trigger_rates": {
+          "0": 0.05,
+          "1": 0.017857142857142856
+        },
+        "conditional_selectivity": 0.0,
+        "initial_conditional_selectivity": 0.03214285714285715,
+        "acquisition": -0.03214285714285715,
+        "specificity_js_bits": 0.9823397002528461,
+        "usefulness_gap": 0.028472222222222218
+      },
+      "passes": {
+        "potential": true,
+        "conditional_selectivity": false,
+        "specificity": true,
+        "usefulness": true,
+        "endogeneity": true,
+        "acquisition": false
+      },
+      "full_six_component_verdict": 0,
+      "rows": [
+        {
+          "episode": 0,
+          "context_efficient_food": 0,
+          "p_food0_first_trained": 1.0,
+          "p_food0_first_initial": 0.25,
+          "potential_bits": 1.4591479170272448,
+          "specificity_js_bits": 1.0,
+          "utility_do_efficient": 0.225,
+          "utility_do_inefficient": 0.0,
+          "usefulness_gap": 0.225
+        },
+        {
+          "episode": 1,
+          "context_efficient_food": 1,
+          "p_food0_first_trained": 1.0,
+          "p_food0_first_initial": 0.125,
+          "potential_bits": 1.7295739585136223,
+          "specificity_js_bits": 0.9999999999999999,
+          "utility_do_efficient": 0.04666666666666667,
+          "utility_do_inefficient": 0.19333333333333336,
+          "usefulness_gap": -0.1466666666666667
+        },
+        {
+          "episode": 2,
+          "context_efficient_food": 0,
+          "p_food0_first_trained": 1.0,
+          "p_food0_first_initial": 0.0,
+          "potential_bits": 1.3250112108241772,
+          "specificity_js_bits": 1.0,
+          "utility_do_efficient": 0.14333333333333334,
+          "utility_do_inefficient": 0.0,
+          "usefulness_gap": 0.14333333333333334
+        },
+        {
+          "episode": 3,
+          "context_efficient_food": 0,
+          "p_food0_first_trained": 1.0,
+          "p_food0_first_initial": 0.0,
+          "potential_bits": 1.5510981710072647,
+          "specificity_js_bits": 0.9999999999999999,
+          "utility_do_efficient": 0.12333333333333334,
+          "utility_do_inefficient": 0.0,
+          "usefulness_gap": 0.12333333333333334
+        },
+        {
+          "episode": 4,
+          "context_efficient_food": 0,
+          "p_food0_first_trained": 1.0,
+          "p_food0_first_initial": 0.0,
+          "potential_bits": 1.4833557549816874,
+          "specificity_js_bits": 1.0,
+          "utility_do_efficient": 0.115,
+          "utility_do_inefficient": 0.003333333333333336,
+          "usefulness_gap": 0.11166666666666666
+        },
+        {
+          "episode": 5,
+          "context_efficient_food": 1,
+          "p_food0_first_trained": 1.0,
+          "p_food0_first_initial": 0.0,
+          "potential_bits": 1.4833557549816874,
+          "specificity_js_bits": 1.0,
+          "utility_do_efficient": 0.09999999999999999,
+          "utility_do_inefficient": 0.085,
+          "usefulness_gap": 0.014999999999999986
+        },
+        {
+          "episode": 6,
+          "context_efficient_food": 1,
+          "p_food0_first_trained": 1.0,
+          "p_food0_first_initial": 0.0,
+          "potential_bits": 1.896240625180289,
+          "specificity_js_bits": 0.9999999999999999,
+          "utility_do_efficient": 0.09166666666666667,
+          "utility_do_inefficient": 0.06499999999999999,
+          "usefulness_gap": 0.026666666666666686
+        },
+        {
+          "episode": 7,
+          "context_efficient_food": 1,
+          "p_food0_first_trained": 1.0,
+          "p_food0_first_initial": 0.0,
+          "potential_bits": 0.8112781244591328,
+          "specificity_js_bits": 1.0,
+          "utility_do_efficient": 0.0,
+          "utility_do_inefficient": 0.21,
+          "usefulness_gap": -0.21
+        },
+        {
+          "episode": 8,
+          "context_efficient_food": 1,
+          "p_food0_first_trained": 1.0,
+          "p_food0_first_initial": 0.0,
+          "potential_bits": 1.3250112108241772,
+          "specificity_js_bits": 1.0,
+          "utility_do_efficient": 0.07333333333333335,
+          "utility_do_inefficient": 0.10500000000000002,
+          "usefulness_gap": -0.031666666666666676
+        },
+        {
+          "episode": 9,
+          "context_efficient_food": 0,
+          "p_food0_first_trained": 1.0,
+          "p_food0_first_initial": 0.0,
+          "potential_bits": 1.3250112108241772,
+          "specificity_js_bits": 0.7880764030341532,
+          "utility_do_efficient": 0.04833333333333334,
+          "utility_do_inefficient": 0.0,
+          "usefulness_gap": 0.04833333333333334
+        },
+        {
+          "episode": 10,
+          "context_efficient_food": 1,
+          "p_food0_first_trained": 1.0,
+          "p_food0_first_initial": 0.0,
+          "potential_bits": 1.0,
+          "specificity_js_bits": 1.0,
+          "utility_do_efficient": 0.041666666666666664,
+          "utility_do_inefficient": 0.06666666666666667,
+          "usefulness_gap": -0.025
+        },
+        {
+          "episode": 11,
+          "context_efficient_food": 1,
+          "p_food0_first_trained": 1.0,
+          "p_food0_first_initial": 0.0,
+          "potential_bits": 1.188721875540867,
+          "specificity_js_bits": 0.9999999999999999,
+          "utility_do_efficient": 0.10166666666666667,
+          "utility_do_inefficient": 0.04,
+          "usefulness_gap": 0.06166666666666667
+        }
+      ]
+    }
+  },
+  "summary": {
+    "full_verdicts": {
+      "11": 0
+    },
+    "all_pass": false
+  }
+}

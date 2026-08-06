@@ -1,0 +1,114 @@
+{
+  "status": "LEARN-GRIP-POLICY openness-triggered intervention on unseen seeds; calibration from original-seed records only; registered before run",
+  "config": {
+    "test_seed0": 816001,
+    "n_test": 5,
+    "eval_batch": 4096,
+    "switch_bar": 0.95
+  },
+  "seeds": {
+    "0": {
+      "open": {
+        "flip_rate": 0.99976,
+        "trigger_rate": 0.99976,
+        "mean_trigger_step": 19.77167
+      },
+      "fixed": {
+        "flip_rate": 0.98218,
+        "trigger_rate": 1.0,
+        "mean_trigger_step": 18.0
+      },
+      "random": {
+        "flip_rate": 0.73853,
+        "trigger_rate": 1.0,
+        "mean_trigger_step": 19.90796
+      }
+    },
+    "1": {
+      "open": {
+        "flip_rate": 1.0,
+        "trigger_rate": 1.0,
+        "mean_trigger_step": 23.46338
+      },
+      "fixed": {
+        "flip_rate": 1.0,
+        "trigger_rate": 1.0,
+        "mean_trigger_step": 18.0
+      },
+      "random": {
+        "flip_rate": 0.85034,
+        "trigger_rate": 1.0,
+        "mean_trigger_step": 19.87695
+      }
+    },
+    "2": {
+      "open": {
+        "flip_rate": 0.99976,
+        "trigger_rate": 0.99976,
+        "mean_trigger_step": 21.73333
+      },
+      "fixed": {
+        "flip_rate": 0.99976,
+        "trigger_rate": 1.0,
+        "mean_trigger_step": 18.0
+      },
+      "random": {
+        "flip_rate": 0.78882,
+        "trigger_rate": 1.0,
+        "mean_trigger_step": 19.94824
+      }
+    },
+    "3": {
+      "open": {
+        "flip_rate": 1.0,
+        "trigger_rate": 1.0,
+        "mean_trigger_step": 21.48291
+      },
+      "fixed": {
+        "flip_rate": 0.99976,
+        "trigger_rate": 1.0,
+        "mean_trigger_step": 18.0
+      },
+      "random": {
+        "flip_rate": 0.7832,
+        "trigger_rate": 1.0,
+        "mean_trigger_step": 20.03101
+      }
+    },
+    "4": {
+      "open": {
+        "flip_rate": 0.99976,
+        "trigger_rate": 0.99976,
+        "mean_trigger_step": 22.70086
+      },
+      "fixed": {
+        "flip_rate": 0.99854,
+        "trigger_rate": 1.0,
+        "mean_trigger_step": 18.0
+      },
+      "random": {
+        "flip_rate": 0.80469,
+        "trigger_rate": 1.0,
+        "mean_trigger_step": 20.04199
+      }
+    }
+  },
+  "registered_outcomes": {
+    "GP1_transfer_ge_0.90_in_4of5": true,
+    "GP2_adaptive_dominance": true,
+    "GP3_beats_random_by_0.15": true,
+    "pooled_flip": {
+      "open": 0.99985,
+      "fixed": 0.99604,
+      "random": 0.79312
+    },
+    "pooled_mean_step": {
+      "open": 21.83,
+      "fixed": 18.0,
+      "random": 19.961
+    },
+    "open_seeds_ge_090": 5,
+    "tau_star": 18,
+    "theta_star": 0.5914
+  }
+}

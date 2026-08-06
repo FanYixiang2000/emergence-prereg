@@ -1,0 +1,98 @@
+training PPO seed 33 ...
+  seed 33 episode 500: mean return (last 100) -25.65
+  seed 33 episode 1000: mean return (last 100) -26.80
+  seed 33 episode 1500: mean return (last 100) -27.52
+  seed 33 episode 2000: mean return (last 100) -26.66
+  seed 33 episode 2500: mean return (last 100) -24.59
+  seed 33 episode 3000: mean return (last 100) -24.97
+  seed 33 episode 3500: mean return (last 100) -25.67
+  seed 33 episode 4000: mean return (last 100) -23.78
+  seed 33 episode 4500: mean return (last 100) -23.93
+  seed 33 episode 5000: mean return (last 100) -24.47
+  seed 33 episode 5500: mean return (last 100) -25.12
+  seed 33 episode 6000: mean return (last 100) -24.42
+  seed 33 episode 6500: mean return (last 100) -24.89
+  seed 33 episode 7000: mean return (last 100) -23.67
+  seed 33 episode 7500: mean return (last 100) -22.87
+  seed 33 episode 8000: mean return (last 100) -25.11
+  seed 33 episode 8500: mean return (last 100) -23.79
+  seed 33 episode 9000: mean return (last 100) -25.15
+  seed 33 episode 9500: mean return (last 100) -22.98
+  seed 33 episode 10000: mean return (last 100) -23.12
+  seed 33 episode 10500: mean return (last 100) -24.10
+  seed 33 episode 11000: mean return (last 100) -23.62
+  seed 33 episode 11500: mean return (last 100) -23.41
+  seed 33 episode 12000: mean return (last 100) -23.18
+  seed 33 episode 12500: mean return (last 100) -21.65
+  seed 33 episode 13000: mean return (last 100) -23.26
+  seed 33 episode 13500: mean return (last 100) -21.89
+  seed 33 episode 14000: mean return (last 100) -22.63
+  seed 33 episode 14500: mean return (last 100) -22.30
+  seed 33 episode 15000: mean return (last 100) -21.43
+  seed 33 episode 15500: mean return (last 100) -22.35
+  seed 33 episode 16000: mean return (last 100) -22.01
+  seed 33 episode 16500: mean return (last 100) -21.79
+  seed 33 episode 17000: mean return (last 100) -22.42
+  seed 33 episode 17500: mean return (last 100) -21.39
+  seed 33 episode 18000: mean return (last 100) -22.93
+  seed 33 episode 18500: mean return (last 100) -23.37
+  seed 33 episode 19000: mean return (last 100) -23.33
+  seed 33 episode 19500: mean return (last 100) -21.92
+  seed 33 episode 20000: mean return (last 100) -22.55
+  seed 33 episode 20500: mean return (last 100) -22.59
+  seed 33 episode 21000: mean return (last 100) -21.25
+  seed 33 episode 21500: mean return (last 100) -21.81
+  seed 33 episode 22000: mean return (last 100) -21.99
+  seed 33 episode 22500: mean return (last 100) -22.57
+  seed 33 episode 23000: mean return (last 100) -21.71
+  seed 33 episode 23500: mean return (last 100) -22.37
+  seed 33 episode 24000: mean return (last 100) -22.53
+{
+  "condition": "trained_seed33",
+  "n_episodes": 40,
+  "early_potential_bits": 1.7784397200087247,
+  "p_win_start": 0.2401041666666667,
+  "p_win_end": 0.2,
+  "final_bijection_rate": 0.2,
+  "mean_commit_step": 8.825,
+  "do_gap_median": 0.0,
+  "do_gap_mean": 0.034895833333333334,
+  "do_sign_wins": 17,
+  "do_sign_losses": 16,
+  "do_sign_p": 0.5
+}
+{
+  "D1_potential": {
+    "trained_early_potential": [
+      1.7784397200087247
+    ],
+    "pass": true
+  },
+  "D2_useful_collapse": {
+    "trained_win_shift": [
+      -0.04010416666666669
+    ],
+    "trained_bijection_rate": [
+      0.2
+    ],
+    "untrained_bijection_rate": 0.125,
+    "noise_bijection_rate": 0.2,
+    "pass": false
+  },
+  "D3_counterfactual": {
+    "pooled_do_gap_median": 0.0,
+    "pooled_sign_wins": 17,
+    "pooled_sign_losses": 16,
+    "pooled_sign_p": 0.5,
+    "pass": false
+  },
+  "D4_greedy_contrast": {
+    "greedy_bijection_rate": 0.425,
+    "greedy_early_potential": 0.0,
+    "trained_min_bijection": 0.2,
+    "trained_min_potential": 1.7784397200087247,
+    "pass": false
+  },
+  "all_pass": false
+}
+Wrote /home/Yixiang/MPARL/GOGOGO/outputs/deep_marl_collapse_seed33.json

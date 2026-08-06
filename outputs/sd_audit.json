@@ -1,0 +1,323 @@
+{
+  "status": "SD-AUDIT stress audit of the collapse-source ladder; mixed sources, off-family generators, nesting order, finite samples; ladder imported unchanged; registered before run",
+  "results": {
+    "SDA1_mixed_sources": {
+      "pass": false,
+      "detail": {
+        "lambda_ind+rho_env": {
+          "deltas_bits": {
+            "C_individual": 3.8104,
+            "C_env": 0.19617,
+            "C_pair": -0.03832,
+            "C_high": -0.00519
+          },
+          "own": [
+            "C_env",
+            "C_individual"
+          ],
+          "top2": [
+            "C_env",
+            "C_individual"
+          ],
+          "pass": true
+        },
+        "lambda_ind+kappa_pair": {
+          "deltas_bits": {
+            "C_individual": 3.8224,
+            "C_env": 0.00014,
+            "C_pair": 1.00768,
+            "C_high": -0.01721
+          },
+          "own": [
+            "C_individual",
+            "C_pair"
+          ],
+          "top2": [
+            "C_individual",
+            "C_pair"
+          ],
+          "pass": true
+        },
+        "lambda_ind+gamma_high": {
+          "deltas_bits": {
+            "C_individual": 3.83583,
+            "C_env": -0.00535,
+            "C_pair": -0.06065,
+            "C_high": 0.46892
+          },
+          "own": [
+            "C_high",
+            "C_individual"
+          ],
+          "top2": [
+            "C_high",
+            "C_individual"
+          ],
+          "pass": true
+        },
+        "rho_env+kappa_pair": {
+          "deltas_bits": {
+            "C_individual": 0.02021,
+            "C_env": 0.19877,
+            "C_pair": 1.7465,
+            "C_high": -0.01944
+          },
+          "own": [
+            "C_env",
+            "C_pair"
+          ],
+          "top2": [
+            "C_env",
+            "C_pair"
+          ],
+          "pass": true
+        },
+        "rho_env+gamma_high": {
+          "deltas_bits": {
+            "C_individual": 0.11813,
+            "C_env": 0.10274,
+            "C_pair": 0.06576,
+            "C_high": 0.34632
+          },
+          "own": [
+            "C_env",
+            "C_high"
+          ],
+          "top2": [
+            "C_high",
+            "C_individual"
+          ],
+          "pass": false
+        },
+        "kappa_pair+gamma_high": {
+          "deltas_bits": {
+            "C_individual": 0.33239,
+            "C_env": -0.0051,
+            "C_pair": 1.82188,
+            "C_high": 0.16979
+          },
+          "own": [
+            "C_high",
+            "C_pair"
+          ],
+          "top2": [
+            "C_individual",
+            "C_pair"
+          ],
+          "pass": false
+        }
+      }
+    },
+    "SDA2_off_family": {
+      "pass": true,
+      "detail": {
+        "modular_sum": {
+          "components": {
+            "C_individual": 0.0,
+            "C_env": 0.0,
+            "C_pair": 0.0,
+            "C_high": 3.32193
+          },
+          "pass": true
+        },
+        "markov_chain": {
+          "components": {
+            "C_individual": -0.0,
+            "C_env": 0.0,
+            "C_pair": 3.24917,
+            "C_high": 0.0
+          },
+          "pass": true
+        },
+        "dirichlet_50": {
+          "min_component_bits": 7.969878751445947e-05,
+          "n_with_negative_component": 0,
+          "max_identity_gap_bits": 0.0,
+          "pass": true
+        }
+      }
+    },
+    "SDA3_nesting_order": {
+      "pass": true,
+      "detail": {
+        "note": "individual/environment stages cannot be literally swapped: mixture marginals are a subset of per-env marginals, so the published chain is a filtration; the genuine order freedom is declaring the environment before vs after the pairwise stage, quantified here",
+        "max_individual_shift_bits": 0.0,
+        "max_high_shift_bits": 0.0,
+        "max_env_pair_split_shift_bits": 0.26478772758038005,
+        "worst_case": {
+          "knobs": [
+            0.4,
+            0.8,
+            0.0,
+            0.0
+          ],
+          "published": {
+            "C_individual": 1.08925,
+            "C_env": 0.26479,
+            "C_pair": 0.0,
+            "C_high": 0.0
+          },
+          "env_after_pair": {
+            "C_individual": 1.08925,
+            "C_env": 0.0,
+            "C_pair": 0.26479,
+            "C_high": 0.0
+          }
+        }
+      }
+    },
+    "SDA4_sample_complexity": {
+      "pass": true,
+      "detail": {
+        "truth_components": {
+          "C_individual": 1.1205,
+          "C_env": 0.04616,
+          "C_pair": 0.57263,
+          "C_high": 0.0882
+        },
+        "error_table": {
+          "300": {
+            "C_individual": {
+              "median_abs_err": 0.08693,
+              "median_bias": 0.07885
+            },
+            "C_env": {
+              "median_abs_err": 0.01416,
+              "median_bias": 0.01416
+            },
+            "C_pair": {
+              "median_abs_err": 0.80827,
+              "median_bias": 0.80827
+            },
+            "C_high": {
+              "median_abs_err": 0.31068,
+              "median_bias": 0.31068
+            }
+          },
+          "1000": {
+            "C_individual": {
+              "median_abs_err": 0.05601,
+              "median_bias": -0.02414
+            },
+            "C_env": {
+              "median_abs_err": 0.00999,
+              "median_bias": 0.00903
+            },
+            "C_pair": {
+              "median_abs_err": 0.23606,
+              "median_bias": 0.23606
+            },
+            "C_high": {
+              "median_abs_err": 0.3296,
+              "median_bias": 0.3296
+            }
+          },
+          "3000": {
+            "C_individual": {
+              "median_abs_err": 0.02816,
+              "median_bias": 0.01156
+            },
+            "C_env": {
+              "median_abs_err": 0.00382,
+              "median_bias": -6e-05
+            },
+            "C_pair": {
+              "median_abs_err": 0.06635,
+              "median_bias": 0.06635
+            },
+            "C_high": {
+              "median_abs_err": 0.16357,
+              "median_bias": 0.16357
+            }
+          },
+          "10000": {
+            "C_individual": {
+              "median_abs_err": 0.01402,
+              "median_bias": 0.00249
+            },
+            "C_env": {
+              "median_abs_err": 0.00244,
+              "median_bias": 0.00088
+            },
+            "C_pair": {
+              "median_abs_err": 0.0252,
+              "median_bias": 0.0252
+            },
+            "C_high": {
+              "median_abs_err": 0.05677,
+              "median_bias": 0.05677
+            }
+          },
+          "30000": {
+            "C_individual": {
+              "median_abs_err": 0.0114,
+              "median_bias": -0.00335
+            },
+            "C_env": {
+              "median_abs_err": 0.00067,
+              "median_bias": 0.00017
+            },
+            "C_pair": {
+              "median_abs_err": 0.00565,
+              "median_bias": 0.00565
+            },
+            "C_high": {
+              "median_abs_err": 0.01802,
+              "median_bias": 0.01802
+            }
+          },
+          "100000": {
+            "C_individual": {
+              "median_abs_err": 0.00349,
+              "median_bias": -0.00088
+            },
+            "C_env": {
+              "median_abs_err": 0.00054,
+              "median_bias": 0.00024
+            },
+            "C_pair": {
+              "median_abs_err": 0.00131,
+              "median_bias": 0.00011
+            },
+            "C_high": {
+              "median_abs_err": 0.0051,
+              "median_bias": 0.0051
+            }
+          }
+        },
+        "negativity": {
+          "300": {
+            "negativity_rate": 0.0,
+            "worst_negative_bits": 0.0
+          },
+          "1000": {
+            "negativity_rate": 0.0,
+            "worst_negative_bits": 0.0
+          },
+          "3000": {
+            "negativity_rate": 0.0,
+            "worst_negative_bits": 0.0
+          },
+          "10000": {
+            "negativity_rate": 0.0,
+            "worst_negative_bits": 0.0
+          },
+          "30000": {
+            "negativity_rate": 0.0,
+            "worst_negative_bits": 0.0
+          },
+          "100000": {
+            "negativity_rate": 0.0,
+            "worst_negative_bits": 0.0
+          }
+        }
+      }
+    }
+  },
+  "registered_outcomes": {
+    "SDA1": false,
+    "SDA2": true,
+    "SDA3": true,
+    "SDA4": true
+  }
+}

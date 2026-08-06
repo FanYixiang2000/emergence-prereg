@@ -1,0 +1,29 @@
+seed 95331 trained; final O=0.6836 r3=0.994
+seed 95331: r=2.9939 gate=True dBIC=123.168 t*=675.0 onset_pass=True lead=True
+seed 95332 trained; final O=0.6861 r3=0.993
+seed 95332: r=2.9919 gate=True dBIC=137.408 t*=650.0 onset_pass=True lead=True
+seed 95333 trained; final O=0.6849 r3=0.994
+seed 95333: r=2.9929 gate=True dBIC=116.45 t*=625.0 onset_pass=True lead=True
+seed 95334 trained; final O=0.6893 r3=0.992
+seed 95334: r=2.991 gate=True dBIC=169.153 t*=675.0 onset_pass=True lead=True
+seed 95335 trained; final O=0.6805 r3=0.995
+seed 95335: r=2.9946 gate=True dBIC=102.489 t*=575.0 onset_pass=True lead=True
+seed 95336 trained; final O=0.6829 r3=0.994
+seed 95336: r=2.9937 gate=True dBIC=149.607 t*=650.0 onset_pass=True lead=True
+seed 95337 trained; final O=0.6801 r3=0.996
+seed 95337: r=2.9937 gate=True dBIC=57.931 t*=475.0 onset_pass=True lead=True
+seed 95338 trained; final O=0.6841 r3=0.994
+seed 95338: r=2.9924 gate=True dBIC=134.047 t*=625.0 onset_pass=True lead=True
+seed 95339 trained; final O=0.6748 r3=0.998
+seed 95339: r=2.9968 gate=True dBIC=98.07 t*=600.0 onset_pass=True lead=True
+seed 95340 trained; final O=0.6856 r3=0.993
+seed 95340: r=2.9929 gate=True dBIC=164.159 t*=675.0 onset_pass=True lead=True
+{
+  "TRICBPN1_learning": true,
+  "TRICBPN2_onset_frac": 1.0,
+  "TRICBPN2_pass": true,
+  "TRICBPN3_lead": true,
+  "n_learning": 10,
+  "n_onset": 10
+}
+Wrote /home/Yixiang/MPARL/GOGOGO/outputs/tri_c_breakpoint_n.json

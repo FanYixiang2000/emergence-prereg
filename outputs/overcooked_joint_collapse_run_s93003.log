@@ -1,0 +1,21 @@
+Gym has been unmaintained since 2022 and does not support NumPy 2.0 amongst other critical functionality.
+Please upgrade to Gymnasium, the maintained drop-in replacement of Gym, or contact the authors of your software and request that they upgrade.
+Users of this version of Gym should be able to simply replace 'import gym' with 'import gymnasium as gym' in the vast majority of cases.
+See the migration guide at https://gymnasium.farama.org/introduction/migration_guide/ for additional information.
+ckpt 40000: Cbar=0.0731 CI=[0.06925289222826436, 0.07830155485017004] C_ind=0.367 C_env=0.004 C_rel=0.007 Hmacro=1.189 score=0.0
+ckpt 80000: Cbar=0.0634 CI=[0.0596621682679397, 0.06838991651000607] C_ind=0.316 C_env=0.004 C_rel=0.009 Hmacro=0.901 score=0.4
+ckpt 160000: Cbar=0.0805 CI=[0.07664385713118323, 0.08524190136899779] C_ind=0.383 C_env=0.007 C_rel=0.026 Hmacro=0.811 score=0.2
+ckpt 320000: Cbar=0.1012 CI=[0.09664761708393421, 0.10709756145284197] C_ind=0.504 C_env=0.012 C_rel=0.007 Hmacro=1.585 score=2.0
+ckpt 640000: Cbar=0.0525 CI=[0.04832250854210725, 0.057801183529662285] C_ind=0.260 C_env=0.003 C_rel=0.008 Hmacro=1.785 score=9.4
+ckpt 1000000: Cbar=0.0922 CI=[0.0884978714568342, 0.0971470909569241] C_ind=0.448 C_env=0.013 C_rel=0.016 Hmacro=0.900 score=24.4
+ckpt 1500000: Cbar=0.1060 CI=[0.10257698789399841, 0.1105260901831867] C_ind=0.525 C_env=0.010 C_rel=0.012 Hmacro=0.987 score=46.0
+ckpt 2000000: Cbar=0.1835 CI=[0.17701754691501512, 0.1912088727606999] C_ind=0.918 C_env=0.009 C_rel=0.022 Hmacro=1.175 score=35.4
+{
+  "JC1_collapse_direction": true,
+  "JC2_ladder_sanity": true,
+  "JC3_burst_at_takeoff": true,
+  "JC4_relational_growth": true,
+  "JC5_macro_collapse": true
+}
+largest collapse interval: (1500000, 2000000)
+Wrote /home/Yixiang/MPARL/GOGOGO/outputs/overcooked_joint_collapse_s93003.json

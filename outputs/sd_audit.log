@@ -1,0 +1,11 @@
+SDA1 FAIL
+SDA2 PASS
+SDA3 PASS
+SDA4 PASS
+{
+  "SDA1": false,
+  "SDA2": true,
+  "SDA3": true,
+  "SDA4": true
+}
+Wrote /home/Yixiang/MPARL/GOGOGO/outputs/sd_audit.json

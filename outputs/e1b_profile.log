@@ -1,0 +1,19 @@
+Gym has been unmaintained since 2022 and does not support NumPy 2.0 amongst other critical functionality.
+Please upgrade to Gymnasium, the maintained drop-in replacement of Gym, or contact the authors of your software and request that they upgrade.
+Users of this version of Gym should be able to simply replace 'import gym' with 'import gymnasium as gym' in the vast majority of cases.
+See the migration guide at https://gymnasium.farama.org/introduction/migration_guide/ for additional information.
+noisy scripted: {'H_Q0': 5.1699, 'H_QI': 5.0056, 'H_QE': 5.005, 'H_P': 4.9999, 'C_individual': 0.1644, 'C_env': 0.0006, 'C_relational': 0.005, 'C_high': 0.0, 'C_total': 0.17, 'openness': 0.9671, 'collapse_norm': 0.0329}
+learned: {'H_Q0': 5.1699, 'H_QI': 4.7767, 'H_QE': 4.7601, 'H_P': 4.7517, 'C_individual': 0.3932, 'C_env': 0.0166, 'C_relational': 0.0084, 'C_high': 0.0, 'C_total': 0.4183, 'openness': 0.9191, 'collapse_norm': 0.0809}
+{
+  "noisy_scripted": {
+    "C_individual": 0.966810677720466,
+    "C_env": 0.003506360533137882,
+    "C_relational": 0.029682961746396085
+  },
+  "learned": {
+    "C_individual": 0.9401261911933543,
+    "C_env": 0.03979269698477282,
+    "C_relational": 0.020081111821872888
+  }
+}
+Wrote /home/Yixiang/MPARL/GOGOGO/outputs/overcooked_source_profile_matched.json

@@ -1,0 +1,77 @@
+{
+  "status": "CEB-ISING canonical Ising battery; preregistered",
+  "config": {
+    "L": 40,
+    "n_rep": 8,
+    "temps": [
+      4.0,
+      3.2,
+      2.8,
+      2.5,
+      2.35,
+      2.25,
+      2.1,
+      1.9,
+      1.6,
+      1.3
+    ],
+    "therm_sweeps": 800,
+    "sample_sweeps": 400
+  },
+  "temperature_high_to_low": [
+    4.0,
+    3.2,
+    2.8,
+    2.5,
+    2.35,
+    2.25,
+    2.1,
+    1.9,
+    1.6,
+    1.3
+  ],
+  "abs_magnetization": [
+    0.04034,
+    0.05858,
+    0.08021,
+    0.17218,
+    0.31714,
+    0.68732,
+    0.86986,
+    0.93866,
+    0.97966,
+    0.99481
+  ],
+  "openness": [
+    0.99883,
+    0.99752,
+    0.99535,
+    0.97851,
+    0.92618,
+    0.62548,
+    0.34725,
+    0.19774,
+    0.08191,
+    0.02603
+  ],
+  "adj": {
+    "drop": 0.9728,
+    "gate_passed": true,
+    "hinge": {
+      "delta_bic": 8.819,
+      "t_star": 3.0,
+      "slope_before": -0.00392869,
+      "slope_after": -0.17786816,
+      "onset_type": true
+    },
+    "b5_control": false
+  },
+  "registered_outcomes": {
+    "ISG1_control_collapse": false,
+    "ISG2_native_alignment": false,
+    "ISG3_high_low_contrast": true,
+    "hinge_index": 3,
+    "steepest_m_index": 5,
+    "tc_grid_index": 5
+  }
+}

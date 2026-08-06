@@ -1,0 +1,69 @@
+d=1.0 seed 6201: sel 0.00 (blind)
+d=1.0 seed 6202: sel 0.00 (blind)
+d=1.0 seed 6203: sel 0.00 (blind)
+d=1.0 seed 6204: sel 0.00 (blind)
+d=1.0 seed 6205: sel 0.00 (blind)
+d=1.0 seed 6206: sel 0.92 (selective)
+d=1.0 seed 6207: sel 0.00 (blind)
+d=1.0 seed 6208: sel 0.00 (blind)
+d=1.0 seed 6209: sel 0.00 (blind)
+d=1.0 seed 6210: sel 0.00 (blind)
+cost 1.0: ref gap -0.82, selective 10%
+d=1.5 seed 6301: sel 0.00 (blind)
+d=1.5 seed 6302: sel 0.00 (blind)
+d=1.5 seed 6303: sel 0.00 (blind)
+d=1.5 seed 6304: sel 0.93 (selective)
+d=1.5 seed 6305: sel 0.00 (blind)
+d=1.5 seed 6306: sel 1.00 (selective)
+d=1.5 seed 6307: sel 0.00 (blind)
+d=1.5 seed 6308: sel 0.00 (blind)
+d=1.5 seed 6309: sel 0.00 (blind)
+d=1.5 seed 6310: sel 0.00 (blind)
+cost 1.5: ref gap +0.12, selective 20%
+d=2.0 seed 6401: sel 1.00 (selective)
+d=2.0 seed 6402: sel 1.00 (selective)
+d=2.0 seed 6403: sel 1.00 (selective)
+d=2.0 seed 6404: sel 0.00 (blind)
+d=2.0 seed 6405: sel 1.00 (selective)
+d=2.0 seed 6406: sel 1.00 (selective)
+d=2.0 seed 6407: sel 0.00 (blind)
+d=2.0 seed 6408: sel 1.00 (selective)
+d=2.0 seed 6409: sel 1.00 (selective)
+d=2.0 seed 6410: sel 1.00 (selective)
+cost 2.0: ref gap +1.06, selective 80%
+d=2.5 seed 6501: sel 1.00 (selective)
+d=2.5 seed 6502: sel 1.00 (selective)
+d=2.5 seed 6503: sel 1.00 (selective)
+d=2.5 seed 6504: sel 1.00 (selective)
+d=2.5 seed 6505: sel 1.00 (selective)
+d=2.5 seed 6506: sel 1.00 (selective)
+d=2.5 seed 6507: sel 1.00 (selective)
+d=2.5 seed 6508: sel 1.00 (selective)
+d=2.5 seed 6509: sel 1.00 (selective)
+d=2.5 seed 6510: sel 1.00 (selective)
+cost 2.5: ref gap +2.00, selective 100%
+d=3.0 seed 6601: sel 1.00 (selective)
+d=3.0 seed 6602: sel 0.98 (selective)
+d=3.0 seed 6603: sel 1.00 (selective)
+d=3.0 seed 6604: sel 1.00 (selective)
+d=3.0 seed 6605: sel 0.00 (blind)
+d=3.0 seed 6606: sel 0.98 (selective)
+d=3.0 seed 6607: sel 1.00 (selective)
+d=3.0 seed 6608: sel 1.00 (selective)
+d=3.0 seed 6609: sel 1.00 (selective)
+d=3.0 seed 6610: sel 1.00 (selective)
+cost 3.0: ref gap +2.93, selective 90%
+{
+  "BF1_monotone_nondecreasing": true,
+  "BF2_endpoints": true,
+  "BF3_gap_sign_predicts_majority": "4/5 -> True",
+  "BF4_early_snapshot_predicts_basin": "0.50 -> False",
+  "selective_fractions_by_cost": {
+    "1.0": 0.1,
+    "1.5": 0.2,
+    "2.0": 0.8,
+    "2.5": 1.0,
+    "3.0": 0.9
+  }
+}
+Wrote /home/Yixiang/MPARL/GOGOGO/outputs/convention_bifurcation.json

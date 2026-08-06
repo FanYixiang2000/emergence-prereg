@@ -1,0 +1,44 @@
+N=1: onset=False t*=340.0 t50=220.0 width=220.0
+N=2: onset=False t*=340.0 t50=230.0 width=270.0
+N=5: onset=False t*=410.0 t50=280.0 width=290.0
+N=10: onset=False t*=470.0 t50=320.0 width=270.0
+N=20: onset=True t*=140.0 t50=370.0 width=300.0
+N=50: onset=True t*=200.0 t50=430.0 width=280.0
+N=100: onset=True t*=250.0 t50=480.0 width=280.0
+N=200: onset=True t*=270.0 t50=510.0 width=290.0
+N=500: onset=True t*=430.0 t50=670.0 width=290.0
+{
+  "FSS1_onset_pattern": false,
+  "FSS2_log_law": true,
+  "FSS3_width_invariance": true,
+  "FSS4_translation_collapse": true,
+  "log_law": {
+    "b": 87.647,
+    "a": 88.37,
+    "r2": 0.9273,
+    "b_ci95": [
+      41.166,
+      124.0
+    ]
+  },
+  "widths_large_N": {
+    "50": 280.0,
+    "100": 280.0,
+    "200": 290.0,
+    "500": 290.0
+  },
+  "rms_aligned": 0.0101,
+  "rms_unaligned": 0.2664,
+  "onset_sizes": [
+    20,
+    50,
+    100,
+    200,
+    500
+  ],
+  "threshold_region": {
+    "2": false,
+    "5": false
+  }
+}
+Wrote /home/Yixiang/MPARL/GOGOGO/outputs/ant_fss.json

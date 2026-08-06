@@ -1,0 +1,31 @@
+{
+  "summary": [
+    {
+      "regime": "pure_team",
+      "n_trajectories": 600.0,
+      "n_clusters_used": 4.0,
+      "cluster_purity": 1.0,
+      "hand_effective_modes": 1.999999999996,
+      "cluster_effective_modes": 3.6875679158591215,
+      "modes_absolute_error": 1.6875679158631214
+    },
+    {
+      "regime": "uncertain_preference",
+      "n_trajectories": 600.0,
+      "n_clusters_used": 4.0,
+      "cluster_purity": 1.0,
+      "hand_effective_modes": 2.792245901298888,
+      "cluster_effective_modes": 2.792245901298888,
+      "modes_absolute_error": 0.0
+    },
+    {
+      "regime": "random_noise",
+      "n_trajectories": 600.0,
+      "n_clusters_used": 4.0,
+      "cluster_purity": 1.0,
+      "hand_effective_modes": 2.5040443702999493,
+      "cluster_effective_modes": 2.6773145683557327,
+      "modes_absolute_error": 0.17327019805578336
+    }
+  ]
+}

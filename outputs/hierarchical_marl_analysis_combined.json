@@ -1,0 +1,276 @@
+{
+  "status": "exploratory seed-aware re-analysis and prospective planning",
+  "simple_spread": {
+    "per_seed": {
+      "11": {
+        "n_episodes": 40,
+        "mean": 0.16302083333333334,
+        "median": 0.09375000000000004,
+        "positive_fraction": 0.65,
+        "negative_fraction": 0.35,
+        "zero_fraction": 0.0
+      },
+      "22": {
+        "n_episodes": 40,
+        "mean": 0.060416666666666674,
+        "median": 0.10416666666666669,
+        "positive_fraction": 0.625,
+        "negative_fraction": 0.35,
+        "zero_fraction": 0.025
+      },
+      "33": {
+        "n_episodes": 40,
+        "mean": 0.049479166666666664,
+        "median": 0.0625,
+        "positive_fraction": 0.575,
+        "negative_fraction": 0.4,
+        "zero_fraction": 0.025
+      },
+      "101": {
+        "n_episodes": 40,
+        "mean": 0.08958333333333332,
+        "median": 0.12499999999999999,
+        "positive_fraction": 0.6,
+        "negative_fraction": 0.35,
+        "zero_fraction": 0.05
+      },
+      "202": {
+        "n_episodes": 40,
+        "mean": 0.1234375,
+        "median": 0.09374999999999994,
+        "positive_fraction": 0.525,
+        "negative_fraction": 0.425,
+        "zero_fraction": 0.05
+      },
+      "303": {
+        "n_episodes": 40,
+        "mean": 0.08489583333333334,
+        "median": 0.041666666666666685,
+        "positive_fraction": 0.55,
+        "negative_fraction": 0.425,
+        "zero_fraction": 0.025
+      }
+    },
+    "seed_level": {
+      "mean_effects": [
+        0.16302083333333334,
+        0.060416666666666674,
+        0.049479166666666664,
+        0.08958333333333332,
+        0.1234375,
+        0.08489583333333334
+      ],
+      "median_effects": [
+        0.09375000000000004,
+        0.10416666666666669,
+        0.0625,
+        0.12499999999999999,
+        0.09374999999999994,
+        0.041666666666666685
+      ],
+      "mean_of_seed_means": 0.09513888888888888,
+      "median_of_seed_medians": 0.09375,
+      "exact_one_sided_sign_p_seed_means": 0.015625,
+      "exact_one_sided_sign_p_seed_medians": 0.015625,
+      "leave_one_seed_out_mean": {
+        "11": 0.0815625,
+        "22": 0.10208333333333335,
+        "33": 0.10427083333333331,
+        "101": 0.09625,
+        "202": 0.08947916666666668,
+        "303": 0.09718750000000001
+      }
+    },
+    "cluster_bootstrap": {
+      "pooled_mean": 0.0951388888888889,
+      "pooled_mean_cluster_ci95": [
+        0.032204861111111115,
+        0.1564236111111111
+      ],
+      "pooled_median": 0.08333333333333334,
+      "pooled_median_cluster_ci95": [
+        0.02083333333333337,
+        0.16666666666666669
+      ],
+      "mean_of_seed_means": 0.09513888888888888,
+      "mean_of_seed_means_cluster_ci95": [
+        0.032204861111111115,
+        0.1564236111111111
+      ],
+      "bootstrap_probability_mean_positive": 0.99835,
+      "note": "Two-stage bootstrap resamples three observed policy seeds and then episodes; with K=3 it cannot establish broad training-population generality."
+    },
+    "random_intercept_diagnostics": {
+      "within_seed_variance": 0.1878240369776828,
+      "between_seed_variance_method_of_moments": 0.0,
+      "icc": 0.0,
+      "mean_cluster_size": 40.0,
+      "episode_count": 240,
+      "design_effect": 1.0,
+      "episode_equivalent_effective_n": 240.0,
+      "warning": "Variance components are highly unstable with only three seeds."
+    },
+    "power_planning": {
+      "assumed_seed_effect_mean": 0.09513888888888888,
+      "assumed_seed_effect_sd": 0.042035692230487844,
+      "one_sided_alpha": 0.05,
+      "simulated_power": {
+        "5": 0.99175,
+        "8": 0.99995,
+        "10": 1.0,
+        "12": 1.0,
+        "15": 1.0,
+        "20": 1.0
+      },
+      "warning": "Planning simulation assumes normally distributed seed effects and uses mean/SD estimated from only three seeds."
+    }
+  },
+  "lbf": {
+    "per_seed": {
+      "11": {
+        "n_episodes": 30,
+        "mean": 0.14375,
+        "median": 0.03125,
+        "positive_fraction": 0.7666666666666667,
+        "negative_fraction": 0.0,
+        "zero_fraction": 0.23333333333333334
+      },
+      "22": {
+        "n_episodes": 30,
+        "mean": 0.10555555555555557,
+        "median": 0.041666666666666664,
+        "positive_fraction": 0.7333333333333333,
+        "negative_fraction": 0.0,
+        "zero_fraction": 0.26666666666666666
+      },
+      "33": {
+        "n_episodes": 30,
+        "mean": 0.07708333333333335,
+        "median": 0.041666666666666664,
+        "positive_fraction": 0.8,
+        "negative_fraction": 0.0,
+        "zero_fraction": 0.2
+      },
+      "101": {
+        "n_episodes": 30,
+        "mean": 0.3652777777777778,
+        "median": 0.13541666666666666,
+        "positive_fraction": 0.7333333333333333,
+        "negative_fraction": 0.0,
+        "zero_fraction": 0.26666666666666666
+      },
+      "202": {
+        "n_episodes": 30,
+        "mean": 0.4555555555555556,
+        "median": 0.6354166666666667,
+        "positive_fraction": 0.7666666666666667,
+        "negative_fraction": 0.0,
+        "zero_fraction": 0.23333333333333334
+      },
+      "303": {
+        "n_episodes": 30,
+        "mean": 0.14166666666666664,
+        "median": 0.020833333333333332,
+        "positive_fraction": 0.5333333333333333,
+        "negative_fraction": 0.0,
+        "zero_fraction": 0.4666666666666667
+      },
+      "404": {
+        "n_episodes": 30,
+        "mean": 0.4888888888888888,
+        "median": 0.5520833333333333,
+        "positive_fraction": 0.7333333333333333,
+        "negative_fraction": 0.0,
+        "zero_fraction": 0.26666666666666666
+      },
+      "505": {
+        "n_episodes": 30,
+        "mean": 0.38680555555555557,
+        "median": 0.3229166666666667,
+        "positive_fraction": 0.7666666666666667,
+        "negative_fraction": 0.0,
+        "zero_fraction": 0.23333333333333334
+      }
+    },
+    "seed_level": {
+      "mean_effects": [
+        0.14375,
+        0.10555555555555557,
+        0.07708333333333335,
+        0.3652777777777778,
+        0.4555555555555556,
+        0.14166666666666664,
+        0.4888888888888888,
+        0.38680555555555557
+      ],
+      "median_effects": [
+        0.03125,
+        0.041666666666666664,
+        0.041666666666666664,
+        0.13541666666666666,
+        0.6354166666666667,
+        0.020833333333333332,
+        0.5520833333333333,
+        0.3229166666666667
+      ],
+      "mean_of_seed_means": 0.2705729166666666,
+      "median_of_seed_medians": 0.08854166666666666,
+      "exact_one_sided_sign_p_seed_means": 0.00390625,
+      "exact_one_sided_sign_p_seed_medians": 0.00390625,
+      "leave_one_seed_out_mean": {
+        "11": 0.2886904761904762,
+        "22": 0.2941468253968254,
+        "33": 0.2982142857142857,
+        "101": 0.2570436507936508,
+        "202": 0.24414682539682536,
+        "303": 0.28898809523809527,
+        "404": 0.23938492063492062,
+        "505": 0.25396825396825395
+      }
+    },
+    "cluster_bootstrap": {
+      "pooled_mean": 0.27057291666666666,
+      "pooled_mean_cluster_ci95": [
+        0.15902126736111113,
+        0.39036458333333335
+      ],
+      "pooled_median": 0.08333333333333333,
+      "pooled_median_cluster_ci95": [
+        0.041666666666666664,
+        0.19791666666666669
+      ],
+      "mean_of_seed_means": 0.2705729166666666,
+      "mean_of_seed_means_cluster_ci95": [
+        0.1590212673611111,
+        0.39036458333333335
+      ],
+      "bootstrap_probability_mean_positive": 1.0,
+      "note": "Two-stage bootstrap resamples three observed policy seeds and then episodes; with K=3 it cannot establish broad training-population generality."
+    },
+    "random_intercept_diagnostics": {
+      "within_seed_variance": 0.09453842143598337,
+      "between_seed_variance_method_of_moments": 0.025667190612076566,
+      "icc": 0.2135273900673993,
+      "mean_cluster_size": 30.0,
+      "episode_count": 240,
+      "design_effect": 7.19229431195458,
+      "episode_equivalent_effective_n": 33.369046035989804,
+      "warning": "Variance components are highly unstable with only three seeds."
+    },
+    "power_planning": {
+      "assumed_seed_effect_mean": 0.2705729166666666,
+      "assumed_seed_effect_sd": 0.1697600404294525,
+      "one_sided_alpha": 0.05,
+      "simulated_power": {
+        "5": 0.89025,
+        "8": 0.99225,
+        "10": 0.9987,
+        "12": 0.99975,
+        "15": 1.0,
+        "20": 1.0
+      },
+      "warning": "Planning simulation assumes normally distributed seed effects and uses mean/SD estimated from only three seeds."
+    }
+  },
+  "inference_note": "Episodes quantify evaluation uncertainty conditional on policies. Training-population inference is seed-level; exact sign-test resolution is limited by the number of trained policy seeds."
+}

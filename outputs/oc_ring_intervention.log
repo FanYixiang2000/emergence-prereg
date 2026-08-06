@@ -1,0 +1,65 @@
+Gym has been unmaintained since 2022 and does not support NumPy 2.0 amongst other critical functionality.
+Please upgrade to Gymnasium, the maintained drop-in replacement of Gym, or contact the authors of your software and request that they upgrade.
+Users of this version of Gym should be able to simply replace 'import gym' with 'import gymnasium as gym' in the vast majority of cases.
+See the migration guide at https://gymnasium.farama.org/introduction/migration_guide/ for additional information.
+seed 95101 early@100000 s=0.25: held p_ccw=0.8667 soups=0.2667
+seed 95101 early@100000 s=0.5: held p_ccw=0.9688 soups=0.0667
+seed 95101 open@260000 s=0.25: held p_ccw=0.9688 soups=0.2
+seed 95101 open@260000 s=0.5: held p_ccw=0.8667 soups=0.1667
+seed 95101 late@1600000 s=0.25: held p_ccw=0.9688 soups=2.7333
+seed 95101 late@1600000 s=0.5: held p_ccw=0.9688 soups=2.4
+seed 95202 early@100000 s=0.25: uncommitted p_ccw=0.5 soups=0.2
+seed 95202 early@100000 s=0.5: uncommitted p_ccw=0.56 soups=0.0333
+seed 95202 open@1220000 s=0.25: uncommitted p_ccw=0.7037 soups=0.2333
+seed 95202 open@1220000 s=0.5: flip p_ccw=0.1667 soups=0.0
+seed 95202 late@1600000 s=0.25: held p_ccw=0.9688 soups=0.2667
+seed 95202 late@1600000 s=0.5: held p_ccw=0.875 soups=0.0
+seed 95303 early@100000 s=0.25: held p_ccw=0.0667 soups=0.1
+seed 95303 early@100000 s=0.5: uncommitted p_ccw=0.3333 soups=0.0667
+seed 95303 open@1340000 s=0.25: held p_ccw=0.0968 soups=1.4
+seed 95303 open@1340000 s=0.5: flip p_ccw=0.9688 soups=0.6667
+seed 95303 late@1600000 s=0.25: held p_ccw=0.0312 soups=1.8
+seed 95303 late@1600000 s=0.5: held p_ccw=0.0312 soups=2.1333
+seed 95606 early@100000 s=0.25: held p_ccw=0.9688 soups=0.0
+seed 95606 early@100000 s=0.5: held p_ccw=0.9688 soups=0.1
+seed 95606 open@20000 s=0.25: held p_ccw=0.9688 soups=0.0
+seed 95606 open@20000 s=0.5: uncommitted p_ccw=0.72 soups=0.0667
+seed 95606 late@1600000 s=0.25: held p_ccw=0.9688 soups=2.7667
+seed 95606 late@1600000 s=0.5: held p_ccw=0.9688 soups=2.4333
+seed 95707 early@100000 s=0.25: uncommitted p_ccw=0.5 soups=0.1333
+seed 95707 early@100000 s=0.5: flip p_ccw=0.1429 soups=0.1
+seed 95707 open@1200000 s=0.25: held p_ccw=0.9688 soups=0.9667
+seed 95707 open@1200000 s=0.5: flip p_ccw=0.0909 soups=0.0
+seed 95707 late@1600000 s=0.25: held p_ccw=0.9688 soups=2.1
+seed 95707 late@1600000 s=0.5: held p_ccw=0.9688 soups=2.3
+seed 95808 early@100000 s=0.25: uncommitted p_ccw=0.5926 soups=0.0
+seed 95808 early@100000 s=0.5: uncommitted p_ccw=0.2759 soups=0.3
+seed 95808 open@340000 s=0.25: held p_ccw=0.0645 soups=0.3
+seed 95808 open@340000 s=0.5: uncommitted p_ccw=0.3103 soups=0.5
+seed 95808 late@1600000 s=0.25: held p_ccw=0.0312 soups=2.7
+seed 95808 late@1600000 s=0.5: held p_ccw=0.0312 soups=2.4
+seed 95909 early@100000 s=0.25: held p_ccw=0.9677 soups=0.3
+seed 95909 early@100000 s=0.5: flip p_ccw=0.1613 soups=0.0667
+seed 95909 open@400000 s=0.25: uncommitted p_ccw=0.4231 soups=0.6333
+seed 95909 open@400000 s=0.5: held p_ccw=0.84 soups=0.3333
+seed 95909 late@1600000 s=0.25: held p_ccw=0.9688 soups=2.7667
+seed 95909 late@1600000 s=0.5: held p_ccw=0.9688 soups=2.7667
+seed 96010 early@100000 s=0.25: held p_ccw=0.9688 soups=0.0
+seed 96010 early@100000 s=0.5: held p_ccw=0.9688 soups=0.8
+seed 96010 open@40000 s=0.25: held p_ccw=0.9688 soups=0.0
+seed 96010 open@40000 s=0.5: uncommitted p_ccw=0.4286 soups=0.0667
+seed 96010 late@1600000 s=0.25: held p_ccw=0.9688 soups=2.6667
+seed 96010 late@1600000 s=0.5: uncommitted p_ccw=0.6 soups=0.0
+{
+ "OCI1_open_moved_gt_late_fisher_p": 0.007749351130886171,
+ "OCI1_pass": true,
+ "open_moved": "8/16",
+ "late_moved": "1/16",
+ "open_strict_flips": 3,
+ "late_strict_flips": 0,
+ "OCI2_zero_late_flips": true,
+ "OCI3_auc": 0.8488372093023255,
+ "OCI3_pass": true,
+ "OCI4_late_recovery_median": 0.921314323607427,
+ "OCI4_pass": true
+}

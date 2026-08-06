@@ -1,0 +1,44 @@
+bc_clone seed 9101
+  p 1.00 spec 0.42 acq 0.98 C_prov 0.33
+bc_clone seed 9102
+  p 1.00 spec 0.45 acq 0.98 C_prov 0.31
+bc_clone seed 9103
+  p 1.00 spec 0.45 acq 0.97 C_prov 0.33
+bc_clone seed 9104
+  p 1.00 spec 0.38 acq 0.98 C_prov 0.33
+bc_clone seed 9105
+  p 1.00 spec 0.40 acq 0.99 C_prov 0.33
+shaped seed 9101
+  p 1.00 spec 1.00 acq 0.99 C_prov 0.39
+shaped seed 9102
+  p 1.00 spec 1.00 acq 0.99 C_prov 0.39
+shaped seed 9103
+  p 1.00 spec 1.00 acq 0.98 C_prov 0.33
+shaped seed 9104
+  p 1.00 spec 1.00 acq 0.99 C_prov 0.44
+shaped seed 9105
+  p 1.00 spec 1.00 acq 0.97 C_prov 0.41
+outcome_only seed 9101
+  p 1.00 spec 1.00 acq 0.99 C_prov 0.63
+outcome_only seed 9102
+  p 1.00 spec 1.00 acq 0.99 C_prov 0.93
+outcome_only seed 9103
+  p 1.00 spec 1.00 acq 0.98 C_prov 0.35
+outcome_only seed 9104
+  p 1.00 spec 1.00 acq 0.99 C_prov 0.89
+outcome_only seed 9105
+  p 1.00 spec 1.00 acq 0.97 C_prov 0.44
+{
+  "MP1_behaviour_matched": true,
+  "MP2_structural_magnitude_matched": true,
+  "MP3_acquisition_boundary": true,
+  "MP4_provenance_rarity_ordering": true,
+  "MP5_clone_counterfactually_distinguishable": true,
+  "mp2_deviations": 0
+}
+{
+  "bc_clone": 0.327276839927718,
+  "shaped": 0.39127322292972333,
+  "outcome_only": 0.6478224140264792
+}
+Wrote /home/Yixiang/MPARL/GOGOGO/outputs/matched_provenance.json

@@ -1,0 +1,26 @@
+=== G = 3.0 (training 60000 episodes) ===
+  rate 0.000 tension 0.000 gap -0.060 accepted 0 predicted 0
+=== G = 5.0 (training 60000 episodes) ===
+  rate 0.000 tension 0.000 gap +0.009 accepted 0 predicted -1
+=== G = 7.0 (training 60000 episodes) ===
+  rate 0.167 tension 0.556 gap -0.012 accepted 0 predicted 0
+=== G = 9.0 (training 60000 episodes) ===
+  rate 0.167 tension 0.556 gap +0.169 accepted 0 predicted -1
+=== G = 11.0 (training 60000 episodes) ===
+  rate 0.167 tension 0.556 gap +0.641 accepted 1 predicted -1
+=== G = 13.0 (training 60000 episodes) ===
+  rate 0.167 tension 0.556 gap +0.104 accepted 1 predicted 1
+=== G = 16.0 (training 60000 episodes) ===
+  rate 0.167 tension 0.556 gap +1.822 accepted 1 predicted 1
+
+G,rate,tension,gap,accepted,predicted,match
+3.0,0.000,0.000,-0.060,0,0,1
+5.0,0.000,0.000,+0.009,0,-1,-1
+7.0,0.167,0.556,-0.012,0,0,1
+9.0,0.167,0.556,+0.169,0,-1,-1
+11.0,0.167,0.556,+0.641,1,-1,-1
+13.0,0.167,0.556,+0.104,1,1,1
+16.0,0.167,0.556,+1.822,1,1,1
+
+Non-tie prediction match rate: 1.000
+Wrote outputs/phase_seed_9011/phase_boundary_summary.json

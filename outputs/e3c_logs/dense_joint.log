@@ -1,0 +1,27 @@
+Gym has been unmaintained since 2022 and does not support NumPy 2.0 amongst other critical functionality.
+Please upgrade to Gymnasium, the maintained drop-in replacement of Gym, or contact the authors of your software and request that they upgrade.
+Users of this version of Gym should be able to simply replace 'import gym' with 'import gymnasium as gym' in the vast majority of cases.
+See the migration guide at https://gymnasium.farama.org/introduction/migration_guide/ for additional information.
+ckpt 40000: Cbar=0.0566 CI=[0.05202642823553234, 0.06239485401291256] C_ind=0.283 C_env=0.003 C_rel=0.007 Hmacro=1.304 score=0.2
+ckpt 80000: Cbar=0.0972 CI=[0.09095642180649743, 0.10560434961684058] C_ind=0.490 C_env=0.004 C_rel=0.008 Hmacro=1.052 score=1.0
+ckpt 120000: Cbar=0.0574 CI=[0.05353295888599294, 0.06206223612752769] C_ind=0.286 C_env=0.002 C_rel=0.009 Hmacro=1.285 score=0.4
+ckpt 160000: Cbar=0.0895 CI=[0.0848461624160292, 0.09467735171725021] C_ind=0.444 C_env=0.004 C_rel=0.015 Hmacro=1.429 score=0.6
+ckpt 240000: Cbar=0.0929 CI=[0.08753483942158737, 0.0997615609487] C_ind=0.466 C_env=0.006 C_rel=0.008 Hmacro=1.342 score=1.4
+ckpt 320000: Cbar=0.0868 CI=[0.08228088938062417, 0.09310670374660654] C_ind=0.431 C_env=0.006 C_rel=0.011 Hmacro=1.360 score=1.6
+ckpt 480000: Cbar=0.0629 CI=[0.05989386150444871, 0.06735356639764126] C_ind=0.313 C_env=0.005 C_rel=0.008 Hmacro=1.390 score=2.6
+ckpt 640000: Cbar=0.0813 CI=[0.07846577001506967, 0.08547853704512283] C_ind=0.403 C_env=0.007 C_rel=0.010 Hmacro=1.569 score=5.0
+ckpt 820000: Cbar=0.0324 CI=[0.030553853594438952, 0.035523450911618765] C_ind=0.158 C_env=0.004 C_rel=0.006 Hmacro=1.542 score=4.2
+ckpt 1000000: Cbar=0.1126 CI=[0.10852809991187491, 0.11799052354119235] C_ind=0.543 C_env=0.030 C_rel=0.009 Hmacro=1.531 score=11.2
+ckpt 1250000: Cbar=0.0609 CI=[0.0577015713664014, 0.06542472485230313] C_ind=0.277 C_env=0.023 C_rel=0.015 Hmacro=1.769 score=13.2
+ckpt 1500000: Cbar=0.0706 CI=[0.06709527881240913, 0.07499570132879516] C_ind=0.318 C_env=0.034 C_rel=0.012 Hmacro=1.741 score=18.0
+ckpt 1750000: Cbar=0.0584 CI=[0.05456374803466596, 0.06263558101840051] C_ind=0.250 C_env=0.038 C_rel=0.014 Hmacro=1.795 score=18.6
+ckpt 2000000: Cbar=0.0873 CI=[0.08254850733007918, 0.0930214255784486] C_ind=0.406 C_env=0.036 C_rel=0.010 Hmacro=1.862 score=19.6
+{
+  "JC1_collapse_direction": true,
+  "JC2_ladder_sanity": true,
+  "JC3_burst_at_takeoff": true,
+  "JC4_relational_growth": true,
+  "JC5_macro_collapse": false
+}
+largest collapse interval: (820000, 1000000)
+Wrote /home/Yixiang/MPARL/GOGOGO/outputs/overcooked_joint_collapse_dense_s93001.json

@@ -1,0 +1,1719 @@
+{
+  "status": "simulator--world-model closure; predictions WM-1..3 and the margin rule frozen in the docstring",
+  "policy_seeds": {
+    "9701": {
+      "simulator": {
+        "natural_dist": {
+          "sacrifice_rescue": 0.28,
+          "team_direct": 0.45666666666666667,
+          "selfish_escape": 0.12666666666666668,
+          "failed_noise": 0.13666666666666666
+        },
+        "potential_bits": 1.8005989018985284,
+        "specificity_js": 0.5435170162141149,
+        "usefulness_gap": 2.5266666666666664,
+        "incomplete_rollouts": 0,
+        "verdict": 1
+      },
+      "K": {
+        "200": {
+          "ensemble_tv_error": 0.03533333333333334,
+          "mean_tv_to_simulator": 0.6413333333333334,
+          "models": [
+            {
+              "metrics": {
+                "natural_dist": {
+                  "sacrifice_rescue": 0.16666666666666666,
+                  "team_direct": 0.03333333333333333,
+                  "selfish_escape": 0.013333333333333334,
+                  "failed_noise": 0.7866666666666666
+                },
+                "potential_bits": 0.9497658568725329,
+                "specificity_js": 0.06928201885453278,
+                "usefulness_gap": 1.7733333333333334,
+                "incomplete_rollouts": 795
+              },
+              "verdict": 0,
+              "margins": {
+                "potential_bits": 0.4497658568725329,
+                "specificity_js": -0.13071798114546723,
+                "usefulness_gap": 1.7733333333333334
+              },
+              "decidable": {
+                "potential_bits": true,
+                "specificity_js": true,
+                "usefulness_gap": true
+              },
+              "abstain": false
+            },
+            {
+              "metrics": {
+                "natural_dist": {
+                  "sacrifice_rescue": 0.16666666666666666,
+                  "team_direct": 0.03,
+                  "selfish_escape": 0.01,
+                  "failed_noise": 0.7933333333333333
+                },
+                "potential_bits": 0.9140065249253106,
+                "specificity_js": 0.06030697955540176,
+                "usefulness_gap": 1.66,
+                "incomplete_rollouts": 802
+              },
+              "verdict": 0,
+              "margins": {
+                "potential_bits": 0.41400652492531065,
+                "specificity_js": -0.13969302044459825,
+                "usefulness_gap": 1.66
+              },
+              "decidable": {
+                "potential_bits": true,
+                "specificity_js": true,
+                "usefulness_gap": true
+              },
+              "abstain": false
+            },
+            {
+              "metrics": {
+                "natural_dist": {
+                  "sacrifice_rescue": 0.23,
+                  "team_direct": 0.03666666666666667,
+                  "selfish_escape": 0.006666666666666667,
+                  "failed_noise": 0.7266666666666667
+                },
+                "potential_bits": 1.0454649634156346,
+                "specificity_js": 0.08031365406439149,
+                "usefulness_gap": 2.396666666666667,
+                "incomplete_rollouts": 770
+              },
+              "verdict": 0,
+              "margins": {
+                "potential_bits": 0.5454649634156346,
+                "specificity_js": -0.11968634593560852,
+                "usefulness_gap": 2.396666666666667
+              },
+              "decidable": {
+                "potential_bits": true,
+                "specificity_js": true,
+                "usefulness_gap": true
+              },
+              "abstain": false
+            },
+            {
+              "metrics": {
+                "natural_dist": {
+                  "sacrifice_rescue": 0.16333333333333333,
+                  "team_direct": 0.02,
+                  "selfish_escape": 0.016666666666666666,
+                  "failed_noise": 0.8
+                },
+                "potential_bits": 0.8958388878743695,
+                "specificity_js": 0.061671894193221125,
+                "usefulness_gap": 1.73,
+                "incomplete_rollouts": 804
+              },
+              "verdict": 0,
+              "margins": {
+                "potential_bits": 0.3958388878743695,
+                "specificity_js": -0.1383281058067789,
+                "usefulness_gap": 1.73
+              },
+              "decidable": {
+                "potential_bits": true,
+                "specificity_js": true,
+                "usefulness_gap": true
+              },
+              "abstain": false
+            },
+            {
+              "metrics": {
+                "natural_dist": {
+                  "sacrifice_rescue": 0.16666666666666666,
+                  "team_direct": 0.03666666666666667,
+                  "selfish_escape": 0.013333333333333334,
+                  "failed_noise": 0.7833333333333333
+                },
+                "potential_bits": 0.964725224707476,
+                "specificity_js": 0.06895498383823656,
+                "usefulness_gap": 1.7999999999999998,
+                "incomplete_rollouts": 794
+              },
+              "verdict": 0,
+              "margins": {
+                "potential_bits": 0.464725224707476,
+                "specificity_js": -0.13104501616176345,
+                "usefulness_gap": 1.7999999999999998
+              },
+              "decidable": {
+                "potential_bits": true,
+                "specificity_js": true,
+                "usefulness_gap": true
+              },
+              "abstain": false
+            }
+          ],
+          "verdict_matches": 0,
+          "abstentions": 0
+        },
+        "1000": {
+          "ensemble_tv_error": 0.05166666666666668,
+          "mean_tv_to_simulator": 0.29800000000000004,
+          "models": [
+            {
+              "metrics": {
+                "natural_dist": {
+                  "sacrifice_rescue": 0.25,
+                  "team_direct": 0.23666666666666666,
+                  "selfish_escape": 0.08666666666666667,
+                  "failed_noise": 0.4266666666666667
+                },
+                "potential_bits": 1.8221357573502412,
+                "specificity_js": 0.23743755850760934,
+                "usefulness_gap": 2.83,
+                "incomplete_rollouts": 589
+              },
+              "verdict": 1,
+              "margins": {
+                "potential_bits": 1.3221357573502412,
+                "specificity_js": 0.037437558507609325,
+                "usefulness_gap": 2.83
+              },
+              "decidable": {
+                "potential_bits": true,
+                "specificity_js": false,
+                "usefulness_gap": true
+              },
+              "abstain": true
+            },
+            {
+              "metrics": {
+                "natural_dist": {
+                  "sacrifice_rescue": 0.29,
+                  "team_direct": 0.23333333333333334,
+                  "selfish_escape": 0.08333333333333333,
+                  "failed_noise": 0.3933333333333333
+                },
+                "potential_bits": 1.8360380908490395,
+                "specificity_js": 0.22928804056472768,
+                "usefulness_gap": 3.3500000000000005,
+                "incomplete_rollouts": 584
+              },
+              "verdict": 1,
+              "margins": {
+                "potential_bits": 1.3360380908490395,
+                "specificity_js": 0.02928804056472767,
+                "usefulness_gap": 3.3500000000000005
+              },
+              "decidable": {
+                "potential_bits": true,
+                "specificity_js": false,
+                "usefulness_gap": true
+              },
+              "abstain": true
+            },
+            {
+              "metrics": {
+                "natural_dist": {
+                  "sacrifice_rescue": 0.29333333333333333,
+                  "team_direct": 0.22666666666666666,
+                  "selfish_escape": 0.07666666666666666,
+                  "failed_noise": 0.4033333333333333
+                },
+                "potential_bits": 1.816812582680406,
+                "specificity_js": 0.24491927353565152,
+                "usefulness_gap": 3.24,
+                "incomplete_rollouts": 579
+              },
+              "verdict": 1,
+              "margins": {
+                "potential_bits": 1.316812582680406,
+                "specificity_js": 0.044919273535651505,
+                "usefulness_gap": 3.24
+              },
+              "decidable": {
+                "potential_bits": true,
+                "specificity_js": false,
+                "usefulness_gap": true
+              },
+              "abstain": true
+            },
+            {
+              "metrics": {
+                "natural_dist": {
+                  "sacrifice_rescue": 0.2633333333333333,
+                  "team_direct": 0.18,
+                  "selfish_escape": 0.07333333333333333,
+                  "failed_noise": 0.48333333333333334
+                },
+                "potential_bits": 1.7356289642125324,
+                "specificity_js": 0.23672399651488454,
+                "usefulness_gap": 2.5700000000000003,
+                "incomplete_rollouts": 604
+              },
+              "verdict": 1,
+              "margins": {
+                "potential_bits": 1.2356289642125324,
+                "specificity_js": 0.03672399651488453,
+                "usefulness_gap": 2.5700000000000003
+              },
+              "decidable": {
+                "potential_bits": true,
+                "specificity_js": false,
+                "usefulness_gap": true
+              },
+              "abstain": true
+            },
+            {
+              "metrics": {
+                "natural_dist": {
+                  "sacrifice_rescue": 0.27,
+                  "team_direct": 0.22666666666666666,
+                  "selfish_escape": 0.06,
+                  "failed_noise": 0.44333333333333336
+                },
+                "potential_bits": 1.7591968992082225,
+                "specificity_js": 0.2584000779714999,
+                "usefulness_gap": 2.69,
+                "incomplete_rollouts": 583
+              },
+              "verdict": 1,
+              "margins": {
+                "potential_bits": 1.2591968992082225,
+                "specificity_js": 0.058400077971499875,
+                "usefulness_gap": 2.69
+              },
+              "decidable": {
+                "potential_bits": true,
+                "specificity_js": false,
+                "usefulness_gap": true
+              },
+              "abstain": true
+            }
+          ],
+          "verdict_matches": 5,
+          "abstentions": 5
+        },
+        "5000": {
+          "ensemble_tv_error": 0.04266666666666667,
+          "mean_tv_to_simulator": 0.094,
+          "models": [
+            {
+              "metrics": {
+                "natural_dist": {
+                  "sacrifice_rescue": 0.2733333333333333,
+                  "team_direct": 0.38333333333333336,
+                  "selfish_escape": 0.11666666666666667,
+                  "failed_noise": 0.22666666666666666
+                },
+                "potential_bits": 1.8887420270446045,
+                "specificity_js": 0.42881473900705136,
+                "usefulness_gap": 2.7199999999999998,
+                "incomplete_rollouts": 436
+              },
+              "verdict": 1,
+              "margins": {
+                "potential_bits": 1.3887420270446045,
+                "specificity_js": 0.22881473900705135,
+                "usefulness_gap": 2.7199999999999998
+              },
+              "decidable": {
+                "potential_bits": true,
+                "specificity_js": true,
+                "usefulness_gap": true
+              },
+              "abstain": false
+            },
+            {
+              "metrics": {
+                "natural_dist": {
+                  "sacrifice_rescue": 0.3,
+                  "team_direct": 0.37333333333333335,
+                  "selfish_escape": 0.15333333333333332,
+                  "failed_noise": 0.17333333333333334
+                },
+                "potential_bits": 1.9048278729556083,
+                "specificity_js": 0.45405764651871633,
+                "usefulness_gap": 2.9600000000000004,
+                "incomplete_rollouts": 414
+              },
+              "verdict": 1,
+              "margins": {
+                "potential_bits": 1.4048278729556083,
+                "specificity_js": 0.2540576465187163,
+                "usefulness_gap": 2.9600000000000004
+              },
+              "decidable": {
+                "potential_bits": true,
+                "specificity_js": true,
+                "usefulness_gap": true
+              },
+              "abstain": false
+            },
+            {
+              "metrics": {
+                "natural_dist": {
+                  "sacrifice_rescue": 0.2966666666666667,
+                  "team_direct": 0.35333333333333333,
+                  "selfish_escape": 0.14,
+                  "failed_noise": 0.21
+                },
+                "potential_bits": 1.9203326555728437,
+                "specificity_js": 0.4724441496607118,
+                "usefulness_gap": 2.6233333333333335,
+                "incomplete_rollouts": 411
+              },
+              "verdict": 1,
+              "margins": {
+                "potential_bits": 1.4203326555728437,
+                "specificity_js": 0.2724441496607118,
+                "usefulness_gap": 2.6233333333333335
+              },
+              "decidable": {
+                "potential_bits": true,
+                "specificity_js": true,
+                "usefulness_gap": true
+              },
+              "abstain": false
+            },
+            {
+              "metrics": {
+                "natural_dist": {
+                  "sacrifice_rescue": 0.29,
+                  "team_direct": 0.35,
+                  "selfish_escape": 0.12,
+                  "failed_noise": 0.24
+                },
+                "potential_bits": 1.9092061449973743,
+                "specificity_js": 0.4517819688714797,
+                "usefulness_gap": 2.5633333333333335,
+                "incomplete_rollouts": 425
+              },
+              "verdict": 1,
+              "margins": {
+                "potential_bits": 1.4092061449973743,
+                "specificity_js": 0.2517819688714797,
+                "usefulness_gap": 2.5633333333333335
+              },
+              "decidable": {
+                "potential_bits": true,
+                "specificity_js": true,
+                "usefulness_gap": true
+              },
+              "abstain": false
+            },
+            {
+              "metrics": {
+                "natural_dist": {
+                  "sacrifice_rescue": 0.29,
+                  "team_direct": 0.39,
+                  "selfish_escape": 0.11333333333333333,
+                  "failed_noise": 0.20666666666666667
+                },
+                "potential_bits": 1.8738098099072291,
+                "specificity_js": 0.4743052906074814,
+                "usefulness_gap": 2.676666666666667,
+                "incomplete_rollouts": 407
+              },
+              "verdict": 1,
+              "margins": {
+                "potential_bits": 1.3738098099072291,
+                "specificity_js": 0.2743052906074814,
+                "usefulness_gap": 2.676666666666667
+              },
+              "decidable": {
+                "potential_bits": true,
+                "specificity_js": true,
+                "usefulness_gap": true
+              },
+              "abstain": false
+            }
+          ],
+          "verdict_matches": 5,
+          "abstentions": 0
+        },
+        "20000": {
+          "ensemble_tv_error": 0.035666666666666666,
+          "mean_tv_to_simulator": 0.04866666666666666,
+          "models": [
+            {
+              "metrics": {
+                "natural_dist": {
+                  "sacrifice_rescue": 0.2833333333333333,
+                  "team_direct": 0.43,
+                  "selfish_escape": 0.12666666666666668,
+                  "failed_noise": 0.16
+                },
+                "potential_bits": 1.8396653869399602,
+                "specificity_js": 0.5323420045025475,
+                "usefulness_gap": 2.6500000000000004,
+                "incomplete_rollouts": 357
+              },
+              "verdict": 1,
+              "margins": {
+                "potential_bits": 1.3396653869399602,
+                "specificity_js": 0.33234200450254753,
+                "usefulness_gap": 2.6500000000000004
+              },
+              "decidable": {
+                "potential_bits": true,
+                "specificity_js": true,
+                "usefulness_gap": true
+              },
+              "abstain": false
+            },
+            {
+              "metrics": {
+                "natural_dist": {
+                  "sacrifice_rescue": 0.30333333333333334,
+                  "team_direct": 0.4,
+                  "selfish_escape": 0.16,
+                  "failed_noise": 0.13666666666666666
+                },
+                "potential_bits": 1.8662386373123456,
+                "specificity_js": 0.5207585161225337,
+                "usefulness_gap": 2.883333333333333,
+                "incomplete_rollouts": 358
+              },
+              "verdict": 1,
+              "margins": {
+                "potential_bits": 1.3662386373123456,
+                "specificity_js": 0.32075851612253364,
+                "usefulness_gap": 2.883333333333333
+              },
+              "decidable": {
+                "potential_bits": true,
+                "specificity_js": true,
+                "usefulness_gap": true
+              },
+              "abstain": false
+            },
+            {
+              "metrics": {
+                "natural_dist": {
+                  "sacrifice_rescue": 0.2966666666666667,
+                  "team_direct": 0.4033333333333333,
+                  "selfish_escape": 0.15666666666666668,
+                  "failed_noise": 0.14333333333333334
+                },
+                "potential_bits": 1.869092732004966,
+                "specificity_js": 0.5467221952060026,
+                "usefulness_gap": 2.663333333333333,
+                "incomplete_rollouts": 347
+              },
+              "verdict": 1,
+              "margins": {
+                "potential_bits": 1.369092732004966,
+                "specificity_js": 0.3467221952060026,
+                "usefulness_gap": 2.663333333333333
+              },
+              "decidable": {
+                "potential_bits": true,
+                "specificity_js": true,
+                "usefulness_gap": true
+              },
+              "abstain": false
+            },
+            {
+              "metrics": {
+                "natural_dist": {
+                  "sacrifice_rescue": 0.29333333333333333,
+                  "team_direct": 0.38666666666666666,
+                  "selfish_escape": 0.13333333333333333,
+                  "failed_noise": 0.18666666666666668
+                },
+                "potential_bits": 1.8886694328105447,
+                "specificity_js": 0.520317844257149,
+                "usefulness_gap": 2.5266666666666664,
+                "incomplete_rollouts": 369
+              },
+              "verdict": 1,
+              "margins": {
+                "potential_bits": 1.3886694328105447,
+                "specificity_js": 0.320317844257149,
+                "usefulness_gap": 2.5266666666666664
+              },
+              "decidable": {
+                "potential_bits": true,
+                "specificity_js": true,
+                "usefulness_gap": true
+              },
+              "abstain": false
+            },
+            {
+              "metrics": {
+                "natural_dist": {
+                  "sacrifice_rescue": 0.29333333333333333,
+                  "team_direct": 0.42,
+                  "selfish_escape": 0.14333333333333334,
+                  "failed_noise": 0.14333333333333334
+                },
+                "potential_bits": 1.8480652848110408,
+                "specificity_js": 0.545900153449487,
+                "usefulness_gap": 2.6933333333333334,
+                "incomplete_rollouts": 355
+              },
+              "verdict": 1,
+              "margins": {
+                "potential_bits": 1.3480652848110408,
+                "specificity_js": 0.34590015344948694,
+                "usefulness_gap": 2.6933333333333334
+              },
+              "decidable": {
+                "potential_bits": true,
+                "specificity_js": true,
+                "usefulness_gap": true
+              },
+              "abstain": false
+            }
+          ],
+          "verdict_matches": 5,
+          "abstentions": 0
+        }
+      }
+    },
+    "9702": {
+      "simulator": {
+        "natural_dist": {
+          "sacrifice_rescue": 0.30333333333333334,
+          "team_direct": 0.38333333333333336,
+          "selfish_escape": 0.21,
+          "failed_noise": 0.10333333333333333
+        },
+        "potential_bits": 1.863520727431973,
+        "specificity_js": 0.5561950413505008,
+        "usefulness_gap": 2.636666666666666,
+        "incomplete_rollouts": 0,
+        "verdict": 1
+      },
+      "K": {
+        "200": {
+          "ensemble_tv_error": 0.047666666666666684,
+          "mean_tv_to_simulator": 0.6926666666666667,
+          "models": [
+            {
+              "metrics": {
+                "natural_dist": {
+                  "sacrifice_rescue": 0.14333333333333334,
+                  "team_direct": 0.03333333333333333,
+                  "selfish_escape": 0.02,
+                  "failed_noise": 0.8033333333333333
+                },
+                "potential_bits": 0.9319361223731758,
+                "specificity_js": 0.05850569799519447,
+                "usefulness_gap": 1.5233333333333334,
+                "incomplete_rollouts": 806
+              },
+              "verdict": 0,
+              "margins": {
+                "potential_bits": 0.4319361223731758,
+                "specificity_js": -0.14149430200480553,
+                "usefulness_gap": 1.5233333333333334
+              },
+              "decidable": {
+                "potential_bits": true,
+                "specificity_js": true,
+                "usefulness_gap": true
+              },
+              "abstain": false
+            },
+            {
+              "metrics": {
+                "natural_dist": {
+                  "sacrifice_rescue": 0.14666666666666667,
+                  "team_direct": 0.043333333333333335,
+                  "selfish_escape": 0.02666666666666667,
+                  "failed_noise": 0.7833333333333333
+                },
+                "potential_bits": 1.0178113905003803,
+                "specificity_js": 0.08184341121463659,
+                "usefulness_gap": 1.5266666666666666,
+                "incomplete_rollouts": 786
+              },
+              "verdict": 0,
+              "margins": {
+                "potential_bits": 0.5178113905003803,
+                "specificity_js": -0.11815658878536342,
+                "usefulness_gap": 1.5266666666666666
+              },
+              "decidable": {
+                "potential_bits": true,
+                "specificity_js": true,
+                "usefulness_gap": true
+              },
+              "abstain": false
+            },
+            {
+              "metrics": {
+                "natural_dist": {
+                  "sacrifice_rescue": 0.16333333333333333,
+                  "team_direct": 0.03,
+                  "selfish_escape": 0.01,
+                  "failed_noise": 0.7966666666666666
+                },
+                "potential_bits": 0.9064448172152528,
+                "specificity_js": 0.0851073071836336,
+                "usefulness_gap": 1.35,
+                "incomplete_rollouts": 788
+              },
+              "verdict": 0,
+              "margins": {
+                "potential_bits": 0.40644481721525283,
+                "specificity_js": -0.11489269281636641,
+                "usefulness_gap": 1.35
+              },
+              "decidable": {
+                "potential_bits": true,
+                "specificity_js": true,
+                "usefulness_gap": false
+              },
+              "abstain": true
+            },
+            {
+              "metrics": {
+                "natural_dist": {
+                  "sacrifice_rescue": 0.09,
+                  "team_direct": 0.03666666666666667,
+                  "selfish_escape": 0.03,
+                  "failed_noise": 0.8433333333333334
+                },
+                "potential_bits": 0.8466106579156635,
+                "specificity_js": 0.07835289981774679,
+                "usefulness_gap": 0.6633333333333333,
+                "incomplete_rollouts": 806
+              },
+              "verdict": 0,
+              "margins": {
+                "potential_bits": 0.3466106579156635,
+                "specificity_js": -0.12164710018225322,
+                "usefulness_gap": 0.6633333333333333
+              },
+              "decidable": {
+                "potential_bits": true,
+                "specificity_js": true,
+                "usefulness_gap": false
+              },
+              "abstain": true
+            },
+            {
+              "metrics": {
+                "natural_dist": {
+                  "sacrifice_rescue": 0.17666666666666667,
+                  "team_direct": 0.04,
+                  "selfish_escape": 0.03,
+                  "failed_noise": 0.7533333333333333
+                },
+                "potential_bits": 1.0871883417648254,
+                "specificity_js": 0.09421753689847862,
+                "usefulness_gap": 1.8699999999999999,
+                "incomplete_rollouts": 770
+              },
+              "verdict": 0,
+              "margins": {
+                "potential_bits": 0.5871883417648254,
+                "specificity_js": -0.1057824631015214,
+                "usefulness_gap": 1.8699999999999999
+              },
+              "decidable": {
+                "potential_bits": true,
+                "specificity_js": true,
+                "usefulness_gap": true
+              },
+              "abstain": false
+            }
+          ],
+          "verdict_matches": 0,
+          "abstentions": 2
+        },
+        "1000": {
+          "ensemble_tv_error": 0.05033333333333333,
+          "mean_tv_to_simulator": 0.2833333333333333,
+          "models": [
+            {
+              "metrics": {
+                "natural_dist": {
+                  "sacrifice_rescue": 0.2833333333333333,
+                  "team_direct": 0.21666666666666667,
+                  "selfish_escape": 0.11666666666666667,
+                  "failed_noise": 0.38333333333333336
+                },
+                "potential_bits": 1.8854573609284437,
+                "specificity_js": 0.24910575983823022,
+                "usefulness_gap": 3.1766666666666663,
+                "incomplete_rollouts": 570
+              },
+              "verdict": 1,
+              "margins": {
+                "potential_bits": 1.3854573609284437,
+                "specificity_js": 0.049105759838230206,
+                "usefulness_gap": 3.1766666666666663
+              },
+              "decidable": {
+                "potential_bits": true,
+                "specificity_js": false,
+                "usefulness_gap": true
+              },
+              "abstain": true
+            },
+            {
+              "metrics": {
+                "natural_dist": {
+                  "sacrifice_rescue": 0.22333333333333333,
+                  "team_direct": 0.24333333333333335,
+                  "selfish_escape": 0.11333333333333333,
+                  "failed_noise": 0.42
+                },
+                "potential_bits": 1.8608314387545042,
+                "specificity_js": 0.2885064439305485,
+                "usefulness_gap": 2.1566666666666667,
+                "incomplete_rollouts": 561
+              },
+              "verdict": 1,
+              "margins": {
+                "potential_bits": 1.3608314387545042,
+                "specificity_js": 0.08850644393054846,
+                "usefulness_gap": 2.1566666666666667
+              },
+              "decidable": {
+                "potential_bits": true,
+                "specificity_js": false,
+                "usefulness_gap": true
+              },
+              "abstain": true
+            },
+            {
+              "metrics": {
+                "natural_dist": {
+                  "sacrifice_rescue": 0.30666666666666664,
+                  "team_direct": 0.2,
+                  "selfish_escape": 0.14333333333333334,
+                  "failed_noise": 0.35
+                },
+                "potential_bits": 1.9191310254929164,
+                "specificity_js": 0.2738961181408859,
+                "usefulness_gap": 3.1866666666666665,
+                "incomplete_rollouts": 548
+              },
+              "verdict": 1,
+              "margins": {
+                "potential_bits": 1.4191310254929164,
+                "specificity_js": 0.07389611814088587,
+                "usefulness_gap": 3.1866666666666665
+              },
+              "decidable": {
+                "potential_bits": true,
+                "specificity_js": false,
+                "usefulness_gap": true
+              },
+              "abstain": true
+            },
+            {
+              "metrics": {
+                "natural_dist": {
+                  "sacrifice_rescue": 0.27,
+                  "team_direct": 0.21,
+                  "selfish_escape": 0.12333333333333334,
+                  "failed_noise": 0.39666666666666667
+                },
+                "potential_bits": 1.8843867779089951,
+                "specificity_js": 0.3081695992710113,
+                "usefulness_gap": 2.396666666666666,
+                "incomplete_rollouts": 545
+              },
+              "verdict": 1,
+              "margins": {
+                "potential_bits": 1.3843867779089951,
+                "specificity_js": 0.10816959927101127,
+                "usefulness_gap": 2.396666666666666
+              },
+              "decidable": {
+                "potential_bits": true,
+                "specificity_js": true,
+                "usefulness_gap": true
+              },
+              "abstain": false
+            },
+            {
+              "metrics": {
+                "natural_dist": {
+                  "sacrifice_rescue": 0.2733333333333333,
+                  "team_direct": 0.22333333333333333,
+                  "selfish_escape": 0.12333333333333334,
+                  "failed_noise": 0.38
+                },
+                "potential_bits": 1.8973304362211967,
+                "specificity_js": 0.2820022458045981,
+                "usefulness_gap": 2.7266666666666666,
+                "incomplete_rollouts": 552
+              },
+              "verdict": 1,
+              "margins": {
+                "potential_bits": 1.3973304362211967,
+                "specificity_js": 0.08200224580459808,
+                "usefulness_gap": 2.7266666666666666
+              },
+              "decidable": {
+                "potential_bits": true,
+                "specificity_js": false,
+                "usefulness_gap": true
+              },
+              "abstain": true
+            }
+          ],
+          "verdict_matches": 5,
+          "abstentions": 4
+        },
+        "5000": {
+          "ensemble_tv_error": 0.03133333333333332,
+          "mean_tv_to_simulator": 0.074,
+          "models": [
+            {
+              "metrics": {
+                "natural_dist": {
+                  "sacrifice_rescue": 0.31,
+                  "team_direct": 0.33666666666666667,
+                  "selfish_escape": 0.17,
+                  "failed_noise": 0.18333333333333332
+                },
+                "potential_bits": 1.935853337577945,
+                "specificity_js": 0.42412161233742235,
+                "usefulness_gap": 3.23,
+                "incomplete_rollouts": 430
+              },
+              "verdict": 1,
+              "margins": {
+                "potential_bits": 1.435853337577945,
+                "specificity_js": 0.22412161233742234,
+                "usefulness_gap": 3.23
+              },
+              "decidable": {
+                "potential_bits": true,
+                "specificity_js": true,
+                "usefulness_gap": true
+              },
+              "abstain": false
+            },
+            {
+              "metrics": {
+                "natural_dist": {
+                  "sacrifice_rescue": 0.2966666666666667,
+                  "team_direct": 0.36333333333333334,
+                  "selfish_escape": 0.16,
+                  "failed_noise": 0.18
+                },
+                "potential_bits": 1.9191037174687569,
+                "specificity_js": 0.43755722410468917,
+                "usefulness_gap": 2.9699999999999998,
+                "incomplete_rollouts": 423
+              },
+              "verdict": 1,
+              "margins": {
+                "potential_bits": 1.4191037174687569,
+                "specificity_js": 0.23755722410468916,
+                "usefulness_gap": 2.9699999999999998
+              },
+              "decidable": {
+                "potential_bits": true,
+                "specificity_js": true,
+                "usefulness_gap": true
+              },
+              "abstain": false
+            },
+            {
+              "metrics": {
+                "natural_dist": {
+                  "sacrifice_rescue": 0.32666666666666666,
+                  "team_direct": 0.34,
+                  "selfish_escape": 0.19,
+                  "failed_noise": 0.14333333333333334
+                },
+                "potential_bits": 1.9133751409493363,
+                "specificity_js": 0.4485492272129944,
+                "usefulness_gap": 3.3266666666666667,
+                "incomplete_rollouts": 410
+              },
+              "verdict": 1,
+              "margins": {
+                "potential_bits": 1.4133751409493363,
+                "specificity_js": 0.24854922721299438,
+                "usefulness_gap": 3.3266666666666667
+              },
+              "decidable": {
+                "potential_bits": true,
+                "specificity_js": true,
+                "usefulness_gap": true
+              },
+              "abstain": false
+            },
+            {
+              "metrics": {
+                "natural_dist": {
+                  "sacrifice_rescue": 0.2966666666666667,
+                  "team_direct": 0.35,
+                  "selfish_escape": 0.17333333333333334,
+                  "failed_noise": 0.18
+                },
+                "potential_bits": 1.9337425399254928,
+                "specificity_js": 0.45412976920799997,
+                "usefulness_gap": 2.81,
+                "incomplete_rollouts": 418
+              },
+              "verdict": 1,
+              "margins": {
+                "potential_bits": 1.4337425399254928,
+                "specificity_js": 0.25412976920799996,
+                "usefulness_gap": 2.81
+              },
+              "decidable": {
+                "potential_bits": true,
+                "specificity_js": true,
+                "usefulness_gap": true
+              },
+              "abstain": false
+            },
+            {
+              "metrics": {
+                "natural_dist": {
+                  "sacrifice_rescue": 0.30666666666666664,
+                  "team_direct": 0.33666666666666667,
+                  "selfish_escape": 0.19,
+                  "failed_noise": 0.16666666666666666
+                },
+                "potential_bits": 1.9377700237915376,
+                "specificity_js": 0.43943633707918084,
+                "usefulness_gap": 2.96,
+                "incomplete_rollouts": 417
+              },
+              "verdict": 1,
+              "margins": {
+                "potential_bits": 1.4377700237915376,
+                "specificity_js": 0.23943633707918083,
+                "usefulness_gap": 2.96
+              },
+              "decidable": {
+                "potential_bits": true,
+                "specificity_js": true,
+                "usefulness_gap": true
+              },
+              "abstain": false
+            }
+          ],
+          "verdict_matches": 5,
+          "abstentions": 0
+        },
+        "20000": {
+          "ensemble_tv_error": 0.03833333333333334,
+          "mean_tv_to_simulator": 0.026666666666666665,
+          "models": [
+            {
+              "metrics": {
+                "natural_dist": {
+                  "sacrifice_rescue": 0.31333333333333335,
+                  "team_direct": 0.36333333333333334,
+                  "selfish_escape": 0.19333333333333333,
+                  "failed_noise": 0.13
+                },
+                "potential_bits": 1.8962952647911817,
+                "specificity_js": 0.4995338843437242,
+                "usefulness_gap": 3.08,
+                "incomplete_rollouts": 381
+              },
+              "verdict": 1,
+              "margins": {
+                "potential_bits": 1.3962952647911817,
+                "specificity_js": 0.2995338843437242,
+                "usefulness_gap": 3.08
+              },
+              "decidable": {
+                "potential_bits": true,
+                "specificity_js": true,
+                "usefulness_gap": true
+              },
+              "abstain": false
+            },
+            {
+              "metrics": {
+                "natural_dist": {
+                  "sacrifice_rescue": 0.3,
+                  "team_direct": 0.4,
+                  "selfish_escape": 0.17666666666666667,
+                  "failed_noise": 0.12333333333333334
+                },
+                "potential_bits": 1.864074661286502,
+                "specificity_js": 0.5009870271732572,
+                "usefulness_gap": 2.913333333333334,
+                "incomplete_rollouts": 378
+              },
+              "verdict": 1,
+              "margins": {
+                "potential_bits": 1.364074661286502,
+                "specificity_js": 0.30098702717325715,
+                "usefulness_gap": 2.913333333333334
+              },
+              "decidable": {
+                "potential_bits": true,
+                "specificity_js": true,
+                "usefulness_gap": true
+              },
+              "abstain": false
+            },
+            {
+              "metrics": {
+                "natural_dist": {
+                  "sacrifice_rescue": 0.3333333333333333,
+                  "team_direct": 0.37,
+                  "selfish_escape": 0.21,
+                  "failed_noise": 0.08666666666666667
+                },
+                "potential_bits": 1.8376658638475563,
+                "specificity_js": 0.5437641835776772,
+                "usefulness_gap": 3.0999999999999996,
+                "incomplete_rollouts": 359
+              },
+              "verdict": 1,
+              "margins": {
+                "potential_bits": 1.3376658638475563,
+                "specificity_js": 0.3437641835776772,
+                "usefulness_gap": 3.0999999999999996
+              },
+              "decidable": {
+                "potential_bits": true,
+                "specificity_js": true,
+                "usefulness_gap": true
+              },
+              "abstain": false
+            },
+            {
+              "metrics": {
+                "natural_dist": {
+                  "sacrifice_rescue": 0.2966666666666667,
+                  "team_direct": 0.39,
+                  "selfish_escape": 0.19666666666666666,
+                  "failed_noise": 0.11666666666666667
+                },
+                "potential_bits": 1.8729060469869134,
+                "specificity_js": 0.5087018407874101,
+                "usefulness_gap": 2.8433333333333337,
+                "incomplete_rollouts": 378
+              },
+              "verdict": 1,
+              "margins": {
+                "potential_bits": 1.3729060469869134,
+                "specificity_js": 0.3087018407874101,
+                "usefulness_gap": 2.8433333333333337
+              },
+              "decidable": {
+                "potential_bits": true,
+                "specificity_js": true,
+                "usefulness_gap": true
+              },
+              "abstain": false
+            },
+            {
+              "metrics": {
+                "natural_dist": {
+                  "sacrifice_rescue": 0.30666666666666664,
+                  "team_direct": 0.37333333333333335,
+                  "selfish_escape": 0.21666666666666667,
+                  "failed_noise": 0.10333333333333333
+                },
+                "potential_bits": 1.8700672081740826,
+                "specificity_js": 0.5211803517196497,
+                "usefulness_gap": 2.833333333333333,
+                "incomplete_rollouts": 368
+              },
+              "verdict": 1,
+              "margins": {
+                "potential_bits": 1.3700672081740826,
+                "specificity_js": 0.3211803517196497,
+                "usefulness_gap": 2.833333333333333
+              },
+              "decidable": {
+                "potential_bits": true,
+                "specificity_js": true,
+                "usefulness_gap": true
+              },
+              "abstain": false
+            }
+          ],
+          "verdict_matches": 5,
+          "abstentions": 0
+        }
+      }
+    },
+    "9703": {
+      "simulator": {
+        "natural_dist": {
+          "sacrifice_rescue": 0.3233333333333333,
+          "team_direct": 0.38666666666666666,
+          "selfish_escape": 0.24666666666666667,
+          "failed_noise": 0.043333333333333335
+        },
+        "potential_bits": 1.7510766687647934,
+        "specificity_js": 0.44617985554901357,
+        "usefulness_gap": 3.6166666666666667,
+        "incomplete_rollouts": 0,
+        "verdict": 1
+      },
+      "K": {
+        "200": {
+          "ensemble_tv_error": 0.03399999999999999,
+          "mean_tv_to_simulator": 0.7833333333333334,
+          "models": [
+            {
+              "metrics": {
+                "natural_dist": {
+                  "sacrifice_rescue": 0.08,
+                  "team_direct": 0.056666666666666664,
+                  "selfish_escape": 0.013333333333333334,
+                  "failed_noise": 0.85
+                },
+                "potential_bits": 0.8085317081039732,
+                "specificity_js": 0.020294448000613266,
+                "usefulness_gap": 1.0999999999999999,
+                "incomplete_rollouts": 843
+              },
+              "verdict": 0,
+              "margins": {
+                "potential_bits": 0.30853170810397323,
+                "specificity_js": -0.17970555199938676,
+                "usefulness_gap": 1.0999999999999999
+              },
+              "decidable": {
+                "potential_bits": true,
+                "specificity_js": true,
+                "usefulness_gap": true
+              },
+              "abstain": false
+            },
+            {
+              "metrics": {
+                "natural_dist": {
+                  "sacrifice_rescue": 0.12666666666666668,
+                  "team_direct": 0.043333333333333335,
+                  "selfish_escape": 0.0033333333333333335,
+                  "failed_noise": 0.8266666666666667
+                },
+                "potential_bits": 0.8282598677537626,
+                "specificity_js": 0.018580328592198558,
+                "usefulness_gap": 1.4933333333333332,
+                "incomplete_rollouts": 837
+              },
+              "verdict": 0,
+              "margins": {
+                "potential_bits": 0.3282598677537626,
+                "specificity_js": -0.18141967140780146,
+                "usefulness_gap": 1.4933333333333332
+              },
+              "decidable": {
+                "potential_bits": true,
+                "specificity_js": true,
+                "usefulness_gap": true
+              },
+              "abstain": false
+            },
+            {
+              "metrics": {
+                "natural_dist": {
+                  "sacrifice_rescue": 0.12333333333333334,
+                  "team_direct": 0.04,
+                  "selfish_escape": 0.013333333333333334,
+                  "failed_noise": 0.8233333333333334
+                },
+                "potential_bits": 0.8720985880347462,
+                "specificity_js": 0.016870446910108472,
+                "usefulness_gap": 1.5299999999999998,
+                "incomplete_rollouts": 837
+              },
+              "verdict": 0,
+              "margins": {
+                "potential_bits": 0.37209858803474616,
+                "specificity_js": -0.18312955308989154,
+                "usefulness_gap": 1.5299999999999998
+              },
+              "decidable": {
+                "potential_bits": true,
+                "specificity_js": true,
+                "usefulness_gap": true
+              },
+              "abstain": false
+            },
+            {
+              "metrics": {
+                "natural_dist": {
+                  "sacrifice_rescue": 0.10666666666666667,
+                  "team_direct": 0.03333333333333333,
+                  "selfish_escape": 0.02666666666666667,
+                  "failed_noise": 0.8333333333333334
+                },
+                "potential_bits": 0.866600850114563,
+                "specificity_js": 0.034162632807821544,
+                "usefulness_gap": 1.0533333333333335,
+                "incomplete_rollouts": 830
+              },
+              "verdict": 0,
+              "margins": {
+                "potential_bits": 0.366600850114563,
+                "specificity_js": -0.16583736719217845,
+                "usefulness_gap": 1.0533333333333335
+              },
+              "decidable": {
+                "potential_bits": true,
+                "specificity_js": true,
+                "usefulness_gap": true
+              },
+              "abstain": false
+            },
+            {
+              "metrics": {
+                "natural_dist": {
+                  "sacrifice_rescue": 0.13,
+                  "team_direct": 0.05,
+                  "selfish_escape": 0.02,
+                  "failed_noise": 0.8
+                },
+                "potential_bits": 0.9691601457621247,
+                "specificity_js": 0.02373548795991056,
+                "usefulness_gap": 1.5833333333333333,
+                "incomplete_rollouts": 826
+              },
+              "verdict": 0,
+              "margins": {
+                "potential_bits": 0.4691601457621247,
+                "specificity_js": -0.17626451204008944,
+                "usefulness_gap": 1.5833333333333333
+              },
+              "decidable": {
+                "potential_bits": true,
+                "specificity_js": true,
+                "usefulness_gap": true
+              },
+              "abstain": false
+            }
+          ],
+          "verdict_matches": 0,
+          "abstentions": 0
+        },
+        "1000": {
+          "ensemble_tv_error": 0.04033333333333334,
+          "mean_tv_to_simulator": 0.374,
+          "models": [
+            {
+              "metrics": {
+                "natural_dist": {
+                  "sacrifice_rescue": 0.25666666666666665,
+                  "team_direct": 0.23666666666666666,
+                  "selfish_escape": 0.10333333333333333,
+                  "failed_noise": 0.4033333333333333
+                },
+                "potential_bits": 1.8623615356606846,
+                "specificity_js": 0.18211882577831912,
+                "usefulness_gap": 2.95,
+                "incomplete_rollouts": 625
+              },
+              "verdict": 0,
+              "margins": {
+                "potential_bits": 1.3623615356606846,
+                "specificity_js": -0.017881174221680896,
+                "usefulness_gap": 2.95
+              },
+              "decidable": {
+                "potential_bits": true,
+                "specificity_js": false,
+                "usefulness_gap": true
+              },
+              "abstain": true
+            },
+            {
+              "metrics": {
+                "natural_dist": {
+                  "sacrifice_rescue": 0.2733333333333333,
+                  "team_direct": 0.20666666666666667,
+                  "selfish_escape": 0.11666666666666667,
+                  "failed_noise": 0.4033333333333333
+                },
+                "potential_bits": 1.8715293807426514,
+                "specificity_js": 0.1821188257783191,
+                "usefulness_gap": 2.9799999999999995,
+                "incomplete_rollouts": 625
+              },
+              "verdict": 0,
+              "margins": {
+                "potential_bits": 1.3715293807426514,
+                "specificity_js": -0.017881174221680923,
+                "usefulness_gap": 2.9799999999999995
+              },
+              "decidable": {
+                "potential_bits": true,
+                "specificity_js": false,
+                "usefulness_gap": true
+              },
+              "abstain": true
+            },
+            {
+              "metrics": {
+                "natural_dist": {
+                  "sacrifice_rescue": 0.2733333333333333,
+                  "team_direct": 0.19,
+                  "selfish_escape": 0.11333333333333333,
+                  "failed_noise": 0.42333333333333334
+                },
+                "potential_bits": 1.8477164004670483,
+                "specificity_js": 0.18867488947488265,
+                "usefulness_gap": 2.8933333333333335,
+                "incomplete_rollouts": 628
+              },
+              "verdict": 0,
+              "margins": {
+                "potential_bits": 1.3477164004670483,
+                "specificity_js": -0.011325110525117366,
+                "usefulness_gap": 2.8933333333333335
+              },
+              "decidable": {
+                "potential_bits": true,
+                "specificity_js": false,
+                "usefulness_gap": true
+              },
+              "abstain": true
+            },
+            {
+              "metrics": {
+                "natural_dist": {
+                  "sacrifice_rescue": 0.24,
+                  "team_direct": 0.19,
+                  "selfish_escape": 0.12,
+                  "failed_noise": 0.45
+                },
+                "potential_bits": 1.8348295686124736,
+                "specificity_js": 0.18648243763556543,
+                "usefulness_gap": 2.4266666666666667,
+                "incomplete_rollouts": 637
+              },
+              "verdict": 0,
+              "margins": {
+                "potential_bits": 1.3348295686124736,
+                "specificity_js": -0.013517562364434577,
+                "usefulness_gap": 2.4266666666666667
+              },
+              "decidable": {
+                "potential_bits": true,
+                "specificity_js": false,
+                "usefulness_gap": true
+              },
+              "abstain": true
+            },
+            {
+              "metrics": {
+                "natural_dist": {
+                  "sacrifice_rescue": 0.24666666666666667,
+                  "team_direct": 0.20333333333333334,
+                  "selfish_escape": 0.14333333333333334,
+                  "failed_noise": 0.4066666666666667
+                },
+                "potential_bits": 1.894972469553412,
+                "specificity_js": 0.18990958030192423,
+                "usefulness_gap": 2.706666666666666,
+                "incomplete_rollouts": 622
+              },
+              "verdict": 0,
+              "margins": {
+                "potential_bits": 1.394972469553412,
+                "specificity_js": -0.010090419698075781,
+                "usefulness_gap": 2.706666666666666
+              },
+              "decidable": {
+                "potential_bits": true,
+                "specificity_js": false,
+                "usefulness_gap": true
+              },
+              "abstain": true
+            }
+          ],
+          "verdict_matches": 0,
+          "abstentions": 5
+        },
+        "5000": {
+          "ensemble_tv_error": 0.029999999999999992,
+          "mean_tv_to_simulator": 0.10799999999999998,
+          "models": [
+            {
+              "metrics": {
+                "natural_dist": {
+                  "sacrifice_rescue": 0.30666666666666664,
+                  "team_direct": 0.32666666666666666,
+                  "selfish_escape": 0.2,
+                  "failed_noise": 0.16666666666666666
+                },
+                "potential_bits": 1.9454336574766045,
+                "specificity_js": 0.35853401764453025,
+                "usefulness_gap": 3.213333333333333,
+                "incomplete_rollouts": 470
+              },
+              "verdict": 1,
+              "margins": {
+                "potential_bits": 1.4454336574766045,
+                "specificity_js": 0.15853401764453023,
+                "usefulness_gap": 3.213333333333333
+              },
+              "decidable": {
+                "potential_bits": true,
+                "specificity_js": true,
+                "usefulness_gap": true
+              },
+              "abstain": false
+            },
+            {
+              "metrics": {
+                "natural_dist": {
+                  "sacrifice_rescue": 0.31333333333333335,
+                  "team_direct": 0.3333333333333333,
+                  "selfish_escape": 0.19333333333333333,
+                  "failed_noise": 0.16
+                },
+                "potential_bits": 1.9342917945385973,
+                "specificity_js": 0.32921414675734073,
+                "usefulness_gap": 3.566666666666667,
+                "incomplete_rollouts": 490
+              },
+              "verdict": 1,
+              "margins": {
+                "potential_bits": 1.4342917945385973,
+                "specificity_js": 0.12921414675734072,
+                "usefulness_gap": 3.566666666666667
+              },
+              "decidable": {
+                "potential_bits": true,
+                "specificity_js": true,
+                "usefulness_gap": true
+              },
+              "abstain": false
+            },
+            {
+              "metrics": {
+                "natural_dist": {
+                  "sacrifice_rescue": 0.31,
+                  "team_direct": 0.31666666666666665,
+                  "selfish_escape": 0.22666666666666666,
+                  "failed_noise": 0.14666666666666667
+                },
+                "potential_bits": 1.940683634997377,
+                "specificity_js": 0.3529695695026615,
+                "usefulness_gap": 3.416666666666667,
+                "incomplete_rollouts": 476
+              },
+              "verdict": 1,
+              "margins": {
+                "potential_bits": 1.440683634997377,
+                "specificity_js": 0.1529695695026615,
+                "usefulness_gap": 3.416666666666667
+              },
+              "decidable": {
+                "potential_bits": true,
+                "specificity_js": true,
+                "usefulness_gap": true
+              },
+              "abstain": false
+            },
+            {
+              "metrics": {
+                "natural_dist": {
+                  "sacrifice_rescue": 0.30666666666666664,
+                  "team_direct": 0.31333333333333335,
+                  "selfish_escape": 0.21666666666666667,
+                  "failed_noise": 0.16333333333333333
+                },
+                "potential_bits": 1.9525728830844213,
+                "specificity_js": 0.3303577126133906,
+                "usefulness_gap": 3.4533333333333336,
+                "incomplete_rollouts": 487
+              },
+              "verdict": 1,
+              "margins": {
+                "potential_bits": 1.4525728830844213,
+                "specificity_js": 0.13035771261339058,
+                "usefulness_gap": 3.4533333333333336
+              },
+              "decidable": {
+                "potential_bits": true,
+                "specificity_js": true,
+                "usefulness_gap": true
+              },
+              "abstain": false
+            },
+            {
+              "metrics": {
+                "natural_dist": {
+                  "sacrifice_rescue": 0.3233333333333333,
+                  "team_direct": 0.32666666666666666,
+                  "selfish_escape": 0.23,
+                  "failed_noise": 0.12
+                },
+                "potential_bits": 1.9086900305456853,
+                "specificity_js": 0.32867047346029815,
+                "usefulness_gap": 3.8100000000000005,
+                "incomplete_rollouts": 474
+              },
+              "verdict": 1,
+              "margins": {
+                "potential_bits": 1.4086900305456853,
+                "specificity_js": 0.12867047346029814,
+                "usefulness_gap": 3.8100000000000005
+              },
+              "decidable": {
+                "potential_bits": true,
+                "specificity_js": true,
+                "usefulness_gap": true
+              },
+              "abstain": false
+            }
+          ],
+          "verdict_matches": 5,
+          "abstentions": 0
+        },
+        "20000": {
+          "ensemble_tv_error": 0.027999999999999987,
+          "mean_tv_to_simulator": 0.049333333333333326,
+          "models": [
+            {
+              "metrics": {
+                "natural_dist": {
+                  "sacrifice_rescue": 0.31333333333333335,
+                  "team_direct": 0.36666666666666664,
+                  "selfish_escape": 0.23333333333333334,
+                  "failed_noise": 0.08666666666666667
+                },
+                "potential_bits": 1.8510114758184593,
+                "specificity_js": 0.4070054923332059,
+                "usefulness_gap": 3.4333333333333336,
+                "incomplete_rollouts": 422
+              },
+              "verdict": 1,
+              "margins": {
+                "potential_bits": 1.3510114758184593,
+                "specificity_js": 0.20700549233320586,
+                "usefulness_gap": 3.4333333333333336
+              },
+              "decidable": {
+                "potential_bits": true,
+                "specificity_js": true,
+                "usefulness_gap": true
+              },
+              "abstain": false
+            },
+            {
+              "metrics": {
+                "natural_dist": {
+                  "sacrifice_rescue": 0.31666666666666665,
+                  "team_direct": 0.35333333333333333,
+                  "selfish_escape": 0.22,
+                  "failed_noise": 0.11
+                },
+                "potential_bits": 1.886515794523794,
+                "specificity_js": 0.3974983081715535,
+                "usefulness_gap": 3.476666666666666,
+                "incomplete_rollouts": 438
+              },
+              "verdict": 1,
+              "margins": {
+                "potential_bits": 1.386515794523794,
+                "specificity_js": 0.1974983081715535,
+                "usefulness_gap": 3.476666666666666
+              },
+              "decidable": {
+                "potential_bits": true,
+                "specificity_js": true,
+                "usefulness_gap": true
+              },
+              "abstain": false
+            },
+            {
+              "metrics": {
+                "natural_dist": {
+                  "sacrifice_rescue": 0.31666666666666665,
+                  "team_direct": 0.35333333333333333,
+                  "selfish_escape": 0.24666666666666667,
+                  "failed_noise": 0.08333333333333333
+                },
+                "potential_bits": 1.8525126745757157,
+                "specificity_js": 0.40360200023629694,
+                "usefulness_gap": 3.516666666666667,
+                "incomplete_rollouts": 430
+              },
+              "verdict": 1,
+              "margins": {
+                "potential_bits": 1.3525126745757157,
+                "specificity_js": 0.20360200023629693,
+                "usefulness_gap": 3.516666666666667
+              },
+              "decidable": {
+                "potential_bits": true,
+                "specificity_js": true,
+                "usefulness_gap": true
+              },
+              "abstain": false
+            },
+            {
+              "metrics": {
+                "natural_dist": {
+                  "sacrifice_rescue": 0.31333333333333335,
+                  "team_direct": 0.36,
+                  "selfish_escape": 0.22666666666666666,
+                  "failed_noise": 0.1
+                },
+                "potential_bits": 1.8727740459471103,
+                "specificity_js": 0.37820330705794314,
+                "usefulness_gap": 3.5400000000000005,
+                "incomplete_rollouts": 448
+              },
+              "verdict": 1,
+              "margins": {
+                "potential_bits": 1.3727740459471103,
+                "specificity_js": 0.17820330705794313,
+                "usefulness_gap": 3.5400000000000005
+              },
+              "decidable": {
+                "potential_bits": true,
+                "specificity_js": true,
+                "usefulness_gap": true
+              },
+              "abstain": false
+            },
+            {
+              "metrics": {
+                "natural_dist": {
+                  "sacrifice_rescue": 0.32666666666666666,
+                  "team_direct": 0.3466666666666667,
+                  "selfish_escape": 0.26,
+                  "failed_noise": 0.06666666666666667
+                },
+                "potential_bits": 1.8228612558993256,
+                "specificity_js": 0.4127399882880309,
+                "usefulness_gap": 3.6733333333333333,
+                "incomplete_rollouts": 408
+              },
+              "verdict": 1,
+              "margins": {
+                "potential_bits": 1.3228612558993256,
+                "specificity_js": 0.21273998828803087,
+                "usefulness_gap": 3.6733333333333333
+              },
+              "decidable": {
+                "potential_bits": true,
+                "specificity_js": true,
+                "usefulness_gap": true
+              },
+              "abstain": false
+            }
+          ],
+          "verdict_matches": 5,
+          "abstentions": 0
+        }
+      }
+    }
+  },
+  "registered_outcomes": {
+    "WM1_calibration_monotone": true,
+    "WM2_no_silent_wrong_verdict_at_K20000": true,
+    "WM3_margin_rule_catches_all_mismatches": false,
+    "wm2_violations": 0,
+    "wm3_violations": 15
+  }
+}

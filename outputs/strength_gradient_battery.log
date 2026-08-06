@@ -1,0 +1,28 @@
+open-prior pattern probability 0.01287 (C_open 6.28 bits)
+training shaped seed 9101
+  C_prov 0.39 bits, final p 0.99, suddenness 18.85
+training shaped seed 9102
+  C_prov 0.39 bits, final p 1.00, suddenness 19.00
+training shaped seed 9103
+  C_prov 0.33 bits, final p 0.99, suddenness 19.70
+training shaped seed 9104
+  C_prov 0.44 bits, final p 0.99, suddenness 19.27
+training shaped seed 9105
+  C_prov 0.41 bits, final p 0.99, suddenness 19.02
+training outcome_only seed 9101
+  C_prov 0.63 bits, final p 0.98, suddenness 17.93
+training outcome_only seed 9102
+  C_prov 0.93 bits, final p 0.98, suddenness 18.99
+training outcome_only seed 9103
+  C_prov 0.35 bits, final p 0.99, suddenness 19.39
+training outcome_only seed 9104
+  C_prov 0.89 bits, final p 0.97, suddenness 19.28
+training outcome_only seed 9105
+  C_prov 0.44 bits, final p 1.00, suddenness 18.88
+{
+  "ST1_scripted_zero_collapse": true,
+  "ST2_rarity_ordering": true,
+  "ST3_suddenness_ordering": false,
+  "ST4_competence_comparable": true
+}
+Wrote /home/Yixiang/MPARL/GOGOGO/outputs/strength_gradient_battery.json

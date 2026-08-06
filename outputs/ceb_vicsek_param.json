@@ -1,0 +1,58 @@
+{
+  "status": "CEB-VICSEK-PARAM control-axis battery; preregistered",
+  "etas_high_to_low": [
+    3.0,
+    2.5,
+    2.0,
+    1.6,
+    1.2,
+    0.8,
+    0.4,
+    0.2,
+    0.1,
+    0.05
+  ],
+  "openness": [
+    0.9381,
+    0.8563,
+    0.78301,
+    0.72074,
+    0.61212,
+    0.48737,
+    0.27735,
+    0.19988,
+    0.0272,
+    0.0
+  ],
+  "phi": [
+    0.33695,
+    0.56642,
+    0.72293,
+    0.80419,
+    0.90272,
+    0.95794,
+    0.991,
+    0.99719,
+    0.99931,
+    0.9998
+  ],
+  "adj": {
+    "drop": 0.9381,
+    "gate_passed": true,
+    "hinge": {
+      "delta_bic": 3.955,
+      "t_star": 3.0,
+      "slope_before": -0.07187866,
+      "slope_after": -0.12866136,
+      "onset_type": true
+    },
+    "b5_control": false
+  },
+  "registered_outcomes": {
+    "VSKP1_control_breakpoint": false,
+    "VSKP2_native_alignment": false,
+    "VSKP3_low_high_gap": true,
+    "steepest_phi_index": 1,
+    "hinge_index": 3
+  }
+}

@@ -1,0 +1,51 @@
+288 probes in 2 length-batches; dropped verb pairs: none
+Loading weights:   0%|          | 0/292 [00:00<?, ?it/s]Loading weights: 100%|██████████| 292/292 [00:00<00:00, 9926.54it/s]
+step        0 H  15.33 C   0.00 agree 0.490 (attractor 0.479) rand 0.486 perm 0.469 [35s]
+Loading weights:   0%|          | 0/292 [00:00<?, ?it/s]Loading weights: 100%|██████████| 292/292 [00:00<00:00, 9138.87it/s]
+step        1 H  15.33 C   0.00 agree 0.490 (attractor 0.479) rand 0.486 perm 0.469 [29s]
+Loading weights:   0%|          | 0/292 [00:00<?, ?it/s]Loading weights: 100%|██████████| 292/292 [00:00<00:00, 8134.60it/s]
+step        2 H  15.33 C   0.00 agree 0.490 (attractor 0.479) rand 0.486 perm 0.469 [27s]
+Loading weights:   0%|          | 0/292 [00:00<?, ?it/s]Loading weights: 100%|██████████| 292/292 [00:00<00:00, 9874.60it/s]
+step        4 H  15.33 C   0.00 agree 0.486 (attractor 0.444) rand 0.469 perm 0.490 [27s]
+Loading weights:   0%|          | 0/292 [00:00<?, ?it/s]Loading weights: 100%|██████████| 292/292 [00:00<00:00, 9394.39it/s]
+step        8 H  15.33 C   0.08 agree 0.490 (attractor 0.451) rand 0.490 perm 0.531 [26s]
+Loading weights:   0%|          | 0/292 [00:00<?, ?it/s]Loading weights: 100%|██████████| 292/292 [00:00<00:00, 8932.25it/s]
+step       16 H  15.07 C   0.56 agree 0.514 (attractor 0.493) rand 0.517 perm 0.510 [28s]
+Loading weights:   0%|          | 0/292 [00:00<?, ?it/s]Loading weights: 100%|██████████| 292/292 [00:00<00:00, 8112.08it/s]
+step       32 H  15.02 C   0.70 agree 0.507 (attractor 0.493) rand 0.517 perm 0.503 [27s]
+Loading weights:   0%|          | 0/292 [00:00<?, ?it/s]Loading weights: 100%|██████████| 292/292 [00:00<00:00, 8561.24it/s]
+step       64 H  14.74 C   1.00 agree 0.493 (attractor 0.514) rand 0.521 perm 0.524 [27s]
+Loading weights:   0%|          | 0/292 [00:00<?, ?it/s]Loading weights: 100%|██████████| 292/292 [00:00<00:00, 9535.77it/s]
+step      128 H  13.59 C   2.14 agree 0.486 (attractor 0.493) rand 0.514 perm 0.503 [27s]
+Loading weights:   0%|          | 0/292 [00:00<?, ?it/s]Loading weights: 100%|██████████| 292/292 [00:00<00:00, 8616.59it/s]
+step      256 H   9.63 C   6.09 agree 0.472 (attractor 0.424) rand 0.483 perm 0.497 [26s]
+Loading weights:   0%|          | 0/292 [00:00<?, ?it/s]Loading weights: 100%|██████████| 292/292 [00:00<00:00, 9945.81it/s]
+step      512 H   8.22 C   7.47 agree 0.382 (attractor 0.111) rand 0.514 perm 0.472 [47s]
+Loading weights:   0%|          | 0/292 [00:00<?, ?it/s]Loading weights: 100%|██████████| 292/292 [00:00<00:00, 6884.53it/s]
+step     1000 H   7.42 C   8.42 agree 0.753 (attractor 0.681) rand 0.524 perm 0.503 [27s]
+Loading weights:   0%|          | 0/292 [00:00<?, ?it/s]Loading weights: 100%|██████████| 292/292 [00:00<00:00, 9375.40it/s]
+step     2000 H   7.40 C   8.47 agree 0.934 (attractor 0.882) rand 0.493 perm 0.493 [27s]
+Loading weights:   0%|          | 0/292 [00:00<?, ?it/s]Loading weights: 100%|██████████| 292/292 [00:00<00:00, 9149.66it/s]
+step     4000 H   7.01 C   8.92 agree 0.892 (attractor 0.840) rand 0.542 perm 0.476 [28s]
+Loading weights:   0%|          | 0/292 [00:00<?, ?it/s]Loading weights: 100%|██████████| 292/292 [00:00<00:00, 9526.95it/s]
+step     8000 H   6.78 C   9.08 agree 0.892 (attractor 0.833) rand 0.528 perm 0.476 [28s]
+Loading weights:   0%|          | 0/292 [00:00<?, ?it/s]Loading weights: 100%|██████████| 292/292 [00:00<00:00, 7910.25it/s]
+step    16000 H   6.72 C   9.19 agree 0.868 (attractor 0.764) rand 0.545 perm 0.455 [28s]
+Loading weights:   0%|          | 0/292 [00:00<?, ?it/s]Loading weights: 100%|██████████| 292/292 [00:00<00:00, 9374.40it/s]
+step    32000 H   6.77 C   9.16 agree 0.837 (attractor 0.674) rand 0.549 perm 0.438 [29s]
+Loading weights:   0%|          | 0/292 [00:00<?, ?it/s]Loading weights: 100%|██████████| 292/292 [00:00<00:00, 9393.52it/s]
+step    64000 H   6.87 C   9.05 agree 0.833 (attractor 0.681) rand 0.549 perm 0.469 [26s]
+Loading weights:   0%|          | 0/292 [00:00<?, ?it/s]Loading weights: 100%|██████████| 292/292 [00:00<00:00, 9904.15it/s]
+step    96000 H   6.54 C   9.41 agree 0.868 (attractor 0.736) rand 0.538 perm 0.451 [27s]
+Loading weights:   0%|          | 0/292 [00:00<?, ?it/s]Loading weights: 100%|██████████| 292/292 [00:00<00:00, 9612.87it/s]
+step   128000 H   6.80 C   9.14 agree 0.892 (attractor 0.799) rand 0.524 perm 0.465 [28s]
+Loading weights:   0%|          | 0/292 [00:00<?, ?it/s]Loading weights: 100%|██████████| 292/292 [00:00<00:00, 9199.35it/s]
+step   143000 H   6.80 C   9.11 agree 0.872 (attractor 0.757) rand 0.528 perm 0.462 [34s]
+/home/Yixiang/miniconda3/lib/python3.13/site-packages/numpy/lib/_function_base_impl.py:3023: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[:, None]
+/home/Yixiang/miniconda3/lib/python3.13/site-packages/numpy/lib/_function_base_impl.py:3024: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[None, :]
+pythia_agreement: emergent=1 failed=-
+pythia_random_target: emergent=0 failed=burstiness;usefulness
+shuffled_vocab: emergent=0 failed=burstiness;usefulness
+Wrote /home/Yixiang/MPARL/GOGOGO/outputs/pythia_collapse_summary_410m.json

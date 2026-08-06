@@ -1,0 +1,115 @@
+{
+  "status": "continuous profiles of the known taxonomy, assembled read-only from stored outputs; expectation declared in the docstring",
+  "value_scales": {
+    "gridworld": 5.0,
+    "clbf": 0.1
+  },
+  "clbf": {
+    "learned": {
+      "P": 0.6837033864147049,
+      "S": 0.7925,
+      "M": 0.7946161423428896,
+      "V": 0.5921610036510883,
+      "Q": 0.4289481793977388,
+      "E_struct": 0.7460116288958636,
+      "E_adapt": 0.27539026272623385
+    },
+    "initial_twin": {
+      "P": 0.02251553382527708,
+      "S": 0.00875,
+      "M": 0.720469783547412,
+      "V": -0.8904322877904306,
+      "Q": 0.0,
+      "E_struct": 0.04299076076360092,
+      "E_adapt": 0.0
+    },
+    "team_nearest": {
+      "P": 0.5,
+      "S": 1.0,
+      "M": 0.8316313205366417,
+      "V": 0.7668754822960728,
+      "Q": 0.0,
+      "E_struct": 0.7463600401095782,
+      "E_adapt": 0.0
+    },
+    "fixed_food0": {
+      "P": 0.2708955341567182,
+      "S": 0.25,
+      "M": 0.8311005805753737,
+      "V": 0.47185502068136376,
+      "Q": 0.0,
+      "E_struct": 0.3826135207222049,
+      "E_adapt": 0.0
+    }
+  },
+  "harmful_two_values": {
+    "u_team": {
+      "P_potential": 0.43067655807339306,
+      "S_selectivity": 1.0,
+      "M_causal_magnitude": 0.9006294009491089,
+      "V_signed_value": -0.3799489622552249,
+      "Q_acquisition": 0.9303147004745543,
+      "E_struct": 0.7292316146385793,
+      "E_adapt": -0.26724982682151643
+    },
+    "u_private": {
+      "P_potential": 0.43067655807339306,
+      "S_selectivity": 1.0,
+      "M_causal_magnitude": 0.9006294009491089,
+      "V_signed_value": 0.9051482536448663,
+      "Q_acquisition": 0.9303147004745543,
+      "E_struct": 0.7292316146385793,
+      "E_adapt": 0.6366663369694783
+    }
+  },
+  "matched_provenance": {
+    "script": {
+      "P_potential": 0.5,
+      "S_selectivity": 1.0,
+      "M_causal_magnitude": 1.0,
+      "V_signed_value": 0.9757431300314515,
+      "Q_acquisition": 0.0,
+      "A_abruptness": null,
+      "D_discovery_surprise_bits": null,
+      "E_struct": 0.7937005259840998,
+      "E_adapt": 0.0
+    },
+    "bc_clone": {
+      "P_potential": 0.5,
+      "S_selectivity": 1.0,
+      "M_causal_magnitude": 0.42135554067576664,
+      "V_signed_value": 0.9757431300314515,
+      "Q_acquisition": 0.7106777703378834,
+      "D_discovery_surprise_bits": 0.327276839927718,
+      "E_struct": 0.5947221643405846,
+      "E_adapt": 0.4892872153166465
+    },
+    "shaped": {
+      "P_potential": 0.5,
+      "S_selectivity": 1.0,
+      "M_causal_magnitude": 1.0,
+      "V_signed_value": 0.9757431300314515,
+      "Q_acquisition": 1.0,
+      "D_discovery_surprise_bits": 0.39127322292972333,
+      "E_struct": 0.7937005259840998,
+      "E_adapt": 0.774447835531335
+    },
+    "outcome_only": {
+      "P_potential": 0.5,
+      "S_selectivity": 1.0,
+      "M_causal_magnitude": 1.0,
+      "V_signed_value": 0.9757431300314515,
+      "Q_acquisition": 1.0,
+      "D_discovery_surprise_bits": 0.6478224140264792,
+      "E_struct": 0.7937005259840998,
+      "E_adapt": 0.774447835531335
+    }
+  },
+  "axis_separation_check": {
+    "learned_high_struct_positive_V": true,
+    "twin_near_zero_struct": true,
+    "scripted_struct_without_acquisition": true,
+    "harmful_same_struct_opposite_V": true,
+    "clone_reduced_M_vs_script": true
+  }
+}

@@ -1,0 +1,126 @@
+{
+  "status": "pooled Overcooked-AI confirmation (12/12 seeds)",
+  "n_seeds": 12,
+  "learned_accepted": 8,
+  "control_rejections": "48/48",
+  "control_failure_routes": {
+    "initial_twin": {
+      "conditional_selectivity": 12,
+      "usefulness": 11,
+      "acquisition": 12
+    },
+    "scripted_roles": {
+      "potential": 12,
+      "conditional_selectivity": 12,
+      "endogeneity": 12,
+      "acquisition": 12
+    },
+    "bc_clone": {
+      "potential": 12,
+      "conditional_selectivity": 12,
+      "endogeneity": 12,
+      "acquisition": 12
+    },
+    "untrained_other": {
+      "conditional_selectivity": 12,
+      "usefulness": 7,
+      "acquisition": 12
+    }
+  },
+  "twin_contract_b_rejected": "12/12",
+  "learned_usefulness_positive": "12/12",
+  "oc5_sign_test_p": 0.000244140625,
+  "oc3_direction_match": "11/12",
+  "registered_outcomes": {
+    "OC1_learned_accepted_ge_8": true,
+    "OC2_all_controls_rejected": true,
+    "OC3_trigger_direction_ge_10": true,
+    "OC4_all_twins_rejected_contractB": true,
+    "OC5_usefulness_positive_ge_10_and_sig": true
+  },
+  "per_seed": {
+    "77001": {
+      "learned_emergent": 0,
+      "learned_failed": [
+        "conditional_selectivity",
+        "acquisition"
+      ],
+      "usefulness_gap": 90.75,
+      "train_minutes": 87.2
+    },
+    "77002": {
+      "learned_emergent": 1,
+      "learned_failed": [],
+      "usefulness_gap": 93.75,
+      "train_minutes": 86.3
+    },
+    "77003": {
+      "learned_emergent": 1,
+      "learned_failed": [],
+      "usefulness_gap": 107.25,
+      "train_minutes": 86.4
+    },
+    "77004": {
+      "learned_emergent": 1,
+      "learned_failed": [],
+      "usefulness_gap": 79.5,
+      "train_minutes": 87.7
+    },
+    "77005": {
+      "learned_emergent": 0,
+      "learned_failed": [
+        "conditional_selectivity",
+        "acquisition"
+      ],
+      "usefulness_gap": 4.75,
+      "train_minutes": 84.2
+    },
+    "77006": {
+      "learned_emergent": 0,
+      "learned_failed": [
+        "conditional_selectivity"
+      ],
+      "usefulness_gap": 96.25,
+      "train_minutes": 83.3
+    },
+    "77007": {
+      "learned_emergent": 1,
+      "learned_failed": [],
+      "usefulness_gap": 79.25,
+      "train_minutes": 85.6
+    },
+    "77008": {
+      "learned_emergent": 0,
+      "learned_failed": [
+        "conditional_selectivity",
+        "acquisition"
+      ],
+      "usefulness_gap": 85.0,
+      "train_minutes": 87.9
+    },
+    "77009": {
+      "learned_emergent": 1,
+      "learned_failed": [],
+      "usefulness_gap": 85.5,
+      "train_minutes": 88.7
+    },
+    "77010": {
+      "learned_emergent": 1,
+      "learned_failed": [],
+      "usefulness_gap": 57.75,
+      "train_minutes": 87.5
+    },
+    "77011": {
+      "learned_emergent": 1,
+      "learned_failed": [],
+      "usefulness_gap": 103.75,
+      "train_minutes": 86.4
+    },
+    "77012": {
+      "learned_emergent": 1,
+      "learned_failed": [],
+      "usefulness_gap": 74.25,
+      "train_minutes": 87.4
+    }
+  }
+}

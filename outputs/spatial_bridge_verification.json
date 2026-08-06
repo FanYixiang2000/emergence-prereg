@@ -1,0 +1,38 @@
+{
+  "status": "spatial-collapse bridge (Proposition S): C_spatial = total correlation; checks S-A..S-D",
+  "results": {
+    "SA_identity": {
+      "n": 20000,
+      "max_gap_tc_vs_kl": 2.7755575615628914e-15,
+      "min_tc": 0.0,
+      "pass": true
+    },
+    "SB_independence_linear_growth": {
+      "N_range": "1..8",
+      "pass": true
+    },
+    "SC_coupling_monotone": {
+      "tc_curve": [
+        0.0,
+        0.0006,
+        0.0099,
+        0.0473,
+        0.1386,
+        0.3125,
+        0.5991,
+        1.0325,
+        1.6568,
+        2.5466,
+        4.0
+      ],
+      "pass": true
+    },
+    "SD_provenance_blind": {
+      "tc_script": 4.0,
+      "max_theory": 4.0,
+      "distinct_generators_same_law_gap": 0.0,
+      "pass": true
+    }
+  },
+  "all_pass": true
+}

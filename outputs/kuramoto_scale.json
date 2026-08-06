@@ -1,0 +1,385 @@
+{
+  "status": "KUR-SCALE breakpoint time vs distance from criticality; registered before run; KUR-BP-R2 detector contract",
+  "config": {
+    "Ks": [
+      0.9,
+      1.1,
+      1.5,
+      2.0,
+      2.5
+    ],
+    "seeds": [
+      82001,
+      82002
+    ]
+  },
+  "per_K": {
+    "0.9": {
+      "82001": {
+        "drop": 0.1669,
+        "gate_passed": true,
+        "t_sat": 11.8,
+        "window_points": 60,
+        "hinge": {
+          "delta_bic": 195.735,
+          "t_star": 6.6,
+          "slope_before": -0.003019,
+          "slope_after": -0.026784,
+          "onset_type": true
+        },
+        "thinning": {
+          "parity0": {
+            "delta_bic": 94.235,
+            "t_star": 6.4,
+            "slope_before": -0.002547,
+            "slope_after": -0.025903,
+            "onset_type": true,
+            "ok": true
+          },
+          "parity1": {
+            "delta_bic": 94.434,
+            "t_star": 6.6,
+            "slope_before": -0.00308,
+            "slope_after": -0.026845,
+            "onset_type": true,
+            "ok": true
+          }
+        },
+        "t_r90": 9.6,
+        "onset_pass": true
+      },
+      "82002": {
+        "drop": 0.2185,
+        "gate_passed": true,
+        "t_sat": 11.8,
+        "window_points": 60,
+        "hinge": {
+          "delta_bic": 202.146,
+          "t_star": 6.8,
+          "slope_before": -0.003711,
+          "slope_after": -0.036602,
+          "onset_type": true
+        },
+        "thinning": {
+          "parity0": {
+            "delta_bic": 97.011,
+            "t_star": 6.8,
+            "slope_before": -0.00371,
+            "slope_after": -0.036435,
+            "onset_type": true,
+            "ok": true
+          },
+          "parity1": {
+            "delta_bic": 96.777,
+            "t_star": 6.6,
+            "slope_before": -0.003142,
+            "slope_after": -0.035619,
+            "onset_type": true,
+            "ok": true
+          }
+        },
+        "t_r90": 10.6,
+        "onset_pass": true
+      }
+    },
+    "1.1": {
+      "82001": {
+        "drop": 0.4255,
+        "gate_passed": true,
+        "t_sat": 11.6,
+        "window_points": 59,
+        "hinge": {
+          "delta_bic": 240.797,
+          "t_star": 5.4,
+          "slope_before": -0.005015,
+          "slope_after": -0.062627,
+          "onset_type": true
+        },
+        "thinning": {
+          "parity0": {
+            "delta_bic": 118.642,
+            "t_star": 5.6,
+            "slope_before": -0.0066,
+            "slope_after": -0.06382,
+            "onset_type": true,
+            "ok": true
+          },
+          "parity1": {
+            "delta_bic": 113.127,
+            "t_star": 5.4,
+            "slope_before": -0.005162,
+            "slope_after": -0.06262,
+            "onset_type": true,
+            "ok": true
+          }
+        },
+        "t_r90": 10.2,
+        "onset_pass": true
+      },
+      "82002": {
+        "drop": 0.4648,
+        "gate_passed": true,
+        "t_sat": 11.6,
+        "window_points": 59,
+        "hinge": {
+          "delta_bic": 239.059,
+          "t_star": 5.4,
+          "slope_before": -0.005238,
+          "slope_after": -0.069728,
+          "onset_type": true
+        },
+        "thinning": {
+          "parity0": {
+            "delta_bic": 117.803,
+            "t_star": 5.6,
+            "slope_before": -0.007009,
+            "slope_after": -0.071045,
+            "onset_type": true,
+            "ok": true
+          },
+          "parity1": {
+            "delta_bic": 112.242,
+            "t_star": 5.4,
+            "slope_before": -0.005404,
+            "slope_after": -0.069742,
+            "onset_type": true,
+            "ok": true
+          }
+        },
+        "t_r90": 9.8,
+        "onset_pass": true
+      }
+    },
+    "1.5": {
+      "82001": {
+        "drop": 0.596,
+        "gate_passed": true,
+        "t_sat": 9.4,
+        "window_points": 48,
+        "hinge": {
+          "delta_bic": 95.708,
+          "t_star": 3.2,
+          "slope_before": -0.003148,
+          "slope_after": -0.100502,
+          "onset_type": true
+        },
+        "thinning": {
+          "parity0": {
+            "delta_bic": 49.48,
+            "t_star": 3.2,
+            "slope_before": -0.00262,
+            "slope_after": -0.101273,
+            "onset_type": true,
+            "ok": true
+          },
+          "parity1": {
+            "delta_bic": 41.058,
+            "t_star": 3.4,
+            "slope_before": -0.009763,
+            "slope_after": -0.101109,
+            "onset_type": true,
+            "ok": true
+          }
+        },
+        "t_r90": 6.4,
+        "onset_pass": true
+      },
+      "82002": {
+        "drop": 0.5993,
+        "gate_passed": true,
+        "t_sat": 9.4,
+        "window_points": 48,
+        "hinge": {
+          "delta_bic": 93.736,
+          "t_star": 3.2,
+          "slope_before": -0.003401,
+          "slope_after": -0.101239,
+          "onset_type": true
+        },
+        "thinning": {
+          "parity0": {
+            "delta_bic": 48.676,
+            "t_star": 3.2,
+            "slope_before": -0.0028,
+            "slope_after": -0.102132,
+            "onset_type": true,
+            "ok": true
+          },
+          "parity1": {
+            "delta_bic": 39.921,
+            "t_star": 3.4,
+            "slope_before": -0.010129,
+            "slope_after": -0.101732,
+            "onset_type": true,
+            "ok": true
+          }
+        },
+        "t_r90": 6.4,
+        "onset_pass": true
+      }
+    },
+    "2.0": {
+      "82001": {
+        "drop": 0.6062,
+        "gate_passed": true,
+        "t_sat": 6.6,
+        "window_points": 34,
+        "hinge": {
+          "delta_bic": 63.312,
+          "t_star": 2.4,
+          "slope_before": -0.010382,
+          "slope_after": -0.150831,
+          "onset_type": true
+        },
+        "thinning": {
+          "parity0": {
+            "delta_bic": 33.834,
+            "t_star": 2.4,
+            "slope_before": -0.009081,
+            "slope_after": -0.152812,
+            "onset_type": true,
+            "ok": true
+          },
+          "parity1": {
+            "delta_bic": 25.52,
+            "t_star": 2.2,
+            "slope_before": -0.000735,
+            "slope_after": -0.145335,
+            "onset_type": true,
+            "ok": true
+          }
+        },
+        "t_r90": 4.2,
+        "onset_pass": true
+      },
+      "82002": {
+        "drop": 0.6077,
+        "gate_passed": true,
+        "t_sat": 6.6,
+        "window_points": 34,
+        "hinge": {
+          "delta_bic": 63.845,
+          "t_star": 2.4,
+          "slope_before": -0.010684,
+          "slope_after": -0.150148,
+          "onset_type": true
+        },
+        "thinning": {
+          "parity0": {
+            "delta_bic": 33.949,
+            "t_star": 2.4,
+            "slope_before": -0.009355,
+            "slope_after": -0.152145,
+            "onset_type": true,
+            "ok": true
+          },
+          "parity1": {
+            "delta_bic": 25.934,
+            "t_star": 2.2,
+            "slope_before": -0.001124,
+            "slope_after": -0.144673,
+            "onset_type": true,
+            "ok": true
+          }
+        },
+        "t_r90": 4.2,
+        "onset_pass": true
+      }
+    },
+    "2.5": {
+      "82001": {
+        "drop": 0.6134,
+        "gate_passed": true,
+        "t_sat": 5.0,
+        "window_points": 26,
+        "hinge": {
+          "delta_bic": 53.514,
+          "t_star": 1.8,
+          "slope_before": -0.002866,
+          "slope_after": -0.19925,
+          "onset_type": true
+        },
+        "thinning": {
+          "parity0": {
+            "delta_bic": 29.073,
+            "t_star": 2.0,
+            "slope_before": -0.018357,
+            "slope_after": -0.209941,
+            "onset_type": true,
+            "ok": true
+          },
+          "parity1": {
+            "delta_bic": 21.18,
+            "t_star": 1.8,
+            "slope_before": -0.006721,
+            "slope_after": -0.1955,
+            "onset_type": true,
+            "ok": true
+          }
+        },
+        "t_r90": 3.2,
+        "onset_pass": true
+      },
+      "82002": {
+        "drop": 0.6135,
+        "gate_passed": true,
+        "t_sat": 5.0,
+        "window_points": 26,
+        "hinge": {
+          "delta_bic": 53.42,
+          "t_star": 1.8,
+          "slope_before": -0.002859,
+          "slope_after": -0.199578,
+          "onset_type": true
+        },
+        "thinning": {
+          "parity0": {
+            "delta_bic": 29.123,
+            "t_star": 2.0,
+            "slope_before": -0.018433,
+            "slope_after": -0.21024,
+            "onset_type": true,
+            "ok": true
+          },
+          "parity1": {
+            "delta_bic": 21.101,
+            "t_star": 1.8,
+            "slope_before": -0.006621,
+            "slope_after": -0.195871,
+            "onset_type": true,
+            "ok": true
+          }
+        },
+        "t_r90": 3.2,
+        "onset_pass": true
+      }
+    }
+  },
+  "registered_outcomes": {
+    "KS1_existence": true,
+    "KS1_nearcritical_consistent": true,
+    "KS2_critical_slowing": true,
+    "KS3_sharpness": true,
+    "passing_K": [
+      0.9,
+      1.1,
+      1.5,
+      2.0,
+      2.5
+    ],
+    "mean_t_star": [
+      6.699999999999999,
+      5.4,
+      3.2,
+      2.4,
+      1.8
+    ],
+    "mean_post_slope": [
+      0.031693,
+      0.066178,
+      0.100871,
+      0.150489,
+      0.199414
+    ]
+  }
+}

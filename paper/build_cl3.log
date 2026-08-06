@@ -1,0 +1,59 @@
+Rc files read (in order):
+  NONE
+Latexmk: This is Latexmk, John Collins, 9 March 2026. Version 4.88.
+Latexmk: applying rule 'pdflatex'...
+Rule 'pdflatex':  Reasons for rerun
+Changed files or newly in use/created:
+  cover_letter.tex
+Category 'changed_user':
+  cover_letter.tex
+
+------------
+Run number 1 of rule 'pdflatex'
+------------
+------------
+Running 'pdflatex  -interaction=nonstopmode -recorder  "cover_letter.tex"'
+------------
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026) (preloaded format=pdflatex)
+ restricted \write18 enabled.
+entering extended mode
+(./cover_letter.tex
+LaTeX2e <2026-06-01>
+L3 programming layer <2026-06-18>
+(/home/Yixiang/texlive/2026/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2025/01/22 v1.4n Standard LaTeX document class
+(/home/Yixiang/texlive/2026/texmf-dist/tex/latex/base/size11.clo))
+(/home/Yixiang/texlive/2026/texmf-dist/tex/latex/geometry/geometry.sty
+(/home/Yixiang/texlive/2026/texmf-dist/tex/latex/graphics/keyval.sty)
+(/home/Yixiang/texlive/2026/texmf-dist/tex/generic/iftex/ifvtex.sty
+(/home/Yixiang/texlive/2026/texmf-dist/tex/generic/iftex/iftex.sty)))
+(/home/Yixiang/texlive/2026/texmf-dist/tex/latex/microtype/microtype.sty
+(/home/Yixiang/texlive/2026/texmf-dist/tex/latex/etoolbox/etoolbox.sty)
+(/home/Yixiang/texlive/2026/texmf-dist/tex/latex/microtype/microtype-pdftex.def
+) (/home/Yixiang/texlive/2026/texmf-dist/tex/latex/microtype/microtype.cfg))
+(/home/Yixiang/texlive/2026/texmf-dist/tex/latex/parskip/parskip.sty
+(/home/Yixiang/texlive/2026/texmf-dist/tex/latex/kvoptions/kvoptions.sty
+(/home/Yixiang/texlive/2026/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty)
+(/home/Yixiang/texlive/2026/texmf-dist/tex/latex/kvsetkeys/kvsetkeys.sty)))
+(/home/Yixiang/texlive/2026/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
+) (./cover_letter.aux)
+*geometry* driver: auto-detecting
+*geometry* detected driver: pdftex
+(/home/Yixiang/texlive/2026/texmf-dist/tex/latex/microtype/mt-cmr.cfg) [1{/home
+/Yixiang/texlive/2026/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] [2]
+(./cover_letter.aux) )</home/Yixiang/texlive/2026/texmf-dist/fonts/type1/public
+/amsfonts/cm/cmbx10.pfb></home/Yixiang/texlive/2026/texmf-dist/fonts/type1/publ
+ic/amsfonts/cm/cmmi10.pfb></home/Yixiang/texlive/2026/texmf-dist/fonts/type1/pu
+blic/amsfonts/cm/cmr10.pfb></home/Yixiang/texlive/2026/texmf-dist/fonts/type1/p
+ublic/amsfonts/cm/cmr8.pfb></home/Yixiang/texlive/2026/texmf-dist/fonts/type1/p
+ublic/amsfonts/cm/cmsy10.pfb></home/Yixiang/texlive/2026/texmf-dist/fonts/type1
+/public/amsfonts/cm/cmsy8.pfb></home/Yixiang/texlive/2026/texmf-dist/fonts/type
+1/public/amsfonts/cm/cmti10.pfb>
+Output written on cover_letter.pdf (2 pages, 93283 bytes).
+Transcript written on cover_letter.log.
+Latexmk: Getting log file 'cover_letter.log'
+Latexmk: Examining 'cover_letter.fls'
+Latexmk: Examining 'cover_letter.log'
+Latexmk: Log file says output to 'cover_letter.pdf'
+Latexmk: All targets (cover_letter.pdf) are up-to-date
+

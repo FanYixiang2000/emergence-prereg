@@ -1,0 +1,23 @@
+{
+  "summary": {
+    "n_conditions": 5225.0,
+    "positive_ground_truth_rate": 0.4568421052631579,
+    "structure_threshold": 1.5,
+    "auc_structure_only": 0.49754402886435894,
+    "auc_option_value": 1.0,
+    "auc_combined_evidence": 1.0,
+    "combined_tp": 2387.0,
+    "combined_fp": 0.0,
+    "combined_tn": 2838.0,
+    "combined_fn": 0.0,
+    "combined_precision": 1.0,
+    "combined_recall": 1.0,
+    "combined_specificity": 1.0,
+    "combined_accuracy": 1.0,
+    "combined_f1": 1.0,
+    "case_useful_single_mode_rate": 0.24,
+    "case_no_useful_option_rate": 0.2863157894736842,
+    "case_useful_latent_possibility_rate": 0.2168421052631579,
+    "case_false_multimodality_rate": 0.25684210526315787
+  }
+}

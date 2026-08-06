@@ -1,0 +1,13 @@
+regime,cluster,majority_hand_basin,size
+pure_team,0,sacrifice_rescue,117
+pure_team,1,sacrifice_rescue,183
+pure_team,2,team_direct,73
+pure_team,3,team_direct,227
+uncertain_preference,0,sacrifice_rescue,100
+uncertain_preference,1,selfish_escape,163
+uncertain_preference,2,failed_noise,6
+uncertain_preference,3,team_direct,331
+random_noise,0,failed_noise,49
+random_noise,1,sacrifice_rescue,260
+random_noise,2,team_direct,9
+random_noise,3,team_direct,282

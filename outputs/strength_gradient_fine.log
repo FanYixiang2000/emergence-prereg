@@ -1,0 +1,26 @@
+fine grid: shaped seed 9101
+  discovery ckpt 9, pre-rarity 7.42 bits, suddenness 24.93
+fine grid: shaped seed 9102
+  discovery ckpt 6, pre-rarity 6.74 bits, suddenness 20.70
+fine grid: shaped seed 9103
+  discovery ckpt 5, pre-rarity 7.24 bits, suddenness 25.89
+fine grid: shaped seed 9104
+  discovery ckpt 4, pre-rarity 7.86 bits, suddenness 36.68
+fine grid: shaped seed 9105
+  discovery ckpt 8, pre-rarity 6.16 bits, suddenness 14.04
+fine grid: outcome_only seed 9101
+  discovery ckpt 16, pre-rarity 7.51 bits, suddenness 19.08
+fine grid: outcome_only seed 9102
+  discovery ckpt 18, pre-rarity 7.59 bits, suddenness 22.62
+fine grid: outcome_only seed 9103
+  discovery ckpt 4, pre-rarity 6.70 bits, suddenness 27.04
+fine grid: outcome_only seed 9104
+  discovery ckpt 15, pre-rarity 8.11 bits, suddenness 14.97
+fine grid: outcome_only seed 9105
+  discovery ckpt 10, pre-rarity 7.66 bits, suddenness 20.43
+{
+  "later_discovery_outcome_only": true,
+  "higher_pre_discovery_rarity_outcome_only": true,
+  "suddenness_geq_outcome_only": false
+}
+Wrote /home/Yixiang/MPARL/GOGOGO/outputs/strength_gradient_fine.json

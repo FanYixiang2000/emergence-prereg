@@ -1,0 +1,1924 @@
+{
+  "status": "crowd-vote aggregation domain; CR-1..CR-5 frozen in the docstring",
+  "seeds": {
+    "6101": {
+      "learned": {
+        "metrics": {
+          "potential_bits": 1.0,
+          "trigger_rates": {
+            "field": 0.0,
+            "ledge": 1.0
+          },
+          "conditional_selectivity": 1.0,
+          "specificity_js_bits": 1.0,
+          "usefulness_gap": 2.8875000000000006,
+          "natural_value": 5.039583333333334,
+          "fall_rate_shift_ledge": 0.925,
+          "field_anarchy_frac": 0.8322503531327062
+        },
+        "acquisition": 1.0,
+        "verdict": {
+          "passes": {
+            "potential": true,
+            "conditional_selectivity": true,
+            "specificity": true,
+            "usefulness": true,
+            "endogeneity": true,
+            "acquisition": true
+          },
+          "emergent": 1,
+          "failed": []
+        }
+      },
+      "initial_twin": {
+        "metrics": {
+          "potential_bits": 0.9959386076315955,
+          "trigger_rates": {
+            "field": 0.0,
+            "ledge": 0.0
+          },
+          "conditional_selectivity": 0.0,
+          "specificity_js_bits": 1.0,
+          "usefulness_gap": 0.0,
+          "natural_value": 2.152083333333333,
+          "fall_rate_shift_ledge": 0.0,
+          "field_anarchy_frac": 1.0
+        },
+        "acquisition": 0.0,
+        "verdict": {
+          "passes": {
+            "potential": true,
+            "conditional_selectivity": false,
+            "specificity": true,
+            "usefulness": false,
+            "endogeneity": true,
+            "acquisition": false
+          },
+          "emergent": 0,
+          "failed": [
+            "conditional_selectivity",
+            "usefulness",
+            "acquisition"
+          ]
+        }
+      },
+      "always_democracy": {
+        "metrics": {
+          "potential_bits": -0.0,
+          "trigger_rates": {
+            "field": 1.0,
+            "ledge": 1.0
+          },
+          "conditional_selectivity": 0.0,
+          "specificity_js_bits": 1.0,
+          "usefulness_gap": 1.8479166666666669,
+          "natural_value": 4.0,
+          "fall_rate_shift_ledge": 0.925,
+          "field_anarchy_frac": 0.0
+        },
+        "acquisition": 0.0,
+        "verdict": {
+          "passes": {
+            "potential": false,
+            "conditional_selectivity": false,
+            "specificity": true,
+            "usefulness": true,
+            "endogeneity": false,
+            "acquisition": false
+          },
+          "emergent": 0,
+          "failed": [
+            "potential",
+            "conditional_selectivity",
+            "endogeneity",
+            "acquisition"
+          ]
+        }
+      },
+      "always_anarchy": {
+        "metrics": {
+          "potential_bits": 0.9959386076315955,
+          "trigger_rates": {
+            "field": 0.0,
+            "ledge": 0.0
+          },
+          "conditional_selectivity": 0.0,
+          "specificity_js_bits": 1.0,
+          "usefulness_gap": 0.0,
+          "natural_value": 2.152083333333333,
+          "fall_rate_shift_ledge": 0.0,
+          "field_anarchy_frac": 1.0
+        },
+        "acquisition": 0.0,
+        "verdict": {
+          "passes": {
+            "potential": true,
+            "conditional_selectivity": false,
+            "specificity": true,
+            "usefulness": false,
+            "endogeneity": false,
+            "acquisition": false
+          },
+          "emergent": 0,
+          "failed": [
+            "conditional_selectivity",
+            "usefulness",
+            "endogeneity",
+            "acquisition"
+          ]
+        }
+      },
+      "scripted_switcher": {
+        "metrics": {
+          "potential_bits": 1.0,
+          "trigger_rates": {
+            "field": 0.0,
+            "ledge": 1.0
+          },
+          "conditional_selectivity": 1.0,
+          "specificity_js_bits": 1.0,
+          "usefulness_gap": 2.9093750000000003,
+          "natural_value": 5.061458333333333,
+          "fall_rate_shift_ledge": 0.925,
+          "field_anarchy_frac": 1.0
+        },
+        "acquisition": 0.0,
+        "verdict": {
+          "passes": {
+            "potential": true,
+            "conditional_selectivity": true,
+            "specificity": true,
+            "usefulness": true,
+            "endogeneity": false,
+            "acquisition": false
+          },
+          "emergent": 0,
+          "failed": [
+            "endogeneity",
+            "acquisition"
+          ]
+        }
+      },
+      "bc_clone": {
+        "metrics": {
+          "potential_bits": 1.0,
+          "trigger_rates": {
+            "field": 0.0,
+            "ledge": 1.0
+          },
+          "conditional_selectivity": 1.0,
+          "specificity_js_bits": 1.0,
+          "usefulness_gap": 2.9093750000000003,
+          "natural_value": 5.061458333333333,
+          "fall_rate_shift_ledge": 0.925,
+          "field_anarchy_frac": 1.0
+        },
+        "acquisition": 0.0,
+        "verdict": {
+          "passes": {
+            "potential": true,
+            "conditional_selectivity": true,
+            "specificity": true,
+            "usefulness": true,
+            "endogeneity": false,
+            "acquisition": false
+          },
+          "emergent": 0,
+          "failed": [
+            "endogeneity",
+            "acquisition"
+          ]
+        }
+      }
+    },
+    "6102": {
+      "learned": {
+        "metrics": {
+          "potential_bits": 1.0,
+          "trigger_rates": {
+            "field": 0.0,
+            "ledge": 1.0
+          },
+          "conditional_selectivity": 1.0,
+          "specificity_js_bits": 1.0,
+          "usefulness_gap": 2.6291666666666664,
+          "natural_value": 4.878125,
+          "fall_rate_shift_ledge": 0.9,
+          "field_anarchy_frac": 0.734423691203877
+        },
+        "acquisition": 1.0,
+        "verdict": {
+          "passes": {
+            "potential": true,
+            "conditional_selectivity": true,
+            "specificity": true,
+            "usefulness": true,
+            "endogeneity": true,
+            "acquisition": true
+          },
+          "emergent": 1,
+          "failed": []
+        }
+      },
+      "initial_twin": {
+        "metrics": {
+          "potential_bits": 0.9927744539878083,
+          "trigger_rates": {
+            "field": 0.0,
+            "ledge": 0.0
+          },
+          "conditional_selectivity": 0.0,
+          "specificity_js_bits": 1.0,
+          "usefulness_gap": 0.0,
+          "natural_value": 2.2489583333333334,
+          "fall_rate_shift_ledge": 0.0,
+          "field_anarchy_frac": 1.0
+        },
+        "acquisition": 0.0,
+        "verdict": {
+          "passes": {
+            "potential": true,
+            "conditional_selectivity": false,
+            "specificity": true,
+            "usefulness": false,
+            "endogeneity": true,
+            "acquisition": false
+          },
+          "emergent": 0,
+          "failed": [
+            "conditional_selectivity",
+            "usefulness",
+            "acquisition"
+          ]
+        }
+      },
+      "always_democracy": {
+        "metrics": {
+          "potential_bits": -0.0,
+          "trigger_rates": {
+            "field": 1.0,
+            "ledge": 1.0
+          },
+          "conditional_selectivity": 0.0,
+          "specificity_js_bits": 1.0,
+          "usefulness_gap": 1.7510416666666666,
+          "natural_value": 4.0,
+          "fall_rate_shift_ledge": 0.9,
+          "field_anarchy_frac": 0.0
+        },
+        "acquisition": 0.0,
+        "verdict": {
+          "passes": {
+            "potential": false,
+            "conditional_selectivity": false,
+            "specificity": true,
+            "usefulness": true,
+            "endogeneity": false,
+            "acquisition": false
+          },
+          "emergent": 0,
+          "failed": [
+            "potential",
+            "conditional_selectivity",
+            "endogeneity",
+            "acquisition"
+          ]
+        }
+      },
+      "always_anarchy": {
+        "metrics": {
+          "potential_bits": 0.9927744539878083,
+          "trigger_rates": {
+            "field": 0.0,
+            "ledge": 0.0
+          },
+          "conditional_selectivity": 0.0,
+          "specificity_js_bits": 1.0,
+          "usefulness_gap": 0.0,
+          "natural_value": 2.2489583333333334,
+          "fall_rate_shift_ledge": 0.0,
+          "field_anarchy_frac": 1.0
+        },
+        "acquisition": 0.0,
+        "verdict": {
+          "passes": {
+            "potential": true,
+            "conditional_selectivity": false,
+            "specificity": true,
+            "usefulness": false,
+            "endogeneity": false,
+            "acquisition": false
+          },
+          "emergent": 0,
+          "failed": [
+            "conditional_selectivity",
+            "usefulness",
+            "endogeneity",
+            "acquisition"
+          ]
+        }
+      },
+      "scripted_switcher": {
+        "metrics": {
+          "potential_bits": 1.0,
+          "trigger_rates": {
+            "field": 0.0,
+            "ledge": 1.0
+          },
+          "conditional_selectivity": 1.0,
+          "specificity_js_bits": 1.0,
+          "usefulness_gap": 2.8239583333333336,
+          "natural_value": 5.072916666666667,
+          "fall_rate_shift_ledge": 0.9,
+          "field_anarchy_frac": 1.0
+        },
+        "acquisition": 0.0,
+        "verdict": {
+          "passes": {
+            "potential": true,
+            "conditional_selectivity": true,
+            "specificity": true,
+            "usefulness": true,
+            "endogeneity": false,
+            "acquisition": false
+          },
+          "emergent": 0,
+          "failed": [
+            "endogeneity",
+            "acquisition"
+          ]
+        }
+      },
+      "bc_clone": {
+        "metrics": {
+          "potential_bits": 1.0,
+          "trigger_rates": {
+            "field": 0.0,
+            "ledge": 1.0
+          },
+          "conditional_selectivity": 1.0,
+          "specificity_js_bits": 1.0,
+          "usefulness_gap": 2.8239583333333336,
+          "natural_value": 5.072916666666667,
+          "fall_rate_shift_ledge": 0.9,
+          "field_anarchy_frac": 1.0
+        },
+        "acquisition": 0.0,
+        "verdict": {
+          "passes": {
+            "potential": true,
+            "conditional_selectivity": true,
+            "specificity": true,
+            "usefulness": true,
+            "endogeneity": false,
+            "acquisition": false
+          },
+          "emergent": 0,
+          "failed": [
+            "endogeneity",
+            "acquisition"
+          ]
+        }
+      }
+    },
+    "6103": {
+      "learned": {
+        "metrics": {
+          "potential_bits": 1.0,
+          "trigger_rates": {
+            "field": 0.0,
+            "ledge": 1.0
+          },
+          "conditional_selectivity": 1.0,
+          "specificity_js_bits": 1.0,
+          "usefulness_gap": 2.3833333333333333,
+          "natural_value": 4.721875,
+          "fall_rate_shift_ledge": 0.8833333333333333,
+          "field_anarchy_frac": 0.7166368321432933
+        },
+        "acquisition": 1.0,
+        "verdict": {
+          "passes": {
+            "potential": true,
+            "conditional_selectivity": true,
+            "specificity": true,
+            "usefulness": true,
+            "endogeneity": true,
+            "acquisition": true
+          },
+          "emergent": 1,
+          "failed": []
+        }
+      },
+      "initial_twin": {
+        "metrics": {
+          "potential_bits": 0.9901592635041827,
+          "trigger_rates": {
+            "field": 0.0,
+            "ledge": 0.0
+          },
+          "conditional_selectivity": 0.0,
+          "specificity_js_bits": 1.0,
+          "usefulness_gap": 0.0,
+          "natural_value": 2.3385416666666665,
+          "fall_rate_shift_ledge": 0.0,
+          "field_anarchy_frac": 1.0
+        },
+        "acquisition": 0.0,
+        "verdict": {
+          "passes": {
+            "potential": true,
+            "conditional_selectivity": false,
+            "specificity": true,
+            "usefulness": false,
+            "endogeneity": true,
+            "acquisition": false
+          },
+          "emergent": 0,
+          "failed": [
+            "conditional_selectivity",
+            "usefulness",
+            "acquisition"
+          ]
+        }
+      },
+      "always_democracy": {
+        "metrics": {
+          "potential_bits": -0.0,
+          "trigger_rates": {
+            "field": 1.0,
+            "ledge": 1.0
+          },
+          "conditional_selectivity": 0.0,
+          "specificity_js_bits": 1.0,
+          "usefulness_gap": 1.6614583333333335,
+          "natural_value": 4.0,
+          "fall_rate_shift_ledge": 0.8833333333333333,
+          "field_anarchy_frac": 0.0
+        },
+        "acquisition": 0.0,
+        "verdict": {
+          "passes": {
+            "potential": false,
+            "conditional_selectivity": false,
+            "specificity": true,
+            "usefulness": true,
+            "endogeneity": false,
+            "acquisition": false
+          },
+          "emergent": 0,
+          "failed": [
+            "potential",
+            "conditional_selectivity",
+            "endogeneity",
+            "acquisition"
+          ]
+        }
+      },
+      "always_anarchy": {
+        "metrics": {
+          "potential_bits": 0.9901592635041827,
+          "trigger_rates": {
+            "field": 0.0,
+            "ledge": 0.0
+          },
+          "conditional_selectivity": 0.0,
+          "specificity_js_bits": 1.0,
+          "usefulness_gap": 0.0,
+          "natural_value": 2.3385416666666665,
+          "fall_rate_shift_ledge": 0.0,
+          "field_anarchy_frac": 1.0
+        },
+        "acquisition": 0.0,
+        "verdict": {
+          "passes": {
+            "potential": true,
+            "conditional_selectivity": false,
+            "specificity": true,
+            "usefulness": false,
+            "endogeneity": false,
+            "acquisition": false
+          },
+          "emergent": 0,
+          "failed": [
+            "conditional_selectivity",
+            "usefulness",
+            "endogeneity",
+            "acquisition"
+          ]
+        }
+      },
+      "scripted_switcher": {
+        "metrics": {
+          "potential_bits": 1.0,
+          "trigger_rates": {
+            "field": 0.0,
+            "ledge": 1.0
+          },
+          "conditional_selectivity": 1.0,
+          "specificity_js_bits": 1.0,
+          "usefulness_gap": 2.735416666666667,
+          "natural_value": 5.073958333333334,
+          "fall_rate_shift_ledge": 0.8833333333333333,
+          "field_anarchy_frac": 1.0
+        },
+        "acquisition": 0.0,
+        "verdict": {
+          "passes": {
+            "potential": true,
+            "conditional_selectivity": true,
+            "specificity": true,
+            "usefulness": true,
+            "endogeneity": false,
+            "acquisition": false
+          },
+          "emergent": 0,
+          "failed": [
+            "endogeneity",
+            "acquisition"
+          ]
+        }
+      },
+      "bc_clone": {
+        "metrics": {
+          "potential_bits": 1.0,
+          "trigger_rates": {
+            "field": 0.0,
+            "ledge": 1.0
+          },
+          "conditional_selectivity": 1.0,
+          "specificity_js_bits": 1.0,
+          "usefulness_gap": 2.735416666666667,
+          "natural_value": 5.073958333333334,
+          "fall_rate_shift_ledge": 0.8833333333333333,
+          "field_anarchy_frac": 1.0
+        },
+        "acquisition": 0.0,
+        "verdict": {
+          "passes": {
+            "potential": true,
+            "conditional_selectivity": true,
+            "specificity": true,
+            "usefulness": true,
+            "endogeneity": false,
+            "acquisition": false
+          },
+          "emergent": 0,
+          "failed": [
+            "endogeneity",
+            "acquisition"
+          ]
+        }
+      }
+    },
+    "6104": {
+      "learned": {
+        "metrics": {
+          "potential_bits": -0.0,
+          "trigger_rates": {
+            "field": 1.0,
+            "ledge": 1.0
+          },
+          "conditional_selectivity": 0.0,
+          "specificity_js_bits": 1.0,
+          "usefulness_gap": 2.1364583333333336,
+          "natural_value": 4.634375,
+          "fall_rate_shift_ledge": 0.85,
+          "field_anarchy_frac": 0.5609049698939403
+        },
+        "acquisition": 0.0,
+        "verdict": {
+          "passes": {
+            "potential": false,
+            "conditional_selectivity": false,
+            "specificity": true,
+            "usefulness": true,
+            "endogeneity": true,
+            "acquisition": false
+          },
+          "emergent": 0,
+          "failed": [
+            "potential",
+            "conditional_selectivity",
+            "acquisition"
+          ]
+        }
+      },
+      "initial_twin": {
+        "metrics": {
+          "potential_bits": 0.9837082626231859,
+          "trigger_rates": {
+            "field": 0.0,
+            "ledge": 0.0
+          },
+          "conditional_selectivity": 0.0,
+          "specificity_js_bits": 1.0,
+          "usefulness_gap": 0.0,
+          "natural_value": 2.497916666666667,
+          "fall_rate_shift_ledge": 0.0,
+          "field_anarchy_frac": 1.0
+        },
+        "acquisition": 0.0,
+        "verdict": {
+          "passes": {
+            "potential": true,
+            "conditional_selectivity": false,
+            "specificity": true,
+            "usefulness": false,
+            "endogeneity": true,
+            "acquisition": false
+          },
+          "emergent": 0,
+          "failed": [
+            "conditional_selectivity",
+            "usefulness",
+            "acquisition"
+          ]
+        }
+      },
+      "always_democracy": {
+        "metrics": {
+          "potential_bits": -0.0,
+          "trigger_rates": {
+            "field": 1.0,
+            "ledge": 1.0
+          },
+          "conditional_selectivity": 0.0,
+          "specificity_js_bits": 1.0,
+          "usefulness_gap": 1.5020833333333332,
+          "natural_value": 4.0,
+          "fall_rate_shift_ledge": 0.85,
+          "field_anarchy_frac": 0.0
+        },
+        "acquisition": 0.0,
+        "verdict": {
+          "passes": {
+            "potential": false,
+            "conditional_selectivity": false,
+            "specificity": true,
+            "usefulness": true,
+            "endogeneity": false,
+            "acquisition": false
+          },
+          "emergent": 0,
+          "failed": [
+            "potential",
+            "conditional_selectivity",
+            "endogeneity",
+            "acquisition"
+          ]
+        }
+      },
+      "always_anarchy": {
+        "metrics": {
+          "potential_bits": 0.9837082626231859,
+          "trigger_rates": {
+            "field": 0.0,
+            "ledge": 0.0
+          },
+          "conditional_selectivity": 0.0,
+          "specificity_js_bits": 1.0,
+          "usefulness_gap": 0.0,
+          "natural_value": 2.497916666666667,
+          "fall_rate_shift_ledge": 0.0,
+          "field_anarchy_frac": 1.0
+        },
+        "acquisition": 0.0,
+        "verdict": {
+          "passes": {
+            "potential": true,
+            "conditional_selectivity": false,
+            "specificity": true,
+            "usefulness": false,
+            "endogeneity": false,
+            "acquisition": false
+          },
+          "emergent": 0,
+          "failed": [
+            "conditional_selectivity",
+            "usefulness",
+            "endogeneity",
+            "acquisition"
+          ]
+        }
+      },
+      "scripted_switcher": {
+        "metrics": {
+          "potential_bits": 1.0,
+          "trigger_rates": {
+            "field": 0.0,
+            "ledge": 1.0
+          },
+          "conditional_selectivity": 1.0,
+          "specificity_js_bits": 1.0,
+          "usefulness_gap": 2.60625,
+          "natural_value": 5.104166666666667,
+          "fall_rate_shift_ledge": 0.85,
+          "field_anarchy_frac": 1.0
+        },
+        "acquisition": 0.0,
+        "verdict": {
+          "passes": {
+            "potential": true,
+            "conditional_selectivity": true,
+            "specificity": true,
+            "usefulness": true,
+            "endogeneity": false,
+            "acquisition": false
+          },
+          "emergent": 0,
+          "failed": [
+            "endogeneity",
+            "acquisition"
+          ]
+        }
+      },
+      "bc_clone": {
+        "metrics": {
+          "potential_bits": 1.0,
+          "trigger_rates": {
+            "field": 0.0,
+            "ledge": 1.0
+          },
+          "conditional_selectivity": 1.0,
+          "specificity_js_bits": 1.0,
+          "usefulness_gap": 2.60625,
+          "natural_value": 5.104166666666667,
+          "fall_rate_shift_ledge": 0.85,
+          "field_anarchy_frac": 1.0
+        },
+        "acquisition": 0.0,
+        "verdict": {
+          "passes": {
+            "potential": true,
+            "conditional_selectivity": true,
+            "specificity": true,
+            "usefulness": true,
+            "endogeneity": false,
+            "acquisition": false
+          },
+          "emergent": 0,
+          "failed": [
+            "endogeneity",
+            "acquisition"
+          ]
+        }
+      }
+    },
+    "6105": {
+      "learned": {
+        "metrics": {
+          "potential_bits": 0.0389440659943564,
+          "trigger_rates": {
+            "field": 0.9916666666666667,
+            "ledge": 1.0
+          },
+          "conditional_selectivity": 0.008333333333333304,
+          "specificity_js_bits": 1.0,
+          "usefulness_gap": 2.346875,
+          "natural_value": 4.815625,
+          "fall_rate_shift_ledge": 0.85,
+          "field_anarchy_frac": 0.5992586745111901
+        },
+        "acquisition": 0.008333333333333304,
+        "verdict": {
+          "passes": {
+            "potential": false,
+            "conditional_selectivity": false,
+            "specificity": true,
+            "usefulness": true,
+            "endogeneity": true,
+            "acquisition": false
+          },
+          "emergent": 0,
+          "failed": [
+            "potential",
+            "conditional_selectivity",
+            "acquisition"
+          ]
+        }
+      },
+      "initial_twin": {
+        "metrics": {
+          "potential_bits": 0.9837082626231859,
+          "trigger_rates": {
+            "field": 0.0,
+            "ledge": 0.0
+          },
+          "conditional_selectivity": 0.0,
+          "specificity_js_bits": 1.0,
+          "usefulness_gap": 0.0,
+          "natural_value": 2.46875,
+          "fall_rate_shift_ledge": 0.0,
+          "field_anarchy_frac": 1.0
+        },
+        "acquisition": 0.0,
+        "verdict": {
+          "passes": {
+            "potential": true,
+            "conditional_selectivity": false,
+            "specificity": true,
+            "usefulness": false,
+            "endogeneity": true,
+            "acquisition": false
+          },
+          "emergent": 0,
+          "failed": [
+            "conditional_selectivity",
+            "usefulness",
+            "acquisition"
+          ]
+        }
+      },
+      "always_democracy": {
+        "metrics": {
+          "potential_bits": -0.0,
+          "trigger_rates": {
+            "field": 1.0,
+            "ledge": 1.0
+          },
+          "conditional_selectivity": 0.0,
+          "specificity_js_bits": 1.0,
+          "usefulness_gap": 1.53125,
+          "natural_value": 4.0,
+          "fall_rate_shift_ledge": 0.85,
+          "field_anarchy_frac": 0.0
+        },
+        "acquisition": 0.0,
+        "verdict": {
+          "passes": {
+            "potential": false,
+            "conditional_selectivity": false,
+            "specificity": true,
+            "usefulness": true,
+            "endogeneity": false,
+            "acquisition": false
+          },
+          "emergent": 0,
+          "failed": [
+            "potential",
+            "conditional_selectivity",
+            "endogeneity",
+            "acquisition"
+          ]
+        }
+      },
+      "always_anarchy": {
+        "metrics": {
+          "potential_bits": 0.9837082626231859,
+          "trigger_rates": {
+            "field": 0.0,
+            "ledge": 0.0
+          },
+          "conditional_selectivity": 0.0,
+          "specificity_js_bits": 1.0,
+          "usefulness_gap": 0.0,
+          "natural_value": 2.46875,
+          "fall_rate_shift_ledge": 0.0,
+          "field_anarchy_frac": 1.0
+        },
+        "acquisition": 0.0,
+        "verdict": {
+          "passes": {
+            "potential": true,
+            "conditional_selectivity": false,
+            "specificity": true,
+            "usefulness": false,
+            "endogeneity": false,
+            "acquisition": false
+          },
+          "emergent": 0,
+          "failed": [
+            "conditional_selectivity",
+            "usefulness",
+            "endogeneity",
+            "acquisition"
+          ]
+        }
+      },
+      "scripted_switcher": {
+        "metrics": {
+          "potential_bits": 1.0,
+          "trigger_rates": {
+            "field": 0.0,
+            "ledge": 1.0
+          },
+          "conditional_selectivity": 1.0,
+          "specificity_js_bits": 1.0,
+          "usefulness_gap": 2.590625,
+          "natural_value": 5.059375,
+          "fall_rate_shift_ledge": 0.85,
+          "field_anarchy_frac": 1.0
+        },
+        "acquisition": 0.0,
+        "verdict": {
+          "passes": {
+            "potential": true,
+            "conditional_selectivity": true,
+            "specificity": true,
+            "usefulness": true,
+            "endogeneity": false,
+            "acquisition": false
+          },
+          "emergent": 0,
+          "failed": [
+            "endogeneity",
+            "acquisition"
+          ]
+        }
+      },
+      "bc_clone": {
+        "metrics": {
+          "potential_bits": 1.0,
+          "trigger_rates": {
+            "field": 0.0,
+            "ledge": 1.0
+          },
+          "conditional_selectivity": 1.0,
+          "specificity_js_bits": 1.0,
+          "usefulness_gap": 2.590625,
+          "natural_value": 5.059375,
+          "fall_rate_shift_ledge": 0.85,
+          "field_anarchy_frac": 1.0
+        },
+        "acquisition": 0.0,
+        "verdict": {
+          "passes": {
+            "potential": true,
+            "conditional_selectivity": true,
+            "specificity": true,
+            "usefulness": true,
+            "endogeneity": false,
+            "acquisition": false
+          },
+          "emergent": 0,
+          "failed": [
+            "endogeneity",
+            "acquisition"
+          ]
+        }
+      }
+    },
+    "6106": {
+      "learned": {
+        "metrics": {
+          "potential_bits": 1.0,
+          "trigger_rates": {
+            "field": 0.0,
+            "ledge": 1.0
+          },
+          "conditional_selectivity": 1.0,
+          "specificity_js_bits": 1.0,
+          "usefulness_gap": 2.5010416666666666,
+          "natural_value": 4.810416666666667,
+          "fall_rate_shift_ledge": 0.8916666666666667,
+          "field_anarchy_frac": 0.7588850675247314
+        },
+        "acquisition": 1.0,
+        "verdict": {
+          "passes": {
+            "potential": true,
+            "conditional_selectivity": true,
+            "specificity": true,
+            "usefulness": true,
+            "endogeneity": true,
+            "acquisition": true
+          },
+          "emergent": 1,
+          "failed": []
+        }
+      },
+      "initial_twin": {
+        "metrics": {
+          "potential_bits": 0.991517547831098,
+          "trigger_rates": {
+            "field": 0.0,
+            "ledge": 0.0
+          },
+          "conditional_selectivity": 0.0,
+          "specificity_js_bits": 1.0,
+          "usefulness_gap": 0.0,
+          "natural_value": 2.309375,
+          "fall_rate_shift_ledge": 0.0,
+          "field_anarchy_frac": 1.0
+        },
+        "acquisition": 0.0,
+        "verdict": {
+          "passes": {
+            "potential": true,
+            "conditional_selectivity": false,
+            "specificity": true,
+            "usefulness": false,
+            "endogeneity": true,
+            "acquisition": false
+          },
+          "emergent": 0,
+          "failed": [
+            "conditional_selectivity",
+            "usefulness",
+            "acquisition"
+          ]
+        }
+      },
+      "always_democracy": {
+        "metrics": {
+          "potential_bits": -0.0,
+          "trigger_rates": {
+            "field": 1.0,
+            "ledge": 1.0
+          },
+          "conditional_selectivity": 0.0,
+          "specificity_js_bits": 1.0,
+          "usefulness_gap": 1.6906249999999998,
+          "natural_value": 4.0,
+          "fall_rate_shift_ledge": 0.8916666666666667,
+          "field_anarchy_frac": 0.0
+        },
+        "acquisition": 0.0,
+        "verdict": {
+          "passes": {
+            "potential": false,
+            "conditional_selectivity": false,
+            "specificity": true,
+            "usefulness": true,
+            "endogeneity": false,
+            "acquisition": false
+          },
+          "emergent": 0,
+          "failed": [
+            "potential",
+            "conditional_selectivity",
+            "endogeneity",
+            "acquisition"
+          ]
+        }
+      },
+      "always_anarchy": {
+        "metrics": {
+          "potential_bits": 0.991517547831098,
+          "trigger_rates": {
+            "field": 0.0,
+            "ledge": 0.0
+          },
+          "conditional_selectivity": 0.0,
+          "specificity_js_bits": 1.0,
+          "usefulness_gap": 0.0,
+          "natural_value": 2.309375,
+          "fall_rate_shift_ledge": 0.0,
+          "field_anarchy_frac": 1.0
+        },
+        "acquisition": 0.0,
+        "verdict": {
+          "passes": {
+            "potential": true,
+            "conditional_selectivity": false,
+            "specificity": true,
+            "usefulness": false,
+            "endogeneity": false,
+            "acquisition": false
+          },
+          "emergent": 0,
+          "failed": [
+            "conditional_selectivity",
+            "usefulness",
+            "endogeneity",
+            "acquisition"
+          ]
+        }
+      },
+      "scripted_switcher": {
+        "metrics": {
+          "potential_bits": 1.0,
+          "trigger_rates": {
+            "field": 0.0,
+            "ledge": 1.0
+          },
+          "conditional_selectivity": 1.0,
+          "specificity_js_bits": 1.0,
+          "usefulness_gap": 2.7354166666666666,
+          "natural_value": 5.044791666666667,
+          "fall_rate_shift_ledge": 0.8916666666666667,
+          "field_anarchy_frac": 1.0
+        },
+        "acquisition": 0.0,
+        "verdict": {
+          "passes": {
+            "potential": true,
+            "conditional_selectivity": true,
+            "specificity": true,
+            "usefulness": true,
+            "endogeneity": false,
+            "acquisition": false
+          },
+          "emergent": 0,
+          "failed": [
+            "endogeneity",
+            "acquisition"
+          ]
+        }
+      },
+      "bc_clone": {
+        "metrics": {
+          "potential_bits": 1.0,
+          "trigger_rates": {
+            "field": 0.0,
+            "ledge": 1.0
+          },
+          "conditional_selectivity": 1.0,
+          "specificity_js_bits": 1.0,
+          "usefulness_gap": 2.7354166666666666,
+          "natural_value": 5.044791666666667,
+          "fall_rate_shift_ledge": 0.8916666666666667,
+          "field_anarchy_frac": 1.0
+        },
+        "acquisition": 0.0,
+        "verdict": {
+          "passes": {
+            "potential": true,
+            "conditional_selectivity": true,
+            "specificity": true,
+            "usefulness": true,
+            "endogeneity": false,
+            "acquisition": false
+          },
+          "emergent": 0,
+          "failed": [
+            "endogeneity",
+            "acquisition"
+          ]
+        }
+      }
+    },
+    "6107": {
+      "learned": {
+        "metrics": {
+          "potential_bits": 1.0,
+          "trigger_rates": {
+            "field": 0.0,
+            "ledge": 1.0
+          },
+          "conditional_selectivity": 1.0,
+          "specificity_js_bits": 1.0,
+          "usefulness_gap": 2.3145833333333337,
+          "natural_value": 4.775,
+          "fall_rate_shift_ledge": 0.8583333333333333,
+          "field_anarchy_frac": 0.7124471954773811
+        },
+        "acquisition": 1.0,
+        "verdict": {
+          "passes": {
+            "potential": true,
+            "conditional_selectivity": true,
+            "specificity": true,
+            "usefulness": true,
+            "endogeneity": true,
+            "acquisition": true
+          },
+          "emergent": 1,
+          "failed": []
+        }
+      },
+      "initial_twin": {
+        "metrics": {
+          "potential_bits": 0.9854741386690866,
+          "trigger_rates": {
+            "field": 0.0,
+            "ledge": 0.0
+          },
+          "conditional_selectivity": 0.0,
+          "specificity_js_bits": 1.0,
+          "usefulness_gap": 0.0,
+          "natural_value": 2.4604166666666667,
+          "fall_rate_shift_ledge": 0.0,
+          "field_anarchy_frac": 1.0
+        },
+        "acquisition": 0.0,
+        "verdict": {
+          "passes": {
+            "potential": true,
+            "conditional_selectivity": false,
+            "specificity": true,
+            "usefulness": false,
+            "endogeneity": true,
+            "acquisition": false
+          },
+          "emergent": 0,
+          "failed": [
+            "conditional_selectivity",
+            "usefulness",
+            "acquisition"
+          ]
+        }
+      },
+      "always_democracy": {
+        "metrics": {
+          "potential_bits": -0.0,
+          "trigger_rates": {
+            "field": 1.0,
+            "ledge": 1.0
+          },
+          "conditional_selectivity": 0.0,
+          "specificity_js_bits": 1.0,
+          "usefulness_gap": 1.5395833333333333,
+          "natural_value": 4.0,
+          "fall_rate_shift_ledge": 0.8583333333333333,
+          "field_anarchy_frac": 0.0
+        },
+        "acquisition": 0.0,
+        "verdict": {
+          "passes": {
+            "potential": false,
+            "conditional_selectivity": false,
+            "specificity": true,
+            "usefulness": true,
+            "endogeneity": false,
+            "acquisition": false
+          },
+          "emergent": 0,
+          "failed": [
+            "potential",
+            "conditional_selectivity",
+            "endogeneity",
+            "acquisition"
+          ]
+        }
+      },
+      "always_anarchy": {
+        "metrics": {
+          "potential_bits": 0.9854741386690866,
+          "trigger_rates": {
+            "field": 0.0,
+            "ledge": 0.0
+          },
+          "conditional_selectivity": 0.0,
+          "specificity_js_bits": 1.0,
+          "usefulness_gap": 0.0,
+          "natural_value": 2.4604166666666667,
+          "fall_rate_shift_ledge": 0.0,
+          "field_anarchy_frac": 1.0
+        },
+        "acquisition": 0.0,
+        "verdict": {
+          "passes": {
+            "potential": true,
+            "conditional_selectivity": false,
+            "specificity": true,
+            "usefulness": false,
+            "endogeneity": false,
+            "acquisition": false
+          },
+          "emergent": 0,
+          "failed": [
+            "conditional_selectivity",
+            "usefulness",
+            "endogeneity",
+            "acquisition"
+          ]
+        }
+      },
+      "scripted_switcher": {
+        "metrics": {
+          "potential_bits": 1.0,
+          "trigger_rates": {
+            "field": 0.0,
+            "ledge": 1.0
+          },
+          "conditional_selectivity": 1.0,
+          "specificity_js_bits": 1.0,
+          "usefulness_gap": 2.605208333333333,
+          "natural_value": 5.065625,
+          "fall_rate_shift_ledge": 0.8583333333333333,
+          "field_anarchy_frac": 1.0
+        },
+        "acquisition": 0.0,
+        "verdict": {
+          "passes": {
+            "potential": true,
+            "conditional_selectivity": true,
+            "specificity": true,
+            "usefulness": true,
+            "endogeneity": false,
+            "acquisition": false
+          },
+          "emergent": 0,
+          "failed": [
+            "endogeneity",
+            "acquisition"
+          ]
+        }
+      },
+      "bc_clone": {
+        "metrics": {
+          "potential_bits": 1.0,
+          "trigger_rates": {
+            "field": 0.0,
+            "ledge": 1.0
+          },
+          "conditional_selectivity": 1.0,
+          "specificity_js_bits": 1.0,
+          "usefulness_gap": 2.605208333333333,
+          "natural_value": 5.065625,
+          "fall_rate_shift_ledge": 0.8583333333333333,
+          "field_anarchy_frac": 1.0
+        },
+        "acquisition": 0.0,
+        "verdict": {
+          "passes": {
+            "potential": true,
+            "conditional_selectivity": true,
+            "specificity": true,
+            "usefulness": true,
+            "endogeneity": false,
+            "acquisition": false
+          },
+          "emergent": 0,
+          "failed": [
+            "endogeneity",
+            "acquisition"
+          ]
+        }
+      }
+    },
+    "6108": {
+      "learned": {
+        "metrics": {
+          "potential_bits": 1.0,
+          "trigger_rates": {
+            "field": 0.0,
+            "ledge": 1.0
+          },
+          "conditional_selectivity": 1.0,
+          "specificity_js_bits": 1.0,
+          "usefulness_gap": 2.4802083333333336,
+          "natural_value": 4.945833333333334,
+          "fall_rate_shift_ledge": 0.8666666666666667,
+          "field_anarchy_frac": 0.9007632323688911
+        },
+        "acquisition": 1.0,
+        "verdict": {
+          "passes": {
+            "potential": true,
+            "conditional_selectivity": true,
+            "specificity": true,
+            "usefulness": true,
+            "endogeneity": true,
+            "acquisition": true
+          },
+          "emergent": 1,
+          "failed": []
+        }
+      },
+      "initial_twin": {
+        "metrics": {
+          "potential_bits": 0.9871377743721863,
+          "trigger_rates": {
+            "field": 0.0,
+            "ledge": 0.0
+          },
+          "conditional_selectivity": 0.0,
+          "specificity_js_bits": 1.0,
+          "usefulness_gap": 0.0,
+          "natural_value": 2.465625,
+          "fall_rate_shift_ledge": 0.0,
+          "field_anarchy_frac": 1.0
+        },
+        "acquisition": 0.0,
+        "verdict": {
+          "passes": {
+            "potential": true,
+            "conditional_selectivity": false,
+            "specificity": true,
+            "usefulness": false,
+            "endogeneity": true,
+            "acquisition": false
+          },
+          "emergent": 0,
+          "failed": [
+            "conditional_selectivity",
+            "usefulness",
+            "acquisition"
+          ]
+        }
+      },
+      "always_democracy": {
+        "metrics": {
+          "potential_bits": -0.0,
+          "trigger_rates": {
+            "field": 1.0,
+            "ledge": 1.0
+          },
+          "conditional_selectivity": 0.0,
+          "specificity_js_bits": 1.0,
+          "usefulness_gap": 1.5343749999999998,
+          "natural_value": 4.0,
+          "fall_rate_shift_ledge": 0.8666666666666667,
+          "field_anarchy_frac": 0.0
+        },
+        "acquisition": 0.0,
+        "verdict": {
+          "passes": {
+            "potential": false,
+            "conditional_selectivity": false,
+            "specificity": true,
+            "usefulness": true,
+            "endogeneity": false,
+            "acquisition": false
+          },
+          "emergent": 0,
+          "failed": [
+            "potential",
+            "conditional_selectivity",
+            "endogeneity",
+            "acquisition"
+          ]
+        }
+      },
+      "always_anarchy": {
+        "metrics": {
+          "potential_bits": 0.9871377743721863,
+          "trigger_rates": {
+            "field": 0.0,
+            "ledge": 0.0
+          },
+          "conditional_selectivity": 0.0,
+          "specificity_js_bits": 1.0,
+          "usefulness_gap": 0.0,
+          "natural_value": 2.465625,
+          "fall_rate_shift_ledge": 0.0,
+          "field_anarchy_frac": 1.0
+        },
+        "acquisition": 0.0,
+        "verdict": {
+          "passes": {
+            "potential": true,
+            "conditional_selectivity": false,
+            "specificity": true,
+            "usefulness": false,
+            "endogeneity": false,
+            "acquisition": false
+          },
+          "emergent": 0,
+          "failed": [
+            "conditional_selectivity",
+            "usefulness",
+            "endogeneity",
+            "acquisition"
+          ]
+        }
+      },
+      "scripted_switcher": {
+        "metrics": {
+          "potential_bits": 1.0,
+          "trigger_rates": {
+            "field": 0.0,
+            "ledge": 1.0
+          },
+          "conditional_selectivity": 1.0,
+          "specificity_js_bits": 1.0,
+          "usefulness_gap": 2.6499999999999995,
+          "natural_value": 5.115625,
+          "fall_rate_shift_ledge": 0.8666666666666667,
+          "field_anarchy_frac": 1.0
+        },
+        "acquisition": 0.0,
+        "verdict": {
+          "passes": {
+            "potential": true,
+            "conditional_selectivity": true,
+            "specificity": true,
+            "usefulness": true,
+            "endogeneity": false,
+            "acquisition": false
+          },
+          "emergent": 0,
+          "failed": [
+            "endogeneity",
+            "acquisition"
+          ]
+        }
+      },
+      "bc_clone": {
+        "metrics": {
+          "potential_bits": 1.0,
+          "trigger_rates": {
+            "field": 0.0,
+            "ledge": 1.0
+          },
+          "conditional_selectivity": 1.0,
+          "specificity_js_bits": 1.0,
+          "usefulness_gap": 2.6499999999999995,
+          "natural_value": 5.115625,
+          "fall_rate_shift_ledge": 0.8666666666666667,
+          "field_anarchy_frac": 1.0
+        },
+        "acquisition": 0.0,
+        "verdict": {
+          "passes": {
+            "potential": true,
+            "conditional_selectivity": true,
+            "specificity": true,
+            "usefulness": true,
+            "endogeneity": false,
+            "acquisition": false
+          },
+          "emergent": 0,
+          "failed": [
+            "endogeneity",
+            "acquisition"
+          ]
+        }
+      }
+    },
+    "6109": {
+      "learned": {
+        "metrics": {
+          "potential_bits": -0.0,
+          "trigger_rates": {
+            "field": 1.0,
+            "ledge": 1.0
+          },
+          "conditional_selectivity": 0.0,
+          "specificity_js_bits": 1.0,
+          "usefulness_gap": 2.19375,
+          "natural_value": 4.638541666666667,
+          "fall_rate_shift_ledge": 0.8666666666666667,
+          "field_anarchy_frac": 0.5014408247554533
+        },
+        "acquisition": 0.0,
+        "verdict": {
+          "passes": {
+            "potential": false,
+            "conditional_selectivity": false,
+            "specificity": true,
+            "usefulness": true,
+            "endogeneity": true,
+            "acquisition": false
+          },
+          "emergent": 0,
+          "failed": [
+            "potential",
+            "conditional_selectivity",
+            "acquisition"
+          ]
+        }
+      },
+      "initial_twin": {
+        "metrics": {
+          "potential_bits": 0.9871377743721863,
+          "trigger_rates": {
+            "field": 0.0,
+            "ledge": 0.0
+          },
+          "conditional_selectivity": 0.0,
+          "specificity_js_bits": 1.0,
+          "usefulness_gap": 0.0,
+          "natural_value": 2.4447916666666667,
+          "fall_rate_shift_ledge": 0.0,
+          "field_anarchy_frac": 1.0
+        },
+        "acquisition": 0.0,
+        "verdict": {
+          "passes": {
+            "potential": true,
+            "conditional_selectivity": false,
+            "specificity": true,
+            "usefulness": false,
+            "endogeneity": true,
+            "acquisition": false
+          },
+          "emergent": 0,
+          "failed": [
+            "conditional_selectivity",
+            "usefulness",
+            "acquisition"
+          ]
+        }
+      },
+      "always_democracy": {
+        "metrics": {
+          "potential_bits": -0.0,
+          "trigger_rates": {
+            "field": 1.0,
+            "ledge": 1.0
+          },
+          "conditional_selectivity": 0.0,
+          "specificity_js_bits": 1.0,
+          "usefulness_gap": 1.5552083333333333,
+          "natural_value": 4.0,
+          "fall_rate_shift_ledge": 0.8666666666666667,
+          "field_anarchy_frac": 0.0
+        },
+        "acquisition": 0.0,
+        "verdict": {
+          "passes": {
+            "potential": false,
+            "conditional_selectivity": false,
+            "specificity": true,
+            "usefulness": true,
+            "endogeneity": false,
+            "acquisition": false
+          },
+          "emergent": 0,
+          "failed": [
+            "potential",
+            "conditional_selectivity",
+            "endogeneity",
+            "acquisition"
+          ]
+        }
+      },
+      "always_anarchy": {
+        "metrics": {
+          "potential_bits": 0.9871377743721863,
+          "trigger_rates": {
+            "field": 0.0,
+            "ledge": 0.0
+          },
+          "conditional_selectivity": 0.0,
+          "specificity_js_bits": 1.0,
+          "usefulness_gap": 0.0,
+          "natural_value": 2.4447916666666667,
+          "fall_rate_shift_ledge": 0.0,
+          "field_anarchy_frac": 1.0
+        },
+        "acquisition": 0.0,
+        "verdict": {
+          "passes": {
+            "potential": true,
+            "conditional_selectivity": false,
+            "specificity": true,
+            "usefulness": false,
+            "endogeneity": false,
+            "acquisition": false
+          },
+          "emergent": 0,
+          "failed": [
+            "conditional_selectivity",
+            "usefulness",
+            "endogeneity",
+            "acquisition"
+          ]
+        }
+      },
+      "scripted_switcher": {
+        "metrics": {
+          "potential_bits": 1.0,
+          "trigger_rates": {
+            "field": 0.0,
+            "ledge": 1.0
+          },
+          "conditional_selectivity": 1.0,
+          "specificity_js_bits": 1.0,
+          "usefulness_gap": 2.634375,
+          "natural_value": 5.079166666666667,
+          "fall_rate_shift_ledge": 0.8666666666666667,
+          "field_anarchy_frac": 1.0
+        },
+        "acquisition": 0.0,
+        "verdict": {
+          "passes": {
+            "potential": true,
+            "conditional_selectivity": true,
+            "specificity": true,
+            "usefulness": true,
+            "endogeneity": false,
+            "acquisition": false
+          },
+          "emergent": 0,
+          "failed": [
+            "endogeneity",
+            "acquisition"
+          ]
+        }
+      },
+      "bc_clone": {
+        "metrics": {
+          "potential_bits": 1.0,
+          "trigger_rates": {
+            "field": 0.0,
+            "ledge": 1.0
+          },
+          "conditional_selectivity": 1.0,
+          "specificity_js_bits": 1.0,
+          "usefulness_gap": 2.634375,
+          "natural_value": 5.079166666666667,
+          "fall_rate_shift_ledge": 0.8666666666666667,
+          "field_anarchy_frac": 1.0
+        },
+        "acquisition": 0.0,
+        "verdict": {
+          "passes": {
+            "potential": true,
+            "conditional_selectivity": true,
+            "specificity": true,
+            "usefulness": true,
+            "endogeneity": false,
+            "acquisition": false
+          },
+          "emergent": 0,
+          "failed": [
+            "endogeneity",
+            "acquisition"
+          ]
+        }
+      }
+    },
+    "6110": {
+      "learned": {
+        "metrics": {
+          "potential_bits": 1.0,
+          "trigger_rates": {
+            "field": 0.0,
+            "ledge": 1.0
+          },
+          "conditional_selectivity": 1.0,
+          "specificity_js_bits": 1.0,
+          "usefulness_gap": 2.6999999999999997,
+          "natural_value": 4.847916666666666,
+          "fall_rate_shift_ledge": 0.925,
+          "field_anarchy_frac": 0.8871928295660881
+        },
+        "acquisition": 1.0,
+        "verdict": {
+          "passes": {
+            "potential": true,
+            "conditional_selectivity": true,
+            "specificity": true,
+            "usefulness": true,
+            "endogeneity": true,
+            "acquisition": true
+          },
+          "emergent": 1,
+          "failed": []
+        }
+      },
+      "initial_twin": {
+        "metrics": {
+          "potential_bits": 0.9959386076315955,
+          "trigger_rates": {
+            "field": 0.0,
+            "ledge": 0.0
+          },
+          "conditional_selectivity": 0.0,
+          "specificity_js_bits": 1.0,
+          "usefulness_gap": 0.0,
+          "natural_value": 2.1479166666666667,
+          "fall_rate_shift_ledge": 0.0,
+          "field_anarchy_frac": 1.0
+        },
+        "acquisition": 0.0,
+        "verdict": {
+          "passes": {
+            "potential": true,
+            "conditional_selectivity": false,
+            "specificity": true,
+            "usefulness": false,
+            "endogeneity": true,
+            "acquisition": false
+          },
+          "emergent": 0,
+          "failed": [
+            "conditional_selectivity",
+            "usefulness",
+            "acquisition"
+          ]
+        }
+      },
+      "always_democracy": {
+        "metrics": {
+          "potential_bits": -0.0,
+          "trigger_rates": {
+            "field": 1.0,
+            "ledge": 1.0
+          },
+          "conditional_selectivity": 0.0,
+          "specificity_js_bits": 1.0,
+          "usefulness_gap": 1.8520833333333333,
+          "natural_value": 4.0,
+          "fall_rate_shift_ledge": 0.925,
+          "field_anarchy_frac": 0.0
+        },
+        "acquisition": 0.0,
+        "verdict": {
+          "passes": {
+            "potential": false,
+            "conditional_selectivity": false,
+            "specificity": true,
+            "usefulness": true,
+            "endogeneity": false,
+            "acquisition": false
+          },
+          "emergent": 0,
+          "failed": [
+            "potential",
+            "conditional_selectivity",
+            "endogeneity",
+            "acquisition"
+          ]
+        }
+      },
+      "always_anarchy": {
+        "metrics": {
+          "potential_bits": 0.9959386076315955,
+          "trigger_rates": {
+            "field": 0.0,
+            "ledge": 0.0
+          },
+          "conditional_selectivity": 0.0,
+          "specificity_js_bits": 1.0,
+          "usefulness_gap": 0.0,
+          "natural_value": 2.1479166666666667,
+          "fall_rate_shift_ledge": 0.0,
+          "field_anarchy_frac": 1.0
+        },
+        "acquisition": 0.0,
+        "verdict": {
+          "passes": {
+            "potential": true,
+            "conditional_selectivity": false,
+            "specificity": true,
+            "usefulness": false,
+            "endogeneity": false,
+            "acquisition": false
+          },
+          "emergent": 0,
+          "failed": [
+            "conditional_selectivity",
+            "usefulness",
+            "endogeneity",
+            "acquisition"
+          ]
+        }
+      },
+      "scripted_switcher": {
+        "metrics": {
+          "potential_bits": 1.0,
+          "trigger_rates": {
+            "field": 0.0,
+            "ledge": 1.0
+          },
+          "conditional_selectivity": 1.0,
+          "specificity_js_bits": 1.0,
+          "usefulness_gap": 2.8958333333333335,
+          "natural_value": 5.04375,
+          "fall_rate_shift_ledge": 0.925,
+          "field_anarchy_frac": 1.0
+        },
+        "acquisition": 0.0,
+        "verdict": {
+          "passes": {
+            "potential": true,
+            "conditional_selectivity": true,
+            "specificity": true,
+            "usefulness": true,
+            "endogeneity": false,
+            "acquisition": false
+          },
+          "emergent": 0,
+          "failed": [
+            "endogeneity",
+            "acquisition"
+          ]
+        }
+      },
+      "bc_clone": {
+        "metrics": {
+          "potential_bits": 1.0,
+          "trigger_rates": {
+            "field": 0.0,
+            "ledge": 1.0
+          },
+          "conditional_selectivity": 1.0,
+          "specificity_js_bits": 1.0,
+          "usefulness_gap": 2.8958333333333335,
+          "natural_value": 5.04375,
+          "fall_rate_shift_ledge": 0.925,
+          "field_anarchy_frac": 1.0
+        },
+        "acquisition": 0.0,
+        "verdict": {
+          "passes": {
+            "potential": true,
+            "conditional_selectivity": true,
+            "specificity": true,
+            "usefulness": true,
+            "endogeneity": false,
+            "acquisition": false
+          },
+          "emergent": 0,
+          "failed": [
+            "endogeneity",
+            "acquisition"
+          ]
+        }
+      }
+    }
+  },
+  "registered_outcomes": {
+    "CR1_learned_ge_8_of_10": "7/10 -> False",
+    "CR2_all_50_controls_rejected": "50/50 -> True",
+    "CR3_useful_positive_ge_9": "10/10 -> True",
+    "CR4_doblock_fall_shift_ge_0.3_all": "10/10 -> True",
+    "CR5_field_anarchy_ge_0.7_all": "7/10 -> False"
+  }
+}

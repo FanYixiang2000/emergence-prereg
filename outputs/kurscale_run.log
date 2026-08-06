@@ -1,0 +1,38 @@
+K=0.9 seed 82001: drop=0.1669 gate=True onset_pass=True t*=6.6 slope_after=-0.026784
+K=0.9 seed 82002: drop=0.2185 gate=True onset_pass=True t*=6.8 slope_after=-0.036602
+K=1.1 seed 82001: drop=0.4255 gate=True onset_pass=True t*=5.4 slope_after=-0.062627
+K=1.1 seed 82002: drop=0.4648 gate=True onset_pass=True t*=5.4 slope_after=-0.069728
+K=1.5 seed 82001: drop=0.596 gate=True onset_pass=True t*=3.2 slope_after=-0.100502
+K=1.5 seed 82002: drop=0.5993 gate=True onset_pass=True t*=3.2 slope_after=-0.101239
+K=2.0 seed 82001: drop=0.6062 gate=True onset_pass=True t*=2.4 slope_after=-0.150831
+K=2.0 seed 82002: drop=0.6077 gate=True onset_pass=True t*=2.4 slope_after=-0.150148
+K=2.5 seed 82001: drop=0.6134 gate=True onset_pass=True t*=1.8 slope_after=-0.19925
+K=2.5 seed 82002: drop=0.6135 gate=True onset_pass=True t*=1.8 slope_after=-0.199578
+{
+  "KS1_existence": true,
+  "KS1_nearcritical_consistent": true,
+  "KS2_critical_slowing": true,
+  "KS3_sharpness": true,
+  "passing_K": [
+    0.9,
+    1.1,
+    1.5,
+    2.0,
+    2.5
+  ],
+  "mean_t_star": [
+    6.699999999999999,
+    5.4,
+    3.2,
+    2.4,
+    1.8
+  ],
+  "mean_post_slope": [
+    0.031693,
+    0.066178,
+    0.100871,
+    0.150489,
+    0.199414
+  ]
+}
+Wrote /home/Yixiang/MPARL/GOGOGO/outputs/kuramoto_scale.json

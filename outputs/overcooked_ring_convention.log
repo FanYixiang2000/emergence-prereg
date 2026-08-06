@@ -1,0 +1,570 @@
+Gym has been unmaintained since 2022 and does not support NumPy 2.0 amongst other critical functionality.
+Please upgrade to Gymnasium, the maintained drop-in replacement of Gym, or contact the authors of your software and request that they upgrade.
+Users of this version of Gym should be able to simply replace 'import gym' with 'import gymnasium as gym' in the vast majority of cases.
+See the migration guide at https://gymnasium.farama.org/introduction/migration_guide/ for additional information.
+=== training coordination_ring seed 95101
+  checkpoint 20000 saved at step 20480
+  checkpoint 40000 saved at step 40960
+  checkpoint 60000 saved at step 61440
+  checkpoint 80000 saved at step 81920
+  checkpoint 100000 saved at step 100352
+  checkpoint 120000 saved at step 120832
+  checkpoint 140000 saved at step 141312
+  checkpoint 160000 saved at step 161792
+  checkpoint 180000 saved at step 180224
+  checkpoint 200000 saved at step 200704
+  checkpoint 220000 saved at step 221184
+  checkpoint 240000 saved at step 241664
+  checkpoint 260000 saved at step 260096
+  checkpoint 280000 saved at step 280576
+  checkpoint 300000 saved at step 301056
+  checkpoint 320000 saved at step 321536
+  checkpoint 340000 saved at step 342016
+  checkpoint 360000 saved at step 360448
+  checkpoint 380000 saved at step 380928
+  checkpoint 400000 saved at step 401408
+  checkpoint 420000 saved at step 421888
+  checkpoint 440000 saved at step 440320
+  checkpoint 460000 saved at step 460800
+  checkpoint 480000 saved at step 481280
+  checkpoint 500000 saved at step 501760
+  checkpoint 520000 saved at step 520192
+  checkpoint 540000 saved at step 540672
+  checkpoint 560000 saved at step 561152
+  checkpoint 580000 saved at step 581632
+  checkpoint 600000 saved at step 600064
+  checkpoint 620000 saved at step 620544
+  checkpoint 640000 saved at step 641024
+  checkpoint 660000 saved at step 661504
+  checkpoint 680000 saved at step 681984
+  checkpoint 700000 saved at step 700416
+  checkpoint 720000 saved at step 720896
+  checkpoint 740000 saved at step 741376
+  checkpoint 760000 saved at step 761856
+  checkpoint 780000 saved at step 780288
+  checkpoint 800000 saved at step 800768
+  checkpoint 820000 saved at step 821248
+  checkpoint 840000 saved at step 841728
+  checkpoint 860000 saved at step 860160
+  checkpoint 880000 saved at step 880640
+  checkpoint 900000 saved at step 901120
+  checkpoint 920000 saved at step 921600
+  checkpoint 940000 saved at step 940032
+  checkpoint 960000 saved at step 960512
+  checkpoint 980000 saved at step 980992
+  checkpoint 1000000 saved at step 1001472
+  checkpoint 1020000 saved at step 1021952
+  checkpoint 1040000 saved at step 1040384
+  checkpoint 1060000 saved at step 1060864
+  checkpoint 1080000 saved at step 1081344
+  checkpoint 1100000 saved at step 1101824
+  checkpoint 1120000 saved at step 1120256
+  checkpoint 1140000 saved at step 1140736
+  checkpoint 1160000 saved at step 1161216
+  checkpoint 1180000 saved at step 1181696
+  checkpoint 1200000 saved at step 1200128
+  checkpoint 1220000 saved at step 1220608
+  checkpoint 1240000 saved at step 1241088
+  checkpoint 1260000 saved at step 1261568
+  checkpoint 1280000 saved at step 1280000
+  checkpoint 1300000 saved at step 1300480
+  checkpoint 1320000 saved at step 1320960
+  checkpoint 1340000 saved at step 1341440
+  checkpoint 1360000 saved at step 1361920
+  checkpoint 1380000 saved at step 1380352
+  checkpoint 1400000 saved at step 1400832
+  checkpoint 1420000 saved at step 1421312
+  checkpoint 1440000 saved at step 1441792
+  checkpoint 1460000 saved at step 1460224
+  checkpoint 1480000 saved at step 1480704
+  checkpoint 1500000 saved at step 1501184
+  checkpoint 1520000 saved at step 1521664
+  checkpoint 1540000 saved at step 1540096
+  checkpoint 1560000 saved at step 1560576
+  checkpoint 1580000 saved at step 1581056
+  checkpoint 1600000 saved at step 1601536
+  checkpoint 1620000 saved at step 1622016
+  checkpoint 1640000 saved at step 1640448
+  checkpoint 1660000 saved at step 1660928
+  checkpoint 1680000 saved at step 1681408
+  checkpoint 1700000 saved at step 1701888
+  checkpoint 1720000 saved at step 1720320
+  checkpoint 1740000 saved at step 1740800
+  checkpoint 1760000 saved at step 1761280
+  checkpoint 1780000 saved at step 1781760
+  checkpoint 1800000 saved at step 1800192
+  checkpoint 1820000 saved at step 1820672
+  checkpoint 1840000 saved at step 1841152
+  checkpoint 1860000 saved at step 1861632
+  checkpoint 1880000 saved at step 1880064
+  checkpoint 1900000 saved at step 1900544
+  checkpoint 1920000 saved at step 1921024
+  checkpoint 1940000 saved at step 1941504
+  checkpoint 1960000 saved at step 1961984
+  checkpoint 1980000 saved at step 1980416
+  checkpoint 2000000 saved at step 2000896
+  coordination_ring s95101 ck=200000: open=0.35336 p_ccw=0.9333 n_com=28 soups=0.0333 Hpol=0.73145
+  coordination_ring s95101 ck=400000: open=0.60519 p_ccw=0.8519 n_com=25 soups=0.1333 Hpol=0.75314
+  coordination_ring s95101 ck=600000: open=0.20062 p_ccw=0.9688 n_com=30 soups=0.3 Hpol=0.70026
+  coordination_ring s95101 ck=800000: open=0.20062 p_ccw=0.9688 n_com=30 soups=0.7 Hpol=0.68697
+  coordination_ring s95101 ck=1000000: open=0.20062 p_ccw=0.9688 n_com=30 soups=1.4 Hpol=0.70146
+  coordination_ring s95101 ck=1200000: open=0.20062 p_ccw=0.9688 n_com=30 soups=1.9333 Hpol=0.61516
+  coordination_ring s95101 ck=1400000: open=0.20062 p_ccw=0.9688 n_com=30 soups=2.5 Hpol=0.61226
+  coordination_ring s95101 ck=1600000: open=0.20062 p_ccw=0.9688 n_com=30 soups=2.5 Hpol=0.57552
+  coordination_ring s95101 ck=1800000: open=0.20062 p_ccw=0.9688 n_com=30 soups=2.3667 Hpol=0.59161
+  coordination_ring s95101 ck=2000000: open=0.20062 p_ccw=0.9688 n_com=30 soups=2.6 Hpol=0.57968
+=== training coordination_ring seed 95202
+  checkpoint 20000 saved at step 20480
+  checkpoint 40000 saved at step 40960
+  checkpoint 60000 saved at step 61440
+  checkpoint 80000 saved at step 81920
+  checkpoint 100000 saved at step 100352
+  checkpoint 120000 saved at step 120832
+  checkpoint 140000 saved at step 141312
+  checkpoint 160000 saved at step 161792
+  checkpoint 180000 saved at step 180224
+  checkpoint 200000 saved at step 200704
+  checkpoint 220000 saved at step 221184
+  checkpoint 240000 saved at step 241664
+  checkpoint 260000 saved at step 260096
+  checkpoint 280000 saved at step 280576
+  checkpoint 300000 saved at step 301056
+  checkpoint 320000 saved at step 321536
+  checkpoint 340000 saved at step 342016
+  checkpoint 360000 saved at step 360448
+  checkpoint 380000 saved at step 380928
+  checkpoint 400000 saved at step 401408
+  checkpoint 420000 saved at step 421888
+  checkpoint 440000 saved at step 440320
+  checkpoint 460000 saved at step 460800
+  checkpoint 480000 saved at step 481280
+  checkpoint 500000 saved at step 501760
+  checkpoint 520000 saved at step 520192
+  checkpoint 540000 saved at step 540672
+  checkpoint 560000 saved at step 561152
+  checkpoint 580000 saved at step 581632
+  checkpoint 600000 saved at step 600064
+  checkpoint 620000 saved at step 620544
+  checkpoint 640000 saved at step 641024
+  checkpoint 660000 saved at step 661504
+  checkpoint 680000 saved at step 681984
+  checkpoint 700000 saved at step 700416
+  checkpoint 720000 saved at step 720896
+  checkpoint 740000 saved at step 741376
+  checkpoint 760000 saved at step 761856
+  checkpoint 780000 saved at step 780288
+  checkpoint 800000 saved at step 800768
+  checkpoint 820000 saved at step 821248
+  checkpoint 840000 saved at step 841728
+  checkpoint 860000 saved at step 860160
+  checkpoint 880000 saved at step 880640
+  checkpoint 900000 saved at step 901120
+  checkpoint 920000 saved at step 921600
+  checkpoint 940000 saved at step 940032
+  checkpoint 960000 saved at step 960512
+  checkpoint 980000 saved at step 980992
+  checkpoint 1000000 saved at step 1001472
+  checkpoint 1020000 saved at step 1021952
+  checkpoint 1040000 saved at step 1040384
+  checkpoint 1060000 saved at step 1060864
+  checkpoint 1080000 saved at step 1081344
+  checkpoint 1100000 saved at step 1101824
+  checkpoint 1120000 saved at step 1120256
+  checkpoint 1140000 saved at step 1140736
+  checkpoint 1160000 saved at step 1161216
+  checkpoint 1180000 saved at step 1181696
+  checkpoint 1200000 saved at step 1200128
+  checkpoint 1220000 saved at step 1220608
+  checkpoint 1240000 saved at step 1241088
+  checkpoint 1260000 saved at step 1261568
+  checkpoint 1280000 saved at step 1280000
+  checkpoint 1300000 saved at step 1300480
+  checkpoint 1320000 saved at step 1320960
+  checkpoint 1340000 saved at step 1341440
+  checkpoint 1360000 saved at step 1361920
+  checkpoint 1380000 saved at step 1380352
+  checkpoint 1400000 saved at step 1400832
+  checkpoint 1420000 saved at step 1421312
+  checkpoint 1440000 saved at step 1441792
+  checkpoint 1460000 saved at step 1460224
+  checkpoint 1480000 saved at step 1480704
+  checkpoint 1500000 saved at step 1501184
+  checkpoint 1520000 saved at step 1521664
+  checkpoint 1540000 saved at step 1540096
+  checkpoint 1560000 saved at step 1560576
+  checkpoint 1580000 saved at step 1581056
+  checkpoint 1600000 saved at step 1601536
+  checkpoint 1620000 saved at step 1622016
+  checkpoint 1640000 saved at step 1640448
+  checkpoint 1660000 saved at step 1660928
+  checkpoint 1680000 saved at step 1681408
+  checkpoint 1700000 saved at step 1701888
+  checkpoint 1720000 saved at step 1720320
+  checkpoint 1740000 saved at step 1740800
+  checkpoint 1760000 saved at step 1761280
+  checkpoint 1780000 saved at step 1781760
+  checkpoint 1800000 saved at step 1800192
+  checkpoint 1820000 saved at step 1820672
+  checkpoint 1840000 saved at step 1841152
+  checkpoint 1860000 saved at step 1861632
+  checkpoint 1880000 saved at step 1880064
+  checkpoint 1900000 saved at step 1900544
+  checkpoint 1920000 saved at step 1921024
+  checkpoint 1940000 saved at step 1941504
+  checkpoint 1960000 saved at step 1961984
+  checkpoint 1980000 saved at step 1980416
+  checkpoint 2000000 saved at step 2000896
+  coordination_ring s95202 ck=200000: open=0.99227 p_ccw=0.4483 n_com=27 soups=0.1 Hpol=0.68622
+  coordination_ring s95202 ck=400000: open=0.72193 p_ccw=0.2 n_com=23 soups=0.0333 Hpol=0.60171
+  coordination_ring s95202 ck=600000: open=0.97845 p_ccw=0.5862 n_com=27 soups=0.2 Hpol=0.74756
+  coordination_ring s95202 ck=800000: open=0.99632 p_ccw=0.5357 n_com=26 soups=0.2333 Hpol=0.75193
+  coordination_ring s95202 ck=1000000: open=0.75788 p_ccw=0.7812 n_com=30 soups=0.5667 Hpol=0.76808
+  coordination_ring s95202 ck=1200000: open=0.82563 p_ccw=0.2593 n_com=25 soups=0.3333 Hpol=0.81526
+  coordination_ring s95202 ck=1400000: open=0.21084 p_ccw=0.9667 n_com=28 soups=0.1667 Hpol=0.86203
+  coordination_ring s95202 ck=1600000: open=0.20062 p_ccw=0.9688 n_com=30 soups=0.1 Hpol=0.86645
+  coordination_ring s95202 ck=1800000: open=0.20062 p_ccw=0.9688 n_com=30 soups=0.4667 Hpol=0.79014
+  coordination_ring s95202 ck=2000000: open=0.20062 p_ccw=0.9688 n_com=30 soups=1.1333 Hpol=0.74782
+=== training coordination_ring seed 95303
+  checkpoint 20000 saved at step 20480
+  checkpoint 40000 saved at step 40960
+  checkpoint 60000 saved at step 61440
+  checkpoint 80000 saved at step 81920
+  checkpoint 100000 saved at step 100352
+  checkpoint 120000 saved at step 120832
+  checkpoint 140000 saved at step 141312
+  checkpoint 160000 saved at step 161792
+  checkpoint 180000 saved at step 180224
+  checkpoint 200000 saved at step 200704
+  checkpoint 220000 saved at step 221184
+  checkpoint 240000 saved at step 241664
+  checkpoint 260000 saved at step 260096
+  checkpoint 280000 saved at step 280576
+  checkpoint 300000 saved at step 301056
+  checkpoint 320000 saved at step 321536
+  checkpoint 340000 saved at step 342016
+  checkpoint 360000 saved at step 360448
+  checkpoint 380000 saved at step 380928
+  checkpoint 400000 saved at step 401408
+  checkpoint 420000 saved at step 421888
+  checkpoint 440000 saved at step 440320
+  checkpoint 460000 saved at step 460800
+  checkpoint 480000 saved at step 481280
+  checkpoint 500000 saved at step 501760
+  checkpoint 520000 saved at step 520192
+  checkpoint 540000 saved at step 540672
+  checkpoint 560000 saved at step 561152
+  checkpoint 580000 saved at step 581632
+  checkpoint 600000 saved at step 600064
+  checkpoint 620000 saved at step 620544
+  checkpoint 640000 saved at step 641024
+  checkpoint 660000 saved at step 661504
+  checkpoint 680000 saved at step 681984
+  checkpoint 700000 saved at step 700416
+  checkpoint 720000 saved at step 720896
+  checkpoint 740000 saved at step 741376
+  checkpoint 760000 saved at step 761856
+  checkpoint 780000 saved at step 780288
+  checkpoint 800000 saved at step 800768
+  checkpoint 820000 saved at step 821248
+  checkpoint 840000 saved at step 841728
+  checkpoint 860000 saved at step 860160
+  checkpoint 880000 saved at step 880640
+  checkpoint 900000 saved at step 901120
+  checkpoint 920000 saved at step 921600
+  checkpoint 940000 saved at step 940032
+  checkpoint 960000 saved at step 960512
+  checkpoint 980000 saved at step 980992
+  checkpoint 1000000 saved at step 1001472
+  checkpoint 1020000 saved at step 1021952
+  checkpoint 1040000 saved at step 1040384
+  checkpoint 1060000 saved at step 1060864
+  checkpoint 1080000 saved at step 1081344
+  checkpoint 1100000 saved at step 1101824
+  checkpoint 1120000 saved at step 1120256
+  checkpoint 1140000 saved at step 1140736
+  checkpoint 1160000 saved at step 1161216
+  checkpoint 1180000 saved at step 1181696
+  checkpoint 1200000 saved at step 1200128
+  checkpoint 1220000 saved at step 1220608
+  checkpoint 1240000 saved at step 1241088
+  checkpoint 1260000 saved at step 1261568
+  checkpoint 1280000 saved at step 1280000
+  checkpoint 1300000 saved at step 1300480
+  checkpoint 1320000 saved at step 1320960
+  checkpoint 1340000 saved at step 1341440
+  checkpoint 1360000 saved at step 1361920
+  checkpoint 1380000 saved at step 1380352
+  checkpoint 1400000 saved at step 1400832
+  checkpoint 1420000 saved at step 1421312
+  checkpoint 1440000 saved at step 1441792
+  checkpoint 1460000 saved at step 1460224
+  checkpoint 1480000 saved at step 1480704
+  checkpoint 1500000 saved at step 1501184
+  checkpoint 1520000 saved at step 1521664
+  checkpoint 1540000 saved at step 1540096
+  checkpoint 1560000 saved at step 1560576
+  checkpoint 1580000 saved at step 1581056
+  checkpoint 1600000 saved at step 1601536
+  checkpoint 1620000 saved at step 1622016
+  checkpoint 1640000 saved at step 1640448
+  checkpoint 1660000 saved at step 1660928
+  checkpoint 1680000 saved at step 1681408
+  checkpoint 1700000 saved at step 1701888
+  checkpoint 1720000 saved at step 1720320
+  checkpoint 1740000 saved at step 1740800
+  checkpoint 1760000 saved at step 1761280
+  checkpoint 1780000 saved at step 1781760
+  checkpoint 1800000 saved at step 1800192
+  checkpoint 1820000 saved at step 1820672
+  checkpoint 1840000 saved at step 1841152
+  checkpoint 1860000 saved at step 1861632
+  checkpoint 1880000 saved at step 1880064
+  checkpoint 1900000 saved at step 1900544
+  checkpoint 1920000 saved at step 1921024
+  checkpoint 1940000 saved at step 1941504
+  checkpoint 1960000 saved at step 1961984
+  checkpoint 1980000 saved at step 1980416
+  checkpoint 2000000 saved at step 2000896
+  coordination_ring s95303 ck=200000: open=0.469 p_ccw=0.1 n_com=28 soups=0.0 Hpol=0.6755
+  coordination_ring s95303 ck=400000: open=0.54356 p_ccw=0.125 n_com=22 soups=0.0667 Hpol=0.67536
+  coordination_ring s95303 ck=600000: open=0.469 p_ccw=0.1 n_com=28 soups=0.2333 Hpol=0.6769
+  coordination_ring s95303 ck=800000: open=0.96124 p_ccw=0.6154 n_com=24 soups=0.3 Hpol=0.76571
+  coordination_ring s95303 ck=1000000: open=0.99925 p_ccw=0.4839 n_com=29 soups=0.2667 Hpol=0.79331
+  coordination_ring s95303 ck=1200000: open=0.97512 p_ccw=0.4074 n_com=25 soups=0.4667 Hpol=0.78257
+  coordination_ring s95303 ck=1400000: open=0.72193 p_ccw=0.2 n_com=28 soups=0.6333 Hpol=0.77518
+  coordination_ring s95303 ck=1600000: open=0.21084 p_ccw=0.0333 n_com=28 soups=1.3 Hpol=0.68634
+  coordination_ring s95303 ck=1800000: open=0.20062 p_ccw=0.0312 n_com=30 soups=1.7333 Hpol=0.64145
+  coordination_ring s95303 ck=2000000: open=0.20062 p_ccw=0.0312 n_com=30 soups=1.7667 Hpol=0.61914
+=== training cramped_room seed 95404
+  checkpoint 20000 saved at step 20480
+  checkpoint 40000 saved at step 40960
+  checkpoint 60000 saved at step 61440
+  checkpoint 80000 saved at step 81920
+  checkpoint 100000 saved at step 100352
+  checkpoint 120000 saved at step 120832
+  checkpoint 140000 saved at step 141312
+  checkpoint 160000 saved at step 161792
+  checkpoint 180000 saved at step 180224
+  checkpoint 200000 saved at step 200704
+  checkpoint 220000 saved at step 221184
+  checkpoint 240000 saved at step 241664
+  checkpoint 260000 saved at step 260096
+  checkpoint 280000 saved at step 280576
+  checkpoint 300000 saved at step 301056
+  checkpoint 320000 saved at step 321536
+  checkpoint 340000 saved at step 342016
+  checkpoint 360000 saved at step 360448
+  checkpoint 380000 saved at step 380928
+  checkpoint 400000 saved at step 401408
+  checkpoint 420000 saved at step 421888
+  checkpoint 440000 saved at step 440320
+  checkpoint 460000 saved at step 460800
+  checkpoint 480000 saved at step 481280
+  checkpoint 500000 saved at step 501760
+  checkpoint 520000 saved at step 520192
+  checkpoint 540000 saved at step 540672
+  checkpoint 560000 saved at step 561152
+  checkpoint 580000 saved at step 581632
+  checkpoint 600000 saved at step 600064
+  checkpoint 620000 saved at step 620544
+  checkpoint 640000 saved at step 641024
+  checkpoint 660000 saved at step 661504
+  checkpoint 680000 saved at step 681984
+  checkpoint 700000 saved at step 700416
+  checkpoint 720000 saved at step 720896
+  checkpoint 740000 saved at step 741376
+  checkpoint 760000 saved at step 761856
+  checkpoint 780000 saved at step 780288
+  checkpoint 800000 saved at step 800768
+  checkpoint 820000 saved at step 821248
+  checkpoint 840000 saved at step 841728
+  checkpoint 860000 saved at step 860160
+  checkpoint 880000 saved at step 880640
+  checkpoint 900000 saved at step 901120
+  checkpoint 920000 saved at step 921600
+  checkpoint 940000 saved at step 940032
+  checkpoint 960000 saved at step 960512
+  checkpoint 980000 saved at step 980992
+  checkpoint 1000000 saved at step 1001472
+  checkpoint 1020000 saved at step 1021952
+  checkpoint 1040000 saved at step 1040384
+  checkpoint 1060000 saved at step 1060864
+  checkpoint 1080000 saved at step 1081344
+  checkpoint 1100000 saved at step 1101824
+  checkpoint 1120000 saved at step 1120256
+  checkpoint 1140000 saved at step 1140736
+  checkpoint 1160000 saved at step 1161216
+  checkpoint 1180000 saved at step 1181696
+  checkpoint 1200000 saved at step 1200128
+  checkpoint 1220000 saved at step 1220608
+  checkpoint 1240000 saved at step 1241088
+  checkpoint 1260000 saved at step 1261568
+  checkpoint 1280000 saved at step 1280000
+  checkpoint 1300000 saved at step 1300480
+  checkpoint 1320000 saved at step 1320960
+  checkpoint 1340000 saved at step 1341440
+  checkpoint 1360000 saved at step 1361920
+  checkpoint 1380000 saved at step 1380352
+  checkpoint 1400000 saved at step 1400832
+  checkpoint 1420000 saved at step 1421312
+  checkpoint 1440000 saved at step 1441792
+  checkpoint 1460000 saved at step 1460224
+  checkpoint 1480000 saved at step 1480704
+  checkpoint 1500000 saved at step 1501184
+  checkpoint 1520000 saved at step 1521664
+  checkpoint 1540000 saved at step 1540096
+  checkpoint 1560000 saved at step 1560576
+  checkpoint 1580000 saved at step 1581056
+  checkpoint 1600000 saved at step 1601536
+  checkpoint 1620000 saved at step 1622016
+  checkpoint 1640000 saved at step 1640448
+  checkpoint 1660000 saved at step 1660928
+  checkpoint 1680000 saved at step 1681408
+  checkpoint 1700000 saved at step 1701888
+  checkpoint 1720000 saved at step 1720320
+  checkpoint 1740000 saved at step 1740800
+  checkpoint 1760000 saved at step 1761280
+  checkpoint 1780000 saved at step 1781760
+  checkpoint 1800000 saved at step 1800192
+  checkpoint 1820000 saved at step 1820672
+  checkpoint 1840000 saved at step 1841152
+  checkpoint 1860000 saved at step 1861632
+  checkpoint 1880000 saved at step 1880064
+  checkpoint 1900000 saved at step 1900544
+  checkpoint 1920000 saved at step 1921024
+  checkpoint 1940000 saved at step 1941504
+  checkpoint 1960000 saved at step 1961984
+  checkpoint 1980000 saved at step 1980416
+  checkpoint 2000000 saved at step 2000896
+  cramped_room s95404 ck=200000: open=0.96662 p_ccw=0.3929 n_com=26 soups=0.0 Hpol=0.63541
+  cramped_room s95404 ck=400000: open=0.33729 p_ccw=0.9375 n_com=30 soups=0.3667 Hpol=0.70206
+  cramped_room s95404 ck=600000: open=0.33729 p_ccw=0.9375 n_com=30 soups=1.4 Hpol=0.73498
+  cramped_room s95404 ck=800000: open=0.24229 p_ccw=0.96 n_com=23 soups=2.2 Hpol=0.68688
+  cramped_room s95404 ck=1000000: open=0.59167 p_ccw=0.8571 n_com=26 soups=2.6333 Hpol=0.63676
+  cramped_room s95404 ck=1200000: open=0.72193 p_ccw=0.8 n_com=23 soups=2.8667 Hpol=0.61011
+  cramped_room s95404 ck=1400000: open=0.79504 p_ccw=0.76 n_com=23 soups=3.2 Hpol=0.62375
+  cramped_room s95404 ck=1600000: open=0.9183 p_ccw=0.6667 n_com=19 soups=2.9667 Hpol=0.62168
+  cramped_room s95404 ck=1800000: open=0.92936 p_ccw=0.3448 n_com=27 soups=3.3 Hpol=0.59869
+  cramped_room s95404 ck=2000000: open=0.94566 p_ccw=0.6364 n_com=20 soups=3.6 Hpol=0.60371
+=== training cramped_room seed 95505
+  checkpoint 20000 saved at step 20480
+  checkpoint 40000 saved at step 40960
+  checkpoint 60000 saved at step 61440
+  checkpoint 80000 saved at step 81920
+  checkpoint 100000 saved at step 100352
+  checkpoint 120000 saved at step 120832
+  checkpoint 140000 saved at step 141312
+  checkpoint 160000 saved at step 161792
+  checkpoint 180000 saved at step 180224
+  checkpoint 200000 saved at step 200704
+  checkpoint 220000 saved at step 221184
+  checkpoint 240000 saved at step 241664
+  checkpoint 260000 saved at step 260096
+  checkpoint 280000 saved at step 280576
+  checkpoint 300000 saved at step 301056
+  checkpoint 320000 saved at step 321536
+  checkpoint 340000 saved at step 342016
+  checkpoint 360000 saved at step 360448
+  checkpoint 380000 saved at step 380928
+  checkpoint 400000 saved at step 401408
+  checkpoint 420000 saved at step 421888
+  checkpoint 440000 saved at step 440320
+  checkpoint 460000 saved at step 460800
+  checkpoint 480000 saved at step 481280
+  checkpoint 500000 saved at step 501760
+  checkpoint 520000 saved at step 520192
+  checkpoint 540000 saved at step 540672
+  checkpoint 560000 saved at step 561152
+  checkpoint 580000 saved at step 581632
+  checkpoint 600000 saved at step 600064
+  checkpoint 620000 saved at step 620544
+  checkpoint 640000 saved at step 641024
+  checkpoint 660000 saved at step 661504
+  checkpoint 680000 saved at step 681984
+  checkpoint 700000 saved at step 700416
+  checkpoint 720000 saved at step 720896
+  checkpoint 740000 saved at step 741376
+  checkpoint 760000 saved at step 761856
+  checkpoint 780000 saved at step 780288
+  checkpoint 800000 saved at step 800768
+  checkpoint 820000 saved at step 821248
+  checkpoint 840000 saved at step 841728
+  checkpoint 860000 saved at step 860160
+  checkpoint 880000 saved at step 880640
+  checkpoint 900000 saved at step 901120
+  checkpoint 920000 saved at step 921600
+  checkpoint 940000 saved at step 940032
+  checkpoint 960000 saved at step 960512
+  checkpoint 980000 saved at step 980992
+  checkpoint 1000000 saved at step 1001472
+  checkpoint 1020000 saved at step 1021952
+  checkpoint 1040000 saved at step 1040384
+  checkpoint 1060000 saved at step 1060864
+  checkpoint 1080000 saved at step 1081344
+  checkpoint 1100000 saved at step 1101824
+  checkpoint 1120000 saved at step 1120256
+  checkpoint 1140000 saved at step 1140736
+  checkpoint 1160000 saved at step 1161216
+  checkpoint 1180000 saved at step 1181696
+  checkpoint 1200000 saved at step 1200128
+  checkpoint 1220000 saved at step 1220608
+  checkpoint 1240000 saved at step 1241088
+  checkpoint 1260000 saved at step 1261568
+  checkpoint 1280000 saved at step 1280000
+  checkpoint 1300000 saved at step 1300480
+  checkpoint 1320000 saved at step 1320960
+  checkpoint 1340000 saved at step 1341440
+  checkpoint 1360000 saved at step 1361920
+  checkpoint 1380000 saved at step 1380352
+  checkpoint 1400000 saved at step 1400832
+  checkpoint 1420000 saved at step 1421312
+  checkpoint 1440000 saved at step 1441792
+  checkpoint 1460000 saved at step 1460224
+  checkpoint 1480000 saved at step 1480704
+  checkpoint 1500000 saved at step 1501184
+  checkpoint 1520000 saved at step 1521664
+  checkpoint 1540000 saved at step 1540096
+  checkpoint 1560000 saved at step 1560576
+  checkpoint 1580000 saved at step 1581056
+  checkpoint 1600000 saved at step 1601536
+  checkpoint 1620000 saved at step 1622016
+  checkpoint 1640000 saved at step 1640448
+  checkpoint 1660000 saved at step 1660928
+  checkpoint 1680000 saved at step 1681408
+  checkpoint 1700000 saved at step 1701888
+  checkpoint 1720000 saved at step 1720320
+  checkpoint 1740000 saved at step 1740800
+  checkpoint 1760000 saved at step 1761280
+  checkpoint 1780000 saved at step 1781760
+  checkpoint 1800000 saved at step 1800192
+  checkpoint 1820000 saved at step 1820672
+  checkpoint 1840000 saved at step 1841152
+  checkpoint 1860000 saved at step 1861632
+  checkpoint 1880000 saved at step 1880064
+  checkpoint 1900000 saved at step 1900544
+  checkpoint 1920000 saved at step 1921024
+  checkpoint 1940000 saved at step 1941504
+  checkpoint 1960000 saved at step 1961984
+  checkpoint 1980000 saved at step 1980416
+  checkpoint 2000000 saved at step 2000896
+  cramped_room s95505 ck=200000: open=0.87672 p_ccw=0.7037 n_com=25 soups=0.0 Hpol=0.51583
+  cramped_room s95505 ck=400000: open=0.45869 p_ccw=0.9032 n_com=29 soups=0.7333 Hpol=0.68272
+  cramped_room s95505 ck=600000: open=0.36205 p_ccw=0.931 n_com=27 soups=1.4 Hpol=0.72783
+  cramped_room s95505 ck=800000: open=0.20062 p_ccw=0.9688 n_com=30 soups=2.1333 Hpol=0.69291
+  cramped_room s95505 ck=1000000: open=0.54356 p_ccw=0.875 n_com=30 soups=2.3333 Hpol=0.67165
+  cramped_room s95505 ck=1200000: open=0.82806 p_ccw=0.7391 n_com=21 soups=2.6333 Hpol=0.63088
+  cramped_room s95505 ck=1400000: open=0.63739 p_ccw=0.8387 n_com=29 soups=2.9 Hpol=0.62526
+  cramped_room s95505 ck=1600000: open=1.0 p_ccw=0.5 n_com=20 soups=3.5667 Hpol=0.59849
+  cramped_room s95505 ck=1800000: open=0.98959 p_ccw=0.44 n_com=23 soups=3.8 Hpol=0.57926
+  cramped_room s95505 ck=2000000: open=0.52936 p_ccw=0.88 n_com=23 soups=3.4667 Hpol=0.61353
+{
+  "OCR1_ring_onset_ge_2of3": false,
+  "OCR2_directions": {
+    ">0.5": 1
+  },
+  "OCR3_collapse_leads_capability": true,
+  "OCR4_policy_entropy_no_onset_ring": false,
+  "OCR5_cramped_no_onset_matched_grid": true,
+  "n_ring_onset": 1
+}
+Wrote /home/Yixiang/MPARL/GOGOGO/outputs/overcooked_ring_convention.json

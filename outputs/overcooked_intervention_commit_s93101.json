@@ -1,0 +1,52 @@
+{
+  "status": "commitment-window intervention run; registered in COMMITMENT_INTERVENTION_PREREGISTRATION.md; pilot (one seed per condition)",
+  "condition": "commit",
+  "window": [
+    640000,
+    1000000
+  ],
+  "seed": 93101,
+  "train_minutes": 22.33,
+  "certificate_2M": {
+    "n": 100,
+    "G_js_bits": 0.021086323445049026,
+    "G_boot_ci95": [
+      0.003103937653856312,
+      0.07002919679531915
+    ],
+    "C_signed_bits": 0.00833979511603955,
+    "M_score_gain": 8.0,
+    "real_score": 26.8,
+    "cut_score": 18.8,
+    "partner_action_tv": 0.03133333333333333,
+    "time_bins": {
+      "120": {
+        "G_js_bits": 0.061670355336977074,
+        "M_score_gain": 10.0
+      },
+      "160": {
+        "G_js_bits": 0.002338158233057004,
+        "M_score_gain": 10.0
+      },
+      "20": {
+        "G_js_bits": 0.2240987321319836,
+        "M_score_gain": 5.0
+      },
+      "40": {
+        "G_js_bits": 0.00517015238801205,
+        "M_score_gain": 13.0
+      },
+      "80": {
+        "G_js_bits": 0.005639062229566449,
+        "M_score_gain": 2.0
+      }
+    }
+  },
+  "joint_ladder_2M": {
+    "C_individual": 0.49149948484025874,
+    "C_env": 0.05945462945279534,
+    "C_relational": 0.00996374281916701,
+    "C_total": 0.5609178571122211,
+    "collapse_norm": 0.10849632382592311
+  }
+}

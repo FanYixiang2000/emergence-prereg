@@ -1,0 +1,161 @@
+training PPO seed 11 ...
+  seed 11 episode 500: return(100) 0.077 cleared(100) 0.00
+  seed 11 episode 1000: return(100) 0.425 cleared(100) 0.74
+  seed 11 episode 1500: return(100) 0.485 cleared(100) 0.95
+  seed 11 episode 2000: return(100) 0.482 cleared(100) 0.95
+  seed 11 episode 2500: return(100) 0.485 cleared(100) 0.97
+  seed 11 episode 3000: return(100) 0.500 cleared(100) 1.00
+  seed 11 episode 3500: return(100) 0.480 cleared(100) 0.96
+  seed 11 episode 4000: return(100) 0.490 cleared(100) 0.98
+  seed 11 episode 4500: return(100) 0.500 cleared(100) 1.00
+  seed 11 episode 5000: return(100) 0.500 cleared(100) 1.00
+  seed 11 episode 5500: return(100) 0.492 cleared(100) 0.97
+  seed 11 episode 6000: return(100) 0.495 cleared(100) 0.99
+  seed 11 episode 6500: return(100) 0.487 cleared(100) 0.96
+  seed 11 episode 7000: return(100) 0.500 cleared(100) 1.00
+  seed 11 episode 7500: return(100) 0.500 cleared(100) 1.00
+  seed 11 episode 8000: return(100) 0.500 cleared(100) 1.00
+{
+  "condition": "trained_seed11",
+  "n_episodes": 30,
+  "early_potential_bits": 1.4561409509205971,
+  "p_win_start": 0.14236111111111113,
+  "p_win_end": 0.5263888888888889,
+  "final_win_rate": 0.9,
+  "mean_commit_step": 4.5,
+  "do_gap_median": 0.03125,
+  "do_gap_mean": 0.14375,
+  "do_sign_wins": 23,
+  "do_sign_losses": 0,
+  "do_sign_p": 2.384185791015625e-07
+}
+training PPO seed 22 ...
+  seed 22 episode 500: return(100) 0.207 cleared(100) 0.14
+  seed 22 episode 1000: return(100) 0.420 cleared(100) 0.74
+  seed 22 episode 1500: return(100) 0.487 cleared(100) 0.96
+  seed 22 episode 2000: return(100) 0.480 cleared(100) 0.93
+  seed 22 episode 2500: return(100) 0.487 cleared(100) 0.97
+  seed 22 episode 3000: return(100) 0.485 cleared(100) 0.95
+  seed 22 episode 3500: return(100) 0.500 cleared(100) 1.00
+  seed 22 episode 4000: return(100) 0.487 cleared(100) 0.97
+  seed 22 episode 4500: return(100) 0.497 cleared(100) 0.99
+  seed 22 episode 5000: return(100) 0.480 cleared(100) 0.96
+  seed 22 episode 5500: return(100) 0.492 cleared(100) 0.97
+  seed 22 episode 6000: return(100) 0.497 cleared(100) 0.99
+  seed 22 episode 6500: return(100) 0.495 cleared(100) 0.99
+  seed 22 episode 7000: return(100) 0.497 cleared(100) 0.99
+  seed 22 episode 7500: return(100) 0.490 cleared(100) 0.97
+  seed 22 episode 8000: return(100) 0.485 cleared(100) 0.96
+{
+  "condition": "trained_seed22",
+  "n_episodes": 30,
+  "early_potential_bits": 1.413088919580132,
+  "p_win_start": 0.10694444444444445,
+  "p_win_end": 0.4868055555555556,
+  "final_win_rate": 0.9,
+  "mean_commit_step": 5.8,
+  "do_gap_median": 0.041666666666666664,
+  "do_gap_mean": 0.10555555555555557,
+  "do_sign_wins": 22,
+  "do_sign_losses": 0,
+  "do_sign_p": 4.76837158203125e-07
+}
+training PPO seed 33 ...
+  seed 33 episode 500: return(100) 0.062 cleared(100) 0.02
+  seed 33 episode 1000: return(100) 0.290 cleared(100) 0.25
+  seed 33 episode 1500: return(100) 0.355 cleared(100) 0.54
+  seed 33 episode 2000: return(100) 0.458 cleared(100) 0.87
+  seed 33 episode 2500: return(100) 0.492 cleared(100) 0.98
+  seed 33 episode 3000: return(100) 0.492 cleared(100) 0.97
+  seed 33 episode 3500: return(100) 0.490 cleared(100) 0.97
+  seed 33 episode 4000: return(100) 0.482 cleared(100) 0.94
+  seed 33 episode 4500: return(100) 0.487 cleared(100) 0.97
+  seed 33 episode 5000: return(100) 0.495 cleared(100) 0.98
+  seed 33 episode 5500: return(100) 0.487 cleared(100) 0.97
+  seed 33 episode 6000: return(100) 0.495 cleared(100) 0.99
+  seed 33 episode 6500: return(100) 0.497 cleared(100) 0.99
+  seed 33 episode 7000: return(100) 0.490 cleared(100) 0.97
+  seed 33 episode 7500: return(100) 0.487 cleared(100) 0.97
+  seed 33 episode 8000: return(100) 0.497 cleared(100) 0.99
+{
+  "condition": "trained_seed33",
+  "n_episodes": 30,
+  "early_potential_bits": 1.4194832486094777,
+  "p_win_start": 0.0875,
+  "p_win_end": 0.3965277777777778,
+  "final_win_rate": 0.9333333333333333,
+  "mean_commit_step": 9.566666666666666,
+  "do_gap_median": 0.041666666666666664,
+  "do_gap_mean": 0.07708333333333335,
+  "do_sign_wins": 24,
+  "do_sign_losses": 0,
+  "do_sign_p": 1.1920928955078125e-07
+}
+{
+  "condition": "untrained",
+  "n_episodes": 30,
+  "early_potential_bits": 0.34024697591617925,
+  "p_win_start": 0.0006944444444444444,
+  "p_win_end": 0.0006944444444444444,
+  "final_win_rate": 0.03333333333333333,
+  "mean_commit_step": 16.966666666666665,
+  "do_gap_median": 0.0,
+  "do_gap_mean": 0.0013888888888888887,
+  "do_sign_wins": 2,
+  "do_sign_losses": 0,
+  "do_sign_p": 0.5
+}
+{
+  "condition": "greedy_nearest",
+  "n_episodes": 30,
+  "early_potential_bits": 0.0,
+  "p_win_start": 0.1,
+  "p_win_end": 0.1,
+  "final_win_rate": 0.1,
+  "mean_commit_step": 1.0
+}
+{
+  "condition": "noise",
+  "n_episodes": 30,
+  "early_potential_bits": 0.3198071466770433,
+  "p_win_start": 0.0,
+  "p_win_end": 0.0,
+  "final_win_rate": 0.0,
+  "mean_commit_step": 20.566666666666666
+}
+{
+  "L1_potential": {
+    "trained_early_potential": [
+      1.4561409509205971,
+      1.413088919580132,
+      1.4194832486094777
+    ],
+    "pass": true
+  },
+  "L2_useful_structure": {
+    "trained_win_rate": [
+      0.9,
+      0.9,
+      0.9333333333333333
+    ],
+    "untrained_win_rate": 0.03333333333333333,
+    "noise_win_rate": 0.0,
+    "pass": true
+  },
+  "L3_counterfactual": {
+    "pooled_do_gap_median": 0.041666666666666664,
+    "pooled_sign_wins": 69,
+    "pooled_sign_losses": 0,
+    "pooled_sign_p": 3.3881317890172014e-21,
+    "pass": true
+  },
+  "L4_greedy_contrast": {
+    "greedy_win_rate": 0.1,
+    "greedy_early_potential": 0.0,
+    "trained_min_win": 0.9,
+    "trained_min_potential": 1.413088919580132,
+    "pass": true
+  },
+  "all_pass": true
+}
+Wrote /home/Yixiang/MPARL/GOGOGO/outputs/lbf_collapse_main.json

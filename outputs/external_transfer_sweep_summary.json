@@ -1,0 +1,262 @@
+{
+  "preregistration": "EXTERNAL_TRANSFER_PREREGISTRATION.md",
+  "seeds": [
+    7031,
+    7131,
+    7231,
+    7331,
+    7431
+  ],
+  "accuracy_per_seed": {
+    "7031": 1.0,
+    "7131": 0.8,
+    "7231": 1.0,
+    "7331": 0.8,
+    "7431": 1.0
+  },
+  "prediction_pass_rates": {
+    "p1_all_verdicts_correct": 0.6,
+    "p2_damage_aware_endogeneity_only": 1.0,
+    "p3_gap_sign_flips": 1.0,
+    "audit_learner_selective": 1.0
+  },
+  "metric_cis": {
+    "marl_learned.h0_bits": {
+      "mean": 1.5327563641413053,
+      "lo95": 1.5073731221326363,
+      "hi95": 1.5596648663921522
+    },
+    "marl_learned.usefulness_gap": {
+      "mean": 14.239633333333334,
+      "lo95": 13.578566666666665,
+      "hi95": 14.787299999999998
+    },
+    "marl_learned.natural_trigger_rate": {
+      "mean": 0.5,
+      "lo95": 0.5,
+      "hi95": 0.5
+    },
+    "marl_learned.passive_trigger_rate": {
+      "mean": 0.0,
+      "lo95": 0.0,
+      "hi95": 0.0
+    },
+    "marl_learned.aggressive_trigger_rate": {
+      "mean": 1.0,
+      "lo95": 1.0,
+      "hi95": 1.0
+    },
+    "marl_untrained.h0_bits": {
+      "mean": 1.1516561157006424,
+      "lo95": 0.7795618011812444,
+      "hi95": 1.5237504302200402
+    },
+    "marl_untrained.usefulness_gap": {
+      "mean": 1.9344666666666683,
+      "lo95": -2.7413,
+      "hi95": 6.248733333333337
+    },
+    "marl_untrained.natural_trigger_rate": {
+      "mean": 0.535,
+      "lo95": 0.2066666666666667,
+      "hi95": 0.8633333333333333
+    },
+    "marl_untrained.passive_trigger_rate": {
+      "mean": 0.4633333333333334,
+      "lo95": 0.06666666666666667,
+      "hi95": 0.86
+    },
+    "marl_untrained.aggressive_trigger_rate": {
+      "mean": 0.6066666666666667,
+      "lo95": 0.27999999999999997,
+      "hi95": 0.9333333333333333
+    },
+    "nearest_only.h0_bits": {
+      "mean": 0.9682519136993284,
+      "lo95": 0.9528208223299492,
+      "hi95": 0.9798687566511528
+    },
+    "nearest_only.usefulness_gap": {
+      "mean": 2.321766666666666,
+      "lo95": 1.5558333333333316,
+      "hi95": 3.0877000000000008
+    },
+    "nearest_only.natural_trigger_rate": {
+      "mean": 1.0,
+      "lo95": 1.0,
+      "hi95": 1.0
+    },
+    "nearest_only.passive_trigger_rate": {
+      "mean": 1.0,
+      "lo95": 1.0,
+      "hi95": 1.0
+    },
+    "nearest_only.aggressive_trigger_rate": {
+      "mean": 1.0,
+      "lo95": 1.0,
+      "hi95": 1.0
+    },
+    "role_oracle.h0_bits": {
+      "mean": 1.0118684246946226,
+      "lo95": 0.9993186066931411,
+      "hi95": 1.0364870732557694
+    },
+    "role_oracle.usefulness_gap": {
+      "mean": 2.473000000000001,
+      "lo95": 2.012166666666668,
+      "hi95": 3.0134333333333343
+    },
+    "role_oracle.natural_trigger_rate": {
+      "mean": 0.0016666666666666666,
+      "lo95": 0.0,
+      "hi95": 0.005
+    },
+    "role_oracle.passive_trigger_rate": {
+      "mean": 0.0,
+      "lo95": 0.0,
+      "hi95": 0.0
+    },
+    "role_oracle.aggressive_trigger_rate": {
+      "mean": 0.003333333333333333,
+      "lo95": 0.0,
+      "hi95": 0.01
+    },
+    "damage_aware.h0_bits": {
+      "mean": 1.4563826598616616,
+      "lo95": 1.409024201382042,
+      "hi95": 1.5062023505327888
+    },
+    "damage_aware.usefulness_gap": {
+      "mean": 4.708733333333335,
+      "lo95": 3.7516000000000025,
+      "hi95": 5.6488000000000005
+    },
+    "damage_aware.natural_trigger_rate": {
+      "mean": 0.5,
+      "lo95": 0.5,
+      "hi95": 0.5
+    },
+    "damage_aware.passive_trigger_rate": {
+      "mean": 0.0,
+      "lo95": 0.0,
+      "hi95": 0.0
+    },
+    "damage_aware.aggressive_trigger_rate": {
+      "mean": 1.0,
+      "lo95": 1.0,
+      "hi95": 1.0
+    }
+  },
+  "verdicts_per_seed": {
+    "7031": {
+      "marl_learned": {
+        "full_criterion": 1,
+        "audited_label": 1
+      },
+      "marl_untrained": {
+        "full_criterion": 0,
+        "audited_label": 0
+      },
+      "nearest_only": {
+        "full_criterion": 0,
+        "audited_label": 0
+      },
+      "role_oracle": {
+        "full_criterion": 0,
+        "audited_label": 0
+      },
+      "damage_aware": {
+        "full_criterion": 0,
+        "audited_label": 0
+      }
+    },
+    "7131": {
+      "marl_learned": {
+        "full_criterion": 1,
+        "audited_label": 1
+      },
+      "marl_untrained": {
+        "full_criterion": 1,
+        "audited_label": 0
+      },
+      "nearest_only": {
+        "full_criterion": 0,
+        "audited_label": 0
+      },
+      "role_oracle": {
+        "full_criterion": 0,
+        "audited_label": 0
+      },
+      "damage_aware": {
+        "full_criterion": 0,
+        "audited_label": 0
+      }
+    },
+    "7231": {
+      "marl_learned": {
+        "full_criterion": 1,
+        "audited_label": 1
+      },
+      "marl_untrained": {
+        "full_criterion": 0,
+        "audited_label": 0
+      },
+      "nearest_only": {
+        "full_criterion": 0,
+        "audited_label": 0
+      },
+      "role_oracle": {
+        "full_criterion": 0,
+        "audited_label": 0
+      },
+      "damage_aware": {
+        "full_criterion": 0,
+        "audited_label": 0
+      }
+    },
+    "7331": {
+      "marl_learned": {
+        "full_criterion": 1,
+        "audited_label": 1
+      },
+      "marl_untrained": {
+        "full_criterion": 1,
+        "audited_label": 0
+      },
+      "nearest_only": {
+        "full_criterion": 0,
+        "audited_label": 0
+      },
+      "role_oracle": {
+        "full_criterion": 0,
+        "audited_label": 0
+      },
+      "damage_aware": {
+        "full_criterion": 0,
+        "audited_label": 0
+      }
+    },
+    "7431": {
+      "marl_learned": {
+        "full_criterion": 1,
+        "audited_label": 1
+      },
+      "marl_untrained": {
+        "full_criterion": 0,
+        "audited_label": 0
+      },
+      "nearest_only": {
+        "full_criterion": 0,
+        "audited_label": 0
+      },
+      "role_oracle": {
+        "full_criterion": 0,
+        "audited_label": 0
+      },
+      "damage_aware": {
+        "full_criterion": 0,
+        "audited_label": 0
+      }
+    }
+  }
+}

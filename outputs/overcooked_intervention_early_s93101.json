@@ -1,0 +1,52 @@
+{
+  "status": "commitment-window intervention run; registered in COMMITMENT_INTERVENTION_PREREGISTRATION.md; pilot (one seed per condition)",
+  "condition": "early",
+  "window": [
+    80000,
+    440000
+  ],
+  "seed": 93101,
+  "train_minutes": 22.41,
+  "certificate_2M": {
+    "n": 100,
+    "G_js_bits": 0.15517267218036612,
+    "G_boot_ci95": [
+      0.10085008525798013,
+      0.24095654862486873
+    ],
+    "C_signed_bits": 0.7123831055046075,
+    "M_score_gain": 13.999999999999996,
+    "real_score": 36.8,
+    "cut_score": 22.8,
+    "partner_action_tv": 0.028249999999999983,
+    "time_bins": {
+      "120": {
+        "G_js_bits": 0.11483406120055316,
+        "M_score_gain": 13.0
+      },
+      "160": {
+        "G_js_bits": 0.35277715614479843,
+        "M_score_gain": 15.0
+      },
+      "20": {
+        "G_js_bits": 0.1903656750674448,
+        "M_score_gain": 13.0
+      },
+      "40": {
+        "G_js_bits": 0.12112786843867537,
+        "M_score_gain": 12.0
+      },
+      "80": {
+        "G_js_bits": 0.16503278103662505,
+        "M_score_gain": 17.0
+      }
+    }
+  },
+  "joint_ladder_2M": {
+    "C_individual": 0.5199765069002638,
+    "C_env": 0.017244583967452876,
+    "C_relational": 0.016529946099579362,
+    "C_total": 0.553751036967296,
+    "collapse_norm": 0.10711007157991848
+  }
+}

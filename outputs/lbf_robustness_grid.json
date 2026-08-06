@@ -1,0 +1,196 @@
+{
+  "note": "Saved main-run nets re-probed across probe temperatures; success criteria G1/G2 frozen in the module docstring before running. Greedy control probed once (temperature-independent).",
+  "greedy_control": {
+    "condition": "greedy_nearest",
+    "n_episodes": 30,
+    "early_potential_bits": 0.0,
+    "p_win_start": 0.1,
+    "p_win_end": 0.1,
+    "final_win_rate": 0.1,
+    "mean_commit_step": 1.0
+  },
+  "cells": {
+    "T2.0": {
+      "temperature": 2.0,
+      "per_seed": {
+        "seed11": {
+          "early_potential_bits": 0.03851945727162043,
+          "final_win_rate": 0.9,
+          "do_gap_median": 1.0,
+          "do_sign_wins": 27,
+          "do_sign_losses": 0
+        },
+        "seed22": {
+          "early_potential_bits": 0.14347296836508286,
+          "final_win_rate": 0.9,
+          "do_gap_median": 1.0,
+          "do_sign_wins": 27,
+          "do_sign_losses": 0
+        },
+        "seed33": {
+          "early_potential_bits": 0.7292092005363545,
+          "final_win_rate": 0.9,
+          "do_gap_median": 0.9791666666666666,
+          "do_sign_wins": 26,
+          "do_sign_losses": 0
+        }
+      },
+      "pooled": {
+        "pooled_do_gap_median": 1.0,
+        "pooled_do_gap_mean": 0.8162037037037037,
+        "pooled_sign_wins": 80,
+        "pooled_sign_losses": 0,
+        "pooled_sign_p": 1.6543612251060553e-24,
+        "n_gaps": 90
+      },
+      "trained_min_potential": 0.03851945727162043,
+      "trained_min_win": 0.9,
+      "G1_do_contrast_pass": true,
+      "G2_greedy_direction_pass": true,
+      "L1_absolute_potential_0.8_pass": false
+    },
+    "T3.0": {
+      "temperature": 3.0,
+      "per_seed": {
+        "seed11": {
+          "early_potential_bits": 0.5546558273054902,
+          "final_win_rate": 0.8666666666666667,
+          "do_gap_median": 0.9479166666666667,
+          "do_sign_wins": 25,
+          "do_sign_losses": 0
+        },
+        "seed22": {
+          "early_potential_bits": 0.9176009323751698,
+          "final_win_rate": 0.9,
+          "do_gap_median": 0.90625,
+          "do_sign_wins": 27,
+          "do_sign_losses": 0
+        },
+        "seed33": {
+          "early_potential_bits": 1.4052505249008909,
+          "final_win_rate": 0.9,
+          "do_gap_median": 0.6666666666666667,
+          "do_sign_wins": 23,
+          "do_sign_losses": 0
+        }
+      },
+      "pooled": {
+        "pooled_do_gap_median": 0.8854166666666667,
+        "pooled_do_gap_mean": 0.6775462962962964,
+        "pooled_sign_wins": 75,
+        "pooled_sign_losses": 0,
+        "pooled_sign_p": 5.293955920339377e-23,
+        "n_gaps": 90
+      },
+      "trained_min_potential": 0.5546558273054902,
+      "trained_min_win": 0.8666666666666667,
+      "G1_do_contrast_pass": true,
+      "G2_greedy_direction_pass": true,
+      "L1_absolute_potential_0.8_pass": false
+    },
+    "T4.5": {
+      "temperature": 4.5,
+      "per_seed": {
+        "seed11": {
+          "early_potential_bits": 1.415395953166215,
+          "final_win_rate": 0.9,
+          "do_gap_median": 0.44791666666666663,
+          "do_sign_wins": 21,
+          "do_sign_losses": 0
+        },
+        "seed22": {
+          "early_potential_bits": 1.5022439519687987,
+          "final_win_rate": 0.9,
+          "do_gap_median": 0.29166666666666663,
+          "do_sign_wins": 23,
+          "do_sign_losses": 0
+        },
+        "seed33": {
+          "early_potential_bits": 1.621611505744711,
+          "final_win_rate": 0.9333333333333333,
+          "do_gap_median": 0.125,
+          "do_sign_wins": 22,
+          "do_sign_losses": 0
+        }
+      },
+      "pooled": {
+        "pooled_do_gap_median": 0.2708333333333333,
+        "pooled_do_gap_mean": 0.28078703703703706,
+        "pooled_sign_wins": 66,
+        "pooled_sign_losses": 0,
+        "pooled_sign_p": 2.710505431213761e-20,
+        "n_gaps": 90
+      },
+      "trained_min_potential": 1.415395953166215,
+      "trained_min_win": 0.9,
+      "G1_do_contrast_pass": true,
+      "G2_greedy_direction_pass": true,
+      "L1_absolute_potential_0.8_pass": true
+    },
+    "T8.0": {
+      "temperature": 8.0,
+      "per_seed": {
+        "seed11": {
+          "early_potential_bits": 1.2285340469021173,
+          "final_win_rate": 0.9,
+          "do_gap_median": 0.03125,
+          "do_sign_wins": 20,
+          "do_sign_losses": 0
+        },
+        "seed22": {
+          "early_potential_bits": 1.1750901898583812,
+          "final_win_rate": 0.9,
+          "do_gap_median": 0.0625,
+          "do_sign_wins": 22,
+          "do_sign_losses": 0
+        },
+        "seed33": {
+          "early_potential_bits": 1.1255167349924733,
+          "final_win_rate": 0.8333333333333334,
+          "do_gap_median": 0.03125,
+          "do_sign_wins": 25,
+          "do_sign_losses": 0
+        }
+      },
+      "pooled": {
+        "pooled_do_gap_median": 0.041666666666666664,
+        "pooled_do_gap_mean": 0.06203703703703704,
+        "pooled_sign_wins": 67,
+        "pooled_sign_losses": 0,
+        "pooled_sign_p": 1.3552527156068805e-20,
+        "n_gaps": 90
+      },
+      "trained_min_potential": 1.1255167349924733,
+      "trained_min_win": 0.8333333333333334,
+      "G1_do_contrast_pass": true,
+      "G2_greedy_direction_pass": true,
+      "L1_absolute_potential_0.8_pass": true
+    },
+    "T6.0_main_run": {
+      "temperature": 6.0,
+      "source": "lbf_collapse_main.json (recorded main run)",
+      "pooled": {
+        "pooled_do_gap_median": 0.041666666666666664,
+        "pooled_do_gap_mean": 0.10879629629629631,
+        "pooled_sign_wins": 69,
+        "pooled_sign_losses": 0,
+        "pooled_sign_p": 3.3881317890172014e-21,
+        "n_gaps": 90
+      },
+      "trained_min_potential": 1.413088919580132,
+      "trained_min_win": 0.9,
+      "G1_do_contrast_pass": true,
+      "G2_greedy_direction_pass": true
+    }
+  },
+  "verdict": {
+    "G1_all_cells": true,
+    "G2_all_cells": true,
+    "L1_absolute_by_cell": {
+      "T2.0": false,
+      "T3.0": false,
+      "T4.5": true,
+      "T8.0": true
+    }
+  }
+}

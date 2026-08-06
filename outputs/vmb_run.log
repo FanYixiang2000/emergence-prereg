@@ -1,0 +1,19 @@
+seed 95231: share=0.009 loss=0.000 (r 0.9999 -> 0.9999)
+seed 95232: share=0.033 loss=0.000 (r 0.9999 -> 0.9999)
+seed 95233: share=0.027 loss=0.000 (r 1.0 -> 0.9999)
+seed 95234: share=0.038 loss=-0.000 (r 0.9999 -> 1.0)
+seed 95235: share=0.203 loss=0.365 (r 1.0 -> 0.6355)
+seed 95236: share=0.015 loss=0.000 (r 1.0 -> 1.0)
+seed 95237: share=0.007 loss=0.000 (r 1.0 -> 1.0)
+seed 95238: share=0.257 loss=0.513 (r 1.0 -> 0.4871)
+{
+  "VMB1_rank_law": false,
+  "VMB2_immunity": true,
+  "VMB3_exposure": true,
+  "resolvable": false,
+  "spearman_rho": 0.4947,
+  "spearman_p": 0.21270051737141593,
+  "n_low_share": 6,
+  "n_high_share": 0
+}
+Wrote /home/Yixiang/MPARL/GOGOGO/outputs/vulnerability_perseed.json

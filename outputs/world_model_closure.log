@@ -1,0 +1,23 @@
+policy seed 9701: training
+  K=200: eps_hat 0.0353, tv_sim 0.6413, match 0/5, abstain 0/5
+  K=1000: eps_hat 0.0517, tv_sim 0.2980, match 5/5, abstain 5/5
+  K=5000: eps_hat 0.0427, tv_sim 0.0940, match 5/5, abstain 0/5
+  K=20000: eps_hat 0.0357, tv_sim 0.0487, match 5/5, abstain 0/5
+policy seed 9702: training
+  K=200: eps_hat 0.0477, tv_sim 0.6927, match 0/5, abstain 2/5
+  K=1000: eps_hat 0.0503, tv_sim 0.2833, match 5/5, abstain 4/5
+  K=5000: eps_hat 0.0313, tv_sim 0.0740, match 5/5, abstain 0/5
+  K=20000: eps_hat 0.0383, tv_sim 0.0267, match 5/5, abstain 0/5
+policy seed 9703: training
+  K=200: eps_hat 0.0340, tv_sim 0.7833, match 0/5, abstain 0/5
+  K=1000: eps_hat 0.0403, tv_sim 0.3740, match 0/5, abstain 5/5
+  K=5000: eps_hat 0.0300, tv_sim 0.1080, match 5/5, abstain 0/5
+  K=20000: eps_hat 0.0280, tv_sim 0.0493, match 5/5, abstain 0/5
+{
+  "WM1_calibration_monotone": true,
+  "WM2_no_silent_wrong_verdict_at_K20000": true,
+  "WM3_margin_rule_catches_all_mismatches": false,
+  "wm2_violations": 0,
+  "wm3_violations": 15
+}
+Wrote /home/Yixiang/MPARL/GOGOGO/outputs/world_model_closure.json

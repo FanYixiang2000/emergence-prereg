@@ -1,0 +1,27 @@
+seed=0: G1:B5=True,t*=18.0 G2:B5=True,t*=17.0 G3:B5=False,t*=22.0 G4:B5=True,t*=17.0 G5:B5=False,t*=None
+seed=1: G1:B5=True,t*=17.0 G2:B5=True,t*=17.0 G3:B5=False,t*=22.0 G4:B5=False,t*=7.0 G5:B5=False,t*=None
+seed=2: G1:B5=True,t*=16.0 G2:B5=True,t*=16.0 G3:B5=False,t*=21.0 G4:B5=True,t*=16.0 G5:B5=False,t*=None
+seed=3: G1:B5=True,t*=17.0 G2:B5=True,t*=17.0 G3:B5=False,t*=22.0 G4:B5=True,t*=18.0 G5:B5=False,t*=None
+seed=4: G1:B5=True,t*=17.0 G2:B5=True,t*=16.0 G3:B5=False,t*=21.0 G4:B5=False,t*=None G5:B5=False,t*=None
+seed-mean G1_policy_probs: B5=True t*=17.0 dBIC=62.19
+seed-mean G2_state_coarse_0.1: B5=True t*=17.0 dBIC=56.451
+seed-mean G3_state_coarse_0.5: B5=False t*=22.0 dBIC=111.516
+seed-mean G4_behavioural_counts: B5=True t*=17.0 dBIC=42.445
+seed-mean G5_prob_truncation: B5=False t*=None dBIC=None
+{
+  "n_representations": 5,
+  "n_onset_preserved": 3,
+  "onset_preservation_rate": 0.6,
+  "t_star_values": [
+    17.0,
+    17.0,
+    17.0
+  ],
+  "t_star_range_frac_of_span": 0.0,
+  "RE2_grip_tstar_range_le_15pct": true,
+  "breaking_representations": [
+    "G3_state_coarse_0.5",
+    "G5_prob_truncation"
+  ]
+}
+Wrote /home/Yixiang/MPARL/GOGOGO/outputs/repr_equiv_grip.json

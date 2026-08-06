@@ -1,0 +1,109 @@
+{
+  "emergent": {
+    "multiberts seed0 agreement": {
+      "anchor_index": 0,
+      "observed_window_burst": 9.718852996826172,
+      "n_positions": 27,
+      "p_value": 0.037037037037037035
+    },
+    "multiberts seed1 agreement": {
+      "anchor_index": 0,
+      "observed_window_burst": 9.890498161315918,
+      "n_positions": 27,
+      "p_value": 0.037037037037037035
+    },
+    "multiberts seed2 agreement": {
+      "anchor_index": 0,
+      "observed_window_burst": 9.526368141174316,
+      "n_positions": 27,
+      "p_value": 0.037037037037037035
+    },
+    "multiberts seed3 agreement": {
+      "anchor_index": 0,
+      "observed_window_burst": 9.236162185668945,
+      "n_positions": 27,
+      "p_value": 0.037037037037037035
+    },
+    "multiberts seed4 agreement": {
+      "anchor_index": 0,
+      "observed_window_burst": 9.597623825073242,
+      "n_positions": 27,
+      "p_value": 0.037037037037037035
+    },
+    "grokking (MLP)": {
+      "anchor_index": 15,
+      "observed_window_burst": 0.7591533660888672,
+      "n_positions": 78,
+      "p_value": 0.05128205128205128
+    },
+    "grokking (transformer)": {
+      "anchor_index": 74,
+      "observed_window_burst": 4.3124604523181915,
+      "n_positions": 98,
+      "p_value": 0.030612244897959183
+    },
+    "induction 2layer": {
+      "anchor_index": 8,
+      "observed_window_burst": 2.067447543144226,
+      "n_positions": 131,
+      "p_value": 0.022900763358778626
+    },
+    "multiberts reflexive": {
+      "anchor_index": 0,
+      "observed_window_burst": 8.060491561889648,
+      "n_positions": 27,
+      "p_value": 0.037037037037037035
+    },
+    "multiberts determiner": {
+      "anchor_index": 0,
+      "observed_window_burst": 7.229245662689209,
+      "n_positions": 27,
+      "p_value": 0.037037037037037035
+    },
+    "multiberts facts": {
+      "anchor_index": 0,
+      "observed_window_burst": 5.5759429931640625,
+      "n_positions": 27,
+      "p_value": 0.037037037037037035
+    }
+  },
+  "controls": {
+    "memorizer (MLP)": {
+      "anchor_index": 74,
+      "observed_window_burst": 0.0037479400634765625,
+      "n_positions": 78,
+      "p_value": 0.9487179487179487
+    },
+    "no_structure (grok)": {
+      "anchor_index": 4,
+      "observed_window_burst": 0.011633872985839844,
+      "n_positions": 78,
+      "p_value": 0.6410256410256411
+    },
+    "induction 1layer": {
+      "anchor_index": 4,
+      "observed_window_burst": 0.03119295835494995,
+      "n_positions": 131,
+      "p_value": 0.5648854961832062
+    },
+    "induction memorizer": {
+      "anchor_index": 124,
+      "observed_window_burst": 0.0039081573486328125,
+      "n_positions": 131,
+      "p_value": 0.9923664122137404
+    },
+    "multiberts random_target": {
+      "anchor_index": 0,
+      "observed_window_burst": 9.718852996826172,
+      "n_positions": 27,
+      "p_value": 0.037037037037037035
+    },
+    "multiberts shuffled_vocab": {
+      "anchor_index": 3,
+      "observed_window_burst": 0.3049440383911133,
+      "n_positions": 26,
+      "p_value": 0.5384615384615384
+    }
+  },
+  "inference_note": "Per-run empirical window ranks only; no omnibus p value because runs are dependent and the phenomena additions include exploratory tests."
+}

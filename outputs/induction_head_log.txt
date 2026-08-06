@@ -1,0 +1,65 @@
+=== induction_2layer ===
+  step     0 induction_acc 0.021 H 5.76 C 0.00
+  step   600 induction_acc 0.901 H 1.54 C 4.68
+  step  1200 induction_acc 0.960 H 0.36 C 5.87
+  step  1800 induction_acc 0.972 H 0.23 C 6.00
+  step  2400 induction_acc 0.980 H 0.17 C 6.06
+  step  3000 induction_acc 0.981 H 0.15 C 6.08
+  step  3600 induction_acc 0.986 H 0.11 C 6.12
+  step  4200 induction_acc 0.987 H 0.11 C 6.12
+  step  4800 induction_acc 0.987 H 0.10 C 6.13
+  step  5400 induction_acc 0.987 H 0.10 C 6.13
+  step  6000 induction_acc 0.987 H 0.10 C 6.13
+  step  6600 induction_acc 0.986 H 0.10 C 6.13
+  step  7200 induction_acc 0.986 H 0.11 C 6.12
+  step  7800 induction_acc 0.987 H 0.10 C 6.13
+  -> emergent=1 failed=- (46016 params)
+=== induction_1layer ===
+  step     0 induction_acc 0.017 H 5.74 C 0.00
+  step   600 induction_acc 0.065 H 5.81 C 0.40
+  step  1200 induction_acc 0.078 H 5.18 C 1.03
+  step  1800 induction_acc 0.091 H 4.68 C 1.55
+  step  2400 induction_acc 0.105 H 4.40 C 1.84
+  step  3000 induction_acc 0.106 H 4.25 C 1.99
+  step  3600 induction_acc 0.104 H 4.12 C 2.12
+  step  4200 induction_acc 0.107 H 4.08 C 2.16
+  step  4800 induction_acc 0.103 H 4.05 C 2.20
+  step  5400 induction_acc 0.104 H 4.00 C 2.25
+  step  6000 induction_acc 0.109 H 3.99 C 2.25
+  step  6600 induction_acc 0.103 H 3.96 C 2.29
+  step  7200 induction_acc 0.111 H 3.94 C 2.31
+  step  7800 induction_acc 0.112 H 3.89 C 2.36
+  -> emergent=0 failed=burstiness;usefulness (29248 params)
+=== no_structure ===
+  step     0 induction_acc 0.021 H 5.76 C 0.00
+  step   600 induction_acc 0.020 H 6.00 C 0.23
+  step  1200 induction_acc 0.018 H 6.00 C 0.23
+  step  1800 induction_acc 0.016 H 6.00 C 0.24
+  step  2400 induction_acc 0.016 H 6.00 C 0.24
+  step  3000 induction_acc 0.017 H 6.00 C 0.24
+  step  3600 induction_acc 0.019 H 6.00 C 0.24
+  step  4200 induction_acc 0.016 H 6.00 C 0.24
+  step  4800 induction_acc 0.015 H 6.00 C 0.24
+  step  5400 induction_acc 0.017 H 6.00 C 0.24
+  step  6000 induction_acc 0.017 H 6.00 C 0.24
+  step  6600 induction_acc 0.017 H 6.00 C 0.24
+  step  7200 induction_acc 0.013 H 6.00 C 0.24
+  step  7800 induction_acc 0.013 H 6.00 C 0.24
+  -> emergent=0 failed=usefulness (46016 params)
+=== memorizer ===
+  step     0 induction_acc 0.021 H 5.76 C 0.00
+  step   600 induction_acc 0.014 H 2.77 C 3.31
+  step  1200 induction_acc 0.015 H 2.46 C 3.63
+  step  1800 induction_acc 0.016 H 2.31 C 3.79
+  step  2400 induction_acc 0.016 H 2.21 C 3.90
+  step  3000 induction_acc 0.015 H 2.13 C 3.97
+  step  3600 induction_acc 0.016 H 2.07 C 4.04
+  step  4200 induction_acc 0.016 H 2.02 C 4.10
+  step  4800 induction_acc 0.016 H 1.96 C 4.15
+  step  5400 induction_acc 0.015 H 1.92 C 4.20
+  step  6000 induction_acc 0.016 H 1.88 C 4.24
+  step  6600 induction_acc 0.014 H 1.84 C 4.28
+  step  7200 induction_acc 0.014 H 1.81 C 4.32
+  step  7800 induction_acc 0.015 H 1.79 C 4.35
+  -> emergent=0 failed=burstiness;usefulness (46016 params)
+Wrote /home/Yixiang/MPARL/GOGOGO/outputs/induction_head_summary.json

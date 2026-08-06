@@ -1,0 +1,37 @@
+probing temperature-independent controls once ...
+{
+  "condition": "greedy_nearest",
+  "n_episodes": 30,
+  "early_potential_bits": 0.0,
+  "p_win_start": 0.1,
+  "p_win_end": 0.1,
+  "final_win_rate": 0.1,
+  "mean_commit_step": 1.0
+}
+T=2.0 seed 11: potential 0.039 win 0.90 do_gap_med +1.000 (27W/0L)
+T=2.0 seed 22: potential 0.143 win 0.90 do_gap_med +1.000 (27W/0L)
+T=2.0 seed 33: potential 0.729 win 0.90 do_gap_med +0.979 (26W/0L)
+T=2.0: G1 PASS (pooled med +1.000, p 1.65e-24); G2 PASS; L1-absolute fails (expected at low T)
+T=3.0 seed 11: potential 0.555 win 0.87 do_gap_med +0.948 (25W/0L)
+T=3.0 seed 22: potential 0.918 win 0.90 do_gap_med +0.906 (27W/0L)
+T=3.0 seed 33: potential 1.405 win 0.90 do_gap_med +0.667 (23W/0L)
+T=3.0: G1 PASS (pooled med +0.885, p 5.29e-23); G2 PASS; L1-absolute fails (expected at low T)
+T=4.5 seed 11: potential 1.415 win 0.90 do_gap_med +0.448 (21W/0L)
+T=4.5 seed 22: potential 1.502 win 0.90 do_gap_med +0.292 (23W/0L)
+T=4.5 seed 33: potential 1.622 win 0.93 do_gap_med +0.125 (22W/0L)
+T=4.5: G1 PASS (pooled med +0.271, p 2.71e-20); G2 PASS; L1-absolute pass
+T=8.0 seed 11: potential 1.229 win 0.90 do_gap_med +0.031 (20W/0L)
+T=8.0 seed 22: potential 1.175 win 0.90 do_gap_med +0.062 (22W/0L)
+T=8.0 seed 33: potential 1.126 win 0.83 do_gap_med +0.031 (25W/0L)
+T=8.0: G1 PASS (pooled med +0.042, p 1.36e-20); G2 PASS; L1-absolute pass
+{
+  "G1_all_cells": true,
+  "G2_all_cells": true,
+  "L1_absolute_by_cell": {
+    "T2.0": false,
+    "T3.0": false,
+    "T4.5": true,
+    "T8.0": true
+  }
+}
+Wrote /home/Yixiang/MPARL/GOGOGO/outputs/lbf_robustness_grid.json

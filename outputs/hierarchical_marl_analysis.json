@@ -1,0 +1,188 @@
+{
+  "status": "exploratory seed-aware re-analysis and prospective planning",
+  "simple_spread": {
+    "per_seed": {
+      "11": {
+        "n_episodes": 40,
+        "mean": 0.16302083333333334,
+        "median": 0.09375000000000004,
+        "positive_fraction": 0.65,
+        "negative_fraction": 0.35,
+        "zero_fraction": 0.0
+      },
+      "22": {
+        "n_episodes": 40,
+        "mean": 0.060416666666666674,
+        "median": 0.10416666666666669,
+        "positive_fraction": 0.625,
+        "negative_fraction": 0.35,
+        "zero_fraction": 0.025
+      },
+      "33": {
+        "n_episodes": 40,
+        "mean": 0.049479166666666664,
+        "median": 0.0625,
+        "positive_fraction": 0.575,
+        "negative_fraction": 0.4,
+        "zero_fraction": 0.025
+      }
+    },
+    "seed_level": {
+      "mean_effects": [
+        0.16302083333333334,
+        0.060416666666666674,
+        0.049479166666666664
+      ],
+      "median_effects": [
+        0.09375000000000004,
+        0.10416666666666669,
+        0.0625
+      ],
+      "mean_of_seed_means": 0.09097222222222223,
+      "median_of_seed_medians": 0.09375000000000004,
+      "exact_one_sided_sign_p_seed_means": 0.125,
+      "exact_one_sided_sign_p_seed_medians": 0.125,
+      "leave_one_seed_out_mean": {
+        "11": 0.054947916666666666,
+        "22": 0.10625,
+        "33": 0.11171875
+      }
+    },
+    "cluster_bootstrap": {
+      "pooled_mean": 0.09097222222222223,
+      "pooled_mean_cluster_ci95": [
+        -0.005381944444444442,
+        0.186809895833333
+      ],
+      "pooled_median": 0.08333333333333334,
+      "pooled_median_cluster_ci95": [
+        0.03125,
+        0.20833333333333337
+      ],
+      "mean_of_seed_means": 0.09097222222222223,
+      "mean_of_seed_means_cluster_ci95": [
+        -0.005381944444444446,
+        0.18680989583333296
+      ],
+      "bootstrap_probability_mean_positive": 0.967,
+      "note": "Two-stage bootstrap resamples three observed policy seeds and then episodes; with K=3 it cannot establish broad training-population generality."
+    },
+    "random_intercept_diagnostics": {
+      "within_seed_variance": 0.19341594699667616,
+      "between_seed_variance_method_of_moments": 0.0,
+      "icc": 0.0,
+      "mean_cluster_size": 40.0,
+      "episode_count": 120,
+      "design_effect": 1.0,
+      "episode_equivalent_effective_n": 120.0,
+      "warning": "Variance components are highly unstable with only three seeds."
+    },
+    "power_planning": {
+      "assumed_seed_effect_mean": 0.09097222222222223,
+      "assumed_seed_effect_sd": 0.06263512591862966,
+      "one_sided_alpha": 0.05,
+      "simulated_power": {
+        "5": 0.84445,
+        "8": 0.98065,
+        "10": 0.9939,
+        "12": 0.9992,
+        "15": 0.9999,
+        "20": 1.0
+      },
+      "warning": "Planning simulation assumes normally distributed seed effects and uses mean/SD estimated from only three seeds."
+    }
+  },
+  "lbf": {
+    "per_seed": {
+      "11": {
+        "n_episodes": 30,
+        "mean": 0.14375,
+        "median": 0.03125,
+        "positive_fraction": 0.7666666666666667,
+        "negative_fraction": 0.0,
+        "zero_fraction": 0.23333333333333334
+      },
+      "22": {
+        "n_episodes": 30,
+        "mean": 0.10555555555555557,
+        "median": 0.041666666666666664,
+        "positive_fraction": 0.7333333333333333,
+        "negative_fraction": 0.0,
+        "zero_fraction": 0.26666666666666666
+      },
+      "33": {
+        "n_episodes": 30,
+        "mean": 0.07708333333333335,
+        "median": 0.041666666666666664,
+        "positive_fraction": 0.8,
+        "negative_fraction": 0.0,
+        "zero_fraction": 0.2
+      }
+    },
+    "seed_level": {
+      "mean_effects": [
+        0.14375,
+        0.10555555555555557,
+        0.07708333333333335
+      ],
+      "median_effects": [
+        0.03125,
+        0.041666666666666664,
+        0.041666666666666664
+      ],
+      "mean_of_seed_means": 0.1087962962962963,
+      "median_of_seed_medians": 0.041666666666666664,
+      "exact_one_sided_sign_p_seed_means": 0.125,
+      "exact_one_sided_sign_p_seed_medians": 0.125,
+      "leave_one_seed_out_mean": {
+        "11": 0.09131944444444445,
+        "22": 0.11041666666666666,
+        "33": 0.12465277777777778
+      }
+    },
+    "cluster_bootstrap": {
+      "pooled_mean": 0.10879629629629631,
+      "pooled_mean_cluster_ci95": [
+        0.07222222222222222,
+        0.15324074074074073
+      ],
+      "pooled_median": 0.041666666666666664,
+      "pooled_median_cluster_ci95": [
+        0.020833333333333332,
+        0.10416666666666667
+      ],
+      "mean_of_seed_means": 0.1087962962962963,
+      "mean_of_seed_means_cluster_ci95": [
+        0.07222222222222222,
+        0.1532407407407407
+      ],
+      "bootstrap_probability_mean_positive": 1.0,
+      "note": "Two-stage bootstrap resamples three observed policy seeds and then episodes; with K=3 it cannot establish broad training-population generality."
+    },
+    "random_intercept_diagnostics": {
+      "within_seed_variance": 0.017485166560238397,
+      "between_seed_variance_method_of_moments": 0.0005361490261813527,
+      "icc": 0.02975082610424826,
+      "mean_cluster_size": 30.0,
+      "episode_count": 90,
+      "design_effect": 1.8627739570231996,
+      "episode_equivalent_effective_n": 48.315040942393374,
+      "warning": "Variance components are highly unstable with only three seeds."
+    },
+    "power_planning": {
+      "assumed_seed_effect_mean": 0.1087962962962963,
+      "assumed_seed_effect_sd": 0.03345127668001077,
+      "one_sided_alpha": 0.05,
+      "simulated_power": {
+        "5": 1.0,
+        "8": 1.0,
+        "10": 1.0,
+        "12": 1.0,
+        "15": 1.0,
+        "20": 1.0
+      },
+      "warning": "Planning simulation assumes normally distributed seed effects and uses mean/SD estimated from only three seeds."
+    }
+  },
+  "inference_note": "Episodes quantify evaluation uncertainty conditional on policies. Training-population inference is seed-level; exact sign-test resolution is limited by the number of trained policy seeds."
+}

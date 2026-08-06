@@ -1,0 +1,6 @@
+policy,expected_return,immediate_reward,option_value,local_optimality_gap,potential_effective_modes,natural_trigger_rate,trigger_choice_tension,contextual_success_rate,counterfactual_necessity,retrospective_importance,endogenous_emergence_score
+myopic_greedy,5.0000,5.0000,0.0000,0.0000,1.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000
+always_trigger,5.4428,-1.0000,0.4428,6.0000,1.9999,0.4956,0.9999,0.4956,2.0732,13.0000,0.9911
+always_direct,3.5450,-1.0000,-1.4550,6.0000,1.9999,0.0000,0.0000,0.5050,1.9870,9.0000,0.0000
+random_preserve,4.4124,-1.0000,-0.5876,6.0000,2.8080,0.2506,0.7512,0.4900,2.1210,11.0457,1.0336
+possibility_preserving,10.0088,-1.0000,5.0088,6.0000,2.0000,0.5022,1.0000,1.0000,2.0054,10.0088,1.9999

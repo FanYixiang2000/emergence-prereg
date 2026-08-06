@@ -1,0 +1,74 @@
+{
+  "status": "genesis-comparison pilot; registered in OVERCOOKED_TRANSITION_CONTRACT.md V3 addendum; not a confirmatory flagship result",
+  "seed": 94001,
+  "learned_checkpoint": "/home/Yixiang/MPARL/GOGOGO/outputs/overcooked_transition_pilot2m_s92003.pt",
+  "clone_training_samples": 33600,
+  "systems": {
+    "scripted_roles": {
+      "n": 100,
+      "G_js_bits": 0.0,
+      "G_boot_ci95": [
+        0.0,
+        0.0
+      ],
+      "C_signed_bits": 0.0,
+      "M_score_gain": 5.799999999999997,
+      "real_score": 102.0,
+      "cut_score": 96.2,
+      "partner_action_tv": 0.0027499999999999886,
+      "eval_minutes": 0.31
+    },
+    "learned": {
+      "n": 100,
+      "G_js_bits": 0.1036490206208104,
+      "G_boot_ci95": [
+        0.05802057938706037,
+        0.18281205277930232
+      ],
+      "C_signed_bits": 0.3308125292245727,
+      "M_score_gain": 14.8,
+      "real_score": 41.0,
+      "cut_score": 26.2,
+      "partner_action_tv": 0.04500000000000001,
+      "eval_minutes": 0.48
+    },
+    "bc_clone_of_learned": {
+      "n": 100,
+      "G_js_bits": 0.1498415379020327,
+      "G_boot_ci95": [
+        0.09178916305693259,
+        0.24256275073645353
+      ],
+      "C_signed_bits": 0.43994594136740495,
+      "M_score_gain": 12.600000000000001,
+      "real_score": 28.6,
+      "cut_score": 16.0,
+      "partner_action_tv": 0.04275000000000001,
+      "eval_minutes": 0.48
+    },
+    "context_marginal": {
+      "n": 100,
+      "G_js_bits": 0.003954097759908119,
+      "G_boot_ci95": [
+        0.00035373097233166144,
+        0.03123102801712397
+      ],
+      "C_signed_bits": 0.0029674324968371746,
+      "M_score_gain": 0.0,
+      "real_score": 0.0,
+      "cut_score": 0.0,
+      "partner_action_tv": 0.03808333333333335,
+      "eval_minutes": 0.31
+    }
+  },
+  "registered_outcomes": {
+    "OTC_C1_scripted_null_learned_positive": true,
+    "OTC_C2_clone_instantaneous_G_positive": true,
+    "OTC_C3_marginal_G_at_or_below_scripted": true,
+    "OTC_C4_product_band_factor_two": false
+  },
+  "interpretation": [
+    "OTC-C2 is a registered honest negative: a copied organization retains instantaneous coupling, so a single-time real-vs-cut snapshot does NOT separate copied from learned genesis; the separation lives in the formation-history curve and training-time interventions.",
+    "OTC-C3/C4 document how far the marginal control is from product matching; a matched-product marginal control is future flagship work."
+  ]
+}

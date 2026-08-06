@@ -1,0 +1,46 @@
+head_facts: 20 probes
+tail_facts: 54 probes
+tail_words: 36 probes
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1783392182.762582 2071126 port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+I0000 00:00:1783392182.799021 2071126 cpu_feature_guard.cc:227] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 AVX512F AVX512_VNNI AVX512_BF16 AVX512_FP16 AVX_VNNI AMX_TILE AMX_INT8 AMX_BF16 FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1783392183.905867 2071126 port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+step        0 | head_facts acc 0.500 | tail_facts acc 0.611 | tail_words acc 0.472 [16s]
+step    20000 | head_facts acc 0.900 | tail_facts acc 1.000 | tail_words acc 0.889 [16s]
+step    40000 | head_facts acc 1.000 | tail_facts acc 1.000 | tail_words acc 0.833 [16s]
+step    60000 | head_facts acc 1.000 | tail_facts acc 1.000 | tail_words acc 0.917 [16s]
+step    80000 | head_facts acc 1.000 | tail_facts acc 1.000 | tail_words acc 0.972 [15s]
+step   100000 | head_facts acc 1.000 | tail_facts acc 1.000 | tail_words acc 0.972 [15s]
+step   120000 | head_facts acc 1.000 | tail_facts acc 1.000 | tail_words acc 0.972 [16s]
+step   140000 | head_facts acc 1.000 | tail_facts acc 1.000 | tail_words acc 0.944 [16s]
+step   160000 | head_facts acc 1.000 | tail_facts acc 1.000 | tail_words acc 0.972 [18s]
+step   180000 | head_facts acc 1.000 | tail_facts acc 1.000 | tail_words acc 1.000 [19s]
+step   200000 | head_facts acc 1.000 | tail_facts acc 1.000 | tail_words acc 0.944 [21s]
+step   300000 | head_facts acc 1.000 | tail_facts acc 1.000 | tail_words acc 0.972 [17s]
+step   400000 | head_facts acc 1.000 | tail_facts acc 1.000 | tail_words acc 0.944 [16s]
+step   500000 | head_facts acc 1.000 | tail_facts acc 1.000 | tail_words acc 0.972 [18s]
+step   600000 | head_facts acc 1.000 | tail_facts acc 1.000 | tail_words acc 0.944 [18s]
+step   700000 | head_facts acc 1.000 | tail_facts acc 1.000 | tail_words acc 0.917 [14s]
+step   800000 | head_facts acc 1.000 | tail_facts acc 1.000 | tail_words acc 0.972 [23s]
+step   900000 | head_facts acc 1.000 | tail_facts acc 1.000 | tail_words acc 0.917 [40s]
+step  1000000 | head_facts acc 1.000 | tail_facts acc 1.000 | tail_words acc 0.889 [17s]
+step  1100000 | head_facts acc 1.000 | tail_facts acc 1.000 | tail_words acc 0.889 [14s]
+step  1200000 | head_facts acc 1.000 | tail_facts acc 1.000 | tail_words acc 0.972 [17s]
+step  1300000 | head_facts acc 1.000 | tail_facts acc 1.000 | tail_words acc 1.000 [16s]
+step  1400000 | head_facts acc 1.000 | tail_facts acc 1.000 | tail_words acc 0.917 [17s]
+step  1500000 | head_facts acc 1.000 | tail_facts acc 1.000 | tail_words acc 0.944 [18s]
+step  1600000 | head_facts acc 1.000 | tail_facts acc 1.000 | tail_words acc 0.972 [16s]
+step  1700000 | head_facts acc 1.000 | tail_facts acc 1.000 | tail_words acc 0.972 [19s]
+step  1800000 | head_facts acc 1.000 | tail_facts acc 1.000 | tail_words acc 0.972 [19s]
+step  1900000 | head_facts acc 1.000 | tail_facts acc 1.000 | tail_words acc 0.972 [16s]
+step  2000000 | head_facts acc 1.000 | tail_facts acc 1.000 | tail_words acc 0.972 [25s]
+/home/Yixiang/miniconda3/lib/python3.13/site-packages/numpy/lib/_function_base_impl.py:3023: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[:, None]
+/home/Yixiang/miniconda3/lib/python3.13/site-packages/numpy/lib/_function_base_impl.py:3024: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[None, :]
+head_facts: emergent=1 failed=- final_acc=1.000 (window 20000, acc gain +0.500)
+tail_facts: emergent=1 failed=- final_acc=1.000 (window 20000, acc gain +0.389)
+tail_words: emergent=1 failed=- final_acc=0.972 (window 20000, acc gain +0.361)
+Wrote /home/Yixiang/MPARL/GOGOGO/outputs/multiberts_tail_summary.json

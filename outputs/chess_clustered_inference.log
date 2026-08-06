@@ -1,0 +1,25 @@
+{
+  "2015_08": {
+    "n_positions": 400,
+    "n_unique_movers": 166,
+    "largest_mover_cluster": 10,
+    "clusters_with_gt1_position": 92,
+    "auroc_point": 0.7299360279150916,
+    "auroc_mover_cluster_ci95": [
+      0.6149178893663271,
+      0.8287205278269771
+    ]
+  },
+  "2016_03": {
+    "n_positions": 400,
+    "n_unique_movers": 271,
+    "largest_mover_cluster": 5,
+    "clusters_with_gt1_position": 86,
+    "auroc_point": 0.7246097281658731,
+    "auroc_mover_cluster_ci95": [
+      0.6125352571584189,
+      0.833768334841393
+    ]
+  }
+}
+Wrote /home/Yixiang/MPARL/GOGOGO/outputs/chess_clustered_inference.json

@@ -1,0 +1,14 @@
+Gym has been unmaintained since 2022 and does not support NumPy 2.0 amongst other critical functionality.
+Please upgrade to Gymnasium, the maintained drop-in replacement of Gym, or contact the authors of your software and request that they upgrade.
+Users of this version of Gym should be able to simply replace 'import gym' with 'import gymnasium as gym' in the vast majority of cases.
+See the migration guide at https://gymnasium.farama.org/introduction/migration_guide/ for additional information.
+condition=late window=(1500000, 1860000) seed=93101
+trained in 22.67 min; evaluating
+{
+  "condition": "late",
+  "G": 0.01035923755778414,
+  "M": 10.399999999999999,
+  "score": 28.0,
+  "C_rel": 0.018748254329213232
+}
+Wrote /home/Yixiang/MPARL/GOGOGO/outputs/overcooked_intervention_late_s93101.json

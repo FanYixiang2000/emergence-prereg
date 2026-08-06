@@ -1,0 +1,44 @@
+main {
+  "n": 400,
+  "frozen_rule": {
+    "toga_base_rate": 0.0075,
+    "auroc_do_gap_vs_toga": 0.6633081444164568,
+    "auroc_shallow_gap_vs_toga": 0.6838790931989924,
+    "flag_precision_vs_toga": 0.0,
+    "flag_lift_vs_toga": 0.0,
+    "label_agreement_nnue_vs_toga": 0.8975
+  },
+  "quantile_matched": {
+    "k_positives": 38,
+    "auroc_do_gap_vs_toga_topk": 0.6151861006106426,
+    "auroc_shallow_gap_vs_toga_topk": 0.6030822913637686,
+    "flag_precision_vs_toga_topk": 0.12,
+    "flag_lift_vs_toga_topk": 1.263157894736842,
+    "label_agreement_nnue_vs_toga_topk": 0.875
+  }
+}
+replication_2016_03 {
+  "n": 400,
+  "frozen_rule": {
+    "toga_base_rate": 0.0125,
+    "auroc_do_gap_vs_toga": 0.5336708860759494,
+    "auroc_shallow_gap_vs_toga": 0.6177215189873417,
+    "flag_precision_vs_toga": 0.02666666666666667,
+    "flag_lift_vs_toga": 2.1333333333333333,
+    "label_agreement_nnue_vs_toga": 0.895
+  },
+  "quantile_matched": {
+    "k_positives": 47,
+    "auroc_do_gap_vs_toga_topk": 0.5615695256464348,
+    "auroc_shallow_gap_vs_toga_topk": 0.6257308179133265,
+    "flag_precision_vs_toga_topk": 0.2,
+    "flag_lift_vs_toga_topk": 1.7021276595744683,
+    "label_agreement_nnue_vs_toga_topk": 0.88
+  }
+}
+{
+  "TG1_auroc_gt_0.60_both_months": false,
+  "TG1_note": "frozen 150 cp rule fails through referee-scale mismatch (Toga cp scale compressed; base rate ~0.005) -- retained as a registered miss",
+  "followup_quantile_matched_auroc_gt_0.60_both_months": false
+}
+Wrote /home/Yixiang/MPARL/GOGOGO/outputs/chess_discovery_toga_referee.json

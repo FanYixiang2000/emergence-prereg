@@ -1,0 +1,56 @@
+Gym has been unmaintained since 2022 and does not support NumPy 2.0 amongst other critical functionality.
+Please upgrade to Gymnasium, the maintained drop-in replacement of Gym, or contact the authors of your software and request that they upgrade.
+Users of this version of Gym should be able to simply replace 'import gym' with 'import gymnasium as gym' in the vast majority of cases.
+See the migration guide at https://gymnasium.farama.org/introduction/migration_guide/ for additional information.
+seed 93004 ck 40000: O=0.7439 score=0.00 top2=0.256
+seed 93004 ck 80000: O=0.7435 score=0.50 top2=0.243
+seed 93004 ck 120000: O=0.7279 score=3.00 top2=0.272
+seed 93004 ck 160000: O=0.7615 score=0.75 top2=0.231
+seed 93004 ck 240000: O=0.7505 score=2.75 top2=0.250
+seed 93004 ck 320000: O=0.7697 score=2.25 top2=0.258
+seed 93004 ck 480000: O=0.7620 score=3.00 top2=0.261
+seed 93004 ck 640000: O=0.7065 score=7.25 top2=0.337
+seed 93004 ck 820000: O=0.7112 score=15.25 top2=0.299
+seed 93004 ck 1000000: O=0.7440 score=25.25 top2=0.292
+seed 93004 ck 1250000: O=0.6809 score=22.75 top2=0.353
+seed 93004 ck 1500000: O=0.6487 score=25.75 top2=0.406
+seed 93004 ck 1750000: O=0.6813 score=39.25 top2=0.369
+seed 93004 ck 2000000: O=0.6652 score=36.75 top2=0.350
+==> seed 93004: b5=False t*=None dBIC=None drop=0.0787 cap_cross=1750000 leads=False top2 0.26->0.35
+seed 93005 ck 40000: O=0.7516 score=0.25 top2=0.260
+seed 93005 ck 80000: O=0.6895 score=0.25 top2=0.319
+seed 93005 ck 120000: O=0.7595 score=0.00 top2=0.239
+seed 93005 ck 160000: O=0.7509 score=0.75 top2=0.246
+seed 93005 ck 240000: O=0.7413 score=2.00 top2=0.271
+seed 93005 ck 320000: O=0.7640 score=3.00 top2=0.274
+seed 93005 ck 480000: O=0.7616 score=5.75 top2=0.279
+seed 93005 ck 640000: O=0.7422 score=9.75 top2=0.282
+seed 93005 ck 820000: O=0.7128 score=25.00 top2=0.297
+seed 93005 ck 1000000: O=0.6731 score=38.75 top2=0.346
+seed 93005 ck 1250000: O=0.6587 score=46.25 top2=0.342
+seed 93005 ck 1500000: O=0.6315 score=54.50 top2=0.403
+seed 93005 ck 1750000: O=0.6261 score=61.00 top2=0.401
+seed 93005 ck 2000000: O=0.6412 score=69.25 top2=0.375
+==> seed 93005: b5=False t*=480000.0 dBIC=4.599 drop=0.1104 cap_cross=2000000 leads=False top2 0.26->0.38
+seed 93006 ck 40000: O=0.7344 score=1.00 top2=0.279
+seed 93006 ck 80000: O=0.7364 score=0.50 top2=0.283
+seed 93006 ck 120000: O=0.7216 score=0.00 top2=0.299
+seed 93006 ck 160000: O=0.7197 score=0.50 top2=0.287
+seed 93006 ck 240000: O=0.7488 score=1.00 top2=0.261
+seed 93006 ck 320000: O=0.7137 score=1.75 top2=0.326
+seed 93006 ck 480000: O=0.7444 score=2.50 top2=0.257
+seed 93006 ck 640000: O=0.7246 score=5.00 top2=0.308
+seed 93006 ck 820000: O=0.7337 score=10.00 top2=0.314
+seed 93006 ck 1000000: O=0.6731 score=10.00 top2=0.365
+seed 93006 ck 1250000: O=0.6889 score=22.50 top2=0.350
+seed 93006 ck 1500000: O=0.6503 score=34.25 top2=0.415
+seed 93006 ck 1750000: O=0.6415 score=29.25 top2=0.418
+seed 93006 ck 2000000: O=0.6344 score=34.75 top2=0.410
+==> seed 93006: b5=False t*=480000.0 dBIC=0.878 drop=0.1 cap_cross=1500000 leads=False top2 0.28->0.41
+{
+  "OCC1_onset_real_ml": false,
+  "OCC2_collapse_leads_capability": false,
+  "OCC3_selectivity": false,
+  "onset_seeds": []
+}
+Wrote /home/Yixiang/MPARL/GOGOGO/outputs/overcooked_occupancy_breakpoint.json

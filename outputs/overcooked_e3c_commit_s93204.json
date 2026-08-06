@@ -1,0 +1,52 @@
+{
+  "status": "E3C confirmatory intervention run; registered in V2_ALIGNMENT_PREREGISTRATION.md before launch",
+  "condition": "commit",
+  "window": [
+    640000,
+    1000000
+  ],
+  "seed": 93204,
+  "train_minutes": 25.74,
+  "certificate_2M": {
+    "n": 100,
+    "G_js_bits": 0.007925262700490727,
+    "G_boot_ci95": [
+      0.0011891888149335717,
+      0.03911945751955965
+    ],
+    "C_signed_bits": 0.06839064421608865,
+    "M_score_gain": 7.0,
+    "real_score": 24.2,
+    "cut_score": 17.2,
+    "partner_action_tv": 0.038833333333333345,
+    "time_bins": {
+      "120": {
+        "G_js_bits": 0.05009463525174782,
+        "M_score_gain": 4.0
+      },
+      "160": {
+        "G_js_bits": 0.015798361143733883,
+        "M_score_gain": 7.0
+      },
+      "20": {
+        "G_js_bits": 0.07903561344759248,
+        "M_score_gain": 5.0
+      },
+      "40": {
+        "G_js_bits": 0.01683638074565074,
+        "M_score_gain": 14.0
+      },
+      "80": {
+        "G_js_bits": 0.00985362339082755,
+        "M_score_gain": 5.0
+      }
+    }
+  },
+  "joint_ladder_2M": {
+    "C_individual": 0.37587265030737704,
+    "C_env": 0.022831109559027674,
+    "C_relational": 0.005966608006124474,
+    "C_total": 0.4046703678725292,
+    "collapse_norm": 0.07827393390806126
+  }
+}

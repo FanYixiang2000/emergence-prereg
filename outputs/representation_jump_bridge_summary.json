@@ -1,0 +1,68 @@
+{
+  "summary": [
+    {
+      "regime": "ordinary_gradual",
+      "total_collapse_kl": 1.3788115969219825,
+      "entropy_drop": 1.3788115969219827,
+      "max_collapse_burst": 0.03927398473944366,
+      "max_representation_jump": 0.008303922891921141,
+      "peak_collapse_burst_t": 79.0,
+      "peak_representation_jump_t": 50.0,
+      "peak_alignment": 0.03333333333333333,
+      "burst_jump_correlation": 0.18437713767914013,
+      "final_utility": 0.7,
+      "guidance": 0.75,
+      "stability": 0.85,
+      "nondecomposable": 0.25,
+      "representation_bridge_score": 7.45368562908307e-08
+    },
+    {
+      "regime": "reward_shaped",
+      "total_collapse_kl": 1.3788115969219825,
+      "entropy_drop": 1.3788115969219827,
+      "max_collapse_burst": 0.05169053878346985,
+      "max_representation_jump": 0.011210295904093448,
+      "peak_collapse_burst_t": 58.0,
+      "peak_representation_jump_t": 39.0,
+      "peak_alignment": 0.05,
+      "burst_jump_correlation": 0.6491302571273174,
+      "final_utility": 0.85,
+      "guidance": 0.95,
+      "stability": 0.96,
+      "nondecomposable": 0.2,
+      "representation_bridge_score": 1.5346881903205468e-07
+    },
+    {
+      "regime": "collapse_emergence",
+      "total_collapse_kl": 1.2178277964335755,
+      "entropy_drop": 1.217827796601963,
+      "max_collapse_burst": 0.16571612674857578,
+      "max_representation_jump": 0.10103335257428926,
+      "peak_collapse_burst_t": 51.0,
+      "peak_representation_jump_t": 49.0,
+      "peak_alignment": 0.3333333333333333,
+      "burst_jump_correlation": 0.8991485134749263,
+      "final_utility": 0.8999997054560286,
+      "guidance": 0.1,
+      "stability": 0.94,
+      "nondecomposable": 0.88,
+      "representation_bridge_score": 0.0033622895964279353
+    },
+    {
+      "regime": "random_instability",
+      "total_collapse_kl": 0.0270741347137205,
+      "entropy_drop": 0.12293338603977588,
+      "max_collapse_burst": 0.008636616025417362,
+      "max_representation_jump": 0.045057797307979756,
+      "peak_collapse_burst_t": 16.0,
+      "peak_representation_jump_t": 75.0,
+      "peak_alignment": 0.016666666666666666,
+      "burst_jump_correlation": 0.10369568032834693,
+      "final_utility": 0.35,
+      "guidance": 0.05,
+      "stability": 0.18,
+      "nondecomposable": 0.1,
+      "representation_bridge_score": 4.025196982223245e-09
+    }
+  ]
+}

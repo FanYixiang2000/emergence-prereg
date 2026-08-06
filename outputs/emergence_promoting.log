@@ -1,0 +1,9 @@
+ARM N: selective 0.39 value 5.54
+ARM V: selective 0.53 value 5.54
+ARM E: selective 0.78 value 5.29
+{
+  "PE1_E_beats_N_by_0.25": "0.78 vs 0.39 -> True",
+  "PE2_E_beats_V_by_0.15": "0.78 vs 0.53 -> True",
+  "PE3_no_value_sacrifice": "5.29 vs 5.54 -> True"
+}
+Wrote /home/Yixiang/MPARL/GOGOGO/outputs/emergence_promoting_selection.json

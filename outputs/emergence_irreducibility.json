@@ -1,0 +1,123 @@
+{
+  "status": "irreducibility battery: endogenous, selective contraction of joint futures with lower-order irreducibility and macro causal contribution; IR-1..6 frozen in docstring",
+  "thresholds": {
+    "C_irr_strong": 0.3,
+    "C_irr_reducible": 0.05,
+    "D_higher": 0.5
+  },
+  "systems": {
+    "env_redundant": {
+      "C_total": 1.1833940178841726,
+      "O_information": 0.45777833755397745,
+      "C_irr_marginal": 0.0,
+      "C_irr_given_env": 0.0,
+      "D_higher": 0.0,
+      "macro_gain": -0.6411723554381505,
+      "V_gain": 0.0,
+      "selectivity": 0.5,
+      "strong_emergence": false,
+      "reducible": true
+    },
+    "env_synergy": {
+      "C_total": 1.0,
+      "O_information": -1.0,
+      "C_irr_marginal": 1.0,
+      "C_irr_given_env": 0.0,
+      "D_higher": 0.0,
+      "macro_gain": 0.0,
+      "V_gain": 0.5,
+      "selectivity": 1.0,
+      "strong_emergence": false,
+      "reducible": true
+    },
+    "pairwise_chain": {
+      "C_total": 1.0620088128214378,
+      "O_information": 0.3199229542717199,
+      "C_irr_marginal": 0.0,
+      "C_irr_given_env": 0.0,
+      "D_higher": 0.0,
+      "macro_gain": -0.3819317670931581,
+      "V_gain": 0.0,
+      "selectivity": 0.5,
+      "strong_emergence": false,
+      "reducible": true
+    },
+    "role_parity": {
+      "C_total": 1.0,
+      "O_information": -1.0,
+      "C_irr_marginal": 1.0,
+      "C_irr_given_env": 1.0,
+      "D_higher": 1.0,
+      "macro_gain": 0.0,
+      "V_gain": 0.5,
+      "selectivity": 1.0,
+      "strong_emergence": true,
+      "reducible": false
+    },
+    "consensus": {
+      "C_total": 2.0,
+      "O_information": 1.0,
+      "C_irr_marginal": 0.0,
+      "C_irr_given_env": 0.0,
+      "D_higher": 0.0,
+      "macro_gain": -2.0,
+      "V_gain": 0.0,
+      "selectivity": 0.5,
+      "strong_emergence": false,
+      "reducible": true
+    }
+  },
+  "gaussian_common_cause": {
+    "sigma_E2": 1.0,
+    "sigma_n2": 0.5,
+    "O_information_bits": 0.298229069779494,
+    "note": "time-invariant common Gaussian cause -> redundancy"
+  },
+  "consensus_matched": {
+    "C_total": 0.9982635805385991,
+    "O_information": 0.3583913218016921,
+    "C_irr_marginal": 0.0,
+    "C_irr_given_env": 0.0,
+    "D_higher": 0.0,
+    "macro_gain": -0.35665490234029074,
+    "V_gain": 0.0,
+    "selectivity": 0.5,
+    "strong_emergence": false,
+    "reducible": true,
+    "alpha": 0.7469849246231155,
+    "C_total_gap_vs_role": 0.0017364194614009065
+  },
+  "magnitude_vs_strength": {
+    "order": [
+      "env_redundant",
+      "env_synergy",
+      "pairwise_chain",
+      "role_parity",
+      "consensus"
+    ],
+    "C_total": [
+      1.1833940178841726,
+      1.0,
+      1.0620088128214378,
+      1.0,
+      2.0
+    ],
+    "C_irr_given_env": [
+      0.0,
+      0.0,
+      0.0,
+      1.0,
+      0.0
+    ],
+    "spearman": 0.0,
+    "argmax_C_total": "consensus"
+  },
+  "registered_outcomes": {
+    "IR1_environment_no_go_is_real": true,
+    "IR2_framework_defeats_no_go": true,
+    "IR3_pairwise_reducible_PITHON": true,
+    "IR4_irreducible_role_lock": true,
+    "IR5_magnitude_not_strength": true,
+    "IR6_functional_vs_pathological_matched": true
+  }
+}

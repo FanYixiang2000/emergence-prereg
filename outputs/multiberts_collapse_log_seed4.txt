@@ -1,0 +1,40 @@
+288 probes in 6 length-batches
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1783340162.004842  609044 port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+I0000 00:00:1783340162.047482  609044 cpu_feature_guard.cc:227] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 AVX512F AVX512_VNNI AVX512_BF16 AVX512_FP16 AVX_VNNI AMX_TILE AMX_INT8 AMX_BF16 FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1783340163.240370  609044 port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+step        0 H  14.73 C   0.00 agree 0.497 (attractor 0.500) rand 0.476 perm 0.503 [19s]
+step    20000 H   5.45 C   9.60 agree 0.844 (attractor 0.729) rand 0.503 perm 0.479 [18s]
+step    40000 H   4.22 C  10.87 agree 0.927 (attractor 0.875) rand 0.514 perm 0.521 [16s]
+step    60000 H   4.15 C  10.93 agree 0.951 (attractor 0.910) rand 0.493 perm 0.507 [18s]
+step    80000 H   4.11 C  11.01 agree 0.983 (attractor 0.972) rand 0.483 perm 0.479 [13s]
+step   100000 H   4.03 C  11.10 agree 0.958 (attractor 0.938) rand 0.510 perm 0.486 [15s]
+step   120000 H   4.04 C  11.06 agree 0.958 (attractor 0.938) rand 0.521 perm 0.469 [21s]
+step   140000 H   4.17 C  10.97 agree 0.972 (attractor 0.958) rand 0.524 perm 0.424 [15s]
+step   160000 H   3.86 C  11.28 agree 0.958 (attractor 0.931) rand 0.531 perm 0.392 [15s]
+step   180000 H   4.19 C  10.88 agree 0.965 (attractor 0.944) rand 0.531 perm 0.462 [25s]
+step   200000 H   3.66 C  11.45 agree 0.944 (attractor 0.917) rand 0.524 perm 0.451 [15s]
+step   300000 H   3.91 C  11.21 agree 0.962 (attractor 0.931) rand 0.514 perm 0.434 [15s]
+step   400000 H   3.92 C  11.22 agree 0.958 (attractor 0.944) rand 0.497 perm 0.497 [15s]
+step   500000 H   3.92 C  11.19 agree 0.976 (attractor 0.958) rand 0.556 perm 0.493 [17s]
+step   600000 H   3.63 C  11.48 agree 0.972 (attractor 0.951) rand 0.528 perm 0.500 [20s]
+step   700000 H   3.93 C  11.21 agree 0.972 (attractor 0.951) rand 0.528 perm 0.486 [15s]
+step   800000 H   4.06 C  11.04 agree 0.979 (attractor 0.965) rand 0.549 perm 0.528 [24s]
+step   900000 H   4.20 C  10.94 agree 0.976 (attractor 0.958) rand 0.549 perm 0.538 [14s]
+step  1000000 H   3.94 C  11.17 agree 0.979 (attractor 0.965) rand 0.535 perm 0.510 [15s]
+step  1100000 H   4.00 C  11.12 agree 0.965 (attractor 0.938) rand 0.531 perm 0.524 [14s]
+step  1200000 H   3.82 C  11.29 agree 0.976 (attractor 0.958) rand 0.521 perm 0.559 [17s]
+step  1300000 H   3.90 C  11.20 agree 0.972 (attractor 0.951) rand 0.566 perm 0.514 [21s]
+step  1400000 H   3.69 C  11.41 agree 0.969 (attractor 0.944) rand 0.528 perm 0.531 [19s]
+step  1500000 H   3.82 C  11.27 agree 0.965 (attractor 0.938) rand 0.524 perm 0.524 [15s]
+step  1600000 H   3.83 C  11.27 agree 0.976 (attractor 0.958) rand 0.517 perm 0.517 [16s]
+step  1700000 H   3.76 C  11.34 agree 0.979 (attractor 0.965) rand 0.503 perm 0.493 [18s]
+step  1800000 H   3.86 C  11.24 agree 0.976 (attractor 0.958) rand 0.517 perm 0.497 [15s]
+step  1900000 H   3.80 C  11.30 agree 0.969 (attractor 0.944) rand 0.514 perm 0.514 [13s]
+step  2000000 H   3.81 C  11.28 agree 0.969 (attractor 0.944) rand 0.507 perm 0.521 [19s]
+multiberts_agreement: emergent=1 failed=-
+multiberts_random_target: emergent=0 failed=usefulness
+shuffled_vocab: emergent=0 failed=usefulness
+Wrote /home/Yixiang/MPARL/GOGOGO/outputs/multiberts_collapse_summary_seed4.json

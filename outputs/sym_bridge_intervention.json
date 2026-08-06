@@ -1,0 +1,66 @@
+{
+  "status": "SYM-BRIDGE-INT profile predicts controllability; preregistered",
+  "config": {
+    "N": 100,
+    "horizon": 900,
+    "taus": [
+      120,
+      220,
+      280,
+      340,
+      460,
+      620
+    ],
+    "episodes_per_tau": 200,
+    "impulse": {
+      "incipient_multiplier": 0.55,
+      "opposite_multiplier": 1.45
+    }
+  },
+  "per_tau": {
+    "120": {
+      "mean_openness": 0.98661,
+      "median_openness": 0.99322,
+      "switch_rate": 1.0,
+      "rank_corr_within_tau": -0.04495
+    },
+    "220": {
+      "mean_openness": 0.94665,
+      "median_openness": 0.97197,
+      "switch_rate": 1.0,
+      "rank_corr_within_tau": 0.0245
+    },
+    "280": {
+      "mean_openness": 0.88935,
+      "median_openness": 0.92422,
+      "switch_rate": 0.945,
+      "rank_corr_within_tau": 0.26574
+    },
+    "340": {
+      "mean_openness": 0.81907,
+      "median_openness": 0.84634,
+      "switch_rate": 0.815,
+      "rank_corr_within_tau": 0.44139
+    },
+    "460": {
+      "mean_openness": 0.6215,
+      "median_openness": 0.59055,
+      "switch_rate": 0.435,
+      "rank_corr_within_tau": 0.74083
+    },
+    "620": {
+      "mean_openness": 0.36197,
+      "median_openness": 0.2519,
+      "switch_rate": 0.16,
+      "rank_corr_within_tau": 0.44315
+    }
+  },
+  "registered_outcomes": {
+    "SBI1_openness_control_law": true,
+    "SBI2_pre_post_contrast": true,
+    "SBI3_episode_level_rank": true,
+    "SBI4_late_robustness": true,
+    "tau_level_rank_corr": 0.94286,
+    "pooled_episode_rank_corr": 0.66437
+  }
+}

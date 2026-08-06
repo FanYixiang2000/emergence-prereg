@@ -1,0 +1,66 @@
+training PPO seed 77 ...
+  seed 77 episode 500: mean return (last 100) -23.67
+  seed 77 episode 1000: mean return (last 100) -22.18
+  seed 77 episode 1500: mean return (last 100) -21.33
+  seed 77 episode 2000: mean return (last 100) -20.90
+  seed 77 episode 2500: mean return (last 100) -21.06
+  seed 77 episode 3000: mean return (last 100) -20.95
+  seed 77 episode 3500: mean return (last 100) -20.87
+  seed 77 episode 4000: mean return (last 100) -20.62
+  seed 77 episode 4500: mean return (last 100) -20.43
+  seed 77 episode 5000: mean return (last 100) -20.17
+  seed 77 episode 5500: mean return (last 100) -19.49
+  seed 77 episode 6000: mean return (last 100) -19.50
+  seed 77 episode 6500: mean return (last 100) -19.93
+  seed 77 episode 7000: mean return (last 100) -19.47
+  seed 77 episode 7500: mean return (last 100) -20.37
+  seed 77 episode 8000: mean return (last 100) -20.02
+{
+  "condition": "trained_seed77",
+  "n_episodes": 40,
+  "early_potential_bits": 1.507383532839254,
+  "p_win_start": 0.3984375,
+  "p_win_end": 0.475,
+  "final_bijection_rate": 0.475,
+  "mean_commit_step": 9.5,
+  "do_gap_median": 0.0,
+  "do_gap_mean": 0.024999999999999988,
+  "do_sign_wins": 18,
+  "do_sign_losses": 18,
+  "do_sign_p": 0.5660302997857798
+}
+{
+  "D1_potential": {
+    "trained_early_potential": [
+      1.507383532839254
+    ],
+    "pass": true
+  },
+  "D2_useful_collapse": {
+    "trained_win_shift": [
+      0.07656249999999998
+    ],
+    "trained_bijection_rate": [
+      0.475
+    ],
+    "untrained_bijection_rate": 0.25,
+    "noise_bijection_rate": 0.2,
+    "pass": false
+  },
+  "D3_counterfactual": {
+    "pooled_do_gap_median": 0.0,
+    "pooled_sign_wins": 18,
+    "pooled_sign_losses": 18,
+    "pooled_sign_p": 0.5660302997857798,
+    "pass": false
+  },
+  "D4_greedy_contrast": {
+    "greedy_bijection_rate": 0.425,
+    "greedy_early_potential": 0.0,
+    "trained_min_bijection": 0.475,
+    "trained_min_potential": 1.507383532839254,
+    "pass": true
+  },
+  "all_pass": false
+}
+Wrote /home/Yixiang/MPARL/GOGOGO/outputs/deep_marl_collapse_mappo_pilot.json

@@ -1,0 +1,40 @@
+{
+  "status": "continuous-record axioms A1-A8 machine verification",
+  "results": {
+    "A1_nullity": {
+      "max_js_identical_laws": 0.0,
+      "pass": true
+    },
+    "A2_boundedness": {
+      "n": 20000,
+      "pass": true
+    },
+    "A3_monotonicity": {
+      "paths": 2000,
+      "pass": true,
+      "worst_drop": 0.0
+    },
+    "A4_data_processing": {
+      "n": 20000,
+      "pass": true,
+      "worst_gain": 0.0
+    },
+    "A5_context_sensitivity": {
+      "n": 20000,
+      "pass": true
+    },
+    "A6_value_separability": {
+      "source": "generator_calibration.json GC-4",
+      "pass": true
+    },
+    "A7_provenance_separability": {
+      "source": "generator_calibration.json GC-5",
+      "pass": true
+    },
+    "A8_abstention": {
+      "source": "world_model_closure_followup.json",
+      "pass": true
+    }
+  },
+  "all_pass": true
+}

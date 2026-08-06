@@ -1,0 +1,56 @@
+{
+  "k": 4,
+  "episodes": 160,
+  "results": {
+    "marl_learned": {
+      "purity": 0.8875,
+      "hand_h0_bits": 1.527794893064485,
+      "cluster_h0_bits": 1.9377194204802266,
+      "hand_modes": 2.8834477760439943,
+      "cluster_modes": 3.8309957372624948,
+      "potential_verdict_hand": true,
+      "potential_verdict_cluster": true
+    },
+    "marl_untrained": {
+      "purity": 0.8375,
+      "hand_h0_bits": 0.7219280948873623,
+      "cluster_h0_bits": 1.924048644559932,
+      "hand_modes": 1.6493848884661177,
+      "cluster_modes": 3.794865213061093,
+      "potential_verdict_hand": true,
+      "potential_verdict_cluster": true
+    },
+    "nearest_only": {
+      "purity": 0.94375,
+      "hand_h0_bits": 0.9837082626231859,
+      "cluster_h0_bits": 1.6672539587641393,
+      "hand_modes": 1.9775418998545102,
+      "cluster_modes": 3.176094765027547,
+      "potential_verdict_hand": true,
+      "potential_verdict_cluster": true
+    },
+    "role_oracle": {
+      "purity": 0.99375,
+      "hand_h0_bits": 0.9998872865145765,
+      "cluster_h0_bits": 1.9704809076916359,
+      "hand_modes": 1.99984375203441,
+      "cluster_modes": 3.9189873271351603,
+      "potential_verdict_hand": true,
+      "potential_verdict_cluster": true
+    },
+    "damage_aware": {
+      "purity": 0.91875,
+      "hand_h0_bits": 1.4031428301031477,
+      "cluster_h0_bits": 1.9471170557886837,
+      "hand_modes": 2.644771035695608,
+      "cluster_modes": 3.8560320847210976,
+      "potential_verdict_hand": true,
+      "potential_verdict_cluster": true
+    }
+  },
+  "checks": {
+    "u1_learned_purity": true,
+    "u2_learned_modes_agree": false,
+    "u3_potential_verdicts_unchanged": true
+  }
+}

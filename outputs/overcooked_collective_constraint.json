@@ -1,0 +1,1160 @@
+{
+  "status": "read-only Overcooked role-constraint bridge; does not claim full interaction-broken C,G,M;N|E,R certificate because checkpoints/trajectories are absent",
+  "limitations": {
+    "has_saved_checkpoints": false,
+    "has_step_trajectories": false,
+    "full_interaction_broken_certificate_available": false,
+    "reason": "stored round-1 artifacts contain per-seed metrics only; learned .pt files are absent in this checkout"
+  },
+  "thresholds": {
+    "C_ctx_bits": 0.05,
+    "G_ctx_js_bits": 0.01,
+    "contract_b_selectivity": 0.5
+  },
+  "seeds": {
+    "77001": {
+      "learned": {
+        "trigger_rates": {
+          "0": 0.55,
+          "1": 1.0
+        },
+        "P_real_context_role": {
+          "0_1": 0.275,
+          "0_0": 0.22499999999999998,
+          "1_1": 0.5,
+          "1_0": 0.0
+        },
+        "P_broken_context_role": {
+          "0_1": 0.3875,
+          "0_0": 0.11249999999999999,
+          "1_1": 0.3875,
+          "1_0": 0.11249999999999999
+        },
+        "C_ctx_bits": 0.2728056020191095,
+        "G_ctx_js_bits": 0.08211858470842559,
+        "M_reward_gain": 90.75,
+        "natural_score": 90.75,
+        "do_block_score": 0.0,
+        "verdict": 0,
+        "failed": [
+          "conditional_selectivity",
+          "acquisition"
+        ]
+      },
+      "learned_contract_b": {
+        "potential_bits": 1.7758157276191362,
+        "conditional_selectivity": 0.575,
+        "specificity_js_bits": 1.0,
+        "usefulness_gap": 0.5
+      },
+      "scripted_roles": {
+        "trigger_rates": {
+          "0": 1.0,
+          "1": 1.0
+        },
+        "P_real_context_role": {
+          "0_1": 0.5,
+          "0_0": 0.0,
+          "1_1": 0.5,
+          "1_0": 0.0
+        },
+        "P_broken_context_role": {
+          "0_1": 0.5,
+          "0_0": 0.0,
+          "1_1": 0.5,
+          "1_0": 0.0
+        },
+        "C_ctx_bits": 0.0,
+        "G_ctx_js_bits": 0.0,
+        "M_reward_gain": 330.0,
+        "natural_score": 330.0,
+        "do_block_score": 0.0,
+        "verdict": 0,
+        "failed": [
+          "potential",
+          "conditional_selectivity",
+          "endogeneity",
+          "acquisition"
+        ]
+      },
+      "bc_clone": {
+        "trigger_rates": {
+          "0": 1.0,
+          "1": 1.0
+        },
+        "P_real_context_role": {
+          "0_1": 0.5,
+          "0_0": 0.0,
+          "1_1": 0.5,
+          "1_0": 0.0
+        },
+        "P_broken_context_role": {
+          "0_1": 0.5,
+          "0_0": 0.0,
+          "1_1": 0.5,
+          "1_0": 0.0
+        },
+        "C_ctx_bits": 0.0,
+        "G_ctx_js_bits": 0.0,
+        "M_reward_gain": 330.0,
+        "natural_score": 330.0,
+        "do_block_score": 0.0,
+        "verdict": 0,
+        "failed": [
+          "potential",
+          "conditional_selectivity",
+          "endogeneity",
+          "acquisition"
+        ]
+      }
+    },
+    "77002": {
+      "learned": {
+        "trigger_rates": {
+          "0": 0.425,
+          "1": 1.0
+        },
+        "P_real_context_role": {
+          "0_1": 0.2125,
+          "0_0": 0.2875,
+          "1_1": 0.5,
+          "1_0": 0.0
+        },
+        "P_broken_context_role": {
+          "0_1": 0.35625,
+          "0_0": 0.14375,
+          "1_1": 0.35625,
+          "1_0": 0.14375
+        },
+        "C_ctx_bits": 0.37361576611699976,
+        "G_ctx_js_bits": 0.11148539260889936,
+        "M_reward_gain": 93.75,
+        "natural_score": 94.25,
+        "do_block_score": 0.5,
+        "verdict": 1,
+        "failed": []
+      },
+      "learned_contract_b": {
+        "potential_bits": 1.7744187703937722,
+        "conditional_selectivity": 0.525,
+        "specificity_js_bits": 1.0,
+        "usefulness_gap": 0.5125
+      },
+      "scripted_roles": {
+        "trigger_rates": {
+          "0": 1.0,
+          "1": 1.0
+        },
+        "P_real_context_role": {
+          "0_1": 0.5,
+          "0_0": 0.0,
+          "1_1": 0.5,
+          "1_0": 0.0
+        },
+        "P_broken_context_role": {
+          "0_1": 0.5,
+          "0_0": 0.0,
+          "1_1": 0.5,
+          "1_0": 0.0
+        },
+        "C_ctx_bits": 0.0,
+        "G_ctx_js_bits": 0.0,
+        "M_reward_gain": 330.0,
+        "natural_score": 330.0,
+        "do_block_score": 0.0,
+        "verdict": 0,
+        "failed": [
+          "potential",
+          "conditional_selectivity",
+          "endogeneity",
+          "acquisition"
+        ]
+      },
+      "bc_clone": {
+        "trigger_rates": {
+          "0": 1.0,
+          "1": 1.0
+        },
+        "P_real_context_role": {
+          "0_1": 0.5,
+          "0_0": 0.0,
+          "1_1": 0.5,
+          "1_0": 0.0
+        },
+        "P_broken_context_role": {
+          "0_1": 0.5,
+          "0_0": 0.0,
+          "1_1": 0.5,
+          "1_0": 0.0
+        },
+        "C_ctx_bits": 0.0,
+        "G_ctx_js_bits": 0.0,
+        "M_reward_gain": 330.0,
+        "natural_score": 330.0,
+        "do_block_score": 0.0,
+        "verdict": 0,
+        "failed": [
+          "potential",
+          "conditional_selectivity",
+          "endogeneity",
+          "acquisition"
+        ]
+      }
+    },
+    "77003": {
+      "learned": {
+        "trigger_rates": {
+          "0": 0.45,
+          "1": 1.0
+        },
+        "P_real_context_role": {
+          "0_1": 0.225,
+          "0_0": 0.275,
+          "1_1": 0.5,
+          "1_0": 0.0
+        },
+        "P_broken_context_role": {
+          "0_1": 0.3625,
+          "0_0": 0.1375,
+          "1_1": 0.3625,
+          "1_0": 0.1375
+        },
+        "C_ctx_bits": 0.3521609513007117,
+        "G_ctx_js_bits": 0.10525653417821577,
+        "M_reward_gain": 107.25,
+        "natural_score": 107.25,
+        "do_block_score": 0.0,
+        "verdict": 1,
+        "failed": []
+      },
+      "learned_contract_b": {
+        "potential_bits": 1.7564438107590803,
+        "conditional_selectivity": 0.55,
+        "specificity_js_bits": 1.0,
+        "usefulness_gap": 0.5
+      },
+      "scripted_roles": {
+        "trigger_rates": {
+          "0": 1.0,
+          "1": 1.0
+        },
+        "P_real_context_role": {
+          "0_1": 0.5,
+          "0_0": 0.0,
+          "1_1": 0.5,
+          "1_0": 0.0
+        },
+        "P_broken_context_role": {
+          "0_1": 0.5,
+          "0_0": 0.0,
+          "1_1": 0.5,
+          "1_0": 0.0
+        },
+        "C_ctx_bits": 0.0,
+        "G_ctx_js_bits": 0.0,
+        "M_reward_gain": 330.0,
+        "natural_score": 330.0,
+        "do_block_score": 0.0,
+        "verdict": 0,
+        "failed": [
+          "potential",
+          "conditional_selectivity",
+          "endogeneity",
+          "acquisition"
+        ]
+      },
+      "bc_clone": {
+        "trigger_rates": {
+          "0": 1.0,
+          "1": 1.0
+        },
+        "P_real_context_role": {
+          "0_1": 0.5,
+          "0_0": 0.0,
+          "1_1": 0.5,
+          "1_0": 0.0
+        },
+        "P_broken_context_role": {
+          "0_1": 0.5,
+          "0_0": 0.0,
+          "1_1": 0.5,
+          "1_0": 0.0
+        },
+        "C_ctx_bits": 0.0,
+        "G_ctx_js_bits": 0.0,
+        "M_reward_gain": 330.0,
+        "natural_score": 330.0,
+        "do_block_score": 0.0,
+        "verdict": 0,
+        "failed": [
+          "potential",
+          "conditional_selectivity",
+          "endogeneity",
+          "acquisition"
+        ]
+      }
+    },
+    "77004": {
+      "learned": {
+        "trigger_rates": {
+          "0": 0.175,
+          "1": 1.0
+        },
+        "P_real_context_role": {
+          "0_1": 0.0875,
+          "0_0": 0.4125,
+          "1_1": 0.5,
+          "1_0": 0.0
+        },
+        "P_broken_context_role": {
+          "0_1": 0.29375,
+          "0_0": 0.20625,
+          "1_1": 0.29375,
+          "1_0": 0.20625
+        },
+        "C_ctx_bits": 0.6432866527631096,
+        "G_ctx_js_bits": 0.19043546304593062,
+        "M_reward_gain": 79.5,
+        "natural_score": 106.75,
+        "do_block_score": 27.25,
+        "verdict": 1,
+        "failed": []
+      },
+      "learned_contract_b": {
+        "potential_bits": 1.2077607282019203,
+        "conditional_selectivity": 0.85,
+        "specificity_js_bits": 1.0,
+        "usefulness_gap": 0.5
+      },
+      "scripted_roles": {
+        "trigger_rates": {
+          "0": 1.0,
+          "1": 1.0
+        },
+        "P_real_context_role": {
+          "0_1": 0.5,
+          "0_0": 0.0,
+          "1_1": 0.5,
+          "1_0": 0.0
+        },
+        "P_broken_context_role": {
+          "0_1": 0.5,
+          "0_0": 0.0,
+          "1_1": 0.5,
+          "1_0": 0.0
+        },
+        "C_ctx_bits": 0.0,
+        "G_ctx_js_bits": 0.0,
+        "M_reward_gain": 330.0,
+        "natural_score": 330.0,
+        "do_block_score": 0.0,
+        "verdict": 0,
+        "failed": [
+          "potential",
+          "conditional_selectivity",
+          "endogeneity",
+          "acquisition"
+        ]
+      },
+      "bc_clone": {
+        "trigger_rates": {
+          "0": 1.0,
+          "1": 1.0
+        },
+        "P_real_context_role": {
+          "0_1": 0.5,
+          "0_0": 0.0,
+          "1_1": 0.5,
+          "1_0": 0.0
+        },
+        "P_broken_context_role": {
+          "0_1": 0.5,
+          "0_0": 0.0,
+          "1_1": 0.5,
+          "1_0": 0.0
+        },
+        "C_ctx_bits": 0.0,
+        "G_ctx_js_bits": 0.0,
+        "M_reward_gain": 330.0,
+        "natural_score": 330.0,
+        "do_block_score": 0.0,
+        "verdict": 0,
+        "failed": [
+          "potential",
+          "conditional_selectivity",
+          "endogeneity",
+          "acquisition"
+        ]
+      }
+    },
+    "77005": {
+      "learned": {
+        "trigger_rates": {
+          "0": 0.075,
+          "1": 0.025
+        },
+        "P_real_context_role": {
+          "0_1": 0.0375,
+          "0_0": 0.4625,
+          "1_1": 0.0125,
+          "1_0": 0.4875
+        },
+        "P_broken_context_role": {
+          "0_1": 0.025,
+          "0_0": 0.475,
+          "1_1": 0.025,
+          "1_0": 0.475
+        },
+        "C_ctx_bits": 0.009910719304372595,
+        "G_ctx_js_bits": 0.0025584136904752636,
+        "M_reward_gain": 4.75,
+        "natural_score": 70.25,
+        "do_block_score": 65.5,
+        "verdict": 0,
+        "failed": [
+          "conditional_selectivity",
+          "acquisition"
+        ]
+      },
+      "learned_contract_b": {
+        "potential_bits": 1.2525289443063132,
+        "conditional_selectivity": 0.0,
+        "specificity_js_bits": 1.0,
+        "usefulness_gap": 0.0
+      },
+      "scripted_roles": {
+        "trigger_rates": {
+          "0": 1.0,
+          "1": 1.0
+        },
+        "P_real_context_role": {
+          "0_1": 0.5,
+          "0_0": 0.0,
+          "1_1": 0.5,
+          "1_0": 0.0
+        },
+        "P_broken_context_role": {
+          "0_1": 0.5,
+          "0_0": 0.0,
+          "1_1": 0.5,
+          "1_0": 0.0
+        },
+        "C_ctx_bits": 0.0,
+        "G_ctx_js_bits": 0.0,
+        "M_reward_gain": 330.0,
+        "natural_score": 330.0,
+        "do_block_score": 0.0,
+        "verdict": 0,
+        "failed": [
+          "potential",
+          "conditional_selectivity",
+          "endogeneity",
+          "acquisition"
+        ]
+      },
+      "bc_clone": {
+        "trigger_rates": {
+          "0": 1.0,
+          "1": 1.0
+        },
+        "P_real_context_role": {
+          "0_1": 0.5,
+          "0_0": 0.0,
+          "1_1": 0.5,
+          "1_0": 0.0
+        },
+        "P_broken_context_role": {
+          "0_1": 0.5,
+          "0_0": 0.0,
+          "1_1": 0.5,
+          "1_0": 0.0
+        },
+        "C_ctx_bits": 0.0,
+        "G_ctx_js_bits": 0.0,
+        "M_reward_gain": 330.0,
+        "natural_score": 330.0,
+        "do_block_score": 0.0,
+        "verdict": 0,
+        "failed": [
+          "potential",
+          "conditional_selectivity",
+          "endogeneity",
+          "acquisition"
+        ]
+      }
+    },
+    "77006": {
+      "learned": {
+        "trigger_rates": {
+          "0": 0.575,
+          "1": 1.0
+        },
+        "P_real_context_role": {
+          "0_1": 0.2875,
+          "0_0": 0.21250000000000002,
+          "1_1": 0.5,
+          "1_0": 0.0
+        },
+        "P_broken_context_role": {
+          "0_1": 0.39375,
+          "0_0": 0.10625000000000001,
+          "1_1": 0.39375,
+          "1_0": 0.10625000000000001
+        },
+        "C_ctx_bits": 0.25438017005388813,
+        "G_ctx_js_bits": 0.0767143369807107,
+        "M_reward_gain": 96.25,
+        "natural_score": 96.25,
+        "do_block_score": 0.0,
+        "verdict": 0,
+        "failed": [
+          "conditional_selectivity"
+        ]
+      },
+      "learned_contract_b": {
+        "potential_bits": 1.571599239278989,
+        "conditional_selectivity": 0.525,
+        "specificity_js_bits": 1.0,
+        "usefulness_gap": 0.5
+      },
+      "scripted_roles": {
+        "trigger_rates": {
+          "0": 1.0,
+          "1": 1.0
+        },
+        "P_real_context_role": {
+          "0_1": 0.5,
+          "0_0": 0.0,
+          "1_1": 0.5,
+          "1_0": 0.0
+        },
+        "P_broken_context_role": {
+          "0_1": 0.5,
+          "0_0": 0.0,
+          "1_1": 0.5,
+          "1_0": 0.0
+        },
+        "C_ctx_bits": 0.0,
+        "G_ctx_js_bits": 0.0,
+        "M_reward_gain": 330.0,
+        "natural_score": 330.0,
+        "do_block_score": 0.0,
+        "verdict": 0,
+        "failed": [
+          "potential",
+          "conditional_selectivity",
+          "endogeneity",
+          "acquisition"
+        ]
+      },
+      "bc_clone": {
+        "trigger_rates": {
+          "0": 1.0,
+          "1": 1.0
+        },
+        "P_real_context_role": {
+          "0_1": 0.5,
+          "0_0": 0.0,
+          "1_1": 0.5,
+          "1_0": 0.0
+        },
+        "P_broken_context_role": {
+          "0_1": 0.5,
+          "0_0": 0.0,
+          "1_1": 0.5,
+          "1_0": 0.0
+        },
+        "C_ctx_bits": 0.0,
+        "G_ctx_js_bits": 0.0,
+        "M_reward_gain": 330.0,
+        "natural_score": 330.0,
+        "do_block_score": 0.0,
+        "verdict": 0,
+        "failed": [
+          "potential",
+          "conditional_selectivity",
+          "endogeneity",
+          "acquisition"
+        ]
+      }
+    },
+    "77007": {
+      "learned": {
+        "trigger_rates": {
+          "0": 0.025,
+          "1": 1.0
+        },
+        "P_real_context_role": {
+          "0_1": 0.0125,
+          "0_0": 0.4875,
+          "1_1": 0.5,
+          "1_0": 0.0
+        },
+        "P_broken_context_role": {
+          "0_1": 0.25625,
+          "0_0": 0.24375000000000002,
+          "1_1": 0.25625,
+          "1_0": 0.24375000000000002
+        },
+        "C_ctx_bits": 0.9152186450769132,
+        "G_ctx_js_bits": 0.27850332257150134,
+        "M_reward_gain": 79.25,
+        "natural_score": 143.5,
+        "do_block_score": 64.25,
+        "verdict": 1,
+        "failed": []
+      },
+      "learned_contract_b": {
+        "potential_bits": 1.3937676430903188,
+        "conditional_selectivity": 0.925,
+        "specificity_js_bits": 1.0,
+        "usefulness_gap": 0.42499999999999993
+      },
+      "scripted_roles": {
+        "trigger_rates": {
+          "0": 1.0,
+          "1": 1.0
+        },
+        "P_real_context_role": {
+          "0_1": 0.5,
+          "0_0": 0.0,
+          "1_1": 0.5,
+          "1_0": 0.0
+        },
+        "P_broken_context_role": {
+          "0_1": 0.5,
+          "0_0": 0.0,
+          "1_1": 0.5,
+          "1_0": 0.0
+        },
+        "C_ctx_bits": 0.0,
+        "G_ctx_js_bits": 0.0,
+        "M_reward_gain": 330.0,
+        "natural_score": 330.0,
+        "do_block_score": 0.0,
+        "verdict": 0,
+        "failed": [
+          "potential",
+          "conditional_selectivity",
+          "endogeneity",
+          "acquisition"
+        ]
+      },
+      "bc_clone": {
+        "trigger_rates": {
+          "0": 1.0,
+          "1": 1.0
+        },
+        "P_real_context_role": {
+          "0_1": 0.5,
+          "0_0": 0.0,
+          "1_1": 0.5,
+          "1_0": 0.0
+        },
+        "P_broken_context_role": {
+          "0_1": 0.5,
+          "0_0": 0.0,
+          "1_1": 0.5,
+          "1_0": 0.0
+        },
+        "C_ctx_bits": 0.0,
+        "G_ctx_js_bits": 0.0,
+        "M_reward_gain": 330.0,
+        "natural_score": 330.0,
+        "do_block_score": 0.0,
+        "verdict": 0,
+        "failed": [
+          "potential",
+          "conditional_selectivity",
+          "endogeneity",
+          "acquisition"
+        ]
+      }
+    },
+    "77008": {
+      "learned": {
+        "trigger_rates": {
+          "0": 0.625,
+          "1": 1.0
+        },
+        "P_real_context_role": {
+          "0_1": 0.3125,
+          "0_0": 0.1875,
+          "1_1": 0.5,
+          "1_0": 0.0
+        },
+        "P_broken_context_role": {
+          "0_1": 0.40625,
+          "0_0": 0.09375,
+          "1_1": 0.40625,
+          "1_0": 0.09375
+        },
+        "C_ctx_bits": 0.21899525866266328,
+        "G_ctx_js_bits": 0.06629183228188631,
+        "M_reward_gain": 85.0,
+        "natural_score": 86.75,
+        "do_block_score": 1.75,
+        "verdict": 0,
+        "failed": [
+          "conditional_selectivity",
+          "acquisition"
+        ]
+      },
+      "learned_contract_b": {
+        "potential_bits": 1.7564438107590803,
+        "conditional_selectivity": 0.55,
+        "specificity_js_bits": 1.0,
+        "usefulness_gap": 0.4625
+      },
+      "scripted_roles": {
+        "trigger_rates": {
+          "0": 1.0,
+          "1": 1.0
+        },
+        "P_real_context_role": {
+          "0_1": 0.5,
+          "0_0": 0.0,
+          "1_1": 0.5,
+          "1_0": 0.0
+        },
+        "P_broken_context_role": {
+          "0_1": 0.5,
+          "0_0": 0.0,
+          "1_1": 0.5,
+          "1_0": 0.0
+        },
+        "C_ctx_bits": 0.0,
+        "G_ctx_js_bits": 0.0,
+        "M_reward_gain": 329.75,
+        "natural_score": 329.75,
+        "do_block_score": 0.0,
+        "verdict": 0,
+        "failed": [
+          "potential",
+          "conditional_selectivity",
+          "endogeneity",
+          "acquisition"
+        ]
+      },
+      "bc_clone": {
+        "trigger_rates": {
+          "0": 1.0,
+          "1": 1.0
+        },
+        "P_real_context_role": {
+          "0_1": 0.5,
+          "0_0": 0.0,
+          "1_1": 0.5,
+          "1_0": 0.0
+        },
+        "P_broken_context_role": {
+          "0_1": 0.5,
+          "0_0": 0.0,
+          "1_1": 0.5,
+          "1_0": 0.0
+        },
+        "C_ctx_bits": 0.0,
+        "G_ctx_js_bits": 0.0,
+        "M_reward_gain": 330.0,
+        "natural_score": 330.0,
+        "do_block_score": 0.0,
+        "verdict": 0,
+        "failed": [
+          "potential",
+          "conditional_selectivity",
+          "endogeneity",
+          "acquisition"
+        ]
+      }
+    },
+    "77009": {
+      "learned": {
+        "trigger_rates": {
+          "0": 0.05,
+          "1": 1.0
+        },
+        "P_real_context_role": {
+          "0_1": 0.025,
+          "0_0": 0.475,
+          "1_1": 0.5,
+          "1_0": 0.0
+        },
+        "P_broken_context_role": {
+          "0_1": 0.2625,
+          "0_0": 0.2375,
+          "1_1": 0.2625,
+          "1_0": 0.2375
+        },
+        "C_ctx_bits": 0.854997400484832,
+        "G_ctx_js_bits": 0.25746681519030734,
+        "M_reward_gain": 85.5,
+        "natural_score": 140.5,
+        "do_block_score": 55.0,
+        "verdict": 1,
+        "failed": []
+      },
+      "learned_contract_b": {
+        "potential_bits": 0.9927744539878083,
+        "conditional_selectivity": 0.9,
+        "specificity_js_bits": 1.0,
+        "usefulness_gap": 0.5125
+      },
+      "scripted_roles": {
+        "trigger_rates": {
+          "0": 1.0,
+          "1": 1.0
+        },
+        "P_real_context_role": {
+          "0_1": 0.5,
+          "0_0": 0.0,
+          "1_1": 0.5,
+          "1_0": 0.0
+        },
+        "P_broken_context_role": {
+          "0_1": 0.5,
+          "0_0": 0.0,
+          "1_1": 0.5,
+          "1_0": 0.0
+        },
+        "C_ctx_bits": 0.0,
+        "G_ctx_js_bits": 0.0,
+        "M_reward_gain": 330.0,
+        "natural_score": 330.0,
+        "do_block_score": 0.0,
+        "verdict": 0,
+        "failed": [
+          "potential",
+          "conditional_selectivity",
+          "endogeneity",
+          "acquisition"
+        ]
+      },
+      "bc_clone": {
+        "trigger_rates": {
+          "0": 1.0,
+          "1": 1.0
+        },
+        "P_real_context_role": {
+          "0_1": 0.5,
+          "0_0": 0.0,
+          "1_1": 0.5,
+          "1_0": 0.0
+        },
+        "P_broken_context_role": {
+          "0_1": 0.5,
+          "0_0": 0.0,
+          "1_1": 0.5,
+          "1_0": 0.0
+        },
+        "C_ctx_bits": 0.0,
+        "G_ctx_js_bits": 0.0,
+        "M_reward_gain": 330.0,
+        "natural_score": 330.0,
+        "do_block_score": 0.0,
+        "verdict": 0,
+        "failed": [
+          "potential",
+          "conditional_selectivity",
+          "endogeneity",
+          "acquisition"
+        ]
+      }
+    },
+    "77010": {
+      "learned": {
+        "trigger_rates": {
+          "0": 0.35,
+          "1": 1.0
+        },
+        "P_real_context_role": {
+          "0_1": 0.175,
+          "0_0": 0.325,
+          "1_1": 0.5,
+          "1_0": 0.0
+        },
+        "P_broken_context_role": {
+          "0_1": 0.3375,
+          "0_0": 0.16249999999999998,
+          "1_1": 0.3375,
+          "1_0": 0.16249999999999998
+        },
+        "C_ctx_bits": 0.4427020948434206,
+        "G_ctx_js_bits": 0.13151795214369366,
+        "M_reward_gain": 57.75,
+        "natural_score": 58.75,
+        "do_block_score": 1.0,
+        "verdict": 1,
+        "failed": []
+      },
+      "learned_contract_b": {
+        "potential_bits": 1.6775751040386564,
+        "conditional_selectivity": 0.7,
+        "specificity_js_bits": 1.0,
+        "usefulness_gap": 0.5
+      },
+      "scripted_roles": {
+        "trigger_rates": {
+          "0": 1.0,
+          "1": 1.0
+        },
+        "P_real_context_role": {
+          "0_1": 0.5,
+          "0_0": 0.0,
+          "1_1": 0.5,
+          "1_0": 0.0
+        },
+        "P_broken_context_role": {
+          "0_1": 0.5,
+          "0_0": 0.0,
+          "1_1": 0.5,
+          "1_0": 0.0
+        },
+        "C_ctx_bits": 0.0,
+        "G_ctx_js_bits": 0.0,
+        "M_reward_gain": 330.0,
+        "natural_score": 330.0,
+        "do_block_score": 0.0,
+        "verdict": 0,
+        "failed": [
+          "potential",
+          "conditional_selectivity",
+          "endogeneity",
+          "acquisition"
+        ]
+      },
+      "bc_clone": {
+        "trigger_rates": {
+          "0": 1.0,
+          "1": 1.0
+        },
+        "P_real_context_role": {
+          "0_1": 0.5,
+          "0_0": 0.0,
+          "1_1": 0.5,
+          "1_0": 0.0
+        },
+        "P_broken_context_role": {
+          "0_1": 0.5,
+          "0_0": 0.0,
+          "1_1": 0.5,
+          "1_0": 0.0
+        },
+        "C_ctx_bits": 0.0,
+        "G_ctx_js_bits": 0.0,
+        "M_reward_gain": 330.0,
+        "natural_score": 330.0,
+        "do_block_score": 0.0,
+        "verdict": 0,
+        "failed": [
+          "potential",
+          "conditional_selectivity",
+          "endogeneity",
+          "acquisition"
+        ]
+      }
+    },
+    "77011": {
+      "learned": {
+        "trigger_rates": {
+          "0": 0.4,
+          "1": 1.0
+        },
+        "P_real_context_role": {
+          "0_1": 0.2,
+          "0_0": 0.3,
+          "1_1": 0.5,
+          "1_0": 0.0
+        },
+        "P_broken_context_role": {
+          "0_1": 0.35,
+          "0_0": 0.15000000000000002,
+          "1_1": 0.35,
+          "1_0": 0.15000000000000002
+        },
+        "C_ctx_bits": 0.3958156020033584,
+        "G_ctx_js_bits": 0.11792428112309083,
+        "M_reward_gain": 103.75,
+        "natural_score": 103.75,
+        "do_block_score": 0.0,
+        "verdict": 1,
+        "failed": []
+      },
+      "learned_contract_b": {
+        "potential_bits": 1.728858734565074,
+        "conditional_selectivity": 0.55,
+        "specificity_js_bits": 1.0,
+        "usefulness_gap": 0.5
+      },
+      "scripted_roles": {
+        "trigger_rates": {
+          "0": 1.0,
+          "1": 1.0
+        },
+        "P_real_context_role": {
+          "0_1": 0.5,
+          "0_0": 0.0,
+          "1_1": 0.5,
+          "1_0": 0.0
+        },
+        "P_broken_context_role": {
+          "0_1": 0.5,
+          "0_0": 0.0,
+          "1_1": 0.5,
+          "1_0": 0.0
+        },
+        "C_ctx_bits": 0.0,
+        "G_ctx_js_bits": 0.0,
+        "M_reward_gain": 330.0,
+        "natural_score": 330.0,
+        "do_block_score": 0.0,
+        "verdict": 0,
+        "failed": [
+          "potential",
+          "conditional_selectivity",
+          "endogeneity",
+          "acquisition"
+        ]
+      },
+      "bc_clone": {
+        "trigger_rates": {
+          "0": 1.0,
+          "1": 1.0
+        },
+        "P_real_context_role": {
+          "0_1": 0.5,
+          "0_0": 0.0,
+          "1_1": 0.5,
+          "1_0": 0.0
+        },
+        "P_broken_context_role": {
+          "0_1": 0.5,
+          "0_0": 0.0,
+          "1_1": 0.5,
+          "1_0": 0.0
+        },
+        "C_ctx_bits": 0.0,
+        "G_ctx_js_bits": 0.0,
+        "M_reward_gain": 330.0,
+        "natural_score": 330.0,
+        "do_block_score": 0.0,
+        "verdict": 0,
+        "failed": [
+          "potential",
+          "conditional_selectivity",
+          "endogeneity",
+          "acquisition"
+        ]
+      }
+    },
+    "77012": {
+      "learned": {
+        "trigger_rates": {
+          "0": 0.5,
+          "1": 1.0
+        },
+        "P_real_context_role": {
+          "0_1": 0.25,
+          "0_0": 0.25,
+          "1_1": 0.5,
+          "1_0": 0.0
+        },
+        "P_broken_context_role": {
+          "0_1": 0.375,
+          "0_0": 0.125,
+          "1_1": 0.375,
+          "1_0": 0.125
+        },
+        "C_ctx_bits": 0.31127812445913283,
+        "G_ctx_js_bits": 0.0933601608327142,
+        "M_reward_gain": 74.25,
+        "natural_score": 74.5,
+        "do_block_score": 0.25,
+        "verdict": 1,
+        "failed": []
+      },
+      "learned_contract_b": {
+        "potential_bits": 1.7598362070013869,
+        "conditional_selectivity": 0.575,
+        "specificity_js_bits": 1.0,
+        "usefulness_gap": 0.5
+      },
+      "scripted_roles": {
+        "trigger_rates": {
+          "0": 1.0,
+          "1": 1.0
+        },
+        "P_real_context_role": {
+          "0_1": 0.5,
+          "0_0": 0.0,
+          "1_1": 0.5,
+          "1_0": 0.0
+        },
+        "P_broken_context_role": {
+          "0_1": 0.5,
+          "0_0": 0.0,
+          "1_1": 0.5,
+          "1_0": 0.0
+        },
+        "C_ctx_bits": 0.0,
+        "G_ctx_js_bits": 0.0,
+        "M_reward_gain": 330.0,
+        "natural_score": 330.0,
+        "do_block_score": 0.0,
+        "verdict": 0,
+        "failed": [
+          "potential",
+          "conditional_selectivity",
+          "endogeneity",
+          "acquisition"
+        ]
+      },
+      "bc_clone": {
+        "trigger_rates": {
+          "0": 1.0,
+          "1": 1.0
+        },
+        "P_real_context_role": {
+          "0_1": 0.5,
+          "0_0": 0.0,
+          "1_1": 0.5,
+          "1_0": 0.0
+        },
+        "P_broken_context_role": {
+          "0_1": 0.5,
+          "0_0": 0.0,
+          "1_1": 0.5,
+          "1_0": 0.0
+        },
+        "C_ctx_bits": 0.0,
+        "G_ctx_js_bits": 0.0,
+        "M_reward_gain": 330.0,
+        "natural_score": 330.0,
+        "do_block_score": 0.0,
+        "verdict": 0,
+        "failed": [
+          "potential",
+          "conditional_selectivity",
+          "endogeneity",
+          "acquisition"
+        ]
+      }
+    }
+  },
+  "summary": {
+    "accepted_learned": "8/12",
+    "accepted_CG_positive": "8/8",
+    "learned_M_positive": "12/12",
+    "accepted_contractB_persistent": "8/8",
+    "control_C_zero": {
+      "scripted_roles": "12/12",
+      "bc_clone": "12/12"
+    }
+  },
+  "registered_outcomes": {
+    "OCC1_accepted_learned_context_constraint_ge_7_of_8": true,
+    "OCC2_scripted_and_clone_C_zero_12_of_12": true,
+    "OCC3_learned_macro_gain_positive_12_of_12": true,
+    "OCC4_contractB_persistence_ge_7_of_8": true,
+    "OCC5_full_certificate_unavailable_retained_limitation": true
+  }
+}

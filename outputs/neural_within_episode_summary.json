@@ -1,0 +1,68 @@
+{
+  "bridge": [
+    {
+      "regime": "pure_team",
+      "n_checkpoints": 9.0,
+      "final_collapse_kl": 4.302713594741396,
+      "max_collapse_burst": 4.196185375439015,
+      "max_embedding_jump": 0.7291325330734253,
+      "peak_alignment": 1.0,
+      "burst_jump_correlation": 0.8976490734229224
+    },
+    {
+      "regime": "uncertain_preference",
+      "n_checkpoints": 9.0,
+      "final_collapse_kl": 4.199817164067849,
+      "max_collapse_burst": 5.190628345964909,
+      "max_embedding_jump": 0.768985390663147,
+      "peak_alignment": 1.0,
+      "burst_jump_correlation": 0.8719634949962395
+    }
+  ],
+  "probe": [
+    {
+      "regime": "pure_team",
+      "mode": "rescue",
+      "n_episodes": 24.0,
+      "trigger_rate": 0.9166666666666666,
+      "initial_future_entropy": 0.8956705493767562,
+      "intervention_js": 0.7925980398942083,
+      "intervention_return_gap": 9.602430555555555,
+      "do_trigger_p_rescue": 0.9010416666666666,
+      "do_non_trigger_p_rescue": 0.0
+    },
+    {
+      "regime": "pure_team",
+      "mode": "bridge",
+      "n_episodes": 24.0,
+      "trigger_rate": 0.0,
+      "initial_future_entropy": 1.042663495627952,
+      "intervention_js": 0.26157757496874895,
+      "intervention_return_gap": -5.666666666666667,
+      "do_trigger_p_rescue": 0.0,
+      "do_non_trigger_p_rescue": 0.0
+    },
+    {
+      "regime": "uncertain_preference",
+      "mode": "rescue",
+      "n_episodes": 24.0,
+      "trigger_rate": 0.6666666666666666,
+      "initial_future_entropy": 1.5306969973814182,
+      "intervention_js": 0.49161432112320197,
+      "intervention_return_gap": 3.888888888888889,
+      "do_trigger_p_rescue": 0.5625,
+      "do_non_trigger_p_rescue": 0.0
+    },
+    {
+      "regime": "uncertain_preference",
+      "mode": "bridge",
+      "n_episodes": 24.0,
+      "trigger_rate": 0.0,
+      "initial_future_entropy": 1.3894951977912804,
+      "intervention_js": 0.5715745800552973,
+      "intervention_return_gap": -6.0625,
+      "do_trigger_p_rescue": 0.0,
+      "do_non_trigger_p_rescue": 0.0
+    }
+  ]
+}

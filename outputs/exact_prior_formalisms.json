@@ -1,0 +1,306 @@
+{
+  "note": "Exact formalisms, zero sampling error, on the exact policy-closed chain (state incl. mode, context, t). CE = max over the candidate coarse-graining family of EI(macro)-EI(micro) (Hoel CE 1.0, max-ent interventions). Psi = max over candidate supervenient features (Rosas 2020 practical criterion, first-order). Each rival gets its best case AND a hindsight-optimal threshold.",
+  "temperature": 0.25,
+  "detectors": {
+    "causal_emergence_exact": {
+      "scores": {
+        "latent_conditional": -8.458662559806424,
+        "converged_team": -7.136259909366197,
+        "shaped_process": -7.164422070769411,
+        "noise_policy": -7.392178071131708,
+        "untrained_uniform": -7.014524747297555,
+        "blind_trigger": -8.82838055184552,
+        "harmful_decoy": -8.113972886104106,
+        "useful_habit": -8.1968767907617,
+        "wrong_selector": -8.643109364382063,
+        "anti_selector": -8.638367677195
+      },
+      "hindsight_best": {
+        "accuracy": 0.8,
+        "threshold": -6.014524747297555,
+        "direction": 1,
+        "misclassified": [
+          "latent_conditional",
+          "noise_policy"
+        ]
+      },
+      "natural_threshold_gt0": {
+        "accuracy": 0.8,
+        "threshold": 0.0,
+        "misclassified": [
+          "latent_conditional",
+          "noise_policy"
+        ]
+      }
+    },
+    "phiid_psi_exact": {
+      "scores": {
+        "latent_conditional": 0.14220237883579911,
+        "converged_team": 0.147885530468027,
+        "shaped_process": -0.12648716872231403,
+        "noise_policy": -0.34108999942809626,
+        "untrained_uniform": 0.08439881407638883,
+        "blind_trigger": 0.38256940806486717,
+        "harmful_decoy": 0.18239176500713317,
+        "useful_habit": -0.14516296878055357,
+        "wrong_selector": 0.5913632956201267,
+        "anti_selector": 0.32291561686372583
+      },
+      "hindsight_best": {
+        "accuracy": 0.9,
+        "threshold": -0.2431264841043249,
+        "direction": -1,
+        "misclassified": [
+          "latent_conditional"
+        ]
+      },
+      "natural_threshold_gt0": {
+        "accuracy": 0.3,
+        "threshold": 0.0,
+        "misclassified": [
+          "anti_selector",
+          "blind_trigger",
+          "converged_team",
+          "harmful_decoy",
+          "noise_policy",
+          "untrained_uniform",
+          "wrong_selector"
+        ]
+      }
+    }
+  },
+  "details": {
+    "latent_conditional": {
+      "n_states": 75004,
+      "ei_micro_bits": 11.030616204349075,
+      "ce_by_partition": {
+        "switch_flag": -8.73048945092473,
+        "mode_x_switch": -8.458662559806424,
+        "basin_forecast": -8.821205349770553,
+        "forecast_x_switch": -8.5219766296644,
+        "win_prob_quartile": -8.939251536670751
+      },
+      "psi_by_feature": {
+        "basin_forecast|agents_only": 0.14220237883579911,
+        "basin_forecast|full_state": -1.9836238401783326,
+        "win_prob_quartile|agents_only": -0.2557590307302646,
+        "win_prob_quartile|full_state": -1.8150407446082184,
+        "switch_flag|agents_only": -0.9569895637350242,
+        "switch_flag|full_state": -2.117076951814291,
+        "joint_progress|agents_only": -1.05912760464055,
+        "joint_progress|full_state": -2.4743076296944757
+      },
+      "ground_truth": 1
+    },
+    "converged_team": {
+      "n_states": 25004,
+      "ei_micro_bits": 9.710731972779044,
+      "ce_by_partition": {
+        "switch_flag": -7.40892708353968,
+        "mode_x_switch": -7.136259909366197,
+        "basin_forecast": -7.504071860653541,
+        "forecast_x_switch": -7.202129307022327,
+        "win_prob_quartile": -7.583573961896592
+      },
+      "psi_by_feature": {
+        "basin_forecast|agents_only": 0.147885530468027,
+        "basin_forecast|full_state": -1.2376823532962633,
+        "win_prob_quartile|agents_only": -0.7225430085379456,
+        "win_prob_quartile|full_state": -1.2358354378936907,
+        "switch_flag|agents_only": -0.7370937145110983,
+        "switch_flag|full_state": -1.2609216504865495,
+        "joint_progress|agents_only": -0.9183982464897018,
+        "joint_progress|full_state": -1.6920692682792102
+      },
+      "ground_truth": 0
+    },
+    "shaped_process": {
+      "n_states": 25004,
+      "ei_micro_bits": 9.735849463685827,
+      "ce_by_partition": {
+        "switch_flag": -7.436191898360279,
+        "mode_x_switch": -7.164422070769411,
+        "basin_forecast": -7.497514608488144,
+        "forecast_x_switch": -7.195244571993022,
+        "win_prob_quartile": -7.577433471451199
+      },
+      "psi_by_feature": {
+        "basin_forecast|agents_only": -0.12648716872231403,
+        "basin_forecast|full_state": -1.5905566349912146,
+        "win_prob_quartile|agents_only": -0.8411659868023268,
+        "win_prob_quartile|full_state": -1.4150595503759615,
+        "switch_flag|agents_only": -0.8910476355425473,
+        "switch_flag|full_state": -1.668346089077041,
+        "joint_progress|agents_only": -0.8098483481977303,
+        "joint_progress|full_state": -1.8645064669460845
+      },
+      "ground_truth": 0
+    },
+    "noise_policy": {
+      "n_states": 25004,
+      "ei_micro_bits": 9.97744865947733,
+      "ce_by_partition": {
+        "switch_flag": -7.672671179620611,
+        "mode_x_switch": -7.398120777194036,
+        "basin_forecast": -7.705958525012603,
+        "forecast_x_switch": -7.392178071131708,
+        "win_prob_quartile": -7.839405250132936
+      },
+      "psi_by_feature": {
+        "basin_forecast|agents_only": -0.34108999942809626,
+        "basin_forecast|full_state": -1.9671948330118738,
+        "win_prob_quartile|agents_only": -0.5664758505466206,
+        "win_prob_quartile|full_state": -1.2098929758734398,
+        "switch_flag|agents_only": -0.5567653492533742,
+        "switch_flag|full_state": -1.6624568053439803,
+        "joint_progress|agents_only": -0.8239653058139818,
+        "joint_progress|full_state": -2.8525179528260924
+      },
+      "ground_truth": 1
+    },
+    "untrained_uniform": {
+      "n_states": 25004,
+      "ei_micro_bits": 9.597231067611705,
+      "ce_by_partition": {
+        "switch_flag": -7.289618197281691,
+        "mode_x_switch": -7.014524747297555,
+        "basin_forecast": -7.701745287504916,
+        "forecast_x_switch": -7.473454838283382,
+        "win_prob_quartile": -7.681307764401007
+      },
+      "psi_by_feature": {
+        "basin_forecast|agents_only": -0.08842080165077147,
+        "basin_forecast|full_state": -0.5469938807671235,
+        "win_prob_quartile|agents_only": -0.09125417736831674,
+        "win_prob_quartile|full_state": -0.555855142858539,
+        "switch_flag|agents_only": 0.08439881407638883,
+        "switch_flag|full_state": -0.8387979581858597,
+        "joint_progress|agents_only": 0.02930119970585421,
+        "joint_progress|full_state": -0.9206018367463156
+      },
+      "ground_truth": 0
+    },
+    "blind_trigger": {
+      "n_states": 75004,
+      "ei_micro_bits": 11.325673829268297,
+      "ce_by_partition": {
+        "switch_flag": -9.075700384755184,
+        "mode_x_switch": -8.82838055184552,
+        "basin_forecast": -9.20431309972977,
+        "forecast_x_switch": -9.017459568921076,
+        "win_prob_quartile": -9.210414034885073
+      },
+      "psi_by_feature": {
+        "basin_forecast|agents_only": 0.38256940806486717,
+        "basin_forecast|full_state": -1.512743477760155,
+        "win_prob_quartile|agents_only": 0.04979747222284481,
+        "win_prob_quartile|full_state": -1.3890693208879856,
+        "switch_flag|agents_only": -0.8137886644102122,
+        "switch_flag|full_state": -1.9654467109607694,
+        "joint_progress|agents_only": -0.7398055423272045,
+        "joint_progress|full_state": -2.179285427583214
+      },
+      "ground_truth": 0
+    },
+    "harmful_decoy": {
+      "n_states": 37504,
+      "ei_micro_bits": 10.399947298379294,
+      "ce_by_partition": {
+        "switch_flag": -8.132195599704076,
+        "mode_x_switch": -8.132195599704076,
+        "basin_forecast": -8.280757902549235,
+        "forecast_x_switch": -8.113972886104106,
+        "win_prob_quartile": -8.183902262461501
+      },
+      "psi_by_feature": {
+        "basin_forecast|agents_only": 0.15769330385616753,
+        "basin_forecast|full_state": -0.8915260922830961,
+        "win_prob_quartile|agents_only": 0.18239176500713317,
+        "win_prob_quartile|full_state": -0.945485929577172,
+        "switch_flag|agents_only": -0.5120504630168135,
+        "switch_flag|full_state": -1.5043686862729209,
+        "joint_progress|agents_only": -0.4631755668164538,
+        "joint_progress|full_state": -1.6150229655415722
+      },
+      "ground_truth": 0
+    },
+    "useful_habit": {
+      "n_states": 37504,
+      "ei_micro_bits": 10.490260429703147,
+      "ce_by_partition": {
+        "switch_flag": -8.24913418658633,
+        "mode_x_switch": -8.24913418658633,
+        "basin_forecast": -8.383183216946831,
+        "forecast_x_switch": -8.1968767907617,
+        "win_prob_quartile": -8.387379834279049
+      },
+      "psi_by_feature": {
+        "basin_forecast|agents_only": -0.14516296878055357,
+        "basin_forecast|full_state": -1.8154859660681537,
+        "win_prob_quartile|agents_only": -0.7087882474357954,
+        "win_prob_quartile|full_state": -1.473614473548453,
+        "switch_flag|agents_only": -1.0994983277715913,
+        "switch_flag|full_state": -2.3497768203360523,
+        "joint_progress|agents_only": -1.0368547729669806,
+        "joint_progress|full_state": -2.707925240090961
+      },
+      "ground_truth": 0
+    },
+    "wrong_selector": {
+      "n_states": 75004,
+      "ei_micro_bits": 11.17923779463387,
+      "ce_by_partition": {
+        "switch_flag": -8.90786640085685,
+        "mode_x_switch": -8.643109364382063,
+        "basin_forecast": -8.995290674758737,
+        "forecast_x_switch": -8.740103616628378,
+        "win_prob_quartile": -9.103883499844539
+      },
+      "psi_by_feature": {
+        "basin_forecast|agents_only": 0.5913632956201267,
+        "basin_forecast|full_state": -2.0420880819759586,
+        "win_prob_quartile|agents_only": 0.08056755895729772,
+        "win_prob_quartile|full_state": -1.4850221143680526,
+        "switch_flag|agents_only": -0.5110235671968386,
+        "switch_flag|full_state": -2.3015536716264826,
+        "joint_progress|agents_only": -0.5952564370241409,
+        "joint_progress|full_state": -2.714454932177678
+      },
+      "ground_truth": 0
+    },
+    "anti_selector": {
+      "n_states": 75004,
+      "ei_micro_bits": 11.202053000884817,
+      "ce_by_partition": {
+        "switch_flag": -8.919239723428637,
+        "mode_x_switch": -8.638367677195,
+        "basin_forecast": -9.04276542716875,
+        "forecast_x_switch": -8.821420196282332,
+        "win_prob_quartile": -9.181494799109625
+      },
+      "psi_by_feature": {
+        "basin_forecast|agents_only": 0.32291561686372583,
+        "basin_forecast|full_state": -1.2485074916595456,
+        "win_prob_quartile|agents_only": 0.00711620739139851,
+        "win_prob_quartile|full_state": -1.105242242787765,
+        "switch_flag|agents_only": -0.2760754046208953,
+        "switch_flag|full_state": -2.2842973868934293,
+        "joint_progress|agents_only": -0.47734472931555727,
+        "joint_progress|full_state": -2.7777953224620866
+      },
+      "ground_truth": 0
+    }
+  },
+  "truth": {
+    "latent_conditional": 1,
+    "converged_team": 0,
+    "shaped_process": 0,
+    "noise_policy": 1,
+    "untrained_uniform": 0,
+    "blind_trigger": 0,
+    "harmful_decoy": 0,
+    "useful_habit": 0,
+    "wrong_selector": 0,
+    "anti_selector": 0
+  }
+}

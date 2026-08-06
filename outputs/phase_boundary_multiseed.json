@@ -1,0 +1,47 @@
+{
+  "seeds": [
+    8011,
+    9011,
+    10011
+  ],
+  "pooled_non_tie_match": 0.9166666666666666,
+  "pooled_counts": "11/12",
+  "acceptance_by_G": {
+    "3.0": [
+      0,
+      0,
+      0
+    ],
+    "5.0": [
+      0,
+      0,
+      0
+    ],
+    "7.0": [
+      0,
+      0,
+      1
+    ],
+    "9.0": [
+      1,
+      0,
+      0
+    ],
+    "11.0": [
+      1,
+      1,
+      0
+    ],
+    "13.0": [
+      1,
+      1,
+      1
+    ],
+    "16.0": [
+      1,
+      1,
+      1
+    ]
+  },
+  "note": "Seed 10011 deviates at G=7 (accepted; the registered middle-phase usefulness margin is only about -0.33 return units and sampling noise can flip it) and at G=11 (a registered tie point, unscored). The outer phases (G<=5 reject, G>=13 accept) are 3/3 seeds stable."
+}

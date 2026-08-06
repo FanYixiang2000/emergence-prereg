@@ -1,0 +1,30 @@
+Gym has been unmaintained since 2022 and does not support NumPy 2.0 amongst other critical functionality.
+Please upgrade to Gymnasium, the maintained drop-in replacement of Gym, or contact the authors of your software and request that they upgrade.
+Users of this version of Gym should be able to simply replace 'import gym' with 'import gymnasium as gym' in the vast majority of cases.
+See the migration guide at https://gymnasium.farama.org/introduction/migration_guide/ for additional information.
+calibrating eps on score only
+  eps=0.05: score=98.2
+  eps=0.1: score=93.6
+  eps=0.15: score=84.0
+  eps=0.2: score=76.8
+  eps=0.25: score=69.0
+  eps=0.3: score=65.2
+  eps=0.35: score=52.6
+  eps=0.4: score=50.4
+  eps=0.45: score=42.0
+  eps=0.5: score=31.6
+  eps=0.55: score=28.8
+  eps=0.6: score=23.8
+  eps=0.65: score=15.8
+  eps=0.7: score=7.8
+selected eps*=0.45
+{
+  "eps_star": 0.45,
+  "score_noisy": 40.4,
+  "score_learned": 39.4,
+  "G_noisy": 0.05720116426073335,
+  "G_learned": 0.041754664299010216,
+  "E1_1_product_matched_factor2": true,
+  "E1_2_genesis_separation": false
+}
+Wrote /home/Yixiang/MPARL/GOGOGO/outputs/overcooked_product_matched_genesis.json

@@ -1,0 +1,785 @@
+{
+  "frozen_components": [
+    "potential",
+    "conditional_selectivity",
+    "specificity",
+    "usefulness",
+    "endogeneity",
+    "acquisition"
+  ],
+  "separation_threshold": 0.5,
+  "acquisition_threshold": 0.3,
+  "external": {
+    "per_seed": {
+      "8031": {
+        "marl_learned": {
+          "separation": 0.9333333333333333,
+          "init_separation": 0.01666666666666672,
+          "acquisition": 0.9166666666666666,
+          "verdict": {
+            "passes": {
+              "potential": true,
+              "conditional_selectivity": true,
+              "specificity": true,
+              "usefulness": true,
+              "endogeneity": true,
+              "acquisition": true
+            },
+            "emergent": 1,
+            "failed": []
+          },
+          "truth": 1,
+          "correct": true
+        },
+        "marl_untrained": {
+          "separation": 0.0,
+          "init_separation": 0.0,
+          "acquisition": 0.0,
+          "verdict": {
+            "passes": {
+              "potential": false,
+              "conditional_selectivity": false,
+              "specificity": true,
+              "usefulness": false,
+              "endogeneity": true,
+              "acquisition": false
+            },
+            "emergent": 0,
+            "failed": [
+              "potential",
+              "conditional_selectivity",
+              "usefulness",
+              "acquisition"
+            ]
+          },
+          "truth": 0,
+          "correct": true
+        },
+        "nearest_only": {
+          "separation": 0.0,
+          "init_separation": 0.0,
+          "acquisition": 0.0,
+          "verdict": {
+            "passes": {
+              "potential": true,
+              "conditional_selectivity": false,
+              "specificity": true,
+              "usefulness": true,
+              "endogeneity": false,
+              "acquisition": false
+            },
+            "emergent": 0,
+            "failed": [
+              "conditional_selectivity",
+              "endogeneity",
+              "acquisition"
+            ]
+          },
+          "truth": 0,
+          "correct": true
+        },
+        "role_oracle": {
+          "separation": 0.016666666666666666,
+          "init_separation": 0.016666666666666666,
+          "acquisition": 0.0,
+          "verdict": {
+            "passes": {
+              "potential": true,
+              "conditional_selectivity": false,
+              "specificity": true,
+              "usefulness": true,
+              "endogeneity": false,
+              "acquisition": false
+            },
+            "emergent": 0,
+            "failed": [
+              "conditional_selectivity",
+              "endogeneity",
+              "acquisition"
+            ]
+          },
+          "truth": 0,
+          "correct": true
+        },
+        "damage_aware": {
+          "separation": 1.0,
+          "init_separation": 1.0,
+          "acquisition": 0.0,
+          "verdict": {
+            "passes": {
+              "potential": true,
+              "conditional_selectivity": true,
+              "specificity": true,
+              "usefulness": true,
+              "endogeneity": false,
+              "acquisition": false
+            },
+            "emergent": 0,
+            "failed": [
+              "endogeneity",
+              "acquisition"
+            ]
+          },
+          "truth": 0,
+          "correct": true
+        }
+      },
+      "8131": {
+        "marl_learned": {
+          "separation": 1.0,
+          "init_separation": 0.43333333333333335,
+          "acquisition": 0.5666666666666667,
+          "verdict": {
+            "passes": {
+              "potential": true,
+              "conditional_selectivity": true,
+              "specificity": true,
+              "usefulness": true,
+              "endogeneity": true,
+              "acquisition": true
+            },
+            "emergent": 1,
+            "failed": []
+          },
+          "truth": 1,
+          "correct": true
+        },
+        "marl_untrained": {
+          "separation": 0.0,
+          "init_separation": 0.0,
+          "acquisition": 0.0,
+          "verdict": {
+            "passes": {
+              "potential": false,
+              "conditional_selectivity": false,
+              "specificity": true,
+              "usefulness": true,
+              "endogeneity": true,
+              "acquisition": false
+            },
+            "emergent": 0,
+            "failed": [
+              "potential",
+              "conditional_selectivity",
+              "acquisition"
+            ]
+          },
+          "truth": 0,
+          "correct": true
+        },
+        "nearest_only": {
+          "separation": 0.0,
+          "init_separation": 0.0,
+          "acquisition": 0.0,
+          "verdict": {
+            "passes": {
+              "potential": true,
+              "conditional_selectivity": false,
+              "specificity": true,
+              "usefulness": true,
+              "endogeneity": false,
+              "acquisition": false
+            },
+            "emergent": 0,
+            "failed": [
+              "conditional_selectivity",
+              "endogeneity",
+              "acquisition"
+            ]
+          },
+          "truth": 0,
+          "correct": true
+        },
+        "role_oracle": {
+          "separation": 0.0,
+          "init_separation": 0.0,
+          "acquisition": 0.0,
+          "verdict": {
+            "passes": {
+              "potential": true,
+              "conditional_selectivity": false,
+              "specificity": true,
+              "usefulness": true,
+              "endogeneity": false,
+              "acquisition": false
+            },
+            "emergent": 0,
+            "failed": [
+              "conditional_selectivity",
+              "endogeneity",
+              "acquisition"
+            ]
+          },
+          "truth": 0,
+          "correct": true
+        },
+        "damage_aware": {
+          "separation": 1.0,
+          "init_separation": 1.0,
+          "acquisition": 0.0,
+          "verdict": {
+            "passes": {
+              "potential": true,
+              "conditional_selectivity": true,
+              "specificity": true,
+              "usefulness": true,
+              "endogeneity": false,
+              "acquisition": false
+            },
+            "emergent": 0,
+            "failed": [
+              "endogeneity",
+              "acquisition"
+            ]
+          },
+          "truth": 0,
+          "correct": true
+        }
+      },
+      "8231": {
+        "marl_learned": {
+          "separation": 1.0,
+          "init_separation": 0.15000000000000002,
+          "acquisition": 0.85,
+          "verdict": {
+            "passes": {
+              "potential": true,
+              "conditional_selectivity": true,
+              "specificity": true,
+              "usefulness": true,
+              "endogeneity": true,
+              "acquisition": true
+            },
+            "emergent": 1,
+            "failed": []
+          },
+          "truth": 1,
+          "correct": true
+        },
+        "marl_untrained": {
+          "separation": 0.5666666666666667,
+          "init_separation": 0.5666666666666667,
+          "acquisition": 0.0,
+          "verdict": {
+            "passes": {
+              "potential": true,
+              "conditional_selectivity": true,
+              "specificity": true,
+              "usefulness": false,
+              "endogeneity": true,
+              "acquisition": false
+            },
+            "emergent": 0,
+            "failed": [
+              "usefulness",
+              "acquisition"
+            ]
+          },
+          "truth": 0,
+          "correct": true
+        },
+        "nearest_only": {
+          "separation": 0.0,
+          "init_separation": 0.0,
+          "acquisition": 0.0,
+          "verdict": {
+            "passes": {
+              "potential": true,
+              "conditional_selectivity": false,
+              "specificity": true,
+              "usefulness": true,
+              "endogeneity": false,
+              "acquisition": false
+            },
+            "emergent": 0,
+            "failed": [
+              "conditional_selectivity",
+              "endogeneity",
+              "acquisition"
+            ]
+          },
+          "truth": 0,
+          "correct": true
+        },
+        "role_oracle": {
+          "separation": 0.0,
+          "init_separation": 0.0,
+          "acquisition": 0.0,
+          "verdict": {
+            "passes": {
+              "potential": true,
+              "conditional_selectivity": false,
+              "specificity": true,
+              "usefulness": true,
+              "endogeneity": false,
+              "acquisition": false
+            },
+            "emergent": 0,
+            "failed": [
+              "conditional_selectivity",
+              "endogeneity",
+              "acquisition"
+            ]
+          },
+          "truth": 0,
+          "correct": true
+        },
+        "damage_aware": {
+          "separation": 1.0,
+          "init_separation": 1.0,
+          "acquisition": 0.0,
+          "verdict": {
+            "passes": {
+              "potential": true,
+              "conditional_selectivity": true,
+              "specificity": true,
+              "usefulness": true,
+              "endogeneity": false,
+              "acquisition": false
+            },
+            "emergent": 0,
+            "failed": [
+              "endogeneity",
+              "acquisition"
+            ]
+          },
+          "truth": 0,
+          "correct": true
+        }
+      },
+      "8331": {
+        "marl_learned": {
+          "separation": 0.7333333333333334,
+          "init_separation": 0.033333333333333326,
+          "acquisition": 0.7000000000000001,
+          "verdict": {
+            "passes": {
+              "potential": true,
+              "conditional_selectivity": true,
+              "specificity": true,
+              "usefulness": true,
+              "endogeneity": true,
+              "acquisition": true
+            },
+            "emergent": 1,
+            "failed": []
+          },
+          "truth": 1,
+          "correct": true
+        },
+        "marl_untrained": {
+          "separation": 0.0,
+          "init_separation": 0.0,
+          "acquisition": 0.0,
+          "verdict": {
+            "passes": {
+              "potential": false,
+              "conditional_selectivity": false,
+              "specificity": true,
+              "usefulness": false,
+              "endogeneity": true,
+              "acquisition": false
+            },
+            "emergent": 0,
+            "failed": [
+              "potential",
+              "conditional_selectivity",
+              "usefulness",
+              "acquisition"
+            ]
+          },
+          "truth": 0,
+          "correct": true
+        },
+        "nearest_only": {
+          "separation": 0.0,
+          "init_separation": 0.0,
+          "acquisition": 0.0,
+          "verdict": {
+            "passes": {
+              "potential": true,
+              "conditional_selectivity": false,
+              "specificity": true,
+              "usefulness": true,
+              "endogeneity": false,
+              "acquisition": false
+            },
+            "emergent": 0,
+            "failed": [
+              "conditional_selectivity",
+              "endogeneity",
+              "acquisition"
+            ]
+          },
+          "truth": 0,
+          "correct": true
+        },
+        "role_oracle": {
+          "separation": 0.0,
+          "init_separation": 0.0,
+          "acquisition": 0.0,
+          "verdict": {
+            "passes": {
+              "potential": true,
+              "conditional_selectivity": false,
+              "specificity": true,
+              "usefulness": true,
+              "endogeneity": false,
+              "acquisition": false
+            },
+            "emergent": 0,
+            "failed": [
+              "conditional_selectivity",
+              "endogeneity",
+              "acquisition"
+            ]
+          },
+          "truth": 0,
+          "correct": true
+        },
+        "damage_aware": {
+          "separation": 1.0,
+          "init_separation": 1.0,
+          "acquisition": 0.0,
+          "verdict": {
+            "passes": {
+              "potential": true,
+              "conditional_selectivity": true,
+              "specificity": true,
+              "usefulness": true,
+              "endogeneity": false,
+              "acquisition": false
+            },
+            "emergent": 0,
+            "failed": [
+              "endogeneity",
+              "acquisition"
+            ]
+          },
+          "truth": 0,
+          "correct": true
+        }
+      },
+      "8431": {
+        "marl_learned": {
+          "separation": 0.0,
+          "init_separation": 0.18333333333333335,
+          "acquisition": -0.18333333333333335,
+          "verdict": {
+            "passes": {
+              "potential": true,
+              "conditional_selectivity": false,
+              "specificity": true,
+              "usefulness": true,
+              "endogeneity": true,
+              "acquisition": false
+            },
+            "emergent": 0,
+            "failed": [
+              "conditional_selectivity",
+              "acquisition"
+            ]
+          },
+          "truth": 0,
+          "correct": true
+        },
+        "marl_untrained": {
+          "separation": 0.050000000000000044,
+          "init_separation": 0.050000000000000044,
+          "acquisition": 0.0,
+          "verdict": {
+            "passes": {
+              "potential": false,
+              "conditional_selectivity": false,
+              "specificity": true,
+              "usefulness": false,
+              "endogeneity": true,
+              "acquisition": false
+            },
+            "emergent": 0,
+            "failed": [
+              "potential",
+              "conditional_selectivity",
+              "usefulness",
+              "acquisition"
+            ]
+          },
+          "truth": 0,
+          "correct": true
+        },
+        "nearest_only": {
+          "separation": 0.0,
+          "init_separation": 0.0,
+          "acquisition": 0.0,
+          "verdict": {
+            "passes": {
+              "potential": true,
+              "conditional_selectivity": false,
+              "specificity": true,
+              "usefulness": false,
+              "endogeneity": false,
+              "acquisition": false
+            },
+            "emergent": 0,
+            "failed": [
+              "conditional_selectivity",
+              "usefulness",
+              "endogeneity",
+              "acquisition"
+            ]
+          },
+          "truth": 0,
+          "correct": true
+        },
+        "role_oracle": {
+          "separation": 0.0,
+          "init_separation": 0.0,
+          "acquisition": 0.0,
+          "verdict": {
+            "passes": {
+              "potential": true,
+              "conditional_selectivity": false,
+              "specificity": true,
+              "usefulness": true,
+              "endogeneity": false,
+              "acquisition": false
+            },
+            "emergent": 0,
+            "failed": [
+              "conditional_selectivity",
+              "endogeneity",
+              "acquisition"
+            ]
+          },
+          "truth": 0,
+          "correct": true
+        },
+        "damage_aware": {
+          "separation": 1.0,
+          "init_separation": 1.0,
+          "acquisition": 0.0,
+          "verdict": {
+            "passes": {
+              "potential": true,
+              "conditional_selectivity": true,
+              "specificity": true,
+              "usefulness": true,
+              "endogeneity": false,
+              "acquisition": false
+            },
+            "emergent": 0,
+            "failed": [
+              "endogeneity",
+              "acquisition"
+            ]
+          },
+          "truth": 0,
+          "correct": true
+        }
+      }
+    },
+    "accuracy": 1.0,
+    "correct": 25,
+    "total": 25,
+    "checks": {
+      "c1_learner_accepted_when_audited": true,
+      "c2_untrained_excluded_all_seeds_via_acquisition": true,
+      "c3_damage_aware_fails_exactly_endo_acq": true
+    }
+  },
+  "internal": {
+    "verdicts": {
+      "latent_conditional": {
+        "separation": 0.6666666666666666,
+        "verdict": {
+          "passes": {
+            "potential": true,
+            "conditional_selectivity": true,
+            "specificity": true,
+            "usefulness": true,
+            "endogeneity": true
+          },
+          "emergent": 1,
+          "failed": []
+        },
+        "truth": 1,
+        "correct": true
+      },
+      "converged_team": {
+        "separation": 1.0,
+        "verdict": {
+          "passes": {
+            "potential": false,
+            "conditional_selectivity": true,
+            "specificity": true,
+            "usefulness": true,
+            "endogeneity": true
+          },
+          "emergent": 0,
+          "failed": [
+            "potential"
+          ]
+        },
+        "truth": 0,
+        "correct": true
+      },
+      "shaped_process": {
+        "separation": 1.0,
+        "verdict": {
+          "passes": {
+            "potential": true,
+            "conditional_selectivity": true,
+            "specificity": true,
+            "usefulness": true,
+            "endogeneity": false
+          },
+          "emergent": 0,
+          "failed": [
+            "endogeneity"
+          ]
+        },
+        "truth": 0,
+        "correct": true
+      },
+      "noise_policy": {
+        "separation": 0.9166666666666666,
+        "verdict": {
+          "passes": {
+            "potential": true,
+            "conditional_selectivity": true,
+            "specificity": true,
+            "usefulness": true,
+            "endogeneity": true
+          },
+          "emergent": 1,
+          "failed": []
+        },
+        "truth": 1,
+        "correct": true
+      },
+      "untrained_uniform": {
+        "separation": 0.16666666666666663,
+        "verdict": {
+          "passes": {
+            "potential": false,
+            "conditional_selectivity": false,
+            "specificity": false,
+            "usefulness": false,
+            "endogeneity": true
+          },
+          "emergent": 0,
+          "failed": [
+            "potential",
+            "conditional_selectivity",
+            "specificity",
+            "usefulness"
+          ]
+        },
+        "truth": 0,
+        "correct": true
+      },
+      "blind_trigger": {
+        "separation": 0.0,
+        "verdict": {
+          "passes": {
+            "potential": true,
+            "conditional_selectivity": false,
+            "specificity": true,
+            "usefulness": false,
+            "endogeneity": true
+          },
+          "emergent": 0,
+          "failed": [
+            "conditional_selectivity",
+            "usefulness"
+          ]
+        },
+        "truth": 0,
+        "correct": true
+      },
+      "harmful_decoy": {
+        "separation": 0.0,
+        "verdict": {
+          "passes": {
+            "potential": false,
+            "conditional_selectivity": false,
+            "specificity": true,
+            "usefulness": false,
+            "endogeneity": true
+          },
+          "emergent": 0,
+          "failed": [
+            "potential",
+            "conditional_selectivity",
+            "usefulness"
+          ]
+        },
+        "truth": 0,
+        "correct": true
+      },
+      "useful_habit": {
+        "separation": 0.0,
+        "verdict": {
+          "passes": {
+            "potential": true,
+            "conditional_selectivity": false,
+            "specificity": true,
+            "usefulness": true,
+            "endogeneity": true
+          },
+          "emergent": 0,
+          "failed": [
+            "conditional_selectivity"
+          ]
+        },
+        "truth": 0,
+        "correct": true
+      },
+      "wrong_selector": {
+        "separation": 0.33333333333333337,
+        "verdict": {
+          "passes": {
+            "potential": true,
+            "conditional_selectivity": false,
+            "specificity": true,
+            "usefulness": false,
+            "endogeneity": true
+          },
+          "emergent": 0,
+          "failed": [
+            "conditional_selectivity",
+            "usefulness"
+          ]
+        },
+        "truth": 0,
+        "correct": true
+      },
+      "anti_selector": {
+        "separation": 1.0,
+        "verdict": {
+          "passes": {
+            "potential": true,
+            "conditional_selectivity": true,
+            "specificity": true,
+            "usefulness": false,
+            "endogeneity": true
+          },
+          "emergent": 0,
+          "failed": [
+            "usefulness"
+          ]
+        },
+        "truth": 0,
+        "correct": true
+      }
+    },
+    "accuracy": 1.0
+  },
+  "confirmation_checks": {
+    "c1_learner_accepted_when_audited": true,
+    "c2_untrained_excluded_all_seeds_via_acquisition": true,
+    "c3_damage_aware_fails_exactly_endo_acq": true,
+    "c4_internal_fresh_seed_all_correct": true,
+    "c4b_anti_selector_fails_only_usefulness": true
+  }
+}

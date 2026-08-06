@@ -1,0 +1,13 @@
+CAL1 (orthogonality): True
+dose-response: training outcome_only seed 9101
+  M curve ['0.000', '0.102', '0.358', '0.801', '1.000'] dU curve ['0.00', '1.84', '5.26', '9.30', '11.00']
+dose-response: training outcome_only seed 9102
+  M curve ['0.000', '0.096', '0.325', '0.730', '1.000'] dU curve ['0.00', '1.77', '5.14', '9.00', '11.00']
+dose-response: training outcome_only seed 9103
+  M curve ['0.000', '0.017', '0.157', '0.501', '1.000'] dU curve ['0.00', '0.35', '2.83', '7.23', '11.00']
+dose-response: training outcome_only seed 9104
+  M curve ['0.000', '0.095', '0.355', '0.782', '1.000'] dU curve ['0.00', '1.73', '5.27', '9.15', '11.00']
+dose-response: training outcome_only seed 9105
+  M curve ['0.000', '0.057', '0.244', '0.606', '1.000'] dU curve ['0.00', '1.01', '3.87', '7.87', '11.00']
+CAL2 (dose-response): True
+Wrote /home/Yixiang/MPARL/GOGOGO/outputs/profile_calibration.json

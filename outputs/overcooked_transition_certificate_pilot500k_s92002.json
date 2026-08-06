@@ -1,0 +1,180 @@
+{
+  "status": "Overcooked transition certificate scaffold; smoke engineering result, not a learned flagship claim",
+  "contract": {
+    "S": "overcooked_ai_py two-agent Overcooked",
+    "phi": "(first potter after snapshot) x (delivery within H)",
+    "H": 100,
+    "nu": {
+      "layouts": [
+        "cramped_room",
+        "asymmetric_advantages"
+      ],
+      "snapshot_steps": [
+        20,
+        40,
+        80,
+        120
+      ],
+      "episodes_per_layout": 8
+    },
+    "I": "ghost-partner replay cut of agent-1 feedback",
+    "H0": [
+      "scripted_roles",
+      "common context-role marginal",
+      "ghost partner replay"
+    ]
+  },
+  "policy": {
+    "kind": "checkpoint",
+    "checkpoint": "outputs/overcooked_transition_pilot500k_s92002.pt",
+    "learned_checkpoint_supplied": true
+  },
+  "ghost_library_sizes": {
+    "cramped_room@20": 8,
+    "cramped_room@40": 8,
+    "cramped_room@80": 8,
+    "cramped_room@120": 8,
+    "asymmetric_advantages@20": 8,
+    "asymmetric_advantages@40": 8,
+    "asymmetric_advantages@80": 8,
+    "asymmetric_advantages@120": 8
+  },
+  "overall": {
+    "n": 64,
+    "P_real": {
+      "pot0_deliver": 0.015625,
+      "pot0_nodeliver": 0.671875,
+      "pot1_deliver": 0.0,
+      "pot1_nodeliver": 0.1875,
+      "potnone_deliver": 0.0,
+      "potnone_nodeliver": 0.125
+    },
+    "P_cut": {
+      "pot0_deliver": 0.03125,
+      "pot0_nodeliver": 0.625,
+      "pot1_deliver": 0.0,
+      "pot1_nodeliver": 0.171875,
+      "potnone_deliver": 0.015625,
+      "potnone_nodeliver": 0.15625
+    },
+    "G_js_bits": 0.011838685085869771,
+    "C_signed_bits": 0.22185596736665136,
+    "M_score_gain": -0.625,
+    "real_score": 0.3125,
+    "cut_score": 0.9375,
+    "partner_action_tv": 0.024531249999999998
+  },
+  "time_bins": {
+    "120": {
+      "n": 16,
+      "P_real": {
+        "pot0_deliver": 0.0,
+        "pot0_nodeliver": 0.5,
+        "pot1_deliver": 0.0,
+        "pot1_nodeliver": 0.0625,
+        "potnone_deliver": 0.0,
+        "potnone_nodeliver": 0.4375
+      },
+      "P_cut": {
+        "pot0_deliver": 0.0,
+        "pot0_nodeliver": 0.5625,
+        "pot1_deliver": 0.0,
+        "pot1_nodeliver": 0.0625,
+        "potnone_deliver": 0.0625,
+        "potnone_nodeliver": 0.3125
+      },
+      "G_js_bits": 0.04012598849722526,
+      "C_signed_bits": 0.21953243543660061,
+      "M_score_gain": -1.25,
+      "real_score": 0.0,
+      "cut_score": 1.25,
+      "partner_action_tv": 0.06437500000000002
+    },
+    "20": {
+      "n": 16,
+      "P_real": {
+        "pot0_deliver": 0.0,
+        "pot0_nodeliver": 0.6875,
+        "pot1_deliver": 0.0,
+        "pot1_nodeliver": 0.25,
+        "potnone_deliver": 0.0,
+        "potnone_nodeliver": 0.0625
+      },
+      "P_cut": {
+        "pot0_deliver": 0.0,
+        "pot0_nodeliver": 0.75,
+        "pot1_deliver": 0.0,
+        "pot1_nodeliver": 0.25,
+        "potnone_deliver": 0.0,
+        "potnone_nodeliver": 0.0
+      },
+      "G_js_bits": 0.0322304007610265,
+      "C_signed_bits": -0.31036263772772543,
+      "M_score_gain": 0.0,
+      "real_score": 0.0,
+      "cut_score": 0.0,
+      "partner_action_tv": 0.06687499999999999
+    },
+    "40": {
+      "n": 16,
+      "P_real": {
+        "pot0_deliver": 0.0,
+        "pot0_nodeliver": 0.75,
+        "pot1_deliver": 0.0,
+        "pot1_nodeliver": 0.25,
+        "potnone_deliver": 0.0,
+        "potnone_nodeliver": 0.0
+      },
+      "P_cut": {
+        "pot0_deliver": 0.0625,
+        "pot0_nodeliver": 0.625,
+        "pot1_deliver": 0.0,
+        "pot1_nodeliver": 0.125,
+        "potnone_deliver": 0.0,
+        "potnone_nodeliver": 0.1875
+      },
+      "G_js_bits": 0.1444237607243756,
+      "C_signed_bits": 0.690336347351049,
+      "M_score_gain": -1.25,
+      "real_score": 0.0,
+      "cut_score": 1.25,
+      "partner_action_tv": 0.05125000000000002
+    },
+    "80": {
+      "n": 16,
+      "P_real": {
+        "pot0_deliver": 0.0625,
+        "pot0_nodeliver": 0.75,
+        "pot1_deliver": 0.0,
+        "pot1_nodeliver": 0.1875,
+        "potnone_deliver": 0.0,
+        "potnone_nodeliver": 0.0
+      },
+      "P_cut": {
+        "pot0_deliver": 0.0625,
+        "pot0_nodeliver": 0.5625,
+        "pot1_deliver": 0.0,
+        "pot1_nodeliver": 0.25,
+        "potnone_deliver": 0.0,
+        "potnone_nodeliver": 0.125
+      },
+      "G_js_bits": 0.07542538097002992,
+      "C_signed_bits": 0.5778195311147831,
+      "M_score_gain": 0.0,
+      "real_score": 1.25,
+      "cut_score": 1.25,
+      "partner_action_tv": 0.044375000000000005
+    }
+  },
+  "J_temporal_concentration": 0.7768345000893838,
+  "registered_smoke_outcomes": {
+    "OTC_S1_complete_normalized_export": true,
+    "OTC_S2_finite_G_and_action_marginal_diagnostic": true,
+    "OTC_S3_checkpoint_status_explicit": true
+  },
+  "limitations": [
+    "Ghost replay is a one-way partner-feedback cut, not a full matched-marginal causal intervention.",
+    "Smoke runs do not match success rates across mechanisms.",
+    "No learned flagship claim is made unless a checkpoint is supplied."
+  ]
+}

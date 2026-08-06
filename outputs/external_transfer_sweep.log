@@ -1,0 +1,150 @@
+
+=== seed 7031: training external REINFORCE learner ===
+  iter    0 | return   -2.56 | win 0.000
+  iter   20 | return   -2.52 | win 0.000
+  iter   40 | return    4.26 | win 0.083
+  iter   60 | return   16.80 | win 0.333
+  iter   80 | return   24.50 | win 0.833
+  iter  100 | return   21.03 | win 0.667
+  iter  120 | return   19.75 | win 0.583
+  iter  140 | return   25.19 | win 0.833
+  iter  160 | return   25.26 | win 0.833
+  iter  180 | return   25.79 | win 0.833
+  iter  200 | return   25.74 | win 0.833
+  iter  220 | return   22.67 | win 0.667
+  iter  240 | return   26.98 | win 0.917
+  iter  260 | return   26.52 | win 0.917
+  iter  280 | return   25.86 | win 0.833
+  iter  299 | return   21.64 | win 0.583
+  marl_learned    H0 1.504 p_trig 0.50 (pas 0.00/agg 1.00) gap +14.93
+  marl_untrained  H0 0.687 p_trig 1.00 (pas 1.00/agg 1.00) gap -2.21
+  nearest_only    H0 0.960 p_trig 1.00 (pas 1.00/agg 1.00) gap +2.60
+  role_oracle     H0 1.000 p_trig 0.00 (pas 0.00/agg 0.00) gap +2.31
+  damage_aware    H0 1.430 p_trig 0.50 (pas 0.00/agg 1.00) gap +3.18
+
+=== seed 7131: training external REINFORCE learner ===
+  iter    0 | return   -3.66 | win 0.000
+  iter   20 | return   -3.45 | win 0.000
+  iter   40 | return   -3.98 | win 0.000
+  iter   60 | return    3.27 | win 0.167
+  iter   80 | return    1.36 | win 0.083
+  iter  100 | return   14.22 | win 0.333
+  iter  120 | return   23.03 | win 0.667
+  iter  140 | return   21.12 | win 0.583
+  iter  160 | return   24.72 | win 0.750
+  iter  180 | return   25.03 | win 0.833
+  iter  200 | return   18.32 | win 0.417
+  iter  220 | return   25.63 | win 0.833
+  iter  240 | return   26.75 | win 0.917
+  iter  260 | return   22.91 | win 0.667
+  iter  280 | return   24.07 | win 0.750
+  iter  299 | return   24.20 | win 0.750
+  marl_learned    H0 1.504 p_trig 0.50 (pas 0.00/agg 1.00) gap +14.86
+  marl_untrained  H0 1.458 p_trig 0.15 (pas 0.00/agg 0.30) gap +3.21
+  nearest_only    H0 0.980 p_trig 1.00 (pas 1.00/agg 1.00) gap +1.21
+  role_oracle     H0 1.061 p_trig 0.01 (pas 0.00/agg 0.02) gap +3.46
+  damage_aware    H0 1.482 p_trig 0.50 (pas 0.00/agg 1.00) gap +5.17
+
+=== seed 7231: training external REINFORCE learner ===
+  iter    0 | return   -3.21 | win 0.000
+  iter   20 | return   -2.33 | win 0.000
+  iter   40 | return   -2.61 | win 0.000
+  iter   60 | return    1.44 | win 0.083
+  iter   80 | return    0.43 | win 0.083
+  iter  100 | return    1.99 | win 0.083
+  iter  120 | return    3.07 | win 0.083
+  iter  140 | return   -0.03 | win 0.000
+  iter  160 | return    4.00 | win 0.083
+  iter  180 | return   11.85 | win 0.417
+  iter  200 | return   10.46 | win 0.417
+  iter  220 | return    3.17 | win 0.167
+  iter  240 | return   14.36 | win 0.417
+  iter  260 | return   19.37 | win 0.583
+  iter  280 | return   22.99 | win 0.750
+  iter  299 | return   22.70 | win 0.750
+  marl_learned    H0 1.579 p_trig 0.50 (pas 0.00/agg 1.00) gap +14.06
+  marl_untrained  H0 1.223 p_trig 0.04 (pas 0.02/agg 0.07) gap +4.53
+  nearest_only    H0 0.941 p_trig 1.00 (pas 1.00/agg 1.00) gap +1.38
+  role_oracle     H0 0.999 p_trig 0.00 (pas 0.00/agg 0.00) gap +1.75
+  damage_aware    H0 1.449 p_trig 0.50 (pas 0.00/agg 1.00) gap +3.66
+
+=== seed 7331: training external REINFORCE learner ===
+  iter    0 | return   -4.20 | win 0.000
+  iter   20 | return   -4.13 | win 0.000
+  iter   40 | return   -2.99 | win 0.000
+  iter   60 | return    2.31 | win 0.083
+  iter   80 | return   19.00 | win 0.583
+  iter  100 | return   22.69 | win 0.750
+  iter  120 | return   20.38 | win 0.500
+  iter  140 | return   20.36 | win 0.583
+  iter  160 | return   26.51 | win 0.917
+  iter  180 | return   17.46 | win 0.500
+  iter  200 | return   22.46 | win 0.667
+  iter  220 | return   18.53 | win 0.500
+  iter  240 | return   26.59 | win 0.917
+  iter  260 | return   26.97 | win 0.917
+  iter  280 | return   28.74 | win 1.000
+  iter  299 | return   27.14 | win 0.917
+  marl_learned    H0 1.556 p_trig 0.50 (pas 0.00/agg 1.00) gap +12.99
+  marl_untrained  H0 1.740 p_trig 0.65 (pas 0.30/agg 1.00) gap +9.49
+  nearest_only    H0 0.980 p_trig 1.00 (pas 1.00/agg 1.00) gap +3.19
+  role_oracle     H0 0.999 p_trig 0.00 (pas 0.00/agg 0.00) gap +2.34
+  damage_aware    H0 1.543 p_trig 0.50 (pas 0.00/agg 1.00) gap +5.56
+
+=== seed 7431: training external REINFORCE learner ===
+  iter    0 | return   -4.41 | win 0.000
+  iter   20 | return   -3.72 | win 0.000
+  iter   40 | return   -3.44 | win 0.000
+  iter   60 | return   -0.76 | win 0.083
+  iter   80 | return   -1.21 | win 0.000
+  iter  100 | return    4.02 | win 0.167
+  iter  120 | return   21.27 | win 0.667
+  iter  140 | return   18.66 | win 0.583
+  iter  160 | return   22.24 | win 0.667
+  iter  180 | return   21.03 | win 0.583
+  iter  200 | return   21.25 | win 0.667
+  iter  220 | return   25.43 | win 0.833
+  iter  240 | return   27.59 | win 0.917
+  iter  260 | return   25.45 | win 0.833
+  iter  280 | return   20.73 | win 0.583
+  iter  299 | return   25.55 | win 0.833
+  marl_learned    H0 1.520 p_trig 0.50 (pas 0.00/agg 1.00) gap +14.36
+  marl_untrained  H0 0.650 p_trig 0.83 (pas 1.00/agg 0.67) gap -5.34
+  nearest_only    H0 0.980 p_trig 1.00 (pas 1.00/agg 1.00) gap +3.23
+  role_oracle     H0 1.000 p_trig 0.00 (pas 0.00/agg 0.00) gap +2.50
+  damage_aware    H0 1.378 p_trig 0.50 (pas 0.00/agg 1.00) gap +5.98
+
+prediction,pass_rate
+p1_all_verdicts_correct,0.600
+p2_damage_aware_endogeneity_only,1.000
+p3_gap_sign_flips,1.000
+audit_learner_selective,1.000
+
+metric,mean,lo95,hi95
+marl_learned.h0_bits,1.533,1.507,1.560
+marl_learned.usefulness_gap,14.240,13.579,14.787
+marl_learned.natural_trigger_rate,0.500,0.500,0.500
+marl_learned.passive_trigger_rate,0.000,0.000,0.000
+marl_learned.aggressive_trigger_rate,1.000,1.000,1.000
+marl_untrained.h0_bits,1.152,0.780,1.524
+marl_untrained.usefulness_gap,1.934,-2.741,6.249
+marl_untrained.natural_trigger_rate,0.535,0.207,0.863
+marl_untrained.passive_trigger_rate,0.463,0.067,0.860
+marl_untrained.aggressive_trigger_rate,0.607,0.280,0.933
+nearest_only.h0_bits,0.968,0.953,0.980
+nearest_only.usefulness_gap,2.322,1.556,3.088
+nearest_only.natural_trigger_rate,1.000,1.000,1.000
+nearest_only.passive_trigger_rate,1.000,1.000,1.000
+nearest_only.aggressive_trigger_rate,1.000,1.000,1.000
+role_oracle.h0_bits,1.012,0.999,1.036
+role_oracle.usefulness_gap,2.473,2.012,3.013
+role_oracle.natural_trigger_rate,0.002,0.000,0.005
+role_oracle.passive_trigger_rate,0.000,0.000,0.000
+role_oracle.aggressive_trigger_rate,0.003,0.000,0.010
+damage_aware.h0_bits,1.456,1.409,1.506
+damage_aware.usefulness_gap,4.709,3.752,5.649
+damage_aware.natural_trigger_rate,0.500,0.500,0.500
+damage_aware.passive_trigger_rate,0.000,0.000,0.000
+damage_aware.aggressive_trigger_rate,1.000,1.000,1.000
+
+Wrote /home/Yixiang/MPARL/GOGOGO/outputs/external_transfer_sweep_summary.json

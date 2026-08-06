@@ -1,0 +1,62 @@
+Gym has been unmaintained since 2022 and does not support NumPy 2.0 amongst other critical functionality.
+Please upgrade to Gymnasium, the maintained drop-in replacement of Gym, or contact the authors of your software and request that they upgrade.
+Users of this version of Gym should be able to simply replace 'import gym' with 'import gymnasium as gym' in the vast majority of cases.
+See the migration guide at https://gymnasium.farama.org/introduction/migration_guide/ for additional information.
+collecting primary reference states (seed 93004)...
+  ref[cramped_room]: 2000 states (pool 4800)
+  ref[asymmetric_advantages]: 2000 states (pool 4800)
+collecting robustness reference states (seed 93005)...
+  ref[cramped_room]: 2000 states (pool 4800)
+  ref[asymmetric_advantages]: 2000 states (pool 4800)
+seed 93004 ck 40000: O_prim=0.8387 O_rob=0.8360 score=0.00
+seed 93004 ck 80000: O_prim=0.7993 O_rob=0.7977 score=0.00
+seed 93004 ck 120000: O_prim=0.7452 O_rob=0.7560 score=0.67
+seed 93004 ck 160000: O_prim=0.7389 O_rob=0.7408 score=0.00
+seed 93004 ck 240000: O_prim=0.7462 O_rob=0.7610 score=2.00
+seed 93004 ck 320000: O_prim=0.7172 O_rob=0.7213 score=1.33
+seed 93004 ck 480000: O_prim=0.7219 O_rob=0.7116 score=3.33
+seed 93004 ck 640000: O_prim=0.7106 O_rob=0.6804 score=12.00
+seed 93004 ck 820000: O_prim=0.7421 O_rob=0.7066 score=10.33
+seed 93004 ck 1000000: O_prim=0.7115 O_rob=0.6933 score=19.67
+seed 93004 ck 1250000: O_prim=0.7411 O_rob=0.7209 score=18.67
+seed 93004 ck 1500000: O_prim=0.7735 O_rob=0.7617 score=23.67
+seed 93004 ck 1750000: O_prim=0.7348 O_rob=0.7291 score=35.33
+seed 93004 ck 2000000: O_prim=0.7595 O_rob=0.7661 score=39.67
+==> seed 93004: b5=False t*=None dBIC=None robust_b5=False cap_cross=2000000 leads=False
+seed 93005 ck 40000: O_prim=0.8540 O_rob=0.8574 score=0.00
+seed 93005 ck 80000: O_prim=0.8015 O_rob=0.8153 score=0.00
+seed 93005 ck 120000: O_prim=0.7806 O_rob=0.7893 score=0.00
+seed 93005 ck 160000: O_prim=0.7419 O_rob=0.7526 score=1.33
+seed 93005 ck 240000: O_prim=0.6897 O_rob=0.7126 score=1.67
+seed 93005 ck 320000: O_prim=0.6572 O_rob=0.6801 score=0.67
+seed 93005 ck 480000: O_prim=0.6535 O_rob=0.6745 score=2.67
+seed 93005 ck 640000: O_prim=0.6953 O_rob=0.7217 score=14.00
+seed 93005 ck 820000: O_prim=0.6518 O_rob=0.6683 score=21.33
+seed 93005 ck 1000000: O_prim=0.6121 O_rob=0.6354 score=41.00
+seed 93005 ck 1250000: O_prim=0.6047 O_rob=0.6306 score=45.67
+seed 93005 ck 1500000: O_prim=0.5964 O_rob=0.6229 score=52.00
+seed 93005 ck 1750000: O_prim=0.5254 O_rob=0.5589 score=60.00
+seed 93005 ck 2000000: O_prim=0.5251 O_rob=0.5532 score=67.33
+==> seed 93005: b5=False t*=240000.0 dBIC=15.542 robust_b5=False cap_cross=2000000 leads=False
+seed 93006 ck 40000: O_prim=0.8495 O_rob=0.8613 score=0.00
+seed 93006 ck 80000: O_prim=0.7833 O_rob=0.8029 score=0.00
+seed 93006 ck 120000: O_prim=0.7554 O_rob=0.7827 score=0.67
+seed 93006 ck 160000: O_prim=0.7272 O_rob=0.7433 score=3.00
+seed 93006 ck 240000: O_prim=0.7954 O_rob=0.8108 score=1.00
+seed 93006 ck 320000: O_prim=0.7845 O_rob=0.7942 score=0.00
+seed 93006 ck 480000: O_prim=0.7757 O_rob=0.7925 score=2.00
+seed 93006 ck 640000: O_prim=0.7387 O_rob=0.7436 score=6.33
+seed 93006 ck 820000: O_prim=0.7224 O_rob=0.7105 score=9.67
+seed 93006 ck 1000000: O_prim=0.8061 O_rob=0.8098 score=13.33
+seed 93006 ck 1250000: O_prim=0.7200 O_rob=0.7260 score=28.00
+seed 93006 ck 1500000: O_prim=0.7357 O_rob=0.7392 score=35.33
+seed 93006 ck 1750000: O_prim=0.7371 O_rob=0.7270 score=32.00
+seed 93006 ck 2000000: O_prim=0.7676 O_rob=0.7666 score=34.00
+==> seed 93006: b5=False t*=None dBIC=None robust_b5=False cap_cross=1500000 leads=False
+{
+  "OCB1_onset_real_ml": false,
+  "OCB2_collapse_leads_capability": false,
+  "OCB3_reference_robustness": false,
+  "onset_seeds": []
+}
+Wrote /home/Yixiang/MPARL/GOGOGO/outputs/overcooked_state_breakpoint.json

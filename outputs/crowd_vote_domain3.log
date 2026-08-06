@@ -1,0 +1,28 @@
+=== crowd seed 6101 ===
+  learned verdict 1 failed - useful 2.89 fall_shift 0.93
+=== crowd seed 6102 ===
+  learned verdict 1 failed - useful 2.63 fall_shift 0.90
+=== crowd seed 6103 ===
+  learned verdict 1 failed - useful 2.38 fall_shift 0.88
+=== crowd seed 6104 ===
+  learned verdict 0 failed potential;conditional_selectivity;acquisition useful 2.14 fall_shift 0.85
+=== crowd seed 6105 ===
+  learned verdict 0 failed potential;conditional_selectivity;acquisition useful 2.35 fall_shift 0.85
+=== crowd seed 6106 ===
+  learned verdict 1 failed - useful 2.50 fall_shift 0.89
+=== crowd seed 6107 ===
+  learned verdict 1 failed - useful 2.31 fall_shift 0.86
+=== crowd seed 6108 ===
+  learned verdict 1 failed - useful 2.48 fall_shift 0.87
+=== crowd seed 6109 ===
+  learned verdict 0 failed potential;conditional_selectivity;acquisition useful 2.19 fall_shift 0.87
+=== crowd seed 6110 ===
+  learned verdict 1 failed - useful 2.70 fall_shift 0.93
+{
+  "CR1_learned_ge_8_of_10": "7/10 -> False",
+  "CR2_all_50_controls_rejected": "50/50 -> True",
+  "CR3_useful_positive_ge_9": "10/10 -> True",
+  "CR4_doblock_fall_shift_ge_0.3_all": "10/10 -> True",
+  "CR5_field_anarchy_ge_0.7_all": "7/10 -> False"
+}
+Wrote /home/Yixiang/MPARL/GOGOGO/outputs/crowd_vote_domain.json

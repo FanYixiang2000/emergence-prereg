@@ -1,0 +1,319 @@
+{
+  "status": "genesis-curve pilot; one seed; registered in OVERCOOKED_TRANSITION_CONTRACT.md V2 addendum; not a confirmatory flagship result",
+  "seed": 93003,
+  "train_steps": 2000000,
+  "train_minutes": 21.73,
+  "checkpoint_grid": [
+    40000,
+    80000,
+    160000,
+    320000,
+    640000,
+    1000000,
+    1500000,
+    2000000
+  ],
+  "curve": {
+    "40000": {
+      "n": 100,
+      "G_js_bits": 0.029849159066422076,
+      "G_boot_ci95": [
+        0.005267726710144357,
+        0.08400332986403866
+      ],
+      "C_signed_bits": 0.14941972024221473,
+      "M_score_gain": -0.2,
+      "real_score": 0.0,
+      "cut_score": 0.2,
+      "partner_action_tv": 0.024083333333333342,
+      "time_bins": {
+        "120": {
+          "G_js_bits": 0.030624786521834105,
+          "M_score_gain": 0.0
+        },
+        "160": {
+          "G_js_bits": 0.0,
+          "M_score_gain": 0.0
+        },
+        "20": {
+          "G_js_bits": 0.06924399283548067,
+          "M_score_gain": 0.0
+        },
+        "40": {
+          "G_js_bits": 0.07248352287246068,
+          "M_score_gain": 0.0
+        },
+        "80": {
+          "G_js_bits": 0.12302659644754212,
+          "M_score_gain": -1.0
+        }
+      },
+      "eval_minutes": 0.44
+    },
+    "80000": {
+      "n": 100,
+      "G_js_bits": 0.023457411627187702,
+      "G_boot_ci95": [
+        0.005839451098640015,
+        0.07608587330617451
+      ],
+      "C_signed_bits": -0.07369473491128309,
+      "M_score_gain": 0.0,
+      "real_score": 0.4,
+      "cut_score": 0.4,
+      "partner_action_tv": 0.01566666666666669,
+      "time_bins": {
+        "120": {
+          "G_js_bits": 0.1491159772558142,
+          "M_score_gain": 0.0
+        },
+        "160": {
+          "G_js_bits": 0.05314242547681961,
+          "M_score_gain": 0.0
+        },
+        "20": {
+          "G_js_bits": 0.15368406136417898,
+          "M_score_gain": 0.0
+        },
+        "40": {
+          "G_js_bits": 0.0791386954980012,
+          "M_score_gain": -1.0
+        },
+        "80": {
+          "G_js_bits": 0.031127812445913283,
+          "M_score_gain": 1.0
+        }
+      },
+      "eval_minutes": 0.44
+    },
+    "160000": {
+      "n": 100,
+      "G_js_bits": 0.04875528717784867,
+      "G_boot_ci95": [
+        0.01974836344943839,
+        0.12125881567670992
+      ],
+      "C_signed_bits": -0.3940618351842321,
+      "M_score_gain": -0.2,
+      "real_score": 0.2,
+      "cut_score": 0.4,
+      "partner_action_tv": 0.03816666666666664,
+      "time_bins": {
+        "120": {
+          "G_js_bits": 0.11820931247425727,
+          "M_score_gain": -1.0
+        },
+        "160": {
+          "G_js_bits": 0.04000277784080724,
+          "M_score_gain": 0.0
+        },
+        "20": {
+          "G_js_bits": 0.028631175693166425,
+          "M_score_gain": 0.0
+        },
+        "40": {
+          "G_js_bits": 0.11984245558105382,
+          "M_score_gain": 0.0
+        },
+        "80": {
+          "G_js_bits": 0.08242171228425793,
+          "M_score_gain": 0.0
+        }
+      },
+      "eval_minutes": 0.45
+    },
+    "320000": {
+      "n": 100,
+      "G_js_bits": 0.07880098611776479,
+      "G_boot_ci95": [
+        0.036639011612966364,
+        0.15153787160465357
+      ],
+      "C_signed_bits": -0.30848286274879366,
+      "M_score_gain": 0.8,
+      "real_score": 2.0,
+      "cut_score": 1.2,
+      "partner_action_tv": 0.01591666666666667,
+      "time_bins": {
+        "120": {
+          "G_js_bits": 0.03548052814207854,
+          "M_score_gain": 2.0
+        },
+        "160": {
+          "G_js_bits": 0.08854912363768719,
+          "M_score_gain": 1.0
+        },
+        "20": {
+          "G_js_bits": 0.12706395067645782,
+          "M_score_gain": 0.0
+        },
+        "40": {
+          "G_js_bits": 0.25240627601377247,
+          "M_score_gain": 0.0
+        },
+        "80": {
+          "G_js_bits": 0.11876390773803522,
+          "M_score_gain": 1.0
+        }
+      },
+      "eval_minutes": 0.44
+    },
+    "640000": {
+      "n": 100,
+      "G_js_bits": 0.08608113493849834,
+      "G_boot_ci95": [
+        0.05977641159775949,
+        0.14505703589854738
+      ],
+      "C_signed_bits": -0.44132356797836025,
+      "M_score_gain": 4.6000000000000005,
+      "real_score": 9.4,
+      "cut_score": 4.8,
+      "partner_action_tv": 0.030416666666666658,
+      "time_bins": {
+        "120": {
+          "G_js_bits": 0.1387204378531453,
+          "M_score_gain": 3.0
+        },
+        "160": {
+          "G_js_bits": 0.11001302727105938,
+          "M_score_gain": 3.0
+        },
+        "20": {
+          "G_js_bits": 0.16758061010594127,
+          "M_score_gain": 8.0
+        },
+        "40": {
+          "G_js_bits": 0.17288796062688677,
+          "M_score_gain": 7.0
+        },
+        "80": {
+          "G_js_bits": 0.09251008974175942,
+          "M_score_gain": 2.0
+        }
+      },
+      "eval_minutes": 0.43
+    },
+    "1000000": {
+      "n": 100,
+      "G_js_bits": 0.04554427395764455,
+      "G_boot_ci95": [
+        0.019409660835617706,
+        0.10186173344382211
+      ],
+      "C_signed_bits": -0.17076024632651143,
+      "M_score_gain": 7.799999999999997,
+      "real_score": 24.4,
+      "cut_score": 16.6,
+      "partner_action_tv": 0.025249999999999988,
+      "time_bins": {
+        "120": {
+          "G_js_bits": 0.1481818303661286,
+          "M_score_gain": 9.0
+        },
+        "160": {
+          "G_js_bits": 0.10964590721795442,
+          "M_score_gain": 6.0
+        },
+        "20": {
+          "G_js_bits": 0.07851481597987138,
+          "M_score_gain": 8.0
+        },
+        "40": {
+          "G_js_bits": 0.047908726362220974,
+          "M_score_gain": 6.0
+        },
+        "80": {
+          "G_js_bits": 0.009483521086908385,
+          "M_score_gain": 10.0
+        }
+      },
+      "eval_minutes": 0.45
+    },
+    "1500000": {
+      "n": 100,
+      "G_js_bits": 0.04145382737723169,
+      "G_boot_ci95": [
+        0.01916590466100973,
+        0.09321811447462147
+      ],
+      "C_signed_bits": -0.11261086584229307,
+      "M_score_gain": 17.4,
+      "real_score": 46.0,
+      "cut_score": 28.6,
+      "partner_action_tv": 0.03341666666666666,
+      "time_bins": {
+        "120": {
+          "G_js_bits": 0.1,
+          "M_score_gain": 15.0
+        },
+        "160": {
+          "G_js_bits": 0.04449416215995276,
+          "M_score_gain": 15.0
+        },
+        "20": {
+          "G_js_bits": 0.0786703441155712,
+          "M_score_gain": 16.0
+        },
+        "40": {
+          "G_js_bits": 0.059840787695059426,
+          "M_score_gain": 16.0
+        },
+        "80": {
+          "G_js_bits": 0.11153711012194883,
+          "M_score_gain": 25.0
+        }
+      },
+      "eval_minutes": 0.45
+    },
+    "2000000": {
+      "n": 100,
+      "G_js_bits": 0.07033634742081751,
+      "G_boot_ci95": [
+        0.03728817400842275,
+        0.1270472224028877
+      ],
+      "C_signed_bits": 0.4933676279868857,
+      "M_score_gain": 16.2,
+      "real_score": 35.4,
+      "cut_score": 19.2,
+      "partner_action_tv": 0.04374999999999998,
+      "time_bins": {
+        "120": {
+          "G_js_bits": 0.08427023792273283,
+          "M_score_gain": 18.0
+        },
+        "160": {
+          "G_js_bits": 0.11471401858271046,
+          "M_score_gain": 21.0
+        },
+        "20": {
+          "G_js_bits": 0.17805398603556044,
+          "M_score_gain": 11.0
+        },
+        "40": {
+          "G_js_bits": 0.026061417793126034,
+          "M_score_gain": 17.0
+        },
+        "80": {
+          "G_js_bits": 0.05452023668460098,
+          "M_score_gain": 14.0
+        }
+      },
+      "eval_minutes": 0.45
+    }
+  },
+  "t_seed_index": 2,
+  "t_visible_index": 5,
+  "t_seed_steps": 160000,
+  "t_visible_steps": 1000000,
+  "registered_outcomes": {
+    "OTC_G1_all_finite_normalized": true,
+    "OTC_G2_seed_no_later_than_visible": true,
+    "OTC_G3_final_M_positive": true
+  },
+  "limitations": [
+    "One seed; grid coarse; no burstiness claim registered (grid dependence known from the Pythia thinning result).",
+    "Ghost replay is a one-way partner-feedback cut."
+  ]
+}

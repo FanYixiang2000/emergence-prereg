@@ -1,0 +1,35 @@
+  seed 95101 ckpt 0: r=0.441 Ctot=0.035 Cpair=0.003 Chigh=0.009 Chigh2=0.000
+  seed 95101 ckpt 50: r=0.442 Ctot=0.034 Cpair=0.003 Chigh=0.009 Chigh2=0.000
+  seed 95101 ckpt 100: r=0.444 Ctot=0.043 Cpair=0.003 Chigh=0.009 Chigh2=0.000
+  seed 95101 ckpt 200: r=0.438 Ctot=0.060 Cpair=0.003 Chigh=0.008 Chigh2=0.000
+  seed 95101 ckpt 400: r=0.443 Ctot=0.096 Cpair=0.003 Chigh=0.008 Chigh2=0.000
+  seed 95101 ckpt 800: r=0.443 Ctot=0.056 Cpair=0.003 Chigh=0.009 Chigh2=0.000
+  seed 95101 ckpt 1600: r=0.444 Ctot=0.038 Cpair=0.003 Chigh=0.008 Chigh2=0.000
+  seed 95101 ckpt 3000: r=0.444 Ctot=0.030 Cpair=0.003 Chigh=0.009 Chigh2=0.000
+  seed 95102 ckpt 0: r=0.444 Ctot=0.041 Cpair=0.003 Chigh=0.008 Chigh2=0.000
+  seed 95102 ckpt 50: r=0.442 Ctot=0.038 Cpair=0.003 Chigh=0.009 Chigh2=0.000
+  seed 95102 ckpt 100: r=0.439 Ctot=0.045 Cpair=0.003 Chigh=0.009 Chigh2=0.000
+  seed 95102 ckpt 200: r=0.442 Ctot=0.074 Cpair=0.003 Chigh=0.009 Chigh2=0.000
+  seed 95102 ckpt 400: r=0.440 Ctot=0.139 Cpair=0.003 Chigh=0.008 Chigh2=0.000
+  seed 95102 ckpt 800: r=0.444 Ctot=0.071 Cpair=0.003 Chigh=0.009 Chigh2=0.000
+  seed 95102 ckpt 1600: r=0.445 Ctot=0.049 Cpair=0.002 Chigh=0.009 Chigh2=0.000
+  seed 95102 ckpt 3000: r=0.446 Ctot=0.051 Cpair=0.003 Chigh=0.008 Chigh2=0.000
+  seed 95103 ckpt 0: r=0.439 Ctot=0.025 Cpair=0.003 Chigh=0.008 Chigh2=0.000
+  seed 95103 ckpt 50: r=0.445 Ctot=0.028 Cpair=0.003 Chigh=0.009 Chigh2=0.000
+  seed 95103 ckpt 100: r=0.443 Ctot=0.031 Cpair=0.003 Chigh=0.008 Chigh2=0.000
+  seed 95103 ckpt 200: r=0.446 Ctot=0.051 Cpair=0.003 Chigh=0.008 Chigh2=0.000
+  seed 95103 ckpt 400: r=0.441 Ctot=0.078 Cpair=0.003 Chigh=0.008 Chigh2=0.000
+  seed 95103 ckpt 800: r=0.441 Ctot=0.068 Cpair=0.003 Chigh=0.008 Chigh2=0.000
+  seed 95103 ckpt 1600: r=0.443 Ctot=0.077 Cpair=0.003 Chigh=0.008 Chigh2=0.000
+  seed 95103 ckpt 3000: r=0.446 Ctot=0.037 Cpair=0.003 Chigh=0.008 Chigh2=0.000
+{
+  "TRI1_formation": false,
+  "TRI2_relational_carrier": false,
+  "TRI3_higher_order_MAY_MISS": false,
+  "training_failure_seeds": [
+    95101,
+    95102,
+    95103
+  ]
+}
+Wrote /home/Yixiang/MPARL/GOGOGO/outputs/triad_relational_collapse.json

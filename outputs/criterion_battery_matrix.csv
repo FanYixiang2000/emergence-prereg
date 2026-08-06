@@ -1,0 +1,10 @@
+system,ground_truth_emergent,pass_potential,pass_selectivity,pass_specificity,pass_usefulness,pass_endogeneity,full_criterion
+latent_conditional,1,1,1,1,1,1,1
+converged_team,0,0,1,0,1,1,0
+shaped_process,0,1,1,1,1,0,0
+noise_policy,1,1,1,1,1,1,1
+untrained_uniform,0,0,1,0,0,1,0
+blind_trigger,0,1,0,1,0,1,0
+harmful_decoy,0,0,0,1,0,1,0
+useful_habit,0,1,0,1,1,1,0
+wrong_selector,0,1,1,1,0,1,0

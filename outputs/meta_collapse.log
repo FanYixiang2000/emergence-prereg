@@ -1,0 +1,13 @@
+10/50 seeds; last: selective commit at ckpt 29
+20/50 seeds; last: selective commit at ckpt 27
+30/50 seeds; last: blind_dem commit at ckpt 29
+40/50 seeds; last: blind_dem commit at ckpt 28
+50/50 seeds; last: selective commit at ckpt 28
+{
+  "MC1_median_gt_0.25": "0.97 -> True",
+  "MC2_iqr_ge_0.20": "0.03 -> False",
+  "MC3_blind_fewer_anarchy_field_successes": "False",
+  "MC4_entropy_decline_mostly_after_25pct": "-0.20/0.00 -> False"
+}
+final classes: {'selective': 26, 'blind_dem': 22, 'blind_anarchy': 2, 'inverse': 0}
+Wrote /home/Yixiang/MPARL/GOGOGO/outputs/meta_collapse_commitment.json

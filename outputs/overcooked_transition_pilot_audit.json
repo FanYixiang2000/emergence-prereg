@@ -1,0 +1,106 @@
+{
+  "status": "Overcooked transition pilot audit; descriptive only, not a confirmatory learned flagship",
+  "rows": [
+    {
+      "label": "scripted_null",
+      "available": true,
+      "policy": {
+        "kind": "scripted_roles",
+        "checkpoint": null,
+        "learned_checkpoint_supplied": false
+      },
+      "n": 12,
+      "G_js_bits": 0.0,
+      "C_signed_bits": 0.0,
+      "M_score_gain": 0.0,
+      "real_score": 35.0,
+      "cut_score": 35.0,
+      "partner_action_tv": 0.004166666666666659,
+      "J_temporal_concentration": 0.0,
+      "smoke_outcomes_all_pass": true
+    },
+    {
+      "label": "initial_untrained",
+      "available": true,
+      "policy": {
+        "kind": "initial",
+        "checkpoint": null,
+        "learned_checkpoint_supplied": false
+      },
+      "n": 12,
+      "G_js_bits": 0.043098453147080364,
+      "C_signed_bits": -0.4028722380113871,
+      "M_score_gain": 0.0,
+      "real_score": 0.0,
+      "cut_score": 0.0,
+      "partner_action_tv": 0.07916666666666665,
+      "J_temporal_concentration": 0.532833836876739,
+      "smoke_outcomes_all_pass": true
+    },
+    {
+      "label": "learned_40k",
+      "available": true,
+      "policy": {
+        "kind": "checkpoint",
+        "checkpoint": "outputs/overcooked_transition_pilot40k_s92001.pt",
+        "learned_checkpoint_supplied": true
+      },
+      "n": 36,
+      "G_js_bits": 0.009049362300780066,
+      "C_signed_bits": 0.05447952564164549,
+      "M_score_gain": 0.0,
+      "real_score": 0.0,
+      "cut_score": 0.0,
+      "partner_action_tv": 0.024652777777777794,
+      "J_temporal_concentration": 0.7436933587962967,
+      "smoke_outcomes_all_pass": true
+    },
+    {
+      "label": "learned_500k",
+      "available": true,
+      "policy": {
+        "kind": "checkpoint",
+        "checkpoint": "outputs/overcooked_transition_pilot500k_s92002.pt",
+        "learned_checkpoint_supplied": true
+      },
+      "n": 64,
+      "G_js_bits": 0.011838685085869771,
+      "C_signed_bits": 0.22185596736665136,
+      "M_score_gain": -0.625,
+      "real_score": 0.3125,
+      "cut_score": 0.9375,
+      "partner_action_tv": 0.024531249999999998,
+      "J_temporal_concentration": 0.7768345000893838,
+      "smoke_outcomes_all_pass": true
+    },
+    {
+      "label": "learned_2m",
+      "available": true,
+      "policy": {
+        "kind": "checkpoint",
+        "checkpoint": "outputs/overcooked_transition_pilot2m_s92003.pt",
+        "learned_checkpoint_supplied": true
+      },
+      "n": 100,
+      "G_js_bits": 0.05463387407653376,
+      "C_signed_bits": 0.21580748714428344,
+      "M_score_gain": 14.600000000000001,
+      "real_score": 41.6,
+      "cut_score": 27.0,
+      "partner_action_tv": 0.024750000000000015,
+      "J_temporal_concentration": 0.549510892399062,
+      "smoke_outcomes_all_pass": true
+    }
+  ],
+  "interpretation_rules": [
+    "A learned positive requires non-trivial G/N/R plus macro effect; G alone is not enough.",
+    "Partner-action TV is a diagnostic for cut mismatch and must be kept small or modelled with a marginal null.",
+    "M=0 means no functional positive claim, even if G is finite."
+  ],
+  "summary": {
+    "n_available": 5,
+    "learned_available": 3,
+    "any_learned_positive_M": true,
+    "max_learned_G": 0.05463387407653376
+  }
+}

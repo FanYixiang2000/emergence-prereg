@@ -1,0 +1,118 @@
+{
+  "status": "standardized emergence certificates from frozen instruments; packaging only, no new thresholds",
+  "certificates": {
+    "grip realization (16 agents)": {
+      "verdict": "emergent: punctuated",
+      "qualification": {
+        "regime_level": true,
+        "endogenous": true,
+        "persistent": true,
+        "provenance_note": "policy-internal side channel; joint commitment of 16 agents"
+      },
+      "eip": {
+        "amplitude_fraction_closed": 0.9054,
+        "abruptness_class": "punctuated onset",
+        "sharpness_slope_ratio": 250.56,
+        "delta_bic": 62.19,
+        "t_star": 17.0
+      }
+    },
+    "convention formation (10 agents)": {
+      "verdict": "emergent: punctuated",
+      "qualification": {
+        "regime_level": true,
+        "endogenous": true,
+        "persistent": true,
+        "provenance_note": "all codes equivalent; population-level mapping is a joint object"
+      },
+      "eip": {
+        "amplitude_fraction_closed": 0.9959,
+        "abruptness_class": "punctuated onset",
+        "sharpness_slope_ratio": 43.69,
+        "delta_bic": 10.122,
+        "t_star": 250.0
+      }
+    },
+    "role lock-in (6 agents)": {
+      "verdict": "emergent: punctuated",
+      "qualification": {
+        "regime_level": true,
+        "endogenous": true,
+        "persistent": true,
+        "provenance_note": "all permutations equivalent; coverage is a joint constraint"
+      },
+      "eip": {
+        "amplitude_fraction_closed": 0.9998,
+        "abruptness_class": "punctuated onset",
+        "sharpness_slope_ratio": 37.26,
+        "delta_bic": 93.838,
+        "t_star": 400.0
+      }
+    },
+    "ant colony N=100": {
+      "verdict": "emergent: punctuated",
+      "qualification": {
+        "regime_level": true,
+        "endogenous": true,
+        "persistent": true,
+        "provenance_note": "food sites symmetric; recruitment couples the colony"
+      },
+      "eip": {
+        "amplitude_fraction_closed": 0.8908,
+        "abruptness_class": "punctuated onset",
+        "sharpness_slope_ratio": 11.68,
+        "delta_bic": 217.166,
+        "t_star": 35.0
+      }
+    },
+    "single ant N=1 (control)": {
+      "verdict": "organized, not qualified (fails: regime_level)",
+      "qualification": {
+        "regime_level": false,
+        "endogenous": true,
+        "persistent": true,
+        "provenance_note": "single chooser: the collapse is purely individual-source"
+      },
+      "eip": {
+        "amplitude_fraction_closed": 0.9201,
+        "abruptness_class": "deceleration knee",
+        "sharpness_slope_ratio": 0.3,
+        "delta_bic": 101.023,
+        "t_star": 25.0
+      }
+    },
+    "TRI-C high-order (3 agents)": {
+      "verdict": "emergent: punctuated",
+      "qualification": {
+        "regime_level": true,
+        "endogenous": true,
+        "persistent": true,
+        "provenance_note": "collapse carried by the high-order channel (C_high ~0.95 bits)"
+      },
+      "eip": {
+        "amplitude_fraction_closed": 0.3209,
+        "abruptness_class": "punctuated onset",
+        "sharpness_slope_ratio": 138.72,
+        "delta_bic": 116.037,
+        "t_star": 650.0
+      }
+    },
+    "Overcooked occupancy (deep MARL)": {
+      "verdict": "organized, not qualified (fails: regime_level)",
+      "qualification": {
+        "regime_level": false,
+        "endogenous": true,
+        "persistent": true,
+        "provenance_note": "trajectory occupancy of the trained pair; standard cramped room"
+      },
+      "eip": {
+        "amplitude_fraction_closed": 0.1125,
+        "abruptness_class": "none",
+        "sharpness_slope_ratio": null,
+        "delta_bic": null,
+        "t_star": null
+      },
+      "low_power_warning": "14 grid points: measured onset power < 0.995, so the ABSENCE of an onset verdict is weak evidence of absence"
+    }
+  }
+}

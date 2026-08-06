@@ -1,0 +1,44 @@
+{
+  "status": "engine-independent realized-outcome referee; outcomes never used in any scoring stage",
+  "predictions_frozen_in_docstring": true,
+  "per_month": {
+    "2015_08": {
+      "n_matched": 400,
+      "n_flagged": 75,
+      "delta_flagged": 0.0017857142857142794,
+      "delta_flagged_ci95": [
+        -0.21061033724340172,
+        0.21964356575963712
+      ],
+      "delta_unflagged": -0.0025369978858351683,
+      "played_rate_flagged": 0.5333333333333333,
+      "played_rate_unflagged": 0.3384615384615385,
+      "mover_elo_flagged": 1977.52,
+      "mover_elo_unflagged": 1971.1384615384616
+    },
+    "2016_03": {
+      "n_matched": 400,
+      "n_flagged": 75,
+      "delta_flagged": 0.02398255813953487,
+      "delta_flagged_ci95": [
+        -0.20378208348556814,
+        0.24940868435334385
+      ],
+      "delta_unflagged": 0.04715768425061889,
+      "played_rate_flagged": 0.4266666666666667,
+      "played_rate_unflagged": 0.27384615384615385,
+      "mover_elo_flagged": 1958.4266666666667,
+      "mover_elo_unflagged": 1957.4984615384615
+    }
+  },
+  "pooled": {
+    "n": 800,
+    "interaction_delta_flag_minus_unflag": -0.008667828644235043,
+    "permutation_p_one_sided": 0.5366463353664633
+  },
+  "registered_outcomes": {
+    "RO1_interaction_positive_pooled": false,
+    "RO2_delta_flagged_positive_each_month": true
+  },
+  "confounder_note": "Mover-rating means for flagged vs unflagged positions are reported above; the interaction contrast differences out the baseline association between playing the shallow-best move and winning."
+}

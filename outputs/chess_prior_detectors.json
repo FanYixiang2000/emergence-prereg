@@ -1,0 +1,42 @@
+{
+  "key_identification": {
+    "collapse_only": {
+      "key_top1_rate": 0.5291666666666667,
+      "n": 240
+    },
+    "specificity_only": {
+      "key_top1_rate": 0.05416666666666667,
+      "n": 240
+    },
+    "local_value": {
+      "key_top1_rate": 0.23333333333333334,
+      "n": 240
+    },
+    "useful_collapse": {
+      "key_top1_rate": 0.9916666666666667,
+      "n": 240
+    }
+  },
+  "quiet_separation": {
+    "collapse_only": {
+      "sacrifice_key_mean": 0.17330436743533378,
+      "quiet_best_mean": -0.028336292952089184,
+      "separation": 0.20164066038742295
+    },
+    "specificity_only": {
+      "sacrifice_key_mean": 0.094140625,
+      "quiet_best_mean": 0.1015625,
+      "separation": -0.0074218749999999944
+    },
+    "local_value": {
+      "sacrifice_key_mean": -3.0791666666666666,
+      "quiet_best_mean": -1.0833333333333333,
+      "separation": -1.9958333333333333
+    },
+    "useful_collapse": {
+      "sacrifice_key_mean": 0.056901041666666666,
+      "quiet_best_mean": -0.020833333333333332,
+      "separation": 0.077734375
+    }
+  }
+}

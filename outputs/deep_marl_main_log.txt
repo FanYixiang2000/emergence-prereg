@@ -1,0 +1,110 @@
+training PPO seed 11 ...
+  seed 11 episode 500: mean return (last 100) -25.38
+  seed 11 episode 1000: mean return (last 100) -28.46
+  seed 11 episode 1500: mean return (last 100) -27.41
+  seed 11 episode 2000: mean return (last 100) -27.11
+  seed 11 episode 2500: mean return (last 100) -27.22
+  seed 11 episode 3000: mean return (last 100) -27.78
+  seed 11 episode 3500: mean return (last 100) -27.53
+  seed 11 episode 4000: mean return (last 100) -25.78
+{
+  "condition": "trained_seed11",
+  "n_episodes": 40,
+  "early_potential_bits": 2.4428134653306772,
+  "p_win_start": 0.14583333333333331,
+  "p_win_end": 0.2,
+  "final_bijection_rate": 0.2,
+  "mean_commit_step": 6.375,
+  "do_gap_median": -0.010416666666666657,
+  "do_gap_mean": -0.010937500000000011,
+  "do_sign_wins": 16,
+  "do_sign_losses": 20,
+  "do_sign_p": 0.7974838769296184
+}
+training PPO seed 22 ...
+  seed 22 episode 500: mean return (last 100) -26.36
+  seed 22 episode 1000: mean return (last 100) -29.00
+  seed 22 episode 1500: mean return (last 100) -26.57
+  seed 22 episode 2000: mean return (last 100) -26.66
+  seed 22 episode 2500: mean return (last 100) -27.38
+  seed 22 episode 3000: mean return (last 100) -26.00
+  seed 22 episode 3500: mean return (last 100) -26.95
+  seed 22 episode 4000: mean return (last 100) -25.74
+{
+  "condition": "trained_seed22",
+  "n_episodes": 40,
+  "early_potential_bits": 2.7231176698748674,
+  "p_win_start": 0.2296875,
+  "p_win_end": 0.225,
+  "final_bijection_rate": 0.225,
+  "mean_commit_step": 5.35,
+  "do_gap_median": 0.05208333333333333,
+  "do_gap_mean": 0.030208333333333344,
+  "do_sign_wins": 23,
+  "do_sign_losses": 13,
+  "do_sign_p": 0.06624908198136836
+}
+training PPO seed 33 ...
+  seed 33 episode 500: mean return (last 100) -27.28
+  seed 33 episode 1000: mean return (last 100) -26.89
+  seed 33 episode 1500: mean return (last 100) -26.65
+  seed 33 episode 2000: mean return (last 100) -26.57
+  seed 33 episode 2500: mean return (last 100) -26.52
+  seed 33 episode 3000: mean return (last 100) -26.11
+  seed 33 episode 3500: mean return (last 100) -26.87
+  seed 33 episode 4000: mean return (last 100) -26.17
+{
+  "condition": "trained_seed33",
+  "n_episodes": 40,
+  "early_potential_bits": 2.324330453951718,
+  "p_win_start": 0.21354166666666666,
+  "p_win_end": 0.125,
+  "final_bijection_rate": 0.125,
+  "mean_commit_step": 7.0,
+  "do_gap_median": 0.0,
+  "do_gap_mean": -0.03854166666666666,
+  "do_sign_wins": 14,
+  "do_sign_losses": 16,
+  "do_sign_p": 0.707667644135654
+}
+{
+  "D1_potential": {
+    "trained_early_potential": [
+      2.4428134653306772,
+      2.7231176698748674,
+      2.324330453951718
+    ],
+    "pass": true
+  },
+  "D2_useful_collapse": {
+    "trained_win_shift": [
+      0.054166666666666696,
+      -0.004687499999999983,
+      -0.08854166666666666
+    ],
+    "trained_bijection_rate": [
+      0.2,
+      0.225,
+      0.125
+    ],
+    "untrained_bijection_rate": 0.125,
+    "noise_bijection_rate": 0.2,
+    "pass": false
+  },
+  "D3_counterfactual": {
+    "pooled_do_gap_median": 0.0,
+    "pooled_sign_wins": 53,
+    "pooled_sign_losses": 49,
+    "pooled_sign_p": 0.3833021306259259,
+    "pass": false
+  },
+  "D4_greedy_contrast": {
+    "greedy_bijection_rate": 0.425,
+    "greedy_early_potential": 0.0,
+    "trained_min_bijection": 0.125,
+    "trained_min_potential": 2.324330453951718,
+    "pass": false
+  },
+  "all_pass": false
+}
+Wrote /home/Yixiang/MPARL/GOGOGO/outputs/deep_marl_collapse_main.json

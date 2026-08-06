@@ -1,0 +1,53 @@
+head_facts: 20 items (0 dropped)
+tail_facts: 27 items (0 dropped)
+tail_words: 36 items (0 dropped)
+Loading weights:   0%|          | 0/148 [00:00<?, ?it/s]Loading weights: 100%|██████████| 148/148 [00:00<00:00, 9746.23it/s]
+step        0 | head_facts acc 0.450 H 15.33 C  0.00 | tail_facts acc 0.519 H 15.33 C  0.00 | tail_words acc 0.472 H 15.33 C  0.00 [2s]
+Loading weights:   0%|          | 0/148 [00:00<?, ?it/s]Loading weights: 100%|██████████| 148/148 [00:00<00:00, 8882.80it/s]
+step        1 | head_facts acc 0.450 H 15.33 C  0.00 | tail_facts acc 0.519 H 15.33 C  0.00 | tail_words acc 0.472 H 15.33 C  0.00 [41s]
+Loading weights:   0%|          | 0/148 [00:00<?, ?it/s]Loading weights: 100%|██████████| 148/148 [00:00<00:00, 8667.37it/s]
+step        2 | head_facts acc 0.450 H 15.33 C  0.00 | tail_facts acc 0.519 H 15.33 C  0.00 | tail_words acc 0.472 H 15.33 C  0.00 [22s]
+Loading weights:   0%|          | 0/148 [00:00<?, ?it/s]Loading weights: 100%|██████████| 148/148 [00:00<00:00, 9076.06it/s]
+step        4 | head_facts acc 0.500 H 15.33 C  0.00 | tail_facts acc 0.444 H 15.33 C  0.00 | tail_words acc 0.444 H 15.33 C  0.00 [33s]
+Loading weights:   0%|          | 0/148 [00:00<?, ?it/s]Loading weights: 100%|██████████| 148/148 [00:00<00:00, 8384.64it/s]
+step        8 | head_facts acc 0.550 H 15.33 C  0.03 | tail_facts acc 0.444 H 15.33 C  0.03 | tail_words acc 0.472 H 15.33 C  0.03 [25s]
+Loading weights:   0%|          | 0/148 [00:00<?, ?it/s]Loading weights: 100%|██████████| 148/148 [00:00<00:00, 9012.67it/s]
+step       16 | head_facts acc 0.450 H 15.30 C  0.27 | tail_facts acc 0.556 H 15.30 C  0.27 | tail_words acc 0.472 H 15.29 C  0.29 [55s]
+Loading weights:   0%|          | 0/148 [00:00<?, ?it/s]Loading weights: 100%|██████████| 148/148 [00:00<00:00, 9175.87it/s]
+step       32 | head_facts acc 0.600 H 14.98 C  0.76 | tail_facts acc 0.444 H 14.99 C  0.77 | tail_words acc 0.472 H 15.15 C  0.64 [22s]
+Loading weights:   0%|          | 0/148 [00:00<?, ?it/s]Loading weights: 100%|██████████| 148/148 [00:00<00:00, 9142.22it/s]
+step       64 | head_facts acc 0.450 H 14.26 C  1.59 | tail_facts acc 0.444 H 14.27 C  1.59 | tail_words acc 0.500 H 15.17 C  0.63 [24s]
+Loading weights:   0%|          | 0/148 [00:00<?, ?it/s]Loading weights: 100%|██████████| 148/148 [00:00<00:00, 8457.18it/s]
+step      128 | head_facts acc 0.550 H 13.16 C  2.78 | tail_facts acc 0.481 H 13.16 C  2.78 | tail_words acc 0.556 H 14.29 C  1.59 [23s]
+Loading weights:   0%|          | 0/148 [00:00<?, ?it/s]Loading weights: 100%|██████████| 148/148 [00:00<00:00, 9721.51it/s]
+step      256 | head_facts acc 0.500 H 10.09 C  5.84 | tail_facts acc 0.481 H  9.99 C  5.96 | tail_words acc 0.472 H 12.42 C  3.50 [24s]
+Loading weights:   0%|          | 0/148 [00:00<?, ?it/s]Loading weights: 100%|██████████| 148/148 [00:00<00:00, 9556.14it/s]
+step      512 | head_facts acc 0.600 H  8.61 C  7.22 | tail_facts acc 0.370 H  8.46 C  7.39 | tail_words acc 0.556 H 11.49 C  4.43 [23s]
+Loading weights:   0%|          | 0/148 [00:00<?, ?it/s]Loading weights: 100%|██████████| 148/148 [00:00<00:00, 8371.86it/s]
+step     1000 | head_facts acc 0.600 H  8.28 C  7.72 | tail_facts acc 0.481 H  8.43 C  7.58 | tail_words acc 0.611 H 10.44 C  5.51 [23s]
+Loading weights:   0%|          | 0/148 [00:00<?, ?it/s]Loading weights: 100%|██████████| 148/148 [00:00<00:00, 8829.23it/s]
+step     2000 | head_facts acc 0.850 H  8.46 C  7.55 | tail_facts acc 0.667 H  8.51 C  7.52 | tail_words acc 0.667 H 10.04 C  5.89 [31s]
+Loading weights:   0%|          | 0/148 [00:00<?, ?it/s]Loading weights: 100%|██████████| 148/148 [00:00<00:00, 8454.30it/s]
+step     4000 | head_facts acc 0.950 H  8.31 C  7.58 | tail_facts acc 0.741 H  8.37 C  7.53 | tail_words acc 0.750 H  9.53 C  6.44 [38s]
+Loading weights:   0%|          | 0/148 [00:00<?, ?it/s]Loading weights: 100%|██████████| 148/148 [00:00<00:00, 9992.87it/s]
+step     8000 | head_facts acc 0.950 H  7.71 C  8.03 | tail_facts acc 0.889 H  7.79 C  7.98 | tail_words acc 0.750 H  9.54 C  6.42 [57s]
+Loading weights:   0%|          | 0/148 [00:00<?, ?it/s]Loading weights: 100%|██████████| 148/148 [00:00<00:00, 8436.61it/s]
+step    16000 | head_facts acc 0.900 H  7.95 C  7.90 | tail_facts acc 0.889 H  7.94 C  7.92 | tail_words acc 0.750 H  9.66 C  6.30 [62s]
+Loading weights:   0%|          | 0/148 [00:00<?, ?it/s]Loading weights: 100%|██████████| 148/148 [00:00<00:00, 9319.00it/s]
+step    32000 | head_facts acc 1.000 H  7.81 C  7.92 | tail_facts acc 0.889 H  7.73 C  8.02 | tail_words acc 0.750 H  9.32 C  6.65 [58s]
+Loading weights:   0%|          | 0/148 [00:00<?, ?it/s]Loading weights: 100%|██████████| 148/148 [00:00<00:00, 8906.00it/s]
+step    64000 | head_facts acc 1.000 H  7.58 C  8.22 | tail_facts acc 0.889 H  7.54 C  8.25 | tail_words acc 0.750 H  9.26 C  6.68 [75s]
+Loading weights:   0%|          | 0/148 [00:00<?, ?it/s]Loading weights: 100%|██████████| 148/148 [00:00<00:00, 9738.13it/s]
+step    96000 | head_facts acc 0.950 H  7.71 C  8.13 | tail_facts acc 0.963 H  7.63 C  8.19 | tail_words acc 0.750 H  9.11 C  6.83 [54s]
+Loading weights:   0%|          | 0/148 [00:00<?, ?it/s]Loading weights: 100%|██████████| 148/148 [00:00<00:00, 8768.00it/s]
+step   128000 | head_facts acc 0.900 H  7.96 C  7.80 | tail_facts acc 0.926 H  7.80 C  7.95 | tail_words acc 0.750 H  9.53 C  6.43 [32s]
+Loading weights:   0%|          | 0/148 [00:00<?, ?it/s]Loading weights: 100%|██████████| 148/148 [00:00<00:00, 9297.64it/s]
+step   143000 | head_facts acc 0.900 H  8.63 C  7.24 | tail_facts acc 0.926 H  8.45 C  7.39 | tail_words acc 0.722 H  9.59 C  6.38 [24s]
+/home/Yixiang/miniconda3/lib/python3.13/site-packages/numpy/lib/_function_base_impl.py:3023: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[:, None]
+/home/Yixiang/miniconda3/lib/python3.13/site-packages/numpy/lib/_function_base_impl.py:3024: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[None, :]
+head_facts: emergent=1 failed=-
+tail_facts: emergent=0 failed=burstiness
+tail_words: emergent=0 failed=usefulness
+Wrote /home/Yixiang/MPARL/GOGOGO/outputs/pythia_tail_summary.json

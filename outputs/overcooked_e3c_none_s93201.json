@@ -1,0 +1,49 @@
+{
+  "status": "E3C confirmatory intervention run; registered in V2_ALIGNMENT_PREREGISTRATION.md before launch",
+  "condition": "none",
+  "window": null,
+  "seed": 93201,
+  "train_minutes": 25.85,
+  "certificate_2M": {
+    "n": 100,
+    "G_js_bits": 0.0031523620673588673,
+    "G_boot_ci95": [
+      0.00039886288670601736,
+      0.02992123929684943
+    ],
+    "C_signed_bits": -0.016601187466550815,
+    "M_score_gain": 5.0,
+    "real_score": 21.6,
+    "cut_score": 16.6,
+    "partner_action_tv": 0.01633333333333333,
+    "time_bins": {
+      "120": {
+        "G_js_bits": 0.05527286753700336,
+        "M_score_gain": 4.0
+      },
+      "160": {
+        "G_js_bits": 0.005019753765565668,
+        "M_score_gain": 4.0
+      },
+      "20": {
+        "G_js_bits": 0.09024101186092026,
+        "M_score_gain": 8.0
+      },
+      "40": {
+        "G_js_bits": 0.0490224995673063,
+        "M_score_gain": 3.0
+      },
+      "80": {
+        "G_js_bits": 0.0027031096369629845,
+        "M_score_gain": 6.0
+      }
+    }
+  },
+  "joint_ladder_2M": {
+    "C_individual": 0.34308430540591495,
+    "C_env": 0.016505262100796614,
+    "C_relational": 0.014630620213655021,
+    "C_total": 0.3742201877203666,
+    "collapse_norm": 0.07238406507173045
+  }
+}

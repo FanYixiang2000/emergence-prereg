@@ -1,0 +1,11 @@
+{
+  "status": "disclosed follow-up to the retained WM-3 miss; coverage-augmented decidability rule computed read-only from the stored output",
+  "rule": "registered margin rule AND incomplete-rollout fraction < 0.1",
+  "mismatches_total": 20,
+  "mismatches_caught_by_augmented_rule": 20,
+  "silent_wrong_verdicts_remaining": [],
+  "abstentions_at_K20000": 15,
+  "F1_all_mismatches_caught": true,
+  "F2_no_abstention_at_K20000": false,
+  "reading": "Ensemble spread detects variance but not shared bias; model coverage detects the shared-bias failure mode directly and is available without simulator access. The registered WM-3 miss is retained; the augmented rule is a disclosed follow-up, to be frozen prospectively in the next domain."
+}

@@ -1,0 +1,184 @@
+{
+  "status": "frozen confirmation run",
+  "layouts": [
+    "cramped_room",
+    "asymmetric_advantages"
+  ],
+  "train_steps": 5000000,
+  "n_eval_per_context": 40,
+  "seeds": {
+    "77002": {
+      "train_minutes": 86.3,
+      "learned": {
+        "metrics": {
+          "rows_n": 240,
+          "potential_bits": 1.6335416541530634,
+          "trigger_rates": {
+            "0": 0.425,
+            "1": 1.0
+          },
+          "conditional_selectivity": 0.575,
+          "specificity_js_bits": 1.0,
+          "usefulness_gap": 93.75,
+          "natural_score": 94.25,
+          "do_block_score": 0.5
+        },
+        "acquisition": 0.475,
+        "verdict": {
+          "passes": {
+            "potential": true,
+            "conditional_selectivity": true,
+            "specificity": true,
+            "usefulness": true,
+            "endogeneity": true,
+            "acquisition": true
+          },
+          "emergent": 1,
+          "failed": []
+        }
+      },
+      "initial_twin": {
+        "metrics": {
+          "rows_n": 240,
+          "potential_bits": 1.5221014584924542,
+          "trigger_rates": {
+            "0": 0.4,
+            "1": 0.5
+          },
+          "conditional_selectivity": 0.09999999999999998,
+          "specificity_js_bits": 1.0,
+          "usefulness_gap": 0.0,
+          "natural_score": 0.0,
+          "do_block_score": 0.0
+        },
+        "acquisition": 0.0,
+        "verdict": {
+          "passes": {
+            "potential": true,
+            "conditional_selectivity": false,
+            "specificity": true,
+            "usefulness": false,
+            "endogeneity": true,
+            "acquisition": false
+          },
+          "emergent": 0,
+          "failed": [
+            "conditional_selectivity",
+            "usefulness",
+            "acquisition"
+          ]
+        }
+      },
+      "scripted_roles": {
+        "metrics": {
+          "rows_n": 240,
+          "potential_bits": -0.0,
+          "trigger_rates": {
+            "0": 1.0,
+            "1": 1.0
+          },
+          "conditional_selectivity": 0.0,
+          "specificity_js_bits": 1.0,
+          "usefulness_gap": 330.0,
+          "natural_score": 330.0,
+          "do_block_score": 0.0
+        },
+        "acquisition": 0.0,
+        "verdict": {
+          "passes": {
+            "potential": false,
+            "conditional_selectivity": false,
+            "specificity": true,
+            "usefulness": true,
+            "endogeneity": false,
+            "acquisition": false
+          },
+          "emergent": 0,
+          "failed": [
+            "potential",
+            "conditional_selectivity",
+            "endogeneity",
+            "acquisition"
+          ]
+        }
+      },
+      "bc_clone": {
+        "metrics": {
+          "rows_n": 240,
+          "potential_bits": -0.0,
+          "trigger_rates": {
+            "0": 1.0,
+            "1": 1.0
+          },
+          "conditional_selectivity": 0.0,
+          "specificity_js_bits": 1.0,
+          "usefulness_gap": 330.0,
+          "natural_score": 330.0,
+          "do_block_score": 0.0
+        },
+        "acquisition": 0.0,
+        "verdict": {
+          "passes": {
+            "potential": false,
+            "conditional_selectivity": false,
+            "specificity": true,
+            "usefulness": true,
+            "endogeneity": false,
+            "acquisition": false
+          },
+          "emergent": 0,
+          "failed": [
+            "potential",
+            "conditional_selectivity",
+            "endogeneity",
+            "acquisition"
+          ]
+        }
+      },
+      "untrained_other": {
+        "metrics": {
+          "rows_n": 240,
+          "potential_bits": 1.3508774745753187,
+          "trigger_rates": {
+            "0": 0.4,
+            "1": 0.65
+          },
+          "conditional_selectivity": 0.25,
+          "specificity_js_bits": 1.0,
+          "usefulness_gap": 0.0,
+          "natural_score": 0.0,
+          "do_block_score": 0.0
+        },
+        "acquisition": 0.0,
+        "verdict": {
+          "passes": {
+            "potential": true,
+            "conditional_selectivity": false,
+            "specificity": true,
+            "usefulness": false,
+            "endogeneity": true,
+            "acquisition": false
+          },
+          "emergent": 0,
+          "failed": [
+            "conditional_selectivity",
+            "usefulness",
+            "acquisition"
+          ]
+        }
+      },
+      "learned_contract_b": {
+        "potential_bits": 1.7744187703937722,
+        "conditional_selectivity": 0.525,
+        "specificity_js_bits": 1.0,
+        "usefulness_gap": 0.5125
+      },
+      "twin_contract_b": {
+        "potential_bits": 1.5461796919474975,
+        "conditional_selectivity": 0.125,
+        "specificity_js_bits": 1.0,
+        "usefulness_gap": 0.0
+      }
+    }
+  }
+}

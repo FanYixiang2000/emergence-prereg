@@ -1,0 +1,316 @@
+{
+  "status": "exploratory design pilot",
+  "thresholds": {
+    "potential_bits": 0.5,
+    "conditional_selectivity": 0.5,
+    "specificity_js_bits": 0.2,
+    "usefulness_gap": 0.0,
+    "acquisition": 0.3
+  },
+  "train_steps": 3000,
+  "n_eval_per_context": 80,
+  "eval_temperature": 1.0,
+  "seeds": {
+    "2001": {
+      "systems": {
+        "learned": {
+          "metrics": {
+            "trigger_rates": {
+              "0": 0.0,
+              "1": 1.0
+            },
+            "potential_bits": 1.0,
+            "conditional_selectivity": 1.0,
+            "specificity_js_bits": 1.0,
+            "natural_value": 1.0,
+            "do_non_trigger_value": 0.5,
+            "usefulness_gap": 0.5
+          },
+          "endogenous": true,
+          "acquisition": 0.975,
+          "verdict": {
+            "passes": {
+              "potential": true,
+              "conditional_selectivity": true,
+              "specificity": true,
+              "usefulness": true,
+              "endogeneity": true,
+              "acquisition": true
+            },
+            "emergent": 1
+          }
+        },
+        "initial_twin": {
+          "metrics": {
+            "trigger_rates": {
+              "0": 0.075,
+              "1": 0.1
+            },
+            "potential_bits": -0.0,
+            "conditional_selectivity": 0.02500000000000001,
+            "specificity_js_bits": 0.006278355042297604,
+            "natural_value": 0.0,
+            "do_non_trigger_value": 0.0,
+            "usefulness_gap": 0.0
+          },
+          "endogenous": true,
+          "acquisition": 0.0,
+          "verdict": {
+            "passes": {
+              "potential": false,
+              "conditional_selectivity": false,
+              "specificity": false,
+              "usefulness": false,
+              "endogeneity": true,
+              "acquisition": false
+            },
+            "emergent": 0
+          }
+        },
+        "router": {
+          "metrics": {
+            "trigger_rates": {
+              "0": 0.0,
+              "1": 1.0
+            },
+            "potential_bits": 1.0,
+            "conditional_selectivity": 1.0,
+            "specificity_js_bits": 0.0,
+            "natural_value": 1.0,
+            "do_non_trigger_value": 1.0,
+            "usefulness_gap": 0.0
+          },
+          "endogenous": false,
+          "acquisition": 0.0,
+          "verdict": {
+            "passes": {
+              "potential": true,
+              "conditional_selectivity": true,
+              "specificity": false,
+              "usefulness": false,
+              "endogeneity": false,
+              "acquisition": false
+            },
+            "emergent": 0
+          }
+        },
+        "fixed_R0": {
+          "metrics": {
+            "trigger_rates": {
+              "0": 0.0,
+              "1": 0.0
+            },
+            "potential_bits": 1.0,
+            "conditional_selectivity": 0.0,
+            "specificity_js_bits": 0.0,
+            "natural_value": 0.5,
+            "do_non_trigger_value": 0.5,
+            "usefulness_gap": 0.0
+          },
+          "endogenous": false,
+          "acquisition": 0.0,
+          "verdict": {
+            "passes": {
+              "potential": true,
+              "conditional_selectivity": false,
+              "specificity": false,
+              "usefulness": false,
+              "endogeneity": false,
+              "acquisition": false
+            },
+            "emergent": 0
+          }
+        },
+        "fixed_R1": {
+          "metrics": {
+            "trigger_rates": {
+              "0": 1.0,
+              "1": 1.0
+            },
+            "potential_bits": 1.0,
+            "conditional_selectivity": 0.0,
+            "specificity_js_bits": 0.0,
+            "natural_value": 0.5,
+            "do_non_trigger_value": 0.5,
+            "usefulness_gap": 0.0
+          },
+          "endogenous": false,
+          "acquisition": 0.0,
+          "verdict": {
+            "passes": {
+              "potential": true,
+              "conditional_selectivity": false,
+              "specificity": false,
+              "usefulness": false,
+              "endogeneity": false,
+              "acquisition": false
+            },
+            "emergent": 0
+          }
+        }
+      },
+      "expected": {
+        "learned": 1,
+        "initial_twin": 0,
+        "router": 0,
+        "fixed_R0": 0,
+        "fixed_R1": 0
+      },
+      "all_expected": true
+    },
+    "2002": {
+      "systems": {
+        "learned": {
+          "metrics": {
+            "trigger_rates": {
+              "0": 0.0,
+              "1": 1.0
+            },
+            "potential_bits": 1.0,
+            "conditional_selectivity": 1.0,
+            "specificity_js_bits": 1.0,
+            "natural_value": 1.0,
+            "do_non_trigger_value": 0.5,
+            "usefulness_gap": 0.5
+          },
+          "endogenous": true,
+          "acquisition": 0.9875,
+          "verdict": {
+            "passes": {
+              "potential": true,
+              "conditional_selectivity": true,
+              "specificity": true,
+              "usefulness": true,
+              "endogeneity": true,
+              "acquisition": true
+            },
+            "emergent": 1
+          }
+        },
+        "initial_twin": {
+          "metrics": {
+            "trigger_rates": {
+              "0": 0.1,
+              "1": 0.0875
+            },
+            "potential_bits": 0.05475065807353418,
+            "conditional_selectivity": 0.012500000000000011,
+            "specificity_js_bits": 0.003132066503741244,
+            "natural_value": 0.0,
+            "do_non_trigger_value": 0.0,
+            "usefulness_gap": 0.0
+          },
+          "endogenous": true,
+          "acquisition": 0.0,
+          "verdict": {
+            "passes": {
+              "potential": false,
+              "conditional_selectivity": false,
+              "specificity": false,
+              "usefulness": false,
+              "endogeneity": true,
+              "acquisition": false
+            },
+            "emergent": 0
+          }
+        },
+        "router": {
+          "metrics": {
+            "trigger_rates": {
+              "0": 0.0,
+              "1": 1.0
+            },
+            "potential_bits": 1.0,
+            "conditional_selectivity": 1.0,
+            "specificity_js_bits": 0.0,
+            "natural_value": 1.0,
+            "do_non_trigger_value": 1.0,
+            "usefulness_gap": 0.0
+          },
+          "endogenous": false,
+          "acquisition": 0.0,
+          "verdict": {
+            "passes": {
+              "potential": true,
+              "conditional_selectivity": true,
+              "specificity": false,
+              "usefulness": false,
+              "endogeneity": false,
+              "acquisition": false
+            },
+            "emergent": 0
+          }
+        },
+        "fixed_R0": {
+          "metrics": {
+            "trigger_rates": {
+              "0": 0.0,
+              "1": 0.0
+            },
+            "potential_bits": 1.0,
+            "conditional_selectivity": 0.0,
+            "specificity_js_bits": 0.0,
+            "natural_value": 0.5,
+            "do_non_trigger_value": 0.5,
+            "usefulness_gap": 0.0
+          },
+          "endogenous": false,
+          "acquisition": 0.0,
+          "verdict": {
+            "passes": {
+              "potential": true,
+              "conditional_selectivity": false,
+              "specificity": false,
+              "usefulness": false,
+              "endogeneity": false,
+              "acquisition": false
+            },
+            "emergent": 0
+          }
+        },
+        "fixed_R1": {
+          "metrics": {
+            "trigger_rates": {
+              "0": 1.0,
+              "1": 1.0
+            },
+            "potential_bits": 1.0,
+            "conditional_selectivity": 0.0,
+            "specificity_js_bits": 0.0,
+            "natural_value": 0.5,
+            "do_non_trigger_value": 0.5,
+            "usefulness_gap": 0.0
+          },
+          "endogenous": false,
+          "acquisition": 0.0,
+          "verdict": {
+            "passes": {
+              "potential": true,
+              "conditional_selectivity": false,
+              "specificity": false,
+              "usefulness": false,
+              "endogeneity": false,
+              "acquisition": false
+            },
+            "emergent": 0
+          }
+        }
+      },
+      "expected": {
+        "learned": 1,
+        "initial_twin": 0,
+        "router": 0,
+        "fixed_R0": 0,
+        "fixed_R1": 0
+      },
+      "all_expected": true
+    }
+  },
+  "summary": {
+    "learned_passes": 2,
+    "all_expected_by_seed": {
+      "2001": true,
+      "2002": true
+    }
+  }
+}

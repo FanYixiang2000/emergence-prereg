@@ -1,0 +1,276 @@
+{
+  "seed": 7,
+  "episodes_per_condition": 2000,
+  "results": [
+    {
+      "regime": "pure_individual",
+      "description": "Individual reward dominates; sacrifice is locally irrational.",
+      "prior": {
+        "entropy_bits": 0.2921754720800051,
+        "effective_modes": 1.224485315015814,
+        "event_order_concentration": 0.9595,
+        "team_return_mean": 4.0345,
+        "individual_conflict_mean": 7.7425,
+        "trigger_rate": 0.0035,
+        "p_selfish_escape": 0.9595,
+        "p_team_direct": 0.0275,
+        "p_sacrifice_rescue": 0.0035,
+        "p_failed_noise": 0.0095
+      },
+      "trigger": {
+        "entropy_bits": 0.033218939341314965,
+        "effective_modes": 1.0232927499810514,
+        "event_order_concentration": 0.997,
+        "team_return_mean": 8.984,
+        "individual_conflict_mean": 18.959,
+        "trigger_rate": 0.997,
+        "p_selfish_escape": 0.002,
+        "p_team_direct": 0.0005,
+        "p_sacrifice_rescue": 0.997,
+        "p_failed_noise": 0.0005
+      },
+      "non_trigger": {
+        "entropy_bits": 0.19880671560713725,
+        "effective_modes": 1.1477486344678618,
+        "event_order_concentration": 0.973,
+        "team_return_mean": 4.021,
+        "individual_conflict_mean": 7.784,
+        "trigger_rate": 0.0,
+        "p_selfish_escape": 0.973,
+        "p_team_direct": 0.0215,
+        "p_sacrifice_rescue": 0.0,
+        "p_failed_noise": 0.0055
+      },
+      "ptc": {
+        "potential_effective_modes": 1.224485315015814,
+        "prior_entropy_bits": 0.2921754720800051,
+        "trigger_entropy_bits": 0.033218939341314965,
+        "non_trigger_entropy_bits": 0.19880671560713725,
+        "collapse_bits": 0.2589565327386901,
+        "non_trigger_collapse_bits": 0.09336875647286785,
+        "trigger_effect_js_bits": 0.9696095972379104,
+        "non_trigger_effect_js_bits": 0.002439078823959992,
+        "trigger_specificity_js_bits": 0.9866666750068915,
+        "sacrifice_probability_shift": 0.9935,
+        "macro_predictability_gain": 0.03749999999999998,
+        "team_return_gain_after_trigger": 4.9495
+      }
+    },
+    {
+      "regime": "pure_team",
+      "description": "Team reward erases individual conflict; sacrifice becomes expected.",
+      "prior": {
+        "entropy_bits": 0.6836680010101749,
+        "effective_modes": 1.6062183213324581,
+        "event_order_concentration": 0.8565,
+        "team_return_mean": 8.4805,
+        "individual_conflict_mean": 16.3055,
+        "trigger_rate": 0.8565,
+        "p_selfish_escape": 0.004,
+        "p_team_direct": 0.126,
+        "p_sacrifice_rescue": 0.8565,
+        "p_failed_noise": 0.0135
+      },
+      "trigger": {
+        "entropy_bits": 0.01140775773457578,
+        "effective_modes": 1.0079386000148385,
+        "event_order_concentration": 0.999,
+        "team_return_mean": 8.997,
+        "individual_conflict_mean": 18.981,
+        "trigger_rate": 0.999,
+        "p_selfish_escape": 0.0,
+        "p_team_direct": 0.001,
+        "p_sacrifice_rescue": 0.999,
+        "p_failed_noise": 0.0
+      },
+      "non_trigger": {
+        "entropy_bits": 0.9516016981431067,
+        "effective_modes": 1.9340186381500162,
+        "event_order_concentration": 0.823,
+        "team_return_mean": 5.744,
+        "individual_conflict_mean": 1.68,
+        "trigger_rate": 0.068,
+        "p_selfish_escape": 0.0485,
+        "p_team_direct": 0.823,
+        "p_sacrifice_rescue": 0.068,
+        "p_failed_noise": 0.0605
+      },
+      "ptc": {
+        "potential_effective_modes": 1.6062183213324581,
+        "prior_entropy_bits": 0.6836680010101749,
+        "trigger_entropy_bits": 0.01140775773457578,
+        "non_trigger_entropy_bits": 0.9516016981431067,
+        "collapse_bits": 0.6722602432755991,
+        "non_trigger_collapse_bits": -0.2679336971329318,
+        "trigger_effect_js_bits": 0.07198819397842529,
+        "non_trigger_effect_js_bits": 0.5211385505440628,
+        "trigger_specificity_js_bits": 0.8119375703175642,
+        "sacrifice_probability_shift": 0.14249999999999996,
+        "macro_predictability_gain": 0.14249999999999996,
+        "team_return_gain_after_trigger": 0.5165000000000006
+      }
+    },
+    {
+      "regime": "linear_mixed",
+      "description": "Scalarized reward behaves like a predictable trade-off.",
+      "prior": {
+        "entropy_bits": 1.4636631022416666,
+        "effective_modes": 2.7580777028831056,
+        "event_order_concentration": 0.487,
+        "team_return_mean": 5.188,
+        "individual_conflict_mean": 5.663,
+        "trigger_rate": 0.093,
+        "p_selfish_escape": 0.487,
+        "p_team_direct": 0.4005,
+        "p_sacrifice_rescue": 0.093,
+        "p_failed_noise": 0.0195
+      },
+      "trigger": {
+        "entropy_bits": 0.15382800117362871,
+        "effective_modes": 1.112517477786426,
+        "event_order_concentration": 0.981,
+        "team_return_mean": 8.929,
+        "individual_conflict_mean": 18.695,
+        "trigger_rate": 0.981,
+        "p_selfish_escape": 0.007,
+        "p_team_direct": 0.012,
+        "p_sacrifice_rescue": 0.981,
+        "p_failed_noise": 0.0
+      },
+      "non_trigger": {
+        "entropy_bits": 1.0312605271280382,
+        "effective_modes": 2.0438092106212613,
+        "event_order_concentration": 0.6425,
+        "team_return_mean": 4.6325,
+        "individual_conflict_mean": 5.1495,
+        "trigger_rate": 0.0005,
+        "p_selfish_escape": 0.6425,
+        "p_team_direct": 0.343,
+        "p_sacrifice_rescue": 0.0005,
+        "p_failed_noise": 0.014
+      },
+      "ptc": {
+        "potential_effective_modes": 2.7580777028831056,
+        "prior_entropy_bits": 1.4636631022416666,
+        "trigger_entropy_bits": 0.15382800117362871,
+        "non_trigger_entropy_bits": 1.0312605271280382,
+        "collapse_bits": 1.309835101068038,
+        "non_trigger_collapse_bits": 0.43240257511362845,
+        "trigger_effect_js_bits": 0.7061237935764617,
+        "non_trigger_effect_js_bits": 0.05418205788281823,
+        "trigger_specificity_js_bits": 0.931178706903269,
+        "sacrifice_probability_shift": 0.888,
+        "macro_predictability_gain": 0.494,
+        "team_return_gain_after_trigger": 3.7410000000000005
+      }
+    },
+    {
+      "regime": "dense_shaping",
+      "description": "Process rewards directly point to a safe coordination mode.",
+      "prior": {
+        "entropy_bits": 0.306104514327391,
+        "effective_modes": 1.2363648246568717,
+        "event_order_concentration": 0.9555,
+        "team_return_mean": 6.0575,
+        "individual_conflict_mean": 0.6835,
+        "trigger_rate": 0.0345,
+        "p_selfish_escape": 0.0035,
+        "p_team_direct": 0.9555,
+        "p_sacrifice_rescue": 0.0345,
+        "p_failed_noise": 0.0065
+      },
+      "trigger": {
+        "entropy_bits": 0.0969446060595878,
+        "effective_modes": 1.0695060221793455,
+        "event_order_concentration": 0.9875,
+        "team_return_mean": 8.9625,
+        "individual_conflict_mean": 18.7625,
+        "trigger_rate": 0.9875,
+        "p_selfish_escape": 0.0,
+        "p_team_direct": 0.0125,
+        "p_sacrifice_rescue": 0.9875,
+        "p_failed_noise": 0.0
+      },
+      "non_trigger": {
+        "entropy_bits": 0.1052311178785432,
+        "effective_modes": 1.0756666970682,
+        "event_order_concentration": 0.988,
+        "team_return_mean": 5.946,
+        "individual_conflict_mean": 0.036,
+        "trigger_rate": 0.0,
+        "p_selfish_escape": 0.0045,
+        "p_team_direct": 0.988,
+        "p_sacrifice_rescue": 0.0,
+        "p_failed_noise": 0.0075
+      },
+      "ptc": {
+        "potential_effective_modes": 1.2363648246568717,
+        "prior_entropy_bits": 0.306104514327391,
+        "trigger_entropy_bits": 0.0969446060595878,
+        "non_trigger_entropy_bits": 0.1052311178785432,
+        "collapse_bits": 0.2091599082678032,
+        "non_trigger_collapse_bits": 0.2008733964488478,
+        "trigger_effect_js_bits": 0.8430319026652393,
+        "non_trigger_effect_js_bits": 0.01751701421390761,
+        "trigger_specificity_js_bits": 0.9515231612709119,
+        "sacrifice_probability_shift": 0.9530000000000001,
+        "macro_predictability_gain": 0.03200000000000003,
+        "team_return_gain_after_trigger": 2.9050000000000002
+      }
+    },
+    {
+      "regime": "uncertain_preference",
+      "description": "Competing futures stay viable before the trigger is selected.",
+      "prior": {
+        "entropy_bits": 1.6859423359849846,
+        "effective_modes": 3.2175048786554976,
+        "event_order_concentration": 0.355,
+        "team_return_mean": 6.133,
+        "individual_conflict_mean": 8.882,
+        "trigger_rate": 0.318,
+        "p_selfish_escape": 0.355,
+        "p_team_direct": 0.3085,
+        "p_sacrifice_rescue": 0.318,
+        "p_failed_noise": 0.0185
+      },
+      "trigger": {
+        "entropy_bits": 0.13449423050464043,
+        "effective_modes": 1.0977079198953628,
+        "event_order_concentration": 0.9835,
+        "team_return_mean": 8.9425,
+        "individual_conflict_mean": 18.7185,
+        "trigger_rate": 0.9835,
+        "p_selfish_escape": 0.004,
+        "p_team_direct": 0.0125,
+        "p_sacrifice_rescue": 0.9835,
+        "p_failed_noise": 0.0
+      },
+      "non_trigger": {
+        "entropy_bits": 1.1026548068559434,
+        "effective_modes": 2.1474950513642437,
+        "event_order_concentration": 0.633,
+        "team_return_mean": 4.656,
+        "individual_conflict_mean": 5.216,
+        "trigger_rate": 0.008,
+        "p_selfish_escape": 0.633,
+        "p_team_direct": 0.342,
+        "p_sacrifice_rescue": 0.008,
+        "p_failed_noise": 0.017
+      },
+      "ptc": {
+        "potential_effective_modes": 3.2175048786554976,
+        "prior_entropy_bits": 1.6859423359849846,
+        "trigger_entropy_bits": 0.13449423050464043,
+        "non_trigger_entropy_bits": 1.1026548068559434,
+        "collapse_bits": 1.5514481054803442,
+        "non_trigger_collapse_bits": 0.5832875291290411,
+        "trigger_effect_js_bits": 0.4240361316650925,
+        "non_trigger_effect_js_bits": 0.16514854382718475,
+        "trigger_specificity_js_bits": 0.9099149461161093,
+        "sacrifice_probability_shift": 0.6655,
+        "macro_predictability_gain": 0.6285000000000001,
+        "team_return_gain_after_trigger": 2.8095000000000008
+      }
+    }
+  ]
+}

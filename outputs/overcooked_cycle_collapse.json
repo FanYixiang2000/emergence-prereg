@@ -1,0 +1,3851 @@
+{
+  "status": "EP-CYCLE cycle-aligned within-episode collapse; registered before run; EP basin definition unchanged; fixed continuation horizon",
+  "config": {
+    "layouts": [
+      "cramped_room",
+      "asymmetric_advantages"
+    ],
+    "episodes": 6,
+    "ep_len": 400,
+    "n_cont": 24,
+    "horizon": 100,
+    "min_cycle": 20,
+    "phases": [
+      0.0,
+      0.25,
+      0.5,
+      0.75
+    ]
+  },
+  "n_snapshots": 276,
+  "per_snapshot": [
+    {
+      "layout": "cramped_room",
+      "episode": 0,
+      "cycle": 0,
+      "post_delivery": false,
+      "cycle_len": 95,
+      "phase": 0.0,
+      "t_abs": 0,
+      "entropy_bits": 1.9799,
+      "basin_counts": {
+        "pot1_nodeliver": 7,
+        "pot1_deliver": 7,
+        "pot0_nodeliver": 5,
+        "pot0_deliver": 5
+      }
+    },
+    {
+      "layout": "cramped_room",
+      "episode": 0,
+      "cycle": 0,
+      "post_delivery": false,
+      "cycle_len": 95,
+      "phase": 0.25,
+      "t_abs": 24,
+      "entropy_bits": 1.5319,
+      "basin_counts": {
+        "pot1_deliver": 10,
+        "pot0_nodeliver": 1,
+        "pot0_deliver": 11,
+        "pot1_nodeliver": 2
+      }
+    },
+    {
+      "layout": "cramped_room",
+      "episode": 0,
+      "cycle": 0,
+      "post_delivery": false,
+      "cycle_len": 95,
+      "phase": 0.5,
+      "t_abs": 48,
+      "entropy_bits": 1.0409,
+      "basin_counts": {
+        "pot1_deliver": 18,
+        "pot1_nodeliver": 2,
+        "pot0_deliver": 4
+      }
+    },
+    {
+      "layout": "cramped_room",
+      "episode": 0,
+      "cycle": 0,
+      "post_delivery": false,
+      "cycle_len": 95,
+      "phase": 0.75,
+      "t_abs": 71,
+      "entropy_bits": 0.9183,
+      "basin_counts": {
+        "pot0_deliver": 8,
+        "pot1_deliver": 16
+      }
+    },
+    {
+      "layout": "cramped_room",
+      "episode": 0,
+      "cycle": 1,
+      "post_delivery": true,
+      "cycle_len": 85,
+      "phase": 0.0,
+      "t_abs": 95,
+      "entropy_bits": 1.4619,
+      "basin_counts": {
+        "pot0_deliver": 2,
+        "pot1_deliver": 14,
+        "pot1_nodeliver": 7,
+        "pot0_nodeliver": 1
+      }
+    },
+    {
+      "layout": "cramped_room",
+      "episode": 0,
+      "cycle": 1,
+      "post_delivery": true,
+      "cycle_len": 85,
+      "phase": 0.25,
+      "t_abs": 116,
+      "entropy_bits": 0.4138,
+      "basin_counts": {
+        "pot1_deliver": 22,
+        "pot1_nodeliver": 2
+      }
+    },
+    {
+      "layout": "cramped_room",
+      "episode": 0,
+      "cycle": 1,
+      "post_delivery": true,
+      "cycle_len": 85,
+      "phase": 0.5,
+      "t_abs": 137,
+      "entropy_bits": 1.2988,
+      "basin_counts": {
+        "pot1_deliver": 15,
+        "pot1_nodeliver": 3,
+        "pot0_deliver": 6
+      }
+    },
+    {
+      "layout": "cramped_room",
+      "episode": 0,
+      "cycle": 1,
+      "post_delivery": true,
+      "cycle_len": 85,
+      "phase": 0.75,
+      "t_abs": 159,
+      "entropy_bits": 0.7852,
+      "basin_counts": {
+        "pot0_deliver": 20,
+        "pot1_deliver": 3,
+        "pot0_nodeliver": 1
+      }
+    },
+    {
+      "layout": "cramped_room",
+      "episode": 0,
+      "cycle": 2,
+      "post_delivery": true,
+      "cycle_len": 63,
+      "phase": 0.0,
+      "t_abs": 180,
+      "entropy_bits": 1.2059,
+      "basin_counts": {
+        "pot0_nodeliver": 5,
+        "pot0_deliver": 17,
+        "pot1_nodeliver": 1,
+        "pot1_deliver": 1
+      }
+    },
+    {
+      "layout": "cramped_room",
+      "episode": 0,
+      "cycle": 2,
+      "post_delivery": true,
+      "cycle_len": 63,
+      "phase": 0.25,
+      "t_abs": 196,
+      "entropy_bits": 1.1432,
+      "basin_counts": {
+        "pot1_deliver": 8,
+        "pot0_deliver": 15,
+        "pot0_nodeliver": 1
+      }
+    },
+    {
+      "layout": "cramped_room",
+      "episode": 0,
+      "cycle": 2,
+      "post_delivery": true,
+      "cycle_len": 63,
+      "phase": 0.5,
+      "t_abs": 212,
+      "entropy_bits": 1.3243,
+      "basin_counts": {
+        "pot1_deliver": 7,
+        "pot0_deliver": 15,
+        "potnone_nodeliver": 1,
+        "pot1_nodeliver": 1
+      }
+    },
+    {
+      "layout": "cramped_room",
+      "episode": 0,
+      "cycle": 2,
+      "post_delivery": true,
+      "cycle_len": 63,
+      "phase": 0.75,
+      "t_abs": 227,
+      "entropy_bits": 1.0995,
+      "basin_counts": {
+        "pot1_deliver": 7,
+        "pot0_deliver": 16,
+        "potnone_nodeliver": 1
+      }
+    },
+    {
+      "layout": "cramped_room",
+      "episode": 0,
+      "cycle": 3,
+      "post_delivery": true,
+      "cycle_len": 132,
+      "phase": 0.0,
+      "t_abs": 243,
+      "entropy_bits": 1.3868,
+      "basin_counts": {
+        "pot1_deliver": 16,
+        "pot0_deliver": 1,
+        "pot1_nodeliver": 4,
+        "pot0_nodeliver": 3
+      }
+    },
+    {
+      "layout": "cramped_room",
+      "episode": 0,
+      "cycle": 3,
+      "post_delivery": true,
+      "cycle_len": 132,
+      "phase": 0.25,
+      "t_abs": 276,
+      "entropy_bits": 1.4928,
+      "basin_counts": {
+        "pot0_deliver": 15,
+        "pot0_nodeliver": 5,
+        "pot1_deliver": 2,
+        "pot1_nodeliver": 2
+      }
+    },
+    {
+      "layout": "cramped_room",
+      "episode": 0,
+      "cycle": 3,
+      "post_delivery": true,
+      "cycle_len": 132,
+      "phase": 0.5,
+      "t_abs": 309,
+      "entropy_bits": 1.1753,
+      "basin_counts": {
+        "pot1_deliver": 9,
+        "pot0_deliver": 14,
+        "potnone_nodeliver": 1
+      }
+    },
+    {
+      "layout": "cramped_room",
+      "episode": 0,
+      "cycle": 3,
+      "post_delivery": true,
+      "cycle_len": 132,
+      "phase": 0.75,
+      "t_abs": 342,
+      "entropy_bits": 0.8887,
+      "basin_counts": {
+        "pot1_deliver": 19,
+        "pot0_deliver": 4,
+        "pot1_nodeliver": 1
+      }
+    },
+    {
+      "layout": "cramped_room",
+      "episode": 1,
+      "cycle": 0,
+      "post_delivery": false,
+      "cycle_len": 109,
+      "phase": 0.0,
+      "t_abs": 0,
+      "entropy_bits": 1.4928,
+      "basin_counts": {
+        "pot1_deliver": 15,
+        "pot0_deliver": 5,
+        "pot0_nodeliver": 2,
+        "pot1_nodeliver": 2
+      }
+    },
+    {
+      "layout": "cramped_room",
+      "episode": 1,
+      "cycle": 0,
+      "post_delivery": false,
+      "cycle_len": 109,
+      "phase": 0.25,
+      "t_abs": 27,
+      "entropy_bits": 1.1887,
+      "basin_counts": {
+        "pot1_deliver": 16,
+        "pot1_nodeliver": 2,
+        "pot0_deliver": 6
+      }
+    },
+    {
+      "layout": "cramped_room",
+      "episode": 1,
+      "cycle": 0,
+      "post_delivery": false,
+      "cycle_len": 109,
+      "phase": 0.5,
+      "t_abs": 54,
+      "entropy_bits": 1.4136,
+      "basin_counts": {
+        "pot1_deliver": 15,
+        "pot0_deliver": 6,
+        "pot0_nodeliver": 1,
+        "pot1_nodeliver": 2
+      }
+    },
+    {
+      "layout": "cramped_room",
+      "episode": 1,
+      "cycle": 0,
+      "post_delivery": false,
+      "cycle_len": 109,
+      "phase": 0.75,
+      "t_abs": 82,
+      "entropy_bits": 1.3243,
+      "basin_counts": {
+        "potnone_deliver": 1,
+        "pot1_deliver": 7,
+        "pot0_deliver": 15,
+        "pot0_nodeliver": 1
+      }
+    },
+    {
+      "layout": "cramped_room",
+      "episode": 1,
+      "cycle": 1,
+      "post_delivery": true,
+      "cycle_len": 73,
+      "phase": 0.0,
+      "t_abs": 109,
+      "entropy_bits": 1.3305,
+      "basin_counts": {
+        "pot1_nodeliver": 11,
+        "pot1_deliver": 11,
+        "pot0_nodeliver": 2
+      }
+    },
+    {
+      "layout": "cramped_room",
+      "episode": 1,
+      "cycle": 1,
+      "post_delivery": true,
+      "cycle_len": 73,
+      "phase": 0.25,
+      "t_abs": 127,
+      "entropy_bits": 0.6584,
+      "basin_counts": {
+        "pot1_deliver": 21,
+        "pot1_nodeliver": 1,
+        "pot0_deliver": 2
+      }
+    },
+    {
+      "layout": "cramped_room",
+      "episode": 1,
+      "cycle": 1,
+      "post_delivery": true,
+      "cycle_len": 73,
+      "phase": 0.5,
+      "t_abs": 145,
+      "entropy_bits": 1.5319,
+      "basin_counts": {
+        "pot1_deliver": 11,
+        "pot0_deliver": 10,
+        "potnone_deliver": 2,
+        "pot1_nodeliver": 1
+      }
+    },
+    {
+      "layout": "cramped_room",
+      "episode": 1,
+      "cycle": 1,
+      "post_delivery": true,
+      "cycle_len": 73,
+      "phase": 0.75,
+      "t_abs": 164,
+      "entropy_bits": 0.7383,
+      "basin_counts": {
+        "pot0_deliver": 19,
+        "pot1_deliver": 5
+      }
+    },
+    {
+      "layout": "cramped_room",
+      "episode": 1,
+      "cycle": 2,
+      "post_delivery": true,
+      "cycle_len": 142,
+      "phase": 0.0,
+      "t_abs": 182,
+      "entropy_bits": 1.4591,
+      "basin_counts": {
+        "pot0_nodeliver": 8,
+        "pot0_deliver": 12,
+        "pot1_deliver": 4
+      }
+    },
+    {
+      "layout": "cramped_room",
+      "episode": 1,
+      "cycle": 2,
+      "post_delivery": true,
+      "cycle_len": 142,
+      "phase": 0.25,
+      "t_abs": 218,
+      "entropy_bits": 1.6973,
+      "basin_counts": {
+        "pot1_nodeliver": 4,
+        "pot0_nodeliver": 14,
+        "pot0_deliver": 1,
+        "potnone_nodeliver": 4,
+        "pot1_deliver": 1
+      }
+    },
+    {
+      "layout": "cramped_room",
+      "episode": 1,
+      "cycle": 2,
+      "post_delivery": true,
+      "cycle_len": 142,
+      "phase": 0.5,
+      "t_abs": 253,
+      "entropy_bits": 1.5469,
+      "basin_counts": {
+        "pot1_nodeliver": 4,
+        "pot0_deliver": 14,
+        "pot0_nodeliver": 5,
+        "pot1_deliver": 1
+      }
+    },
+    {
+      "layout": "cramped_room",
+      "episode": 1,
+      "cycle": 2,
+      "post_delivery": true,
+      "cycle_len": 142,
+      "phase": 0.75,
+      "t_abs": 288,
+      "entropy_bits": 0.7852,
+      "basin_counts": {
+        "pot1_deliver": 20,
+        "pot1_nodeliver": 3,
+        "pot0_nodeliver": 1
+      }
+    },
+    {
+      "layout": "cramped_room",
+      "episode": 2,
+      "cycle": 0,
+      "post_delivery": false,
+      "cycle_len": 84,
+      "phase": 0.0,
+      "t_abs": 0,
+      "entropy_bits": 1.8217,
+      "basin_counts": {
+        "pot0_nodeliver": 6,
+        "pot1_deliver": 11,
+        "pot1_nodeliver": 4,
+        "pot0_deliver": 3
+      }
+    },
+    {
+      "layout": "cramped_room",
+      "episode": 2,
+      "cycle": 0,
+      "post_delivery": false,
+      "cycle_len": 84,
+      "phase": 0.25,
+      "t_abs": 21,
+      "entropy_bits": 0.7852,
+      "basin_counts": {
+        "pot0_deliver": 20,
+        "pot0_nodeliver": 1,
+        "pot1_deliver": 3
+      }
+    },
+    {
+      "layout": "cramped_room",
+      "episode": 2,
+      "cycle": 0,
+      "post_delivery": false,
+      "cycle_len": 84,
+      "phase": 0.5,
+      "t_abs": 42,
+      "entropy_bits": 0.8167,
+      "basin_counts": {
+        "pot1_deliver": 20,
+        "pot1_nodeliver": 2,
+        "pot0_deliver": 2
+      }
+    },
+    {
+      "layout": "cramped_room",
+      "episode": 2,
+      "cycle": 0,
+      "post_delivery": false,
+      "cycle_len": 84,
+      "phase": 0.75,
+      "t_abs": 63,
+      "entropy_bits": 0.8887,
+      "basin_counts": {
+        "pot1_deliver": 19,
+        "pot0_deliver": 4,
+        "pot1_nodeliver": 1
+      }
+    },
+    {
+      "layout": "cramped_room",
+      "episode": 2,
+      "cycle": 1,
+      "post_delivery": true,
+      "cycle_len": 119,
+      "phase": 0.0,
+      "t_abs": 84,
+      "entropy_bits": 1.3844,
+      "basin_counts": {
+        "pot1_deliver": 14,
+        "pot0_nodeliver": 4,
+        "pot1_nodeliver": 6
+      }
+    },
+    {
+      "layout": "cramped_room",
+      "episode": 2,
+      "cycle": 1,
+      "post_delivery": true,
+      "cycle_len": 119,
+      "phase": 0.25,
+      "t_abs": 114,
+      "entropy_bits": 1.9491,
+      "basin_counts": {
+        "pot0_deliver": 8,
+        "pot1_deliver": 7,
+        "pot1_nodeliver": 5,
+        "pot0_nodeliver": 4
+      }
+    },
+    {
+      "layout": "cramped_room",
+      "episode": 2,
+      "cycle": 1,
+      "post_delivery": true,
+      "cycle_len": 119,
+      "phase": 0.5,
+      "t_abs": 144,
+      "entropy_bits": 0.8887,
+      "basin_counts": {
+        "pot1_deliver": 19,
+        "pot1_nodeliver": 4,
+        "pot0_nodeliver": 1
+      }
+    },
+    {
+      "layout": "cramped_room",
+      "episode": 2,
+      "cycle": 1,
+      "post_delivery": true,
+      "cycle_len": 119,
+      "phase": 0.75,
+      "t_abs": 173,
+      "entropy_bits": 1.1887,
+      "basin_counts": {
+        "pot0_deliver": 16,
+        "pot0_nodeliver": 2,
+        "pot1_deliver": 6
+      }
+    },
+    {
+      "layout": "cramped_room",
+      "episode": 2,
+      "cycle": 2,
+      "post_delivery": true,
+      "cycle_len": 139,
+      "phase": 0.0,
+      "t_abs": 203,
+      "entropy_bits": 1.3243,
+      "basin_counts": {
+        "pot1_deliver": 15,
+        "pot1_nodeliver": 7,
+        "pot0_nodeliver": 1,
+        "pot0_deliver": 1
+      }
+    },
+    {
+      "layout": "cramped_room",
+      "episode": 2,
+      "cycle": 2,
+      "post_delivery": true,
+      "cycle_len": 139,
+      "phase": 0.25,
+      "t_abs": 238,
+      "entropy_bits": 1.6258,
+      "basin_counts": {
+        "pot1_deliver": 8,
+        "pot0_deliver": 12,
+        "pot1_nodeliver": 2,
+        "pot0_nodeliver": 2
+      }
+    },
+    {
+      "layout": "cramped_room",
+      "episode": 2,
+      "cycle": 2,
+      "post_delivery": true,
+      "cycle_len": 139,
+      "phase": 0.5,
+      "t_abs": 273,
+      "entropy_bits": 1.3085,
+      "basin_counts": {
+        "pot1_deliver": 13,
+        "pot1_nodeliver": 2,
+        "pot0_deliver": 9
+      }
+    },
+    {
+      "layout": "cramped_room",
+      "episode": 2,
+      "cycle": 2,
+      "post_delivery": true,
+      "cycle_len": 139,
+      "phase": 0.75,
+      "t_abs": 307,
+      "entropy_bits": 1.814,
+      "basin_counts": {
+        "pot0_deliver": 10,
+        "pot1_deliver": 9,
+        "potnone_deliver": 3,
+        "pot0_nodeliver": 1,
+        "potnone_nodeliver": 1
+      }
+    },
+    {
+      "layout": "cramped_room",
+      "episode": 2,
+      "cycle": 3,
+      "post_delivery": true,
+      "cycle_len": 42,
+      "phase": 0.0,
+      "t_abs": 342,
+      "entropy_bits": 1.3085,
+      "basin_counts": {
+        "pot0_nodeliver": 13,
+        "pot1_nodeliver": 9,
+        "pot0_deliver": 2
+      }
+    },
+    {
+      "layout": "cramped_room",
+      "episode": 2,
+      "cycle": 3,
+      "post_delivery": true,
+      "cycle_len": 42,
+      "phase": 0.25,
+      "t_abs": 352,
+      "entropy_bits": 1.1432,
+      "basin_counts": {
+        "pot0_deliver": 15,
+        "pot0_nodeliver": 8,
+        "pot1_nodeliver": 1
+      }
+    },
+    {
+      "layout": "cramped_room",
+      "episode": 2,
+      "cycle": 3,
+      "post_delivery": true,
+      "cycle_len": 42,
+      "phase": 0.5,
+      "t_abs": 363,
+      "entropy_bits": 1.8675,
+      "basin_counts": {
+        "pot1_deliver": 4,
+        "pot0_deliver": 1,
+        "potnone_deliver": 10,
+        "potnone_nodeliver": 8,
+        "pot1_nodeliver": 1
+      }
+    },
+    {
+      "layout": "cramped_room",
+      "episode": 2,
+      "cycle": 3,
+      "post_delivery": true,
+      "cycle_len": 42,
+      "phase": 0.75,
+      "t_abs": 374,
+      "entropy_bits": 1.7358,
+      "basin_counts": {
+        "potnone_deliver": 10,
+        "pot1_nodeliver": 1,
+        "potnone_nodeliver": 6,
+        "pot1_deliver": 7
+      }
+    },
+    {
+      "layout": "cramped_room",
+      "episode": 3,
+      "cycle": 0,
+      "post_delivery": false,
+      "cycle_len": 78,
+      "phase": 0.0,
+      "t_abs": 0,
+      "entropy_bits": 1.8506,
+      "basin_counts": {
+        "pot0_deliver": 7,
+        "pot1_deliver": 10,
+        "pot1_nodeliver": 4,
+        "pot0_nodeliver": 3
+      }
+    },
+    {
+      "layout": "cramped_room",
+      "episode": 3,
+      "cycle": 0,
+      "post_delivery": false,
+      "cycle_len": 78,
+      "phase": 0.25,
+      "t_abs": 20,
+      "entropy_bits": 1.3261,
+      "basin_counts": {
+        "pot1_nodeliver": 5,
+        "pot1_deliver": 15,
+        "pot0_deliver": 4
+      }
+    },
+    {
+      "layout": "cramped_room",
+      "episode": 3,
+      "cycle": 0,
+      "post_delivery": false,
+      "cycle_len": 78,
+      "phase": 0.5,
+      "t_abs": 39,
+      "entropy_bits": 1.4136,
+      "basin_counts": {
+        "pot1_deliver": 15,
+        "pot0_deliver": 6,
+        "pot0_nodeliver": 2,
+        "pot1_nodeliver": 1
+      }
+    },
+    {
+      "layout": "cramped_room",
+      "episode": 3,
+      "cycle": 0,
+      "post_delivery": false,
+      "cycle_len": 78,
+      "phase": 0.75,
+      "t_abs": 58,
+      "entropy_bits": 0.5436,
+      "basin_counts": {
+        "pot0_deliver": 21,
+        "pot1_deliver": 3
+      }
+    },
+    {
+      "layout": "cramped_room",
+      "episode": 3,
+      "cycle": 1,
+      "post_delivery": true,
+      "cycle_len": 80,
+      "phase": 0.0,
+      "t_abs": 78,
+      "entropy_bits": 1.2807,
+      "basin_counts": {
+        "pot0_deliver": 14,
+        "pot0_nodeliver": 8,
+        "pot1_deliver": 2
+      }
+    },
+    {
+      "layout": "cramped_room",
+      "episode": 3,
+      "cycle": 1,
+      "post_delivery": true,
+      "cycle_len": 80,
+      "phase": 0.25,
+      "t_abs": 98,
+      "entropy_bits": 1.6661,
+      "basin_counts": {
+        "pot1_deliver": 8,
+        "pot0_nodeliver": 4,
+        "pot0_deliver": 11,
+        "pot1_nodeliver": 1
+      }
+    },
+    {
+      "layout": "cramped_room",
+      "episode": 3,
+      "cycle": 1,
+      "post_delivery": true,
+      "cycle_len": 80,
+      "phase": 0.5,
+      "t_abs": 118,
+      "entropy_bits": 1.3868,
+      "basin_counts": {
+        "pot1_deliver": 16,
+        "pot1_nodeliver": 4,
+        "pot0_deliver": 3,
+        "pot0_nodeliver": 1
+      }
+    },
+    {
+      "layout": "cramped_room",
+      "episode": 3,
+      "cycle": 1,
+      "post_delivery": true,
+      "cycle_len": 80,
+      "phase": 0.75,
+      "t_abs": 138,
+      "entropy_bits": 1.3918,
+      "basin_counts": {
+        "pot1_deliver": 9,
+        "pot0_deliver": 13,
+        "potnone_nodeliver": 1,
+        "pot0_nodeliver": 1
+      }
+    },
+    {
+      "layout": "cramped_room",
+      "episode": 4,
+      "cycle": 0,
+      "post_delivery": false,
+      "cycle_len": 186,
+      "phase": 0.0,
+      "t_abs": 0,
+      "entropy_bits": 1.9713,
+      "basin_counts": {
+        "pot1_deliver": 5,
+        "pot1_nodeliver": 8,
+        "pot0_deliver": 5,
+        "pot0_nodeliver": 6
+      }
+    },
+    {
+      "layout": "cramped_room",
+      "episode": 4,
+      "cycle": 0,
+      "post_delivery": false,
+      "cycle_len": 186,
+      "phase": 0.25,
+      "t_abs": 46,
+      "entropy_bits": 1.1887,
+      "basin_counts": {
+        "pot0_deliver": 6,
+        "pot1_deliver": 16,
+        "pot0_nodeliver": 2
+      }
+    },
+    {
+      "layout": "cramped_room",
+      "episode": 4,
+      "cycle": 0,
+      "post_delivery": false,
+      "cycle_len": 186,
+      "phase": 0.5,
+      "t_abs": 93,
+      "entropy_bits": 1.7639,
+      "basin_counts": {
+        "pot1_deliver": 11,
+        "pot0_nodeliver": 2,
+        "pot0_deliver": 7,
+        "pot1_nodeliver": 4
+      }
+    },
+    {
+      "layout": "cramped_room",
+      "episode": 4,
+      "cycle": 0,
+      "post_delivery": false,
+      "cycle_len": 186,
+      "phase": 0.75,
+      "t_abs": 140,
+      "entropy_bits": 0.6584,
+      "basin_counts": {
+        "pot1_deliver": 21,
+        "pot1_nodeliver": 2,
+        "pot0_deliver": 1
+      }
+    },
+    {
+      "layout": "cramped_room",
+      "episode": 4,
+      "cycle": 1,
+      "post_delivery": true,
+      "cycle_len": 84,
+      "phase": 0.0,
+      "t_abs": 186,
+      "entropy_bits": 1.5469,
+      "basin_counts": {
+        "pot0_deliver": 4,
+        "pot1_nodeliver": 5,
+        "pot1_deliver": 14,
+        "pot0_nodeliver": 1
+      }
+    },
+    {
+      "layout": "cramped_room",
+      "episode": 4,
+      "cycle": 1,
+      "post_delivery": true,
+      "cycle_len": 84,
+      "phase": 0.25,
+      "t_abs": 207,
+      "entropy_bits": 0.9406,
+      "basin_counts": {
+        "pot1_deliver": 19,
+        "pot0_deliver": 2,
+        "pot1_nodeliver": 3
+      }
+    },
+    {
+      "layout": "cramped_room",
+      "episode": 4,
+      "cycle": 1,
+      "post_delivery": true,
+      "cycle_len": 84,
+      "phase": 0.5,
+      "t_abs": 228,
+      "entropy_bits": 0.6584,
+      "basin_counts": {
+        "pot0_deliver": 21,
+        "pot1_deliver": 2,
+        "pot0_nodeliver": 1
+      }
+    },
+    {
+      "layout": "cramped_room",
+      "episode": 4,
+      "cycle": 1,
+      "post_delivery": true,
+      "cycle_len": 84,
+      "phase": 0.75,
+      "t_abs": 249,
+      "entropy_bits": 1.3824,
+      "basin_counts": {
+        "pot0_deliver": 13,
+        "pot1_deliver": 8,
+        "potnone_deliver": 3
+      }
+    },
+    {
+      "layout": "cramped_room",
+      "episode": 4,
+      "cycle": 2,
+      "post_delivery": true,
+      "cycle_len": 58,
+      "phase": 0.0,
+      "t_abs": 270,
+      "entropy_bits": 1.2934,
+      "basin_counts": {
+        "pot0_nodeliver": 3,
+        "pot0_deliver": 17,
+        "pot1_deliver": 3,
+        "pot1_nodeliver": 1
+      }
+    },
+    {
+      "layout": "cramped_room",
+      "episode": 4,
+      "cycle": 2,
+      "post_delivery": true,
+      "cycle_len": 58,
+      "phase": 0.25,
+      "t_abs": 284,
+      "entropy_bits": 1.1887,
+      "basin_counts": {
+        "pot0_deliver": 16,
+        "pot1_deliver": 2,
+        "pot0_nodeliver": 6
+      }
+    },
+    {
+      "layout": "cramped_room",
+      "episode": 4,
+      "cycle": 2,
+      "post_delivery": true,
+      "cycle_len": 58,
+      "phase": 0.5,
+      "t_abs": 299,
+      "entropy_bits": 0.8887,
+      "basin_counts": {
+        "potnone_deliver": 1,
+        "pot1_deliver": 19,
+        "pot0_deliver": 4
+      }
+    },
+    {
+      "layout": "cramped_room",
+      "episode": 4,
+      "cycle": 2,
+      "post_delivery": true,
+      "cycle_len": 58,
+      "phase": 0.75,
+      "t_abs": 314,
+      "entropy_bits": 0.5436,
+      "basin_counts": {
+        "pot1_deliver": 21,
+        "pot0_deliver": 3
+      }
+    },
+    {
+      "layout": "cramped_room",
+      "episode": 5,
+      "cycle": 0,
+      "post_delivery": false,
+      "cycle_len": 76,
+      "phase": 0.0,
+      "t_abs": 0,
+      "entropy_bits": 1.9491,
+      "basin_counts": {
+        "pot0_deliver": 4,
+        "pot0_nodeliver": 8,
+        "pot1_nodeliver": 5,
+        "pot1_deliver": 7
+      }
+    },
+    {
+      "layout": "cramped_room",
+      "episode": 5,
+      "cycle": 0,
+      "post_delivery": false,
+      "cycle_len": 76,
+      "phase": 0.25,
+      "t_abs": 19,
+      "entropy_bits": 1.273,
+      "basin_counts": {
+        "pot0_deliver": 17,
+        "pot1_deliver": 4,
+        "pot0_nodeliver": 2,
+        "pot1_nodeliver": 1
+      }
+    },
+    {
+      "layout": "cramped_room",
+      "episode": 5,
+      "cycle": 0,
+      "post_delivery": false,
+      "cycle_len": 76,
+      "phase": 0.5,
+      "t_abs": 38,
+      "entropy_bits": 0.7852,
+      "basin_counts": {
+        "pot0_deliver": 20,
+        "pot1_deliver": 3,
+        "pot0_nodeliver": 1
+      }
+    },
+    {
+      "layout": "cramped_room",
+      "episode": 5,
+      "cycle": 0,
+      "post_delivery": false,
+      "cycle_len": 76,
+      "phase": 0.75,
+      "t_abs": 57,
+      "entropy_bits": 0.9799,
+      "basin_counts": {
+        "pot1_deliver": 10,
+        "pot0_deliver": 14
+      }
+    },
+    {
+      "layout": "cramped_room",
+      "episode": 5,
+      "cycle": 1,
+      "post_delivery": true,
+      "cycle_len": 74,
+      "phase": 0.0,
+      "t_abs": 76,
+      "entropy_bits": 1.65,
+      "basin_counts": {
+        "pot1_nodeliver": 2,
+        "pot0_deliver": 10,
+        "pot0_nodeliver": 10,
+        "pot1_deliver": 2
+      }
+    },
+    {
+      "layout": "cramped_room",
+      "episode": 5,
+      "cycle": 1,
+      "post_delivery": true,
+      "cycle_len": 74,
+      "phase": 0.25,
+      "t_abs": 94,
+      "entropy_bits": 1.0409,
+      "basin_counts": {
+        "pot0_deliver": 18,
+        "pot0_nodeliver": 4,
+        "pot1_deliver": 2
+      }
+    },
+    {
+      "layout": "cramped_room",
+      "episode": 5,
+      "cycle": 1,
+      "post_delivery": true,
+      "cycle_len": 74,
+      "phase": 0.5,
+      "t_abs": 113,
+      "entropy_bits": 1.2059,
+      "basin_counts": {
+        "pot1_deliver": 17,
+        "pot0_deliver": 5,
+        "potnone_deliver": 1,
+        "potnone_nodeliver": 1
+      }
+    },
+    {
+      "layout": "cramped_room",
+      "episode": 5,
+      "cycle": 1,
+      "post_delivery": true,
+      "cycle_len": 74,
+      "phase": 0.75,
+      "t_abs": 132,
+      "entropy_bits": 1.364,
+      "basin_counts": {
+        "pot0_deliver": 14,
+        "pot1_deliver": 8,
+        "potnone_nodeliver": 1,
+        "pot0_nodeliver": 1
+      }
+    },
+    {
+      "layout": "cramped_room",
+      "episode": 5,
+      "cycle": 2,
+      "post_delivery": true,
+      "cycle_len": 87,
+      "phase": 0.0,
+      "t_abs": 150,
+      "entropy_bits": 1.5284,
+      "basin_counts": {
+        "pot1_nodeliver": 5,
+        "pot0_deliver": 9,
+        "pot0_nodeliver": 10
+      }
+    },
+    {
+      "layout": "cramped_room",
+      "episode": 5,
+      "cycle": 2,
+      "post_delivery": true,
+      "cycle_len": 87,
+      "phase": 0.25,
+      "t_abs": 172,
+      "entropy_bits": 1.5221,
+      "basin_counts": {
+        "pot1_deliver": 16,
+        "potnone_nodeliver": 1,
+        "pot1_nodeliver": 3,
+        "pot0_deliver": 3,
+        "pot0_nodeliver": 1
+      }
+    },
+    {
+      "layout": "cramped_room",
+      "episode": 5,
+      "cycle": 2,
+      "post_delivery": true,
+      "cycle_len": 87,
+      "phase": 0.5,
+      "t_abs": 194,
+      "entropy_bits": 1.3512,
+      "basin_counts": {
+        "pot1_deliver": 16,
+        "pot0_nodeliver": 2,
+        "pot1_nodeliver": 1,
+        "pot0_deliver": 5
+      }
+    },
+    {
+      "layout": "cramped_room",
+      "episode": 5,
+      "cycle": 2,
+      "post_delivery": true,
+      "cycle_len": 87,
+      "phase": 0.75,
+      "t_abs": 215,
+      "entropy_bits": 1.364,
+      "basin_counts": {
+        "pot1_deliver": 14,
+        "pot0_deliver": 8,
+        "pot1_nodeliver": 1,
+        "potnone_deliver": 1
+      }
+    },
+    {
+      "layout": "cramped_room",
+      "episode": 5,
+      "cycle": 3,
+      "post_delivery": true,
+      "cycle_len": 55,
+      "phase": 0.0,
+      "t_abs": 237,
+      "entropy_bits": 1.5204,
+      "basin_counts": {
+        "pot1_nodeliver": 9,
+        "pot1_deliver": 12,
+        "pot0_deliver": 2,
+        "pot0_nodeliver": 1
+      }
+    },
+    {
+      "layout": "cramped_room",
+      "episode": 5,
+      "cycle": 3,
+      "post_delivery": true,
+      "cycle_len": 55,
+      "phase": 0.25,
+      "t_abs": 251,
+      "entropy_bits": 1.0613,
+      "basin_counts": {
+        "pot1_deliver": 18,
+        "pot0_deliver": 3,
+        "pot1_nodeliver": 3
+      }
+    },
+    {
+      "layout": "cramped_room",
+      "episode": 5,
+      "cycle": 3,
+      "post_delivery": true,
+      "cycle_len": 55,
+      "phase": 0.5,
+      "t_abs": 265,
+      "entropy_bits": 1.1753,
+      "basin_counts": {
+        "pot1_nodeliver": 1,
+        "pot1_deliver": 9,
+        "pot0_deliver": 14
+      }
+    },
+    {
+      "layout": "cramped_room",
+      "episode": 5,
+      "cycle": 3,
+      "post_delivery": true,
+      "cycle_len": 55,
+      "phase": 0.75,
+      "t_abs": 278,
+      "entropy_bits": 0.8113,
+      "basin_counts": {
+        "pot0_deliver": 18,
+        "pot1_deliver": 6
+      }
+    },
+    {
+      "layout": "asymmetric_advantages",
+      "episode": 0,
+      "cycle": 0,
+      "post_delivery": false,
+      "cycle_len": 46,
+      "phase": 0.0,
+      "t_abs": 0,
+      "entropy_bits": -0.0,
+      "basin_counts": {
+        "pot0_deliver": 24
+      }
+    },
+    {
+      "layout": "asymmetric_advantages",
+      "episode": 0,
+      "cycle": 0,
+      "post_delivery": false,
+      "cycle_len": 46,
+      "phase": 0.25,
+      "t_abs": 12,
+      "entropy_bits": -0.0,
+      "basin_counts": {
+        "pot0_deliver": 24
+      }
+    },
+    {
+      "layout": "asymmetric_advantages",
+      "episode": 0,
+      "cycle": 0,
+      "post_delivery": false,
+      "cycle_len": 46,
+      "phase": 0.5,
+      "t_abs": 23,
+      "entropy_bits": 0.2499,
+      "basin_counts": {
+        "pot0_deliver": 23,
+        "potnone_nodeliver": 1
+      }
+    },
+    {
+      "layout": "asymmetric_advantages",
+      "episode": 0,
+      "cycle": 0,
+      "post_delivery": false,
+      "cycle_len": 46,
+      "phase": 0.75,
+      "t_abs": 34,
+      "entropy_bits": -0.0,
+      "basin_counts": {
+        "pot0_deliver": 24
+      }
+    },
+    {
+      "layout": "asymmetric_advantages",
+      "episode": 0,
+      "cycle": 1,
+      "post_delivery": true,
+      "cycle_len": 35,
+      "phase": 0.0,
+      "t_abs": 46,
+      "entropy_bits": -0.0,
+      "basin_counts": {
+        "pot0_deliver": 24
+      }
+    },
+    {
+      "layout": "asymmetric_advantages",
+      "episode": 0,
+      "cycle": 1,
+      "post_delivery": true,
+      "cycle_len": 35,
+      "phase": 0.25,
+      "t_abs": 55,
+      "entropy_bits": -0.0,
+      "basin_counts": {
+        "pot0_deliver": 24
+      }
+    },
+    {
+      "layout": "asymmetric_advantages",
+      "episode": 0,
+      "cycle": 1,
+      "post_delivery": true,
+      "cycle_len": 35,
+      "phase": 0.5,
+      "t_abs": 64,
+      "entropy_bits": -0.0,
+      "basin_counts": {
+        "pot0_deliver": 24
+      }
+    },
+    {
+      "layout": "asymmetric_advantages",
+      "episode": 0,
+      "cycle": 1,
+      "post_delivery": true,
+      "cycle_len": 35,
+      "phase": 0.75,
+      "t_abs": 72,
+      "entropy_bits": -0.0,
+      "basin_counts": {
+        "pot0_deliver": 24
+      }
+    },
+    {
+      "layout": "asymmetric_advantages",
+      "episode": 0,
+      "cycle": 2,
+      "post_delivery": true,
+      "cycle_len": 33,
+      "phase": 0.0,
+      "t_abs": 81,
+      "entropy_bits": -0.0,
+      "basin_counts": {
+        "pot0_deliver": 24
+      }
+    },
+    {
+      "layout": "asymmetric_advantages",
+      "episode": 0,
+      "cycle": 2,
+      "post_delivery": true,
+      "cycle_len": 33,
+      "phase": 0.25,
+      "t_abs": 89,
+      "entropy_bits": -0.0,
+      "basin_counts": {
+        "pot0_deliver": 24
+      }
+    },
+    {
+      "layout": "asymmetric_advantages",
+      "episode": 0,
+      "cycle": 2,
+      "post_delivery": true,
+      "cycle_len": 33,
+      "phase": 0.5,
+      "t_abs": 97,
+      "entropy_bits": -0.0,
+      "basin_counts": {
+        "pot0_deliver": 24
+      }
+    },
+    {
+      "layout": "asymmetric_advantages",
+      "episode": 0,
+      "cycle": 2,
+      "post_delivery": true,
+      "cycle_len": 33,
+      "phase": 0.75,
+      "t_abs": 106,
+      "entropy_bits": -0.0,
+      "basin_counts": {
+        "pot0_deliver": 24
+      }
+    },
+    {
+      "layout": "asymmetric_advantages",
+      "episode": 0,
+      "cycle": 3,
+      "post_delivery": true,
+      "cycle_len": 36,
+      "phase": 0.0,
+      "t_abs": 114,
+      "entropy_bits": -0.0,
+      "basin_counts": {
+        "pot0_deliver": 24
+      }
+    },
+    {
+      "layout": "asymmetric_advantages",
+      "episode": 0,
+      "cycle": 3,
+      "post_delivery": true,
+      "cycle_len": 36,
+      "phase": 0.25,
+      "t_abs": 123,
+      "entropy_bits": -0.0,
+      "basin_counts": {
+        "pot0_deliver": 24
+      }
+    },
+    {
+      "layout": "asymmetric_advantages",
+      "episode": 0,
+      "cycle": 3,
+      "post_delivery": true,
+      "cycle_len": 36,
+      "phase": 0.5,
+      "t_abs": 132,
+      "entropy_bits": -0.0,
+      "basin_counts": {
+        "pot0_deliver": 24
+      }
+    },
+    {
+      "layout": "asymmetric_advantages",
+      "episode": 0,
+      "cycle": 3,
+      "post_delivery": true,
+      "cycle_len": 36,
+      "phase": 0.75,
+      "t_abs": 141,
+      "entropy_bits": -0.0,
+      "basin_counts": {
+        "pot0_deliver": 24
+      }
+    },
+    {
+      "layout": "asymmetric_advantages",
+      "episode": 0,
+      "cycle": 4,
+      "post_delivery": true,
+      "cycle_len": 36,
+      "phase": 0.0,
+      "t_abs": 150,
+      "entropy_bits": -0.0,
+      "basin_counts": {
+        "pot0_deliver": 24
+      }
+    },
+    {
+      "layout": "asymmetric_advantages",
+      "episode": 0,
+      "cycle": 4,
+      "post_delivery": true,
+      "cycle_len": 36,
+      "phase": 0.25,
+      "t_abs": 159,
+      "entropy_bits": 0.4138,
+      "basin_counts": {
+        "pot0_deliver": 22,
+        "potnone_nodeliver": 2
+      }
+    },
+    {
+      "layout": "asymmetric_advantages",
+      "episode": 0,
+      "cycle": 4,
+      "post_delivery": true,
+      "cycle_len": 36,
+      "phase": 0.5,
+      "t_abs": 168,
+      "entropy_bits": -0.0,
+      "basin_counts": {
+        "pot0_deliver": 24
+      }
+    },
+    {
+      "layout": "asymmetric_advantages",
+      "episode": 0,
+      "cycle": 4,
+      "post_delivery": true,
+      "cycle_len": 36,
+      "phase": 0.75,
+      "t_abs": 177,
+      "entropy_bits": -0.0,
+      "basin_counts": {
+        "pot0_deliver": 24
+      }
+    },
+    {
+      "layout": "asymmetric_advantages",
+      "episode": 0,
+      "cycle": 5,
+      "post_delivery": true,
+      "cycle_len": 27,
+      "phase": 0.0,
+      "t_abs": 186,
+      "entropy_bits": -0.0,
+      "basin_counts": {
+        "pot0_deliver": 24
+      }
+    },
+    {
+      "layout": "asymmetric_advantages",
+      "episode": 0,
+      "cycle": 5,
+      "post_delivery": true,
+      "cycle_len": 27,
+      "phase": 0.25,
+      "t_abs": 193,
+      "entropy_bits": -0.0,
+      "basin_counts": {
+        "pot0_deliver": 24
+      }
+    },
+    {
+      "layout": "asymmetric_advantages",
+      "episode": 0,
+      "cycle": 5,
+      "post_delivery": true,
+      "cycle_len": 27,
+      "phase": 0.5,
+      "t_abs": 200,
+      "entropy_bits": -0.0,
+      "basin_counts": {
+        "pot0_deliver": 24
+      }
+    },
+    {
+      "layout": "asymmetric_advantages",
+      "episode": 0,
+      "cycle": 5,
+      "post_delivery": true,
+      "cycle_len": 27,
+      "phase": 0.75,
+      "t_abs": 206,
+      "entropy_bits": -0.0,
+      "basin_counts": {
+        "pot0_deliver": 24
+      }
+    },
+    {
+      "layout": "asymmetric_advantages",
+      "episode": 0,
+      "cycle": 6,
+      "post_delivery": true,
+      "cycle_len": 52,
+      "phase": 0.0,
+      "t_abs": 213,
+      "entropy_bits": 0.2499,
+      "basin_counts": {
+        "pot0_deliver": 23,
+        "pot0_nodeliver": 1
+      }
+    },
+    {
+      "layout": "asymmetric_advantages",
+      "episode": 0,
+      "cycle": 6,
+      "post_delivery": true,
+      "cycle_len": 52,
+      "phase": 0.25,
+      "t_abs": 226,
+      "entropy_bits": -0.0,
+      "basin_counts": {
+        "pot0_deliver": 24
+      }
+    },
+    {
+      "layout": "asymmetric_advantages",
+      "episode": 0,
+      "cycle": 6,
+      "post_delivery": true,
+      "cycle_len": 52,
+      "phase": 0.5,
+      "t_abs": 239,
+      "entropy_bits": -0.0,
+      "basin_counts": {
+        "pot0_deliver": 24
+      }
+    },
+    {
+      "layout": "asymmetric_advantages",
+      "episode": 0,
+      "cycle": 6,
+      "post_delivery": true,
+      "cycle_len": 52,
+      "phase": 0.75,
+      "t_abs": 252,
+      "entropy_bits": -0.0,
+      "basin_counts": {
+        "pot0_deliver": 24
+      }
+    },
+    {
+      "layout": "asymmetric_advantages",
+      "episode": 0,
+      "cycle": 7,
+      "post_delivery": true,
+      "cycle_len": 32,
+      "phase": 0.0,
+      "t_abs": 265,
+      "entropy_bits": -0.0,
+      "basin_counts": {
+        "pot0_deliver": 24
+      }
+    },
+    {
+      "layout": "asymmetric_advantages",
+      "episode": 0,
+      "cycle": 7,
+      "post_delivery": true,
+      "cycle_len": 32,
+      "phase": 0.25,
+      "t_abs": 273,
+      "entropy_bits": -0.0,
+      "basin_counts": {
+        "pot0_deliver": 24
+      }
+    },
+    {
+      "layout": "asymmetric_advantages",
+      "episode": 0,
+      "cycle": 7,
+      "post_delivery": true,
+      "cycle_len": 32,
+      "phase": 0.5,
+      "t_abs": 281,
+      "entropy_bits": -0.0,
+      "basin_counts": {
+        "pot0_deliver": 24
+      }
+    },
+    {
+      "layout": "asymmetric_advantages",
+      "episode": 0,
+      "cycle": 7,
+      "post_delivery": true,
+      "cycle_len": 32,
+      "phase": 0.75,
+      "t_abs": 289,
+      "entropy_bits": -0.0,
+      "basin_counts": {
+        "pot0_deliver": 24
+      }
+    },
+    {
+      "layout": "asymmetric_advantages",
+      "episode": 0,
+      "cycle": 8,
+      "post_delivery": true,
+      "cycle_len": 32,
+      "phase": 0.0,
+      "t_abs": 297,
+      "entropy_bits": 0.2499,
+      "basin_counts": {
+        "pot0_deliver": 23,
+        "pot0_nodeliver": 1
+      }
+    },
+    {
+      "layout": "asymmetric_advantages",
+      "episode": 0,
+      "cycle": 8,
+      "post_delivery": true,
+      "cycle_len": 32,
+      "phase": 0.25,
+      "t_abs": 305,
+      "entropy_bits": -0.0,
+      "basin_counts": {
+        "pot0_deliver": 24
+      }
+    },
+    {
+      "layout": "asymmetric_advantages",
+      "episode": 0,
+      "cycle": 8,
+      "post_delivery": true,
+      "cycle_len": 32,
+      "phase": 0.5,
+      "t_abs": 313,
+      "entropy_bits": -0.0,
+      "basin_counts": {
+        "pot0_deliver": 24
+      }
+    },
+    {
+      "layout": "asymmetric_advantages",
+      "episode": 0,
+      "cycle": 8,
+      "post_delivery": true,
+      "cycle_len": 32,
+      "phase": 0.75,
+      "t_abs": 321,
+      "entropy_bits": -0.0,
+      "basin_counts": {
+        "pot0_deliver": 24
+      }
+    },
+    {
+      "layout": "asymmetric_advantages",
+      "episode": 0,
+      "cycle": 9,
+      "post_delivery": true,
+      "cycle_len": 32,
+      "phase": 0.0,
+      "t_abs": 329,
+      "entropy_bits": 0.2499,
+      "basin_counts": {
+        "pot0_deliver": 23,
+        "pot0_nodeliver": 1
+      }
+    },
+    {
+      "layout": "asymmetric_advantages",
+      "episode": 0,
+      "cycle": 9,
+      "post_delivery": true,
+      "cycle_len": 32,
+      "phase": 0.25,
+      "t_abs": 337,
+      "entropy_bits": 0.2499,
+      "basin_counts": {
+        "pot0_deliver": 23,
+        "pot0_nodeliver": 1
+      }
+    },
+    {
+      "layout": "asymmetric_advantages",
+      "episode": 0,
+      "cycle": 9,
+      "post_delivery": true,
+      "cycle_len": 32,
+      "phase": 0.5,
+      "t_abs": 345,
+      "entropy_bits": -0.0,
+      "basin_counts": {
+        "pot0_deliver": 24
+      }
+    },
+    {
+      "layout": "asymmetric_advantages",
+      "episode": 0,
+      "cycle": 9,
+      "post_delivery": true,
+      "cycle_len": 32,
+      "phase": 0.75,
+      "t_abs": 353,
+      "entropy_bits": -0.0,
+      "basin_counts": {
+        "pot0_deliver": 24
+      }
+    },
+    {
+      "layout": "asymmetric_advantages",
+      "episode": 0,
+      "cycle": 10,
+      "post_delivery": true,
+      "cycle_len": 32,
+      "phase": 0.0,
+      "t_abs": 361,
+      "entropy_bits": 0.5436,
+      "basin_counts": {
+        "pot0_deliver": 21,
+        "pot0_nodeliver": 3
+      }
+    },
+    {
+      "layout": "asymmetric_advantages",
+      "episode": 0,
+      "cycle": 10,
+      "post_delivery": true,
+      "cycle_len": 32,
+      "phase": 0.25,
+      "t_abs": 369,
+      "entropy_bits": -0.0,
+      "basin_counts": {
+        "pot0_deliver": 24
+      }
+    },
+    {
+      "layout": "asymmetric_advantages",
+      "episode": 0,
+      "cycle": 10,
+      "post_delivery": true,
+      "cycle_len": 32,
+      "phase": 0.5,
+      "t_abs": 377,
+      "entropy_bits": -0.0,
+      "basin_counts": {
+        "pot0_deliver": 24
+      }
+    },
+    {
+      "layout": "asymmetric_advantages",
+      "episode": 0,
+      "cycle": 10,
+      "post_delivery": true,
+      "cycle_len": 32,
+      "phase": 0.75,
+      "t_abs": 385,
+      "entropy_bits": -0.0,
+      "basin_counts": {
+        "pot0_deliver": 24
+      }
+    },
+    {
+      "layout": "asymmetric_advantages",
+      "episode": 1,
+      "cycle": 0,
+      "post_delivery": false,
+      "cycle_len": 43,
+      "phase": 0.0,
+      "t_abs": 0,
+      "entropy_bits": 0.2499,
+      "basin_counts": {
+        "pot0_deliver": 23,
+        "pot0_nodeliver": 1
+      }
+    },
+    {
+      "layout": "asymmetric_advantages",
+      "episode": 1,
+      "cycle": 0,
+      "post_delivery": false,
+      "cycle_len": 43,
+      "phase": 0.25,
+      "t_abs": 11,
+      "entropy_bits": -0.0,
+      "basin_counts": {
+        "pot0_deliver": 24
+      }
+    },
+    {
+      "layout": "asymmetric_advantages",
+      "episode": 1,
+      "cycle": 0,
+      "post_delivery": false,
+      "cycle_len": 43,
+      "phase": 0.5,
+      "t_abs": 22,
+      "entropy_bits": -0.0,
+      "basin_counts": {
+        "pot0_deliver": 24
+      }
+    },
+    {
+      "layout": "asymmetric_advantages",
+      "episode": 1,
+      "cycle": 0,
+      "post_delivery": false,
+      "cycle_len": 43,
+      "phase": 0.75,
+      "t_abs": 32,
+      "entropy_bits": -0.0,
+      "basin_counts": {
+        "pot0_deliver": 24
+      }
+    },
+    {
+      "layout": "asymmetric_advantages",
+      "episode": 1,
+      "cycle": 1,
+      "post_delivery": true,
+      "cycle_len": 36,
+      "phase": 0.0,
+      "t_abs": 43,
+      "entropy_bits": 0.2499,
+      "basin_counts": {
+        "pot0_deliver": 23,
+        "pot0_nodeliver": 1
+      }
+    },
+    {
+      "layout": "asymmetric_advantages",
+      "episode": 1,
+      "cycle": 1,
+      "post_delivery": true,
+      "cycle_len": 36,
+      "phase": 0.25,
+      "t_abs": 52,
+      "entropy_bits": -0.0,
+      "basin_counts": {
+        "pot0_deliver": 24
+      }
+    },
+    {
+      "layout": "asymmetric_advantages",
+      "episode": 1,
+      "cycle": 1,
+      "post_delivery": true,
+      "cycle_len": 36,
+      "phase": 0.5,
+      "t_abs": 61,
+      "entropy_bits": -0.0,
+      "basin_counts": {
+        "pot0_deliver": 24
+      }
+    },
+    {
+      "layout": "asymmetric_advantages",
+      "episode": 1,
+      "cycle": 1,
+      "post_delivery": true,
+      "cycle_len": 36,
+      "phase": 0.75,
+      "t_abs": 70,
+      "entropy_bits": -0.0,
+      "basin_counts": {
+        "pot0_deliver": 24
+      }
+    },
+    {
+      "layout": "asymmetric_advantages",
+      "episode": 1,
+      "cycle": 2,
+      "post_delivery": true,
+      "cycle_len": 33,
+      "phase": 0.0,
+      "t_abs": 79,
+      "entropy_bits": 0.2499,
+      "basin_counts": {
+        "pot0_deliver": 23,
+        "pot0_nodeliver": 1
+      }
+    },
+    {
+      "layout": "asymmetric_advantages",
+      "episode": 1,
+      "cycle": 2,
+      "post_delivery": true,
+      "cycle_len": 33,
+      "phase": 0.25,
+      "t_abs": 87,
+      "entropy_bits": -0.0,
+      "basin_counts": {
+        "pot0_deliver": 24
+      }
+    },
+    {
+      "layout": "asymmetric_advantages",
+      "episode": 1,
+      "cycle": 2,
+      "post_delivery": true,
+      "cycle_len": 33,
+      "phase": 0.5,
+      "t_abs": 95,
+      "entropy_bits": -0.0,
+      "basin_counts": {
+        "pot0_deliver": 24
+      }
+    },
+    {
+      "layout": "asymmetric_advantages",
+      "episode": 1,
+      "cycle": 2,
+      "post_delivery": true,
+      "cycle_len": 33,
+      "phase": 0.75,
+      "t_abs": 104,
+      "entropy_bits": -0.0,
+      "basin_counts": {
+        "pot0_deliver": 24
+      }
+    },
+    {
+      "layout": "asymmetric_advantages",
+      "episode": 1,
+      "cycle": 3,
+      "post_delivery": true,
+      "cycle_len": 35,
+      "phase": 0.0,
+      "t_abs": 112,
+      "entropy_bits": -0.0,
+      "basin_counts": {
+        "pot0_deliver": 24
+      }
+    },
+    {
+      "layout": "asymmetric_advantages",
+      "episode": 1,
+      "cycle": 3,
+      "post_delivery": true,
+      "cycle_len": 35,
+      "phase": 0.25,
+      "t_abs": 121,
+      "entropy_bits": -0.0,
+      "basin_counts": {
+        "pot0_deliver": 24
+      }
+    },
+    {
+      "layout": "asymmetric_advantages",
+      "episode": 1,
+      "cycle": 3,
+      "post_delivery": true,
+      "cycle_len": 35,
+      "phase": 0.5,
+      "t_abs": 130,
+      "entropy_bits": -0.0,
+      "basin_counts": {
+        "pot0_deliver": 24
+      }
+    },
+    {
+      "layout": "asymmetric_advantages",
+      "episode": 1,
+      "cycle": 3,
+      "post_delivery": true,
+      "cycle_len": 35,
+      "phase": 0.75,
+      "t_abs": 138,
+      "entropy_bits": -0.0,
+      "basin_counts": {
+        "pot0_deliver": 24
+      }
+    },
+    {
+      "layout": "asymmetric_advantages",
+      "episode": 1,
+      "cycle": 4,
+      "post_delivery": true,
+      "cycle_len": 31,
+      "phase": 0.0,
+      "t_abs": 147,
+      "entropy_bits": -0.0,
+      "basin_counts": {
+        "pot0_deliver": 24
+      }
+    },
+    {
+      "layout": "asymmetric_advantages",
+      "episode": 1,
+      "cycle": 4,
+      "post_delivery": true,
+      "cycle_len": 31,
+      "phase": 0.25,
+      "t_abs": 155,
+      "entropy_bits": -0.0,
+      "basin_counts": {
+        "pot0_deliver": 24
+      }
+    },
+    {
+      "layout": "asymmetric_advantages",
+      "episode": 1,
+      "cycle": 4,
+      "post_delivery": true,
+      "cycle_len": 31,
+      "phase": 0.5,
+      "t_abs": 163,
+      "entropy_bits": -0.0,
+      "basin_counts": {
+        "pot0_deliver": 24
+      }
+    },
+    {
+      "layout": "asymmetric_advantages",
+      "episode": 1,
+      "cycle": 4,
+      "post_delivery": true,
+      "cycle_len": 31,
+      "phase": 0.75,
+      "t_abs": 170,
+      "entropy_bits": -0.0,
+      "basin_counts": {
+        "pot0_deliver": 24
+      }
+    },
+    {
+      "layout": "asymmetric_advantages",
+      "episode": 1,
+      "cycle": 5,
+      "post_delivery": true,
+      "cycle_len": 36,
+      "phase": 0.0,
+      "t_abs": 178,
+      "entropy_bits": -0.0,
+      "basin_counts": {
+        "pot0_deliver": 24
+      }
+    },
+    {
+      "layout": "asymmetric_advantages",
+      "episode": 1,
+      "cycle": 5,
+      "post_delivery": true,
+      "cycle_len": 36,
+      "phase": 0.25,
+      "t_abs": 187,
+      "entropy_bits": -0.0,
+      "basin_counts": {
+        "pot0_deliver": 24
+      }
+    },
+    {
+      "layout": "asymmetric_advantages",
+      "episode": 1,
+      "cycle": 5,
+      "post_delivery": true,
+      "cycle_len": 36,
+      "phase": 0.5,
+      "t_abs": 196,
+      "entropy_bits": -0.0,
+      "basin_counts": {
+        "pot0_deliver": 24
+      }
+    },
+    {
+      "layout": "asymmetric_advantages",
+      "episode": 1,
+      "cycle": 5,
+      "post_delivery": true,
+      "cycle_len": 36,
+      "phase": 0.75,
+      "t_abs": 205,
+      "entropy_bits": -0.0,
+      "basin_counts": {
+        "pot0_deliver": 24
+      }
+    },
+    {
+      "layout": "asymmetric_advantages",
+      "episode": 1,
+      "cycle": 6,
+      "post_delivery": true,
+      "cycle_len": 39,
+      "phase": 0.0,
+      "t_abs": 214,
+      "entropy_bits": 0.2499,
+      "basin_counts": {
+        "pot0_deliver": 23,
+        "pot0_nodeliver": 1
+      }
+    },
+    {
+      "layout": "asymmetric_advantages",
+      "episode": 1,
+      "cycle": 6,
+      "post_delivery": true,
+      "cycle_len": 39,
+      "phase": 0.25,
+      "t_abs": 224,
+      "entropy_bits": -0.0,
+      "basin_counts": {
+        "pot0_deliver": 24
+      }
+    },
+    {
+      "layout": "asymmetric_advantages",
+      "episode": 1,
+      "cycle": 6,
+      "post_delivery": true,
+      "cycle_len": 39,
+      "phase": 0.5,
+      "t_abs": 234,
+      "entropy_bits": -0.0,
+      "basin_counts": {
+        "pot0_deliver": 24
+      }
+    },
+    {
+      "layout": "asymmetric_advantages",
+      "episode": 1,
+      "cycle": 6,
+      "post_delivery": true,
+      "cycle_len": 39,
+      "phase": 0.75,
+      "t_abs": 243,
+      "entropy_bits": -0.0,
+      "basin_counts": {
+        "pot0_deliver": 24
+      }
+    },
+    {
+      "layout": "asymmetric_advantages",
+      "episode": 1,
+      "cycle": 7,
+      "post_delivery": true,
+      "cycle_len": 35,
+      "phase": 0.0,
+      "t_abs": 253,
+      "entropy_bits": 0.2499,
+      "basin_counts": {
+        "pot0_deliver": 23,
+        "pot0_nodeliver": 1
+      }
+    },
+    {
+      "layout": "asymmetric_advantages",
+      "episode": 1,
+      "cycle": 7,
+      "post_delivery": true,
+      "cycle_len": 35,
+      "phase": 0.25,
+      "t_abs": 262,
+      "entropy_bits": -0.0,
+      "basin_counts": {
+        "pot0_deliver": 24
+      }
+    },
+    {
+      "layout": "asymmetric_advantages",
+      "episode": 1,
+      "cycle": 7,
+      "post_delivery": true,
+      "cycle_len": 35,
+      "phase": 0.5,
+      "t_abs": 271,
+      "entropy_bits": -0.0,
+      "basin_counts": {
+        "pot0_deliver": 24
+      }
+    },
+    {
+      "layout": "asymmetric_advantages",
+      "episode": 1,
+      "cycle": 7,
+      "post_delivery": true,
+      "cycle_len": 35,
+      "phase": 0.75,
+      "t_abs": 279,
+      "entropy_bits": -0.0,
+      "basin_counts": {
+        "pot0_deliver": 24
+      }
+    },
+    {
+      "layout": "asymmetric_advantages",
+      "episode": 1,
+      "cycle": 8,
+      "post_delivery": true,
+      "cycle_len": 28,
+      "phase": 0.0,
+      "t_abs": 288,
+      "entropy_bits": -0.0,
+      "basin_counts": {
+        "pot0_deliver": 24
+      }
+    },
+    {
+      "layout": "asymmetric_advantages",
+      "episode": 1,
+      "cycle": 8,
+      "post_delivery": true,
+      "cycle_len": 28,
+      "phase": 0.25,
+      "t_abs": 295,
+      "entropy_bits": -0.0,
+      "basin_counts": {
+        "pot0_deliver": 24
+      }
+    },
+    {
+      "layout": "asymmetric_advantages",
+      "episode": 1,
+      "cycle": 8,
+      "post_delivery": true,
+      "cycle_len": 28,
+      "phase": 0.5,
+      "t_abs": 302,
+      "entropy_bits": -0.0,
+      "basin_counts": {
+        "pot0_deliver": 24
+      }
+    },
+    {
+      "layout": "asymmetric_advantages",
+      "episode": 1,
+      "cycle": 8,
+      "post_delivery": true,
+      "cycle_len": 28,
+      "phase": 0.75,
+      "t_abs": 309,
+      "entropy_bits": -0.0,
+      "basin_counts": {
+        "pot0_deliver": 24
+      }
+    },
+    {
+      "layout": "asymmetric_advantages",
+      "episode": 1,
+      "cycle": 9,
+      "post_delivery": true,
+      "cycle_len": 34,
+      "phase": 0.0,
+      "t_abs": 316,
+      "entropy_bits": -0.0,
+      "basin_counts": {
+        "pot0_deliver": 24
+      }
+    },
+    {
+      "layout": "asymmetric_advantages",
+      "episode": 1,
+      "cycle": 9,
+      "post_delivery": true,
+      "cycle_len": 34,
+      "phase": 0.25,
+      "t_abs": 324,
+      "entropy_bits": -0.0,
+      "basin_counts": {
+        "pot0_deliver": 24
+      }
+    },
+    {
+      "layout": "asymmetric_advantages",
+      "episode": 1,
+      "cycle": 9,
+      "post_delivery": true,
+      "cycle_len": 34,
+      "phase": 0.5,
+      "t_abs": 333,
+      "entropy_bits": 0.2499,
+      "basin_counts": {
+        "pot0_deliver": 23,
+        "potnone_deliver": 1
+      }
+    },
+    {
+      "layout": "asymmetric_advantages",
+      "episode": 1,
+      "cycle": 9,
+      "post_delivery": true,
+      "cycle_len": 34,
+      "phase": 0.75,
+      "t_abs": 342,
+      "entropy_bits": -0.0,
+      "basin_counts": {
+        "pot0_deliver": 24
+      }
+    },
+    {
+      "layout": "asymmetric_advantages",
+      "episode": 2,
+      "cycle": 0,
+      "post_delivery": false,
+      "cycle_len": 105,
+      "phase": 0.0,
+      "t_abs": 0,
+      "entropy_bits": -0.0,
+      "basin_counts": {
+        "pot0_deliver": 24
+      }
+    },
+    {
+      "layout": "asymmetric_advantages",
+      "episode": 2,
+      "cycle": 0,
+      "post_delivery": false,
+      "cycle_len": 105,
+      "phase": 0.25,
+      "t_abs": 26,
+      "entropy_bits": -0.0,
+      "basin_counts": {
+        "pot0_deliver": 24
+      }
+    },
+    {
+      "layout": "asymmetric_advantages",
+      "episode": 2,
+      "cycle": 0,
+      "post_delivery": false,
+      "cycle_len": 105,
+      "phase": 0.5,
+      "t_abs": 52,
+      "entropy_bits": 0.5436,
+      "basin_counts": {
+        "pot0_deliver": 21,
+        "pot0_nodeliver": 3
+      }
+    },
+    {
+      "layout": "asymmetric_advantages",
+      "episode": 2,
+      "cycle": 0,
+      "post_delivery": false,
+      "cycle_len": 105,
+      "phase": 0.75,
+      "t_abs": 79,
+      "entropy_bits": -0.0,
+      "basin_counts": {
+        "pot0_deliver": 24
+      }
+    },
+    {
+      "layout": "asymmetric_advantages",
+      "episode": 2,
+      "cycle": 1,
+      "post_delivery": true,
+      "cycle_len": 69,
+      "phase": 0.0,
+      "t_abs": 105,
+      "entropy_bits": -0.0,
+      "basin_counts": {
+        "pot0_deliver": 24
+      }
+    },
+    {
+      "layout": "asymmetric_advantages",
+      "episode": 2,
+      "cycle": 1,
+      "post_delivery": true,
+      "cycle_len": 69,
+      "phase": 0.25,
+      "t_abs": 122,
+      "entropy_bits": 0.4138,
+      "basin_counts": {
+        "pot0_deliver": 22,
+        "pot0_nodeliver": 2
+      }
+    },
+    {
+      "layout": "asymmetric_advantages",
+      "episode": 2,
+      "cycle": 1,
+      "post_delivery": true,
+      "cycle_len": 69,
+      "phase": 0.5,
+      "t_abs": 139,
+      "entropy_bits": 0.2499,
+      "basin_counts": {
+        "pot0_deliver": 23,
+        "pot0_nodeliver": 1
+      }
+    },
+    {
+      "layout": "asymmetric_advantages",
+      "episode": 2,
+      "cycle": 1,
+      "post_delivery": true,
+      "cycle_len": 69,
+      "phase": 0.75,
+      "t_abs": 157,
+      "entropy_bits": -0.0,
+      "basin_counts": {
+        "pot0_deliver": 24
+      }
+    },
+    {
+      "layout": "asymmetric_advantages",
+      "episode": 2,
+      "cycle": 2,
+      "post_delivery": true,
+      "cycle_len": 36,
+      "phase": 0.0,
+      "t_abs": 174,
+      "entropy_bits": -0.0,
+      "basin_counts": {
+        "pot0_deliver": 24
+      }
+    },
+    {
+      "layout": "asymmetric_advantages",
+      "episode": 2,
+      "cycle": 2,
+      "post_delivery": true,
+      "cycle_len": 36,
+      "phase": 0.25,
+      "t_abs": 183,
+      "entropy_bits": -0.0,
+      "basin_counts": {
+        "pot0_deliver": 24
+      }
+    },
+    {
+      "layout": "asymmetric_advantages",
+      "episode": 2,
+      "cycle": 2,
+      "post_delivery": true,
+      "cycle_len": 36,
+      "phase": 0.5,
+      "t_abs": 192,
+      "entropy_bits": -0.0,
+      "basin_counts": {
+        "pot0_deliver": 24
+      }
+    },
+    {
+      "layout": "asymmetric_advantages",
+      "episode": 2,
+      "cycle": 2,
+      "post_delivery": true,
+      "cycle_len": 36,
+      "phase": 0.75,
+      "t_abs": 201,
+      "entropy_bits": -0.0,
+      "basin_counts": {
+        "pot0_deliver": 24
+      }
+    },
+    {
+      "layout": "asymmetric_advantages",
+      "episode": 2,
+      "cycle": 3,
+      "post_delivery": true,
+      "cycle_len": 29,
+      "phase": 0.0,
+      "t_abs": 210,
+      "entropy_bits": -0.0,
+      "basin_counts": {
+        "pot0_deliver": 24
+      }
+    },
+    {
+      "layout": "asymmetric_advantages",
+      "episode": 2,
+      "cycle": 3,
+      "post_delivery": true,
+      "cycle_len": 29,
+      "phase": 0.25,
+      "t_abs": 217,
+      "entropy_bits": -0.0,
+      "basin_counts": {
+        "pot0_deliver": 24
+      }
+    },
+    {
+      "layout": "asymmetric_advantages",
+      "episode": 2,
+      "cycle": 3,
+      "post_delivery": true,
+      "cycle_len": 29,
+      "phase": 0.5,
+      "t_abs": 224,
+      "entropy_bits": -0.0,
+      "basin_counts": {
+        "pot0_deliver": 24
+      }
+    },
+    {
+      "layout": "asymmetric_advantages",
+      "episode": 2,
+      "cycle": 3,
+      "post_delivery": true,
+      "cycle_len": 29,
+      "phase": 0.75,
+      "t_abs": 232,
+      "entropy_bits": -0.0,
+      "basin_counts": {
+        "pot0_deliver": 24
+      }
+    },
+    {
+      "layout": "asymmetric_advantages",
+      "episode": 2,
+      "cycle": 4,
+      "post_delivery": true,
+      "cycle_len": 29,
+      "phase": 0.0,
+      "t_abs": 239,
+      "entropy_bits": 0.4138,
+      "basin_counts": {
+        "pot0_deliver": 22,
+        "pot0_nodeliver": 2
+      }
+    },
+    {
+      "layout": "asymmetric_advantages",
+      "episode": 2,
+      "cycle": 4,
+      "post_delivery": true,
+      "cycle_len": 29,
+      "phase": 0.25,
+      "t_abs": 246,
+      "entropy_bits": -0.0,
+      "basin_counts": {
+        "pot0_deliver": 24
+      }
+    },
+    {
+      "layout": "asymmetric_advantages",
+      "episode": 2,
+      "cycle": 4,
+      "post_delivery": true,
+      "cycle_len": 29,
+      "phase": 0.5,
+      "t_abs": 253,
+      "entropy_bits": -0.0,
+      "basin_counts": {
+        "pot0_deliver": 24
+      }
+    },
+    {
+      "layout": "asymmetric_advantages",
+      "episode": 2,
+      "cycle": 4,
+      "post_delivery": true,
+      "cycle_len": 29,
+      "phase": 0.75,
+      "t_abs": 261,
+      "entropy_bits": -0.0,
+      "basin_counts": {
+        "pot0_deliver": 24
+      }
+    },
+    {
+      "layout": "asymmetric_advantages",
+      "episode": 2,
+      "cycle": 5,
+      "post_delivery": true,
+      "cycle_len": 87,
+      "phase": 0.0,
+      "t_abs": 268,
+      "entropy_bits": -0.0,
+      "basin_counts": {
+        "pot0_deliver": 24
+      }
+    },
+    {
+      "layout": "asymmetric_advantages",
+      "episode": 2,
+      "cycle": 5,
+      "post_delivery": true,
+      "cycle_len": 87,
+      "phase": 0.25,
+      "t_abs": 290,
+      "entropy_bits": 0.4138,
+      "basin_counts": {
+        "pot0_deliver": 22,
+        "pot0_nodeliver": 2
+      }
+    },
+    {
+      "layout": "asymmetric_advantages",
+      "episode": 2,
+      "cycle": 5,
+      "post_delivery": true,
+      "cycle_len": 87,
+      "phase": 0.5,
+      "t_abs": 312,
+      "entropy_bits": 0.2499,
+      "basin_counts": {
+        "pot0_deliver": 23,
+        "pot0_nodeliver": 1
+      }
+    },
+    {
+      "layout": "asymmetric_advantages",
+      "episode": 2,
+      "cycle": 5,
+      "post_delivery": true,
+      "cycle_len": 87,
+      "phase": 0.75,
+      "t_abs": 333,
+      "entropy_bits": -0.0,
+      "basin_counts": {
+        "pot0_deliver": 24
+      }
+    },
+    {
+      "layout": "asymmetric_advantages",
+      "episode": 2,
+      "cycle": 6,
+      "post_delivery": true,
+      "cycle_len": 34,
+      "phase": 0.0,
+      "t_abs": 355,
+      "entropy_bits": 0.5436,
+      "basin_counts": {
+        "pot0_deliver": 21,
+        "pot0_nodeliver": 3
+      }
+    },
+    {
+      "layout": "asymmetric_advantages",
+      "episode": 2,
+      "cycle": 6,
+      "post_delivery": true,
+      "cycle_len": 34,
+      "phase": 0.25,
+      "t_abs": 363,
+      "entropy_bits": 0.2499,
+      "basin_counts": {
+        "pot0_deliver": 23,
+        "pot0_nodeliver": 1
+      }
+    },
+    {
+      "layout": "asymmetric_advantages",
+      "episode": 2,
+      "cycle": 6,
+      "post_delivery": true,
+      "cycle_len": 34,
+      "phase": 0.5,
+      "t_abs": 372,
+      "entropy_bits": -0.0,
+      "basin_counts": {
+        "pot0_deliver": 24
+      }
+    },
+    {
+      "layout": "asymmetric_advantages",
+      "episode": 2,
+      "cycle": 6,
+      "post_delivery": true,
+      "cycle_len": 34,
+      "phase": 0.75,
+      "t_abs": 381,
+      "entropy_bits": 0.2499,
+      "basin_counts": {
+        "pot0_deliver": 23,
+        "pot0_nodeliver": 1
+      }
+    },
+    {
+      "layout": "asymmetric_advantages",
+      "episode": 3,
+      "cycle": 0,
+      "post_delivery": false,
+      "cycle_len": 45,
+      "phase": 0.0,
+      "t_abs": 0,
+      "entropy_bits": 0.2499,
+      "basin_counts": {
+        "pot0_deliver": 23,
+        "pot0_nodeliver": 1
+      }
+    },
+    {
+      "layout": "asymmetric_advantages",
+      "episode": 3,
+      "cycle": 0,
+      "post_delivery": false,
+      "cycle_len": 45,
+      "phase": 0.25,
+      "t_abs": 11,
+      "entropy_bits": -0.0,
+      "basin_counts": {
+        "pot0_deliver": 24
+      }
+    },
+    {
+      "layout": "asymmetric_advantages",
+      "episode": 3,
+      "cycle": 0,
+      "post_delivery": false,
+      "cycle_len": 45,
+      "phase": 0.5,
+      "t_abs": 22,
+      "entropy_bits": -0.0,
+      "basin_counts": {
+        "pot0_deliver": 24
+      }
+    },
+    {
+      "layout": "asymmetric_advantages",
+      "episode": 3,
+      "cycle": 0,
+      "post_delivery": false,
+      "cycle_len": 45,
+      "phase": 0.75,
+      "t_abs": 34,
+      "entropy_bits": -0.0,
+      "basin_counts": {
+        "pot0_deliver": 24
+      }
+    },
+    {
+      "layout": "asymmetric_advantages",
+      "episode": 3,
+      "cycle": 1,
+      "post_delivery": true,
+      "cycle_len": 30,
+      "phase": 0.0,
+      "t_abs": 45,
+      "entropy_bits": 0.2499,
+      "basin_counts": {
+        "pot0_deliver": 23,
+        "pot0_nodeliver": 1
+      }
+    },
+    {
+      "layout": "asymmetric_advantages",
+      "episode": 3,
+      "cycle": 1,
+      "post_delivery": true,
+      "cycle_len": 30,
+      "phase": 0.25,
+      "t_abs": 53,
+      "entropy_bits": -0.0,
+      "basin_counts": {
+        "pot0_deliver": 24
+      }
+    },
+    {
+      "layout": "asymmetric_advantages",
+      "episode": 3,
+      "cycle": 1,
+      "post_delivery": true,
+      "cycle_len": 30,
+      "phase": 0.5,
+      "t_abs": 60,
+      "entropy_bits": -0.0,
+      "basin_counts": {
+        "pot0_deliver": 24
+      }
+    },
+    {
+      "layout": "asymmetric_advantages",
+      "episode": 3,
+      "cycle": 1,
+      "post_delivery": true,
+      "cycle_len": 30,
+      "phase": 0.75,
+      "t_abs": 67,
+      "entropy_bits": -0.0,
+      "basin_counts": {
+        "pot0_deliver": 24
+      }
+    },
+    {
+      "layout": "asymmetric_advantages",
+      "episode": 3,
+      "cycle": 2,
+      "post_delivery": true,
+      "cycle_len": 36,
+      "phase": 0.0,
+      "t_abs": 75,
+      "entropy_bits": -0.0,
+      "basin_counts": {
+        "pot0_deliver": 24
+      }
+    },
+    {
+      "layout": "asymmetric_advantages",
+      "episode": 3,
+      "cycle": 2,
+      "post_delivery": true,
+      "cycle_len": 36,
+      "phase": 0.25,
+      "t_abs": 84,
+      "entropy_bits": -0.0,
+      "basin_counts": {
+        "pot0_deliver": 24
+      }
+    },
+    {
+      "layout": "asymmetric_advantages",
+      "episode": 3,
+      "cycle": 2,
+      "post_delivery": true,
+      "cycle_len": 36,
+      "phase": 0.5,
+      "t_abs": 93,
+      "entropy_bits": -0.0,
+      "basin_counts": {
+        "pot0_deliver": 24
+      }
+    },
+    {
+      "layout": "asymmetric_advantages",
+      "episode": 3,
+      "cycle": 2,
+      "post_delivery": true,
+      "cycle_len": 36,
+      "phase": 0.75,
+      "t_abs": 102,
+      "entropy_bits": -0.0,
+      "basin_counts": {
+        "pot0_deliver": 24
+      }
+    },
+    {
+      "layout": "asymmetric_advantages",
+      "episode": 3,
+      "cycle": 3,
+      "post_delivery": true,
+      "cycle_len": 33,
+      "phase": 0.0,
+      "t_abs": 111,
+      "entropy_bits": -0.0,
+      "basin_counts": {
+        "pot0_deliver": 24
+      }
+    },
+    {
+      "layout": "asymmetric_advantages",
+      "episode": 3,
+      "cycle": 3,
+      "post_delivery": true,
+      "cycle_len": 33,
+      "phase": 0.25,
+      "t_abs": 119,
+      "entropy_bits": -0.0,
+      "basin_counts": {
+        "pot0_deliver": 24
+      }
+    },
+    {
+      "layout": "asymmetric_advantages",
+      "episode": 3,
+      "cycle": 3,
+      "post_delivery": true,
+      "cycle_len": 33,
+      "phase": 0.5,
+      "t_abs": 127,
+      "entropy_bits": -0.0,
+      "basin_counts": {
+        "pot0_deliver": 24
+      }
+    },
+    {
+      "layout": "asymmetric_advantages",
+      "episode": 3,
+      "cycle": 3,
+      "post_delivery": true,
+      "cycle_len": 33,
+      "phase": 0.75,
+      "t_abs": 136,
+      "entropy_bits": -0.0,
+      "basin_counts": {
+        "pot0_deliver": 24
+      }
+    },
+    {
+      "layout": "asymmetric_advantages",
+      "episode": 3,
+      "cycle": 4,
+      "post_delivery": true,
+      "cycle_len": 31,
+      "phase": 0.0,
+      "t_abs": 144,
+      "entropy_bits": -0.0,
+      "basin_counts": {
+        "pot0_deliver": 24
+      }
+    },
+    {
+      "layout": "asymmetric_advantages",
+      "episode": 3,
+      "cycle": 4,
+      "post_delivery": true,
+      "cycle_len": 31,
+      "phase": 0.25,
+      "t_abs": 152,
+      "entropy_bits": -0.0,
+      "basin_counts": {
+        "pot0_deliver": 24
+      }
+    },
+    {
+      "layout": "asymmetric_advantages",
+      "episode": 3,
+      "cycle": 4,
+      "post_delivery": true,
+      "cycle_len": 31,
+      "phase": 0.5,
+      "t_abs": 160,
+      "entropy_bits": -0.0,
+      "basin_counts": {
+        "pot0_deliver": 24
+      }
+    },
+    {
+      "layout": "asymmetric_advantages",
+      "episode": 3,
+      "cycle": 4,
+      "post_delivery": true,
+      "cycle_len": 31,
+      "phase": 0.75,
+      "t_abs": 167,
+      "entropy_bits": -0.0,
+      "basin_counts": {
+        "pot0_deliver": 24
+      }
+    },
+    {
+      "layout": "asymmetric_advantages",
+      "episode": 3,
+      "cycle": 5,
+      "post_delivery": true,
+      "cycle_len": 30,
+      "phase": 0.0,
+      "t_abs": 175,
+      "entropy_bits": -0.0,
+      "basin_counts": {
+        "pot0_deliver": 24
+      }
+    },
+    {
+      "layout": "asymmetric_advantages",
+      "episode": 3,
+      "cycle": 5,
+      "post_delivery": true,
+      "cycle_len": 30,
+      "phase": 0.25,
+      "t_abs": 183,
+      "entropy_bits": -0.0,
+      "basin_counts": {
+        "pot0_deliver": 24
+      }
+    },
+    {
+      "layout": "asymmetric_advantages",
+      "episode": 3,
+      "cycle": 5,
+      "post_delivery": true,
+      "cycle_len": 30,
+      "phase": 0.5,
+      "t_abs": 190,
+      "entropy_bits": -0.0,
+      "basin_counts": {
+        "pot0_deliver": 24
+      }
+    },
+    {
+      "layout": "asymmetric_advantages",
+      "episode": 3,
+      "cycle": 5,
+      "post_delivery": true,
+      "cycle_len": 30,
+      "phase": 0.75,
+      "t_abs": 197,
+      "entropy_bits": -0.0,
+      "basin_counts": {
+        "pot0_deliver": 24
+      }
+    },
+    {
+      "layout": "asymmetric_advantages",
+      "episode": 3,
+      "cycle": 6,
+      "post_delivery": true,
+      "cycle_len": 33,
+      "phase": 0.0,
+      "t_abs": 205,
+      "entropy_bits": 0.2499,
+      "basin_counts": {
+        "pot0_deliver": 23,
+        "pot0_nodeliver": 1
+      }
+    },
+    {
+      "layout": "asymmetric_advantages",
+      "episode": 3,
+      "cycle": 6,
+      "post_delivery": true,
+      "cycle_len": 33,
+      "phase": 0.25,
+      "t_abs": 213,
+      "entropy_bits": -0.0,
+      "basin_counts": {
+        "pot0_deliver": 24
+      }
+    },
+    {
+      "layout": "asymmetric_advantages",
+      "episode": 3,
+      "cycle": 6,
+      "post_delivery": true,
+      "cycle_len": 33,
+      "phase": 0.5,
+      "t_abs": 221,
+      "entropy_bits": -0.0,
+      "basin_counts": {
+        "pot0_deliver": 24
+      }
+    },
+    {
+      "layout": "asymmetric_advantages",
+      "episode": 3,
+      "cycle": 6,
+      "post_delivery": true,
+      "cycle_len": 33,
+      "phase": 0.75,
+      "t_abs": 230,
+      "entropy_bits": -0.0,
+      "basin_counts": {
+        "pot0_deliver": 24
+      }
+    },
+    {
+      "layout": "asymmetric_advantages",
+      "episode": 3,
+      "cycle": 7,
+      "post_delivery": true,
+      "cycle_len": 34,
+      "phase": 0.0,
+      "t_abs": 238,
+      "entropy_bits": -0.0,
+      "basin_counts": {
+        "pot0_deliver": 24
+      }
+    },
+    {
+      "layout": "asymmetric_advantages",
+      "episode": 3,
+      "cycle": 7,
+      "post_delivery": true,
+      "cycle_len": 34,
+      "phase": 0.25,
+      "t_abs": 246,
+      "entropy_bits": -0.0,
+      "basin_counts": {
+        "pot0_deliver": 24
+      }
+    },
+    {
+      "layout": "asymmetric_advantages",
+      "episode": 3,
+      "cycle": 7,
+      "post_delivery": true,
+      "cycle_len": 34,
+      "phase": 0.5,
+      "t_abs": 255,
+      "entropy_bits": -0.0,
+      "basin_counts": {
+        "pot0_deliver": 24
+      }
+    },
+    {
+      "layout": "asymmetric_advantages",
+      "episode": 3,
+      "cycle": 7,
+      "post_delivery": true,
+      "cycle_len": 34,
+      "phase": 0.75,
+      "t_abs": 264,
+      "entropy_bits": -0.0,
+      "basin_counts": {
+        "pot0_deliver": 24
+      }
+    },
+    {
+      "layout": "asymmetric_advantages",
+      "episode": 3,
+      "cycle": 8,
+      "post_delivery": true,
+      "cycle_len": 69,
+      "phase": 0.0,
+      "t_abs": 272,
+      "entropy_bits": -0.0,
+      "basin_counts": {
+        "pot0_deliver": 24
+      }
+    },
+    {
+      "layout": "asymmetric_advantages",
+      "episode": 3,
+      "cycle": 8,
+      "post_delivery": true,
+      "cycle_len": 69,
+      "phase": 0.25,
+      "t_abs": 289,
+      "entropy_bits": 0.2499,
+      "basin_counts": {
+        "pot0_deliver": 23,
+        "pot0_nodeliver": 1
+      }
+    },
+    {
+      "layout": "asymmetric_advantages",
+      "episode": 3,
+      "cycle": 8,
+      "post_delivery": true,
+      "cycle_len": 69,
+      "phase": 0.5,
+      "t_abs": 306,
+      "entropy_bits": 0.4138,
+      "basin_counts": {
+        "pot0_deliver": 22,
+        "pot0_nodeliver": 2
+      }
+    },
+    {
+      "layout": "asymmetric_advantages",
+      "episode": 3,
+      "cycle": 8,
+      "post_delivery": true,
+      "cycle_len": 69,
+      "phase": 0.75,
+      "t_abs": 324,
+      "entropy_bits": -0.0,
+      "basin_counts": {
+        "pot0_deliver": 24
+      }
+    },
+    {
+      "layout": "asymmetric_advantages",
+      "episode": 3,
+      "cycle": 9,
+      "post_delivery": true,
+      "cycle_len": 33,
+      "phase": 0.0,
+      "t_abs": 341,
+      "entropy_bits": 0.2499,
+      "basin_counts": {
+        "pot0_deliver": 23,
+        "pot0_nodeliver": 1
+      }
+    },
+    {
+      "layout": "asymmetric_advantages",
+      "episode": 3,
+      "cycle": 9,
+      "post_delivery": true,
+      "cycle_len": 33,
+      "phase": 0.25,
+      "t_abs": 349,
+      "entropy_bits": -0.0,
+      "basin_counts": {
+        "pot0_deliver": 24
+      }
+    },
+    {
+      "layout": "asymmetric_advantages",
+      "episode": 3,
+      "cycle": 9,
+      "post_delivery": true,
+      "cycle_len": 33,
+      "phase": 0.5,
+      "t_abs": 357,
+      "entropy_bits": -0.0,
+      "basin_counts": {
+        "pot0_deliver": 24
+      }
+    },
+    {
+      "layout": "asymmetric_advantages",
+      "episode": 3,
+      "cycle": 9,
+      "post_delivery": true,
+      "cycle_len": 33,
+      "phase": 0.75,
+      "t_abs": 366,
+      "entropy_bits": -0.0,
+      "basin_counts": {
+        "pot0_deliver": 24
+      }
+    },
+    {
+      "layout": "asymmetric_advantages",
+      "episode": 4,
+      "cycle": 0,
+      "post_delivery": false,
+      "cycle_len": 44,
+      "phase": 0.0,
+      "t_abs": 0,
+      "entropy_bits": -0.0,
+      "basin_counts": {
+        "pot0_deliver": 24
+      }
+    },
+    {
+      "layout": "asymmetric_advantages",
+      "episode": 4,
+      "cycle": 0,
+      "post_delivery": false,
+      "cycle_len": 44,
+      "phase": 0.25,
+      "t_abs": 11,
+      "entropy_bits": 0.2499,
+      "basin_counts": {
+        "pot0_deliver": 23,
+        "pot0_nodeliver": 1
+      }
+    },
+    {
+      "layout": "asymmetric_advantages",
+      "episode": 4,
+      "cycle": 0,
+      "post_delivery": false,
+      "cycle_len": 44,
+      "phase": 0.5,
+      "t_abs": 22,
+      "entropy_bits": -0.0,
+      "basin_counts": {
+        "pot0_deliver": 24
+      }
+    },
+    {
+      "layout": "asymmetric_advantages",
+      "episode": 4,
+      "cycle": 0,
+      "post_delivery": false,
+      "cycle_len": 44,
+      "phase": 0.75,
+      "t_abs": 33,
+      "entropy_bits": -0.0,
+      "basin_counts": {
+        "pot0_deliver": 24
+      }
+    },
+    {
+      "layout": "asymmetric_advantages",
+      "episode": 4,
+      "cycle": 1,
+      "post_delivery": true,
+      "cycle_len": 40,
+      "phase": 0.0,
+      "t_abs": 44,
+      "entropy_bits": -0.0,
+      "basin_counts": {
+        "pot0_deliver": 24
+      }
+    },
+    {
+      "layout": "asymmetric_advantages",
+      "episode": 4,
+      "cycle": 1,
+      "post_delivery": true,
+      "cycle_len": 40,
+      "phase": 0.25,
+      "t_abs": 54,
+      "entropy_bits": -0.0,
+      "basin_counts": {
+        "pot0_deliver": 24
+      }
+    },
+    {
+      "layout": "asymmetric_advantages",
+      "episode": 4,
+      "cycle": 1,
+      "post_delivery": true,
+      "cycle_len": 40,
+      "phase": 0.5,
+      "t_abs": 64,
+      "entropy_bits": -0.0,
+      "basin_counts": {
+        "pot0_deliver": 24
+      }
+    },
+    {
+      "layout": "asymmetric_advantages",
+      "episode": 4,
+      "cycle": 1,
+      "post_delivery": true,
+      "cycle_len": 40,
+      "phase": 0.75,
+      "t_abs": 74,
+      "entropy_bits": -0.0,
+      "basin_counts": {
+        "pot0_deliver": 24
+      }
+    },
+    {
+      "layout": "asymmetric_advantages",
+      "episode": 4,
+      "cycle": 2,
+      "post_delivery": true,
+      "cycle_len": 31,
+      "phase": 0.0,
+      "t_abs": 84,
+      "entropy_bits": -0.0,
+      "basin_counts": {
+        "pot0_deliver": 24
+      }
+    },
+    {
+      "layout": "asymmetric_advantages",
+      "episode": 4,
+      "cycle": 2,
+      "post_delivery": true,
+      "cycle_len": 31,
+      "phase": 0.25,
+      "t_abs": 92,
+      "entropy_bits": -0.0,
+      "basin_counts": {
+        "pot0_deliver": 24
+      }
+    },
+    {
+      "layout": "asymmetric_advantages",
+      "episode": 4,
+      "cycle": 2,
+      "post_delivery": true,
+      "cycle_len": 31,
+      "phase": 0.5,
+      "t_abs": 100,
+      "entropy_bits": -0.0,
+      "basin_counts": {
+        "pot0_deliver": 24
+      }
+    },
+    {
+      "layout": "asymmetric_advantages",
+      "episode": 4,
+      "cycle": 2,
+      "post_delivery": true,
+      "cycle_len": 31,
+      "phase": 0.75,
+      "t_abs": 107,
+      "entropy_bits": -0.0,
+      "basin_counts": {
+        "pot0_deliver": 24
+      }
+    },
+    {
+      "layout": "asymmetric_advantages",
+      "episode": 5,
+      "cycle": 0,
+      "post_delivery": false,
+      "cycle_len": 61,
+      "phase": 0.0,
+      "t_abs": 0,
+      "entropy_bits": 0.2499,
+      "basin_counts": {
+        "pot0_deliver": 23,
+        "pot0_nodeliver": 1
+      }
+    },
+    {
+      "layout": "asymmetric_advantages",
+      "episode": 5,
+      "cycle": 0,
+      "post_delivery": false,
+      "cycle_len": 61,
+      "phase": 0.25,
+      "t_abs": 15,
+      "entropy_bits": -0.0,
+      "basin_counts": {
+        "pot0_deliver": 24
+      }
+    },
+    {
+      "layout": "asymmetric_advantages",
+      "episode": 5,
+      "cycle": 0,
+      "post_delivery": false,
+      "cycle_len": 61,
+      "phase": 0.5,
+      "t_abs": 30,
+      "entropy_bits": -0.0,
+      "basin_counts": {
+        "pot0_deliver": 24
+      }
+    },
+    {
+      "layout": "asymmetric_advantages",
+      "episode": 5,
+      "cycle": 0,
+      "post_delivery": false,
+      "cycle_len": 61,
+      "phase": 0.75,
+      "t_abs": 46,
+      "entropy_bits": -0.0,
+      "basin_counts": {
+        "pot0_deliver": 24
+      }
+    },
+    {
+      "layout": "asymmetric_advantages",
+      "episode": 5,
+      "cycle": 1,
+      "post_delivery": true,
+      "cycle_len": 35,
+      "phase": 0.0,
+      "t_abs": 61,
+      "entropy_bits": -0.0,
+      "basin_counts": {
+        "pot0_deliver": 24
+      }
+    },
+    {
+      "layout": "asymmetric_advantages",
+      "episode": 5,
+      "cycle": 1,
+      "post_delivery": true,
+      "cycle_len": 35,
+      "phase": 0.25,
+      "t_abs": 70,
+      "entropy_bits": -0.0,
+      "basin_counts": {
+        "pot0_deliver": 24
+      }
+    },
+    {
+      "layout": "asymmetric_advantages",
+      "episode": 5,
+      "cycle": 1,
+      "post_delivery": true,
+      "cycle_len": 35,
+      "phase": 0.5,
+      "t_abs": 79,
+      "entropy_bits": -0.0,
+      "basin_counts": {
+        "pot0_deliver": 24
+      }
+    },
+    {
+      "layout": "asymmetric_advantages",
+      "episode": 5,
+      "cycle": 1,
+      "post_delivery": true,
+      "cycle_len": 35,
+      "phase": 0.75,
+      "t_abs": 87,
+      "entropy_bits": -0.0,
+      "basin_counts": {
+        "pot0_deliver": 24
+      }
+    },
+    {
+      "layout": "asymmetric_advantages",
+      "episode": 5,
+      "cycle": 2,
+      "post_delivery": true,
+      "cycle_len": 86,
+      "phase": 0.0,
+      "t_abs": 96,
+      "entropy_bits": -0.0,
+      "basin_counts": {
+        "pot0_deliver": 24
+      }
+    },
+    {
+      "layout": "asymmetric_advantages",
+      "episode": 5,
+      "cycle": 2,
+      "post_delivery": true,
+      "cycle_len": 86,
+      "phase": 0.25,
+      "t_abs": 118,
+      "entropy_bits": -0.0,
+      "basin_counts": {
+        "pot0_deliver": 24
+      }
+    },
+    {
+      "layout": "asymmetric_advantages",
+      "episode": 5,
+      "cycle": 2,
+      "post_delivery": true,
+      "cycle_len": 86,
+      "phase": 0.5,
+      "t_abs": 139,
+      "entropy_bits": -0.0,
+      "basin_counts": {
+        "pot0_deliver": 24
+      }
+    },
+    {
+      "layout": "asymmetric_advantages",
+      "episode": 5,
+      "cycle": 2,
+      "post_delivery": true,
+      "cycle_len": 86,
+      "phase": 0.75,
+      "t_abs": 160,
+      "entropy_bits": -0.0,
+      "basin_counts": {
+        "pot0_deliver": 24
+      }
+    },
+    {
+      "layout": "asymmetric_advantages",
+      "episode": 5,
+      "cycle": 3,
+      "post_delivery": true,
+      "cycle_len": 32,
+      "phase": 0.0,
+      "t_abs": 182,
+      "entropy_bits": -0.0,
+      "basin_counts": {
+        "pot0_deliver": 24
+      }
+    },
+    {
+      "layout": "asymmetric_advantages",
+      "episode": 5,
+      "cycle": 3,
+      "post_delivery": true,
+      "cycle_len": 32,
+      "phase": 0.25,
+      "t_abs": 190,
+      "entropy_bits": -0.0,
+      "basin_counts": {
+        "pot0_deliver": 24
+      }
+    },
+    {
+      "layout": "asymmetric_advantages",
+      "episode": 5,
+      "cycle": 3,
+      "post_delivery": true,
+      "cycle_len": 32,
+      "phase": 0.5,
+      "t_abs": 198,
+      "entropy_bits": -0.0,
+      "basin_counts": {
+        "pot0_deliver": 24
+      }
+    },
+    {
+      "layout": "asymmetric_advantages",
+      "episode": 5,
+      "cycle": 3,
+      "post_delivery": true,
+      "cycle_len": 32,
+      "phase": 0.75,
+      "t_abs": 206,
+      "entropy_bits": -0.0,
+      "basin_counts": {
+        "pot0_deliver": 24
+      }
+    },
+    {
+      "layout": "asymmetric_advantages",
+      "episode": 5,
+      "cycle": 4,
+      "post_delivery": true,
+      "cycle_len": 41,
+      "phase": 0.0,
+      "t_abs": 214,
+      "entropy_bits": 0.2499,
+      "basin_counts": {
+        "pot0_deliver": 23,
+        "pot0_nodeliver": 1
+      }
+    },
+    {
+      "layout": "asymmetric_advantages",
+      "episode": 5,
+      "cycle": 4,
+      "post_delivery": true,
+      "cycle_len": 41,
+      "phase": 0.25,
+      "t_abs": 224,
+      "entropy_bits": -0.0,
+      "basin_counts": {
+        "pot0_deliver": 24
+      }
+    },
+    {
+      "layout": "asymmetric_advantages",
+      "episode": 5,
+      "cycle": 4,
+      "post_delivery": true,
+      "cycle_len": 41,
+      "phase": 0.5,
+      "t_abs": 234,
+      "entropy_bits": -0.0,
+      "basin_counts": {
+        "pot0_deliver": 24
+      }
+    },
+    {
+      "layout": "asymmetric_advantages",
+      "episode": 5,
+      "cycle": 4,
+      "post_delivery": true,
+      "cycle_len": 41,
+      "phase": 0.75,
+      "t_abs": 245,
+      "entropy_bits": -0.0,
+      "basin_counts": {
+        "pot0_deliver": 24
+      }
+    },
+    {
+      "layout": "asymmetric_advantages",
+      "episode": 5,
+      "cycle": 5,
+      "post_delivery": true,
+      "cycle_len": 48,
+      "phase": 0.0,
+      "t_abs": 255,
+      "entropy_bits": 0.2499,
+      "basin_counts": {
+        "pot0_deliver": 23,
+        "pot0_nodeliver": 1
+      }
+    },
+    {
+      "layout": "asymmetric_advantages",
+      "episode": 5,
+      "cycle": 5,
+      "post_delivery": true,
+      "cycle_len": 48,
+      "phase": 0.25,
+      "t_abs": 267,
+      "entropy_bits": -0.0,
+      "basin_counts": {
+        "pot0_deliver": 24
+      }
+    },
+    {
+      "layout": "asymmetric_advantages",
+      "episode": 5,
+      "cycle": 5,
+      "post_delivery": true,
+      "cycle_len": 48,
+      "phase": 0.5,
+      "t_abs": 279,
+      "entropy_bits": -0.0,
+      "basin_counts": {
+        "pot0_deliver": 24
+      }
+    },
+    {
+      "layout": "asymmetric_advantages",
+      "episode": 5,
+      "cycle": 5,
+      "post_delivery": true,
+      "cycle_len": 48,
+      "phase": 0.75,
+      "t_abs": 291,
+      "entropy_bits": -0.0,
+      "basin_counts": {
+        "pot0_deliver": 24
+      }
+    },
+    {
+      "layout": "asymmetric_advantages",
+      "episode": 5,
+      "cycle": 6,
+      "post_delivery": true,
+      "cycle_len": 33,
+      "phase": 0.0,
+      "t_abs": 303,
+      "entropy_bits": -0.0,
+      "basin_counts": {
+        "pot0_deliver": 24
+      }
+    },
+    {
+      "layout": "asymmetric_advantages",
+      "episode": 5,
+      "cycle": 6,
+      "post_delivery": true,
+      "cycle_len": 33,
+      "phase": 0.25,
+      "t_abs": 311,
+      "entropy_bits": -0.0,
+      "basin_counts": {
+        "pot0_deliver": 24
+      }
+    },
+    {
+      "layout": "asymmetric_advantages",
+      "episode": 5,
+      "cycle": 6,
+      "post_delivery": true,
+      "cycle_len": 33,
+      "phase": 0.5,
+      "t_abs": 319,
+      "entropy_bits": -0.0,
+      "basin_counts": {
+        "pot0_deliver": 24
+      }
+    },
+    {
+      "layout": "asymmetric_advantages",
+      "episode": 5,
+      "cycle": 6,
+      "post_delivery": true,
+      "cycle_len": 33,
+      "phase": 0.75,
+      "t_abs": 328,
+      "entropy_bits": -0.0,
+      "basin_counts": {
+        "pot0_deliver": 24
+      }
+    },
+    {
+      "layout": "asymmetric_advantages",
+      "episode": 5,
+      "cycle": 7,
+      "post_delivery": true,
+      "cycle_len": 31,
+      "phase": 0.0,
+      "t_abs": 336,
+      "entropy_bits": 0.2499,
+      "basin_counts": {
+        "pot0_deliver": 23,
+        "pot0_nodeliver": 1
+      }
+    },
+    {
+      "layout": "asymmetric_advantages",
+      "episode": 5,
+      "cycle": 7,
+      "post_delivery": true,
+      "cycle_len": 31,
+      "phase": 0.25,
+      "t_abs": 344,
+      "entropy_bits": -0.0,
+      "basin_counts": {
+        "pot0_deliver": 24
+      }
+    },
+    {
+      "layout": "asymmetric_advantages",
+      "episode": 5,
+      "cycle": 7,
+      "post_delivery": true,
+      "cycle_len": 31,
+      "phase": 0.5,
+      "t_abs": 352,
+      "entropy_bits": -0.0,
+      "basin_counts": {
+        "pot0_deliver": 24
+      }
+    },
+    {
+      "layout": "asymmetric_advantages",
+      "episode": 5,
+      "cycle": 7,
+      "post_delivery": true,
+      "cycle_len": 31,
+      "phase": 0.75,
+      "t_abs": 359,
+      "entropy_bits": -0.0,
+      "basin_counts": {
+        "pot0_deliver": 24
+      }
+    }
+  ],
+  "registered_outcomes": {
+    "EPC1_within_cycle_commitment": true,
+    "EPC2_boundary_reopening": true,
+    "EPC3_substantial": true,
+    "median_by_phase": {
+      "0.0": 0.2499,
+      "0.25": 0.0,
+      "0.5": 0.0,
+      "0.75": 0.0
+    },
+    "reopen_gap_bits": 0.2499
+  }
+}

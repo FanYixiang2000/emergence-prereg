@@ -1,0 +1,36 @@
+=== domain A: gridworld battery ===
+battery: universal recipe chose k=8, vocab=9 tokens
+  latent_conditional: universal 1 vs hand 1 (H0 1.69, JS 1.00)
+  converged_team: universal 1 vs hand 0 (H0 1.06, JS 1.00)
+  shaped_process: universal 0 vs hand 0 (H0 0.98, JS 1.00)
+  noise_policy: universal 1 vs hand 1 (H0 1.82, JS 1.00)
+  untrained_uniform: universal 0 vs hand 0 (H0 1.59, JS 1.00)
+  blind_trigger: universal 0 vs hand 0 (H0 1.50, JS 1.00)
+  harmful_decoy: universal 0 vs hand 0 (H0 0.63, JS 1.00)
+  useful_habit: universal 0 vs hand 0 (H0 0.46, JS 1.00)
+  wrong_selector: universal 0 vs hand 0 (H0 2.20, JS 1.00)
+=== domain B: crowd-vote domain ===
+  crowd 6701 learned: universal 1 vs hand 1
+  crowd 6701 initial_twin: universal 0 vs hand 0
+  crowd 6701 always_democracy: universal 0 vs hand 0
+  crowd 6701 always_anarchy: universal 0 vs hand 0
+  crowd 6701 scripted_switcher: universal 0 vs hand 0
+  crowd 6701 bc_clone: universal 0 vs hand 0
+  crowd 6702 learned: universal 1 vs hand 1
+  crowd 6702 initial_twin: universal 0 vs hand 0
+  crowd 6702 always_democracy: universal 0 vs hand 0
+  crowd 6702 always_anarchy: universal 0 vs hand 0
+  crowd 6702 scripted_switcher: universal 0 vs hand 0
+  crowd 6702 bc_clone: universal 0 vs hand 0
+  crowd 6703 learned: universal 1 vs hand 1
+  crowd 6703 initial_twin: universal 0 vs hand 0
+  crowd 6703 always_democracy: universal 0 vs hand 0
+  crowd 6703 always_anarchy: universal 0 vs hand 0
+  crowd 6703 scripted_switcher: universal 0 vs hand 0
+  crowd 6703 bc_clone: universal 0 vs hand 0
+{
+  "U1_battery": "8/10 -> False",
+  "U2_crowd": "18/18, controls 15/15 -> True",
+  "U3_no_per_domain_tuning": true
+}
+Wrote /home/Yixiang/MPARL/GOGOGO/outputs/universal_observer.json

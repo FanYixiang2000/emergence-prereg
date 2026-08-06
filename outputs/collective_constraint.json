@@ -1,0 +1,101 @@
+{
+  "status": "collective-constraint battery: emergence as endogenous reorganization of the joint-action possibility space; CC-1..5 frozen in docstring; same-outcome/same-marginals four-mechanism test",
+  "thresholds": {
+    "C": 0.5,
+    "G": 0.05,
+    "N": 0.3,
+    "R": 0.6
+  },
+  "macro_structure": "a1+a2+a3 = 0 (mod 3)",
+  "mechanisms": {
+    "central_script": {
+      "H_real": 3.169925001442312,
+      "H_broken": 3.169925001442312,
+      "C_constraint": 0.0,
+      "G_reorganization": 0.0,
+      "M_endogenous_macro_gain": 0.0,
+      "N_irreducibility_given_env": 0.0,
+      "R_persistence": 1.0,
+      "P_Z_real": 1.0,
+      "P_Z_broken": 1.0,
+      "micro_down_macro_up": false,
+      "accept": false,
+      "failed_components": [
+        "C_constraint",
+        "G_reorganization",
+        "M_endogenous_macro_gain",
+        "N_irreducibility|env"
+      ]
+    },
+    "common_cause": {
+      "H_real": 3.169925001442312,
+      "H_broken": 3.169925001442312,
+      "C_constraint": 0.0,
+      "G_reorganization": 0.0,
+      "M_endogenous_macro_gain": 0.0,
+      "N_irreducibility_given_env": 0.0,
+      "R_persistence": 1.0,
+      "P_Z_real": 1.0,
+      "P_Z_broken": 1.0,
+      "micro_down_macro_up": false,
+      "accept": false,
+      "failed_components": [
+        "C_constraint",
+        "G_reorganization",
+        "M_endogenous_macro_gain",
+        "N_irreducibility|env"
+      ]
+    },
+    "independent_coincidence": {
+      "H_real": 4.754887502163468,
+      "H_broken": 4.754887502163468,
+      "C_constraint": 0.0,
+      "G_reorganization": 0.0,
+      "M_endogenous_macro_gain": 0.0,
+      "N_irreducibility_given_env": 0.0,
+      "R_persistence": 0.30333333333333334,
+      "P_Z_real": 0.3333333333333333,
+      "P_Z_broken": 0.3333333333333333,
+      "micro_down_macro_up": false,
+      "accept": false,
+      "failed_components": [
+        "C_constraint",
+        "G_reorganization",
+        "M_endogenous_macro_gain",
+        "N_irreducibility|env",
+        "R_persistence"
+      ]
+    },
+    "local_feedback": {
+      "H_real": 3.169925001442312,
+      "H_broken": 4.754887502163468,
+      "C_constraint": 1.584962500721156,
+      "G_reorganization": 0.4591479170272448,
+      "M_endogenous_macro_gain": 0.6666666666666667,
+      "N_irreducibility_given_env": 1.584962500721156,
+      "R_persistence": 1.0,
+      "P_Z_real": 1.0,
+      "P_Z_broken": 0.3333333333333333,
+      "micro_down_macro_up": true,
+      "accept": true,
+      "failed_components": []
+    }
+  },
+  "matched_confound": {
+    "joint_distributions_identical": true,
+    "single_agent_marginals_identical": true,
+    "P_Z_identical_and_one": true,
+    "single_agent_marginal": [
+      0.3333,
+      0.3333,
+      0.3333
+    ]
+  },
+  "registered_outcomes": {
+    "CC1_matched_confound_indistinguishable_by_joint": true,
+    "CC2_endogeneity_separates_same_outcome": true,
+    "CC3_micro_down_macro_up": true,
+    "CC4_persistence_rejects_coincidence": true,
+    "CC5_four_quadrant_only_local_feedback": true
+  }
+}

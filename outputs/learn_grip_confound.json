@@ -1,0 +1,95 @@
+{
+  "status": "LEARN-GRIP-CONFOUND conditional controllability; training/kick byte-identical to LEARN-GRIP-UTILITY; registered before run",
+  "config": {
+    "taus": [
+      18,
+      20,
+      22,
+      24,
+      26,
+      28
+    ],
+    "eval_batch": 4096,
+    "n_perm": 1000,
+    "perm_seed": 515001,
+    "n_records": 122880
+  },
+  "cc1_by_tau": {
+    "18": {
+      "auc": 0.9864,
+      "n": 20480,
+      "switch_rate": 0.9914
+    },
+    "20": {
+      "auc": 0.97693,
+      "n": 20480,
+      "switch_rate": 0.8941
+    },
+    "22": {
+      "auc": 0.9737,
+      "n": 20480,
+      "switch_rate": 0.7356
+    },
+    "24": {
+      "auc": 0.98112,
+      "n": 20480,
+      "switch_rate": 0.5796
+    },
+    "26": {
+      "auc": 0.98612,
+      "n": 20480,
+      "switch_rate": 0.4433
+    },
+    "28": {
+      "auc": 0.99009,
+      "n": 20480,
+      "switch_rate": 0.341
+    }
+  },
+  "cc2": {
+    "pooled_within_cell_corr": -0.1565,
+    "permutation_p": 1.0,
+    "absx_quintile_edges": [
+      0.0,
+      0.0553,
+      0.1773,
+      0.3924
+    ]
+  },
+  "cc3_logistic": {
+    "intercept": {
+      "coef": 77.3309,
+      "se": 23.0166
+    },
+    "side_open": {
+      "coef": 78.7175,
+      "se": 33.2745
+    },
+    "absx": {
+      "coef": -26.2692,
+      "se": 1.5087
+    },
+    "absv": {
+      "coef": -26.6221,
+      "se": 1.6864
+    },
+    "att": {
+      "coef": 0.3297,
+      "se": 0.0675
+    },
+    "tau": {
+      "coef": -0.0132,
+      "se": 0.0507
+    }
+  },
+  "registered_outcomes": {
+    "CC1_fixed_time_mean_auc_ge_0.60": true,
+    "CC1_above_chance_ge_5of6": true,
+    "CC2_fixed_absx_positive_p_lt_0.05": false,
+    "CC3_openness_coef_positive": true,
+    "cc1_mean_auc": 0.9824,
+    "cc1_cells_above_chance": 6,
+    "cc2_pooled_within_cell_corr": -0.1565,
+    "cc2_permutation_p": 1.0
+  }
+}

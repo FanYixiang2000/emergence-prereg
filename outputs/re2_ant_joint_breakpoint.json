@@ -1,0 +1,297 @@
+{
+  "status": "RE-2 ant joint-possibility breakpoint; registered RE battery, frozen before run; verdict axis = linear trips as declared in header",
+  "grid_trips": [
+    0,
+    10,
+    20,
+    30,
+    40,
+    50,
+    60,
+    70,
+    80,
+    90,
+    100,
+    110,
+    120,
+    130,
+    140,
+    150,
+    160,
+    170,
+    180,
+    190,
+    200,
+    210,
+    220,
+    230,
+    240,
+    250,
+    260,
+    270,
+    280,
+    290,
+    300,
+    310,
+    320,
+    330,
+    340,
+    350,
+    360,
+    370,
+    380,
+    390,
+    400
+  ],
+  "median_openness_trail": [
+    1.1634,
+    0.6054,
+    0.6873,
+    0.2108,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+  ],
+  "median_openness_solo": [
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+  ],
+  "hinge_trail_linear": {
+    "delta_bic": 119.04,
+    "hinge_x": 40.0,
+    "hinge_index": 4,
+    "verdict": true
+  },
+  "hinge_trail_log": {
+    "delta_bic": 46.172,
+    "hinge_x": 1.8512583487190752,
+    "hinge_index": 7,
+    "verdict": true
+  },
+  "hinge_solo_linear": {
+    "delta_bic": -7.427,
+    "hinge_x": 10.0,
+    "hinge_index": 1,
+    "verdict": false
+  },
+  "n_committing_episodes": 30,
+  "median_t_completion": 124.5,
+  "frac_half_collapse_before_completion": 1.0,
+  "thinning": {
+    "parity0": {
+      "delta_bic": 98.517,
+      "hinge_x": 40.0,
+      "hinge_index": 2,
+      "verdict": true,
+      "hinge_ok": true
+    },
+    "parity1": {
+      "delta_bic": 70.156,
+      "hinge_x": 50.0,
+      "hinge_index": 2,
+      "verdict": true,
+      "hinge_ok": true
+    }
+  },
+  "per_episode_trail": [
+    {
+      "episode": 0,
+      "t_completion": 166
+    },
+    {
+      "episode": 1,
+      "t_completion": 163
+    },
+    {
+      "episode": 2,
+      "t_completion": 50
+    },
+    {
+      "episode": 3,
+      "t_completion": 108
+    },
+    {
+      "episode": 4,
+      "t_completion": 88
+    },
+    {
+      "episode": 5,
+      "t_completion": 130
+    },
+    {
+      "episode": 6,
+      "t_completion": 51
+    },
+    {
+      "episode": 7,
+      "t_completion": 262
+    },
+    {
+      "episode": 8,
+      "t_completion": 162
+    },
+    {
+      "episode": 9,
+      "t_completion": 131
+    },
+    {
+      "episode": 10,
+      "t_completion": 53
+    },
+    {
+      "episode": 11,
+      "t_completion": 164
+    },
+    {
+      "episode": 12,
+      "t_completion": 67
+    },
+    {
+      "episode": 13,
+      "t_completion": 249
+    },
+    {
+      "episode": 14,
+      "t_completion": 178
+    },
+    {
+      "episode": 15,
+      "t_completion": 85
+    },
+    {
+      "episode": 16,
+      "t_completion": 69
+    },
+    {
+      "episode": 17,
+      "t_completion": 119
+    },
+    {
+      "episode": 18,
+      "t_completion": 78
+    },
+    {
+      "episode": 19,
+      "t_completion": 325
+    },
+    {
+      "episode": 20,
+      "t_completion": 98
+    },
+    {
+      "episode": 21,
+      "t_completion": 460
+    },
+    {
+      "episode": 22,
+      "t_completion": 63
+    },
+    {
+      "episode": 23,
+      "t_completion": 195
+    },
+    {
+      "episode": 24,
+      "t_completion": 155
+    },
+    {
+      "episode": 25,
+      "t_completion": 258
+    },
+    {
+      "episode": 26,
+      "t_completion": 44
+    },
+    {
+      "episode": 27,
+      "t_completion": 94
+    },
+    {
+      "episode": 28,
+      "t_completion": 294
+    },
+    {
+      "episode": 29,
+      "t_completion": 64
+    }
+  ],
+  "registered_outcomes": {
+    "RE2_1_trail_breakpoint": true,
+    "RE2_2_collapse_before_completion": true,
+    "RE2_3_solo_null": true,
+    "RE2_4_thinning_persistence": true
+  }
+}

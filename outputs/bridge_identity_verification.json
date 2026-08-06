@@ -1,0 +1,19 @@
+{
+  "status": "collapse-bridge identity (Proposition B) verification",
+  "random_systems": {
+    "n": 10000,
+    "max_identity_gap": 8.881784197001252e-16
+  },
+  "deterministic_boundary": {
+    "n": 1000,
+    "max_action_attributable_collapse": 0.0
+  },
+  "gridworld_trigger_step": {
+    "contraction": 0.00197833928668571,
+    "interventional": 0.0019783392866857953,
+    "retrospective": 0.0019783392866857446,
+    "identity_gap": 8.543513119185775e-17
+  },
+  "pass": true,
+  "reading": "Action-attributable prospective contraction, pi-averaged interventional divergence and expected retrospective update are one quantity (I(A;B)) whenever the rollout law is fixed and the trigger is identifiable (MDP no-confounding); deterministic policies have zero action-attributable collapse, so ordinary information revelation is separated from system-driven collapse by construction."
+}

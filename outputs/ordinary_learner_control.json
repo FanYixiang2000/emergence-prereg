@@ -1,0 +1,178 @@
+{
+  "status": "exploratory boundary probe (not a preregistered confirmation); attempt-1 design failure quarantined",
+  "task": "y=(a+b)//40 (5 ordinal classes)",
+  "thresholds": {
+    "potential_bits": 1.0,
+    "burstiness_ratio": 5.0,
+    "usefulness_acc_gain": 0.2
+  },
+  "runs": {
+    "seed111_grid40": {
+      "stats": {
+        "h_pre_burst_bits": 6.591873645782471,
+        "window_burst_bits": 4.7973127365112305,
+        "global_max_burst_bits": 4.7973127365112305,
+        "global_max_burst_epoch": 40,
+        "burstiness_ratio": 7149.964013287975,
+        "window_epoch": 40,
+        "usefulness_acc_gain": 0.8295430652797222,
+        "final_train_acc": 1.0,
+        "final_test_acc": 0.9281615018844604,
+        "train_acc_99_epoch": 120,
+        "test_acc_90_epoch": 120,
+        "burst_jump_correlation": NaN,
+        "final_test_entropy_bits": 0.0911276713013649,
+        "initial_test_entropy_bits": 6.591873645782471
+      },
+      "verdict": {
+        "passes": {
+          "potential": true,
+          "burstiness": true,
+          "usefulness": true,
+          "endogeneity": true
+        },
+        "emergent": 1
+      }
+    },
+    "seed111_grid5": {
+      "stats": {
+        "h_pre_burst_bits": 6.591873645782471,
+        "window_burst_bits": 1.9381343871355057,
+        "global_max_burst_bits": 2.270509958267212,
+        "global_max_burst_epoch": 15,
+        "burstiness_ratio": 22822.163974020204,
+        "window_epoch": 5,
+        "usefulness_acc_gain": 0.31519661471247673,
+        "final_train_acc": 1.0,
+        "final_test_acc": 0.9281615018844604,
+        "train_acc_99_epoch": 100,
+        "test_acc_90_epoch": 90,
+        "burst_jump_correlation": NaN,
+        "final_test_entropy_bits": 0.0911276713013649,
+        "initial_test_entropy_bits": 6.591873645782471
+      },
+      "verdict": {
+        "passes": {
+          "potential": true,
+          "burstiness": true,
+          "usefulness": true,
+          "endogeneity": true
+        },
+        "emergent": 1
+      }
+    },
+    "seed222_grid40": {
+      "stats": {
+        "h_pre_burst_bits": 6.593447685241699,
+        "window_burst_bits": 4.760664463043213,
+        "global_max_burst_bits": 4.760664463043213,
+        "global_max_burst_epoch": 40,
+        "burstiness_ratio": 6805.164188608554,
+        "window_epoch": 40,
+        "usefulness_acc_gain": 0.8620616403932218,
+        "final_train_acc": 1.0,
+        "final_test_acc": 0.9215728044509888,
+        "train_acc_99_epoch": 120,
+        "test_acc_90_epoch": 120,
+        "burst_jump_correlation": NaN,
+        "final_test_entropy_bits": 0.09088325500488281,
+        "initial_test_entropy_bits": 6.593447685241699
+      },
+      "verdict": {
+        "passes": {
+          "potential": true,
+          "burstiness": true,
+          "usefulness": true,
+          "endogeneity": true
+        },
+        "emergent": 1
+      }
+    },
+    "seed222_grid5": {
+      "stats": {
+        "h_pre_burst_bits": 6.593447685241699,
+        "window_burst_bits": 1.57774867862463,
+        "global_max_burst_bits": 2.818408489227295,
+        "global_max_burst_epoch": 15,
+        "burstiness_ratio": 17924.32202244919,
+        "window_epoch": 5,
+        "usefulness_acc_gain": 0.3649309185857419,
+        "final_train_acc": 1.0,
+        "final_test_acc": 0.9215728044509888,
+        "train_acc_99_epoch": 100,
+        "test_acc_90_epoch": 95,
+        "burst_jump_correlation": NaN,
+        "final_test_entropy_bits": 0.09088325500488281,
+        "initial_test_entropy_bits": 6.593447685241699
+      },
+      "verdict": {
+        "passes": {
+          "potential": true,
+          "burstiness": true,
+          "usefulness": true,
+          "endogeneity": true
+        },
+        "emergent": 1
+      }
+    },
+    "seed333_grid40": {
+      "stats": {
+        "h_pre_burst_bits": 6.592236042022705,
+        "window_burst_bits": 4.890741348266602,
+        "global_max_burst_bits": 4.890741348266602,
+        "global_max_burst_epoch": 40,
+        "burstiness_ratio": 7166.968354081387,
+        "window_epoch": 40,
+        "usefulness_acc_gain": 0.8584484561142744,
+        "final_train_acc": 1.0,
+        "final_test_acc": 0.9226354956626892,
+        "train_acc_99_epoch": 120,
+        "test_acc_90_epoch": 120,
+        "burst_jump_correlation": NaN,
+        "final_test_entropy_bits": 0.09195031225681305,
+        "initial_test_entropy_bits": 6.592236042022705
+      },
+      "verdict": {
+        "passes": {
+          "potential": true,
+          "burstiness": true,
+          "usefulness": true,
+          "endogeneity": true
+        },
+        "emergent": 1
+      }
+    },
+    "seed333_grid5": {
+      "stats": {
+        "h_pre_burst_bits": 6.592236042022705,
+        "window_burst_bits": 1.491910271346569,
+        "global_max_burst_bits": 2.895355701446533,
+        "global_max_burst_epoch": 15,
+        "burstiness_ratio": 17324.540142111433,
+        "window_epoch": 5,
+        "usefulness_acc_gain": 0.3713071151432814,
+        "final_train_acc": 1.0,
+        "final_test_acc": 0.9226354956626892,
+        "train_acc_99_epoch": 100,
+        "test_acc_90_epoch": 100,
+        "burst_jump_correlation": NaN,
+        "final_test_entropy_bits": 0.09195031225681305,
+        "initial_test_entropy_bits": 6.592236042022705
+      },
+      "verdict": {
+        "passes": {
+          "potential": true,
+          "burstiness": true,
+          "usefulness": true,
+          "endogeneity": true
+        },
+        "emergent": 1
+      }
+    }
+  },
+  "finding": {
+    "runs_accepted_by_proxy": "6/6",
+    "runs_with_final_acc_ge_0.9": "6/6",
+    "scope_statement": "The four-component process proxy accepts a strong ordinary learner: fast smooth acquisition of easy structure is burst-concentrated useful collapse at these grid resolutions. The proxy is an acquisition-shape instrument, not an emergence verdict; separating emergent from merely-fast abilities requires the episode-level selectivity/specificity components and paired controls."
+  }
+}

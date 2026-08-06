@@ -1,0 +1,202 @@
+{
+  "status": "exact zero-Monte-Carlo computation on enumerated chains",
+  "systems": {
+    "latent_conditional": {
+      "ground_truth": 1,
+      "natural_basin_entropy_bits": 1.5849613858687746,
+      "rarity_identity_gap": 0.0,
+      "do_trigger": {
+        "kl_trajectory_bits": 29.787557852224957,
+        "kl_basin_bits": 9.525126627155089,
+        "dpi_holds": true,
+        "basin_retention": 0.31976863207144784,
+        "case": "regular"
+      },
+      "do_non_trigger": {
+        "kl_trajectory_bits": 32.389916535285195,
+        "kl_basin_bits": 8.723573034928332,
+        "dpi_holds": true,
+        "basin_retention": 0.26932990165087256,
+        "case": "regular"
+      }
+    },
+    "converged_team": {
+      "ground_truth": 0,
+      "natural_basin_entropy_bits": 1.000000373675753,
+      "rarity_identity_gap": 0.0,
+      "do_trigger": {
+        "kl_trajectory_bits": 32.154526251321975,
+        "kl_basin_bits": 1.0353622896229544,
+        "dpi_holds": true,
+        "basin_retention": 0.032199581531088095,
+        "case": "regular"
+      },
+      "do_non_trigger": {
+        "kl_trajectory_bits": 29.821016330047673,
+        "kl_basin_bits": 19.63516517416464,
+        "dpi_holds": true,
+        "basin_retention": 0.6584338024180697,
+        "case": "regular"
+      }
+    },
+    "shaped_process": {
+      "ground_truth": 0,
+      "natural_basin_entropy_bits": 0.9999988873362785,
+      "rarity_identity_gap": 0.0,
+      "do_trigger": {
+        "kl_trajectory_bits": 31.89741123202375,
+        "kl_basin_bits": 0.0033054045130112984,
+        "dpi_holds": true,
+        "basin_retention": 0.00010362610586067881,
+        "case": "regular"
+      },
+      "do_non_trigger": {
+        "kl_trajectory_bits": 23.887057539741413,
+        "kl_basin_bits": 18.83377055791677,
+        "dpi_holds": true,
+        "basin_retention": 0.7884508389776606,
+        "case": "regular"
+      }
+    },
+    "noise_policy": {
+      "ground_truth": 1,
+      "natural_basin_entropy_bits": 1.0899222637740709,
+      "rarity_identity_gap": 0.0,
+      "do_trigger": {
+        "kl_trajectory_bits": 37.50399956566358,
+        "kl_basin_bits": 2.3157702328855763,
+        "dpi_holds": true,
+        "basin_retention": 0.06174728721482168,
+        "case": "regular"
+      },
+      "do_non_trigger": {
+        "kl_trajectory_bits": 38.35880303908479,
+        "kl_basin_bits": 2.6544363134942843,
+        "dpi_holds": true,
+        "basin_retention": 0.06920018622034711,
+        "case": "regular"
+      }
+    },
+    "untrained_uniform": {
+      "ground_truth": 0,
+      "natural_basin_entropy_bits": 0.30731972428339716,
+      "rarity_identity_gap": 0.0,
+      "do_trigger": {
+        "kl_trajectory_bits": 3.643856189774725,
+        "kl_basin_bits": 0.03978224286484011,
+        "dpi_holds": true,
+        "basin_retention": 0.010917621550618763,
+        "case": "regular"
+      },
+      "do_non_trigger": {
+        "kl_trajectory_bits": 0.7257060631121612,
+        "kl_basin_bits": 0.011001694844788258,
+        "dpi_holds": true,
+        "basin_retention": 0.015159987499081835,
+        "case": "regular"
+      }
+    },
+    "blind_trigger": {
+      "ground_truth": 0,
+      "natural_basin_entropy_bits": 1.581619229206271,
+      "rarity_identity_gap": 0.0,
+      "do_trigger": {
+        "kl_trajectory_bits": 0.0,
+        "kl_basin_bits": 0.0,
+        "dpi_holds": true,
+        "basin_retention": null,
+        "case": "degenerate: the system's natural behaviour already coincides with this intervention"
+      },
+      "do_non_trigger": {
+        "kl_trajectory_bits": Infinity,
+        "kl_basin_bits": Infinity,
+        "dpi_holds": true,
+        "basin_retention": null,
+        "case": "undefined: the system's natural law restricts action support, so the intervened law is not absolutely continuous w.r.t. it"
+      }
+    },
+    "harmful_decoy": {
+      "ground_truth": 0,
+      "natural_basin_entropy_bits": 0.8887826109301536,
+      "rarity_identity_gap": 0.0,
+      "do_trigger": {
+        "kl_trajectory_bits": 0.0,
+        "kl_basin_bits": 0.0,
+        "dpi_holds": true,
+        "basin_retention": null,
+        "case": "degenerate: the system's natural behaviour already coincides with this intervention"
+      },
+      "do_non_trigger": {
+        "kl_trajectory_bits": Infinity,
+        "kl_basin_bits": Infinity,
+        "dpi_holds": true,
+        "basin_retention": null,
+        "case": "undefined: the system's natural law restricts action support, so the intervened law is not absolutely continuous w.r.t. it"
+      }
+    },
+    "useful_habit": {
+      "ground_truth": 0,
+      "natural_basin_entropy_bits": 1.0891939563644761,
+      "rarity_identity_gap": 0.0,
+      "do_trigger": {
+        "kl_trajectory_bits": 0.0,
+        "kl_basin_bits": 0.0,
+        "dpi_holds": true,
+        "basin_retention": null,
+        "case": "degenerate: the system's natural behaviour already coincides with this intervention"
+      },
+      "do_non_trigger": {
+        "kl_trajectory_bits": Infinity,
+        "kl_basin_bits": Infinity,
+        "dpi_holds": true,
+        "basin_retention": null,
+        "case": "undefined: the system's natural law restricts action support, so the intervened law is not absolutely continuous w.r.t. it"
+      }
+    },
+    "wrong_selector": {
+      "ground_truth": 0,
+      "natural_basin_entropy_bits": 1.9035392377229783,
+      "rarity_identity_gap": 0.0,
+      "do_trigger": {
+        "kl_trajectory_bits": 7.0766352702152275,
+        "kl_basin_bits": 0.32914512823161424,
+        "dpi_holds": true,
+        "basin_retention": 0.046511529231547305,
+        "case": "regular"
+      },
+      "do_non_trigger": {
+        "kl_trajectory_bits": Infinity,
+        "kl_basin_bits": 0.6884751134323517,
+        "dpi_holds": true,
+        "basin_retention": null,
+        "case": "undefined: the system's natural law restricts action support, so the intervened law is not absolutely continuous w.r.t. it"
+      }
+    },
+    "anti_selector": {
+      "ground_truth": 0,
+      "natural_basin_entropy_bits": 1.2237543830127209,
+      "rarity_identity_gap": 0.0,
+      "do_trigger": {
+        "kl_trajectory_bits": Infinity,
+        "kl_basin_bits": Infinity,
+        "dpi_holds": true,
+        "basin_retention": null,
+        "case": "undefined: the system's natural law restricts action support, so the intervened law is not absolutely continuous w.r.t. it"
+      },
+      "do_non_trigger": {
+        "kl_trajectory_bits": Infinity,
+        "kl_basin_bits": 0.36446540678153433,
+        "dpi_holds": true,
+        "basin_retention": null,
+        "case": "undefined: the system's natural law restricts action support, so the intervened law is not absolutely continuous w.r.t. it"
+      }
+    }
+  },
+  "n_regular_do_trigger": 6,
+  "dpi_violations": [],
+  "max_rarity_identity_gap": 0.0,
+  "cross_system_rank_agreement_spearman": 0.37142857142857144,
+  "median_basin_retention_do_trigger": 0.0393555553813177,
+  "reading": "Basin observers retain a strict subset of the trajectory-space contrast (DPI, zero violations). The two levels do NOT preserve a common ordering (Spearman 0.37 across regular systems): path-space contrasts are large in control systems too, but the value-bearing basin projection filters out perturbations that do not reorganize task-relevant futures -- the basin level is a task-relevant filter, not a numerical approximation of trajectory KL. Degenerate/undefined cases are exactly the systems whose natural behaviour already equals or excludes the intervention -- a provenance fact the criterion tests separately via endogeneity.",
+  "infinite_kl_rule": "Declared, uniform across systems: KL is reported as infinite whenever the intervened law has support outside the natural law (measure-theoretic fact, not numerical error); such cases are excluded from retention/rank statistics and tabled as 'singular'. Zero-KL cases (natural behaviour coincides with the intervention) are tabled as 'degenerate'."
+}

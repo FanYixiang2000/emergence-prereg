@@ -1,0 +1,40 @@
+  "do_gap_mean": 0.0,
+  "do_sign_wins": 0,
+  "do_sign_losses": 0,
+  "do_sign_p": 1.0
+}
+{
+  "D1_potential": {
+    "trained_early_potential": [
+      0.0
+    ],
+    "pass": false
+  },
+  "D2_useful_collapse": {
+    "trained_win_shift": [
+      0.024999999999999994
+    ],
+    "trained_bijection_rate": [
+      0.125
+    ],
+    "untrained_bijection_rate": 0.1,
+    "noise_bijection_rate": 0.2,
+    "pass": false
+  },
+  "D3_counterfactual": {
+    "pooled_do_gap_median": 0.0,
+    "pooled_sign_wins": 0,
+    "pooled_sign_losses": 0,
+    "pooled_sign_p": 1.0,
+    "pass": false
+  },
+  "D4_greedy_contrast": {
+    "greedy_bijection_rate": 0.425,
+    "greedy_early_potential": 0.0012174520843344695,
+    "trained_min_bijection": 0.125,
+    "trained_min_potential": 0.0,
+    "pass": false
+  },
+  "all_pass": false
+}
+Wrote /home/Yixiang/MPARL/GOGOGO/outputs/deep_marl_collapse_pilot.json

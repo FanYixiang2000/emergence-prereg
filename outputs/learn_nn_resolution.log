@@ -1,0 +1,80 @@
+conv sigma=0.447 seed=0: S=0.99991 B5=True dBIC=50.946 t*=70.0 t50=160 s090=255
+conv sigma=0.447 seed=1: S=0.99991 B5=False dBIC=82.369 t*=245.0 t50=170 s090=400
+conv sigma=0.447 seed=2: S=0.79994 B5=True dBIC=40.465 t*=80.0 t50=175 s090=None
+conv sigma=0.447 seed=3: S=0.99989 B5=True dBIC=65.566 t*=120.0 t50=215 s090=1290
+conv sigma=0.447 seed=4: S=0.99992 B5=True dBIC=35.906 t*=75.0 t50=180 s090=295
+conv sigma=0.447 seed=5: S=0.79993 B5=True dBIC=21.804 t*=70.0 t50=155 s090=None
+conv sigma=0.447 seed=6: S=0.99991 B5=True dBIC=114.538 t*=95.0 t50=175 s090=240
+conv sigma=0.447 seed=7: S=0.9999 B5=True dBIC=25.408 t*=90.0 t50=195 s090=280
+conv sigma=0.447 seed=8: S=0.9999 B5=True dBIC=95.975 t*=100.0 t50=205 s090=295
+conv sigma=0.447 seed=9: S=0.79994 B5=True dBIC=26.023 t*=75.0 t50=185 s090=None
+roles sigma=0.447 seed=0: S=0.99999 B5=True dBIC=160.17 t*=180.0 t50=200 s090=220
+roles sigma=0.447 seed=1: S=0.99999 B5=True dBIC=162.325 t*=160.0 t50=190 s090=210
+roles sigma=0.447 seed=2: S=0.99999 B5=True dBIC=83.301 t*=80.0 t50=105 s090=130
+roles sigma=0.447 seed=3: S=0.99999 B5=True dBIC=110.241 t*=135.0 t50=160 s090=180
+roles sigma=0.447 seed=4: S=0.99999 B5=True dBIC=103.201 t*=115.0 t50=140 s090=170
+roles sigma=0.447 seed=5: S=0.99999 B5=True dBIC=95.323 t*=90.0 t50=115 s090=140
+roles sigma=0.447 seed=6: S=0.99999 B5=True dBIC=118.412 t*=120.0 t50=150 s090=190
+roles sigma=0.447 seed=7: S=0.99999 B5=True dBIC=142.472 t*=105.0 t50=145 s090=180
+roles sigma=0.447 seed=8: S=0.99999 B5=True dBIC=112.956 t*=105.0 t50=130 s090=155
+roles sigma=0.447 seed=9: S=0.99999 B5=True dBIC=36.305 t*=45.0 t50=70 s090=100
+{
+  "RESa_onset_rate_ge_060_both": true,
+  "RESb_collapse_leads_capability_both": true,
+  "RESc_tstar_first_10pct_both": true
+}
+Wrote /home/Yixiang/MPARL/GOGOGO/outputs/learn_nn_resolution.json
+conv sigma=0.020 seed=0: S=0.79992 B5=True dBIC=102.894 t*=190.0 t50=315 s090=None
+conv sigma=0.020 seed=1: S=0.79994 B5=True dBIC=569.832 t*=285.0 t50=395 s090=None
+conv sigma=0.020 seed=2: S=0.81994 B5=True dBIC=151.691 t*=260.0 t50=385 s090=None
+conv sigma=0.020 seed=3: S=0.79994 B5=True dBIC=208.44 t*=230.0 t50=365 s090=None
+conv sigma=0.020 seed=4: S=0.99992 B5=False dBIC=36.963 t*=665.0 t50=425 s090=840
+roles sigma=0.020 seed=0: S=0.99999 B5=True dBIC=313.499 t*=285.0 t50=340 s090=405
+roles sigma=0.020 seed=1: S=0.99999 B5=True dBIC=271.088 t*=300.0 t50=390 s090=435
+roles sigma=0.020 seed=2: S=0.99999 B5=True dBIC=189.388 t*=195.0 t50=255 s090=295
+roles sigma=0.020 seed=3: S=0.99999 B5=True dBIC=225.09 t*=200.0 t50=280 s090=380
+roles sigma=0.020 seed=4: S=0.99999 B5=True dBIC=315.723 t*=230.0 t50=280 s090=330
+conv sigma=0.100 seed=0: S=0.79994 B5=True dBIC=44.449 t*=180.0 t50=320 s090=None
+conv sigma=0.100 seed=1: S=0.99991 B5=False dBIC=355.644 t*=455.0 t50=320 s090=1065
+conv sigma=0.100 seed=2: S=0.99993 B5=True dBIC=348.386 t*=225.0 t50=335 s090=415
+conv sigma=0.100 seed=3: S=0.81544 B5=True dBIC=233.386 t*=200.0 t50=345 s090=None
+conv sigma=0.100 seed=4: S=0.79993 B5=True dBIC=258.528 t*=280.0 t50=350 s090=None
+roles sigma=0.100 seed=0: S=0.99999 B5=True dBIC=200.588 t*=265.0 t50=310 s090=345
+roles sigma=0.100 seed=1: S=0.99999 B5=True dBIC=285.191 t*=255.0 t50=325 s090=375
+roles sigma=0.100 seed=2: S=0.99999 B5=True dBIC=284.508 t*=300.0 t50=330 s090=355
+roles sigma=0.100 seed=3: S=0.99999 B5=True dBIC=313.117 t*=265.0 t50=325 s090=385
+roles sigma=0.100 seed=4: S=0.99999 B5=True dBIC=249.761 t*=200.0 t50=235 s090=275
+conv sigma=0.447 seed=0: S=0.99991 B5=True dBIC=50.946 t*=70.0 t50=160 s090=255
+conv sigma=0.447 seed=1: S=0.99991 B5=False dBIC=82.369 t*=245.0 t50=170 s090=400
+conv sigma=0.447 seed=2: S=0.79994 B5=True dBIC=40.465 t*=80.0 t50=175 s090=None
+conv sigma=0.447 seed=3: S=0.99989 B5=True dBIC=65.566 t*=120.0 t50=215 s090=1290
+conv sigma=0.447 seed=4: S=0.99992 B5=True dBIC=35.906 t*=75.0 t50=180 s090=295
+roles sigma=0.447 seed=0: S=0.99999 B5=True dBIC=160.17 t*=180.0 t50=200 s090=220
+roles sigma=0.447 seed=1: S=0.99999 B5=True dBIC=162.325 t*=160.0 t50=190 s090=210
+roles sigma=0.447 seed=2: S=0.99999 B5=True dBIC=83.301 t*=80.0 t50=105 s090=130
+roles sigma=0.447 seed=3: S=0.99999 B5=True dBIC=110.241 t*=135.0 t50=160 s090=180
+roles sigma=0.447 seed=4: S=0.99999 B5=True dBIC=103.201 t*=115.0 t50=140 s090=170
+{
+  "monotonicity": {
+    "convention": {
+      "median_t50_by_sigma": {
+        "0.020": 385.0,
+        "0.100": 335.0,
+        "0.447": 175.0
+      },
+      "monotone_decreasing": true
+    },
+    "roles": {
+      "median_t50_by_sigma": {
+        "0.020": 280.0,
+        "0.100": 325.0,
+        "0.447": 160.0
+      },
+      "monotone_decreasing": false
+    }
+  },
+  "registered": {
+    "INIT_t50_monotone_decreasing_both": false
+  }
+}
+Wrote /home/Yixiang/MPARL/GOGOGO/outputs/learn_nn_init.json

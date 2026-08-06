@@ -1,0 +1,29 @@
+Training external learner (same recipe as the transfer battery) ...
+  iter    0 | return   -2.56 | win 0.000
+  iter   20 | return   -2.52 | win 0.000
+  iter   40 | return    4.26 | win 0.083
+  iter   60 | return   16.80 | win 0.333
+  iter   80 | return   24.50 | win 0.833
+  iter  100 | return   21.03 | win 0.667
+  iter  120 | return   19.75 | win 0.583
+  iter  140 | return   25.19 | win 0.833
+  iter  160 | return   25.26 | win 0.833
+  iter  180 | return   25.79 | win 0.833
+  iter  200 | return   25.74 | win 0.833
+  iter  220 | return   22.67 | win 0.667
+  iter  240 | return   26.98 | win 0.917
+  iter  260 | return   26.52 | win 0.917
+  iter  280 | return   25.86 | win 0.833
+  iter  299 | return   21.64 | win 0.583
+marl_learned    purity 0.887 | H0 hand 1.528 vs cluster 1.938 | modes 2.88 vs 3.83 | potential verdict same: True
+marl_untrained  purity 0.838 | H0 hand 0.722 vs cluster 1.924 | modes 1.65 vs 3.79 | potential verdict same: True
+nearest_only    purity 0.944 | H0 hand 0.984 vs cluster 1.667 | modes 1.98 vs 3.18 | potential verdict same: True
+role_oracle     purity 0.994 | H0 hand 1.000 vs cluster 1.970 | modes 2.00 vs 3.92 | potential verdict same: True
+damage_aware    purity 0.919 | H0 hand 1.403 vs cluster 1.947 | modes 2.64 vs 3.86 | potential verdict same: True
+
+checks:
+  u1_learned_purity: PASS
+  u2_learned_modes_agree: FAIL
+  u3_potential_verdicts_unchanged: PASS
+
+Wrote /home/Yixiang/MPARL/GOGOGO/outputs/external_unsupervised_basins.json

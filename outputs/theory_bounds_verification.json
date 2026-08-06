@@ -1,0 +1,166 @@
+{
+  "prop0": {
+    "trained": {
+      "n": 4000,
+      "distinct_trajectories": 1798,
+      "I_tau_M_bits": 1.5849618696170786,
+      "E_m_KL_bits": 1.5849618696170689,
+      "mi_identity_gap": 9.769962616701378e-15,
+      "rarity_law_max_gap": 3.3084646133829665e-14,
+      "per_basin": {
+        "selfish_escape": {
+          "P_Am": 0.333,
+          "collapse_bits": 1.5864059175907916,
+          "minus_log2_P": 1.5864059175908247
+        },
+        "team_direct": {
+          "P_Am": 0.33375,
+          "collapse_bits": 1.5831602580871678,
+          "minus_log2_P": 1.5831602580871709
+        },
+        "sacrifice_rescue": {
+          "P_Am": 0.33325,
+          "collapse_bits": 1.5853232195731228,
+          "minus_log2_P": 1.585323219573114
+        }
+      }
+    },
+    "untrained": {
+      "n": 4000,
+      "distinct_trajectories": 4000,
+      "I_tau_M_bits": 0.29165226583541326,
+      "E_m_KL_bits": 0.29165226583541487,
+      "mi_identity_gap": 1.609823385706477e-15,
+      "rarity_law_max_gap": 5.329070518200751e-15,
+      "per_basin": {
+        "failed_noise": {
+          "P_Am": 0.96175,
+          "collapse_bits": 0.05626617036547442,
+          "minus_log2_P": 0.05626617036547213
+        },
+        "team_direct": {
+          "P_Am": 0.0165,
+          "collapse_bits": 5.921390165303634,
+          "minus_log2_P": 5.921390165303634
+        },
+        "selfish_escape": {
+          "P_Am": 0.01475,
+          "collapse_bits": 6.08314123530024,
+          "minus_log2_P": 6.083141235300245
+        },
+        "sacrifice_rescue": {
+          "P_Am": 0.007,
+          "collapse_bits": 7.158429362604479,
+          "minus_log2_P": 7.158429362604483
+        }
+      }
+    },
+    "data_processing": [
+      {
+        "mode": "rescue",
+        "js_trajectory_bits": 0.9999999999999734,
+        "js_basin_bits": 0.9040880476454298,
+        "holds": true
+      },
+      {
+        "mode": "bridge",
+        "js_trajectory_bits": 0.9999999999999629,
+        "js_basin_bits": 0.554717033915646,
+        "holds": true
+      }
+    ],
+    "summary": {
+      "mi_identity_holds": true,
+      "rarity_law_holds": true,
+      "dpi_holds": true,
+      "rescue_rarity_untrained_bits": 7.158429362604483,
+      "rescue_rarity_trained_bits": 1.585323219573114
+    }
+  },
+  "prop1": {
+    "diam_phi": 2.298368986912241,
+    "steps_checked": 138,
+    "degenerate_steps_skipped": 18,
+    "violations": 0,
+    "max_ratio_J_over_pinsker_bound": 0.7395103442073697,
+    "holds": true
+  },
+  "prop2": {
+    "pairs": {
+      "potential": {
+        "s_plus": [
+          "latent_conditional",
+          1.1475667801337395
+        ],
+        "s_minus": [
+          "useful_habit",
+          1.1059635364676061
+        ],
+        "witness_valid": true
+      },
+      "collapse_burst": {
+        "s_plus": [
+          "grokking",
+          3974.216970968381
+        ],
+        "s_minus": [
+          "prewired",
+          28375.772917771097
+        ],
+        "witness_valid": true
+      },
+      "specificity_js": {
+        "s_plus": [
+          "noise_policy",
+          0.7392258990788504
+        ],
+        "s_minus": [
+          "harmful_decoy",
+          0.6535034212196676
+        ],
+        "witness_valid": true
+      },
+      "usefulness_gap": {
+        "s_plus": [
+          "latent_conditional",
+          3.4328703703703702
+        ],
+        "s_minus": [
+          "useful_habit",
+          4.4259259259259265
+        ],
+        "witness_valid": true
+      }
+    },
+    "all_valid": true
+  },
+  "prop3": {
+    "points": [
+      {
+        "G": 7.0,
+        "predicted_sign_positive": false,
+        "measured_sign_positive": false,
+        "agree": true
+      },
+      {
+        "G": 11.0,
+        "predicted_sign_positive": true,
+        "measured_sign_positive": true,
+        "agree": true
+      },
+      {
+        "G": 13.0,
+        "predicted_sign_positive": true,
+        "measured_sign_positive": true,
+        "agree": true
+      },
+      {
+        "G": 16.0,
+        "predicted_sign_positive": true,
+        "measured_sign_positive": true,
+        "agree": true
+      }
+    ],
+    "all_agree": true
+  }
+}

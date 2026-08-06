@@ -1,0 +1,30 @@
+=== add / grokking / seed 1234 ===
+  test 1.000 burstiness 3974.2 gain +0.783 emergent=1
+=== add / memorizer / seed 1234 ===
+  test 0.001 burstiness 0.5 gain +0.000 emergent=0
+=== add / grokking / seed 2345 ===
+  test 1.000 burstiness 2386.6 gain +0.650 emergent=1
+=== add / memorizer / seed 2345 ===
+  test 0.000 burstiness 621.9 gain -0.011 emergent=0
+=== add / grokking / seed 3456 ===
+  test 1.000 burstiness 4082.8 gain +0.830 emergent=1
+=== add / memorizer / seed 3456 ===
+  test 0.000 burstiness 24.8 gain +0.000 emergent=0
+=== mul / grokking / seed 1234 ===
+  test 1.000 burstiness 3084.4 gain +0.807 emergent=1
+=== mul / memorizer / seed 1234 ===
+  test 0.001 burstiness 614.3 gain -0.009 emergent=0
+=== mul / grokking / seed 2345 ===
+  test 1.000 burstiness 3150.2 gain +0.727 emergent=1
+=== mul / memorizer / seed 2345 ===
+  test 0.001 burstiness 614.3 gain -0.012 emergent=0
+=== mul / grokking / seed 3456 ===
+  test 1.000 burstiness 4761.0 gain +0.843 emergent=1
+=== mul / memorizer / seed 3456 ===
+  test 0.000 burstiness 3.4 gain +0.000 emergent=0
+
+checks:
+  g1_grokking_emergent_all_cells: PASS
+  g2_memorizer_fails_usefulness_all_cells: PASS
+  g3_delayed_generalization_all_cells: PASS
+Wrote /home/Yixiang/MPARL/GOGOGO/outputs/grokking_generality_summary.json

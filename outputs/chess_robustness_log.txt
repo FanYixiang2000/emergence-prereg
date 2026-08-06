@@ -1,0 +1,16 @@
+selecting positions once (default engine/params) ...
+selected 240 sacrifice + 120 quiet
+temp200_depth3: gap 0.589 potential 0.80 | c1_cost_order=PASS c2_sign_tests=PASS c3_gap_and_sign=PASS c4_potential=FAIL [102.6s]
+temp200_depth4: gap 0.619 potential 0.73 | c1_cost_order=PASS c2_sign_tests=PASS c3_gap_and_sign=PASS c4_potential=FAIL [118.2s]
+temp200_depth6: gap 0.678 potential 0.53 | c1_cost_order=PASS c2_sign_tests=PASS c3_gap_and_sign=PASS c4_potential=FAIL [153.2s]
+temp300_depth3: gap 0.496 potential 1.20 | c1_cost_order=PASS c2_sign_tests=PASS c3_gap_and_sign=PASS c4_potential=PASS [99.9s]
+temp300_depth4_registered: gap 0.530 potential 1.23 | c1_cost_order=PASS c2_sign_tests=PASS c3_gap_and_sign=PASS c4_potential=PASS [121.2s]
+temp300_depth6: gap 0.581 potential 1.16 | c1_cost_order=PASS c2_sign_tests=PASS c3_gap_and_sign=PASS c4_potential=PASS [169.7s]
+temp450_depth3: gap 0.398 potential 1.45 | c1_cost_order=PASS c2_sign_tests=PASS c3_gap_and_sign=PASS c4_potential=PASS [114.0s]
+temp450_depth4: gap 0.415 potential 1.44 | c1_cost_order=PASS c2_sign_tests=PASS c3_gap_and_sign=PASS c4_potential=PASS [127.6s]
+temp450_depth6: gap 0.457 potential 1.44 | c1_cost_order=PASS c2_sign_tests=PASS c3_gap_and_sign=PASS c4_potential=PASS [173.0s]
+basin400_150: gap 0.531 potential 1.36 | c1_cost_order=PASS c2_sign_tests=PASS c3_gap_and_sign=PASS c4_potential=PASS [107.7s]
+basin500_200: gap 0.524 potential 1.41 | c1_cost_order=PASS c2_sign_tests=PASS c3_gap_and_sign=PASS c4_potential=PASS [107.5s]
+engine_sf11_classical: gap 0.430 potential 1.69 | c1_cost_order=PASS c2_sign_tests=PASS c3_gap_and_sign=PASS c4_potential=PASS [67.4s]
+core conclusions (C1+C2+C3) hold in 12/12 cells
+Wrote /home/Yixiang/MPARL/GOGOGO/outputs/chess_robustness_grid.json

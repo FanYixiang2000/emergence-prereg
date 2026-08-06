@@ -1,0 +1,161 @@
+{
+  "thresholds": {
+    "potential_bits": 0.5,
+    "selectivity_tension": 0.5,
+    "specificity_js": 0.2,
+    "usefulness_gap": 0.0
+  },
+  "accuracy": {
+    "full": 1.0,
+    "drop_potential": 1.0,
+    "drop_selectivity": 0.8888888888888888,
+    "drop_specificity": 1.0,
+    "drop_usefulness": 0.8888888888888888,
+    "drop_endogeneity": 0.8888888888888888,
+    "only_potential": 0.5555555555555556,
+    "only_specificity": 0.4444444444444444,
+    "only_usefulness": 0.6666666666666666
+  },
+  "misclassified": {
+    "full": [],
+    "drop_potential": [],
+    "drop_selectivity": [
+      "useful_habit"
+    ],
+    "drop_specificity": [],
+    "drop_usefulness": [
+      "wrong_selector"
+    ],
+    "drop_endogeneity": [
+      "shaped_process"
+    ],
+    "only_potential": [
+      "shaped_process",
+      "blind_trigger",
+      "useful_habit",
+      "wrong_selector"
+    ],
+    "only_specificity": [
+      "shaped_process",
+      "blind_trigger",
+      "harmful_decoy",
+      "useful_habit",
+      "wrong_selector"
+    ],
+    "only_usefulness": [
+      "converged_team",
+      "shaped_process",
+      "useful_habit"
+    ]
+  },
+  "measurements": [
+    {
+      "system": "latent_conditional",
+      "ground_truth_emergent": 1,
+      "prespecified": 0,
+      "h0_bits": 1.1475667801337395,
+      "natural_trigger_rate": 0.3333333333333333,
+      "rescue_trigger_rate": 0.6666666666666666,
+      "bridge_trigger_rate": 0.0,
+      "selectivity_tension": 0.888888888888889,
+      "specificity_js": 0.5385275314741641,
+      "usefulness_gap": 3.4328703703703702
+    },
+    {
+      "system": "converged_team",
+      "ground_truth_emergent": 0,
+      "prespecified": 0,
+      "h0_bits": 0.14782894996521484,
+      "natural_trigger_rate": 0.5,
+      "rescue_trigger_rate": 1.0,
+      "bridge_trigger_rate": 0.0,
+      "selectivity_tension": 1.0,
+      "specificity_js": 0.07448979667169421,
+      "usefulness_gap": 5.34837962962963
+    },
+    {
+      "system": "shaped_process",
+      "ground_truth_emergent": 0,
+      "prespecified": 1,
+      "h0_bits": 0.5950919501765944,
+      "natural_trigger_rate": 0.5,
+      "rescue_trigger_rate": 1.0,
+      "bridge_trigger_rate": 0.0,
+      "selectivity_tension": 1.0,
+      "specificity_js": 0.4981498042619296,
+      "usefulness_gap": 3.0520833333333335
+    },
+    {
+      "system": "noise_policy",
+      "ground_truth_emergent": 1,
+      "prespecified": 0,
+      "h0_bits": 0.5083078229095779,
+      "natural_trigger_rate": 0.5,
+      "rescue_trigger_rate": 1.0,
+      "bridge_trigger_rate": 0.0,
+      "selectivity_tension": 1.0,
+      "specificity_js": 0.7392258990788504,
+      "usefulness_gap": 4.923611111111112
+    },
+    {
+      "system": "untrained_uniform",
+      "ground_truth_emergent": 0,
+      "prespecified": 0,
+      "h0_bits": 0.24889823792855323,
+      "natural_trigger_rate": 0.4583333333333333,
+      "rescue_trigger_rate": 0.3333333333333333,
+      "bridge_trigger_rate": 0.5833333333333334,
+      "selectivity_tension": 0.9930555555555557,
+      "specificity_js": 0.03809805195862056,
+      "usefulness_gap": -0.7662037037037037
+    },
+    {
+      "system": "blind_trigger",
+      "ground_truth_emergent": 0,
+      "prespecified": 0,
+      "h0_bits": 0.7293983858555406,
+      "natural_trigger_rate": 1.0,
+      "rescue_trigger_rate": 1.0,
+      "bridge_trigger_rate": 1.0,
+      "selectivity_tension": 0.0,
+      "specificity_js": 0.5192514216206933,
+      "usefulness_gap": -2.0266203703703707
+    },
+    {
+      "system": "harmful_decoy",
+      "ground_truth_emergent": 0,
+      "prespecified": 0,
+      "h0_bits": 0.33477734593494807,
+      "natural_trigger_rate": 1.0,
+      "rescue_trigger_rate": 0.0,
+      "bridge_trigger_rate": 1.0,
+      "selectivity_tension": 0.0,
+      "specificity_js": 0.6535034212196676,
+      "usefulness_gap": -8.386574074074074
+    },
+    {
+      "system": "useful_habit",
+      "ground_truth_emergent": 0,
+      "prespecified": 0,
+      "h0_bits": 1.1059635364676061,
+      "natural_trigger_rate": 1.0,
+      "rescue_trigger_rate": 1.0,
+      "bridge_trigger_rate": 0.0,
+      "selectivity_tension": 0.0,
+      "specificity_js": 0.48814473071874537,
+      "usefulness_gap": 4.4259259259259265
+    },
+    {
+      "system": "wrong_selector",
+      "ground_truth_emergent": 0,
+      "prespecified": 0,
+      "h0_bits": 0.7098935930967186,
+      "natural_trigger_rate": 0.8333333333333334,
+      "rescue_trigger_rate": 0.6666666666666666,
+      "bridge_trigger_rate": 1.0,
+      "selectivity_tension": 0.5555555555555555,
+      "specificity_js": 0.5795776764561973,
+      "usefulness_gap": -0.6655092592592592
+    }
+  ]
+}

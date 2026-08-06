@@ -1,0 +1,20 @@
+training uncertain_preference ...
+training pure_team ...
+training dense_shaping ...
+training random_noise ...
+latent_conditional   EI_micro  11.031  CE(best)  -8.4587  Psi(best)  +0.1422  truth 1
+converged_team       EI_micro   9.711  CE(best)  -7.1363  Psi(best)  +0.1479  truth 0
+shaped_process       EI_micro   9.736  CE(best)  -7.1644  Psi(best)  -0.1265  truth 0
+noise_policy         EI_micro   9.977  CE(best)  -7.3922  Psi(best)  -0.3411  truth 1
+untrained_uniform    EI_micro   9.597  CE(best)  -7.0145  Psi(best)  +0.0844  truth 0
+blind_trigger        EI_micro  11.326  CE(best)  -8.8284  Psi(best)  +0.3826  truth 0
+harmful_decoy        EI_micro  10.400  CE(best)  -8.1140  Psi(best)  +0.1824  truth 0
+useful_habit         EI_micro  10.490  CE(best)  -8.1969  Psi(best)  -0.1452  truth 0
+wrong_selector       EI_micro  11.179  CE(best)  -8.6431  Psi(best)  +0.5914  truth 0
+anti_selector        EI_micro  11.202  CE(best)  -8.6384  Psi(best)  +0.3229  truth 0
+
+causal_emergence_exact: hindsight acc 0.800 (missed: ['latent_conditional', 'noise_policy']); natural >0 acc 0.800 (missed: ['latent_conditional', 'noise_policy'])
+
+phiid_psi_exact: hindsight acc 0.900 (missed: ['latent_conditional']); natural >0 acc 0.300 (missed: ['anti_selector', 'blind_trigger', 'converged_team', 'harmful_decoy', 'noise_policy', 'untrained_uniform', 'wrong_selector'])
+
+Wrote /home/Yixiang/MPARL/GOGOGO/outputs/exact_prior_formalisms.json

@@ -1,0 +1,512 @@
+{
+  "status": "observer-contract ensemble over seven stored frozen-threshold contracts; read-only analysis; expectation declared in the docstring",
+  "contracts": [
+    "A_hand_registered",
+    "B_speed_success_h12",
+    "C_summary_kmeans",
+    "D_lowlevel_kmeans",
+    "E_lowlevel_gmm",
+    "F_lowlevel_ward",
+    "G_hand_neargreedy"
+  ],
+  "R_contract": {
+    "1101": {
+      "learned": {
+        "accepts": 7,
+        "n_contracts": 7,
+        "R_contract": 1.0,
+        "band": "invariant_positive"
+      },
+      "initial_twin": {
+        "accepts": 0,
+        "n_contracts": 7,
+        "R_contract": 0.0,
+        "band": "invariant_negative"
+      },
+      "team_nearest": {
+        "accepts": 0,
+        "n_contracts": 7,
+        "R_contract": 0.0,
+        "band": "invariant_negative"
+      },
+      "fixed_food0": {
+        "accepts": 0,
+        "n_contracts": 7,
+        "R_contract": 0.0,
+        "band": "invariant_negative"
+      },
+      "fixed_food1": {
+        "accepts": 0,
+        "n_contracts": 7,
+        "R_contract": 0.0,
+        "band": "invariant_negative"
+      }
+    },
+    "1102": {
+      "learned": {
+        "accepts": 7,
+        "n_contracts": 7,
+        "R_contract": 1.0,
+        "band": "invariant_positive"
+      },
+      "initial_twin": {
+        "accepts": 0,
+        "n_contracts": 7,
+        "R_contract": 0.0,
+        "band": "invariant_negative"
+      },
+      "team_nearest": {
+        "accepts": 0,
+        "n_contracts": 7,
+        "R_contract": 0.0,
+        "band": "invariant_negative"
+      },
+      "fixed_food0": {
+        "accepts": 0,
+        "n_contracts": 7,
+        "R_contract": 0.0,
+        "band": "invariant_negative"
+      },
+      "fixed_food1": {
+        "accepts": 0,
+        "n_contracts": 7,
+        "R_contract": 0.0,
+        "band": "invariant_negative"
+      }
+    },
+    "1103": {
+      "learned": {
+        "accepts": 3,
+        "n_contracts": 7,
+        "R_contract": 0.42857142857142855,
+        "band": "relative"
+      },
+      "initial_twin": {
+        "accepts": 0,
+        "n_contracts": 7,
+        "R_contract": 0.0,
+        "band": "invariant_negative"
+      },
+      "team_nearest": {
+        "accepts": 0,
+        "n_contracts": 7,
+        "R_contract": 0.0,
+        "band": "invariant_negative"
+      },
+      "fixed_food0": {
+        "accepts": 0,
+        "n_contracts": 7,
+        "R_contract": 0.0,
+        "band": "invariant_negative"
+      },
+      "fixed_food1": {
+        "accepts": 0,
+        "n_contracts": 7,
+        "R_contract": 0.0,
+        "band": "invariant_negative"
+      }
+    },
+    "1104": {
+      "learned": {
+        "accepts": 5,
+        "n_contracts": 7,
+        "R_contract": 0.7142857142857143,
+        "band": "relative"
+      },
+      "initial_twin": {
+        "accepts": 0,
+        "n_contracts": 7,
+        "R_contract": 0.0,
+        "band": "invariant_negative"
+      },
+      "team_nearest": {
+        "accepts": 0,
+        "n_contracts": 7,
+        "R_contract": 0.0,
+        "band": "invariant_negative"
+      },
+      "fixed_food0": {
+        "accepts": 0,
+        "n_contracts": 7,
+        "R_contract": 0.0,
+        "band": "invariant_negative"
+      },
+      "fixed_food1": {
+        "accepts": 0,
+        "n_contracts": 7,
+        "R_contract": 0.0,
+        "band": "invariant_negative"
+      }
+    },
+    "1105": {
+      "learned": {
+        "accepts": 5,
+        "n_contracts": 7,
+        "R_contract": 0.7142857142857143,
+        "band": "relative"
+      },
+      "initial_twin": {
+        "accepts": 0,
+        "n_contracts": 7,
+        "R_contract": 0.0,
+        "band": "invariant_negative"
+      },
+      "team_nearest": {
+        "accepts": 0,
+        "n_contracts": 7,
+        "R_contract": 0.0,
+        "band": "invariant_negative"
+      },
+      "fixed_food0": {
+        "accepts": 0,
+        "n_contracts": 7,
+        "R_contract": 0.0,
+        "band": "invariant_negative"
+      },
+      "fixed_food1": {
+        "accepts": 0,
+        "n_contracts": 7,
+        "R_contract": 0.0,
+        "band": "invariant_negative"
+      }
+    },
+    "1106": {
+      "learned": {
+        "accepts": 6,
+        "n_contracts": 7,
+        "R_contract": 0.8571428571428571,
+        "band": "stable_positive"
+      },
+      "initial_twin": {
+        "accepts": 0,
+        "n_contracts": 7,
+        "R_contract": 0.0,
+        "band": "invariant_negative"
+      },
+      "team_nearest": {
+        "accepts": 0,
+        "n_contracts": 7,
+        "R_contract": 0.0,
+        "band": "invariant_negative"
+      },
+      "fixed_food0": {
+        "accepts": 0,
+        "n_contracts": 7,
+        "R_contract": 0.0,
+        "band": "invariant_negative"
+      },
+      "fixed_food1": {
+        "accepts": 0,
+        "n_contracts": 7,
+        "R_contract": 0.0,
+        "band": "invariant_negative"
+      }
+    },
+    "1107": {
+      "learned": {
+        "accepts": 5,
+        "n_contracts": 7,
+        "R_contract": 0.7142857142857143,
+        "band": "relative"
+      },
+      "initial_twin": {
+        "accepts": 0,
+        "n_contracts": 7,
+        "R_contract": 0.0,
+        "band": "invariant_negative"
+      },
+      "team_nearest": {
+        "accepts": 0,
+        "n_contracts": 7,
+        "R_contract": 0.0,
+        "band": "invariant_negative"
+      },
+      "fixed_food0": {
+        "accepts": 0,
+        "n_contracts": 7,
+        "R_contract": 0.0,
+        "band": "invariant_negative"
+      },
+      "fixed_food1": {
+        "accepts": 0,
+        "n_contracts": 7,
+        "R_contract": 0.0,
+        "band": "invariant_negative"
+      }
+    },
+    "1108": {
+      "learned": {
+        "accepts": 7,
+        "n_contracts": 7,
+        "R_contract": 1.0,
+        "band": "invariant_positive"
+      },
+      "initial_twin": {
+        "accepts": 0,
+        "n_contracts": 7,
+        "R_contract": 0.0,
+        "band": "invariant_negative"
+      },
+      "team_nearest": {
+        "accepts": 0,
+        "n_contracts": 7,
+        "R_contract": 0.0,
+        "band": "invariant_negative"
+      },
+      "fixed_food0": {
+        "accepts": 0,
+        "n_contracts": 7,
+        "R_contract": 0.0,
+        "band": "invariant_negative"
+      },
+      "fixed_food1": {
+        "accepts": 0,
+        "n_contracts": 7,
+        "R_contract": 0.0,
+        "band": "invariant_negative"
+      }
+    },
+    "1109": {
+      "learned": {
+        "accepts": 7,
+        "n_contracts": 7,
+        "R_contract": 1.0,
+        "band": "invariant_positive"
+      },
+      "initial_twin": {
+        "accepts": 0,
+        "n_contracts": 7,
+        "R_contract": 0.0,
+        "band": "invariant_negative"
+      },
+      "team_nearest": {
+        "accepts": 0,
+        "n_contracts": 7,
+        "R_contract": 0.0,
+        "band": "invariant_negative"
+      },
+      "fixed_food0": {
+        "accepts": 0,
+        "n_contracts": 7,
+        "R_contract": 0.0,
+        "band": "invariant_negative"
+      },
+      "fixed_food1": {
+        "accepts": 0,
+        "n_contracts": 7,
+        "R_contract": 0.0,
+        "band": "invariant_negative"
+      }
+    },
+    "1110": {
+      "learned": {
+        "accepts": 7,
+        "n_contracts": 7,
+        "R_contract": 1.0,
+        "band": "invariant_positive"
+      },
+      "initial_twin": {
+        "accepts": 0,
+        "n_contracts": 7,
+        "R_contract": 0.0,
+        "band": "invariant_negative"
+      },
+      "team_nearest": {
+        "accepts": 0,
+        "n_contracts": 7,
+        "R_contract": 0.0,
+        "band": "invariant_negative"
+      },
+      "fixed_food0": {
+        "accepts": 0,
+        "n_contracts": 7,
+        "R_contract": 0.0,
+        "band": "invariant_negative"
+      },
+      "fixed_food1": {
+        "accepts": 0,
+        "n_contracts": 7,
+        "R_contract": 0.0,
+        "band": "invariant_negative"
+      }
+    },
+    "1201": {
+      "learned": {
+        "accepts": 7,
+        "n_contracts": 7,
+        "R_contract": 1.0,
+        "band": "invariant_positive"
+      },
+      "initial_twin": {
+        "accepts": 0,
+        "n_contracts": 7,
+        "R_contract": 0.0,
+        "band": "invariant_negative"
+      },
+      "team_nearest": {
+        "accepts": 0,
+        "n_contracts": 7,
+        "R_contract": 0.0,
+        "band": "invariant_negative"
+      },
+      "fixed_food0": {
+        "accepts": 0,
+        "n_contracts": 7,
+        "R_contract": 0.0,
+        "band": "invariant_negative"
+      },
+      "fixed_food1": {
+        "accepts": 0,
+        "n_contracts": 7,
+        "R_contract": 0.0,
+        "band": "invariant_negative"
+      }
+    },
+    "1202": {
+      "learned": {
+        "accepts": 7,
+        "n_contracts": 7,
+        "R_contract": 1.0,
+        "band": "invariant_positive"
+      },
+      "initial_twin": {
+        "accepts": 0,
+        "n_contracts": 7,
+        "R_contract": 0.0,
+        "band": "invariant_negative"
+      },
+      "team_nearest": {
+        "accepts": 0,
+        "n_contracts": 7,
+        "R_contract": 0.0,
+        "band": "invariant_negative"
+      },
+      "fixed_food0": {
+        "accepts": 0,
+        "n_contracts": 7,
+        "R_contract": 0.0,
+        "band": "invariant_negative"
+      },
+      "fixed_food1": {
+        "accepts": 0,
+        "n_contracts": 7,
+        "R_contract": 0.0,
+        "band": "invariant_negative"
+      }
+    },
+    "1203": {
+      "learned": {
+        "accepts": 7,
+        "n_contracts": 7,
+        "R_contract": 1.0,
+        "band": "invariant_positive"
+      },
+      "initial_twin": {
+        "accepts": 0,
+        "n_contracts": 7,
+        "R_contract": 0.0,
+        "band": "invariant_negative"
+      },
+      "team_nearest": {
+        "accepts": 0,
+        "n_contracts": 7,
+        "R_contract": 0.0,
+        "band": "invariant_negative"
+      },
+      "fixed_food0": {
+        "accepts": 0,
+        "n_contracts": 7,
+        "R_contract": 0.0,
+        "band": "invariant_negative"
+      },
+      "fixed_food1": {
+        "accepts": 0,
+        "n_contracts": 7,
+        "R_contract": 0.0,
+        "band": "invariant_negative"
+      }
+    },
+    "1204": {
+      "learned": {
+        "accepts": 7,
+        "n_contracts": 7,
+        "R_contract": 1.0,
+        "band": "invariant_positive"
+      },
+      "initial_twin": {
+        "accepts": 0,
+        "n_contracts": 7,
+        "R_contract": 0.0,
+        "band": "invariant_negative"
+      },
+      "team_nearest": {
+        "accepts": 0,
+        "n_contracts": 7,
+        "R_contract": 0.0,
+        "band": "invariant_negative"
+      },
+      "fixed_food0": {
+        "accepts": 0,
+        "n_contracts": 7,
+        "R_contract": 0.0,
+        "band": "invariant_negative"
+      },
+      "fixed_food1": {
+        "accepts": 0,
+        "n_contracts": 7,
+        "R_contract": 0.0,
+        "band": "invariant_negative"
+      }
+    },
+    "1205": {
+      "learned": {
+        "accepts": 4,
+        "n_contracts": 7,
+        "R_contract": 0.5714285714285714,
+        "band": "relative"
+      },
+      "initial_twin": {
+        "accepts": 0,
+        "n_contracts": 7,
+        "R_contract": 0.0,
+        "band": "invariant_negative"
+      },
+      "team_nearest": {
+        "accepts": 0,
+        "n_contracts": 7,
+        "R_contract": 0.0,
+        "band": "invariant_negative"
+      },
+      "fixed_food0": {
+        "accepts": 0,
+        "n_contracts": 7,
+        "R_contract": 0.0,
+        "band": "invariant_negative"
+      },
+      "fixed_food1": {
+        "accepts": 0,
+        "n_contracts": 7,
+        "R_contract": 0.0,
+        "band": "invariant_negative"
+      }
+    }
+  },
+  "bands": {
+    "invariant_positive": 9,
+    "stable_positive": 1,
+    "relative": 5,
+    "invariant_negative": 60
+  },
+  "headline": {
+    "controls_contract_invariant_negative": "420/420 rejections (0 acceptances)",
+    "learned_mean_R": 0.8666666666666667,
+    "learned_at_least_6_of_7": 10,
+    "learned_relative_band": [
+      "1103",
+      "1104",
+      "1105",
+      "1107",
+      "1205"
+    ]
+  }
+}

@@ -1,0 +1,321 @@
+{
+  "status": "universal-observer recipe; U-1..U-3 frozen in the docstring; recipe = bag-of-opaque-tokens + raw numerics, standardized, k-means (seed 0), k by silhouette over 2..8; identical code across domains",
+  "battery": {
+    "k": 8,
+    "rows": {
+      "latent_conditional": {
+        "system": "latent_conditional",
+        "prespecified": 0,
+        "h0_bits": 1.6872910205499487,
+        "selectivity_tension": 0.5555555555555556,
+        "specificity_js": 1.0,
+        "usefulness_gap": 1.4861111111111107,
+        "universal_verdict": 1,
+        "hand_verdict": 1
+      },
+      "converged_team": {
+        "system": "converged_team",
+        "prespecified": 0,
+        "h0_bits": 1.059739962632042,
+        "selectivity_tension": 1.0,
+        "specificity_js": 1.0,
+        "usefulness_gap": 5.513888888888889,
+        "universal_verdict": 1,
+        "hand_verdict": 0
+      },
+      "shaped_process": {
+        "system": "shaped_process",
+        "prespecified": 1,
+        "h0_bits": 0.9758648135053792,
+        "selectivity_tension": 0.5555555555555556,
+        "specificity_js": 1.0,
+        "usefulness_gap": 1.541666666666666,
+        "universal_verdict": 0,
+        "hand_verdict": 0
+      },
+      "noise_policy": {
+        "system": "noise_policy",
+        "prespecified": 0,
+        "h0_bits": 1.8154734942034325,
+        "selectivity_tension": 0.888888888888889,
+        "specificity_js": 1.0,
+        "usefulness_gap": 4.222222222222222,
+        "universal_verdict": 1,
+        "hand_verdict": 1
+      },
+      "untrained_uniform": {
+        "system": "untrained_uniform",
+        "prespecified": 0,
+        "h0_bits": 1.5935218817122676,
+        "selectivity_tension": 0.888888888888889,
+        "specificity_js": 1.0,
+        "usefulness_gap": -0.8680555555555556,
+        "universal_verdict": 0,
+        "hand_verdict": 0
+      },
+      "blind_trigger": {
+        "system": "blind_trigger",
+        "prespecified": 0,
+        "h0_bits": 1.499927039296082,
+        "selectivity_tension": 0.0,
+        "specificity_js": 1.0,
+        "usefulness_gap": -6.03125,
+        "universal_verdict": 0,
+        "hand_verdict": 0
+      },
+      "harmful_decoy": {
+        "system": "harmful_decoy",
+        "prespecified": 0,
+        "h0_bits": 0.6269239896148419,
+        "selectivity_tension": 0.0,
+        "specificity_js": 1.0,
+        "usefulness_gap": -8.26388888888889,
+        "universal_verdict": 0,
+        "hand_verdict": 0
+      },
+      "useful_habit": {
+        "system": "useful_habit",
+        "prespecified": 0,
+        "h0_bits": 0.460127886147135,
+        "selectivity_tension": 0.0,
+        "specificity_js": 1.0,
+        "usefulness_gap": -3.2222222222222223,
+        "universal_verdict": 0,
+        "hand_verdict": 0
+      },
+      "wrong_selector": {
+        "system": "wrong_selector",
+        "prespecified": 0,
+        "h0_bits": 2.1953358986489317,
+        "selectivity_tension": 0.888888888888889,
+        "specificity_js": 1.0,
+        "usefulness_gap": -2.6284722222222223,
+        "universal_verdict": 0,
+        "hand_verdict": 0
+      }
+    },
+    "agreement": "8/10",
+    "U1_pass": false
+  },
+  "crowd": {
+    "seeds": {
+      "6701": {
+        "learned": {
+          "universal": 1,
+          "hand": 1,
+          "universal_k": 5,
+          "universal_metrics": {
+            "potential_bits": 1.5462475142271357,
+            "conditional_selectivity": 1.0,
+            "specificity_js_bits": 0.8748051473601037,
+            "usefulness_gap": 2.802083333333334
+          }
+        },
+        "initial_twin": {
+          "universal": 0,
+          "hand": 0,
+          "universal_k": 5,
+          "universal_metrics": {
+            "potential_bits": 1.4690553964326487,
+            "conditional_selectivity": 0.0,
+            "specificity_js_bits": 0.8748051473601037,
+            "usefulness_gap": 0.0
+          }
+        },
+        "always_democracy": {
+          "universal": 0,
+          "hand": 0,
+          "universal_k": 5,
+          "universal_metrics": {
+            "potential_bits": -0.0,
+            "conditional_selectivity": 0.0,
+            "specificity_js_bits": 1.0,
+            "usefulness_gap": 1.7625000000000002
+          }
+        },
+        "always_anarchy": {
+          "universal": 0,
+          "hand": 0,
+          "universal_k": 5,
+          "universal_metrics": {
+            "potential_bits": 1.4690553964326487,
+            "conditional_selectivity": 0.0,
+            "specificity_js_bits": 0.8748051473601037,
+            "usefulness_gap": 0.0
+          }
+        },
+        "scripted_switcher": {
+          "universal": 0,
+          "hand": 0,
+          "universal_k": 5,
+          "universal_metrics": {
+            "potential_bits": 1.4406454496153462,
+            "conditional_selectivity": 1.0,
+            "specificity_js_bits": 0.8874819455888597,
+            "usefulness_gap": 2.802083333333334
+          }
+        },
+        "bc_clone": {
+          "universal": 0,
+          "hand": 0,
+          "universal_k": 5,
+          "universal_metrics": {
+            "potential_bits": 1.4406454496153462,
+            "conditional_selectivity": 1.0,
+            "specificity_js_bits": 0.8874819455888597,
+            "usefulness_gap": 2.802083333333334
+          }
+        }
+      },
+      "6702": {
+        "learned": {
+          "universal": 1,
+          "hand": 1,
+          "universal_k": 5,
+          "universal_metrics": {
+            "potential_bits": 1.4854752972273344,
+            "conditional_selectivity": 1.0,
+            "specificity_js_bits": 0.9133791237837957,
+            "usefulness_gap": 2.629166666666667
+          }
+        },
+        "initial_twin": {
+          "universal": 0,
+          "hand": 0,
+          "universal_k": 5,
+          "universal_metrics": {
+            "potential_bits": 1.433176173219572,
+            "conditional_selectivity": 0.0,
+            "specificity_js_bits": 0.8246165748660514,
+            "usefulness_gap": 0.0
+          }
+        },
+        "always_democracy": {
+          "universal": 0,
+          "hand": 0,
+          "universal_k": 5,
+          "universal_metrics": {
+            "potential_bits": -0.0,
+            "conditional_selectivity": 0.0,
+            "specificity_js_bits": 1.0,
+            "usefulness_gap": 1.5833333333333335
+          }
+        },
+        "always_anarchy": {
+          "universal": 0,
+          "hand": 0,
+          "universal_k": 5,
+          "universal_metrics": {
+            "potential_bits": 1.433176173219572,
+            "conditional_selectivity": 0.0,
+            "specificity_js_bits": 0.8246165748660514,
+            "usefulness_gap": 0.0
+          }
+        },
+        "scripted_switcher": {
+          "universal": 0,
+          "hand": 0,
+          "universal_k": 5,
+          "universal_metrics": {
+            "potential_bits": 1.4183203709705836,
+            "conditional_selectivity": 1.0,
+            "specificity_js_bits": 0.9133791237837957,
+            "usefulness_gap": 2.6020833333333333
+          }
+        },
+        "bc_clone": {
+          "universal": 0,
+          "hand": 0,
+          "universal_k": 5,
+          "universal_metrics": {
+            "potential_bits": 1.4183203709705836,
+            "conditional_selectivity": 1.0,
+            "specificity_js_bits": 0.9133791237837957,
+            "usefulness_gap": 2.6020833333333333
+          }
+        }
+      },
+      "6703": {
+        "learned": {
+          "universal": 1,
+          "hand": 1,
+          "universal_k": 7,
+          "universal_metrics": {
+            "potential_bits": 1.4503598399311795,
+            "conditional_selectivity": 1.0,
+            "specificity_js_bits": 1.0,
+            "usefulness_gap": 2.1895833333333337
+          }
+        },
+        "initial_twin": {
+          "universal": 0,
+          "hand": 0,
+          "universal_k": 7,
+          "universal_metrics": {
+            "potential_bits": 1.4939551145357235,
+            "conditional_selectivity": 0.0,
+            "specificity_js_bits": 0.8601246323805711,
+            "usefulness_gap": 0.0
+          }
+        },
+        "always_democracy": {
+          "universal": 0,
+          "hand": 0,
+          "universal_k": 7,
+          "universal_metrics": {
+            "potential_bits": -0.0,
+            "conditional_selectivity": 0.0,
+            "specificity_js_bits": 1.0,
+            "usefulness_gap": 1.4625
+          }
+        },
+        "always_anarchy": {
+          "universal": 0,
+          "hand": 0,
+          "universal_k": 7,
+          "universal_metrics": {
+            "potential_bits": 1.4939551145357235,
+            "conditional_selectivity": 0.0,
+            "specificity_js_bits": 0.8601246323805711,
+            "usefulness_gap": 0.0
+          }
+        },
+        "scripted_switcher": {
+          "universal": 0,
+          "hand": 0,
+          "universal_k": 7,
+          "universal_metrics": {
+            "potential_bits": 1.4591479170272448,
+            "conditional_selectivity": 1.0,
+            "specificity_js_bits": 0.9490414339391644,
+            "usefulness_gap": 2.4625
+          }
+        },
+        "bc_clone": {
+          "universal": 0,
+          "hand": 0,
+          "universal_k": 7,
+          "universal_metrics": {
+            "potential_bits": 1.4591479170272448,
+            "conditional_selectivity": 1.0,
+            "specificity_js_bits": 0.9490414339391644,
+            "usefulness_gap": 2.4625
+          }
+        }
+      }
+    },
+    "agreement": "18/18",
+    "controls_rejected": "15/15",
+    "U2_pass": true
+  },
+  "clbf_stored_third_domain": {
+    "source": "crossfit_lowlevel_basins.json",
+    "verdict_agreement": 0.957,
+    "controls_rejected": "60/60 under every method"
+  },
+  "registered_outcomes": {
+    "U1_battery": "8/10 -> False",
+    "U2_crowd": "18/18, controls 15/15 -> True",
+    "U3_no_per_domain_tuning": true
+  }
+}

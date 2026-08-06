@@ -1,0 +1,226 @@
+{
+  "status": "OC-OCC-BP onset-type B5 on the trajectory-occupancy possibility space of trained deep multi-agent RL; registered before run; BP-FRESH checkpoints reused",
+  "grid": [
+    40000,
+    80000,
+    120000,
+    160000,
+    240000,
+    320000,
+    480000,
+    640000,
+    820000,
+    1000000,
+    1250000,
+    1500000,
+    1750000,
+    2000000
+  ],
+  "phases": [
+    20,
+    40,
+    60,
+    80,
+    100,
+    120,
+    140,
+    160,
+    180
+  ],
+  "n_config": 48,
+  "seeds": {
+    "93004": {
+      "openness": [
+        0.74391,
+        0.74349,
+        0.72792,
+        0.76145,
+        0.75049,
+        0.76968,
+        0.76203,
+        0.7065,
+        0.71119,
+        0.74399,
+        0.68088,
+        0.64871,
+        0.68133,
+        0.66517
+      ],
+      "capability": [
+        0.0,
+        0.5,
+        3.0,
+        0.75,
+        2.75,
+        2.25,
+        3.0,
+        7.25,
+        15.25,
+        25.25,
+        22.75,
+        25.75,
+        39.25,
+        36.75
+      ],
+      "adj": {
+        "drop": 0.0787,
+        "gate_passed": false,
+        "verdict": "no_collapse_B5_not_applicable",
+        "b5_onset": false
+      },
+      "cap_090_cross": 1750000,
+      "leads_capability": false,
+      "top2_mass_first": 0.2556,
+      "top2_mass_last": 0.35,
+      "selectivity_ok": false
+    },
+    "93005": {
+      "openness": [
+        0.75155,
+        0.68952,
+        0.75952,
+        0.75091,
+        0.74135,
+        0.76397,
+        0.76162,
+        0.74221,
+        0.71276,
+        0.67314,
+        0.65874,
+        0.63152,
+        0.62606,
+        0.64119
+      ],
+      "capability": [
+        0.25,
+        0.25,
+        0.0,
+        0.75,
+        2.0,
+        3.0,
+        5.75,
+        9.75,
+        25.0,
+        38.75,
+        46.25,
+        54.5,
+        61.0,
+        69.25
+      ],
+      "adj": {
+        "drop": 0.1104,
+        "gate_passed": true,
+        "t_sat": 1500000.0,
+        "window_points": 12,
+        "hinge": {
+          "delta_bic": 4.599,
+          "t_star": 480000.0,
+          "slope_before": 6e-08,
+          "slope_after": -1.4e-07,
+          "onset_type": true
+        },
+        "thinning": {
+          "parity0": {
+            "delta_bic": 7.275,
+            "t_star": 480000.0,
+            "slope_before": 1e-08,
+            "slope_after": -1.3e-07,
+            "onset_type": true,
+            "ok": true
+          },
+          "parity1": {
+            "delta_bic": 6.118,
+            "t_star": 320000.0,
+            "slope_before": 2.8e-07,
+            "slope_after": -1.2e-07,
+            "onset_type": true,
+            "ok": false
+          }
+        },
+        "b5_onset": false
+      },
+      "cap_090_cross": 2000000,
+      "leads_capability": false,
+      "top2_mass_first": 0.2597,
+      "top2_mass_last": 0.375,
+      "selectivity_ok": false
+    },
+    "93006": {
+      "openness": [
+        0.73441,
+        0.73645,
+        0.72162,
+        0.7197,
+        0.74876,
+        0.71374,
+        0.74439,
+        0.7246,
+        0.73373,
+        0.67314,
+        0.68893,
+        0.65029,
+        0.64149,
+        0.63438
+      ],
+      "capability": [
+        1.0,
+        0.5,
+        0.0,
+        0.5,
+        1.0,
+        1.75,
+        2.5,
+        5.0,
+        10.0,
+        10.0,
+        22.5,
+        34.25,
+        29.25,
+        34.75
+      ],
+      "adj": {
+        "drop": 0.1,
+        "gate_passed": true,
+        "t_sat": 2000000.0,
+        "window_points": 14,
+        "hinge": {
+          "delta_bic": 0.878,
+          "t_star": 480000.0,
+          "slope_before": 2e-08,
+          "slope_after": -7e-08,
+          "onset_type": true
+        },
+        "thinning": {
+          "parity0": {
+            "delta_bic": 7.537,
+            "t_star": 480000.0,
+            "slope_before": 6e-08,
+            "slope_after": -9e-08,
+            "onset_type": true,
+            "ok": true
+          },
+          "parity1": {
+            "delta_bic": -3.047,
+            "t_star": 640000.0,
+            "slope_before": -3e-08,
+            "slope_after": -6e-08,
+            "onset_type": true,
+            "ok": false
+          }
+        },
+        "b5_onset": false
+      },
+      "cap_090_cross": 1500000,
+      "leads_capability": false,
+      "top2_mass_first": 0.2792,
+      "top2_mass_last": 0.4097,
+      "selectivity_ok": false
+    }
+  },
+  "registered_outcomes": {
+    "OCC1_onset_real_ml": false,
+    "OCC2_collapse_leads_capability": false,
+    "OCC3_selectivity": false,
+    "onset_seeds": []
+  }
+}

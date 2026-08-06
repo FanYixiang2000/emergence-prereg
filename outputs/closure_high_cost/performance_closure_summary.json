@@ -1,0 +1,15 @@
+{
+  "summary": {
+    "n_conditions": 5225.0,
+    "full_best_return_rate": 0.4631578947368421,
+    "performance_closure_rate": 0.4568421052631579,
+    "full_mean_return": 5.5,
+    "myopic_mean_return": 6.0,
+    "no_context_mean_return": 2.705263157894737,
+    "full_mean_success": 1.0,
+    "no_context_mean_success": 0.7315789473684211,
+    "full_return_gain_vs_myopic": -0.5,
+    "full_return_gain_vs_no_context": 2.794736842105263,
+    "full_success_gain_vs_no_context": 0.26842105263157895
+  }
+}

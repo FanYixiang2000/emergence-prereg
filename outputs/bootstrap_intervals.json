@@ -1,0 +1,114 @@
+{
+  "chess": {
+    "do_key_minus_do_alt_win_gap_mean": {
+      "point": 0.5390625,
+      "n": 240,
+      "ci_lo": 0.5079427083333333,
+      "ci_hi": 0.5697916666666667
+    },
+    "do_key_minus_do_alt_win_gap_median": {
+      "point": 0.546875,
+      "n": 240,
+      "ci_lo": 0.5,
+      "ci_hi": 0.59375
+    },
+    "useful_shift_key_minus_greedy_mean": {
+      "point": 0.53671875,
+      "n": 240,
+      "ci_lo": 0.5057291666666667,
+      "ci_hi": 0.568359375
+    },
+    "useful_shift_key_minus_random_mean": {
+      "point": 0.6791666666666667,
+      "n": 240,
+      "ci_lo": 0.6490885416666666,
+      "ci_hi": 0.7084635416666667
+    },
+    "key_local_cost_median": {
+      "point": -3.0,
+      "n": 240,
+      "ci_lo": -3.0,
+      "ci_hi": -3.0
+    },
+    "key_strict_loss_rate": {
+      "point": 0.8,
+      "n": 240,
+      "ci_lo": 0.7458333333333333,
+      "ci_hi": 0.85
+    },
+    "quiet_minus_sacrifice_potential_median": {
+      "point": 0.7640411593938685,
+      "n": "120q/240s",
+      "ci_lo": 0.6469662178543607,
+      "ci_hi": 0.9387807040176781
+    }
+  },
+  "chess_prior_detectors": {
+    "rank_first_collapse_only": {
+      "point": 0.5291666666666667,
+      "n": 240,
+      "ci_lo": 0.4666666666666667,
+      "ci_hi": 0.5916666666666667
+    },
+    "rank_first_specificity_only": {
+      "point": 0.05416666666666667,
+      "n": 240,
+      "ci_lo": 0.029166666666666667,
+      "ci_hi": 0.08333333333333333
+    },
+    "rank_first_local_value": {
+      "point": 0.23333333333333334,
+      "n": 240,
+      "ci_lo": 0.18333333333333332,
+      "ci_hi": 0.2875
+    },
+    "rank_first_useful_collapse": {
+      "point": 0.9916666666666667,
+      "n": 240,
+      "ci_lo": 0.9791666666666666,
+      "ci_hi": 1.0
+    }
+  },
+  "deep_marl_simple_spread": {
+    "do_gap_median_pooled": {
+      "point": 0.08333333333333334,
+      "n": 120,
+      "ci_lo": 0.04166666666666663,
+      "ci_hi": 0.17708333333333337
+    },
+    "do_gap_mean_pooled": {
+      "point": 0.09097222222222223,
+      "n": 120,
+      "ci_lo": 0.012847222222222225,
+      "ci_hi": 0.1689236111111111
+    },
+    "do_gap_median_per_seed": {
+      "point": {
+        "trained_seed11": 0.09375000000000004,
+        "trained_seed22": 0.10416666666666669,
+        "trained_seed33": 0.0625
+      }
+    }
+  },
+  "deep_marl_lbf": {
+    "lbf_do_gap_median_pooled": {
+      "point": 0.041666666666666664,
+      "n": 90,
+      "ci_lo": 0.020833333333333332,
+      "ci_hi": 0.09375
+    },
+    "lbf_do_gap_mean_pooled": {
+      "point": 0.1087962962962963,
+      "n": 90,
+      "ci_lo": 0.08217592592592592,
+      "ci_hi": 0.13726851851851854
+    },
+    "lbf_do_gap_median_per_seed": {
+      "point": {
+        "trained_seed11": 0.03125,
+        "trained_seed22": 0.041666666666666664,
+        "trained_seed33": 0.041666666666666664
+      }
+    }
+  }
+}

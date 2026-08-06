@@ -1,0 +1,60 @@
+{
+  "status": "prospectively frozen fresh-seed run",
+  "analysis_scope": "post-confirmation extension",
+  "n_seeds": 5,
+  "counts": {
+    "learned_full_passes": 4,
+    "nonlearned_controls_rejected": 20,
+    "team_nearest_exact_failure_route": 5,
+    "learned_context_ordering": 5,
+    "learned_positive_usefulness": 5,
+    "learned_positive_acquisition": 5,
+    "initial_twins_fail_acquisition": 5
+  },
+  "learned_full_pass_exact_one_sided_sign_p": 0.1875,
+  "seed_bootstrap_intervals": {
+    "potential_bits": {
+      "point": 1.4045385868362807,
+      "n_seeds": 5,
+      "ci95": [
+        1.1971717254218404,
+        1.6039870918374668
+      ]
+    },
+    "conditional_selectivity": {
+      "point": 0.6975,
+      "n_seeds": 5,
+      "ci95": [
+        0.5050000000000001,
+        0.89
+      ]
+    },
+    "specificity_js_bits": {
+      "point": 0.7959668374593815,
+      "n_seeds": 5,
+      "ci95": [
+        0.7612962048331466,
+        0.8255675764030892
+      ]
+    },
+    "usefulness_gap": {
+      "point": 0.06422386078245969,
+      "n_seeds": 5,
+      "ci95": [
+        0.04904887326567576,
+        0.07604918966878796
+      ]
+    },
+    "acquisition": {
+      "point": 0.6875,
+      "n_seeds": 5,
+      "ci95": [
+        0.49000000000000005,
+        0.885
+      ]
+    }
+  },
+  "predictions": null,
+  "all_registered_predictions_pass": null,
+  "inference_note": "Training seed is the population unit. Bootstrap intervals resample 5 seed-level summaries, not evaluation episodes."
+}

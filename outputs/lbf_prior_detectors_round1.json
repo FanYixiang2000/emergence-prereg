@@ -1,0 +1,149 @@
+{
+  "note": "Prior single-signal detectors on the LBF deep-MARL domain, saved main-run nets, hindsight-optimal thresholds. forced_commit = trained policy + permanent observer-imposed do_commit (blind_trigger analogue; endogeneity fails by construction). Registered prediction in module docstring: every single detector misclassifies forced_commit or pays elsewhere for excluding it.",
+  "truth": {
+    "trained_seed11": 1,
+    "trained_seed22": 1,
+    "trained_seed33": 1,
+    "untrained": 0,
+    "greedy_nearest": 0,
+    "noise": 0,
+    "forced_commit": 0
+  },
+  "per_system": {
+    "trained_seed11": {
+      "performance_level": 0.85,
+      "specificity_js": 0.7106372161901304,
+      "synergy": 0.046429762381082096,
+      "psi_rosas": 0.7055584682210103,
+      "ei_do_gap": 0.21639114329806874
+    },
+    "trained_seed22": {
+      "performance_level": 0.85,
+      "specificity_js": 0.6867224266626675,
+      "synergy": 0.053016007682201494,
+      "psi_rosas": 0.6068668976696954,
+      "ei_do_gap": 0.3820254327851118
+    },
+    "trained_seed33": {
+      "performance_level": 0.8666666666666667,
+      "specificity_js": 0.5539174603917526,
+      "synergy": 0.0880274740116529,
+      "psi_rosas": 0.7186666897561158,
+      "ei_do_gap": 0.16246318508979707
+    },
+    "untrained": {
+      "performance_level": 0.0,
+      "specificity_js": 0.3191579452590302,
+      "synergy": 0.052414297890539086,
+      "psi_rosas": 0.38213875748655135,
+      "ei_do_gap": 0.1534710711025098
+    },
+    "greedy_nearest": {
+      "performance_level": 0.08333333333333333,
+      "specificity_js": 0.3744814060332296,
+      "synergy": 0.11497577482770227,
+      "psi_rosas": 0.7889265920855779,
+      "ei_do_gap": -0.09592543478956528
+    },
+    "noise": {
+      "performance_level": 0.016666666666666666,
+      "specificity_js": 0.3371168850733396,
+      "synergy": 3.89824637316849e-05,
+      "psi_rosas": 0.34405758502606637,
+      "ei_do_gap": 0.21515996382920832
+    },
+    "forced_commit": {
+      "performance_level": 0.48333333333333334,
+      "specificity_js": 0.6647543335181408,
+      "synergy": 0.22242608331002423,
+      "psi_rosas": 0.4295915032247666,
+      "ei_do_gap": 0.06074462411377102
+    }
+  },
+  "detectors": {
+    "performance_level": {
+      "scores": {
+        "trained_seed11": 0.85,
+        "trained_seed22": 0.85,
+        "trained_seed33": 0.8666666666666667,
+        "untrained": 0.0,
+        "greedy_nearest": 0.08333333333333333,
+        "noise": 0.016666666666666666,
+        "forced_commit": 0.48333333333333334
+      },
+      "accuracy": 1.0,
+      "threshold": 0.6666666666666666,
+      "direction": 1,
+      "misclassified": []
+    },
+    "specificity_js": {
+      "scores": {
+        "trained_seed11": 0.7106372161901304,
+        "trained_seed22": 0.6867224266626675,
+        "trained_seed33": 0.5539174603917526,
+        "untrained": 0.3191579452590302,
+        "greedy_nearest": 0.3744814060332296,
+        "noise": 0.3371168850733396,
+        "forced_commit": 0.6647543335181408
+      },
+      "accuracy": 0.8571428571428571,
+      "threshold": 0.46419943321249113,
+      "direction": 1,
+      "misclassified": [
+        "forced_commit"
+      ]
+    },
+    "synergy": {
+      "scores": {
+        "trained_seed11": 0.046429762381082096,
+        "trained_seed22": 0.053016007682201494,
+        "trained_seed33": 0.0880274740116529,
+        "untrained": 0.052414297890539086,
+        "greedy_nearest": 0.11497577482770227,
+        "noise": 3.89824637316849e-05,
+        "forced_commit": 0.22242608331002423
+      },
+      "accuracy": 0.7142857142857143,
+      "threshold": 0.10150162441967758,
+      "direction": -1,
+      "misclassified": [
+        "noise",
+        "untrained"
+      ]
+    },
+    "psi_rosas": {
+      "scores": {
+        "trained_seed11": 0.7055584682210103,
+        "trained_seed22": 0.6068668976696954,
+        "trained_seed33": 0.7186666897561158,
+        "untrained": 0.38213875748655135,
+        "greedy_nearest": 0.7889265920855779,
+        "noise": 0.34405758502606637,
+        "forced_commit": 0.4295915032247666
+      },
+      "accuracy": 0.8571428571428571,
+      "threshold": 0.518229200447231,
+      "direction": 1,
+      "misclassified": [
+        "greedy_nearest"
+      ]
+    },
+    "ei_do_gap": {
+      "scores": {
+        "trained_seed11": 0.21639114329806874,
+        "trained_seed22": 0.3820254327851118,
+        "trained_seed33": 0.16246318508979707,
+        "untrained": 0.1534710711025098,
+        "greedy_nearest": -0.09592543478956528,
+        "noise": 0.21515996382920832,
+        "forced_commit": 0.06074462411377102
+      },
+      "accuracy": 0.8571428571428571,
+      "threshold": 0.15796712809615343,
+      "direction": 1,
+      "misclassified": [
+        "noise"
+      ]
+    }
+  }
+}

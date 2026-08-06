@@ -1,0 +1,514 @@
+{
+  "status": "TRIB three-agent learned relational collapse (sequential); registered in V2_ALIGNMENT_PREREGISTRATION.md; first learned system with non-degenerate C_high",
+  "variant": "sequential",
+  "minutes": 4.96,
+  "seeds": {
+    "95201": {
+      "seed": 95201,
+      "curve": {
+        "0": {
+          "reward_per_round": 0.43835312128067017,
+          "ladder10": {
+            "C_individual": 0.02449,
+            "C_env": 0.0,
+            "C_pair": 0.0039,
+            "C_high": 0.00846,
+            "C_total": 0.03686,
+            "H_P": 9.92893
+          },
+          "ladder2_parity": {
+            "C_individual": 0.00183,
+            "C_env": 0.0,
+            "C_pair": 2e-05,
+            "C_high": 2e-05,
+            "C_total": 0.00186,
+            "H_P": 2.99814
+          }
+        },
+        "50": {
+          "reward_per_round": 0.4433969259262085,
+          "ladder10": {
+            "C_individual": 0.02177,
+            "C_env": 0.0,
+            "C_pair": 0.00452,
+            "C_high": 0.00853,
+            "C_total": 0.03482,
+            "H_P": 9.93097
+          },
+          "ladder2_parity": {
+            "C_individual": 0.00239,
+            "C_env": 0.0,
+            "C_pair": 2e-05,
+            "C_high": 0.0,
+            "C_total": 0.00241,
+            "H_P": 2.99759
+          }
+        },
+        "100": {
+          "reward_per_round": 0.4448906481266022,
+          "ladder10": {
+            "C_individual": 0.02434,
+            "C_env": 0.0,
+            "C_pair": 0.00459,
+            "C_high": 0.00841,
+            "C_total": 0.03734,
+            "H_P": 9.92844
+          },
+          "ladder2_parity": {
+            "C_individual": 0.00307,
+            "C_env": 0.0,
+            "C_pair": 0.00025,
+            "C_high": 0.0,
+            "C_total": 0.00332,
+            "H_P": 2.99668
+          }
+        },
+        "200": {
+          "reward_per_round": 0.45094066858291626,
+          "ladder10": {
+            "C_individual": 0.03344,
+            "C_env": 0.0,
+            "C_pair": 0.00636,
+            "C_high": 0.00833,
+            "C_total": 0.04812,
+            "H_P": 9.91766
+          },
+          "ladder2_parity": {
+            "C_individual": 0.00982,
+            "C_env": 0.0,
+            "C_pair": 0.00115,
+            "C_high": 5e-05,
+            "C_total": 0.01102,
+            "H_P": 2.98898
+          }
+        },
+        "400": {
+          "reward_per_round": 0.6405937075614929,
+          "ladder10": {
+            "C_individual": 0.55871,
+            "C_env": 0.0,
+            "C_pair": 0.15574,
+            "C_high": 0.01628,
+            "C_total": 0.73072,
+            "H_P": 9.23507
+          },
+          "ladder2_parity": {
+            "C_individual": 0.48242,
+            "C_env": 0.0,
+            "C_pair": 0.14545,
+            "C_high": 0.0076,
+            "C_total": 0.63548,
+            "H_P": 2.36452
+          }
+        },
+        "800": {
+          "reward_per_round": 0.9874969124794006,
+          "ladder10": {
+            "C_individual": 2.55354,
+            "C_env": 0.0,
+            "C_pair": 0.92706,
+            "C_high": 0.00317,
+            "C_total": 3.48378,
+            "H_P": 6.48201
+          },
+          "ladder2_parity": {
+            "C_individual": 1.11331,
+            "C_env": 0.0,
+            "C_pair": 0.91804,
+            "C_high": 0.0,
+            "C_total": 2.03135,
+            "H_P": 0.96865
+          }
+        },
+        "1600": {
+          "reward_per_round": 0.9997906684875488,
+          "ladder10": {
+            "C_individual": 4.05779,
+            "C_env": 0.0,
+            "C_pair": 1.00386,
+            "C_high": 0.00106,
+            "C_total": 5.06272,
+            "H_P": 4.90307
+          },
+          "ladder2_parity": {
+            "C_individual": 1.00002,
+            "C_env": 0.0,
+            "C_pair": 0.99901,
+            "C_high": 0.0,
+            "C_total": 1.99903,
+            "H_P": 1.00097
+          }
+        },
+        "3000": {
+          "reward_per_round": 0.9999750256538391,
+          "ladder10": {
+            "C_individual": 3.8849,
+            "C_env": 0.0,
+            "C_pair": 1.01031,
+            "C_high": 0.00059,
+            "C_total": 4.89581,
+            "H_P": 5.06998
+          },
+          "ladder2_parity": {
+            "C_individual": 1.00024,
+            "C_env": 0.0,
+            "C_pair": 0.99962,
+            "C_high": 0.0,
+            "C_total": 1.99986,
+            "H_P": 1.00014
+          }
+        }
+      },
+      "reward_curve": {
+        "0": 0.43835312128067017,
+        "50": 0.4433969259262085,
+        "100": 0.4448906481266022,
+        "200": 0.45094066858291626,
+        "400": 0.6405937075614929,
+        "800": 0.9874969124794006,
+        "1600": 0.9997906684875488,
+        "3000": 0.9999750256538391
+      }
+    },
+    "95202": {
+      "seed": 95202,
+      "curve": {
+        "0": {
+          "reward_per_round": 0.4424312710762024,
+          "ladder10": {
+            "C_individual": 0.02657,
+            "C_env": 0.0,
+            "C_pair": 0.00401,
+            "C_high": 0.00862,
+            "C_total": 0.0392,
+            "H_P": 9.92658
+          },
+          "ladder2_parity": {
+            "C_individual": 0.00027,
+            "C_env": 0.0,
+            "C_pair": 7e-05,
+            "C_high": 0.0,
+            "C_total": 0.00034,
+            "H_P": 2.99966
+          }
+        },
+        "50": {
+          "reward_per_round": 0.44226565957069397,
+          "ladder10": {
+            "C_individual": 0.02647,
+            "C_env": 0.0,
+            "C_pair": 0.00446,
+            "C_high": 0.0079,
+            "C_total": 0.03884,
+            "H_P": 9.92695
+          },
+          "ladder2_parity": {
+            "C_individual": 0.00027,
+            "C_env": 0.0,
+            "C_pair": 0.0001,
+            "C_high": 0.0,
+            "C_total": 0.00037,
+            "H_P": 2.99963
+          }
+        },
+        "100": {
+          "reward_per_round": 0.44318750500679016,
+          "ladder10": {
+            "C_individual": 0.02339,
+            "C_env": 0.0,
+            "C_pair": 0.00388,
+            "C_high": 0.00862,
+            "C_total": 0.03588,
+            "H_P": 9.9299
+          },
+          "ladder2_parity": {
+            "C_individual": 0.00018,
+            "C_env": 0.0,
+            "C_pair": 3e-05,
+            "C_high": 0.0,
+            "C_total": 0.0002,
+            "H_P": 2.9998
+          }
+        },
+        "200": {
+          "reward_per_round": 0.45449379086494446,
+          "ladder10": {
+            "C_individual": 0.01718,
+            "C_env": 0.0,
+            "C_pair": 0.00508,
+            "C_high": 0.00842,
+            "C_total": 0.03067,
+            "H_P": 9.93511
+          },
+          "ladder2_parity": {
+            "C_individual": 0.00031,
+            "C_env": 0.0,
+            "C_pair": 6e-05,
+            "C_high": 0.00025,
+            "C_total": 0.00062,
+            "H_P": 2.99938
+          }
+        },
+        "400": {
+          "reward_per_round": 0.5130593776702881,
+          "ladder10": {
+            "C_individual": 0.03486,
+            "C_env": 0.0,
+            "C_pair": 0.01025,
+            "C_high": 0.01945,
+            "C_total": 0.06455,
+            "H_P": 9.90123
+          },
+          "ladder2_parity": {
+            "C_individual": 0.01312,
+            "C_env": 0.0,
+            "C_pair": 0.00477,
+            "C_high": 0.00981,
+            "C_total": 0.0277,
+            "H_P": 2.9723
+          }
+        },
+        "800": {
+          "reward_per_round": 0.9851374626159668,
+          "ladder10": {
+            "C_individual": 1.96236,
+            "C_env": 0.0,
+            "C_pair": 0.97024,
+            "C_high": 0.00391,
+            "C_total": 2.9365,
+            "H_P": 7.02928
+          },
+          "ladder2_parity": {
+            "C_individual": 0.99566,
+            "C_env": 0.0,
+            "C_pair": 0.96312,
+            "C_high": 0.0,
+            "C_total": 1.95878,
+            "H_P": 1.04122
+          }
+        },
+        "1600": {
+          "reward_per_round": 0.9998093843460083,
+          "ladder10": {
+            "C_individual": 3.12161,
+            "C_env": 0.0,
+            "C_pair": 1.00637,
+            "C_high": 0.00138,
+            "C_total": 4.12937,
+            "H_P": 5.83641
+          },
+          "ladder2_parity": {
+            "C_individual": 1.00001,
+            "C_env": 0.0,
+            "C_pair": 0.99928,
+            "C_high": 0.0,
+            "C_total": 1.99929,
+            "H_P": 1.00071
+          }
+        },
+        "3000": {
+          "reward_per_round": 0.9999250173568726,
+          "ladder10": {
+            "C_individual": 2.93251,
+            "C_env": 0.0,
+            "C_pair": 1.00241,
+            "C_high": 0.00111,
+            "C_total": 3.93602,
+            "H_P": 6.02976
+          },
+          "ladder2_parity": {
+            "C_individual": 1.00001,
+            "C_env": 0.0,
+            "C_pair": 0.99923,
+            "C_high": 0.0,
+            "C_total": 1.99925,
+            "H_P": 1.00075
+          }
+        }
+      },
+      "reward_curve": {
+        "0": 0.4424312710762024,
+        "50": 0.44226565957069397,
+        "100": 0.44318750500679016,
+        "200": 0.45449379086494446,
+        "400": 0.5130593776702881,
+        "800": 0.9851374626159668,
+        "1600": 0.9998093843460083,
+        "3000": 0.9999250173568726
+      }
+    },
+    "95203": {
+      "seed": 95203,
+      "curve": {
+        "0": {
+          "reward_per_round": 0.4397469162940979,
+          "ladder10": {
+            "C_individual": 0.02014,
+            "C_env": 0.0,
+            "C_pair": 0.00369,
+            "C_high": 0.00857,
+            "C_total": 0.0324,
+            "H_P": 9.93339
+          },
+          "ladder2_parity": {
+            "C_individual": 0.00136,
+            "C_env": 0.0,
+            "C_pair": 3e-05,
+            "C_high": 0.0,
+            "C_total": 0.00139,
+            "H_P": 2.99861
+          }
+        },
+        "50": {
+          "reward_per_round": 0.4419812560081482,
+          "ladder10": {
+            "C_individual": 0.02007,
+            "C_env": 0.0,
+            "C_pair": 0.00378,
+            "C_high": 0.00815,
+            "C_total": 0.032,
+            "H_P": 9.93378
+          },
+          "ladder2_parity": {
+            "C_individual": 0.00065,
+            "C_env": 0.0,
+            "C_pair": 1e-05,
+            "C_high": 0.0,
+            "C_total": 0.00066,
+            "H_P": 2.99934
+          }
+        },
+        "100": {
+          "reward_per_round": 0.44638127088546753,
+          "ladder10": {
+            "C_individual": 0.02197,
+            "C_env": 0.0,
+            "C_pair": 0.00492,
+            "C_high": 0.00882,
+            "C_total": 0.03572,
+            "H_P": 9.93007
+          },
+          "ladder2_parity": {
+            "C_individual": 0.0008,
+            "C_env": 0.0,
+            "C_pair": 3e-05,
+            "C_high": 5e-05,
+            "C_total": 0.00089,
+            "H_P": 2.99911
+          }
+        },
+        "200": {
+          "reward_per_round": 0.4532187581062317,
+          "ladder10": {
+            "C_individual": 0.02027,
+            "C_env": 0.0,
+            "C_pair": 0.00566,
+            "C_high": 0.00926,
+            "C_total": 0.03519,
+            "H_P": 9.93059
+          },
+          "ladder2_parity": {
+            "C_individual": 0.00084,
+            "C_env": 0.0,
+            "C_pair": 5e-05,
+            "C_high": 0.00018,
+            "C_total": 0.00106,
+            "H_P": 2.99894
+          }
+        },
+        "400": {
+          "reward_per_round": 0.5506187677383423,
+          "ladder10": {
+            "C_individual": 0.14573,
+            "C_env": 0.0,
+            "C_pair": 0.03711,
+            "C_high": 0.02508,
+            "C_total": 0.20792,
+            "H_P": 9.75786
+          },
+          "ladder2_parity": {
+            "C_individual": 0.09801,
+            "C_env": 0.0,
+            "C_pair": 0.02762,
+            "C_high": 0.01673,
+            "C_total": 0.14237,
+            "H_P": 2.85763
+          }
+        },
+        "800": {
+          "reward_per_round": 0.9859468936920166,
+          "ladder10": {
+            "C_individual": 2.63902,
+            "C_env": 0.0,
+            "C_pair": 0.97648,
+            "C_high": 0.00427,
+            "C_total": 3.61977,
+            "H_P": 6.34601
+          },
+          "ladder2_parity": {
+            "C_individual": 0.99781,
+            "C_env": 0.0,
+            "C_pair": 0.9663,
+            "C_high": 0.0,
+            "C_total": 1.96411,
+            "H_P": 1.03589
+          }
+        },
+        "1600": {
+          "reward_per_round": 0.9995093941688538,
+          "ladder10": {
+            "C_individual": 3.43632,
+            "C_env": 0.0,
+            "C_pair": 1.00825,
+            "C_high": 0.0015,
+            "C_total": 4.44607,
+            "H_P": 5.51972
+          },
+          "ladder2_parity": {
+            "C_individual": 1.00001,
+            "C_env": 0.0,
+            "C_pair": 0.99857,
+            "C_high": 0.0,
+            "C_total": 1.99857,
+            "H_P": 1.00143
+          }
+        },
+        "3000": {
+          "reward_per_round": 0.99990314245224,
+          "ladder10": {
+            "C_individual": 3.1076,
+            "C_env": 0.0,
+            "C_pair": 1.01353,
+            "C_high": 0.00106,
+            "C_total": 4.12219,
+            "H_P": 5.84359
+          },
+          "ladder2_parity": {
+            "C_individual": 1.00006,
+            "C_env": 0.0,
+            "C_pair": 0.99971,
+            "C_high": 0.0,
+            "C_total": 1.99977,
+            "H_P": 1.00023
+          }
+        }
+      },
+      "reward_curve": {
+        "0": 0.4397469162940979,
+        "50": 0.4419812560081482,
+        "100": 0.44638127088546753,
+        "200": 0.4532187581062317,
+        "400": 0.5506187677383423,
+        "800": 0.9859468936920166,
+        "1600": 0.9995093941688538,
+        "3000": 0.99990314245224
+      }
+    }
+  },
+  "registered_outcomes": {
+    "TRIB1_formation": true,
+    "TRIB2_relational_carrier": true,
+    "TRIB3_higher_order": false,
+    "training_failure_seeds": []
+  }
+}

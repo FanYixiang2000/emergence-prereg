@@ -1,0 +1,3007 @@
+{
+  "status": "cross-fitted basin discovery from low-level trajectories only (coordinates, actions, rewards); k by silhouette; predictions XF-1..XF-3 frozen in the docstring",
+  "per_method": {
+    "kmeans": {
+      "identifiable_seeds": "15/15",
+      "controls_rejected": "60/60",
+      "learned_accepted": "14/15",
+      "verdict_agreement_with_hand_basins": "72/75"
+    },
+    "gmm": {
+      "identifiable_seeds": "14/15",
+      "controls_rejected": "60/60",
+      "learned_accepted": "13/15",
+      "verdict_agreement_with_hand_basins": "71/75"
+    },
+    "ward": {
+      "identifiable_seeds": "15/15",
+      "controls_rejected": "60/60",
+      "learned_accepted": "14/15",
+      "verdict_agreement_with_hand_basins": "72/75"
+    },
+    "pca_kmeans": {
+      "identifiable_seeds": "15/15",
+      "controls_rejected": "60/60",
+      "learned_accepted": "14/15",
+      "verdict_agreement_with_hand_basins": "72/75"
+    }
+  },
+  "registered_outcomes": {
+    "XF1_pass": true,
+    "XF2_pass": true,
+    "XF3_mean_agreement": 0.9566666666666667,
+    "XF3_pass": true
+  },
+  "seeds": {
+    "1101": {
+      "kmeans": {
+        "k": 8,
+        "silhouette": 0.38965720425716377,
+        "metrics": {
+          "learned": {
+            "potential_bits": 2.0,
+            "conditional_selectivity": 1.0,
+            "specificity_js_bits": 1.0,
+            "usefulness_gap": 0.07648252762661695,
+            "identifiability_mi_bits": 1.0
+          },
+          "initial_twin": {
+            "potential_bits": 2.6226018821556334,
+            "conditional_selectivity": 0.0,
+            "specificity_js_bits": 0.29235729217416595,
+            "usefulness_gap": -0.13988468958333333,
+            "identifiability_mi_bits": 0.0
+          },
+          "team_nearest": {
+            "potential_bits": 2.0,
+            "conditional_selectivity": 1.0,
+            "specificity_js_bits": 0.6556390622295664,
+            "usefulness_gap": 0.10106879874583335,
+            "identifiability_mi_bits": 1.0
+          },
+          "fixed_food0": {
+            "potential_bits": 1.5,
+            "conditional_selectivity": 0.35,
+            "specificity_js_bits": 0.6556390622295664,
+            "usefulness_gap": 0.03501064969663331,
+            "identifiability_mi_bits": 0.4486931102488845
+          },
+          "fixed_food1": {
+            "potential_bits": 2.0,
+            "conditional_selectivity": 0.0,
+            "specificity_js_bits": 0.6556390622295664,
+            "usefulness_gap": -0.00205618475416669,
+            "identifiability_mi_bits": 0.0
+          }
+        },
+        "verdicts": {
+          "learned": 1,
+          "initial_twin": 0,
+          "team_nearest": 0,
+          "fixed_food0": 0,
+          "fixed_food1": 0
+        },
+        "learned_identifiable": true
+      },
+      "gmm": {
+        "k": 7,
+        "silhouette": 0.3646897930370022,
+        "metrics": {
+          "learned": {
+            "potential_bits": 1.979506586778816,
+            "conditional_selectivity": 1.0,
+            "specificity_js_bits": 0.4259515761096094,
+            "usefulness_gap": 0.07648252762661695,
+            "identifiability_mi_bits": 0.729276964417239
+          },
+          "initial_twin": {
+            "potential_bits": 0.9609839942091464,
+            "conditional_selectivity": 0.0,
+            "specificity_js_bits": 0.1557538883844279,
+            "usefulness_gap": -0.13988468958333333,
+            "identifiability_mi_bits": 0.0
+          },
+          "team_nearest": {
+            "potential_bits": 2.0,
+            "conditional_selectivity": 1.0,
+            "specificity_js_bits": 0.75,
+            "usefulness_gap": 0.10106879874583335,
+            "identifiability_mi_bits": 1.0
+          },
+          "fixed_food0": {
+            "potential_bits": 1.5,
+            "conditional_selectivity": 0.35,
+            "specificity_js_bits": 0.75,
+            "usefulness_gap": 0.03501064969663331,
+            "identifiability_mi_bits": 0.4486931102488845
+          },
+          "fixed_food1": {
+            "potential_bits": 2.0,
+            "conditional_selectivity": 0.0,
+            "specificity_js_bits": 0.75,
+            "usefulness_gap": -0.00205618475416669,
+            "identifiability_mi_bits": 0.0
+          }
+        },
+        "verdicts": {
+          "learned": 1,
+          "initial_twin": 0,
+          "team_nearest": 0,
+          "fixed_food0": 0,
+          "fixed_food1": 0
+        },
+        "learned_identifiable": true
+      },
+      "ward": {
+        "k": 8,
+        "silhouette": 0.386146359144784,
+        "metrics": {
+          "learned": {
+            "potential_bits": 1.999097939521405,
+            "conditional_selectivity": 1.0,
+            "specificity_js_bits": 0.9756518307967866,
+            "usefulness_gap": 0.07648252762661695,
+            "identifiability_mi_bits": 0.927498700242416
+          },
+          "initial_twin": {
+            "potential_bits": 2.262280767335777,
+            "conditional_selectivity": 0.0,
+            "specificity_js_bits": 0.22268545383908697,
+            "usefulness_gap": -0.13988468958333333,
+            "identifiability_mi_bits": 0.0
+          },
+          "team_nearest": {
+            "potential_bits": 2.0,
+            "conditional_selectivity": 1.0,
+            "specificity_js_bits": 0.6556390622295665,
+            "usefulness_gap": 0.10106879874583335,
+            "identifiability_mi_bits": 1.0
+          },
+          "fixed_food0": {
+            "potential_bits": 1.5,
+            "conditional_selectivity": 0.35,
+            "specificity_js_bits": 0.6556390622295665,
+            "usefulness_gap": 0.03501064969663331,
+            "identifiability_mi_bits": 0.4486931102488845
+          },
+          "fixed_food1": {
+            "potential_bits": 2.0,
+            "conditional_selectivity": 0.0,
+            "specificity_js_bits": 0.6556390622295665,
+            "usefulness_gap": -0.00205618475416669,
+            "identifiability_mi_bits": 0.0
+          }
+        },
+        "verdicts": {
+          "learned": 1,
+          "initial_twin": 0,
+          "team_nearest": 0,
+          "fixed_food0": 0,
+          "fixed_food1": 0
+        },
+        "learned_identifiable": true
+      },
+      "pca_kmeans": {
+        "k": 8,
+        "silhouette": 0.4813252139869066,
+        "metrics": {
+          "learned": {
+            "potential_bits": 2.0,
+            "conditional_selectivity": 1.0,
+            "specificity_js_bits": 0.9435462065623677,
+            "usefulness_gap": 0.07648252762661695,
+            "identifiability_mi_bits": 1.0
+          },
+          "initial_twin": {
+            "potential_bits": 2.531589628687854,
+            "conditional_selectivity": 0.0,
+            "specificity_js_bits": 0.2188073547028978,
+            "usefulness_gap": -0.13988468958333333,
+            "identifiability_mi_bits": 0.0
+          },
+          "team_nearest": {
+            "potential_bits": 2.0,
+            "conditional_selectivity": 1.0,
+            "specificity_js_bits": 1.0,
+            "usefulness_gap": 0.10106879874583335,
+            "identifiability_mi_bits": 1.0
+          },
+          "fixed_food0": {
+            "potential_bits": 1.5,
+            "conditional_selectivity": 0.35,
+            "specificity_js_bits": 1.0,
+            "usefulness_gap": 0.03501064969663331,
+            "identifiability_mi_bits": 0.4486931102488845
+          },
+          "fixed_food1": {
+            "potential_bits": 2.0,
+            "conditional_selectivity": 0.0,
+            "specificity_js_bits": 1.0,
+            "usefulness_gap": -0.00205618475416669,
+            "identifiability_mi_bits": 0.0
+          }
+        },
+        "verdicts": {
+          "learned": 1,
+          "initial_twin": 0,
+          "team_nearest": 0,
+          "fixed_food0": 0,
+          "fixed_food1": 0
+        },
+        "learned_identifiable": true
+      }
+    },
+    "1102": {
+      "kmeans": {
+        "k": 8,
+        "silhouette": 0.38536465160484545,
+        "metrics": {
+          "learned": {
+            "potential_bits": 2.0,
+            "conditional_selectivity": 1.0,
+            "specificity_js_bits": 0.5549932735054938,
+            "usefulness_gap": 0.08052568384384767,
+            "identifiability_mi_bits": 1.0
+          },
+          "initial_twin": {
+            "potential_bits": 2.0106946270503316,
+            "conditional_selectivity": 0.0,
+            "specificity_js_bits": 0.2414828255664054,
+            "usefulness_gap": -0.13502307291666665,
+            "identifiability_mi_bits": 0.0
+          },
+          "team_nearest": {
+            "potential_bits": 2.0,
+            "conditional_selectivity": 1.0,
+            "specificity_js_bits": 1.0,
+            "usefulness_gap": 0.09099494525916657,
+            "identifiability_mi_bits": 1.0
+          },
+          "fixed_food0": {
+            "potential_bits": 1.5,
+            "conditional_selectivity": 0.275,
+            "specificity_js_bits": 1.0,
+            "usefulness_gap": 0.040022575718766606,
+            "identifiability_mi_bits": 0.32946028985661124
+          },
+          "fixed_food1": {
+            "potential_bits": 2.0,
+            "conditional_selectivity": 0.0,
+            "specificity_js_bits": 1.0,
+            "usefulness_gap": -0.0028084374908334264,
+            "identifiability_mi_bits": 0.0
+          }
+        },
+        "verdicts": {
+          "learned": 1,
+          "initial_twin": 0,
+          "team_nearest": 0,
+          "fixed_food0": 0,
+          "fixed_food1": 0
+        },
+        "learned_identifiable": true
+      },
+      "gmm": {
+        "k": 8,
+        "silhouette": 0.3568579902108425,
+        "metrics": {
+          "learned": {
+            "potential_bits": 1.980432010793153,
+            "conditional_selectivity": 1.0,
+            "specificity_js_bits": 0.3636053912021322,
+            "usefulness_gap": 0.08052568384384767,
+            "identifiability_mi_bits": 0.7785145401569649
+          },
+          "initial_twin": {
+            "potential_bits": 1.87796277752477,
+            "conditional_selectivity": 0.0,
+            "specificity_js_bits": 0.2944694259889734,
+            "usefulness_gap": -0.13502307291666665,
+            "identifiability_mi_bits": 0.0
+          },
+          "team_nearest": {
+            "potential_bits": 2.0,
+            "conditional_selectivity": 1.0,
+            "specificity_js_bits": 0.4056390622295664,
+            "usefulness_gap": 0.09099494525916657,
+            "identifiability_mi_bits": 1.0
+          },
+          "fixed_food0": {
+            "potential_bits": 1.5,
+            "conditional_selectivity": 0.275,
+            "specificity_js_bits": 0.4056390622295664,
+            "usefulness_gap": 0.040022575718766606,
+            "identifiability_mi_bits": 0.32946028985661124
+          },
+          "fixed_food1": {
+            "potential_bits": 2.0,
+            "conditional_selectivity": 0.0,
+            "specificity_js_bits": 0.4056390622295664,
+            "usefulness_gap": -0.0028084374908334264,
+            "identifiability_mi_bits": 0.0
+          }
+        },
+        "verdicts": {
+          "learned": 1,
+          "initial_twin": 0,
+          "team_nearest": 0,
+          "fixed_food0": 0,
+          "fixed_food1": 0
+        },
+        "learned_identifiable": true
+      },
+      "ward": {
+        "k": 8,
+        "silhouette": 0.35622009754372513,
+        "metrics": {
+          "learned": {
+            "potential_bits": 2.2203227248076733,
+            "conditional_selectivity": 1.0,
+            "specificity_js_bits": 0.7946679805377453,
+            "usefulness_gap": 0.08052568384384767,
+            "identifiability_mi_bits": 1.0
+          },
+          "initial_twin": {
+            "potential_bits": 2.402901074507173,
+            "conditional_selectivity": 0.0,
+            "specificity_js_bits": 0.22727275695310759,
+            "usefulness_gap": -0.13502307291666665,
+            "identifiability_mi_bits": 0.0
+          },
+          "team_nearest": {
+            "potential_bits": 2.0,
+            "conditional_selectivity": 1.0,
+            "specificity_js_bits": 0.6556390622295665,
+            "usefulness_gap": 0.09099494525916657,
+            "identifiability_mi_bits": 1.0
+          },
+          "fixed_food0": {
+            "potential_bits": 1.5,
+            "conditional_selectivity": 0.275,
+            "specificity_js_bits": 0.6556390622295665,
+            "usefulness_gap": 0.040022575718766606,
+            "identifiability_mi_bits": 0.32946028985661124
+          },
+          "fixed_food1": {
+            "potential_bits": 2.0,
+            "conditional_selectivity": 0.0,
+            "specificity_js_bits": 0.6556390622295665,
+            "usefulness_gap": -0.0028084374908334264,
+            "identifiability_mi_bits": 0.0
+          }
+        },
+        "verdicts": {
+          "learned": 1,
+          "initial_twin": 0,
+          "team_nearest": 0,
+          "fixed_food0": 0,
+          "fixed_food1": 0
+        },
+        "learned_identifiable": true
+      },
+      "pca_kmeans": {
+        "k": 8,
+        "silhouette": 0.4559544143269268,
+        "metrics": {
+          "learned": {
+            "potential_bits": 2.2919219640866624,
+            "conditional_selectivity": 1.0,
+            "specificity_js_bits": 0.8183872872251571,
+            "usefulness_gap": 0.08052568384384767,
+            "identifiability_mi_bits": 1.0
+          },
+          "initial_twin": {
+            "potential_bits": 2.4084715376702728,
+            "conditional_selectivity": 0.0,
+            "specificity_js_bits": 0.2291203333160327,
+            "usefulness_gap": -0.13502307291666665,
+            "identifiability_mi_bits": 0.0
+          },
+          "team_nearest": {
+            "potential_bits": 2.0,
+            "conditional_selectivity": 1.0,
+            "specificity_js_bits": 0.6556390622295665,
+            "usefulness_gap": 0.09099494525916657,
+            "identifiability_mi_bits": 1.0
+          },
+          "fixed_food0": {
+            "potential_bits": 1.5,
+            "conditional_selectivity": 0.275,
+            "specificity_js_bits": 0.6556390622295665,
+            "usefulness_gap": 0.040022575718766606,
+            "identifiability_mi_bits": 0.32946028985661124
+          },
+          "fixed_food1": {
+            "potential_bits": 2.0,
+            "conditional_selectivity": 0.0,
+            "specificity_js_bits": 0.6556390622295665,
+            "usefulness_gap": -0.0028084374908334264,
+            "identifiability_mi_bits": 0.0
+          }
+        },
+        "verdicts": {
+          "learned": 1,
+          "initial_twin": 0,
+          "team_nearest": 0,
+          "fixed_food0": 0,
+          "fixed_food1": 0
+        },
+        "learned_identifiable": true
+      }
+    },
+    "1103": {
+      "kmeans": {
+        "k": 8,
+        "silhouette": 0.3775541374043999,
+        "metrics": {
+          "learned": {
+            "potential_bits": 2.1278979984006927,
+            "conditional_selectivity": 0.475,
+            "specificity_js_bits": 0.4502657727977224,
+            "usefulness_gap": 0.1409213581090556,
+            "identifiability_mi_bits": 0.8304955225035799
+          },
+          "initial_twin": {
+            "potential_bits": 2.64261427782603,
+            "conditional_selectivity": 0.0,
+            "specificity_js_bits": 0.19558636864566364,
+            "usefulness_gap": -0.14178231666666666,
+            "identifiability_mi_bits": 0.0
+          },
+          "team_nearest": {
+            "potential_bits": 2.0,
+            "conditional_selectivity": 1.0,
+            "specificity_js_bits": 1.0,
+            "usefulness_gap": 0.10151549038166668,
+            "identifiability_mi_bits": 1.0
+          },
+          "fixed_food0": {
+            "potential_bits": 1.5,
+            "conditional_selectivity": 0.30000000000000004,
+            "specificity_js_bits": 1.0,
+            "usefulness_gap": 0.04156632108626662,
+            "identifiability_mi_bits": 0.36710265610273307
+          },
+          "fixed_food1": {
+            "potential_bits": 2.0,
+            "conditional_selectivity": 0.0,
+            "specificity_js_bits": 1.0,
+            "usefulness_gap": 0.003587140631666652,
+            "identifiability_mi_bits": 0.0
+          }
+        },
+        "verdicts": {
+          "learned": 0,
+          "initial_twin": 0,
+          "team_nearest": 0,
+          "fixed_food0": 0,
+          "fixed_food1": 0
+        },
+        "learned_identifiable": true
+      },
+      "gmm": {
+        "k": 8,
+        "silhouette": 0.3775541374043999,
+        "metrics": {
+          "learned": {
+            "potential_bits": 2.1204154800204607,
+            "conditional_selectivity": 0.475,
+            "specificity_js_bits": 0.5567778286255183,
+            "usefulness_gap": 0.1409213581090556,
+            "identifiability_mi_bits": 0.7547792134153251
+          },
+          "initial_twin": {
+            "potential_bits": 1.2445796792957566,
+            "conditional_selectivity": 0.0,
+            "specificity_js_bits": 0.14036995257201704,
+            "usefulness_gap": -0.14178231666666666,
+            "identifiability_mi_bits": 0.0
+          },
+          "team_nearest": {
+            "potential_bits": 2.0,
+            "conditional_selectivity": 1.0,
+            "specificity_js_bits": 1.0,
+            "usefulness_gap": 0.10151549038166668,
+            "identifiability_mi_bits": 1.0
+          },
+          "fixed_food0": {
+            "potential_bits": 1.5,
+            "conditional_selectivity": 0.30000000000000004,
+            "specificity_js_bits": 1.0,
+            "usefulness_gap": 0.04156632108626662,
+            "identifiability_mi_bits": 0.36710265610273307
+          },
+          "fixed_food1": {
+            "potential_bits": 2.0,
+            "conditional_selectivity": 0.0,
+            "specificity_js_bits": 1.0,
+            "usefulness_gap": 0.003587140631666652,
+            "identifiability_mi_bits": 0.0
+          }
+        },
+        "verdicts": {
+          "learned": 0,
+          "initial_twin": 0,
+          "team_nearest": 0,
+          "fixed_food0": 0,
+          "fixed_food1": 0
+        },
+        "learned_identifiable": true
+      },
+      "ward": {
+        "k": 8,
+        "silhouette": 0.3595374414912466,
+        "metrics": {
+          "learned": {
+            "potential_bits": 2.06043998507729,
+            "conditional_selectivity": 0.475,
+            "specificity_js_bits": 0.4486304100844882,
+            "usefulness_gap": 0.1409213581090556,
+            "identifiability_mi_bits": 0.8304955225035795
+          },
+          "initial_twin": {
+            "potential_bits": 2.484433478319671,
+            "conditional_selectivity": 0.0,
+            "specificity_js_bits": 0.2821000906336154,
+            "usefulness_gap": -0.14178231666666666,
+            "identifiability_mi_bits": 0.0
+          },
+          "team_nearest": {
+            "potential_bits": 2.0,
+            "conditional_selectivity": 1.0,
+            "specificity_js_bits": 0.6556390622295665,
+            "usefulness_gap": 0.10151549038166668,
+            "identifiability_mi_bits": 1.0
+          },
+          "fixed_food0": {
+            "potential_bits": 1.5,
+            "conditional_selectivity": 0.30000000000000004,
+            "specificity_js_bits": 0.6556390622295665,
+            "usefulness_gap": 0.04156632108626662,
+            "identifiability_mi_bits": 0.36710265610273307
+          },
+          "fixed_food1": {
+            "potential_bits": 2.0,
+            "conditional_selectivity": 0.0,
+            "specificity_js_bits": 0.6556390622295665,
+            "usefulness_gap": 0.003587140631666652,
+            "identifiability_mi_bits": 0.0
+          }
+        },
+        "verdicts": {
+          "learned": 0,
+          "initial_twin": 0,
+          "team_nearest": 0,
+          "fixed_food0": 0,
+          "fixed_food1": 0
+        },
+        "learned_identifiable": true
+      },
+      "pca_kmeans": {
+        "k": 8,
+        "silhouette": 0.4635514375494395,
+        "metrics": {
+          "learned": {
+            "potential_bits": 2.1278979984006927,
+            "conditional_selectivity": 0.475,
+            "specificity_js_bits": 0.4486304100844881,
+            "usefulness_gap": 0.1409213581090556,
+            "identifiability_mi_bits": 0.8304955225035799
+          },
+          "initial_twin": {
+            "potential_bits": 2.642835714654167,
+            "conditional_selectivity": 0.0,
+            "specificity_js_bits": 0.23474521136900278,
+            "usefulness_gap": -0.14178231666666666,
+            "identifiability_mi_bits": 0.0
+          },
+          "team_nearest": {
+            "potential_bits": 2.0,
+            "conditional_selectivity": 1.0,
+            "specificity_js_bits": 0.6556390622295664,
+            "usefulness_gap": 0.10151549038166668,
+            "identifiability_mi_bits": 1.0
+          },
+          "fixed_food0": {
+            "potential_bits": 1.5,
+            "conditional_selectivity": 0.30000000000000004,
+            "specificity_js_bits": 0.6556390622295664,
+            "usefulness_gap": 0.04156632108626662,
+            "identifiability_mi_bits": 0.36710265610273307
+          },
+          "fixed_food1": {
+            "potential_bits": 2.0,
+            "conditional_selectivity": 0.0,
+            "specificity_js_bits": 0.6556390622295664,
+            "usefulness_gap": 0.003587140631666652,
+            "identifiability_mi_bits": 0.0
+          }
+        },
+        "verdicts": {
+          "learned": 0,
+          "initial_twin": 0,
+          "team_nearest": 0,
+          "fixed_food0": 0,
+          "fixed_food1": 0
+        },
+        "learned_identifiable": true
+      }
+    },
+    "1104": {
+      "kmeans": {
+        "k": 8,
+        "silhouette": 0.3806732977599508,
+        "metrics": {
+          "learned": {
+            "potential_bits": 1.52319587904281,
+            "conditional_selectivity": 0.5,
+            "specificity_js_bits": 0.6458800755157026,
+            "usefulness_gap": 0.08127144628469113,
+            "identifiability_mi_bits": 0.7387768247015489
+          },
+          "initial_twin": {
+            "potential_bits": 2.286430865800811,
+            "conditional_selectivity": 0.0,
+            "specificity_js_bits": 0.3191378490377038,
+            "usefulness_gap": -0.15187992677096865,
+            "identifiability_mi_bits": 0.0
+          },
+          "team_nearest": {
+            "potential_bits": 2.0,
+            "conditional_selectivity": 1.0,
+            "specificity_js_bits": 1.0,
+            "usefulness_gap": 0.14153457148250004,
+            "identifiability_mi_bits": 1.0
+          },
+          "fixed_food0": {
+            "potential_bits": 1.5,
+            "conditional_selectivity": 0.275,
+            "specificity_js_bits": 1.0,
+            "usefulness_gap": 0.07605941900899998,
+            "identifiability_mi_bits": 0.32946028985661124
+          },
+          "fixed_food1": {
+            "potential_bits": 2.0,
+            "conditional_selectivity": 0.0,
+            "specificity_js_bits": 1.0,
+            "usefulness_gap": 0.023466486732499958,
+            "identifiability_mi_bits": 0.0
+          }
+        },
+        "verdicts": {
+          "learned": 1,
+          "initial_twin": 0,
+          "team_nearest": 0,
+          "fixed_food0": 0,
+          "fixed_food1": 0
+        },
+        "learned_identifiable": true
+      },
+      "gmm": {
+        "k": 8,
+        "silhouette": 0.3709466424475895,
+        "metrics": {
+          "learned": {
+            "potential_bits": 1.456242911747447,
+            "conditional_selectivity": 0.5,
+            "specificity_js_bits": 0.3838006335011901,
+            "usefulness_gap": 0.08127144628469113,
+            "identifiability_mi_bits": 0.2756669048949869
+          },
+          "initial_twin": {
+            "potential_bits": 0.9917601481809735,
+            "conditional_selectivity": 0.0,
+            "specificity_js_bits": 0.2645984246425228,
+            "usefulness_gap": -0.15187992677096865,
+            "identifiability_mi_bits": 0.0
+          },
+          "team_nearest": {
+            "potential_bits": 2.0,
+            "conditional_selectivity": 1.0,
+            "specificity_js_bits": 0.75,
+            "usefulness_gap": 0.14153457148250004,
+            "identifiability_mi_bits": 1.0
+          },
+          "fixed_food0": {
+            "potential_bits": 1.5,
+            "conditional_selectivity": 0.275,
+            "specificity_js_bits": 0.75,
+            "usefulness_gap": 0.07605941900899998,
+            "identifiability_mi_bits": 0.32946028985661124
+          },
+          "fixed_food1": {
+            "potential_bits": 2.0,
+            "conditional_selectivity": 0.0,
+            "specificity_js_bits": 0.75,
+            "usefulness_gap": 0.023466486732499958,
+            "identifiability_mi_bits": 0.0
+          }
+        },
+        "verdicts": {
+          "learned": 1,
+          "initial_twin": 0,
+          "team_nearest": 0,
+          "fixed_food0": 0,
+          "fixed_food1": 0
+        },
+        "learned_identifiable": true
+      },
+      "ward": {
+        "k": 8,
+        "silhouette": 0.3631158160224783,
+        "metrics": {
+          "learned": {
+            "potential_bits": 1.511829165990751,
+            "conditional_selectivity": 0.5,
+            "specificity_js_bits": 0.6507232127190765,
+            "usefulness_gap": 0.08127144628469113,
+            "identifiability_mi_bits": 0.8112781244591329
+          },
+          "initial_twin": {
+            "potential_bits": 2.3510604622376094,
+            "conditional_selectivity": 0.0,
+            "specificity_js_bits": 0.29591994881637484,
+            "usefulness_gap": -0.15187992677096865,
+            "identifiability_mi_bits": 0.0
+          },
+          "team_nearest": {
+            "potential_bits": 1.5,
+            "conditional_selectivity": 1.0,
+            "specificity_js_bits": 1.0,
+            "usefulness_gap": 0.14153457148250004,
+            "identifiability_mi_bits": 1.0
+          },
+          "fixed_food0": {
+            "potential_bits": 1.5,
+            "conditional_selectivity": 0.275,
+            "specificity_js_bits": 1.0,
+            "usefulness_gap": 0.07605941900899998,
+            "identifiability_mi_bits": 0.32946028985661124
+          },
+          "fixed_food1": {
+            "potential_bits": 1.5,
+            "conditional_selectivity": 0.0,
+            "specificity_js_bits": 1.0,
+            "usefulness_gap": 0.023466486732499958,
+            "identifiability_mi_bits": 0.0
+          }
+        },
+        "verdicts": {
+          "learned": 1,
+          "initial_twin": 0,
+          "team_nearest": 0,
+          "fixed_food0": 0,
+          "fixed_food1": 0
+        },
+        "learned_identifiable": true
+      },
+      "pca_kmeans": {
+        "k": 8,
+        "silhouette": 0.4717234052588724,
+        "metrics": {
+          "learned": {
+            "potential_bits": 1.522336807154562,
+            "conditional_selectivity": 0.5,
+            "specificity_js_bits": 0.6001521511307629,
+            "usefulness_gap": 0.08127144628469113,
+            "identifiability_mi_bits": 0.8112781244591329
+          },
+          "initial_twin": {
+            "potential_bits": 2.281555329154621,
+            "conditional_selectivity": 0.0,
+            "specificity_js_bits": 0.3615676938335598,
+            "usefulness_gap": -0.15187992677096865,
+            "identifiability_mi_bits": 0.0
+          },
+          "team_nearest": {
+            "potential_bits": 1.5,
+            "conditional_selectivity": 1.0,
+            "specificity_js_bits": 1.0,
+            "usefulness_gap": 0.14153457148250004,
+            "identifiability_mi_bits": 1.0
+          },
+          "fixed_food0": {
+            "potential_bits": 1.5,
+            "conditional_selectivity": 0.275,
+            "specificity_js_bits": 1.0,
+            "usefulness_gap": 0.07605941900899998,
+            "identifiability_mi_bits": 0.32946028985661124
+          },
+          "fixed_food1": {
+            "potential_bits": 1.5,
+            "conditional_selectivity": 0.0,
+            "specificity_js_bits": 1.0,
+            "usefulness_gap": 0.023466486732499958,
+            "identifiability_mi_bits": 0.0
+          }
+        },
+        "verdicts": {
+          "learned": 1,
+          "initial_twin": 0,
+          "team_nearest": 0,
+          "fixed_food0": 0,
+          "fixed_food1": 0
+        },
+        "learned_identifiable": true
+      }
+    },
+    "1105": {
+      "kmeans": {
+        "k": 8,
+        "silhouette": 0.3859690410602826,
+        "metrics": {
+          "learned": {
+            "potential_bits": 2.052933310550737,
+            "conditional_selectivity": 1.0,
+            "specificity_js_bits": 0.4362377376250469,
+            "usefulness_gap": 0.010947790729197548,
+            "identifiability_mi_bits": 0.7785145401569649
+          },
+          "initial_twin": {
+            "potential_bits": 2.0188973299980373,
+            "conditional_selectivity": 0.0,
+            "specificity_js_bits": 0.34676438281027405,
+            "usefulness_gap": -0.14698573283333333,
+            "identifiability_mi_bits": 0.0
+          },
+          "team_nearest": {
+            "potential_bits": 2.0,
+            "conditional_selectivity": 1.0,
+            "specificity_js_bits": 0.6556390622295665,
+            "usefulness_gap": 0.07774948236999996,
+            "identifiability_mi_bits": 1.0
+          },
+          "fixed_food0": {
+            "potential_bits": 1.5,
+            "conditional_selectivity": 0.275,
+            "specificity_js_bits": 0.6556390622295665,
+            "usefulness_gap": 0.025807301394699944,
+            "identifiability_mi_bits": 0.32946028985661124
+          },
+          "fixed_food1": {
+            "potential_bits": 2.0,
+            "conditional_selectivity": 0.0,
+            "specificity_js_bits": 0.6556390622295665,
+            "usefulness_gap": -0.01643793788000003,
+            "identifiability_mi_bits": 0.0
+          }
+        },
+        "verdicts": {
+          "learned": 1,
+          "initial_twin": 0,
+          "team_nearest": 0,
+          "fixed_food0": 0,
+          "fixed_food1": 0
+        },
+        "learned_identifiable": true
+      },
+      "gmm": {
+        "k": 8,
+        "silhouette": 0.3659855580657377,
+        "metrics": {
+          "learned": {
+            "potential_bits": 2.3523580009320915,
+            "conditional_selectivity": 1.0,
+            "specificity_js_bits": 0.15993767204101214,
+            "usefulness_gap": 0.010947790729197548,
+            "identifiability_mi_bits": 0.8835710281344951
+          },
+          "initial_twin": {
+            "potential_bits": 1.522336807154562,
+            "conditional_selectivity": 0.0,
+            "specificity_js_bits": 0.18113362926169163,
+            "usefulness_gap": -0.14698573283333333,
+            "identifiability_mi_bits": 0.0
+          },
+          "team_nearest": {
+            "potential_bits": 2.0,
+            "conditional_selectivity": 1.0,
+            "specificity_js_bits": 0.75,
+            "usefulness_gap": 0.07774948236999996,
+            "identifiability_mi_bits": 1.0
+          },
+          "fixed_food0": {
+            "potential_bits": 1.5,
+            "conditional_selectivity": 0.275,
+            "specificity_js_bits": 0.75,
+            "usefulness_gap": 0.025807301394699944,
+            "identifiability_mi_bits": 0.32946028985661124
+          },
+          "fixed_food1": {
+            "potential_bits": 2.0,
+            "conditional_selectivity": 0.0,
+            "specificity_js_bits": 0.75,
+            "usefulness_gap": -0.01643793788000003,
+            "identifiability_mi_bits": 0.0
+          }
+        },
+        "verdicts": {
+          "learned": 0,
+          "initial_twin": 0,
+          "team_nearest": 0,
+          "fixed_food0": 0,
+          "fixed_food1": 0
+        },
+        "learned_identifiable": true
+      },
+      "ward": {
+        "k": 8,
+        "silhouette": 0.3698345582176436,
+        "metrics": {
+          "learned": {
+            "potential_bits": 2.2500184026870707,
+            "conditional_selectivity": 1.0,
+            "specificity_js_bits": 0.3228497039063366,
+            "usefulness_gap": 0.010947790729197548,
+            "identifiability_mi_bits": 0.7876187387746785
+          },
+          "initial_twin": {
+            "potential_bits": 2.1219192775407776,
+            "conditional_selectivity": 0.0,
+            "specificity_js_bits": 0.2595843885168521,
+            "usefulness_gap": -0.14698573283333333,
+            "identifiability_mi_bits": 0.0
+          },
+          "team_nearest": {
+            "potential_bits": 2.0,
+            "conditional_selectivity": 1.0,
+            "specificity_js_bits": 1.0,
+            "usefulness_gap": 0.07774948236999996,
+            "identifiability_mi_bits": 1.0
+          },
+          "fixed_food0": {
+            "potential_bits": 1.5,
+            "conditional_selectivity": 0.275,
+            "specificity_js_bits": 1.0,
+            "usefulness_gap": 0.025807301394699944,
+            "identifiability_mi_bits": 0.32946028985661124
+          },
+          "fixed_food1": {
+            "potential_bits": 2.0,
+            "conditional_selectivity": 0.0,
+            "specificity_js_bits": 1.0,
+            "usefulness_gap": -0.01643793788000003,
+            "identifiability_mi_bits": 0.0
+          }
+        },
+        "verdicts": {
+          "learned": 1,
+          "initial_twin": 0,
+          "team_nearest": 0,
+          "fixed_food0": 0,
+          "fixed_food1": 0
+        },
+        "learned_identifiable": true
+      },
+      "pca_kmeans": {
+        "k": 8,
+        "silhouette": 0.46407220825548867,
+        "metrics": {
+          "learned": {
+            "potential_bits": 2.043471876778999,
+            "conditional_selectivity": 1.0,
+            "specificity_js_bits": 0.44991201369026707,
+            "usefulness_gap": 0.010947790729197548,
+            "identifiability_mi_bits": 0.7515499126923366
+          },
+          "initial_twin": {
+            "potential_bits": 2.0025318449668843,
+            "conditional_selectivity": 0.0,
+            "specificity_js_bits": 0.35532003648925786,
+            "usefulness_gap": -0.14698573283333333,
+            "identifiability_mi_bits": 0.0
+          },
+          "team_nearest": {
+            "potential_bits": 2.0,
+            "conditional_selectivity": 1.0,
+            "specificity_js_bits": 0.6556390622295664,
+            "usefulness_gap": 0.07774948236999996,
+            "identifiability_mi_bits": 1.0
+          },
+          "fixed_food0": {
+            "potential_bits": 1.5,
+            "conditional_selectivity": 0.275,
+            "specificity_js_bits": 0.6556390622295664,
+            "usefulness_gap": 0.025807301394699944,
+            "identifiability_mi_bits": 0.32946028985661124
+          },
+          "fixed_food1": {
+            "potential_bits": 2.0,
+            "conditional_selectivity": 0.0,
+            "specificity_js_bits": 0.6556390622295664,
+            "usefulness_gap": -0.01643793788000003,
+            "identifiability_mi_bits": 0.0
+          }
+        },
+        "verdicts": {
+          "learned": 1,
+          "initial_twin": 0,
+          "team_nearest": 0,
+          "fixed_food0": 0,
+          "fixed_food1": 0
+        },
+        "learned_identifiable": true
+      }
+    },
+    "1106": {
+      "kmeans": {
+        "k": 8,
+        "silhouette": 0.3977575462685374,
+        "metrics": {
+          "learned": {
+            "potential_bits": 1.991854131311593,
+            "conditional_selectivity": 1.0,
+            "specificity_js_bits": 0.9081550021508971,
+            "usefulness_gap": 0.04893677641966321,
+            "identifiability_mi_bits": 0.9999999999999998
+          },
+          "initial_twin": {
+            "potential_bits": 2.545711602778804,
+            "conditional_selectivity": 0.0,
+            "specificity_js_bits": 0.2952543976810831,
+            "usefulness_gap": -0.13381518863311215,
+            "identifiability_mi_bits": 0.0
+          },
+          "team_nearest": {
+            "potential_bits": 2.0,
+            "conditional_selectivity": 1.0,
+            "specificity_js_bits": 0.6556390622295664,
+            "usefulness_gap": 0.09205931676666668,
+            "identifiability_mi_bits": 1.0
+          },
+          "fixed_food0": {
+            "potential_bits": 1.5,
+            "conditional_selectivity": 0.22499999999999998,
+            "specificity_js_bits": 0.6556390622295664,
+            "usefulness_gap": 0.04533517312356661,
+            "identifiability_mi_bits": 0.25921735016774505
+          },
+          "fixed_food1": {
+            "potential_bits": 2.0,
+            "conditional_selectivity": 0.0,
+            "specificity_js_bits": 0.6556390622295664,
+            "usefulness_gap": 0.00029820501666660837,
+            "identifiability_mi_bits": 0.0
+          }
+        },
+        "verdicts": {
+          "learned": 1,
+          "initial_twin": 0,
+          "team_nearest": 0,
+          "fixed_food0": 0,
+          "fixed_food1": 0
+        },
+        "learned_identifiable": true
+      },
+      "gmm": {
+        "k": 8,
+        "silhouette": 0.3740847700772783,
+        "metrics": {
+          "learned": {
+            "potential_bits": 2.154412043899266,
+            "conditional_selectivity": 1.0,
+            "specificity_js_bits": 0.36313844546313734,
+            "usefulness_gap": 0.04893677641966321,
+            "identifiability_mi_bits": 1.0
+          },
+          "initial_twin": {
+            "potential_bits": 0.8388401005718369,
+            "conditional_selectivity": 0.0,
+            "specificity_js_bits": 0.2074340068193769,
+            "usefulness_gap": -0.13381518863311215,
+            "identifiability_mi_bits": 0.0
+          },
+          "team_nearest": {
+            "potential_bits": 2.0,
+            "conditional_selectivity": 1.0,
+            "specificity_js_bits": 0.5,
+            "usefulness_gap": 0.09205931676666668,
+            "identifiability_mi_bits": 1.0
+          },
+          "fixed_food0": {
+            "potential_bits": 2.0,
+            "conditional_selectivity": 0.22499999999999998,
+            "specificity_js_bits": 0.5,
+            "usefulness_gap": 0.04533517312356661,
+            "identifiability_mi_bits": 0.25921735016774505
+          },
+          "fixed_food1": {
+            "potential_bits": 2.0,
+            "conditional_selectivity": 0.0,
+            "specificity_js_bits": 0.5,
+            "usefulness_gap": 0.00029820501666660837,
+            "identifiability_mi_bits": 0.0
+          }
+        },
+        "verdicts": {
+          "learned": 1,
+          "initial_twin": 0,
+          "team_nearest": 0,
+          "fixed_food0": 0,
+          "fixed_food1": 0
+        },
+        "learned_identifiable": true
+      },
+      "ward": {
+        "k": 8,
+        "silhouette": 0.3821530415397251,
+        "metrics": {
+          "learned": {
+            "potential_bits": 2.0,
+            "conditional_selectivity": 1.0,
+            "specificity_js_bits": 0.72570749174167,
+            "usefulness_gap": 0.04893677641966321,
+            "identifiability_mi_bits": 1.0
+          },
+          "initial_twin": {
+            "potential_bits": 2.164989035372156,
+            "conditional_selectivity": 0.0,
+            "specificity_js_bits": 0.32563425118099015,
+            "usefulness_gap": -0.13381518863311215,
+            "identifiability_mi_bits": 0.0
+          },
+          "team_nearest": {
+            "potential_bits": 2.0,
+            "conditional_selectivity": 1.0,
+            "specificity_js_bits": 1.0,
+            "usefulness_gap": 0.09205931676666668,
+            "identifiability_mi_bits": 1.0
+          },
+          "fixed_food0": {
+            "potential_bits": 1.5,
+            "conditional_selectivity": 0.22499999999999998,
+            "specificity_js_bits": 1.0,
+            "usefulness_gap": 0.04533517312356661,
+            "identifiability_mi_bits": 0.25921735016774505
+          },
+          "fixed_food1": {
+            "potential_bits": 2.0,
+            "conditional_selectivity": 0.0,
+            "specificity_js_bits": 1.0,
+            "usefulness_gap": 0.00029820501666660837,
+            "identifiability_mi_bits": 0.0
+          }
+        },
+        "verdicts": {
+          "learned": 1,
+          "initial_twin": 0,
+          "team_nearest": 0,
+          "fixed_food0": 0,
+          "fixed_food1": 0
+        },
+        "learned_identifiable": true
+      },
+      "pca_kmeans": {
+        "k": 8,
+        "silhouette": 0.5010007862826689,
+        "metrics": {
+          "learned": {
+            "potential_bits": 1.954868061265583,
+            "conditional_selectivity": 1.0,
+            "specificity_js_bits": 0.9119381814986437,
+            "usefulness_gap": 0.04893677641966321,
+            "identifiability_mi_bits": 1.0
+          },
+          "initial_twin": {
+            "potential_bits": 2.5215232473571874,
+            "conditional_selectivity": 0.0,
+            "specificity_js_bits": 0.3030862377786759,
+            "usefulness_gap": -0.13381518863311215,
+            "identifiability_mi_bits": 0.0
+          },
+          "team_nearest": {
+            "potential_bits": 2.0,
+            "conditional_selectivity": 1.0,
+            "specificity_js_bits": 0.6556390622295664,
+            "usefulness_gap": 0.09205931676666668,
+            "identifiability_mi_bits": 1.0
+          },
+          "fixed_food0": {
+            "potential_bits": 1.5,
+            "conditional_selectivity": 0.22499999999999998,
+            "specificity_js_bits": 0.6556390622295664,
+            "usefulness_gap": 0.04533517312356661,
+            "identifiability_mi_bits": 0.25921735016774505
+          },
+          "fixed_food1": {
+            "potential_bits": 2.0,
+            "conditional_selectivity": 0.0,
+            "specificity_js_bits": 0.6556390622295664,
+            "usefulness_gap": 0.00029820501666660837,
+            "identifiability_mi_bits": 0.0
+          }
+        },
+        "verdicts": {
+          "learned": 1,
+          "initial_twin": 0,
+          "team_nearest": 0,
+          "fixed_food0": 0,
+          "fixed_food1": 0
+        },
+        "learned_identifiable": true
+      }
+    },
+    "1107": {
+      "kmeans": {
+        "k": 8,
+        "silhouette": 0.3454036588437512,
+        "metrics": {
+          "learned": {
+            "potential_bits": 1.6290780643880716,
+            "conditional_selectivity": 1.0,
+            "specificity_js_bits": 0.43475398501062834,
+            "usefulness_gap": 0.02153744450536016,
+            "identifiability_mi_bits": 0.512731226469346
+          },
+          "initial_twin": {
+            "potential_bits": 2.2986509403968243,
+            "conditional_selectivity": 0.0,
+            "specificity_js_bits": 0.29917593097142314,
+            "usefulness_gap": -0.13257266458333333,
+            "identifiability_mi_bits": 0.0
+          },
+          "team_nearest": {
+            "potential_bits": 2.0,
+            "conditional_selectivity": 1.0,
+            "specificity_js_bits": 0.40563906222956636,
+            "usefulness_gap": 0.10774673597916662,
+            "identifiability_mi_bits": 1.0
+          },
+          "fixed_food0": {
+            "potential_bits": 1.5,
+            "conditional_selectivity": 0.19999999999999996,
+            "specificity_js_bits": 0.40563906222956636,
+            "usefulness_gap": 0.06916552071426668,
+            "identifiability_mi_bits": 0.22625794497561413
+          },
+          "fixed_food1": {
+            "potential_bits": 2.0,
+            "conditional_selectivity": 0.0,
+            "specificity_js_bits": 0.40563906222956636,
+            "usefulness_gap": 0.008544594479166667,
+            "identifiability_mi_bits": 0.0
+          }
+        },
+        "verdicts": {
+          "learned": 1,
+          "initial_twin": 0,
+          "team_nearest": 0,
+          "fixed_food0": 0,
+          "fixed_food1": 0
+        },
+        "learned_identifiable": true
+      },
+      "gmm": {
+        "k": 8,
+        "silhouette": 0.3412393149163565,
+        "metrics": {
+          "learned": {
+            "potential_bits": 1.6631586821221567,
+            "conditional_selectivity": 1.0,
+            "specificity_js_bits": 0.5213819893076198,
+            "usefulness_gap": 0.02153744450536016,
+            "identifiability_mi_bits": 0.4430117853241433
+          },
+          "initial_twin": {
+            "potential_bits": 0.907425954337534,
+            "conditional_selectivity": 0.0,
+            "specificity_js_bits": 0.1994773609179211,
+            "usefulness_gap": -0.13257266458333333,
+            "identifiability_mi_bits": 0.0
+          },
+          "team_nearest": {
+            "potential_bits": 2.0,
+            "conditional_selectivity": 1.0,
+            "specificity_js_bits": 0.6556390622295664,
+            "usefulness_gap": 0.10774673597916662,
+            "identifiability_mi_bits": 1.0
+          },
+          "fixed_food0": {
+            "potential_bits": 1.5,
+            "conditional_selectivity": 0.19999999999999996,
+            "specificity_js_bits": 0.6556390622295664,
+            "usefulness_gap": 0.06916552071426668,
+            "identifiability_mi_bits": 0.22625794497561413
+          },
+          "fixed_food1": {
+            "potential_bits": 2.0,
+            "conditional_selectivity": 0.0,
+            "specificity_js_bits": 0.6556390622295664,
+            "usefulness_gap": 0.008544594479166667,
+            "identifiability_mi_bits": 0.0
+          }
+        },
+        "verdicts": {
+          "learned": 1,
+          "initial_twin": 0,
+          "team_nearest": 0,
+          "fixed_food0": 0,
+          "fixed_food1": 0
+        },
+        "learned_identifiable": true
+      },
+      "ward": {
+        "k": 8,
+        "silhouette": 0.36454942136298896,
+        "metrics": {
+          "learned": {
+            "potential_bits": 1.6172488983973203,
+            "conditional_selectivity": 1.0,
+            "specificity_js_bits": 0.5843117171213614,
+            "usefulness_gap": 0.02153744450536016,
+            "identifiability_mi_bits": 0.5
+          },
+          "initial_twin": {
+            "potential_bits": 2.105890777247795,
+            "conditional_selectivity": 0.0,
+            "specificity_js_bits": 0.2966238859948425,
+            "usefulness_gap": -0.13257266458333333,
+            "identifiability_mi_bits": 0.0
+          },
+          "team_nearest": {
+            "potential_bits": 2.0,
+            "conditional_selectivity": 1.0,
+            "specificity_js_bits": 0.6556390622295665,
+            "usefulness_gap": 0.10774673597916662,
+            "identifiability_mi_bits": 1.0
+          },
+          "fixed_food0": {
+            "potential_bits": 1.5,
+            "conditional_selectivity": 0.19999999999999996,
+            "specificity_js_bits": 0.6556390622295665,
+            "usefulness_gap": 0.06916552071426668,
+            "identifiability_mi_bits": 0.22625794497561413
+          },
+          "fixed_food1": {
+            "potential_bits": 2.0,
+            "conditional_selectivity": 0.0,
+            "specificity_js_bits": 0.6556390622295665,
+            "usefulness_gap": 0.008544594479166667,
+            "identifiability_mi_bits": 0.0
+          }
+        },
+        "verdicts": {
+          "learned": 1,
+          "initial_twin": 0,
+          "team_nearest": 0,
+          "fixed_food0": 0,
+          "fixed_food1": 0
+        },
+        "learned_identifiable": true
+      },
+      "pca_kmeans": {
+        "k": 8,
+        "silhouette": 0.45246149408980507,
+        "metrics": {
+          "learned": {
+            "potential_bits": 1.6172488983973203,
+            "conditional_selectivity": 1.0,
+            "specificity_js_bits": 0.5843117171213614,
+            "usefulness_gap": 0.02153744450536016,
+            "identifiability_mi_bits": 0.5
+          },
+          "initial_twin": {
+            "potential_bits": 2.259084525119079,
+            "conditional_selectivity": 0.0,
+            "specificity_js_bits": 0.2990119044622986,
+            "usefulness_gap": -0.13257266458333333,
+            "identifiability_mi_bits": 0.0
+          },
+          "team_nearest": {
+            "potential_bits": 2.0,
+            "conditional_selectivity": 1.0,
+            "specificity_js_bits": 0.6556390622295665,
+            "usefulness_gap": 0.10774673597916662,
+            "identifiability_mi_bits": 1.0
+          },
+          "fixed_food0": {
+            "potential_bits": 1.5,
+            "conditional_selectivity": 0.19999999999999996,
+            "specificity_js_bits": 0.6556390622295665,
+            "usefulness_gap": 0.06916552071426668,
+            "identifiability_mi_bits": 0.22625794497561413
+          },
+          "fixed_food1": {
+            "potential_bits": 2.0,
+            "conditional_selectivity": 0.0,
+            "specificity_js_bits": 0.6556390622295665,
+            "usefulness_gap": 0.008544594479166667,
+            "identifiability_mi_bits": 0.0
+          }
+        },
+        "verdicts": {
+          "learned": 1,
+          "initial_twin": 0,
+          "team_nearest": 0,
+          "fixed_food0": 0,
+          "fixed_food1": 0
+        },
+        "learned_identifiable": true
+      }
+    },
+    "1108": {
+      "kmeans": {
+        "k": 8,
+        "silhouette": 0.41839946328048716,
+        "metrics": {
+          "learned": {
+            "potential_bits": 2.0,
+            "conditional_selectivity": 0.5,
+            "specificity_js_bits": 0.6730944788595385,
+            "usefulness_gap": 0.08414963587868435,
+            "identifiability_mi_bits": 0.8112781244591329
+          },
+          "initial_twin": {
+            "potential_bits": 2.266822386591723,
+            "conditional_selectivity": 0.025,
+            "specificity_js_bits": 0.20514186965105635,
+            "usefulness_gap": -0.1317738749988126,
+            "identifiability_mi_bits": 0.036513770360765196
+          },
+          "team_nearest": {
+            "potential_bits": 2.0,
+            "conditional_selectivity": 1.0,
+            "specificity_js_bits": 1.0,
+            "usefulness_gap": 0.09341665188333331,
+            "identifiability_mi_bits": 1.0
+          },
+          "fixed_food0": {
+            "potential_bits": 1.5,
+            "conditional_selectivity": 0.25,
+            "specificity_js_bits": 1.0,
+            "usefulness_gap": 0.037236945831633395,
+            "identifiability_mi_bits": 0.2935644431995965
+          },
+          "fixed_food1": {
+            "potential_bits": 2.0,
+            "conditional_selectivity": 0.0,
+            "specificity_js_bits": 1.0,
+            "usefulness_gap": -0.0013371226166666306,
+            "identifiability_mi_bits": 0.0
+          }
+        },
+        "verdicts": {
+          "learned": 1,
+          "initial_twin": 0,
+          "team_nearest": 0,
+          "fixed_food0": 0,
+          "fixed_food1": 0
+        },
+        "learned_identifiable": true
+      },
+      "gmm": {
+        "k": 8,
+        "silhouette": 0.40906630687565054,
+        "metrics": {
+          "learned": {
+            "potential_bits": 1.571599239278989,
+            "conditional_selectivity": 0.5,
+            "specificity_js_bits": 0.4493557270415522,
+            "usefulness_gap": 0.08414963587868435,
+            "identifiability_mi_bits": 0.8112781244591329
+          },
+          "initial_twin": {
+            "potential_bits": 1.3288326125465797,
+            "conditional_selectivity": 0.025,
+            "specificity_js_bits": 0.21785672261658717,
+            "usefulness_gap": -0.1317738749988126,
+            "identifiability_mi_bits": 0.05638069983951666
+          },
+          "team_nearest": {
+            "potential_bits": 1.5,
+            "conditional_selectivity": 1.0,
+            "specificity_js_bits": 1.0,
+            "usefulness_gap": 0.09341665188333331,
+            "identifiability_mi_bits": 1.0
+          },
+          "fixed_food0": {
+            "potential_bits": 1.5,
+            "conditional_selectivity": 0.25,
+            "specificity_js_bits": 1.0,
+            "usefulness_gap": 0.037236945831633395,
+            "identifiability_mi_bits": 0.2935644431995965
+          },
+          "fixed_food1": {
+            "potential_bits": 1.5,
+            "conditional_selectivity": 0.0,
+            "specificity_js_bits": 1.0,
+            "usefulness_gap": -0.0013371226166666306,
+            "identifiability_mi_bits": 0.0
+          }
+        },
+        "verdicts": {
+          "learned": 1,
+          "initial_twin": 0,
+          "team_nearest": 0,
+          "fixed_food0": 0,
+          "fixed_food1": 0
+        },
+        "learned_identifiable": true
+      },
+      "ward": {
+        "k": 8,
+        "silhouette": 0.408889550925485,
+        "metrics": {
+          "learned": {
+            "potential_bits": 2.0,
+            "conditional_selectivity": 0.5,
+            "specificity_js_bits": 0.5709823336275771,
+            "usefulness_gap": 0.08414963587868435,
+            "identifiability_mi_bits": 0.8112781244591329
+          },
+          "initial_twin": {
+            "potential_bits": 2.2214910113136233,
+            "conditional_selectivity": 0.025,
+            "specificity_js_bits": 0.15563749773388544,
+            "usefulness_gap": -0.1317738749988126,
+            "identifiability_mi_bits": 0.033367526972719386
+          },
+          "team_nearest": {
+            "potential_bits": 2.0,
+            "conditional_selectivity": 1.0,
+            "specificity_js_bits": 1.0,
+            "usefulness_gap": 0.09341665188333331,
+            "identifiability_mi_bits": 1.0
+          },
+          "fixed_food0": {
+            "potential_bits": 1.5,
+            "conditional_selectivity": 0.25,
+            "specificity_js_bits": 1.0,
+            "usefulness_gap": 0.037236945831633395,
+            "identifiability_mi_bits": 0.2935644431995965
+          },
+          "fixed_food1": {
+            "potential_bits": 2.0,
+            "conditional_selectivity": 0.0,
+            "specificity_js_bits": 1.0,
+            "usefulness_gap": -0.0013371226166666306,
+            "identifiability_mi_bits": 0.0
+          }
+        },
+        "verdicts": {
+          "learned": 1,
+          "initial_twin": 0,
+          "team_nearest": 0,
+          "fixed_food0": 0,
+          "fixed_food1": 0
+        },
+        "learned_identifiable": true
+      },
+      "pca_kmeans": {
+        "k": 8,
+        "silhouette": 0.531916970966564,
+        "metrics": {
+          "learned": {
+            "potential_bits": 2.0,
+            "conditional_selectivity": 0.5,
+            "specificity_js_bits": 0.7015820172493932,
+            "usefulness_gap": 0.08414963587868435,
+            "identifiability_mi_bits": 0.8112781244591329
+          },
+          "initial_twin": {
+            "potential_bits": 2.295299948190855,
+            "conditional_selectivity": 0.025,
+            "specificity_js_bits": 0.2057700267836654,
+            "usefulness_gap": -0.1317738749988126,
+            "identifiability_mi_bits": 0.036513770360765196
+          },
+          "team_nearest": {
+            "potential_bits": 2.0,
+            "conditional_selectivity": 1.0,
+            "specificity_js_bits": 1.0,
+            "usefulness_gap": 0.09341665188333331,
+            "identifiability_mi_bits": 1.0
+          },
+          "fixed_food0": {
+            "potential_bits": 1.5,
+            "conditional_selectivity": 0.25,
+            "specificity_js_bits": 1.0,
+            "usefulness_gap": 0.037236945831633395,
+            "identifiability_mi_bits": 0.2935644431995965
+          },
+          "fixed_food1": {
+            "potential_bits": 2.0,
+            "conditional_selectivity": 0.0,
+            "specificity_js_bits": 1.0,
+            "usefulness_gap": -0.0013371226166666306,
+            "identifiability_mi_bits": 0.0
+          }
+        },
+        "verdicts": {
+          "learned": 1,
+          "initial_twin": 0,
+          "team_nearest": 0,
+          "fixed_food0": 0,
+          "fixed_food1": 0
+        },
+        "learned_identifiable": true
+      }
+    },
+    "1109": {
+      "kmeans": {
+        "k": 8,
+        "silhouette": 0.40621593364945574,
+        "metrics": {
+          "learned": {
+            "potential_bits": 2.1888481376763096,
+            "conditional_selectivity": 0.95,
+            "specificity_js_bits": 0.9425540113904363,
+            "usefulness_gap": 0.07805390111162053,
+            "identifiability_mi_bits": 0.99819587904281
+          },
+          "initial_twin": {
+            "potential_bits": 2.4616504797821537,
+            "conditional_selectivity": 0.05,
+            "specificity_js_bits": 0.23801556727749615,
+            "usefulness_gap": -0.13333012291666665,
+            "identifiability_mi_bits": 0.05633217078328956
+          },
+          "team_nearest": {
+            "potential_bits": 2.0,
+            "conditional_selectivity": 1.0,
+            "specificity_js_bits": 0.5,
+            "usefulness_gap": 0.10496082374749999,
+            "identifiability_mi_bits": 1.0
+          },
+          "fixed_food0": {
+            "potential_bits": 2.0,
+            "conditional_selectivity": 0.22499999999999998,
+            "specificity_js_bits": 0.5,
+            "usefulness_gap": 0.0622574144759,
+            "identifiability_mi_bits": 0.25921735016774505
+          },
+          "fixed_food1": {
+            "potential_bits": 2.0,
+            "conditional_selectivity": 0.0,
+            "specificity_js_bits": 0.5,
+            "usefulness_gap": 0.014817520497500014,
+            "identifiability_mi_bits": 0.0
+          }
+        },
+        "verdicts": {
+          "learned": 1,
+          "initial_twin": 0,
+          "team_nearest": 0,
+          "fixed_food0": 0,
+          "fixed_food1": 0
+        },
+        "learned_identifiable": true
+      },
+      "gmm": {
+        "k": 8,
+        "silhouette": 0.38599394731307685,
+        "metrics": {
+          "learned": {
+            "potential_bits": 2.068936046433551,
+            "conditional_selectivity": 0.95,
+            "specificity_js_bits": 0.5337678167522649,
+            "usefulness_gap": 0.07805390111162053,
+            "identifiability_mi_bits": 0.8568965608061476
+          },
+          "initial_twin": {
+            "potential_bits": 1.391575192477228,
+            "conditional_selectivity": 0.05,
+            "specificity_js_bits": 0.2629766692582106,
+            "usefulness_gap": -0.13333012291666665,
+            "identifiability_mi_bits": 0.020300197014401444
+          },
+          "team_nearest": {
+            "potential_bits": 2.0,
+            "conditional_selectivity": 1.0,
+            "specificity_js_bits": 0.5547488146656658,
+            "usefulness_gap": 0.10496082374749999,
+            "identifiability_mi_bits": 1.0
+          },
+          "fixed_food0": {
+            "potential_bits": 2.248193613496952,
+            "conditional_selectivity": 0.22499999999999998,
+            "specificity_js_bits": 0.5989539005008396,
+            "usefulness_gap": 0.0622574144759,
+            "identifiability_mi_bits": 0.5074109636646971
+          },
+          "fixed_food1": {
+            "potential_bits": 2.0,
+            "conditional_selectivity": 0.0,
+            "specificity_js_bits": 0.5547488146656658,
+            "usefulness_gap": 0.014817520497500014,
+            "identifiability_mi_bits": 0.0
+          }
+        },
+        "verdicts": {
+          "learned": 1,
+          "initial_twin": 0,
+          "team_nearest": 0,
+          "fixed_food0": 0,
+          "fixed_food1": 0
+        },
+        "learned_identifiable": true
+      },
+      "ward": {
+        "k": 8,
+        "silhouette": 0.417017403837489,
+        "metrics": {
+          "learned": {
+            "potential_bits": 2.1888481376763096,
+            "conditional_selectivity": 0.95,
+            "specificity_js_bits": 0.9148520006620015,
+            "usefulness_gap": 0.07805390111162053,
+            "identifiability_mi_bits": 0.99819587904281
+          },
+          "initial_twin": {
+            "potential_bits": 2.300271073260816,
+            "conditional_selectivity": 0.05,
+            "specificity_js_bits": 0.24602790397229848,
+            "usefulness_gap": -0.13333012291666665,
+            "identifiability_mi_bits": 0.028677349001978047
+          },
+          "team_nearest": {
+            "potential_bits": 2.0,
+            "conditional_selectivity": 1.0,
+            "specificity_js_bits": 0.6556390622295665,
+            "usefulness_gap": 0.10496082374749999,
+            "identifiability_mi_bits": 1.0
+          },
+          "fixed_food0": {
+            "potential_bits": 1.5,
+            "conditional_selectivity": 0.22499999999999998,
+            "specificity_js_bits": 0.6556390622295665,
+            "usefulness_gap": 0.0622574144759,
+            "identifiability_mi_bits": 0.25921735016774505
+          },
+          "fixed_food1": {
+            "potential_bits": 2.0,
+            "conditional_selectivity": 0.0,
+            "specificity_js_bits": 0.6556390622295665,
+            "usefulness_gap": 0.014817520497500014,
+            "identifiability_mi_bits": 0.0
+          }
+        },
+        "verdicts": {
+          "learned": 1,
+          "initial_twin": 0,
+          "team_nearest": 0,
+          "fixed_food0": 0,
+          "fixed_food1": 0
+        },
+        "learned_identifiable": true
+      },
+      "pca_kmeans": {
+        "k": 8,
+        "silhouette": 0.5140138801507365,
+        "metrics": {
+          "learned": {
+            "potential_bits": 2.1888481376763096,
+            "conditional_selectivity": 0.95,
+            "specificity_js_bits": 0.9509457088920867,
+            "usefulness_gap": 0.07805390111162053,
+            "identifiability_mi_bits": 0.99819587904281
+          },
+          "initial_twin": {
+            "potential_bits": 2.418751954420502,
+            "conditional_selectivity": 0.05,
+            "specificity_js_bits": 0.2503925004511942,
+            "usefulness_gap": -0.13333012291666665,
+            "identifiability_mi_bits": 0.04779926009325397
+          },
+          "team_nearest": {
+            "potential_bits": 2.0,
+            "conditional_selectivity": 1.0,
+            "specificity_js_bits": 1.0,
+            "usefulness_gap": 0.10496082374749999,
+            "identifiability_mi_bits": 1.0
+          },
+          "fixed_food0": {
+            "potential_bits": 1.5,
+            "conditional_selectivity": 0.22499999999999998,
+            "specificity_js_bits": 1.0,
+            "usefulness_gap": 0.0622574144759,
+            "identifiability_mi_bits": 0.25921735016774505
+          },
+          "fixed_food1": {
+            "potential_bits": 2.0,
+            "conditional_selectivity": 0.0,
+            "specificity_js_bits": 1.0,
+            "usefulness_gap": 0.014817520497500014,
+            "identifiability_mi_bits": 0.0
+          }
+        },
+        "verdicts": {
+          "learned": 1,
+          "initial_twin": 0,
+          "team_nearest": 0,
+          "fixed_food0": 0,
+          "fixed_food1": 0
+        },
+        "learned_identifiable": true
+      }
+    },
+    "1110": {
+      "kmeans": {
+        "k": 8,
+        "silhouette": 0.34646245085620414,
+        "metrics": {
+          "learned": {
+            "potential_bits": 2.1143948701985593,
+            "conditional_selectivity": 0.5,
+            "specificity_js_bits": 0.25315353507853444,
+            "usefulness_gap": 0.16730980217400498,
+            "identifiability_mi_bits": 0.8112781244591329
+          },
+          "initial_twin": {
+            "potential_bits": 2.0943463855700792,
+            "conditional_selectivity": 0.025,
+            "specificity_js_bits": 0.25302901829074026,
+            "usefulness_gap": -0.13808380512443993,
+            "identifiability_mi_bits": 0.05638069983951688
+          },
+          "team_nearest": {
+            "potential_bits": 2.0,
+            "conditional_selectivity": 1.0,
+            "specificity_js_bits": 0.5,
+            "usefulness_gap": 0.10831601887749998,
+            "identifiability_mi_bits": 1.0
+          },
+          "fixed_food0": {
+            "potential_bits": 2.0,
+            "conditional_selectivity": 0.15000000000000002,
+            "specificity_js_bits": 0.5,
+            "usefulness_gap": 0.07376782411179994,
+            "identifiability_mi_bits": 0.1639888193188237
+          },
+          "fixed_food1": {
+            "potential_bits": 2.0,
+            "conditional_selectivity": 0.0,
+            "specificity_js_bits": 0.5,
+            "usefulness_gap": 0.006485039627500022,
+            "identifiability_mi_bits": 0.0
+          }
+        },
+        "verdicts": {
+          "learned": 1,
+          "initial_twin": 0,
+          "team_nearest": 0,
+          "fixed_food0": 0,
+          "fixed_food1": 0
+        },
+        "learned_identifiable": true
+      },
+      "gmm": {
+        "k": 7,
+        "silhouette": 0.3389155968548863,
+        "metrics": {
+          "learned": {
+            "potential_bits": 2.083437533941152,
+            "conditional_selectivity": 0.5,
+            "specificity_js_bits": 0.22189595730334552,
+            "usefulness_gap": 0.16730980217400498,
+            "identifiability_mi_bits": 0.8112781244591329
+          },
+          "initial_twin": {
+            "potential_bits": 2.301742655243339,
+            "conditional_selectivity": 0.025,
+            "specificity_js_bits": 0.2310521999754792,
+            "usefulness_gap": -0.13808380512443993,
+            "identifiability_mi_bits": 0.07194460606247333
+          },
+          "team_nearest": {
+            "potential_bits": 2.0,
+            "conditional_selectivity": 1.0,
+            "specificity_js_bits": 0.4056390622295664,
+            "usefulness_gap": 0.10831601887749998,
+            "identifiability_mi_bits": 1.0
+          },
+          "fixed_food0": {
+            "potential_bits": 1.5,
+            "conditional_selectivity": 0.15000000000000002,
+            "specificity_js_bits": 0.4056390622295664,
+            "usefulness_gap": 0.07376782411179994,
+            "identifiability_mi_bits": 0.16398881931882392
+          },
+          "fixed_food1": {
+            "potential_bits": 2.0,
+            "conditional_selectivity": 0.0,
+            "specificity_js_bits": 0.4056390622295664,
+            "usefulness_gap": 0.006485039627500022,
+            "identifiability_mi_bits": 0.0
+          }
+        },
+        "verdicts": {
+          "learned": 1,
+          "initial_twin": 0,
+          "team_nearest": 0,
+          "fixed_food0": 0,
+          "fixed_food1": 0
+        },
+        "learned_identifiable": true
+      },
+      "ward": {
+        "k": 8,
+        "silhouette": 0.36176868969207293,
+        "metrics": {
+          "learned": {
+            "potential_bits": 1.9854752972273344,
+            "conditional_selectivity": 0.5,
+            "specificity_js_bits": 0.5492710017089271,
+            "usefulness_gap": 0.16730980217400498,
+            "identifiability_mi_bits": 0.8112781244591329
+          },
+          "initial_twin": {
+            "potential_bits": 2.3843189414531696,
+            "conditional_selectivity": 0.025,
+            "specificity_js_bits": 0.35273443296385665,
+            "usefulness_gap": -0.13808380512443993,
+            "identifiability_mi_bits": 0.06250851228542986
+          },
+          "team_nearest": {
+            "potential_bits": 2.0,
+            "conditional_selectivity": 1.0,
+            "specificity_js_bits": 0.6556390622295665,
+            "usefulness_gap": 0.10831601887749998,
+            "identifiability_mi_bits": 1.0
+          },
+          "fixed_food0": {
+            "potential_bits": 1.5,
+            "conditional_selectivity": 0.15000000000000002,
+            "specificity_js_bits": 0.6556390622295665,
+            "usefulness_gap": 0.07376782411179994,
+            "identifiability_mi_bits": 0.16398881931882392
+          },
+          "fixed_food1": {
+            "potential_bits": 2.0,
+            "conditional_selectivity": 0.0,
+            "specificity_js_bits": 0.6556390622295665,
+            "usefulness_gap": 0.006485039627500022,
+            "identifiability_mi_bits": 0.0
+          }
+        },
+        "verdicts": {
+          "learned": 1,
+          "initial_twin": 0,
+          "team_nearest": 0,
+          "fixed_food0": 0,
+          "fixed_food1": 0
+        },
+        "learned_identifiable": true
+      },
+      "pca_kmeans": {
+        "k": 8,
+        "silhouette": 0.4620901217590784,
+        "metrics": {
+          "learned": {
+            "potential_bits": 1.9854752972273344,
+            "conditional_selectivity": 0.5,
+            "specificity_js_bits": 0.4885600034526001,
+            "usefulness_gap": 0.16730980217400498,
+            "identifiability_mi_bits": 0.8112781244591329
+          },
+          "initial_twin": {
+            "potential_bits": 2.54536764901357,
+            "conditional_selectivity": 0.025,
+            "specificity_js_bits": 0.2933564095483396,
+            "usefulness_gap": -0.13808380512443993,
+            "identifiability_mi_bits": 0.051824100132012774
+          },
+          "team_nearest": {
+            "potential_bits": 2.0,
+            "conditional_selectivity": 1.0,
+            "specificity_js_bits": 0.6556390622295664,
+            "usefulness_gap": 0.10831601887749998,
+            "identifiability_mi_bits": 1.0
+          },
+          "fixed_food0": {
+            "potential_bits": 1.5,
+            "conditional_selectivity": 0.15000000000000002,
+            "specificity_js_bits": 0.6556390622295664,
+            "usefulness_gap": 0.07376782411179994,
+            "identifiability_mi_bits": 0.16398881931882392
+          },
+          "fixed_food1": {
+            "potential_bits": 2.0,
+            "conditional_selectivity": 0.0,
+            "specificity_js_bits": 0.6556390622295664,
+            "usefulness_gap": 0.006485039627500022,
+            "identifiability_mi_bits": 0.0
+          }
+        },
+        "verdicts": {
+          "learned": 1,
+          "initial_twin": 0,
+          "team_nearest": 0,
+          "fixed_food0": 0,
+          "fixed_food1": 0
+        },
+        "learned_identifiable": true
+      }
+    },
+    "1201": {
+      "kmeans": {
+        "k": 8,
+        "silhouette": 0.3969988305031016,
+        "metrics": {
+          "learned": {
+            "potential_bits": 2.2194206643290784,
+            "conditional_selectivity": 0.95,
+            "specificity_js_bits": 0.9619596560034341,
+            "usefulness_gap": 0.06194363398332858,
+            "identifiability_mi_bits": 0.822151843033319
+          },
+          "initial_twin": {
+            "potential_bits": 2.4654164943144714,
+            "conditional_selectivity": 0.025,
+            "specificity_js_bits": 0.23979054385094045,
+            "usefulness_gap": -0.1380450738302812,
+            "identifiability_mi_bits": 0.014539675326855406
+          },
+          "team_nearest": {
+            "potential_bits": 2.0,
+            "conditional_selectivity": 1.0,
+            "specificity_js_bits": 1.0,
+            "usefulness_gap": 0.10399121599416672,
+            "identifiability_mi_bits": 1.0
+          },
+          "fixed_food0": {
+            "potential_bits": 1.5,
+            "conditional_selectivity": 0.25,
+            "specificity_js_bits": 1.0,
+            "usefulness_gap": 0.03986476328076671,
+            "identifiability_mi_bits": 0.2935644431995965
+          },
+          "fixed_food1": {
+            "potential_bits": 2.0,
+            "conditional_selectivity": 0.0,
+            "specificity_js_bits": 1.0,
+            "usefulness_gap": 0.009803795744166677,
+            "identifiability_mi_bits": 0.0
+          }
+        },
+        "verdicts": {
+          "learned": 1,
+          "initial_twin": 0,
+          "team_nearest": 0,
+          "fixed_food0": 0,
+          "fixed_food1": 0
+        },
+        "learned_identifiable": true
+      },
+      "gmm": {
+        "k": 8,
+        "silhouette": 0.37403086879154906,
+        "metrics": {
+          "learned": {
+            "potential_bits": 1.9727160092463858,
+            "conditional_selectivity": 0.95,
+            "specificity_js_bits": 0.6032276097997075,
+            "usefulness_gap": 0.06194363398332858,
+            "identifiability_mi_bits": 0.5895930775450218
+          },
+          "initial_twin": {
+            "potential_bits": 1.6577174691301484,
+            "conditional_selectivity": 0.025,
+            "specificity_js_bits": 0.21773832286357045,
+            "usefulness_gap": -0.1380450738302812,
+            "identifiability_mi_bits": 0.027297334503650017
+          },
+          "team_nearest": {
+            "potential_bits": 2.0,
+            "conditional_selectivity": 1.0,
+            "specificity_js_bits": 1.0,
+            "usefulness_gap": 0.10399121599416672,
+            "identifiability_mi_bits": 1.0
+          },
+          "fixed_food0": {
+            "potential_bits": 2.0,
+            "conditional_selectivity": 0.25,
+            "specificity_js_bits": 1.0,
+            "usefulness_gap": 0.03986476328076671,
+            "identifiability_mi_bits": 0.2935644431995965
+          },
+          "fixed_food1": {
+            "potential_bits": 2.0,
+            "conditional_selectivity": 0.0,
+            "specificity_js_bits": 1.0,
+            "usefulness_gap": 0.009803795744166677,
+            "identifiability_mi_bits": 0.0
+          }
+        },
+        "verdicts": {
+          "learned": 1,
+          "initial_twin": 0,
+          "team_nearest": 0,
+          "fixed_food0": 0,
+          "fixed_food1": 0
+        },
+        "learned_identifiable": true
+      },
+      "ward": {
+        "k": 8,
+        "silhouette": 0.39271760670697625,
+        "metrics": {
+          "learned": {
+            "potential_bits": 2.2295799632432454,
+            "conditional_selectivity": 0.95,
+            "specificity_js_bits": 0.7795303838920595,
+            "usefulness_gap": 0.06194363398332858,
+            "identifiability_mi_bits": 0.925694579285226
+          },
+          "initial_twin": {
+            "potential_bits": 2.565529409138979,
+            "conditional_selectivity": 0.025,
+            "specificity_js_bits": 0.36774251663384117,
+            "usefulness_gap": -0.1380450738302812,
+            "identifiability_mi_bits": 0.021228296974218352
+          },
+          "team_nearest": {
+            "potential_bits": 2.0,
+            "conditional_selectivity": 1.0,
+            "specificity_js_bits": 0.6556390622295665,
+            "usefulness_gap": 0.10399121599416672,
+            "identifiability_mi_bits": 1.0
+          },
+          "fixed_food0": {
+            "potential_bits": 1.5,
+            "conditional_selectivity": 0.25,
+            "specificity_js_bits": 0.6556390622295665,
+            "usefulness_gap": 0.03986476328076671,
+            "identifiability_mi_bits": 0.2935644431995965
+          },
+          "fixed_food1": {
+            "potential_bits": 2.0,
+            "conditional_selectivity": 0.0,
+            "specificity_js_bits": 0.6556390622295665,
+            "usefulness_gap": 0.009803795744166677,
+            "identifiability_mi_bits": 0.0
+          }
+        },
+        "verdicts": {
+          "learned": 1,
+          "initial_twin": 0,
+          "team_nearest": 0,
+          "fixed_food0": 0,
+          "fixed_food1": 0
+        },
+        "learned_identifiable": true
+      },
+      "pca_kmeans": {
+        "k": 8,
+        "silhouette": 0.47833809625487106,
+        "metrics": {
+          "learned": {
+            "potential_bits": 2.2201438694662023,
+            "conditional_selectivity": 0.95,
+            "specificity_js_bits": 0.8838213998492555,
+            "usefulness_gap": 0.06194363398332858,
+            "identifiability_mi_bits": 0.8582365659618234
+          },
+          "initial_twin": {
+            "potential_bits": 2.5536969617515166,
+            "conditional_selectivity": 0.025,
+            "specificity_js_bits": 0.30197945995393344,
+            "usefulness_gap": -0.1380450738302812,
+            "identifiability_mi_bits": 0.019812982478157437
+          },
+          "team_nearest": {
+            "potential_bits": 2.0,
+            "conditional_selectivity": 1.0,
+            "specificity_js_bits": 0.6556390622295665,
+            "usefulness_gap": 0.10399121599416672,
+            "identifiability_mi_bits": 1.0
+          },
+          "fixed_food0": {
+            "potential_bits": 1.5,
+            "conditional_selectivity": 0.25,
+            "specificity_js_bits": 0.6556390622295665,
+            "usefulness_gap": 0.03986476328076671,
+            "identifiability_mi_bits": 0.2935644431995965
+          },
+          "fixed_food1": {
+            "potential_bits": 2.0,
+            "conditional_selectivity": 0.0,
+            "specificity_js_bits": 0.6556390622295665,
+            "usefulness_gap": 0.009803795744166677,
+            "identifiability_mi_bits": 0.0
+          }
+        },
+        "verdicts": {
+          "learned": 1,
+          "initial_twin": 0,
+          "team_nearest": 0,
+          "fixed_food0": 0,
+          "fixed_food1": 0
+        },
+        "learned_identifiable": true
+      }
+    },
+    "1202": {
+      "kmeans": {
+        "k": 8,
+        "silhouette": 0.37353654024399857,
+        "metrics": {
+          "learned": {
+            "potential_bits": 1.5701989732163697,
+            "conditional_selectivity": 0.525,
+            "specificity_js_bits": 0.4635440685584704,
+            "usefulness_gap": 0.06244875983938297,
+            "identifiability_mi_bits": 0.7079547836166129
+          },
+          "initial_twin": {
+            "potential_bits": 2.609518644103706,
+            "conditional_selectivity": 0.0,
+            "specificity_js_bits": 0.23678830325744002,
+            "usefulness_gap": -0.13425744791666663,
+            "identifiability_mi_bits": 0.0
+          },
+          "team_nearest": {
+            "potential_bits": 1.5,
+            "conditional_selectivity": 1.0,
+            "specificity_js_bits": 1.0,
+            "usefulness_gap": 0.08450659637583335,
+            "identifiability_mi_bits": 1.0
+          },
+          "fixed_food0": {
+            "potential_bits": 1.5,
+            "conditional_selectivity": 0.35,
+            "specificity_js_bits": 1.0,
+            "usefulness_gap": 0.016604339191533368,
+            "identifiability_mi_bits": 0.4486931102488845
+          },
+          "fixed_food1": {
+            "potential_bits": 1.5,
+            "conditional_selectivity": 0.0,
+            "specificity_js_bits": 1.0,
+            "usefulness_gap": -0.010388665624166626,
+            "identifiability_mi_bits": 0.0
+          }
+        },
+        "verdicts": {
+          "learned": 1,
+          "initial_twin": 0,
+          "team_nearest": 0,
+          "fixed_food0": 0,
+          "fixed_food1": 0
+        },
+        "learned_identifiable": true
+      },
+      "gmm": {
+        "k": 8,
+        "silhouette": 0.34382647181823145,
+        "metrics": {
+          "learned": {
+            "potential_bits": 1.7503848526967698,
+            "conditional_selectivity": 0.525,
+            "specificity_js_bits": 0.46804883471443026,
+            "usefulness_gap": 0.06244875983938297,
+            "identifiability_mi_bits": 0.755530834653624
+          },
+          "initial_twin": {
+            "potential_bits": 1.7720031802269496,
+            "conditional_selectivity": 0.0,
+            "specificity_js_bits": 0.2551245586022313,
+            "usefulness_gap": -0.13425744791666663,
+            "identifiability_mi_bits": 0.0
+          },
+          "team_nearest": {
+            "potential_bits": 2.0,
+            "conditional_selectivity": 1.0,
+            "specificity_js_bits": 0.5,
+            "usefulness_gap": 0.08450659637583335,
+            "identifiability_mi_bits": 1.0
+          },
+          "fixed_food0": {
+            "potential_bits": 1.5,
+            "conditional_selectivity": 0.35,
+            "specificity_js_bits": 0.5,
+            "usefulness_gap": 0.016604339191533368,
+            "identifiability_mi_bits": 0.4486931102488845
+          },
+          "fixed_food1": {
+            "potential_bits": 1.5,
+            "conditional_selectivity": 0.0,
+            "specificity_js_bits": 0.5,
+            "usefulness_gap": -0.010388665624166626,
+            "identifiability_mi_bits": 0.0
+          }
+        },
+        "verdicts": {
+          "learned": 1,
+          "initial_twin": 0,
+          "team_nearest": 0,
+          "fixed_food0": 0,
+          "fixed_food1": 0
+        },
+        "learned_identifiable": true
+      },
+      "ward": {
+        "k": 8,
+        "silhouette": 0.33588404371048197,
+        "metrics": {
+          "learned": {
+            "potential_bits": 1.7045898278132938,
+            "conditional_selectivity": 0.525,
+            "specificity_js_bits": 0.5982596308257879,
+            "usefulness_gap": 0.06244875983938297,
+            "identifiability_mi_bits": 0.8304955225035799
+          },
+          "initial_twin": {
+            "potential_bits": 2.4278591763594233,
+            "conditional_selectivity": 0.0,
+            "specificity_js_bits": 0.24500855652086936,
+            "usefulness_gap": -0.13425744791666663,
+            "identifiability_mi_bits": 0.0
+          },
+          "team_nearest": {
+            "potential_bits": 2.0,
+            "conditional_selectivity": 1.0,
+            "specificity_js_bits": 0.6556390622295665,
+            "usefulness_gap": 0.08450659637583335,
+            "identifiability_mi_bits": 1.0
+          },
+          "fixed_food0": {
+            "potential_bits": 1.5,
+            "conditional_selectivity": 0.35,
+            "specificity_js_bits": 0.6556390622295665,
+            "usefulness_gap": 0.016604339191533368,
+            "identifiability_mi_bits": 0.4486931102488845
+          },
+          "fixed_food1": {
+            "potential_bits": 2.0,
+            "conditional_selectivity": 0.0,
+            "specificity_js_bits": 0.6556390622295665,
+            "usefulness_gap": -0.010388665624166626,
+            "identifiability_mi_bits": 0.0
+          }
+        },
+        "verdicts": {
+          "learned": 1,
+          "initial_twin": 0,
+          "team_nearest": 0,
+          "fixed_food0": 0,
+          "fixed_food1": 0
+        },
+        "learned_identifiable": true
+      },
+      "pca_kmeans": {
+        "k": 8,
+        "silhouette": 0.4601038600793419,
+        "metrics": {
+          "learned": {
+            "potential_bits": 1.8853772251756375,
+            "conditional_selectivity": 0.525,
+            "specificity_js_bits": 0.617255167613175,
+            "usefulness_gap": 0.06244875983938297,
+            "identifiability_mi_bits": 0.7817438408799533
+          },
+          "initial_twin": {
+            "potential_bits": 2.5527227204326595,
+            "conditional_selectivity": 0.0,
+            "specificity_js_bits": 0.24132164535707437,
+            "usefulness_gap": -0.13425744791666663,
+            "identifiability_mi_bits": 0.0
+          },
+          "team_nearest": {
+            "potential_bits": 2.0,
+            "conditional_selectivity": 1.0,
+            "specificity_js_bits": 0.6556390622295664,
+            "usefulness_gap": 0.08450659637583335,
+            "identifiability_mi_bits": 1.0
+          },
+          "fixed_food0": {
+            "potential_bits": 1.5,
+            "conditional_selectivity": 0.35,
+            "specificity_js_bits": 0.6556390622295664,
+            "usefulness_gap": 0.016604339191533368,
+            "identifiability_mi_bits": 0.4486931102488845
+          },
+          "fixed_food1": {
+            "potential_bits": 2.0,
+            "conditional_selectivity": 0.0,
+            "specificity_js_bits": 0.6556390622295664,
+            "usefulness_gap": -0.010388665624166626,
+            "identifiability_mi_bits": 0.0
+          }
+        },
+        "verdicts": {
+          "learned": 1,
+          "initial_twin": 0,
+          "team_nearest": 0,
+          "fixed_food0": 0,
+          "fixed_food1": 0
+        },
+        "learned_identifiable": true
+      }
+    },
+    "1203": {
+      "kmeans": {
+        "k": 8,
+        "silhouette": 0.40639549846293377,
+        "metrics": {
+          "learned": {
+            "potential_bits": 2.0,
+            "conditional_selectivity": 1.0,
+            "specificity_js_bits": 0.8497726761806647,
+            "usefulness_gap": 0.08076443565491018,
+            "identifiability_mi_bits": 1.0
+          },
+          "initial_twin": {
+            "potential_bits": 2.3261078791347196,
+            "conditional_selectivity": 0.0,
+            "specificity_js_bits": 0.3594477596433945,
+            "usefulness_gap": -0.13558402083333335,
+            "identifiability_mi_bits": 0.0
+          },
+          "team_nearest": {
+            "potential_bits": 2.0,
+            "conditional_selectivity": 1.0,
+            "specificity_js_bits": 0.6556390622295664,
+            "usefulness_gap": 0.09093000200666668,
+            "identifiability_mi_bits": 1.0
+          },
+          "fixed_food0": {
+            "potential_bits": 1.5,
+            "conditional_selectivity": 0.22499999999999998,
+            "specificity_js_bits": 0.6556390622295664,
+            "usefulness_gap": 0.048542861441666696,
+            "identifiability_mi_bits": 0.25921735016774505
+          },
+          "fixed_food1": {
+            "potential_bits": 2.0,
+            "conditional_selectivity": 0.0,
+            "specificity_js_bits": 0.6556390622295664,
+            "usefulness_gap": -0.008798068743333332,
+            "identifiability_mi_bits": 0.0
+          }
+        },
+        "verdicts": {
+          "learned": 1,
+          "initial_twin": 0,
+          "team_nearest": 0,
+          "fixed_food0": 0,
+          "fixed_food1": 0
+        },
+        "learned_identifiable": true
+      },
+      "gmm": {
+        "k": 8,
+        "silhouette": 0.40997715050397027,
+        "metrics": {
+          "learned": {
+            "potential_bits": 2.070697178800394,
+            "conditional_selectivity": 1.0,
+            "specificity_js_bits": 0.630753872980327,
+            "usefulness_gap": 0.08076443565491018,
+            "identifiability_mi_bits": 0.927498700242416
+          },
+          "initial_twin": {
+            "potential_bits": 0.507410963664697,
+            "conditional_selectivity": 0.0,
+            "specificity_js_bits": 0.26044066242102987,
+            "usefulness_gap": -0.13558402083333335,
+            "identifiability_mi_bits": 0.0
+          },
+          "team_nearest": {
+            "potential_bits": 2.0,
+            "conditional_selectivity": 1.0,
+            "specificity_js_bits": 0.6556390622295665,
+            "usefulness_gap": 0.09093000200666668,
+            "identifiability_mi_bits": 1.0
+          },
+          "fixed_food0": {
+            "potential_bits": 1.5,
+            "conditional_selectivity": 0.22499999999999998,
+            "specificity_js_bits": 0.6556390622295665,
+            "usefulness_gap": 0.048542861441666696,
+            "identifiability_mi_bits": 0.25921735016774505
+          },
+          "fixed_food1": {
+            "potential_bits": 2.0,
+            "conditional_selectivity": 0.0,
+            "specificity_js_bits": 0.6556390622295665,
+            "usefulness_gap": -0.008798068743333332,
+            "identifiability_mi_bits": 0.0
+          }
+        },
+        "verdicts": {
+          "learned": 1,
+          "initial_twin": 0,
+          "team_nearest": 0,
+          "fixed_food0": 0,
+          "fixed_food1": 0
+        },
+        "learned_identifiable": true
+      },
+      "ward": {
+        "k": 8,
+        "silhouette": 0.4038796069485669,
+        "metrics": {
+          "learned": {
+            "potential_bits": 2.0,
+            "conditional_selectivity": 1.0,
+            "specificity_js_bits": 0.8318669150570261,
+            "usefulness_gap": 0.08076443565491018,
+            "identifiability_mi_bits": 1.0
+          },
+          "initial_twin": {
+            "potential_bits": 2.2872444809308368,
+            "conditional_selectivity": 0.0,
+            "specificity_js_bits": 0.36088083285642275,
+            "usefulness_gap": -0.13558402083333335,
+            "identifiability_mi_bits": 0.0
+          },
+          "team_nearest": {
+            "potential_bits": 2.0,
+            "conditional_selectivity": 1.0,
+            "specificity_js_bits": 1.0,
+            "usefulness_gap": 0.09093000200666668,
+            "identifiability_mi_bits": 1.0
+          },
+          "fixed_food0": {
+            "potential_bits": 1.5,
+            "conditional_selectivity": 0.22499999999999998,
+            "specificity_js_bits": 1.0,
+            "usefulness_gap": 0.048542861441666696,
+            "identifiability_mi_bits": 0.25921735016774505
+          },
+          "fixed_food1": {
+            "potential_bits": 2.0,
+            "conditional_selectivity": 0.0,
+            "specificity_js_bits": 1.0,
+            "usefulness_gap": -0.008798068743333332,
+            "identifiability_mi_bits": 0.0
+          }
+        },
+        "verdicts": {
+          "learned": 1,
+          "initial_twin": 0,
+          "team_nearest": 0,
+          "fixed_food0": 0,
+          "fixed_food1": 0
+        },
+        "learned_identifiable": true
+      },
+      "pca_kmeans": {
+        "k": 8,
+        "silhouette": 0.498521694718127,
+        "metrics": {
+          "learned": {
+            "potential_bits": 2.0,
+            "conditional_selectivity": 1.0,
+            "specificity_js_bits": 0.8639154138185686,
+            "usefulness_gap": 0.08076443565491018,
+            "identifiability_mi_bits": 1.0
+          },
+          "initial_twin": {
+            "potential_bits": 2.4167454328589426,
+            "conditional_selectivity": 0.0,
+            "specificity_js_bits": 0.3562692962464135,
+            "usefulness_gap": -0.13558402083333335,
+            "identifiability_mi_bits": 0.0
+          },
+          "team_nearest": {
+            "potential_bits": 2.0,
+            "conditional_selectivity": 1.0,
+            "specificity_js_bits": 0.6556390622295665,
+            "usefulness_gap": 0.09093000200666668,
+            "identifiability_mi_bits": 1.0
+          },
+          "fixed_food0": {
+            "potential_bits": 1.5,
+            "conditional_selectivity": 0.22499999999999998,
+            "specificity_js_bits": 0.6556390622295665,
+            "usefulness_gap": 0.048542861441666696,
+            "identifiability_mi_bits": 0.25921735016774505
+          },
+          "fixed_food1": {
+            "potential_bits": 2.0,
+            "conditional_selectivity": 0.0,
+            "specificity_js_bits": 0.6556390622295665,
+            "usefulness_gap": -0.008798068743333332,
+            "identifiability_mi_bits": 0.0
+          }
+        },
+        "verdicts": {
+          "learned": 1,
+          "initial_twin": 0,
+          "team_nearest": 0,
+          "fixed_food0": 0,
+          "fixed_food1": 0
+        },
+        "learned_identifiable": true
+      }
+    },
+    "1204": {
+      "kmeans": {
+        "k": 8,
+        "silhouette": 0.4175227137722106,
+        "metrics": {
+          "learned": {
+            "potential_bits": 1.999097939521405,
+            "conditional_selectivity": 0.5,
+            "specificity_js_bits": 0.4398006396128679,
+            "usefulness_gap": 0.08864006704490496,
+            "identifiability_mi_bits": 0.8112781244591329
+          },
+          "initial_twin": {
+            "potential_bits": 2.4109055110722317,
+            "conditional_selectivity": 0.0,
+            "specificity_js_bits": 0.21255606283987843,
+            "usefulness_gap": -0.13814749331180975,
+            "identifiability_mi_bits": 0.0
+          },
+          "team_nearest": {
+            "potential_bits": 2.0,
+            "conditional_selectivity": 1.0,
+            "specificity_js_bits": 0.8229400377578513,
+            "usefulness_gap": 0.09960410238333328,
+            "identifiability_mi_bits": 1.0
+          },
+          "fixed_food0": {
+            "potential_bits": 1.748193613496952,
+            "conditional_selectivity": 0.275,
+            "specificity_js_bits": 0.8380402378251779,
+            "usefulness_gap": 0.047405894359833334,
+            "identifiability_mi_bits": 0.5776539033535633
+          },
+          "fixed_food1": {
+            "potential_bits": 2.0,
+            "conditional_selectivity": 0.0,
+            "specificity_js_bits": 0.8278195311147832,
+            "usefulness_gap": -0.006291206366666635,
+            "identifiability_mi_bits": 0.0
+          }
+        },
+        "verdicts": {
+          "learned": 1,
+          "initial_twin": 0,
+          "team_nearest": 0,
+          "fixed_food0": 0,
+          "fixed_food1": 0
+        },
+        "learned_identifiable": true
+      },
+      "gmm": {
+        "k": 8,
+        "silhouette": 0.3954752347213001,
+        "metrics": {
+          "learned": {
+            "potential_bits": 1.499097939521405,
+            "conditional_selectivity": 0.5,
+            "specificity_js_bits": 0.49688900140059444,
+            "usefulness_gap": 0.08864006704490496,
+            "identifiability_mi_bits": 0.7387768247015489
+          },
+          "initial_twin": {
+            "potential_bits": 1.8592674249146166,
+            "conditional_selectivity": 0.0,
+            "specificity_js_bits": 0.21771923956493183,
+            "usefulness_gap": -0.13814749331180975,
+            "identifiability_mi_bits": 0.0
+          },
+          "team_nearest": {
+            "potential_bits": 2.0,
+            "conditional_selectivity": 1.0,
+            "specificity_js_bits": 0.6556390622295665,
+            "usefulness_gap": 0.09960410238333328,
+            "identifiability_mi_bits": 1.0
+          },
+          "fixed_food0": {
+            "potential_bits": 1.5,
+            "conditional_selectivity": 0.275,
+            "specificity_js_bits": 0.6556390622295665,
+            "usefulness_gap": 0.047405894359833334,
+            "identifiability_mi_bits": 0.32946028985661124
+          },
+          "fixed_food1": {
+            "potential_bits": 2.0,
+            "conditional_selectivity": 0.0,
+            "specificity_js_bits": 0.6556390622295665,
+            "usefulness_gap": -0.006291206366666635,
+            "identifiability_mi_bits": 0.0
+          }
+        },
+        "verdicts": {
+          "learned": 1,
+          "initial_twin": 0,
+          "team_nearest": 0,
+          "fixed_food0": 0,
+          "fixed_food1": 0
+        },
+        "learned_identifiable": true
+      },
+      "ward": {
+        "k": 8,
+        "silhouette": 0.41313612699427127,
+        "metrics": {
+          "learned": {
+            "potential_bits": 1.999097939521405,
+            "conditional_selectivity": 0.5,
+            "specificity_js_bits": 0.6988961197498806,
+            "usefulness_gap": 0.08864006704490496,
+            "identifiability_mi_bits": 0.8112781244591329
+          },
+          "initial_twin": {
+            "potential_bits": 2.3892125962049695,
+            "conditional_selectivity": 0.0,
+            "specificity_js_bits": 0.29382518498981963,
+            "usefulness_gap": -0.13814749331180975,
+            "identifiability_mi_bits": 0.0
+          },
+          "team_nearest": {
+            "potential_bits": 2.0,
+            "conditional_selectivity": 1.0,
+            "specificity_js_bits": 1.0,
+            "usefulness_gap": 0.09960410238333328,
+            "identifiability_mi_bits": 1.0
+          },
+          "fixed_food0": {
+            "potential_bits": 1.5,
+            "conditional_selectivity": 0.275,
+            "specificity_js_bits": 1.0,
+            "usefulness_gap": 0.047405894359833334,
+            "identifiability_mi_bits": 0.32946028985661124
+          },
+          "fixed_food1": {
+            "potential_bits": 2.0,
+            "conditional_selectivity": 0.0,
+            "specificity_js_bits": 1.0,
+            "usefulness_gap": -0.006291206366666635,
+            "identifiability_mi_bits": 0.0
+          }
+        },
+        "verdicts": {
+          "learned": 1,
+          "initial_twin": 0,
+          "team_nearest": 0,
+          "fixed_food0": 0,
+          "fixed_food1": 0
+        },
+        "learned_identifiable": true
+      },
+      "pca_kmeans": {
+        "k": 8,
+        "silhouette": 0.5100116398324473,
+        "metrics": {
+          "learned": {
+            "potential_bits": 1.999097939521405,
+            "conditional_selectivity": 0.5,
+            "specificity_js_bits": 0.6322104885476421,
+            "usefulness_gap": 0.08864006704490496,
+            "identifiability_mi_bits": 0.8112781244591329
+          },
+          "initial_twin": {
+            "potential_bits": 2.273792339912287,
+            "conditional_selectivity": 0.0,
+            "specificity_js_bits": 0.22681750110385665,
+            "usefulness_gap": -0.13814749331180975,
+            "identifiability_mi_bits": 0.0
+          },
+          "team_nearest": {
+            "potential_bits": 2.0,
+            "conditional_selectivity": 1.0,
+            "specificity_js_bits": 0.75,
+            "usefulness_gap": 0.09960410238333328,
+            "identifiability_mi_bits": 1.0
+          },
+          "fixed_food0": {
+            "potential_bits": 2.0,
+            "conditional_selectivity": 0.275,
+            "specificity_js_bits": 0.75,
+            "usefulness_gap": 0.047405894359833334,
+            "identifiability_mi_bits": 0.32946028985661124
+          },
+          "fixed_food1": {
+            "potential_bits": 2.0,
+            "conditional_selectivity": 0.0,
+            "specificity_js_bits": 0.75,
+            "usefulness_gap": -0.006291206366666635,
+            "identifiability_mi_bits": 0.0
+          }
+        },
+        "verdicts": {
+          "learned": 1,
+          "initial_twin": 0,
+          "team_nearest": 0,
+          "fixed_food0": 0,
+          "fixed_food1": 0
+        },
+        "learned_identifiable": true
+      }
+    },
+    "1205": {
+      "kmeans": {
+        "k": 8,
+        "silhouette": 0.40255777724083003,
+        "metrics": {
+          "learned": {
+            "potential_bits": 0.9029968222611637,
+            "conditional_selectivity": 0.5,
+            "specificity_js_bits": 0.33096941632248056,
+            "usefulness_gap": 0.038435858515987464,
+            "identifiability_mi_bits": 0.12994448097196143
+          },
+          "initial_twin": {
+            "potential_bits": 2.4601719870765004,
+            "conditional_selectivity": 0.025,
+            "specificity_js_bits": 0.28862551890436294,
+            "usefulness_gap": -0.1392159336983558,
+            "identifiability_mi_bits": 0.12127386191443312
+          },
+          "team_nearest": {
+            "potential_bits": 2.0,
+            "conditional_selectivity": 1.0,
+            "specificity_js_bits": 1.0,
+            "usefulness_gap": 0.08088395238583335,
+            "identifiability_mi_bits": 1.0
+          },
+          "fixed_food0": {
+            "potential_bits": 1.5,
+            "conditional_selectivity": 0.275,
+            "specificity_js_bits": 1.0,
+            "usefulness_gap": 0.023770500628933322,
+            "identifiability_mi_bits": 0.32946028985661124
+          },
+          "fixed_food1": {
+            "potential_bits": 2.0,
+            "conditional_selectivity": 0.0,
+            "specificity_js_bits": 1.0,
+            "usefulness_gap": -0.0032740253641667105,
+            "identifiability_mi_bits": 0.0
+          }
+        },
+        "verdicts": {
+          "learned": 1,
+          "initial_twin": 0,
+          "team_nearest": 0,
+          "fixed_food0": 0,
+          "fixed_food1": 0
+        },
+        "learned_identifiable": true
+      },
+      "gmm": {
+        "k": 7,
+        "silhouette": 0.38204247428527194,
+        "metrics": {
+          "learned": {
+            "potential_bits": 0.9029968222611637,
+            "conditional_selectivity": 0.5,
+            "specificity_js_bits": 0.33848014467070786,
+            "usefulness_gap": 0.038435858515987464,
+            "identifiability_mi_bits": 0.07107646816231838
+          },
+          "initial_twin": {
+            "potential_bits": 1.0129901851912426,
+            "conditional_selectivity": 0.025,
+            "specificity_js_bits": 0.20406536490659455,
+            "usefulness_gap": -0.1392159336983558,
+            "identifiability_mi_bits": 0.14502554353805963
+          },
+          "team_nearest": {
+            "potential_bits": 1.5,
+            "conditional_selectivity": 1.0,
+            "specificity_js_bits": 1.0,
+            "usefulness_gap": 0.08088395238583335,
+            "identifiability_mi_bits": 1.0
+          },
+          "fixed_food0": {
+            "potential_bits": 1.5,
+            "conditional_selectivity": 0.275,
+            "specificity_js_bits": 1.0,
+            "usefulness_gap": 0.023770500628933322,
+            "identifiability_mi_bits": 0.32946028985661124
+          },
+          "fixed_food1": {
+            "potential_bits": 1.5,
+            "conditional_selectivity": 0.0,
+            "specificity_js_bits": 1.0,
+            "usefulness_gap": -0.0032740253641667105,
+            "identifiability_mi_bits": 0.0
+          }
+        },
+        "verdicts": {
+          "learned": 1,
+          "initial_twin": 0,
+          "team_nearest": 0,
+          "fixed_food0": 0,
+          "fixed_food1": 0
+        },
+        "learned_identifiable": false
+      },
+      "ward": {
+        "k": 8,
+        "silhouette": 0.39118208455416303,
+        "metrics": {
+          "learned": {
+            "potential_bits": 0.9285270228564532,
+            "conditional_selectivity": 0.5,
+            "specificity_js_bits": 0.3110089372877768,
+            "usefulness_gap": 0.038435858515987464,
+            "identifiability_mi_bits": 0.12255624891826566
+          },
+          "initial_twin": {
+            "potential_bits": 2.3035125636980123,
+            "conditional_selectivity": 0.025,
+            "specificity_js_bits": 0.31822545281190406,
+            "usefulness_gap": -0.1392159336983558,
+            "identifiability_mi_bits": 0.08756097327451373
+          },
+          "team_nearest": {
+            "potential_bits": 1.5,
+            "conditional_selectivity": 1.0,
+            "specificity_js_bits": 1.0,
+            "usefulness_gap": 0.08088395238583335,
+            "identifiability_mi_bits": 1.0
+          },
+          "fixed_food0": {
+            "potential_bits": 1.5,
+            "conditional_selectivity": 0.275,
+            "specificity_js_bits": 1.0,
+            "usefulness_gap": 0.023770500628933322,
+            "identifiability_mi_bits": 0.32946028985661124
+          },
+          "fixed_food1": {
+            "potential_bits": 1.5,
+            "conditional_selectivity": 0.0,
+            "specificity_js_bits": 1.0,
+            "usefulness_gap": -0.0032740253641667105,
+            "identifiability_mi_bits": 0.0
+          }
+        },
+        "verdicts": {
+          "learned": 1,
+          "initial_twin": 0,
+          "team_nearest": 0,
+          "fixed_food0": 0,
+          "fixed_food1": 0
+        },
+        "learned_identifiable": true
+      },
+      "pca_kmeans": {
+        "k": 8,
+        "silhouette": 0.4716019477167117,
+        "metrics": {
+          "learned": {
+            "potential_bits": 1.571599239278989,
+            "conditional_selectivity": 0.5,
+            "specificity_js_bits": 0.5817290475988834,
+            "usefulness_gap": 0.038435858515987464,
+            "identifiability_mi_bits": 0.6553484194318089
+          },
+          "initial_twin": {
+            "potential_bits": 2.3976551442557406,
+            "conditional_selectivity": 0.025,
+            "specificity_js_bits": 0.23193962890730935,
+            "usefulness_gap": -0.1392159336983558,
+            "identifiability_mi_bits": 0.09527911998976801
+          },
+          "team_nearest": {
+            "potential_bits": 1.5,
+            "conditional_selectivity": 1.0,
+            "specificity_js_bits": 1.0,
+            "usefulness_gap": 0.08088395238583335,
+            "identifiability_mi_bits": 1.0
+          },
+          "fixed_food0": {
+            "potential_bits": 1.748193613496952,
+            "conditional_selectivity": 0.275,
+            "specificity_js_bits": 1.0,
+            "usefulness_gap": 0.023770500628933322,
+            "identifiability_mi_bits": 0.5776539033535633
+          },
+          "fixed_food1": {
+            "potential_bits": 1.5,
+            "conditional_selectivity": 0.0,
+            "specificity_js_bits": 1.0,
+            "usefulness_gap": -0.0032740253641667105,
+            "identifiability_mi_bits": 0.0
+          }
+        },
+        "verdicts": {
+          "learned": 1,
+          "initial_twin": 0,
+          "team_nearest": 0,
+          "fixed_food0": 0,
+          "fixed_food1": 0
+        },
+        "learned_identifiable": true
+      }
+    }
+  }
+}

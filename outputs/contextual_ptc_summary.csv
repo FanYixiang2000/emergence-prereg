@@ -1,0 +1,7 @@
+regime,natural_team_return_mean,rescue_success_rate,bridge_success_rate,over_sacrifice_rate,selective_trigger_score,potential_effective_modes,natural_trigger_rate,trigger_choice_tension,counterfactual_necessity,retrospective_importance,endogenous_emergence_score
+pure_individual,4.0000,0.0000,0.0000,0.0000,0.0000,1.0000,0.0000,0.0000,3.9080,0.0000,0.0000
+pure_team,9.5000,0.5000,0.5000,0.0000,1.0000,2.0000,0.5000,1.0000,4.4500,3.0000,0.6329
+linear_mixed,5.9760,0.0000,0.4940,0.0000,0.0000,1.9999,0.0000,0.0000,4.6040,0.0000,0.0000
+dense_shaping,9.5000,0.5000,0.5000,0.0000,1.0000,2.0000,0.5000,1.0000,4.5500,3.0000,0.6530
+uncertain_preference,5.3360,0.0000,0.6365,0.0000,0.0000,1.9259,0.0000,0.0000,0.7755,0.0000,0.0000
+random_noise,8.8500,0.5000,0.4245,0.0215,0.8490,2.4728,0.5000,1.0000,5.3080,4.3000,0.9810

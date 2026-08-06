@@ -1,0 +1,15 @@
+{
+  "status": "learned transition pilot; trains checkpoint(s) for state-level real-vs-ghost certificate; not a confirmatory flagship result",
+  "layouts": [
+    "cramped_room",
+    "asymmetric_advantages"
+  ],
+  "train_steps": 40000,
+  "seeds": {
+    "92001": {
+      "checkpoint": "/home/Yixiang/MPARL/GOGOGO/outputs/overcooked_transition_pilot40k_s92001.pt",
+      "train_minutes": 0.427,
+      "eval_command": "python overcooked_transition_certificate.py --policy checkpoint --checkpoint /home/Yixiang/MPARL/GOGOGO/outputs/overcooked_transition_pilot40k_s92001.pt --seed 92001 --tag pilot40k_s92001"
+    }
+  }
+}

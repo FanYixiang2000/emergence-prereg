@@ -1,0 +1,17 @@
+Training checkpointed policies for rep/metric jump detectors ...
+  uncertain_preference   rep_jump 0.102 metric_jump 0.350
+  pure_team              rep_jump 0.328 metric_jump 0.500
+  dense_shaping          rep_jump 0.403 metric_jump 0.500
+  random_noise           rep_jump 1.399 metric_jump 0.500
+
+Training final policies for synergy detector ...
+
+detector           best_acc  misclassified
+rep_jump              0.900  latent_conditional
+metric_jump           0.800  latent_conditional;noise_policy
+specificity_only      0.900  latent_conditional
+synergy               0.900  latent_conditional
+causal_emergence_ei    0.900  shaped_process
+full_criterion        1.000  -  (refined_selectivity_check.py, same battery)
+
+Wrote /home/Yixiang/MPARL/GOGOGO/outputs/prior_metrics_comparison.json

@@ -1,0 +1,95 @@
+{
+  "status": "post-hoc referee-threshold sensitivity (labels only; scores and flags unchanged)",
+  "frozen_threshold_cp": 150,
+  "sweep": {
+    "100": {
+      "base_rate": 0.15,
+      "auroc_do_gap": 0.6116666666666667,
+      "auroc_shallow_gap": 0.7050245098039216,
+      "flag_precision": 0.26666666666666666,
+      "flag_lift": 1.777777777777778
+    },
+    "125": {
+      "base_rate": 0.1175,
+      "auroc_do_gap": 0.6897715628955458,
+      "auroc_shallow_gap": 0.7145741667168947,
+      "flag_precision": 0.26666666666666666,
+      "flag_lift": 2.269503546099291
+    },
+    "150": {
+      "base_rate": 0.095,
+      "auroc_do_gap": 0.7299360279150916,
+      "auroc_shallow_gap": 0.7615222448386159,
+      "flag_precision": 0.24,
+      "flag_lift": 2.526315789473684
+    },
+    "200": {
+      "base_rate": 0.0725,
+      "auroc_do_gap": 0.7710753787526722,
+      "auroc_shallow_gap": 0.7889209034296868,
+      "flag_precision": 0.18666666666666668,
+      "flag_lift": 2.5747126436781613
+    },
+    "250": {
+      "base_rate": 0.0625,
+      "auroc_do_gap": 0.78784,
+      "auroc_shallow_gap": 0.7846933333333334,
+      "flag_precision": 0.17333333333333334,
+      "flag_lift": 2.7733333333333334
+    }
+  },
+  "do_gap_decile_calibration": [
+    {
+      "decile": 1,
+      "mean_do_gap": 0.38828125,
+      "hit_rate_at_150cp": 0.425
+    },
+    {
+      "decile": 2,
+      "mean_do_gap": 0.17265625,
+      "hit_rate_at_150cp": 0.075
+    },
+    {
+      "decile": 3,
+      "mean_do_gap": 0.11875,
+      "hit_rate_at_150cp": 0.125
+    },
+    {
+      "decile": 4,
+      "mean_do_gap": 0.0765625,
+      "hit_rate_at_150cp": 0.025
+    },
+    {
+      "decile": 5,
+      "mean_do_gap": 0.03515625,
+      "hit_rate_at_150cp": 0.1
+    },
+    {
+      "decile": 6,
+      "mean_do_gap": 0.009375,
+      "hit_rate_at_150cp": 0.025
+    },
+    {
+      "decile": 7,
+      "mean_do_gap": -0.00703125,
+      "hit_rate_at_150cp": 0.0
+    },
+    {
+      "decile": 8,
+      "mean_do_gap": -0.046875,
+      "hit_rate_at_150cp": 0.05
+    },
+    {
+      "decile": 9,
+      "mean_do_gap": -0.09609375,
+      "hit_rate_at_150cp": 0.025
+    },
+    {
+      "decile": 10,
+      "mean_do_gap": -0.1953125,
+      "hit_rate_at_150cp": 0.1
+    }
+  ],
+  "auroc_above_0.70_at_all_thresholds": false,
+  "lift_above_2x_at_all_thresholds": false
+}

@@ -1,0 +1,131 @@
+{
+  "status": "component-directed witness matrix assembled from stored outputs",
+  "interpretation": "The CLBF leave-one-out audit measures in-domain empirical redundancy; this matrix documents cross-domain separability: every component has at least one measured system whose rejection runs through it.",
+  "witnesses": {
+    "potential": [
+      {
+        "system": "simple_spread greedy_nearest",
+        "grade": "DESIGNED",
+        "note": "deterministic scripted controller, early potential 0.0 bits: convergence without openness; win rate also below every trained seed"
+      },
+      {
+        "system": "LBF greedy_nearest",
+        "grade": "DESIGNED",
+        "note": "deterministic scripted controller, early potential 0.0 bits: convergence without openness; win rate also below every trained seed"
+      }
+    ],
+    "conditional_selectivity": [
+      {
+        "system": "CLBF conf:seed1104:learned",
+        "grade": "EXACT",
+        "note": "passes the other five components; fails exactly this one (borderline learned seed)"
+      },
+      {
+        "system": "CLBF ext:seed1205:learned",
+        "grade": "EXACT",
+        "note": "passes the other five components; fails exactly this one (borderline learned seed)"
+      },
+      {
+        "system": "gridworld useful_habit",
+        "grade": "DESIGNED",
+        "note": "unconditional forced trigger: huge usefulness (+4.4) with zero conditional selectivity"
+      },
+      {
+        "system": "gridworld blind_trigger",
+        "grade": "DESIGNED",
+        "note": "identical policy to the emergent system with an observer-imposed unconditional trigger"
+      }
+    ],
+    "specificity": [
+      {
+        "system": "gridworld random-noise vs structured triggers",
+        "grade": "SEE-NOTE",
+        "note": "in the original nine-system harness the specificity-ablation admits a named counterexample (criterion_ablation_battery.py); in CLBF specificity is backed up by selectivity, and the single-signal audit shows specificity alone caps at 0.82"
+      }
+    ],
+    "usefulness": [
+      {
+        "system": "gridworld anti_selector",
+        "grade": "EXACT",
+        "note": "triggers in exactly the wrong context; the registered c4b check confirms it fails ONLY usefulness under the refined rule"
+      },
+      {
+        "system": "grokking memorization phase / memorizer control",
+        "grade": "DESIGNED",
+        "note": "held-out entropy drops 6.6 -> 2.8 bits with zero accuracy gain: genuine collapse refused by the anchored usefulness window"
+      }
+    ],
+    "endogeneity": [
+      {
+        "system": "gridworld shaped_process",
+        "grade": "DESIGNED",
+        "note": "dense process shaping supplies the structure; rejected on provenance"
+      },
+      {
+        "system": "swarm damage_aware (5/5 seeds)",
+        "grade": "EXACT-PAIR",
+        "note": "competent hand-coded controller fails exactly {endogeneity, acquisition} on every fresh seed"
+      },
+      {
+        "system": "CLBF team_nearest (10/10 seeds)",
+        "grade": "EXACT-PAIR",
+        "note": "passes all four behavioural components, fails exactly {endogeneity, acquisition}"
+      },
+      {
+        "system": "grokking prewired control",
+        "grade": "DESIGNED",
+        "note": "held-out set included in training; rejected by design flag despite the largest burst in the family"
+      }
+    ],
+    "acquisition": [
+      {
+        "system": "swarm damage_aware (5/5 seeds)",
+        "grade": "EXACT-PAIR",
+        "note": "same paired provenance route"
+      },
+      {
+        "system": "swarm untrained twin (5/5 seeds)",
+        "grade": "DESIGNED",
+        "note": "registered exclusion route is acquisition"
+      },
+      {
+        "system": "CLBF team_nearest (10/10 seeds)",
+        "grade": "EXACT-PAIR",
+        "note": "passes all four behavioural components, fails exactly {endogeneity, acquisition}"
+      }
+    ],
+    "burstiness_process_proxy": [
+      {
+        "system": "Pythia_160m tail_facts",
+        "grade": "DESIGNED",
+        "note": "slow frequency-driven accrual correctly rejected via burstiness"
+      },
+      {
+        "system": "Pythia_1b tail_facts",
+        "grade": "DESIGNED",
+        "note": "slow frequency-driven accrual correctly rejected via burstiness"
+      },
+      {
+        "system": "Pythia_1.4b tail_facts",
+        "grade": "DESIGNED",
+        "note": "slow frequency-driven accrual correctly rejected via burstiness"
+      },
+      {
+        "system": "Pythia_1.4b tail_words",
+        "grade": "DESIGNED",
+        "note": "slow frequency-driven accrual correctly rejected via burstiness"
+      },
+      {
+        "system": "Pythia_2.8b tail_facts",
+        "grade": "DESIGNED",
+        "note": "slow frequency-driven accrual correctly rejected via burstiness"
+      },
+      {
+        "system": "Pythia_2.8b tail_words",
+        "grade": "DESIGNED",
+        "note": "slow frequency-driven accrual correctly rejected via burstiness"
+      }
+    ]
+  },
+  "all_components_witnessed": true
+}

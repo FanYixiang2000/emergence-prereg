@@ -1,0 +1,26 @@
+{
+  "partition_refinement": {
+    "trials": 10000,
+    "entropy_refinement_violations": 0,
+    "js_refinement_violations": 0,
+    "coarse_measurable_value_violations": 0,
+    "max_entropy_refinement_gain_bits": 2.668396791022647,
+    "max_js_refinement_gain_bits": 0.7191670763885061,
+    "max_value_invariance_error": 1.5543122344752192e-15
+  },
+  "model_based_intervention_error": {
+    "trials": 10000,
+    "value_gap_bound_violations": 0,
+    "max_value_error_to_bound_ratio": 1.0000000000000582,
+    "entropy_continuity_violations": 0,
+    "max_entropy_error_to_bound_ratio": 0.9881037962424833
+  },
+  "bounded_burst_equivalence": {
+    "n_runs": 27,
+    "threshold_ratio": 5.0,
+    "threshold_bounded": 0.8333333333333334,
+    "mismatches": [],
+    "equivalent_on_all_runs": true
+  },
+  "all_checks_pass": true
+}
