@@ -40,23 +40,22 @@ the effective joint possibility space}
 % ==========================================================================
 \begin{abstract}
 \noindent
-Emergence is invoked across physics, biology and machine learning, yet
-each field certifies it with a different instrument, so identical
-macroscopic behaviours can be labelled emergent or not depending on
-the measure chosen. Here we define emergence as a
-spontaneous, persistent, regime-level collapse of a system's effective
-joint state--action--trajectory possibility space, decomposed by
-source into environment-mediated, individual, pairwise and
-higher-order channels. Using a preregistered protocol, we calibrate
-the instrument on analytic ground truth, validate it on off-design
-physics, and apply it to learned multi-agent systems. An onset-type
-breakpoint in the collapse appears where a system commits to
-a new joint regime---including in learned populations with no designed
-commitment gate---and not under ordinary smooth optimization; its
-timing and sharpness shift systematically with system size and
-distance from criticality, and remaining openness predicts whether an
-intervention can still change the outcome. This provides a calibrated,
-falsifiable operationalization of a contested word.
+Emergence is claimed for scaled-model abilities, multi-agent
+coordination and collective animal behaviour, yet each field certifies
+it with a different instrument, so identical behaviours can be
+labelled emergent or not depending on the measure chosen. Here we
+define emergence as a spontaneous, persistent, regime-level collapse
+of a system's effective joint state--action--trajectory possibility
+space, decomposed by source into environmental, individual, pairwise
+and higher-order channels. Calibrating the instrument on analytic
+ground truth and validating it on off-design physics, we find that
+learning populations commit abruptly wherever a joint exploration
+barrier---a convention or role with value only once shared---must be
+crossed, and smoothly otherwise; that a capability can form smoothly
+across training while each deployment of it commits abruptly within
+an episode; and that remaining openness predicts, prospectively and
+causally in a standard benchmark, whether an intervention can still
+change the outcome.
 \end{abstract}
 
 \vspace{0.5em}
@@ -68,85 +67,75 @@ falsifiable operationalization of a contested word.
 parts settle into a collective regime that none of the parts specified
 in advance\citep{anderson1972more,goldenfeld1999simple,bedau1997weak,holland1998emergence}.
 The word \emph{emergence} names that phenomenon in statistical
-physics\citep{stanley1971introduction,bak1987self}, in the
-self-organization of animal
+physics\citep{stanley1971introduction,bak1987self}, in animal
 collectives\citep{camazine2001self,couzin2005effective,sumpter2006principles,ballerini2008interaction},
-in the appearance of new capabilities in large neural
+in the new capabilities of scaled neural
 networks\citep{wei2022emergent,brown2020language}, and in multi-agent
 reinforcement
 learning\citep{baker2020emergent,leibo2017multi,jaderberg2019human}.
-Yet the fields do not share an instrument. Integrated-information and causal-emergence measures ask
-whether a coarse-grained description has more causal power than its
+Yet the fields do not share an instrument: causal-emergence measures
+ask whether a coarse-graining has more causal power than its
 microstate\citep{hoel2013quantifying,hoel2017map,tononi2016integrated,rosas2020reconciling};
-information-theoretic autonomy measures test for macro-variable
+autonomy measures test macro-variable
 self-determination\citep{seth2010measuring,barrett2011practical};
 partial-information decomposition asks how much of a target is carried
 synergistically\citep{williams2010nonnegative,mediano2022greater};
 phase-transition theory tracks an order
 parameter\citep{strogatz2000kuramoto}; complexity science invokes
-computational and statistical
 irreducibility\citep{crutchfield1994calculi,mitchell2009complexity};
-and the machine-learning literature reports ``emergent abilities'' as
-sharp upturns of a benchmark against model
+and machine learning reports ``emergent abilities'' as sharp benchmark
+upturns against
 scale\citep{wei2022emergent,ganguli2022predictability,srivastava2022beyond},
 a debate entangled with scaling
-laws\citep{kaplan2020scaling,hoffmann2022training} and with grokking,
-where generalization appears long after
-memorization\citep{power2022grokking,nanda2023progress}.
+laws\citep{kaplan2020scaling,hoffmann2022training} and
+grokking\citep{power2022grokking,nanda2023progress}.
 
-These instruments disagree in a way that is not cosmetic. A recent and
+These instruments disagree in a way that is not cosmetic. An
 influential critique showed that some reported emergent abilities are
-artefacts of discontinuous metrics: change the score function and the
-sharp jump disappears\citep{schaeffer2023emergent}. This is not an
-isolated embarrassment; it is the generic risk of defining emergence on
-the \emph{observable of convenience}---a benchmark, an order parameter,
-a success rate---rather than on the object that actually reorganizes.
+metric artefacts: change the score function and the sharp jump
+disappears\citep{schaeffer2023emergent}. This is the generic risk of
+defining emergence on the \emph{observable of convenience}---a
+benchmark, an order parameter, a success rate---rather than on the
+object that actually reorganizes.
 Two systems can produce byte-identical macroscopic outcomes---identical
 joint distributions, identical marginals, identical task
 success---through entirely different underlying couplings (Fig.~1a),
-and no statistic of that shared distribution can tell them apart. If
-``emergence'' is read off the outcome, these systems are permanently
-indistinguishable. They become distinguishable only relative to a
-declared \emph{observation contract}---which variables are measured,
-which are exogenous, and which interaction-severing counterfactuals
-are admissible---under which one can ask how the effective possibility
-space closes. That is what our instrument measures; it attributes
-structure under a stated contract rather than claiming to recover
-causal mechanism from outcome statistics alone.
+and no statistic of that shared distribution can tell them apart. They
+become distinguishable only relative to a declared \emph{observation
+contract}---which variables are measured, which are exogenous, and
+which interaction-severing counterfactuals are admissible---under
+which one can ask how the effective possibility space closes. That is
+what our instrument measures; it attributes structure under a stated
+contract rather than claiming to recover causal mechanism from outcome
+statistics alone.
 
-We take the second view and make it operational. Consider the joint
-space of what every part \emph{could} still do together---the effective
-joint state--action--trajectory space. Before organization this space
-is wide; a colony of ants approaching a gap can still form a bridge,
-cross elsewhere, or disperse\citep{reid2015army}. Emergence, on our
-account, is the moment this space \emph{collapses} onto a narrow
-committed regime: the colony decides, together, to build. Crucially the
-collapse is not the completion. The bridge does not yet exist when the
-collective possibility space has already contracted onto building it.
-This is the intuition our instrument is built to measure, and to
-measure in a way whose verdicts are demonstrably stable within a
-measured admissible equivalence class of contracts---reference space,
-truncation, window, sampling grid and representation
-(Methods)---rather than inheriting the fragility of the observable of
-convenience.
+The object is the joint space of what every part \emph{could} still do
+together---the effective joint state--action--trajectory space. Before
+organization it is wide: an ant colony approaching a gap can still
+bridge, cross elsewhere or disperse\citep{reid2015army}. Emergence, on
+our account, is the moment this space \emph{collapses} onto a narrow
+committed regime---the colony decides, together, to build---and the
+collapse is not the completion: the bridge does not yet exist when the
+possibility space has already contracted onto building it. Our
+instrument measures this with verdicts demonstrably stable within a
+measured admissible equivalence class of contracts (Methods), rather
+than inheriting the fragility of the observable of convenience.
 
-Here we make three contributions. First, a definition with a two-level
-structure: a qualification (spontaneous, regime-level, persistent) and a
+Here we make three contributions. First, a two-level definition: a
+qualification (spontaneous, regime-level, persistent) and a
 quantitative \emph{emergence intensity profile} (EIP) whose
-axes---amplitude, abruptness, and the source decomposition---are
-separately measured, so that abruptness is a phenotype rather than a
-smuggled existence criterion. Second, a calibrated measurement contract,
+axes---amplitude, abruptness, source decomposition---are separately
+measured, so abruptness is a phenotype rather than a smuggled
+existence criterion. Second, a calibrated measurement contract,
 matured through preregistered self-falsification, that recovers the
 source of a collapse on analytic ground truth (72/72 cells) and on
-physics the instrument was never designed around. Third, and most
-consequential for this journal's readers, the finding that in
-\emph{learned} systems the same collapse admits a clean dissociation of
-timescales, varies systematically and reproducibly with system size and
-coupling, predicts controllability, and---importantly---is \textbf{not}
-generic: the punctuated form arises spontaneously where learning must
-cross a joint exploration barrier (convention formation, role lock-in),
-while ordinary dense-reward multi-agent optimization collapses
-smoothly, and we report exactly where it does and does not appear.
+physics it was never designed around. Third, the finding that in
+\emph{learned} systems the collapse dissociates cleanly by timescale,
+varies systematically with system size and coupling, predicts
+controllability, and is \textbf{not} generic: the punctuated form
+arises spontaneously where learning must cross a joint exploration
+barrier, while ordinary dense-reward optimization collapses smoothly,
+and we report exactly where it does and does not appear.
 
 % ==========================================================================
 \section*{Results}
@@ -156,24 +145,21 @@ smoothly, and we report exactly where it does and does not appear.
 We measure openness as the normalized entropy of the effective joint
 possibility distribution, $O_t = H(P_t)/H(P_\mathrm{ref})$, and collapse
 as $C_t = 1 - O_t$. Because literal support never shrinks for a
-stochastic policy, we work throughout with the \emph{effective}
-possibility count $N_\mathrm{eff}=2^{H}$; this is the formal version of
-the $10^n \!\to\! 2^n$ intuition. A system \emph{qualifies} as emergent
+stochastic policy, we work with the \emph{effective} possibility count
+$N_\mathrm{eff}=2^{H}$---the formal version of the
+$10^n \!\to\! 2^n$ intuition. A system \emph{qualifies} as emergent
 when its collapse is regime-level (a structural change in the joint
 distribution, not a marginal one), endogenous (generated internally,
 declared through a provenance boundary rather than assumed), and
 persistent (the closed regime remains stable over the declared
-observation horizon; recovery from perturbation and causal
-irreversibility are reported separately as robustness properties, not
-folded into the definition). Given qualification, we
-report an intensity profile rather than a binary label. $P_t$ itself is
-defined relative to a declared \emph{observation contract}---which
-variables enter the joint space, over what horizon, at what
-discretization, against which reference, with which provenance
+horizon; recovery from perturbation and causal irreversibility are
+reported separately as robustness properties). Given qualification, we
+report an intensity profile rather than a binary label. $P_t$ itself
+is defined relative to a declared \emph{observation
+contract}---variables, horizon, discretization, reference, provenance
 boundary---frozen before any adjudication; objectivity enters through
 freezing, measured invariance and refusal outside the contract's
-domain, not through a claim of representation-free measurement
-(Methods).
+domain (Methods).
 
 The decisive move is the source decomposition. Total collapse splits
 along a nested maximum-entropy ladder,
@@ -187,19 +173,18 @@ expansions\citep{schneidman2003network}. On analytic ground truth with
 four independent knobs, each knob moves only its own component, the
 ladder is monotone, and hiding an environmental common cause
 deterministically re-attributes collapse from $C_\mathrm{env}$ to the
-relational channels (all five preregistered checks pass; Fig.~1d). This
-contract-relativity is not a bug: it is the precise, measurable
-statement that ``higher-order'' is defined only relative to what an
-observer declares exogenous. On a full factorial of 72 analytic cells
-(4 sources $\times$ 3 temporal shapes $\times$ 2 stabilities $\times$ 3
-magnitudes) the instrument recovers the source in 72/72 cells, and---the
-point that defends us against the metric-artefact
-critique\citep{schaeffer2023emergent}---the amplitude $M$ is invariant
-across temporal shape (relative range 0.000 across all groups) while the
-abruptness $J$ strictly orders punctuated $>$ sigmoid $>$ gradual
-(Fig.~1c). Amplitude and abruptness are measured as different
-quantities; a revelation-only or discontinuous-metric control produces
-exactly zero collapse.
+relational channels (all five preregistered checks pass;
+Fig.~1d)---contract-relativity is the precise, measurable statement
+that ``higher-order'' is defined only relative to what an observer
+declares exogenous. On a 72-cell factorial (4 sources $\times$ 3
+temporal shapes $\times$ 2 stabilities $\times$ 3 magnitudes) the
+instrument recovers the source in 72/72 cells, and---the point that
+defends against the metric-artefact
+critique\citep{schaeffer2023emergent}---amplitude $M$ is invariant
+across temporal shape (relative range 0.000) while abruptness $J$
+strictly orders punctuated $>$ sigmoid $>$ gradual (Fig.~1c); a
+revelation-only or discontinuous-metric control produces exactly zero
+collapse.
 
 \subsection*{A breakpoint marks the punctuated phenotype, not emergence
 itself}
@@ -208,104 +193,66 @@ Qualification distinguishes emergent from non-emergent organization;
 the \emph{breakpoint} distinguishes the punctuated profile from
 gradual, non-monotone or unresolved collapse---absence of a breakpoint
 therefore never by itself rules emergence out. We fit the
-collapse curve with a two-regime model and compare it to a one-regime
-fit by $\Delta$BIC, inside a saturation-truncated window and behind an
-effect-size gate---two amendments we were forced to adopt when a flat,
-subcritical control produced a spurious hinge and when an S-curve's
-saturation knee stole the fit (both preregistered misses, both fixed
-definitionally on fresh seeds rather than by tuning). The matured
-detector was then frozen and scored on a held-out labelled benchmark:
-zero false positives across deceleration, gradual and flat control
-families at every tested grid density and noise level, onset power 1.00
-at the operating resolution of our experiments, and location agreement
-with a standard change-point method (Methods). Every headline verdict
-below is additionally stable across 243 adjudication contracts spanning
-gate, window, truncation, threshold and grid, and---separately, because
-detector settings and measurement representations are different
-things---across a preregistered battery of representations of the
-openness object itself (state coarse-graining, behavioural sampling in
-place of probabilities, object dualities, reference and truncation
-changes), whose measured equivalence class, including the two
-representations that break it and why, is reported in Methods.
+collapse curve with a two-regime model against a one-regime fit by
+$\Delta$BIC, inside a saturation-truncated window and behind an
+effect-size gate---two amendments forced by preregistered misses and
+fixed definitionally on fresh seeds rather than by tuning. The matured
+detector was frozen and scored on a held-out labelled benchmark: zero
+false positives across deceleration, gradual and flat control families
+at every tested grid density and noise level, onset power 1.00 at our
+operating resolution, and location agreement with a standard
+change-point method (Methods). Every headline verdict below is
+additionally stable across 243 adjudication contracts (gate, window,
+truncation, threshold, grid) and---separately---across a preregistered
+battery of representations of the openness object itself, whose
+measured equivalence class, including the representations that break
+it and why, is reported in Methods.
 
 With the matured detector, an \emph{onset}-type breakpoint (slow $\to$
 fast) follows the preregistered profile predictions across the tested
 systems---present where the theory predicts punctuated commitment,
-absent where it predicts smooth convergence (Fig.~6c). It appears in a committing ant
-colony, in a learned high-order coordination task (7/8 seeds pooled
-across the original run and a preregistered five-seed extension), and
-at the Kuramoto
-synchronization transition\citep{kuramoto1984chemical,strogatz2000kuramoto}.
-It is absent---correctly---in an ordinary supervised learner, whose
-collapse begins at maximum rate and decelerates (a \emph{knee}, not an
-onset), and it is unresolvable, and so not claimed, on stored
-language-model checkpoints whose entropy has already collapsed before
-the second saved step.
-
-\subsection*{Abruptness scales with system size and criticality}
-
-The breakpoint is not a detector artefact but a systematic feature of
-collective self-amplification. In an ant-commitment model a single
-chooser \emph{never} shows onset at any gain or grid, while large
-colonies always do, and the dependence is quantitative
-(Fig.~6a). Because commitment nucleates from binomial fluctuations of
-relative size $N^{-1/2}$ that are then amplified at an $N$-independent
-rate---a derivation we recorded before running---the commitment time
-should grow logarithmically while the collapse profile stays fixed.
-Both predictions hold across $N=1$--$500$: $t_{50}=a+b\ln N$ with
-$b=87.6$ (bootstrap 95\% CI [41, 124], $R^{2}=0.93$); the closing width
-is $N$-invariant (280--290 trips from $N{=}50$ to $500$); and the
-median collapse curves for $N\geq 50$ fall onto a single universal
-profile under pure time translation (mean pairwise RMS 0.010 versus
-0.266 unaligned)---a sharper statement than equilibrium-style width
-rescaling\citep{stanley1971introduction}. One sub-prediction failed
-and is reported as such: at the longer preregistered horizon the onset
-threshold sits between $N=10$ and $N=20$, so ``onset at every
-$N\geq10$'' was counted a miss rather than the bar being moved. In the Kuramoto system the
-same instrument tracks the approach to criticality: across coupling $K=0.9\to2.5$ (10/10
-runs onset) the breakpoint time falls monotonically (6.7 $\to$ 1.8,
-critical slowing down approached from above) and the closing slope rises
-monotonically (0.032 $\to$ 0.199), while every subcritical run is
-correctly gated null and the collapse is carried by the pairwise channel
-in 3/3 seeds (Fig.~6b)\citep{acebron2005kuramoto}. Abruptness therefore
-has two independent, manipulable control parameters---system size and
-feedback strength---both preregistered and both confirmed.
+absent where it predicts smooth convergence. It appears in a committing ant
+colony, in a learned high-order coordination task (7/8 seeds across
+the original run and a five-seed extension), and at the Kuramoto
+synchronization
+transition\citep{kuramoto1984chemical,strogatz2000kuramoto}. It is
+absent---correctly---in an ordinary supervised learner, whose collapse
+begins at maximum rate and decelerates (a \emph{knee}, not an onset),
+and unresolvable---so not claimed---on stored language-model
+checkpoints, whose entropy collapses before the second saved step.
 
 \subsection*{In learned systems, formation and realization dissociate}
 
-The most consequential results are in learned agents, because here the
+The most consequential results are in learned agents, where the
 possibility space is shaped by optimization rather than fixed physics.
-We designed a two-phase collective-transport task in which sixteen
-agents must jointly grip an object before they can push it, structurally
-delaying the choice of side. Trained with policy
-gradients\citep{williams1992simple}, 10/10 seeds learn the task
-(success $\geq 0.995$) and 10/10 exhibit the predicted signature: the
-side-openness of the joint policy holds at a plateau for $\sim$17--19
-steps and then collapses, with an onset breakpoint in every seed
-($\Delta$BIC 45.8--52.7, $t^{*}$ concentrated at 16--18; Fig.~2b,d). A
-preregistered mechanism control---the same task without the gripping
-phase---shows no such breakpoint (0/5), establishing that it is the
-structural delay, not learning per se, that produces punctuated collapse
-(Fig.~2c). The phenomenon reproduces under a different
-algorithm\citep{mnih2016asynchronous} (advantage actor--critic on the
-byte-identical environment): 5/5 seeds reproduce the plateau-then-collapse
-shape and the primary hinge ($\Delta$BIC 37.7--45.5, $t^{*}$ 14--16). We
-report this as a strong partial replication rather than full algorithm
-independence, because the strict robustness clause (surviving subsample
-thinning in $\geq$4/5 seeds) passes in only 3/5---two seeds miss solely
-on thinned-subsample detector power, and we do not adjust the threshold
-post hoc.
+In a two-phase collective-transport task---sixteen agents must jointly
+grip an object before they can push it, structurally delaying the
+choice of side---policy-gradient
+training\citep{williams1992simple} yields 10/10 learned seeds
+(success $\geq 0.995$) and 10/10 with the predicted signature:
+side-openness holds at a plateau for $\sim$17--19 steps and then
+collapses, with an onset breakpoint in every seed ($\Delta$BIC
+45.8--52.7, $t^{*}$ at 16--18; Fig.~2b,d). A preregistered mechanism
+control---the same task without the gripping phase---shows no
+breakpoint (0/5): it is the structural delay, not learning per se,
+that produces punctuated collapse (Fig.~2c). The phenomenon reproduces under a different
+algorithm\citep{mnih2016asynchronous} (advantage actor--critic,
+byte-identical environment): 5/5 seeds reproduce the
+plateau-then-collapse shape and primary hinge ($\Delta$BIC 37.7--45.5).
+We report a strong partial replication: the strict thinning clause
+passes in only 3/5, missing solely on thinned-subsample detector
+power, and we do not adjust the threshold post hoc.
 
 The same learned system cleanly separates the two senses of emergence
 that are usually conflated (Fig.~3). Along the \emph{realization}
 axis---within a single episode---collapse is punctuated (5/5
 breakpoints). Along the \emph{formation} axis---across training---the
 capability appears \emph{smoothly}: outcome-openness expands
-(0 $\to$ $\sim$0.65 within $\sim$100 updates, 0/5 breakpoints), and at
-fine 5-update resolution the success rise is fast but has no structural
-onset (0/5). Capability formation is smooth and expansive; capability
-realization is punctuated. This dissociation, observed in the same
-system with the same instrument, clarifies why debates over whether
+(0 $\to$ $\sim$0.65 within $\sim$100 updates) with no structural onset
+at either standard or fine 5-update resolution (0/5 on both).
+Formation is smooth and expansive; realization is punctuated. Observed
+in the same system with the same instrument, this dissociation
+clarifies why debates over whether
 scaled-model abilities appear ``suddenly'' have been
 inconclusive\citep{wei2022emergent,schaeffer2023emergent}: the
 capability may form smoothly while each deployment of it commits
@@ -314,56 +261,51 @@ abruptly.
 \subsection*{Punctuated collapse arises without designed barriers}
 
 A fair objection is that the grip task's delayed commitment is imposed
-by its own state machine, so the flagship functions as a positive
-control for the instrument rather than a discovery about learning. We
-therefore preregistered two systems in which \emph{no} environment
-mechanism delays commitment: every joint regime is available, and all
-are exactly equivalent, from the first update. In a ten-agent
-signalling population (five meanings, five symbols, reward only for
-successful decoding\citep{lewis1969convention}), any of the 120
-possible codes could be adopted at any moment; yet convention openness
-holds at a statistically flat plateau and then collapses with an onset
-breakpoint in 4/5 seeds ($\Delta$BIC 17.8--30.1), the breakpoint
+by its own state machine---a positive control, not a discovery about
+learning. We therefore preregistered two systems in which \emph{no}
+environment mechanism delays commitment: every joint regime is
+available, and exactly equivalent, from the first update. In a
+ten-agent signalling population (five meanings, five symbols, reward
+only for successful decoding\citep{lewis1969convention}), any of the
+120 codes could be adopted at any moment; yet convention openness
+holds at a statistically flat plateau and then collapses with an
+onset breakpoint in 4/5 seeds ($\Delta$BIC 17.8--30.1), the breakpoint
 ($t^{*}=275$--$300$) preceding mutual intelligibility 0.9 (updates
-700--1{,}025) in every onset seed, and the five seeds converge to five
-\emph{different} codes. In a six-agent division-of-labour task (team
-reward only when all six interchangeable roles are covered; chance
-1.5\%), assignment openness shows the same signature in 5/5 seeds and
-more strongly ($\Delta$BIC 53.6--71.7; closing slope $\sim$30$\times$
-the plateau slope), again with collapse preceding capability in every
-seed and five distinct role permutations across five seeds. In both
-systems the open plateau \emph{is} the joint exploration barrier, and
-we measure it rather than assert it: mid-plateau, a probe agent
+700--1{,}025) in every onset seed, and the five seeds converging to
+five \emph{different} codes. A six-agent division-of-labour task
+(team reward only when all six interchangeable roles are covered)
+shows the same signature more strongly in 5/5 seeds ($\Delta$BIC
+53.6--71.7; closing slope $\sim$30$\times$ the plateau slope), again
+with collapse preceding capability and five distinct role
+permutations. In both
+systems the open plateau \emph{is} the joint exploration barrier,
+measured rather than asserted: mid-plateau, a probe agent
 unilaterally committing to the \emph{best} available code or role
-gains essentially nothing (0.011; 0.001), whereas after commitment
-the cheapest unilateral deviation forfeits the structural maximum of
-the payoff (0.40 of a 0.40 ceiling; 1.00), and populations from
-different seeds are mutually incompatible (cross-seed intelligibility
-0.14, hybrid-team success 0.05, versus $\sim$1.00 within). A code or
-a role division has value only to the extent that others already
-share it---and the collapse is nucleated, self-amplifying
-commitment, the learned analogue of the sharp consensus transitions
-known from naming-game and convention-formation
-studies\citep{baronchelli2006sharp,centola2015spontaneous}. Neither
-system depends on its tabular parameterization: replacing the tables
-with randomly initialized neural policies (per-agent MLPs for the
-signalling population; one \emph{shared} MLP for all six role agents)
-reproduces the signature in ten fresh seeds per system---onset in 6/7
-learned convention seeds and 10/10 role seeds ($\Delta$BIC up to 162),
-collapse preceding capability in every one, and every seed converging
-to a different code or permutation. The neural runs also expose a
-mechanism the theory predicts: random initialization pre-breaks the
-symmetry among equivalent regimes, compressing the competition plateau
-roughly tenfold (commitment within the first 5\% of training, which a
-coarse checkpoint grid provably cannot resolve---the same power floor
-measured in the detector benchmark), and an initialization-scale sweep
-moves the commitment time in the predicted direction (monotone in the
-signalling system; extremes correct but midpoint non-monotone in the
-role system, reported as a registered miss). This mechanism---seed
-randomness deciding when and where a run commits---gives a
-regime-level reading of the finding that emergent language-model
-capabilities reflect bimodal cross-seed performance distributions
-rather than deterministic scale thresholds\citep{zhao2025random}:
+gains essentially nothing (0.011; 0.001); after commitment, the
+cheapest unilateral deviation forfeits the structural maximum of the
+payoff (0.40 of a 0.40 ceiling; 1.00); and populations from different
+seeds are mutually incompatible (cross-seed intelligibility 0.14,
+hybrid-team success 0.05, versus $\sim$1.00 within). A code or role
+division has value only insofar as others already share it, and the
+collapse is nucleated, self-amplifying commitment---the learned
+analogue of sharp consensus transitions in naming
+games\citep{baronchelli2006sharp,centola2015spontaneous}. Neither
+system depends on its tabular parameterization: randomly initialized
+neural policies (per-agent MLPs for signalling; one \emph{shared} MLP
+for all six role agents) reproduce the signature in ten fresh seeds
+per system---onset in 6/7 learned convention seeds and 10/10 role
+seeds ($\Delta$BIC up to 162), collapse preceding capability in every
+one, every seed converging to a different code or permutation. The
+neural runs expose a mechanism the theory predicts: random
+initialization pre-breaks the symmetry among equivalent regimes,
+compressing the competition plateau roughly tenfold (Methods), and an
+initialization-scale sweep moves commitment time in the predicted
+direction (monotone for signalling; role-system midpoint non-monotone,
+a registered miss). This mechanism---seed
+randomness deciding when and where a run commits---matches the
+finding that emergent language-model capabilities reflect bimodal
+cross-seed distributions rather than deterministic scale
+thresholds\citep{zhao2025random}:
 each seed crosses the same barrier at a stochastic time, so ensemble
 averages blur what single-run collapse curves resolve. Punctuated
 possibility collapse is therefore not an artefact of designed gates or
@@ -385,231 +327,224 @@ $C_\mathrm{high}$ 0.94--0.96 bits and pairwise $\approx$ 0.0004 bits
 throughout the whole formation history (3/3 seeds; Fig.~4b), and
 declaring the private cues exogenous re-attributes the identical
 collapse to $C_\mathrm{env}$ (Fig.~4c)---the learned version of
-contract-relativity. Together these give a sharp statement: higher-order
-structure is not unlearnable but \emph{unfavoured}---gradient learning
-selects the lowest-order implementation available and builds irreducible
-structure only when information constraints force
-it\citep{tishby2000information}, echoing the difficulty of learning
-compositional protocols in emergent-communication
-studies\citep{mordatch2018emergence,lazaridou2017multi,foerster2016learning}
-and value-factorization methods in cooperative
-MARL\citep{lowe2017multi,sunehag2018value,rashid2018qmix}. Off design,
-the same ladder correctly
-reads out Kuramoto oscillators (uncoupled $\to$ null; common driver
-$\to$ $C_\mathrm{env}$; single edge $\to$ $C_\mathrm{pair}$), a mechanism
+contract-relativity. Together these give a sharp statement:
+higher-order structure is not unlearnable but
+\emph{unfavoured}---gradient learning selects the lowest-order
+implementation available and builds irreducible structure only when
+information constraints force it\citep{tishby2000information},
+echoing difficulties in
+emergent-communication\citep{mordatch2018emergence,lazaridou2017multi,foerster2016learning}
+and cooperative-MARL
+value-factorization\citep{lowe2017multi,sunehag2018value,rashid2018qmix}
+studies. Off design, the same ladder correctly reads out Kuramoto
+oscillators (uncoupled $\to$ null; common driver $\to$
+$C_\mathrm{env}$; single edge $\to$ $C_\mathrm{pair}$), a mechanism
 vocabulary it never saw. And at matched task performance, the source
 \emph{profile} separates a learned Overcooked
 pair\citep{carroll2019utility} from a noise-matched scripted pair
-through its environment-conditioned component ($C_\mathrm{env}$ 0.0137
-[0.0123, 0.0156] vs 0.0005 [0.0004, 0.0007], non-overlapping; Fig.~4d),
-even though a single-point coupling measure cannot---the
-organizational difference is visible in the collapse composition,
-under the fixed contract, though in no scalar summary.
+through its environment-conditioned component ($C_\mathrm{env}$
+0.0137 [0.0123, 0.0156] vs 0.0005 [0.0004, 0.0007]; Fig.~4d), even
+though a single-point coupling measure cannot---the organizational
+difference is visible in the collapse composition though in no scalar
+summary.
 
 \subsection*{Remaining openness predicts controllability}
 
 If emergence is the closing of a possibility space, then how open that
-space still is should predict whether the outcome can still be steered.
-It does (Fig.~5). In the ant system, per-episode intervention flip-rate
+space still is should predict whether the outcome can still be
+steered. It does (Fig.~5). In the ant system, per-episode flip-rate
 rises strictly with the episode's own remaining openness (0.000 $\to$
-0.0006 $\to$ 0.054 $\to$ 0.205 across openness bins; Fig.~5d); a closed
-episode (openness $<$ 0.1) flips 0/2{,}600 times, and flipped episodes
-are 0.58 openness units more open than unflipped ones (permutation
-$p < 10^{-4}$, 8{,}372 paired counterfactuals). In the learned grip
-system, a counter-regime impulse switches the outcome with probability
-1.0 up to $t=16$ and only 0.27 by $t=30$, and side-openness predicts
+0.205 across bins; closed episodes flip 0/2{,}600; flipped episodes
+are 0.58 openness units more open, permutation $p < 10^{-4}$ over
+8{,}372 paired counterfactuals; Fig.~5d). In the learned grip system,
+a counter-regime impulse switches the outcome with probability 1.0 up
+to $t=16$ and only 0.27 by $t=30$, and side-openness predicts
 switchability with AUC 0.996 (Fig.~5a,b). This is not a time proxy:
-holding the intervention time fixed, per-episode openness still
-separates flippable from locked episodes with AUC 0.974--0.990 at every
-tested $\tau$ (20{,}480 episodes per cell). Conditioning additionally
-on the physical order parameter removes the signal---the registered
-boundary of the claim: in this system openness is an
-information-sufficient transform of the physical state, so its value
-is not extra predictive information but that it is computable from
-the policy alone, without privileged access to the order parameter,
-and transfers as a decision rule. Openness also
-works \emph{prospectively}: an intervention rule
-that simply waits until per-episode openness first drops to a threshold
-calibrated on the original seeds transfers to five unseen seeds, where
-it flips the outcome in 99.99\% of episodes while acting on average 3.8
-steps later than the best fixed schedule (99.6\%) and beating random
-timing by 21 points---remaining openness is a policy-accessible
-intervention coordinate, not a retrospective correlate, and it acts
-as late as each episode allows. A matched-parameter contrast
+at fixed intervention time, openness still separates flippable from
+locked episodes (AUC 0.974--0.990 at every tested $\tau$; 20{,}480
+episodes per cell). Conditioning additionally on the physical order
+parameter removes the signal---the registered boundary: here openness
+is an information-sufficient transform of the physical state, and its
+value is that it is computable from the policy alone and transfers as
+a decision rule. It also works \emph{prospectively}: a rule that waits
+until openness first drops to a threshold calibrated on the original
+seeds transfers to five unseen seeds, flipping 99.99\% of episodes
+while acting 3.8 steps later than the best fixed schedule (99.6\%)
+and beating random timing by 21 points---a policy-accessible
+intervention coordinate that acts as late as each episode allows. A matched-parameter contrast
 isolates the mechanism: when stances are inertial (a hidden
 consolidation phase exists), joint openness predicts switchability
 \emph{better} than the physical order parameter (AUC 0.886 vs 0.849);
 when the single stickiness parameter is set so no hidden phase
 exists---all other constants imported unchanged---the advantage reverses
-(0.811 vs 0.884; Fig.~5c). Openness carries controllability information
-beyond the order parameter exactly when there is a hidden regime to
-consolidate.
+(0.811 vs 0.884; Fig.~5c). Both orderings were the registered
+predictions of their respective runs. Openness carries controllability
+information beyond the order parameter exactly when there is a hidden
+regime to consolidate.
+
+\subsection*{Abruptness scales with system size and criticality}
+
+The breakpoint is not specific to learning; it is a systematic feature
+of collective self-amplification. In an ant-commitment model a single
+chooser \emph{never} shows onset at any gain or grid, while large
+colonies always do, and the dependence is quantitative
+(Fig.~6a). Because commitment nucleates from binomial fluctuations of
+relative size $N^{-1/2}$ that are then amplified at an $N$-independent
+rate---a derivation we recorded before running---the commitment time
+should grow logarithmically while the collapse profile stays fixed.
+Both predictions hold across $N=1$--$500$: $t_{50}=a+b\ln N$ with
+$b=87.6$ (bootstrap 95\% CI [41, 124], $R^{2}=0.93$); the closing width
+is $N$-invariant (280--290 trips from $N{=}50$ to $500$); and the
+median collapse curves for $N\geq 50$ fall onto a single universal
+profile under pure time translation (mean pairwise RMS 0.010 versus
+0.266 unaligned)---a sharper statement than equilibrium-style width
+rescaling\citep{stanley1971introduction}. One sub-prediction failed
+and is reported as such: at the longer horizon the onset threshold
+sits between $N=10$ and $20$, so ``onset at every $N\geq10$'' was
+counted a miss. In the Kuramoto system the same instrument tracks the
+approach to criticality: across coupling $K=0.9\to2.5$ (10/10 onsets)
+the breakpoint time falls monotonically (6.7 $\to$ 1.8) and the
+closing slope rises monotonically (0.032 $\to$ 0.199), every
+subcritical run is correctly gated null, and the collapse is carried
+by the pairwise channel (3/3 seeds;
+Fig.~6b)\citep{acebron2005kuramoto}. Abruptness therefore has two
+independent, manipulable control parameters---system size and feedback
+strength---both preregistered and confirmed.
 
 \subsection*{Where the punctuated form does not appear}
 
-The claim is falsifiable and we report its boundary honestly (Fig.~6c).
-Onset-type collapse is \textbf{not} generic to learned optimization. In
-real deep multi-agent RL (Overcooked, two agents) the learned policies
-show gradual trajectory-space collapse and increasing role selectivity
-that track capability but produce no structural onset (0/3 on both a
-policy-entropy and a trajectory-occupancy object). A registered rescue
-sequence---smooth population consensus, quorum-threshold populations, and
-learning-rate scans---also produced no onset (0/20 in the quorum
-population).
+The claim is falsifiable and we report its boundary honestly
+(Fig.~6c). Onset-type collapse is \textbf{not} generic to learned
+optimization: in standard two-agent Overcooked the learned policies
+collapse gradually on both a policy-entropy and a trajectory-occupancy
+object (0/3), and a registered rescue sequence---smooth consensus,
+quorum-threshold populations, learning-rate scans---also produced no
+onset (0/20 in the quorum population).
 
-This negative is not left unexplained: the theory names the missing
-ingredient---cramped-room geometry pins the efficient plan, leaving no
-equivalent competing joint regimes---and the ingredient can be restored
-\emph{within the same standard package}. In the official
-coordination-ring layout, clockwise and counterclockwise circulation
-are mirror-equivalent joint conventions with value only when shared.
-With identical PPO mechanics and budget, all eight preregistered
+The theory names the missing ingredient---cramped-room geometry pins
+the efficient plan, leaving no competing joint regimes---and restoring
+it \emph{within the same standard package} restores commitment. In the
+official coordination-ring layout, clockwise and counterclockwise
+circulation are mirror-equivalent conventions with value only when
+shared: with identical PPO mechanics, all eight preregistered
 self-play seeds end committed to one direction (final direction
 probability 0.97 or 0.03; six counterclockwise, two
 clockwise---endogenous symmetry breaking in an unmodified benchmark),
-while neither cramped-room control ever commits on the same object at
-the same checkpoint density. The frozen detector certifies a punctuated
-onset in one seed, with the breakpoint (780k steps) preceding the
-capability crossing (1M steps), and declines the rest: their convention
+while neither cramped-room control ever commits. The frozen detector
+certifies a punctuated onset in one seed (breakpoint at 780k steps
+preceding the capability crossing at 1M) and declines the rest: their
 formation is non-monotone---commitment forms, dissolves and
-re-forms---which our monotone-collapse instrument was not built to
-certify. We count the registered onset-rate clause as a miss and report
-it as an instrument boundary; the regime-level fact that survives every
-seed is the committed final convention that cramped room never
-develops. A preregistered within-episode probe locates the commitment
-level precisely: at mid-training checkpoints (population still split
-between directions), branched continuation rollouts show that episodes
-drift with a direction bias but never internally lock (0/5 certified,
-median within-episode collapse below the 0.1 gate), whereas at the
-final checkpoints the same probe reads every episode as closed from
-its first step (initial openness 0.37, one direction, 8/8 seeds) and
-untrained controls stay open throughout with zero false onsets. The
-ring convention is therefore a formation-level commitment with no
+re-forms---which the monotone-collapse instrument was not built to
+certify, so we count the onset-rate clause as a miss. The regime-level
+fact surviving every seed is the committed final convention. A
+preregistered within-episode probe locates the commitment level: mid-training episodes drift with a
+direction bias but never internally lock (0/5 certified), whereas
+final-checkpoint episodes are closed from their first step (initial
+openness 0.37, 8/8 seeds; untrained controls stay open with zero false
+onsets). The ring convention is a formation-level commitment with no
 realization stage---the mechanistic complement of the grip system,
-whose commitment lives entirely within the episode.
+whose commitment lives within the episode.
 
 A final preregistered experiment tests whether this commitment is
-causally real rather than a descriptive label. We added unbiased
-Gaussian noise (two strengths) to stored checkpoints at three training
-times---very early, at the population's most open point, and well
-after commitment---and resumed training for 400k steps with
+causally real. We added unbiased Gaussian noise (two strengths) to
+stored checkpoints very early, at the population's most open point,
+and well after commitment, then resumed training for 400k steps with
 byte-identical mechanics (8 training seeds, 48 continuation runs; the
-seed is the independent unit and all inference is at seed level). The
-primary endpoint, declared in the preregistration, is whether the
-perturbation \emph{disturbs} the commitment (flips the final
-convention or decommits it): this happens in 7/8 seeds perturbed while
-open versus 1/8 perturbed after commitment (exact paired sign-flip
-test, $p=0.016$; at run level 8/16 versus 1/16, Fisher $p=0.008$).
-Strict direction reversal is a secondary, descriptive endpoint: three
-open-phase flips and zero late flips at run level, a contrast in the
-predicted direction that does not reach significance across eight
-seeds ($p=0.13$) and which we do not lean on. The stored openness at
-the perturbed checkpoint predicts strict flips across the pooled 48
-runs (AUC 0.85, preregistered threshold 0.70; descriptive, as runs
-cluster within seeds; four of the five flips occurred at openness
-$\geq 0.90$), and capability recovers to 0.92 of the unperturbed rate
-after late perturbation---the same perturbation-plus-retraining budget
-that can no longer move the convention is amply sufficient to relearn
-the task. What locks at commitment is the institution, not the
-learning. Two boundaries of this claim are explicit. The experiment
-validates the functional distinction between \emph{open} and
-\emph{committed} policy states in an unmodified community benchmark;
-it does not certify a breakpoint time $t^{*}$ as a causal transition
-point, because formation here is non-monotone and only one seed
-carries a certified onset. And because open and late checkpoints
-differ in training time as well as openness, the timing contrast alone
-cannot exclude generic training maturity; the fixed-time analysis that
-rules out the time confound exists in the grip system, not yet here. Among classic cases the picture is deliberately mixed:
-Vicsek flocking\citep{vicsek1995novel}, Swift--Hohenberg pattern
+seed is the independent unit). The preregistered primary
+endpoint---the perturbation flips or decommits the final
+convention---occurs in 7/8 seeds perturbed while open versus 1/8
+after commitment (exact paired sign-flip $p=0.016$; run-level 8/16
+versus 1/16, Fisher $p=0.008$). Strict direction reversal is
+secondary and descriptive (three open-phase flips, zero late;
+$p=0.13$ across seeds). Stored openness at the perturbed checkpoint
+predicts strict flips across the pooled runs (AUC 0.85; descriptive,
+as runs cluster within seeds), and capability recovers to 0.92 of the
+unperturbed rate after late perturbation: what locks at commitment is
+the institution, not the learning. This validates the functional
+open-versus-committed distinction, not a causal breakpoint time
+(formation is non-monotone; open and late checkpoints also differ in
+training time; Methods).
+
+Among classic cases the picture is deliberately mixed: Vicsek
+flocking\citep{vicsek1995novel}, Swift--Hohenberg pattern
 selection\citep{cross1993pattern} and Schelling
 segregation\citep{schelling1971dynamic} organize strongly but collapse
-\emph{gradually} under our object, while the Potts
-model\citep{wu1982potts} reproduces the known
-continuous-versus-first-order distinction through hinge strength and
-hysteresis. The honest conclusion is not ``everything is punctuated
-collapse'' but a classification: possibility-collapse profiles sort
-systems into punctuated, gradual, parameter-axis and early-warning
-forms, and onset appears specifically when the system must cross a
-joint-regime barrier---whether that barrier is physical (the grip
+\emph{gradually}, while the Potts model\citep{wu1982potts} reproduces
+the continuous-versus-first-order distinction through hinge strength
+and hysteresis. The honest conclusion is a classification, not
+``everything is punctuated'': collapse profiles sort systems into
+punctuated, gradual, parameter-axis and early-warning forms, and onset
+appears specifically where a joint-regime barrier---physical (the grip
 gate), informational (the blocked low-order channel) or endogenous to
-learning itself (a convention or role structure that has value only
-once shared). Dense-reward optimization with no such barrier collapses
+learning (a convention or role with value only once shared)---must be
+crossed. Dense-reward optimization with no such barrier collapses
 gradually, and our instrument says so.
 
 % ==========================================================================
 \section*{Discussion}
 
-We have argued, and measured, that emergence can be defined on the object
-that actually reorganizes---the effective joint possibility space---rather
-than on the observable of convenience, and that this choice avoids the
-specific failure mode---discontinuous scoring of continuous
-competence---behind the metric-artefact problem that has dogged
-emergent-ability
-claims\citep{schaeffer2023emergent}: amplitude and abruptness are provably
-separate axes, and a discontinuous scoring function produces zero collapse
-under our instrument. The definition is generative rather than nominal. It
-supplies a source typology that transfers from analytic ground truth to
-physics to learned agents; a breakpoint whose presence and absence track
-the theory's own predictions across ant colonies, a synchronization
-transition and learned high-order coordination; two systematic and
-manipulable dependences of abruptness on system size and coupling; and a
-control-theoretic payoff, since remaining openness
-predicts whether an intervention can still flip the outcome.
+We have argued, and measured, that emergence can be defined on the
+object that actually reorganizes---the effective joint possibility
+space---and that this choice avoids the failure mode behind the
+metric-artefact problem\citep{schaeffer2023emergent}: amplitude and
+abruptness are provably separate axes, and a discontinuous scoring
+function produces zero collapse under our instrument. The definition
+is generative rather than nominal: it supplies a source typology that
+transfers from analytic ground truth to physics to learned agents, a
+breakpoint whose presence and absence track the theory's own
+predictions, systematic and manipulable dependences of abruptness on
+system size and coupling, and a control-theoretic payoff, since
+remaining openness predicts whether an intervention can still flip
+the outcome.
 
 For machine intelligence specifically, the formation/realization
 dissociation clarifies a persistent confusion. ``Emergent abilities'' of
 scaled models\citep{wei2022emergent} and the within-run appearance of a
 coordinated strategy in self-play
 agents\citep{baker2020emergent,vinyals2019grandmaster,bard2020hanabi}
-are different events on different timescales: our learned flagship shows the first as smooth and
-expansive and the second as punctuated, in the \emph{same} system. This
-reframes the debate about whether capabilities ``suddenly'' appear: the
-capability may form smoothly while each deployment of it commits abruptly.
+are different events on different timescales: our learned flagship
+shows the first as smooth and expansive and the second as punctuated,
+in the \emph{same} system.
 Concurrent work detects higher-order structure in multi-agent
-language-model groups through partial information decomposition of
-time-delayed mutual information\citep{riedl2026emergent}; that
-programme asks whether synergy is \emph{present}, whereas ours asks
-when the joint possibility space \emph{closes}, how abruptly, through
-which channel, and whether the closure can still be steered---the two
-are complementary, and the collapse object adds the timing and control
-dimensions that presence tests do not address.
+language-model groups through partial information
+decomposition\citep{riedl2026emergent}; that programme asks whether
+synergy is \emph{present}, ours when the joint possibility space
+\emph{closes}, how abruptly, through which channel, and whether the
+closure can still be steered---complementary programmes, with the
+collapse object adding the timing and control dimensions.
 
 The limitations are real and stated as scope, not hidden. Onset-type
 collapse is not generic to deep MARL at current scale: dense-reward
 Overcooked optimization collapses gradually. Our designed systems (the
 grip gate; the blocked-channel XOR task) are mechanism-isolating
-controls, and we now know they are not load-bearing: convention
-formation and role lock-in reproduce the punctuated signature with no
-designed barrier at all. What separates the two classes, on present
-evidence, is the presence of a joint exploration barrier, and the
-coordination-ring experiment tests exactly this boundary inside the
-standard benchmark that produced the negative: restoring equivalent
-competing regimes restores committed conventions in every seed.
-Certified onsets remain rare there because that system's commitment is
-non-monotone---an instrument boundary we state rather than engineer
-away (a preregistered settled-envelope extension failed its own
-synthetic validation and was retired unused; Methods). Certifying
-non-monotone commitment, and extending to large-scale self-play and
-open-ended environments, are the clear next steps. We do not claim a causally verified commitment window---a
-one-pulse-destroys-the-regime hypothesis failed its own falsification
-clause, and formation proved re-entrant, which we report as a persistence
-property. We make no breakpoint claim for stored language-model
-checkpoints, whose grids are too sparse to resolve onset. We do not
-claim the openness object is representation-independent in the
-absolute: the audit delivers a measured equivalence class---verdict
-and location survive object dualities, behavioural sampling and state
-coarse-graining down to the detector's resolution floor, and break
-when a representation erases the latent channel---not blanket
-invariance. And
-the universal equivalence ``emergence $=$ onset breakpoint'' remains
-unproven: several canonical cases collapse gradually. What we offer is
-narrower and, we believe, more useful---a calibrated, preregistered,
-falsifiable instrument that measures \emph{how}, \emph{when} and
-\emph{through which channel} a possibility space closes, and that earns
-its claims by reporting, in the open, every place it says no. A natural
-next step is to connect the collapse object to internal-representation
-geometry in trained networks\citep{shai2024transformers}, extending the
-instrument from behaviour to mechanism.
+controls, and they are not load-bearing: convention formation and role
+lock-in reproduce the punctuated signature with no designed barrier at
+all. What separates the two classes, on present evidence, is a joint
+exploration barrier---now directly measured---and the coordination-ring
+experiment tests exactly this boundary inside the standard benchmark
+that produced the negative: restoring equivalent competing regimes
+restores committed conventions in every seed. Certified onsets remain
+rare there because that commitment is non-monotone---an instrument
+boundary we state rather than engineer away (a preregistered
+settled-envelope extension failed its own synthetic validation and was
+retired unused; Methods); certifying non-monotone commitment, and
+extending to large-scale self-play and open-ended environments, are
+the clear next steps. We do not claim a causally verified commitment
+window (a one-pulse hypothesis failed its falsification clause;
+formation proved re-entrant). We make no breakpoint claim for stored
+language-model checkpoints, whose grids are too sparse. We do not
+claim absolute representation-independence: the audit delivers a
+measured equivalence class, breaking only where a representation
+erases the latent channel. And the universal equivalence ``emergence
+$=$ onset breakpoint'' remains unproven: several canonical cases
+collapse gradually. What we offer is narrower and, we believe, more
+useful---a calibrated, falsifiable instrument that measures \emph{how},
+\emph{when} and \emph{through which channel} a possibility space
+closes, and that earns its claims by reporting, in the open, every
+place it says no. A natural next step is to connect the collapse
+object to internal-representation geometry in trained
+networks\citep{shai2024transformers}, extending the instrument from
+behaviour to mechanism.
 
 % ==========================================================================
 \section*{Methods}
@@ -888,7 +823,11 @@ continuation runs cluster within seeds; the run-level Fisher test was
 the frozen clause, and a stricter seed-level paired analysis (exact
 sign-flip permutation over the eight seeds, labeled post-hoc in the
 protocol file) confirms the primary endpoint and demotes the strict
-direction-reversal contrast to descriptive. The finite-size study uses sizes
+direction-reversal contrast to descriptive. Because open and late
+checkpoints differ in training time as well as openness, the timing
+contrast alone cannot exclude generic training maturity; the
+fixed-time analysis that rules out the time confound exists in the
+grip system and has not yet been run here. The finite-size study uses sizes
 $N\in\{1,2,5,10,20,50,100,200,500\}$, 30 episodes per size and a
 1{,}500-trip horizon, with $t_{50}$ and width read from median
 openness crossings and the log-law slope bootstrapped over episodes.
