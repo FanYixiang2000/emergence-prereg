@@ -1528,3 +1528,10 @@ any frozen threshold or stored confirmatory output:
    a 17.5x parameter range. Controls 10/10 and frequency tails 8/8 rejected.
    SHA-256 revision audits detected and worked around two upstream 2.8B
    repository defects (PYTHIA_SCALING_PREREGISTRATION.md outcomes).
+
+---
+
+# Archived: original preregistration bundle README
+
+# emergence-prereg
+Preregistration materials for emergence experiments
