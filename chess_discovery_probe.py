@@ -70,7 +70,7 @@ FLAG_POTENTIAL = 1.0   # frozen C4 cutoff, reused
 FLAG_DO_GAP = 0.15     # frozen C3 cutoff, reused
 
 
-# ------------------------------------------------------------ game sampling
+# game sampling
 
 def eligible(headers: chess.pgn.Headers) -> bool:
     try:
@@ -145,7 +145,7 @@ def sample_positions(n_wanted: int, skip: int = 0,
     return tasks
 
 
-# ------------------------------------------------------------ scoring
+# scoring
 
 def clipped_cp(score: chess.engine.PovScore, side: chess.Color) -> float:
     return float(np.clip(score.pov(side).score(mate_score=10000),
@@ -190,7 +190,7 @@ def score_position(task: Dict) -> Optional[Dict]:
         * (1 if p.color == side else -1)
         for p in board.piece_map().values()))
 
-    # -------- referee (computed last; deep, independent depth) --------
+    # referee (computed last; deep, independent depth)
     deep = engine.analyse(board, chess.engine.Limit(depth=REFEREE_DEPTH),
                           multipv=4)
     if isinstance(deep, dict):
@@ -221,7 +221,7 @@ def score_position(task: Dict) -> Optional[Dict]:
     }
 
 
-# ------------------------------------------------------------ analysis
+# analysis
 
 def auroc(scores: np.ndarray, labels: np.ndarray) -> float:
     pos = scores[labels == 1]

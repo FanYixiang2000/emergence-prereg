@@ -65,9 +65,7 @@ def tv(p: Dict[str, float], q: Dict[str, float]) -> float:
     return 0.5 * sum(abs(p[b] - q[b]) for b in BASINS)
 
 
-# ---------------------------------------------------------------------------
 # Proposition 0: trajectory-space definition and its basin-level surrogate
-# ---------------------------------------------------------------------------
 
 def _sample_trajectory(
     q_table,

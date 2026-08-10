@@ -45,7 +45,7 @@ STEPS = [0, 1, 2, 4, 8, 16, 32, 64, 128, 256, 512,
          96000, 128000, 143000]
 
 
-# ---------------------------------------------------------------- download
+# download
 
 UA = {"User-Agent": "Mozilla/5.0 (X11; Linux x86_64) curl-compatible research fetcher"}
 
@@ -220,7 +220,7 @@ def download_shared(model: str = MODEL, ckpt_dir: Path = CKPT_DIR) -> None:
             out.write_bytes(r.read())
 
 
-# ---------------------------------------------------------------- probes
+# probes
 
 NOUNS = [("author", "authors"), ("pilot", "pilots"), ("farmer", "farmers"),
          ("teacher", "teachers"), ("doctor", "doctors"), ("manager", "managers"),
@@ -323,7 +323,7 @@ def evaluate_checkpoint(model, batches, perm: torch.Tensor,
     }
 
 
-# ------------------------------------------------------------------ main
+# main
 
 def main() -> None:
     parser = argparse.ArgumentParser(description="Pythia decoder collapse probe.")

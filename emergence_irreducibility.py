@@ -126,7 +126,7 @@ TH_D = 0.5          # interaction-dependence threshold (framework value)
 Dist = Dict[Tuple[int, int, int], float]
 
 
-# ----------------------------------------------------------- info tools
+# info tools
 
 def _norm(p: Dist) -> Dist:
     z = sum(p.values())
@@ -221,7 +221,7 @@ def macro_gain(p: Dist, m: Callable[[Tuple[int, int, int]], int]) -> float:
     return mi((0, 1, 2)) - sum(mi((i,)) for i in range(3))
 
 
-# ----------------------------------------------------- systems (exact)
+# systems (exact)
 
 def make_env_redundant(q: float = 0.05) -> Tuple[Dist, Dist]:
     """Common-cause REDUNDANCY, NO agent interaction. E ~ Bern(1/2);
@@ -312,7 +312,7 @@ def selectivity(p: Dist) -> float:
     return sum(pr for s, pr in p.items() if (s[0] ^ s[1] ^ s[2]) == 0)
 
 
-# --------------------------------------------------- endogeneity route
+# endogeneity route
 
 def c_irr_given_env(joint_env: Dict) -> float:
     """E_e[ KL(P(.|e) || pairwise-maxent P(.|e)) ] over environment e."""
@@ -365,7 +365,7 @@ def d_higher(p: Dist, joint_env) -> float:
     return float(1.0 - c_irr(broken) / nat)
 
 
-# ------------------------------------------------------ Gaussian anchor
+# Gaussian anchor
 
 def gaussian_oinformation(cov: np.ndarray) -> float:
     n = len(cov)
@@ -382,7 +382,7 @@ def gaussian_oinformation(cov: np.ndarray) -> float:
     return out / math.log(2)   # bits
 
 
-# =============================================================== main
+# main
 
 def coords(name: str, p: Dist, joint_env=None) -> Dict:
     ci = c_irr(p)
@@ -459,7 +459,7 @@ def main() -> None:
               flush=True)
     report["systems"] = systems
 
-    # ---- Gaussian analytic anchor (IR-1a): common cause, invariant
+    # Gaussian analytic anchor (IR-1a): common cause, invariant
     a = np.array([1.0, 1.0, 1.0])
     cov = 1.0 * np.outer(a, a) + 0.5 * np.eye(3)
     omega_gauss = gaussian_oinformation(cov)
@@ -470,7 +470,7 @@ def main() -> None:
     print(f"gaussian common cause Omega = {omega_gauss:+.3f} bits",
           flush=True)
 
-    # ---- IR-6: consensus matched to role_parity's C_total (+-0.1 bit)
+    # IR-6: consensus matched to role_parity's C_total (+-0.1 bit)
     target = systems["role_parity"]["C_total"]
     best_alpha, best_gap = 1.0, 1e9
     for alpha in np.linspace(0.05, 1.0, 200):
@@ -487,7 +487,7 @@ def main() -> None:
           f"C_irr|E={cm['C_irr_given_env']:.3f} V={cm['V_gain']:+.2f}",
           flush=True)
 
-    # ---- registered outcomes
+    # registered outcomes
     ev = systems["env_synergy"]
     ir1a = omega_gauss > 0
     ir1b = ev["C_irr_marginal"] > 0.5 and ev["O_information"] < 0

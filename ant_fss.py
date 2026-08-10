@@ -88,11 +88,11 @@ def main() -> None:
         print(f"N={N}: onset={adj['b5_onset']} t*={per_size[str(N)]['t_star']} "
               f"t50={t50} width={width}", flush=True)
 
-    # --- FSS-1 ---
+    # FSS-1
     fss1 = bool(not per_size["1"]["b5_onset"]
                 and all(per_size[str(N)]["b5_onset"] for N in SIZES if N >= 10))
 
-    # --- FSS-2: log law on onset sizes ---
+    # FSS-2: log law on onset sizes
     onset_sizes = [N for N in SIZES if per_size[str(N)]["b5_onset"]
                    and per_size[str(N)]["t50"] is not None]
     ln_n = np.log([float(N) for N in onset_sizes])
@@ -116,12 +116,12 @@ def main() -> None:
     b_ci = [float(np.percentile(boots, 2.5)), float(np.percentile(boots, 97.5))]
     fss2 = bool(b > 0 and r2 >= 0.85)
 
-    # --- FSS-3: width invariance at large N ---
+    # FSS-3: width invariance at large N
     widths = [per_size[str(N)]["width"] for N in COLLAPSE_SIZES]
     fss3 = bool(all(w is not None for w in widths)
                 and max(widths) / min(widths) <= 2.0)
 
-    # --- FSS-4: translation collapse ---
+    # FSS-4: translation collapse
     rel_grid = np.arange(-WINDOW, WINDOW + 1, 10, dtype=float)
     aligned, unaligned = [], []
     for N in COLLAPSE_SIZES:

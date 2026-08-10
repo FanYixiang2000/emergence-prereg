@@ -55,7 +55,7 @@ STEPS = [0, 20_000, 40_000, 60_000, 80_000, 100_000, 120_000, 140_000,
          1_300_000, 1_400_000, 1_500_000, 1_600_000, 1_700_000, 1_800_000,
          1_900_000, 2_000_000]
 
-# ---------------------------------------------------------------- download
+# download
 
 def fetch_ranged(url: str, dest: Path, n_threads: int = 32,
                  chunk: int = 8_000_000, retries: int = 4) -> None:
@@ -92,7 +92,7 @@ def download_checkpoint(step: int, model_seed: int) -> Path:
     return step_dir / "bert.ckpt"
 
 
-# ------------------------------------------------------------ BERT forward
+# BERT forward
 
 class BertWeights:
     """Reads the original TF BERT checkpoint into torch tensors."""
@@ -150,7 +150,7 @@ def bert_forward(w: BertWeights, ids: torch.Tensor) -> Tuple[torch.Tensor, torch
     return logits, h
 
 
-# ---------------------------------------------------------------- probes
+# probes
 
 class Vocab:
     def __init__(self, path: Path):
@@ -252,7 +252,7 @@ def evaluate_checkpoint(w: BertWeights, batches, perm: torch.Tensor,
     }
 
 
-# ------------------------------------------------------------------ main
+# main
 
 def main() -> None:
     parser = argparse.ArgumentParser(description="MultiBERTs collapse probe.")

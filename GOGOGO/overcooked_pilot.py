@@ -94,7 +94,7 @@ def run_training(layout: str, seed: int, total_steps: int,
     t0 = time.time()
 
     while step_count < total_steps:
-        # ---- collect rollout ----
+        # collect rollout
         buf = {k: [] for k in ("obs", "act", "logp", "val", "rew", "done")}
         for _ in range(2048):
             x = torch.tensor(np.stack(obs))
@@ -138,7 +138,7 @@ def run_training(layout: str, seed: int, total_steps: int,
                 env.reset()
             obs = featurize(env)
 
-        # ---- GAE + PPO update (shared params, both agents as batch) ----
+        # GAE + PPO update (shared params, both agents as batch)
         rews = np.stack(buf["rew"])            # T x 2
         vals = np.stack(buf["val"])            # T x 2
         dones = np.array(buf["done"], dtype=np.float32)  # T

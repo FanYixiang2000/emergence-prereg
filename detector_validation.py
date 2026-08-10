@@ -145,14 +145,14 @@ def eval_condition(density, sigma, rng):
 def main() -> None:
     rng = np.random.default_rng(SEED)
 
-    # --- reference operating point ---
+    # reference operating point
     ref = eval_condition(REF_DENSITY, REF_SIGMA, rng)
     onset_power = ref["onset"]["onset_rate"]
     # false-positive rate across the explicit control families
     control_fams = ["knee", "gradual", "flat"]
     fpr = float(np.mean([ref[f]["onset_rate"] for f in control_fams]))
 
-    # --- grid-density sweep (fixed reference sigma) ---
+    # grid-density sweep (fixed reference sigma)
     by_density = {}
     for d in DENSITIES:
         s = eval_condition(d, REF_SIGMA, rng)
@@ -161,7 +161,7 @@ def main() -> None:
             "fpr": float(np.mean([s[f]["onset_rate"] for f in control_fams])),
         }
 
-    # --- noise sweep (fixed reference density) ---
+    # noise sweep (fixed reference density)
     by_sigma = {}
     for sg in SIGMAS:
         s = eval_condition(REF_DENSITY, sg, rng)

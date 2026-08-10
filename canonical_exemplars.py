@@ -104,7 +104,7 @@ def js_bits(p: List[float], q: List[float]) -> float:
     return 0.5 * kl(p, m) + 0.5 * kl(q, m)
 
 
-# ------------------------------------------------------------------ boids
+# boids
 
 def boids_episode(a: float, seed: int, decouple_at: int = -1):
     rng = np.random.default_rng(seed)
@@ -170,7 +170,7 @@ def run_boids() -> Dict:
     return out
 
 
-# -------------------------------------------------------------- schelling
+# schelling
 
 def schelling_episode(tau: float, seed: int, freeze_at: int = -1):
     rng = random.Random(seed)
@@ -254,7 +254,7 @@ def run_schelling() -> Dict:
     return out
 
 
-# ------------------------------------------------------------------- life
+# life
 
 def life_step(g: np.ndarray) -> np.ndarray:
     n = sum(np.roll(np.roll(g, i, 0), j, 1)

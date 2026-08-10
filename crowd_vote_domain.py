@@ -212,7 +212,7 @@ def run_episode(policy, context: str, seed: int,
             "value": ep.value(), "field_anarchy_frac": field_anarchy}
 
 
-# ---------------------------------------------------------------- systems
+# systems
 
 def train_learned(seed: int) -> Dict:
     rng = random.Random(seed)
@@ -282,7 +282,7 @@ def bc_clone(seed: int):
     return pol
 
 
-# ---------------------------------------------------------------- metrics
+# metrics
 
 def entropy_bits(counts: Dict[str, int]) -> float:
     total = sum(counts.values())

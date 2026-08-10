@@ -137,7 +137,7 @@ def certify(grid, openness, *, endogenous_declared: bool,
     return out
 
 
-# ---------------------------------------------------------------- battery
+# battery
 
 def load_battery():
     """Every stored system the certificate can be applied to as-is."""

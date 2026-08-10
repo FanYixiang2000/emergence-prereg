@@ -169,7 +169,7 @@ def main() -> None:
             clbf.LAYOUTS = frozen_layouts
             clbf.HORIZON = frozen_horizon
 
-    # ---------------- registered predictions ----------------
+    # registered predictions
     learned = [f"learned_{s}" for s in SEEDS]
     non_p6 = [p for p in PERTURBATIONS if p not in ("P0_baseline",
                                                     "P6_noise020")]

@@ -73,7 +73,7 @@ LR = 3e-4
 EVAL_TEMP = 1.0                # estimator parameter (pilot-tunable)
 
 
-# ------------------------------------------------------------------ data
+# data
 
 def sample_prefix(rng: np.random.Generator, context: int) -> List[int]:
     while True:
@@ -112,7 +112,7 @@ def build_batch(rng: np.random.Generator, batch: int) -> torch.Tensor:
     return torch.tensor(rows, dtype=torch.long)
 
 
-# ------------------------------------------------------------------ model
+# model
 
 class TinyLM(nn.Module):
     def __init__(self, d: int = 64, heads: int = 4, layers: int = 2):
@@ -159,7 +159,7 @@ def initial_twin(seed: int, device: str) -> TinyLM:
     return TinyLM().to(device).eval()
 
 
-# ------------------------------------------------------------------ systems
+# systems
 
 class System:
     """learned/twin (neural) or scripted (router / fixed rules)."""
@@ -230,7 +230,7 @@ def classify(prefix: List[int], context: int, cont: List[int]) -> Dict:
             "value": float(win)}
 
 
-# ------------------------------------------------------------------ metrics
+# metrics
 
 def entropy(d: Dict[str, float]) -> float:
     return -sum(p * math.log2(p) for p in d.values() if p > 0)

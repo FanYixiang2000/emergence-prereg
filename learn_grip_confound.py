@@ -93,7 +93,7 @@ def main() -> None:
                   flush=True)
     d = {k: np.asarray(v) for k, v in recs.items()}
 
-    # --- CC-1: fixed time (within each tau, pooled over seeds) ---
+    # CC-1: fixed time (within each tau, pooled over seeds)
     cc1 = {}
     aucs = []
     for tau in TAUS:
@@ -109,7 +109,7 @@ def main() -> None:
     cc1_mean = float(np.mean(aucs)) if aucs else 0.0
     cc1_above = sum(a > 0.5 for a in aucs)
 
-    # --- CC-2: fixed (tau x |x|-quintile) cells ---
+    # CC-2: fixed (tau x |x|-quintile) cells
     qs = np.quantile(d["absx"], [0.2, 0.4, 0.6, 0.8])
     xbin = np.digitize(d["absx"], qs)
     cells = (d["tau"].astype(int) * 10 + xbin).astype(int)
@@ -117,7 +117,7 @@ def main() -> None:
     cc2_corr, cc2_p = within_cell_perm_corr(d["side_open"].copy(),
                                             d["switch"], cells, rng)
 
-    # --- CC-3: logistic partial effect ---
+    # CC-3: logistic partial effect
     def z(a):
         return (a - a.mean()) / (a.std() + 1e-12)
     X = np.column_stack([z(d["side_open"]), z(d["absx"]), z(d["absv"]),

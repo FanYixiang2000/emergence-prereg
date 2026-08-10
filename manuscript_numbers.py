@@ -20,7 +20,7 @@ def sec(title):
     print("=" * 8, title)
 
 
-# ---------------------------------------------------------------- Fig 2
+# Fig 2
 sec("GRIP FLAGSHIP (realization)")
 b5 = load("learn_grip_transport_b5.json")
 ro = b5["registered_outcomes"]
@@ -65,7 +65,7 @@ if curve:
     print("seed0 curve first5:", [round(c, 3) for c in curve[:5]],
           "last3:", [round(c, 3) for c in curve[-3:]])
 
-# ---------------------------------------------------------------- Fig 3
+# Fig 3
 sec("TWO TIMESCALES (formation vs realization)")
 lgf = load("learn_grip_formation.json")
 ro = lgf["registered_outcomes"]
@@ -76,7 +76,7 @@ ro = fine["registered_outcomes"]
 print("FINE ocap_b5:", ro["ocap_b5_count"], " succ_b5:", ro["succ_b5_count"],
       " midpoints:", ro["midpoints"])
 
-# ---------------------------------------------------------------- Fig 4
+# Fig 4
 sec("SOURCE TYPOLOGY on learned systems")
 lst = load("learn_stance_transport.json")
 for s, d in lst["seeds"].items():
@@ -102,7 +102,7 @@ print("E1-C learned C_env:", e1c["learned"]["C_env"])
 print("E1-C scripted C_env:", e1c["noisy_scripted"]["C_env"])
 print("E1-C outcomes:", e1c["registered_outcomes"])
 
-# ---------------------------------------------------------------- Fig 5
+# Fig 5
 sec("CONTROLLABILITY")
 lgu = load("learn_grip_utility.json")
 ro = lgu["registered_outcomes"]
@@ -124,7 +124,7 @@ ro = aic["registered_outcomes"]
 print("ANT-INT-C:", {k: ro[k] for k in ro})
 print("n_pairs:", aic["n_pairs"])
 
-# ---------------------------------------------------------------- Fig 6
+# Fig 6
 sec("LAWS AND BREADTH")
 acb = load("ant_colony_breakpoint.json")
 for size, d in acb["per_size"].items():
@@ -221,7 +221,7 @@ try:
 except FileNotFoundError:
     print("GRIP-POLICY: pending")
 
-# ---- revision round 2 (representation, NN replication, SD audit) ----
+# revision round 2 (representation, NN replication, SD audit)
 
 rec = load("repr_equiv_convention.json")
 print("REPR-EQUIV-CONV:", rec["registered_outcomes"])
@@ -265,7 +265,7 @@ print("  n=30000 errors:", {c: d4["error_table"]["30000"][c]["median_abs_err"]
                             for c in d4["error_table"]["30000"]})
 print("  n=300 C_high err:", d4["error_table"]["300"]["C_high"]["median_abs_err"])
 
-# ---- revision round 3 (standard-environment mechanism recovery) ----
+# revision round 3 (standard-environment mechanism recovery)
 
 oc = load("overcooked_ring_convention.json")
 print("OC-RING:", oc["registered_outcomes"])
@@ -287,7 +287,7 @@ for name, c in ec["certificates"].items():
     e = c["eip"] or {}
     print(f"  {name}: {c['verdict']} ampl={e.get('amplitude_fraction_closed')}")
 
-# ---- revision round 4 (realization probe, semi-synthetic injection) ----
+# revision round 4 (realization probe, semi-synthetic injection)
 
 rr = load("oc_ring_realization.json")
 print("OC-RING-REAL:", rr["registered_outcomes"])

@@ -248,7 +248,7 @@ def probe_system(name: str, controller: lbf.Controller, seed: int) -> Dict:
         findex = lbf.FoodIndex(env)
         snap0 = lbf.world_snapshot(env, ())
 
-        # --- t=0 probes ---
+        # t=0 probes
         foods = lbf.food_positions(env)
         pos0 = env.players[0].position
         target = min(foods, key=lambda f: abs(pos0[0] - f[0]) + abs(pos0[1] - f[1]))
@@ -280,7 +280,7 @@ def probe_system(name: str, controller: lbf.Controller, seed: int) -> Dict:
         micro_pairs.append(
             (forced_a0, lbf.rollout_basin(sim, snap1, findex, probe, rng)))
 
-        # --- behaving episode with step-level series ---
+        # behaving episode with step-level series
         order: List[int] = []
         before = set(lbf.food_positions(env))
         series: List[Tuple[Tuple, int, int]] = []  # (V, x1, x2)

@@ -37,7 +37,7 @@ OUTPUTS = Path(__file__).resolve().parent / "outputs"
 COMPS = ("C_individual", "C_env", "C_pair", "C_high")
 
 
-# ------------------------------------------------------------ SDA-1
+# SDA-1
 
 def sda1_mixed_sources():
     ref = components_at(**{k: BASE for k in KNOBS})
@@ -59,7 +59,7 @@ def sda1_mixed_sources():
     return ok, detail
 
 
-# ------------------------------------------------------------ SDA-2
+# SDA-2
 
 def modular_sum_joint():
     P = np.zeros((NA, NA, NA))
@@ -121,7 +121,7 @@ def sda2_off_family():
     return bool(a_ok and b_ok and c_ok), detail
 
 
-# ------------------------------------------------------------ SDA-3
+# SDA-3
 
 def ladder_env_after_pair(pe):
     """Alternative chain: Q0 -> QI -> Qpair(mixture) -> Qpair(per-env) -> P.
@@ -177,7 +177,7 @@ def sda3_nesting_order():
     }
 
 
-# ------------------------------------------------------------ SDA-4
+# SDA-4
 
 TRUTH_KNOBS = {k: 0.4 for k in KNOBS}
 NS = (300, 1_000, 3_000, 10_000, 30_000, 100_000)

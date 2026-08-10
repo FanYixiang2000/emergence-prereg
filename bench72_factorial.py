@@ -79,7 +79,7 @@ def components_for(knobs: Dict[str, float]) -> Dict[str, float]:
     return _LADDER_CACHE[key]
 
 
-# --------------------------------------------------- blind instrument
+# blind instrument
 
 def measure(comp_curve: List[Dict[str, float]],
             z_curve: List[float]) -> Dict:
@@ -118,7 +118,7 @@ def run_cell(source: str, shape: str, stability: str, value: int) -> Dict:
     return {"truth": truth, "estimate": est}
 
 
-# ------------------------------------------------------ pseudo-controls
+# pseudo-controls
 
 def truncated_pe(knobs: Dict[str, float], keep: int = 2) -> Dict:
     pe = joint_with_env(knobs["lambda_ind"], knobs["rho_env"],
@@ -188,7 +188,7 @@ def run_controls() -> Dict:
     return controls
 
 
-# --------------------------------------------------------------- checks
+# checks
 
 def evaluate(cells: List[Dict], controls: Dict) -> Dict:
     n_src_ok = sum(1 for c in cells

@@ -39,7 +39,7 @@ def main() -> None:
         "burstiness_process_proxy": [],
     }
 
-    # -------- exact five-of-six witnesses in the CLBF domain --------
+    # exact five-of-six witnesses in the CLBF domain
     abl = j("component_ablation_witnesses.json")
     for comp, item in abl["five_of_six_witnesses"].items():
         for name in item["examples"]:
@@ -49,7 +49,7 @@ def main() -> None:
                         "this one (borderline learned seed)",
             })
 
-    # -------- deep MARL: scripted greedy fails potential by design --------
+    # deep MARL: scripted greedy fails potential by design
     for domain, fname in (("simple_spread", "deep_marl_collapse_aggregate.json"),
                           ("LBF", "lbf_collapse_main.json")):
         data = j(fname)
@@ -63,7 +63,7 @@ def main() -> None:
                     f"also below every trained seed",
         })
 
-    # -------- gridworld battery: designed single-route systems --------
+    # gridworld battery: designed single-route systems
     battery_routes = {
         "useful_habit": ("conditional_selectivity",
                          "unconditional forced trigger: huge usefulness "
@@ -86,7 +86,7 @@ def main() -> None:
         witnesses[comp].append({
             "system": f"gridworld {system}", "grade": grade, "note": note})
 
-    # -------- external swarm confirmation: provenance routes --------
+    # external swarm confirmation: provenance routes
     checks = conf["confirmation_checks"]
     if checks.get("c3_damage_aware_fails_exactly_endo_acq"):
         witnesses["endogeneity"].append({
@@ -104,7 +104,7 @@ def main() -> None:
             "note": "registered exclusion route is acquisition",
         })
 
-    # -------- CLBF team_nearest: exact provenance pair, 10/10 --------
+    # CLBF team_nearest: exact provenance pair, 10/10
     ca = j("contextual_lbf_confirmation_analysis.json")
     if ca["counts"]["team_nearest_exact_failure_route"] == 10:
         for comp in ("endogeneity", "acquisition"):
@@ -115,7 +115,7 @@ def main() -> None:
                         "exactly {endogeneity, acquisition}",
             })
 
-    # -------- grokking: memorization fails usefulness inside one run ------
+    # grokking: memorization fails usefulness inside one run
     witnesses["usefulness"].append({
         "system": "grokking memorization phase / memorizer control",
         "grade": "DESIGNED",
@@ -129,7 +129,7 @@ def main() -> None:
                 "despite the largest burst in the family",
     })
 
-    # -------- process proxy: gradual learning witnesses --------
+    # process proxy: gradual learning witnesses
     for size in ("", "_1b", "_1.4b", "_2.8b"):
         tail = j(f"pythia_tail_summary{size}.json")
         for fam in ("tail_facts", "tail_words"):
@@ -142,7 +142,7 @@ def main() -> None:
                             "rejected via burstiness",
                 })
 
-    # -------- specificity: exact battery witness (shared do-response) -----
+    # specificity: exact battery witness (shared do-response)
     witnesses["specificity"].append({
         "system": "gridworld random-noise vs structured triggers",
         "grade": "SEE-NOTE",

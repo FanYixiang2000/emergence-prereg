@@ -117,7 +117,7 @@ def mi_from_counts(joint: Dict) -> float:
     return out
 
 
-# ================================================== N: logic gates
+# N: logic gates
 
 GATES = {
     "xor2": (2, lambda x: x[0] ^ x[1], 1.0),
@@ -142,7 +142,7 @@ def measure_N(n_in: int, fn) -> float:
         mi_from_counts(s) for s in singles)
 
 
-# ================================================== A: exact EI chains
+# A: exact EI chains
 
 def exact_ei(T: np.ndarray) -> float:
     n = len(T)
@@ -187,7 +187,7 @@ def chains() -> Dict[str, Dict]:
     return out
 
 
-# ============================== D and R: interaction processes
+# D and R: interaction processes
 
 def run_units(mode: str, steps: int = 40, n: int = 6,
               shuffle: bool = False, perturb: bool = False,
@@ -258,7 +258,7 @@ def measure_R(mode: str, n_ep: int = 60) -> float:
                           for k in range(n_ep)]))
 
 
-# ================================================== held-out: Kuramoto
+# held-out: Kuramoto
 
 def kuramoto(K: float, n: int = 20, steps: int = 400, dt: float = 0.05,
              shuffle: bool = False, perturb: bool = False,
@@ -314,7 +314,7 @@ def kuramoto_coords(K: float) -> Dict:
     return {"N": None, "D": d, "R": r, "natural_order": float(nat)}
 
 
-# ================================================== held-out: Life
+# held-out: Life
 
 def life_step(g):
     nb = sum(np.roll(np.roll(g, i, 0), j, 1)
@@ -363,7 +363,7 @@ def life_coords() -> Dict:
     return {"D": d, "R": r, "natural_alive": float(nat)}
 
 
-# =============================================== main orchestration
+# main orchestration
 
 def main() -> None:
     report: Dict = {"status": ("emergence coordinates: analytic "
@@ -372,7 +372,7 @@ def main() -> None:
                                "matrix; EC-1..3 frozen in docstring"),
                     "thresholds": TH}
 
-    # ---- calibration: N on gates (analytic truths)
+    # calibration: N on gates (analytic truths)
     n_cal = {}
     ec1_n = True
     for name, (n_in, fn, truth) in GATES.items():
@@ -383,7 +383,7 @@ def main() -> None:
         print(f"N[{name}]: est {est:+.3f} analytic {truth:+.3f}",
               flush=True)
 
-    # ---- calibration: A on exact chains
+    # calibration: A on exact chains
     a_cal = chains()
     signs_ok = (a_cal["A_pos"]["A_exact"] > 0
                 and abs(a_cal["A_zero"]["A_exact"]) < 1e-9
@@ -391,7 +391,7 @@ def main() -> None:
     for k, v in a_cal.items():
         print(f"A[{k}]: exact {v['A_exact']:+.3f}", flush=True)
 
-    # ---- calibration: D and R on constructed processes
+    # calibration: D and R on constructed processes
     d_cal = {m: measure_D(m) for m in ("peer", "driver", "indep")}
     r_cal = {m: measure_R(m) for m in ("peer", "static", "transient")}
     d_truth = {"peer": 1.0, "driver": 0.0, "indep": 0.0}
@@ -408,7 +408,7 @@ def main() -> None:
                              "D_processes": d_cal, "R_processes": r_cal,
                              "EC1": ec1}
 
-    # ---- blind held-out families (thresholds frozen above)
+    # blind held-out families (thresholds frozen above)
     blind = {}
     k_super = kuramoto_coords(2.0)
     k_sub = kuramoto_coords(0.2)
@@ -454,7 +454,7 @@ def main() -> None:
         print(f"{k}: weak={v.get('weak_emergence')} "
               f"({v['literature_label']})", flush=True)
 
-    # ---- adversarial matrix
+    # adversarial matrix
     adv = {}
     # ADV1 common driver: high consensus, fails D
     adv["ADV1_common_driver"] = {

@@ -116,7 +116,7 @@ CROWD_SEEDS = (6701, 6702, 6703)
 CROWD_EVAL = 60
 
 
-# ------------------------------------------------------- frozen recipe
+# frozen recipe
 
 def fit_universal_basins(records: List[Dict]) -> Tuple:
     """Fit the frozen recipe on pooled natural rollout records.
@@ -155,7 +155,7 @@ def cluster_dist(labels: List[int], k: int) -> Dict[str, float]:
     return {str(i): labels.count(i) / len(labels) for i in range(k)}
 
 
-# --------------------------------------------------- domain A: battery
+# domain A: battery
 
 def battery_rollout(q_table, env, state, contexts, temperature,
                     samples, rng, intervention) -> List[Dict]:
@@ -288,7 +288,7 @@ def run_battery_domain() -> Dict:
             "U1_pass": bool(agreements >= 8 and positives_ok)}
 
 
-# ----------------------------------------------------- domain B: crowd
+# domain B: crowd
 
 def crowd_rollout(policy, context: str, seed: int,
                   intervention: Optional[str]) -> Dict:

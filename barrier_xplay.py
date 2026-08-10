@@ -26,7 +26,7 @@ PERMS_K = list(permutations(range(LC.K)))       # 120 codes
 PERMS_R = LR.PERMS                              # 720 role permutations
 
 
-# ---------------------------------------------------------------- convention
+# convention
 
 def train_convention_with_snapshots(seed: int):
     """Byte-identical replay of learn_convention.run_seed with snapshots."""
@@ -127,7 +127,7 @@ def convention_measures(snaps, adj, open_curve):
     return out
 
 
-# --------------------------------------------------------------------- roles
+# roles
 
 def train_roles_with_snapshots(seed: int):
     torch.manual_seed(seed)
@@ -213,7 +213,7 @@ def roles_measures(snaps, adj):
     return out
 
 
-# ----------------------------------------------------------------- crossplay
+# crossplay
 
 def convention_crossplay(rows):
     """Intelligibility of speaker-pop A with listener-pop B, ordered pairs."""
@@ -252,7 +252,7 @@ def roles_crossplay(rows):
     return within, hybrid
 
 
-# ---------------------------------------------------------------------- main
+# main
 
 def main() -> None:
     torch.set_num_threads(4)

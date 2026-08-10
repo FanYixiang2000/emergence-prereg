@@ -143,7 +143,7 @@ def dist(labels, k) -> Dict[int, float]:
     return {b: c / len(labels) for b, c in out.items()}
 
 
-# --------------------------------------------------------------- crowd URC
+# crowd URC
 
 def crowd_episode_features(policy, context, seed, intervention):
     """Generic channel statistics: per-step (pos, lane, tick, mode)."""
@@ -262,7 +262,7 @@ def run_crowd_urc() -> Dict:
     }
 
 
-# --------------------------------------------------------------- boids URC
+# boids URC
 
 def boids_features(a: float, seed: int, decouple: bool):
     h0, hT = cx.boids_episode(a, seed,

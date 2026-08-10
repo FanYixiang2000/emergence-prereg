@@ -182,7 +182,7 @@ def main() -> None:
     conv_seeds = [818_001 + i * 101 for i in range(10)]
     role_seeds = [919_001 + i * 101 for i in range(10)]
 
-    # ---- NN-RES: fine grid, default sigma, same 10 seeds
+    # NN-RES: fine grid, default sigma, same 10 seeds
     res = {}
     rows_c = batch("conv", run_convention, conv_seeds, SIGMA_DEFAULT,
                    C_UPDATES)
@@ -212,7 +212,7 @@ def main() -> None:
     print(json.dumps(reg, indent=2))
     print(f"Wrote {out}", flush=True)
 
-    # ---- NN-INIT: sigma sweep, 5 seeds per sigma per system
+    # NN-INIT: sigma sweep, 5 seeds per sigma per system
     sweep = {}
     for sigma in SIGMAS:
         rc = batch("conv", run_convention, conv_seeds[:5], sigma, C_UPDATES)

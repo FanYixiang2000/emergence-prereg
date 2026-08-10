@@ -28,7 +28,7 @@ def load(name):
         return json.load(f)
 
 
-# ---- Nature/NMI style ----------------------------------------------------
+# Nature/NMI style
 plt.rcParams.update({
     "font.family": "sans-serif",
     "font.sans-serif": ["Helvetica", "Arial", "DejaVu Sans"],
@@ -79,9 +79,7 @@ def save(fig, name):
     print("wrote", name)
 
 
-# ===========================================================================
 # Figure 1 | problem + instrument
-# ===========================================================================
 def fig1():
     cc = load("collective_constraint.json")["matched_confound"]
     b72 = load("bench72_factorial.json")
@@ -192,9 +190,7 @@ def fig1():
     save(fig, "fig1")
 
 
-# ===========================================================================
 # Figure 2 | grip flagship: punctuated realization
-# ===========================================================================
 def fig2():
     lgt = load("learn_grip_transport.json")
     b5 = load("learn_grip_transport_b5.json")
@@ -357,9 +353,7 @@ def fig2():
     save(fig, "fig2")
 
 
-# ===========================================================================
 # Figure 3 | two timescales dissociate
-# ===========================================================================
 def fig3():
     lgf = load("learn_grip_formation.json")
     fine = load("learn_grip_formation_fine.json")
@@ -429,9 +423,7 @@ def fig3():
     save(fig, "fig3")
 
 
-# ===========================================================================
 # Figure 4 | source typology transfers to learned systems
-# ===========================================================================
 def fig4():
     lst = load("learn_stance_transport.json")
     tric = load("triad_highorder_cue.json")
@@ -531,9 +523,7 @@ def fig4():
     save(fig, "fig4")
 
 
-# ===========================================================================
 # Figure 5 | openness predicts controllability
-# ===========================================================================
 def fig5():
     lgu = load("learn_grip_utility.json")
     lss = load("learn_stance_sticky.json")
@@ -620,9 +610,7 @@ def fig5():
     save(fig, "fig5")
 
 
-# ===========================================================================
 # Figure 6 | laws and scope
-# ===========================================================================
 def fig6():
     fss = load("ant_fss.json")
     ks = load("kuramoto_scale.json")

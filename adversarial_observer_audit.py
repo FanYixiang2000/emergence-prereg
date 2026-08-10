@@ -133,7 +133,7 @@ def main() -> None:
 
     declared_vals = components(declared)
 
-    # ---- 1. bijective relabelling: all 4! permutations must be exact ----
+    # 1. bijective relabelling: all 4! permutations must be exact
     max_dev = 0.0
     for perm in permutations(range(4)):
         permuted = {c: perm[g] for c, g in declared.items()}
@@ -144,7 +144,7 @@ def main() -> None:
                                            - declared_vals[seed][k]))
     print(f"bijection max deviation: {max_dev:.2e}", flush=True)
 
-    # ---- 2. random observers ----
+    # 2. random observers
     conf = json.loads(
         (OUTPUTS / "contextual_lbf_confirmation.json").read_text())
     partition_free_pass = {

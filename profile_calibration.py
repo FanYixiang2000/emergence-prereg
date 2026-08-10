@@ -63,7 +63,7 @@ EVAL_EPISODES = 300
 PROBE_TEMPERATURE = 0.25
 
 
-# ------------------------------------------------ part 1: (alpha, beta)
+# part 1: (alpha, beta)
 
 def synthetic_system(alpha: float, beta: float):
     """Two-basin process: do-trigger shifts mass beta toward basin 1 at
@@ -143,7 +143,7 @@ def part1() -> Dict:
     }
 
 
-# --------------------------------------------- part 2: dose-response
+# part 2: dose-response
 
 def run_episode_partial_block(q_table, rng: random.Random,
                               lam: float) -> Dict:

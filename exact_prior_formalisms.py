@@ -115,9 +115,7 @@ def contexts_for(regime: Optional[str]) -> Tuple[str, ...]:
     return ("fixed",)
 
 
-# ---------------------------------------------------------------------------
 # Exact policy-closed Markov chain (integer-indexed)
-# ---------------------------------------------------------------------------
 
 Position = Tuple[int, int]
 # Non-terminal chain state: (mode, context, a0, a1, switch_used, t)
@@ -219,9 +217,7 @@ class Chain:
                 self.init[self.index[s0]] = w
 
 
-# ---------------------------------------------------------------------------
 # Exact EI (Hoel) and coarse-graining
-# ---------------------------------------------------------------------------
 
 def ei_bits_rows(n: int, rows: Sequence[Sequence[Tuple[int, float]]]) -> float:
     """EI = (1/N) sum_s KL(T(s,.) || Tbar), Tbar the uniform-input marginal
@@ -325,9 +321,7 @@ def candidate_partitions(chain: Chain, absorb: List[Dict[str, float]]):
     }
 
 
-# ---------------------------------------------------------------------------
 # Exact Rosas Psi on the behavioral occupancy measure
-# ---------------------------------------------------------------------------
 
 def occupancy_joint(chain: Chain) -> Dict[Tuple[int, int], float]:
     """Exact pooled one-step joint P(s_t, s_{t+1}) for t = 0..MAX_STEPS-1
@@ -440,9 +434,7 @@ def candidate_v_features(chain: Chain, absorb: List[Dict[str, float]]):
     }
 
 
-# ---------------------------------------------------------------------------
 # Scoring (mirrors prior_metrics_comparison.py)
-# ---------------------------------------------------------------------------
 
 def hindsight_best(scores: Dict[str, float]) -> Dict[str, object]:
     best: Dict[str, object] = {"accuracy": -1.0}

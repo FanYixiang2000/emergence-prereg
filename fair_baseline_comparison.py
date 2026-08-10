@@ -275,7 +275,7 @@ def main() -> None:
         "fresh_battery": {},
     }
 
-    # ---- conjunctions of prior signals ----
+    # conjunctions of prior signals
     x5 = matrix(features, systems, PRIOR5)
     conj_results = {}
     for k in (1, 2, 3):
@@ -285,7 +285,7 @@ def main() -> None:
               f"signals {best.get('signals')}")
     report["original_battery"]["prior5_conjunctions"] = conj_results
 
-    # ---- learned models on prior5 and prior7 ----
+    # learned models on prior5 and prior7
     prior7 = PRIOR5 + ("exact_ce", "exact_psi")
     x7 = matrix(features, systems, prior7)
 
@@ -311,7 +311,7 @@ def main() -> None:
         print(f"{tag}: {learned[tag]}")
     report["original_battery"]["learned_models"] = learned
 
-    # ---- two-component AND rules from our own measured components ----
+    # two-component AND rules from our own measured components
     own_names = ("own_h0_bits", "own_specificity_js", "own_usefulness_gap")
     x_own = matrix(features, systems, own_names)
     two_component = {}
@@ -328,7 +328,7 @@ def main() -> None:
         print(f"Wrote {out} (fresh battery skipped)")
         return
 
-    # ---- fresh battery: recompute prior5, apply frozen baselines ----
+    # fresh battery: recompute prior5, apply frozen baselines
     fresh = compute_fresh_prior5(
         FRESH_SEED, args.train_episodes, args.n_checkpoints,
         args.synergy_episodes)

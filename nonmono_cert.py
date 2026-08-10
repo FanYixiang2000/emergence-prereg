@@ -53,7 +53,7 @@ def certify_settled(grid, openness) -> dict:
     return adj
 
 
-# ---------------------------------------------------------------- Stage V
+# Stage V
 
 def _osc(rng, n, lo, hi, period):
     ph = rng.uniform(0, 2 * math.pi)
@@ -144,7 +144,7 @@ def stage_v() -> dict:
             "pos_sample": pos_records[:5]}
 
 
-# ---------------------------------------------------------------- Stage R
+# Stage R
 
 def stage_r() -> dict:
     ring, cramped = {}, {}

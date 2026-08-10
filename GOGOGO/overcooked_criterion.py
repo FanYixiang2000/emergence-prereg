@@ -53,7 +53,7 @@ def featurize(env: OvercookedEnv) -> List[np.ndarray]:
     return [o.astype(np.float32) for o in env.featurize_state_mdp(env.state)]
 
 
-# ------------------------------------------------------- scripted motion
+# scripted motion
 
 def walkable(mdp: OvercookedGridworld, pos: Tuple[int, int]) -> bool:
     x, y = pos
@@ -175,7 +175,7 @@ def is_potting_interact(env: OvercookedEnv, agent: int, action) -> bool:
     return facing in set(terrain_positions(env.mdp, "P"))
 
 
-# ------------------------------------------------------------- policies
+# policies
 
 class TeamPolicy:
     """kind: net | scripted_roles | fixed_role | clone"""
@@ -319,7 +319,7 @@ def train_bc_clone(layouts, seed: int, n_episodes: int = 150,
     return net
 
 
-# ----------------------------------------------------------- episodes
+# episodes
 
 def run_episode(policy: TeamPolicy, layout: str, seed: int,
                 intervention: Optional[str]) -> Dict:

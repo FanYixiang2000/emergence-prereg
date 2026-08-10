@@ -85,7 +85,7 @@ def main() -> None:
 
     rows: List[Dict] = []
 
-    # ---- canonical complex-system positives
+    # canonical complex-system positives
     ksup = ec["blind_heldout"]["H1_kuramoto_super"]
     ksub = ec["blind_heldout"]["H2_kuramoto_sub"]
     life = ec["blind_heldout"]["H3_life_glider"]
@@ -155,7 +155,7 @@ def main() -> None:
         solo["weak_emergence"] == 0,
         predicted_fail="collective D/R", D=solo["D"], R=solo["R"]))
 
-    # ---- adversarial negatives from coordinate matrix
+    # adversarial negatives from coordinate matrix
     adv = ec["adversarial"]
     for key in ("ADV1_common_driver", "ADV2_central_controller",
                 "ADV7_metric_artifact"):
@@ -167,7 +167,7 @@ def main() -> None:
             adv[key]["rejected_on_predicted"],
             predicted_fail=adv[key].get("predicted_fail", "metric artifact")))
 
-    # ---- real public Overcooked bridge (read-only limitation retained)
+    # real public Overcooked bridge (read-only limitation retained)
     rows.append(row(
         "Overcooked learned accepted seeds", "public MARL",
         "context-conditioned role futures (context, first-potter role)",
@@ -187,7 +187,7 @@ def main() -> None:
         predicted_fail="endogeneity / context-role constraint",
         control_C_zero=occ["summary"]["control_C_zero"]))
 
-    # ---- capability emergence: output / computation futures
+    # capability emergence: output / computation futures
     gr = grok["runs"]["grokking"]
     gm = grok["runs"]["memorizer"]
     rows.append(row(
@@ -260,7 +260,7 @@ def main() -> None:
         predicted_fail="usefulness",
         final_test_acc=ihn["stats"]["final_test_acc"]))
 
-    # ---- registered outcomes
+    # registered outcomes
     by_name = {r["name"]: r for r in rows}
     cpc1_names = [
         "Kuramoto supercritical", "Boids high coupling",

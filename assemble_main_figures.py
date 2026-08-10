@@ -120,7 +120,7 @@ def main() -> None:
         ("b", load("fig22_phase_boundary.png")),
     ], "main_fig5.png")
 
-    # ---------------- Extended Data composites ----------------
+    # Extended Data composites
 
     # ED Fig. 1 -- analytic core: possibility tree returns, option-value
     # boundary, horizon reversal.

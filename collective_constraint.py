@@ -178,7 +178,7 @@ def marginals(p: Dist):
                   for v in V) for i in range(3)]
 
 
-# --------------------------------------------------------- mechanisms
+# mechanisms
 # Each mechanism supplies: P_real, P_broken (interaction-broken, keeping
 # marginals + environment/controller), joint_env (for N|E) or None.
 
@@ -292,7 +292,7 @@ def main() -> None:
               f"fails={c['failed_components']}", flush=True)
     report["mechanisms"] = certs
 
-    # ---- matched-confound check (CC-1): identical joint + marginals
+    # matched-confound check (CC-1): identical joint + marginals
     real_cs, _, _ = mechanism("central_script")
     real_cc, _, _ = mechanism("common_cause")
     real_lf, _, _ = mechanism("local_feedback")

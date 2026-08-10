@@ -30,7 +30,7 @@ NA = 10  # actions per agent
 EPS = 1e-15
 
 
-# ------------------------------------------------------ generative model
+# generative model
 
 def base_dist(lambda_ind: float) -> np.ndarray:
     """Mix uniform(10) with concentration on actions {0,1}."""
@@ -80,7 +80,7 @@ def joint_with_env(lam: float, rho: float, kappa: float,
     return {e: joint_given_e(e, lam, rho, kappa, gamma) for e in (0, 1)}
 
 
-# ------------------------------------------------------------- entropies
+# entropies
 
 def entropy(p: np.ndarray) -> float:
     q = p[p > EPS]
@@ -162,7 +162,7 @@ def ladder(pe: Dict[int, np.ndarray], declare_env: bool = True) -> Dict:
     return {"entropies": hs, "components": comp}
 
 
-# ------------------------------------------------------------- batteries
+# batteries
 
 BASE = 0.2
 HIGH = 0.8
