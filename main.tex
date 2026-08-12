@@ -108,14 +108,13 @@ defining emergence on the \emph{observable of convenience}---a
 benchmark, an order parameter, a success rate---rather than on the
 object that actually reorganizes. Worse, two systems can produce
 byte-identical outcomes---identical joint distributions, marginals
-and task success---through entirely different couplings (Fig.~1a),
+and task success---through entirely different couplings (Extended
+Data Fig.~1a),
 and no statistic of that shared distribution can tell them apart.
 They become distinguishable only relative to a declared
 \emph{observation contract}---which variables are measured, which are
 exogenous, which counterfactuals are admissible---under which one can
-ask how the effective possibility space closes; our instrument
-attributes structure under a stated contract, not causal mechanism
-from outcome statistics.
+ask how the effective possibility space closes.
 
 The object is the joint space of what every part \emph{could} still do
 together---the effective joint state--action--trajectory space. Before
@@ -124,7 +123,7 @@ bridge, cross elsewhere or disperse\citep{reid2015army}. Emergence, on
 our account, is the moment this space \emph{collapses} onto a narrow
 committed regime---the colony decides, together, to build---and
 collapse is not completion: the bridge does not yet exist when the
-possibility space has contracted onto building it. This
+possibility space has contracted onto building it (Fig.~1). This
 definition keeps both halves of the surprise intuition and makes each
 measurable: before commitment, low-order observables carry no warning
 of what is coming; after it, the collapse has reproducible timing,
@@ -182,14 +181,15 @@ four independent knobs, each knob moves only its own component, the
 ladder is monotone, and hiding an environmental common cause
 deterministically re-attributes collapse from $C_\mathrm{env}$ to the
 relational channels (five preregistered checks pass;
-Fig.~1d)---contract-relativity made precise: ``higher-order'' is
+Extended Data Fig.~1c)---contract-relativity made precise: ``higher-order'' is
 defined only relative to what an observer declares exogenous. On a 72-cell factorial (4 sources $\times$ 3
 temporal shapes $\times$ 2 stabilities $\times$ 3 magnitudes) the
 instrument recovers the source in 72/72 cells, and---the point that
 defends against the metric-artefact
 critique\citep{schaeffer2023emergent}---amplitude $M$ is invariant
 across temporal shape (relative range 0.000) while abruptness $J$
-strictly orders punctuated $>$ sigmoid $>$ gradual (Fig.~1c); a
+strictly orders punctuated $>$ sigmoid $>$ gradual (Extended Data
+Fig.~1b); a
 revelation-only or discontinuous-metric control produces exactly zero
 collapse.
 
@@ -245,9 +245,9 @@ that produces punctuated collapse (Fig.~2c). The phenomenon reproduces under a d
 algorithm\citep{mnih2016asynchronous} (advantage actor--critic,
 byte-identical environment): 5/5 seeds reproduce the
 plateau-then-collapse shape and primary hinge ($\Delta$BIC
-37.7--45.5)---a strong partial replication: the strict thinning
+37.7--45.5)---a partial replication: the strict thinning
 clause passes in only 3/5, missing solely on thinned-subsample
-detector power, and we do not adjust the threshold post hoc.
+detector power.
 
 The same learned system cleanly separates the two senses of emergence
 that are usually conflated (Fig.~3). Along the \emph{realization}
@@ -283,8 +283,8 @@ shows the same signature more strongly in 5/5 seeds ($\Delta$BIC
 53.6--71.7; closing slope $\sim$30$\times$ the plateau slope), again
 with collapse preceding capability and five distinct role
 permutations. In both
-systems the open plateau \emph{is} the joint exploration barrier,
-measured rather than asserted: mid-plateau, a probe agent
+systems the open plateau \emph{is} the joint exploration barrier:
+mid-plateau, a probe agent
 unilaterally committing to the \emph{best} available code or role
 gains essentially nothing (0.011; 0.001); after commitment, the
 cheapest unilateral deviation forfeits the structural maximum of the
@@ -460,17 +460,16 @@ predicts strict flips (AUC 0.85; descriptive, runs cluster within
 seeds), and capability recovers to 0.92 of the unperturbed rate after
 late perturbation: what locks is the institution, not the learning. This validates the functional
 open-versus-committed distinction, not a causal breakpoint time
-(formation is non-monotone; open and late checkpoints also differ in
+(open and late checkpoints also differ in
 training time; Methods).
 
-Among classic cases the picture is deliberately mixed: Vicsek
+Among classic cases the picture is mixed: Vicsek
 flocking\citep{vicsek1995novel}, Swift--Hohenberg pattern
 selection\citep{cross1993pattern} and Schelling
 segregation\citep{schelling1971dynamic} organize strongly but collapse
 \emph{gradually}, while the Potts model\citep{wu1982potts} reproduces
 the continuous-versus-first-order distinction through hinge strength
-and hysteresis. The result is a classification, not
-``everything is punctuated'': collapse profiles sort systems into
+and hysteresis. The result is a classification: collapse profiles sort systems into
 punctuated, gradual, parameter-axis and early-warning forms, and onset
 appears specifically where a joint-regime barrier---physical (the grip
 gate), informational (the blocked low-order channel) or endogenous to
@@ -500,17 +499,15 @@ scaled models\citep{wei2022emergent} and the within-run appearance of a
 coordinated strategy in self-play
 agents\citep{baker2020emergent,vinyals2019grandmaster,bard2020hanabi}
 are different events on different timescales: our learned flagship
-shows the first as smooth and expansive and the second as punctuated,
-in the \emph{same} system.
+shows the first as smooth and expansive and the second as punctuated.
 Concurrent work detects higher-order structure in multi-agent
 language-model groups through partial information
 decomposition\citep{riedl2026emergent}; that programme asks whether
 synergy is \emph{present}, ours when the joint possibility space
 \emph{closes}, how abruptly, through which channel, and whether the
-closure can still be steered---complementary programmes, the collapse
-object adding timing and control.
+closure can still be steered.
 
-The limitations are real and stated as scope, not hidden. Onset-type
+Onset-type
 collapse is not generic to deep MARL at current scale: dense-reward
 Overcooked optimization collapses gradually. Our designed systems (the
 grip gate; the blocked-channel XOR task) are mechanism-isolating
@@ -522,7 +519,7 @@ coordination-ring experiment tests this boundary inside the very
 benchmark that produced the negative: restoring competing regimes
 restores committed conventions in every seed. Certified onsets remain
 rare there because that commitment is non-monotone---an instrument
-boundary we state rather than engineer away (a settled-envelope
+boundary (a settled-envelope
 extension failed its own validation and was retired;
 Methods); certifying non-monotone commitment and extending to
 large-scale self-play are the clear next steps. Three boundaries
@@ -967,24 +964,18 @@ and take full responsibility for all claims.
 
 \begin{figure}[p]
 \centering
-\includegraphics[width=\textwidth]{fig1.pdf}
-\caption{\textbf{The problem and the instrument.}
-\textbf{a},~The intuition: many parts wander in a wide joint possibility
-space (grey) until a breakpoint $t^{*}$ after which trajectories commit to
-one regime and abandon the alternatives (schematic).
-\textbf{b},~Four generators---central script, common cause, coincidence and
-local feedback---constructed so that no statistic of the shared
-joint-action distribution separates them (identical joints, marginals
-and macroscopic success). What separates them is the declared
-contract: conditioning on declared exogenous variables,
-interaction-severing counterfactuals and persistence checks assign
-each to its predicted certificate component---attribution is
-contract-relative, not mechanism discovery from outcome statistics.
-\textbf{c},~Full-factorial calibration (72 cells): amplitude $M$ is
-invariant across temporal shape while abruptness $J$ strictly orders
-punctuated $>$ sigmoid $>$ gradual.
-\textbf{d},~Source-decomposition ladder on analytic ground truth: each pure
-generator loads almost entirely onto its own component.}
+\includegraphics[width=\textwidth]{fig0_overview.pdf}
+\caption{\textbf{Emergence as possibility collapse.}
+A population of learning agents (coloured dots) starts with many joint
+futures open (grey): several collective regimes---here a ring and a
+line---are still reachable. At a breakpoint $t^{*}$ the joint
+possibility space begins to contract; alternatives fade until the
+population is committed to a single regime, and only after this
+collective commitment does the capability appear. Bottom, the
+practical consequence: while the space is open, a small perturbation
+(red arrow) can still redirect the population to a different regime;
+after commitment the same perturbation changes nothing---the regime is
+locked in.}
 \end{figure}
 
 \begin{figure}[t]
@@ -1083,6 +1074,29 @@ where all 8 seeds commit to a circulation direction and 1/8 certifies
 onset (Results)---and is absent for gradual convergence (formation,
 ordinary learners, consensus/quorum populations, cramped-room deep
 MARL, several classic cases).}
+\end{figure}
+
+\clearpage
+\setcounter{figure}{0}
+\renewcommand{\figurename}{Extended Data Fig.}
+
+\begin{figure}[p]
+\centering
+\includegraphics[width=\textwidth]{edfig1_instrument.pdf}
+\caption{\textbf{Instrument validation on constructed ground truth.}
+\textbf{a},~Four generators---central script, common cause, coincidence and
+local feedback---constructed so that no statistic of the shared
+joint-action distribution separates them (identical joints, marginals
+and macroscopic success). What separates them is the declared
+contract: conditioning on declared exogenous variables,
+interaction-severing counterfactuals and persistence checks assign
+each to its predicted certificate component---attribution is
+contract-relative, not mechanism discovery from outcome statistics.
+\textbf{b},~Full-factorial calibration (72 cells): amplitude $M$ is
+invariant across temporal shape while abruptness $J$ strictly orders
+punctuated $>$ sigmoid $>$ gradual.
+\textbf{c},~Source-decomposition ladder on analytic ground truth: each pure
+generator loads almost entirely onto its own component.}
 \end{figure}
 
 \end{document}

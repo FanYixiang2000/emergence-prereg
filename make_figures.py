@@ -79,50 +79,19 @@ def save(fig, name):
     print("wrote", name)
 
 
-# Figure 1 | problem + instrument
-def fig1():
+# Extended Data Figure 1: instrument validation (Fig. 1 is the hand-drawn
+# overview schematic figures/fig0_overview.pdf, produced outside this script)
+def edfig1():
     cc = load("collective_constraint.json")["matched_confound"]
     b72 = load("bench72_factorial.json")
     sd = load("collapse_source_decomposition.json")
 
     fig = plt.figure(figsize=(DOUBLE, 2.5))
-    gs = fig.add_gridspec(1, 4, wspace=0.55,
-                          width_ratios=[1.25, 1.0, 1.0, 1.15])
+    gs = fig.add_gridspec(1, 3, wspace=0.55,
+                          width_ratios=[1.0, 1.0, 1.15])
 
-    # -- a schematic: possibility space collapse -----------------------
+    # a: matched confound
     ax = fig.add_subplot(gs[0])
-    rng = np.random.default_rng(7)
-    t = np.linspace(0, 1, 300)
-    tstar = 0.5
-    for i in range(22):
-        phase = rng.uniform(0, 2 * np.pi)
-        freq = rng.uniform(1.5, 4.0)
-        amp = rng.uniform(0.35, 0.95)
-        wig = amp * np.sin(freq * 2 * np.pi * t + phase)
-        # after t*, every trajectory relaxes onto the committed regime
-        lam = np.clip((t - tstar) * 14, 0, None)
-        y = wig * np.exp(-lam) + 0.75 * (1 - np.exp(-lam))
-        ax.plot(t, y, color=GREY, lw=0.5, alpha=0.6, zorder=1)
-    # the abandoned alternative regime
-    ax.plot(t[t > tstar], np.full((t > tstar).sum(), -0.75), color=RED,
-            lw=0.8, ls=":", alpha=0.7)
-    ax.text(0.97, -0.62, "abandoned regime", fontsize=5.2, color=RED,
-            ha="right")
-    ax.axvline(tstar, color=RED, lw=0.9, ls="--", zorder=2)
-    ax.text(tstar + 0.02, 1.18, r"breakpoint $t^{*}$", color=RED,
-            fontsize=6)
-    ax.text(0.03, 1.18, "open regime", fontsize=6, color=DARK)
-    ax.text(0.97, 0.44, "committed\nregime", fontsize=6, color=DARK,
-            ha="right")
-    ax.set_xlim(0, 1)
-    ax.set_ylim(-1.35, 1.35)
-    ax.set_xticks([])
-    ax.set_yticks([])
-    ax.set_xlabel("time (schematic)")
-    ax.set_ylabel("joint possibility space")
-
-    # -- b matched confound --------------------------------------------
-    ax = fig.add_subplot(gs[1])
     rows = ["central script", "common cause", "coincidence", "local feedback"]
     checks = ["joint distr.", "marginals", "macro outcome"]
     ok = [[cc["joint_distributions_identical"],
@@ -144,10 +113,10 @@ def fig1():
     ax.tick_params(length=0)
     ax.set_title("four mechanisms, identical observables", fontsize=6.5)
 
-    # -- c BENCH-72: J orders shapes, M invariant ----------------------
+    # b: BENCH-72, J orders shapes while M stays invariant
     gd = b72["checks"]["group_detail"]
     shapes = ["gradual", "sigmoid", "punctuated"]
-    ax = fig.add_subplot(gs[2])
+    ax = fig.add_subplot(gs[1])
     for k, sh in enumerate(shapes):
         vals = [g["J"][sh] for g in gd]
         x = np.full(len(vals), k) + np.random.default_rng(3).uniform(
@@ -163,13 +132,13 @@ def fig1():
     ax.set_ylabel("abruptness J")
     ax.set_ylim(0, 1.12)
 
-    # -- d source dissociation on analytic ground truth ----------------
+    # c: source dissociation on analytic ground truth
     det = sd["results"]["SD3_dissociations"]["detail"]["components"]
     gens = ["pure_env", "pure_pair", "pure_high"]
     comps = ["C_env", "C_pair", "C_high"]
     labels = [r"$C_{\rm env}$", r"$C_{\rm pair}$", r"$C_{\rm high}$"]
     colors = [YELLOW, BLUE, PURPLE]
-    ax = fig.add_subplot(gs[3])
+    ax = fig.add_subplot(gs[2])
     w = 0.24
     for j, c in enumerate(comps):
         fr = [max(det[g][c], 0.0) / det[g]["C_total"] for g in gens]
@@ -184,13 +153,12 @@ def fig1():
               handlelength=0.8, columnspacing=0.8, borderaxespad=0.0)
 
     panel(fig, 0.005, 1.00, "a")
-    panel(fig, 0.30, 1.00, "b")
-    panel(fig, 0.52, 1.00, "c")
-    panel(fig, 0.75, 1.00, "d")
-    save(fig, "fig1")
+    panel(fig, 0.355, 1.00, "b")
+    panel(fig, 0.665, 1.00, "c")
+    save(fig, "edfig1_instrument")
 
 
-# Figure 2 | grip flagship: punctuated realization
+# Figure 2: grip flagship, punctuated realization
 def fig2():
     lgt = load("learn_grip_transport.json")
     b5 = load("learn_grip_transport_b5.json")
@@ -206,7 +174,7 @@ def fig2():
     gs2 = fig.add_gridspec(1, 3, wspace=0.45, bottom=0.075, top=0.435,
                            width_ratios=[1.15, 1.15, 1.0])
 
-    # -- a task schematic -----------------------------------------------
+    # a: task schematic
     ax = fig.add_subplot(gs[0])
     obj = Circle((0.5, 0.55), 0.10, facecolor="#DDDDDD", edgecolor=DARK,
                  lw=0.8, zorder=3)
@@ -232,7 +200,7 @@ def fig2():
     ax.axis("off")
     ax.set_title("grip-then-push transport (N = 16)", fontsize=6.5)
 
-    # -- b side-openness curves (REINFORCE, 5 seeds) ---------------------
+    # b: side-openness curves (REINFORCE, 5 seeds)
     ax = fig.add_subplot(gs[1])
     for i, (s, d) in enumerate(sorted(lgt["seeds"].items())):
         c = d["side_openness_curve"][:41]
@@ -250,7 +218,7 @@ def fig2():
     ax.annotate("collapse", xy=(20.5, 0.35), xytext=(27, 0.30), fontsize=6,
                 arrowprops=dict(arrowstyle="->", lw=0.6, color=DARK))
 
-    # -- c mechanism contrast: dBIC with vs without preparation phase ----
+    # c: mechanism contrast: dBIC with vs without preparation phase
     ax = fig.add_subplot(gs[2])
     grip_db = [b5["seeds"][s]["adj"]["hinge"]["delta_bic"]
                for s in sorted(b5["seeds"])]
@@ -270,7 +238,7 @@ def fig2():
     ax.set_ylabel("breakpoint evidence ($\\Delta$BIC)")
     ax.set_ylim(0, 58)
 
-    # -- d breakpoint location across seeds and algorithms ---------------
+    # d: breakpoint location across seeds and algorithms
     ax = fig.add_subplot(gs[3])
     t_re = sorted(ext["registered_outcomes"]["t_stars"])
     t_a2c = sorted(a2c["registered_outcomes"]["t_stars"])
@@ -288,7 +256,7 @@ def fig2():
     ax.text(1, 18.3, "5/5 shape\n3/5 strict", ha="center", fontsize=6,
             color=PURPLE)
 
-    # -- e convention formation (no designed gate) ------------------------
+    # e: convention formation (no designed gate)
     ax = fig.add_subplot(gs2[0])
     grid_c = list(range(0, 4001, 25))
     for i, (s, d) in enumerate(sorted(lc["seeds"].items())):
@@ -305,7 +273,7 @@ def fig2():
                  "no gate: 4/5 onset, 5 distinct codes", fontsize=6.5)
     ax.text(300, 1.005, "open plateau", fontsize=6, color=DARK)
 
-    # -- f role lock-in (no designed gate) ---------------------------------
+    # f: role lock-in (no designed gate)
     ax = fig.add_subplot(gs2[1])
     grid_r = list(range(0, 6001, 25))
     for i, (s, d) in enumerate(sorted(lr["seeds"].items())):
@@ -321,7 +289,7 @@ def fig2():
                  "no gate: 5/5 onset, 5 distinct permutations",
                  fontsize=6.5)
 
-    # -- g collapse precedes capability ------------------------------------
+    # g: collapse precedes capability
     ax = fig.add_subplot(gs2[2])
     for d in lc["seeds"].values():
         if d["adj"]["b5_onset"] and d["success_090_cross"] is not None:
@@ -353,7 +321,7 @@ def fig2():
     save(fig, "fig2")
 
 
-# Figure 3 | two timescales dissociate
+# Figure 3: two timescales dissociate
 def fig3():
     lgf = load("learn_grip_formation.json")
     fine = load("learn_grip_formation_fine.json")
@@ -361,7 +329,7 @@ def fig3():
     fig = plt.figure(figsize=(DOUBLE, 2.3))
     gs = fig.add_gridspec(1, 3, wspace=0.45, width_ratios=[1.2, 1.2, 1.0])
 
-    # -- a formation axis: smooth ----------------------------------------
+    # a: formation axis: smooth
     ax = fig.add_subplot(gs[0])
     grid = None
     for i, (s, d) in enumerate(sorted(lgf["seeds"].items())):
@@ -378,7 +346,7 @@ def fig3():
     ax.set_ylim(-0.03, 1.05)
     ax.set_title("formation: smooth, 0/5 breakpoints", fontsize=6.5)
 
-    # -- b fine grid -------------------------------------------------------
+    # b: fine grid
     ax = fig.add_subplot(gs[1])
     every = fine["config"]["save_every"]
     for i, (s, d) in enumerate(sorted(fine["seeds"].items())):
@@ -394,7 +362,7 @@ def fig3():
     ax.set_title("fast but smooth: midpoints 10–20,\n0/5 breakpoints",
                  fontsize=6.5)
 
-    # -- c the quadrant ----------------------------------------------------
+    # c: the quadrant
     ax = fig.add_subplot(gs[2])
     ro = lgf["registered_outcomes"]
     cells = [
@@ -423,7 +391,7 @@ def fig3():
     save(fig, "fig3")
 
 
-# Figure 4 | source typology transfers to learned systems
+# Figure 4: source typology transfers to learned systems
 def fig4():
     lst = load("learn_stance_transport.json")
     tric = load("triad_highorder_cue.json")
@@ -434,7 +402,7 @@ def fig4():
     gs = fig.add_gridspec(1, 4, wspace=0.75,
                           width_ratios=[1.1, 1.1, 1.0, 1.0])
 
-    # -- a stance: relational collapse -----------------------------------
+    # a: stance: relational collapse
     ax = fig.add_subplot(gs[0])
     ax2 = ax.twinx()
     for i, (s, d) in enumerate(sorted(lst["seeds"].items())):
@@ -454,7 +422,7 @@ def fig4():
     ax2.spines["right"].set_visible(True)
     ax.set_title("marginals stay open,\njoint space closes", fontsize=6.5)
 
-    # -- b TRI-C: learned higher-order carrier ---------------------------
+    # b: TRI-C: learned higher-order carrier
     ax = fig.add_subplot(gs[1])
     for i, (s, d) in enumerate(sorted(tric["seeds"].items())):
         cks = sorted(int(k) for k in d)
@@ -472,7 +440,7 @@ def fig4():
     ax.set_title("blocked low-order route:\nlearning builds XOR carrier",
                  fontsize=6.5)
 
-    # -- c contract relativity (TRI-C, seed mean) -------------------------
+    # c: contract relativity (TRI-C, seed mean)
     ax = fig.add_subplot(gs[2])
     comps = ["C_individual", "C_env", "C_pair", "C_high"]
     labels = ["ind", "env", "pair", "high"]
@@ -497,7 +465,7 @@ def fig4():
     ax.set_ylabel("collapse composition (bits)")
     ax.set_title("same collapse,\nobserver-declared source", fontsize=6.5)
 
-    # -- d matched-product profile separation (E1-C) ----------------------
+    # d: matched-product profile separation (E1-C)
     ax = fig.add_subplot(gs[3])
     l, n = e1c["learned"], e1c["noisy_scripted"]
     vals = [l["C_env"], n["C_env"]]
@@ -523,7 +491,7 @@ def fig4():
     save(fig, "fig4")
 
 
-# Figure 5 | openness predicts controllability
+# Figure 5: openness predicts controllability
 def fig5():
     lgu = load("learn_grip_utility.json")
     lss = load("learn_stance_sticky.json")
@@ -534,7 +502,7 @@ def fig5():
     fig = plt.figure(figsize=(DOUBLE, 2.4))
     gs = fig.add_gridspec(1, 4, wspace=0.5, width_ratios=[1.2, 1, 1.1, 1])
 
-    # -- a intervention window vs breakpoint ------------------------------
+    # a: intervention window vs breakpoint
     ax = fig.add_subplot(gs[0])
     ms = lgu["registered_outcomes"]["mean_switch_by_tau"]
     taus = sorted(int(k) for k in ms)
@@ -550,7 +518,7 @@ def fig5():
     ax.set_ylim(0, 1.05)
     ax.set_title("the window closes after $t^{*}$", fontsize=6.5)
 
-    # -- b predictor race (grip) ------------------------------------------
+    # b: predictor race (grip)
     ax = fig.add_subplot(gs[1])
     br = lgu["registered_outcomes"]["baseline_race"]
     names = ["side_open", "absx", "absv", "tau", "att"]
@@ -565,7 +533,7 @@ def fig5():
     ax.axhline(0.5, color=DARK, lw=0.5, ls=":")
     ax.set_title("grip system", fontsize=6.5)
 
-    # -- c matched-parameter causal contrast ------------------------------
+    # c: matched-parameter causal contrast
     ax = fig.add_subplot(gs[2])
     st = lss["registered_outcomes"]["baseline_race"]
     ct = lsc["registered_outcomes"]["baseline_race"]
@@ -584,7 +552,7 @@ def fig5():
               handlelength=1.0)
     ax.set_title("one parameter flips the ranking", fontsize=6.5)
 
-    # -- d ant per-episode conditional law --------------------------------
+    # d: ant per-episode conditional law
     ax = fig.add_subplot(gs[3])
     bins = aic["bins"]
     labels = [f"{b['bin'][0]:g}–{b['bin'][1]:g}" for b in bins]
@@ -610,7 +578,7 @@ def fig5():
     save(fig, "fig5")
 
 
-# Figure 6 | laws and scope
+# Figure 6: laws and scope
 def fig6():
     fss = load("ant_fss.json")
     ks = load("kuramoto_scale.json")
@@ -619,7 +587,7 @@ def fig6():
     fig = plt.figure(figsize=(DOUBLE, 2.7))
     gs = fig.add_gridspec(1, 3, wspace=0.45, width_ratios=[1.0, 1.0, 1.5])
 
-    # -- a finite-size scaling law ------------------------------------------
+    # a: finite-size scaling law
     ax = fig.add_subplot(gs[0])
     law = fss["registered_outcomes"]["log_law"]
     per = fss["per_size"]
@@ -662,7 +630,7 @@ def fig6():
     for s in axi.spines.values():
         s.set_linewidth(0.4)
 
-    # -- b Kuramoto laws ----------------------------------------------------
+    # b: Kuramoto laws
     ax = fig.add_subplot(gs[1])
     Ks = [float(k) for k in ks["config"]["Ks"]]
     tstar = ks["registered_outcomes"]["mean_t_star"]
@@ -679,7 +647,7 @@ def fig6():
     ax.set_title("Kuramoto: critical slowing down,\nsharpening with feedback",
                  fontsize=6.5)
 
-    # -- c scope: where onset lives -----------------------------------------
+    # c: scope: where onset lives
     ax = fig.add_subplot(gs[2])
     rows = [
         ("convention formation (no gate)", "onset", "onset"),
@@ -722,7 +690,7 @@ def fig6():
 
 
 if __name__ == "__main__":
-    fig1()
+    edfig1()
     fig2()
     fig3()
     fig4()
