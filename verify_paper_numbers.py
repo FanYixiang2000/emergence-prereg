@@ -55,7 +55,7 @@ def rng(vals):
 b72 = load("bench72_factorial.json")
 ro = b72["registered_outcomes"]
 check("BENCH72 source recovery 72/72", ro["B72_1_source"], True,
-      "recovers the source in 72/72 cells")
+      "recovers the correct source in 72/72 cells")
 mvb = b72["checks"]["B72_2_M_vs_B"]
 check("BENCH72 M invariant across shape (24/24 groups)",
       (mvb["M_groups_ok"], mvb["n_groups"]), (24, 24),
@@ -86,7 +86,7 @@ check("Grip primary onsets 5/5 (B5 battery)", (ro["b5_count_learned"], ro["n_lea
 ext = load("learn_grip_ext.json")
 rx = ext["registered_outcomes"]
 check("Grip learns 10/10 seeds with onset", (rx["n_learned"], rx["b5_count"]), (10, 10),
-      "learns in 10/10 seeds")
+      "learns this task in 10/10 seeds")
 dbics = [d["adj"]["hinge"]["delta_bic"] for d in b5["seeds"].values()]
 check("Grip dBIC range 45.8-52.7", (round(min(dbics), 1), round(max(dbics), 1)), (45.8, 52.7),
       "$\\Delta$BIC 45.8--52.7")
@@ -188,7 +188,7 @@ n_on = sum(1 for v in tbp["seeds"].values() if v["verdict"]["tricbp1_seed"])
 n_on += sum(1 for v in tce["seeds"].values() if v["verdict"]["tricbp1_seed"])
 n_tot = len(tbp["seeds"]) + len(tce["seeds"])
 check("TRI-C onsets pooled 7/8", (n_on, n_tot), (7, 8),
-      "7/8 seeds across original run and five-seed extension")
+      "7/8 seeds across the original run and a five-seed extension")
 
 # ---------------------------------------------------------------- overcooked profile
 e1c = load("overcooked_profile_confirmatory.json")
@@ -207,7 +207,7 @@ check("Grip switch 1.0 up to t=16", all(sw[t] >= 0.999 for t in sw if t <= 16), 
       "probability 1.0 up to $t=16$")
 check("Grip switch 0.27 by t=30", round(sw[30], 2), 0.27, "only 0.27 by $t=30$")
 check("Grip openness AUC 0.996", round(ro["baseline_race"]["side_open"]["auc"], 3), 0.996,
-      "AUC 0.996")
+      "AUC of 0.996")
 
 cc = load("learn_grip_confound.json")
 aucs = [v["auc"] for v in cc["cc1_by_tau"].values()]
@@ -280,7 +280,7 @@ check("Kuramoto 10/10 onsets", (sum(1 for _, _, r in runs if r["onset_pass"]), l
       (10, 10), "(10/10 onsets)")
 check("Kuramoto subcritical gated null 3/3",
       load("kuramoto_breakpoint_r2.json")["registered_outcomes"]["KURR2_2_subcritical_gated_null_3of3"],
-      True, "every subcritical run is correctly gated null")
+      True, "Every subcritical run is correctly gated null")
 check("Kuramoto pairwise carrier 3/3",
       load("kuramoto_breakpoint_r2.json")["registered_outcomes"]["KURR2_3_relational_carrier_3of3"],
       True, "carried by the pairwise channel (3/3 seeds")
