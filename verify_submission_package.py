@@ -42,6 +42,8 @@ def archive_files(archive: Path) -> tuple[set[str], list[tarfile.TarInfo]]:
         name = member.name
         if name.startswith("/") or ".." in Path(name).parts:
             raise RuntimeError(f"unsafe archive path: {name}")
+        if member.isdir() and name.rstrip("/") == PREFIX.rstrip("/"):
+            continue
         if not name.startswith(PREFIX):
             raise RuntimeError(f"path outside {PREFIX}: {name}")
         if member.isfile():
