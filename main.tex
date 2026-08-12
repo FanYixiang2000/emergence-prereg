@@ -625,7 +625,7 @@ all control families is 0.000; power rises monotonically with grid
 density (0.00/0.62/0.995/1.00 at 12/20/40/80 points) while the
 false-positive rate remains 0.000 at every density, and degrades
 gracefully with noise (0.93 at $\sigma=0.08$, false positives 0.000
-throughout). Zero observed false positives among 200 curves per control
+throughout; Supplementary Table~1). Zero observed false positives among 200 curves per control
 family bounds the true rate at $\leq$0.5\% per condition (95\%
 rule-of-three over the pooled 600 controls); we report the bound rather
 than claiming the rate is exactly zero. The detector adjudicates
@@ -662,7 +662,7 @@ onset verdict is unchanged in 100\% of adequate-resolution cells and the
 breakpoint location varies by 1\%, 8\% and 11\% of curve span
 respectively; aggressive grid coarsening reduces detectability (a power
 effect quantified by the validation benchmark above), never the
-location. The collapse object itself is fixed by the theory (the joint
+location (Supplementary Table~2). The collapse object itself is fixed by the theory (the joint
 commitment space), not chosen by fit: the raw action-entropy of the grip
 system \emph{rises} during the same window and is reported as such.
 
@@ -733,7 +733,8 @@ object exists to measure. The equivalence class is therefore:
 verdict and location survive object dualities, behavioural sampling,
 reference changes and state coarse-graining down to the detector's
 resolution floor; they break only when the representation erases the
-latent channel or compresses the transition below that floor.
+latent channel or compresses the transition below that floor
+(Supplementary Table~3).
 
 \paragraph{Emergence certificate.}
 The frozen instruments are packaged into a single standardized
@@ -765,7 +766,7 @@ grip-then-push dynamics (grip gain 0.06, decay 0.01), trained by
 REINFORCE\citep{williams1992simple} (1{,}200 updates, batch 512, learning
 rate $2\times10^{-3}$) and, for the robustness check, by advantage
 actor--critic\citep{mnih2016asynchronous} on identical environment
-parameters. The hidden-coordination flagship uses 8 individually-observing
+parameters (per-seed statistics in Supplementary Table~4). The hidden-coordination flagship uses 8 individually-observing
 agents with per-agent stances; the sticky variant sets stance-change
 probability 0.25 and the matched control sets it to 1.0 with all other
 constants imported unchanged. Overcooked runs use the standard
@@ -777,7 +778,7 @@ update, 4{,}000 updates); the role system is six agents choosing among
 six roles with team reward only for full coverage (6{,}000 updates,
 otherwise identical training); in both, openness is computed from
 policy probabilities at 25-update checkpoints and adjudicated by the
-frozen detector. The neural replications keep both environments and
+frozen detector (Supplementary Table~5). The neural replications keep both environments and
 recipes fixed and replace the tables with one-hidden-layer networks
 (32 tanh units, Adam $3\times10^{-3}$, ten fresh seeds per system):
 per-agent speaker and listener MLPs for the signalling population, and
@@ -788,7 +789,7 @@ updates, the neural runs are evaluated at 5-update resolution---a
 preregistered measurement-density amendment justified by the
 detector's validated grid-power curve; at the original 25-update grid
 the onsets are under-resolved (1/7 and 1/10), which is recorded
-alongside the fine-grid result. The initialization sweep varies the
+alongside the fine-grid result (Supplementary Table~6). The initialization sweep varies the
 input-weight scale $\sigma\in\{0.02,0.1,0.45\}$ at five seeds per
 cell. The coordination-ring study trains standard
 \texttt{overcooked\_ai} self-play PPO (mechanics and budget identical
@@ -796,7 +797,8 @@ to the cramped-room runs, 2M steps) on the official
 \texttt{coordination\_ring} layout, eight seeds, checkpoints every 20k
 steps; the regime object is the entropy of the pair's circulation
 direction (net winding around the central counter, Laplace-smoothed
-over 30 evaluation episodes per checkpoint), declared before running.
+over 30 evaluation episodes per checkpoint), declared before running
+(per-seed conventions in Supplementary Table~7).
 A parallel preregistered attempt on the unmodified MPE
 \texttt{simple\_spread} benchmark did not reach its frozen competence
 precondition (conflict-episode coverage 3\% after 3{,}000 PPO updates)
@@ -821,7 +823,8 @@ fixed-time analysis that rules out the time confound exists in the
 grip system and has not yet been run here. The finite-size study uses sizes
 $N\in\{1,2,5,10,20,50,100,200,500\}$, 30 episodes per size and a
 1{,}500-trip horizon, with $t_{50}$ and width read from median
-openness crossings and the log-law slope bootstrapped over episodes.
+openness crossings and the log-law slope bootstrapped over episodes
+(Supplementary Table~8).
 The ant, Kuramoto, Potts, Vicsek, Swift--Hohenberg and Schelling models
 follow their standard definitions (Supplementary Methods).
 
@@ -879,7 +882,8 @@ wall-clock time.
 Every predicted outcome was frozen, with an explicit falsification
 clause, in an internal protocol file before the corresponding run;
 passes and misses are reported identically, and each amendment is
-recorded in place with its trigger. We characterize these as
+recorded in place with its trigger (the complete ledger is collected
+in Supplementary Note~1). We characterize these as
 internally time-stamped frozen protocols rather than third-party
 registrations: they were not lodged with an external registry, and we
 release them verbatim---including every miss, every failed instrument
@@ -920,9 +924,10 @@ available in the accompanying repository and will be archived on
 Zenodo upon acceptance. The
 manuscript's quantitative claims are reproduced by a single extraction
 script (\texttt{manuscript\_numbers.py}) that reads the raw outputs and
-prints every number cited in the text and figures, and by a
+prints every number cited in the text and figures, by a
 figure-generation script (\texttt{make\_figures.py}) that draws all
-panels from the same files.
+panels from the same files, and by \texttt{make\_si\_tables.py}, which
+generates every Supplementary Table directly from the raw outputs.
 \normalsize
 
 \section*{Acknowledgements}

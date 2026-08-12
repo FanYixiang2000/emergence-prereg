@@ -1,0 +1,192 @@
+\documentclass[11pt]{article}
+
+\usepackage[a4paper,margin=1in]{geometry}
+\usepackage{graphicx}
+\usepackage{amsmath,amssymb}
+\usepackage{times}
+\usepackage[T1]{fontenc}
+\usepackage{microtype}
+\usepackage{booktabs}
+\usepackage{setspace}
+\usepackage[hidelinks]{hyperref}
+\usepackage{caption}
+\captionsetup{labelfont=bf,font=small,labelsep=period}
+\setlength{\parskip}{0pt}
+\linespread{1.25}
+
+\renewcommand{\tablename}{Supplementary Table}
+
+\title{\vspace{-1.5em}\bfseries Supplementary Information for:\\
+Measuring emergence through collapse of the effective joint
+possibility space}
+\author{Author list withheld for double-anonymized review}
+\date{}
+
+\begin{document}
+\maketitle
+\thispagestyle{empty}
+
+\noindent This document contains the Supplementary Methods (standard
+definitions and simulation parameters of the physical and agent-based
+reference models, and the baseline predictors used in the intervention
+race), Supplementary Note~1 (the complete ledger of registered misses
+and protocol amendments), and Supplementary Tables~1--8 (per-seed and
+per-condition statistics behind every aggregate reported in the main
+text). Every number in the Supplementary Tables is generated directly
+from the raw experiment outputs by \texttt{make\_si\_tables.py}; no
+value is transcribed by hand.
+
+\section*{Supplementary Methods}
+
+\paragraph{Ant-colony commitment model.}
+$N$ ants make repeated trips, each choosing between two routes $A$ and
+$B$. Route pheromones $\varphi_A,\varphi_B$ are initialized at $1.0$;
+on each trip every ant chooses $A$ with probability
+$p=(K+\varphi_A)^{\alpha}/[(K+\varphi_A)^{\alpha}+(K+\varphi_B)^{\alpha}]$
+with $K=5$ and $\alpha=2$ (the standard nonlinear pheromone choice
+function), after which pheromones update as
+$\varphi\leftarrow\varphi(1-\rho)+q\,n$ with evaporation $\rho=0.01$,
+per-capita deposit $q=Q_{\mathrm{total}}/N$, total deposit budget
+$Q_{\mathrm{total}}=0.5$ and $n$ the number of ants that chose the
+route. Because the deposit budget is shared, the fluctuation scale is
+$N^{-1/2}$, which is the source of the $\ln N$ commitment-time
+prediction recorded before the finite-size study. Openness is the
+binary entropy of the route-choice probability. The breakpoint study
+uses sizes $\{1,10,100\}$ with 900 trips; the finite-size study uses
+sizes $1$--$500$ with a 1{,}500-trip horizon, checkpoints every 10
+trips, 30 episodes per size and 200 bootstrap resamples for the
+log-law slope.
+
+\paragraph{Kuramoto model.}
+$N=200$ oscillators follow
+$\dot{\theta}_i=\omega_i+Kr\sin(\psi-\theta_i)$ plus Gaussian noise of
+scale $\sigma=0.05$, where $(r,\psi)$ is the instantaneous mean field,
+natural frequencies are drawn from $\mathcal{N}(0,0.5^2)$, and
+integration uses Euler--Maruyama with $\Delta t=0.02$ for 600 steps,
+measured every 10 steps. The openness object is the normalized entropy
+of the phase distribution over 10 bins, estimated from an ensemble of
+20{,}000 replicates. The breakpoint contrast uses supercritical
+$K=1.5$ against subcritical $K=0.3$; the coupling study spans
+$K\in\{0.9,1.1,1.5,2.0,2.5\}$ with two seeds per coupling
+(Supplementary Table~8).
+
+\paragraph{Potts model.}
+Ferromagnetic $q$-state Potts model ($q=2$ and $q=10$) on a $48\times
+48$ periodic lattice with checkerboard Metropolis dynamics (energy
+$-1$ per matching nearest-neighbour pair). Temperature is scanned
+through multiples $\{1.35,\dots,0.70\}$ of the exact critical
+temperature $T_c(q)=1/\ln(1+\sqrt{q})$, with 900 thermalization and
+300 sampling sweeps per temperature and six replicas from hot and
+cold starts. Openness is the normalized entropy of the colour-occupancy
+distribution; the order parameter is $(q\,f_{\max}-1)/(q-1)$ with
+$f_{\max}$ the dominant-colour fraction. Hysteresis is measured as
+the hot/cold-start openness gap.
+
+\paragraph{Vicsek model.}
+Standard Vicsek dynamics in a periodic box at density $\rho=2.0$:
+each particle moves at speed $0.03$ and adopts the mean heading of
+all particles within radius $1.0$ plus uniform angular noise on
+$[-\eta/2,\eta/2]$. The noise is annealed from $\eta=3.0$ down to
+$0.1$ (nine levels, 300 steps per level), with population sizes
+$N\in\{100,\dots,3200\}$ and three replicas. Openness is the
+normalized entropy of the heading distribution over 24 bins; the
+order parameter is $\varphi=|\langle e^{i\theta}\rangle|$.
+
+\paragraph{Swift--Hohenberg pattern selection.}
+One-dimensional Swift--Hohenberg equation
+$\partial_t u=ru-(1+\partial_x^2)^2u-u^3$ plus additive noise of
+amplitude $10^{-3}$, integrated pseudospectrally (linear operator
+implicit, cubic term explicit) on $M=256$ modes over a domain of
+length $64\pi$ with $\Delta t=0.5$ for 500 steps and 20 replicas.
+The pattern-forming case $r=0.2$ is contrasted with the stable case
+$r=-0.2$. Openness is the normalized spectral entropy of the Fourier
+power distribution; commitment concentrates power in the critical
+band $|k-1|\leq 0.1$.
+
+\paragraph{Schelling segregation.}
+Two agent types occupy 45\% of a $50\times 50$ periodic lattice each,
+with 10\% vacancies. An agent is unhappy when its same-type fraction
+among occupied Moore neighbours falls below the tolerance
+$\tau=0.35$; unhappy agents move to random vacancies. Dynamics run
+for 300 sweeps (20 replicas, states saved every 5 sweeps), with a
+$\tau=0$ control in which no agent is ever unhappy. Openness is the
+normalized entropy of the same-type neighbour-count distribution.
+
+\paragraph{Baseline predictors in the intervention race.}
+The predictor race of Fig.~5b compares, for identical intervention
+episodes, the switch-prediction AUC of five per-episode quantities:
+the side-openness of the joint policy (the possibility-space object),
+the object's position magnitude $|x|$, its velocity magnitude $|v|$,
+the population attachment (grip) level, and the intervention time
+index $\tau$ itself. All predictors are computed from the same stored
+rollouts; AUCs are reported per seed and pooled.
+
+\section*{Supplementary Note 1: registered misses and amendments}
+
+Every experiment in this study was preceded by an internal frozen
+protocol naming its prediction and falsification clause. This note
+collects, in one place, every registered miss and every amendment,
+each of which is also reported at its point of use in the main text
+or Methods. The corresponding protocol files are released verbatim
+with the code and raw outputs.
+
+\begin{enumerate}
+\item \textbf{Detector amendments.} The effect-size gate and the
+saturation-truncated analysis window were added after two
+preregistered control failures (a flat subcritical false positive and
+a saturation-knee capture) and re-validated on fresh seeds before any
+headline adjudication.
+\item \textbf{Retired instrument extension.} A settled-openness
+envelope intended to certify non-monotone commitment kept false
+positives below 0.05 in every validation round but never exceeded
+0.71 power against its required 0.90, and was closed under its own
+preregistered stopping rule without being applied to system data.
+This is why the coordination-ring onset count is reported at 1/8.
+\item \textbf{Semi-synthetic injection near-miss.} Recovery power for
+commitments injected into the ring pipeline's own estimator saturated
+at 0.88 against a registered threshold of 0.90; the 30-episode
+evaluation budget caps single-curve power, and the result is recorded
+as a near-miss.
+\item \textbf{A2C partial replication.} The strict parity-thinning
+clause passed in 3/5 advantage actor--critic seeds, failing solely on
+thinned-subsample detector power; the threshold was not adjusted.
+\item \textbf{Representation-equivalence bar missed.} The registered
+$\geq$90\% verdict-preservation bar was missed (8/12 cells); per the
+registered clause the measured equivalence class is reported instead
+of blanket invariance (Supplementary Table~3).
+\item \textbf{Initialization-sweep midpoint.} The initialization-scale
+sweep moved commitment time monotonically in the signalling system as
+predicted, but the role-system midpoint was non-monotone---a
+registered miss reported as such.
+\item \textbf{Barrier threshold calibration.} The convention
+deviation-cost clause was registered at 0.50 where the payoff
+structure caps the measurable cost at $0.4\times$ the
+within-population payoff for five-symbol permutation codes; the
+measured value 0.3996 sits at that structural ceiling and the
+mis-calibrated clause is reported verbatim.
+\item \textbf{Source-attribution relocation.} One registered audit
+prediction on the decomposition ladder missed: under strong knob
+interaction (pairwise copying beneath a parity mechanism) realized
+structure genuinely relocates to the individual level, which the
+ladder reports; this is a property of measuring realized structure,
+not generator labels.
+\item \textbf{Grid-resolution amendment.} At the original 25-update
+grid the neural-replication onsets were under-resolved (1/7 and
+1/10); a measurement-density amendment to 5-update resolution,
+justified by the detector's validated grid-power curve, was
+registered before the rerun, and both grids are reported.
+\item \textbf{Training failure.} A preregistered attempt on the
+unmodified MPE \texttt{simple\_spread} benchmark did not meet its
+frozen competence precondition (conflict-episode coverage 3\% after
+3{,}000 PPO updates) and is recorded as a training failure with no
+theory claim made either way.
+\item \textbf{Numerical defect.} One float32 entropy clamp that
+rounded to a degenerate value was found and fixed in code; both
+affected experiments were rerun with identical seeds and the
+corrupted outputs archived.
+\end{enumerate}
+
+\clearpage
+\input{si_tables}
+
+\end{document}
