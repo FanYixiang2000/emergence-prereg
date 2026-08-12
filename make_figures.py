@@ -28,7 +28,7 @@ def load(name):
         return json.load(f)
 
 
-# Nature/NMI style
+# ---- Nature/NMI style ----------------------------------------------------
 plt.rcParams.update({
     "font.family": "sans-serif",
     "font.sans-serif": ["Helvetica", "Arial", "DejaVu Sans"],
@@ -174,7 +174,7 @@ def fig2():
     gs2 = fig.add_gridspec(1, 3, wspace=0.45, bottom=0.075, top=0.435,
                            width_ratios=[1.15, 1.15, 1.0])
 
-    # a: task schematic
+    # -- a task schematic -----------------------------------------------
     ax = fig.add_subplot(gs[0])
     obj = Circle((0.5, 0.55), 0.10, facecolor="#DDDDDD", edgecolor=DARK,
                  lw=0.8, zorder=3)
@@ -191,16 +191,15 @@ def fig2():
                      arrowstyle="-", color=GREY, lw=0.5, zorder=2))
     ax.annotate("", xy=(0.90, 0.55), xytext=(0.66, 0.55),
                 arrowprops=dict(arrowstyle="->", color=RED, lw=1.2))
-    ax.text(0.85, 0.68, "push\n(left or right)", fontsize=6, color=RED,
-            ha="center", va="bottom")
-    ax.text(0.5, 0.15, "phase 1: grip (attachment $\\geq$ threshold)\n"
-            "phase 2: collective push", fontsize=6, ha="center")
+    ax.annotate("", xy=(0.10, 0.55), xytext=(0.34, 0.55),
+                arrowprops=dict(arrowstyle="->", color=RED, lw=1.2,
+                                alpha=0.45))
     ax.set_xlim(0, 1)
     ax.set_ylim(0.05, 1)
     ax.axis("off")
-    ax.set_title("grip-then-push transport (N = 16)", fontsize=6.5)
+    ax.set_title("grip-then-push transport", fontsize=6.5)
 
-    # b: side-openness curves (REINFORCE, 5 seeds)
+    # -- b side-openness curves (REINFORCE, 5 seeds) ---------------------
     ax = fig.add_subplot(gs[1])
     for i, (s, d) in enumerate(sorted(lgt["seeds"].items())):
         c = d["side_openness_curve"][:41]
@@ -214,11 +213,8 @@ def fig2():
     ax.set_ylim(-0.03, 1.06)
     ax.legend(frameon=False, loc="center right", handlelength=1.0,
               borderaxespad=0.1)
-    ax.text(6, 1.025, "open plateau", fontsize=6, color=DARK)
-    ax.annotate("collapse", xy=(20.5, 0.35), xytext=(27, 0.30), fontsize=6,
-                arrowprops=dict(arrowstyle="->", lw=0.6, color=DARK))
 
-    # c: mechanism contrast: dBIC with vs without preparation phase
+    # -- c mechanism contrast: dBIC with vs without preparation phase ----
     ax = fig.add_subplot(gs[2])
     grip_db = [b5["seeds"][s]["adj"]["hinge"]["delta_bic"]
                for s in sorted(b5["seeds"])]
@@ -232,13 +228,12 @@ def fig2():
     ax.text(5.7, 11.5, "$\\Delta$BIC = 10", color=RED, fontsize=5.8,
             ha="right")
     ax.set_xticks([x1.mean(), x2.mean()])
-    ax.set_xticklabels(["grip task\n5/5 onset", "no-preparation\n0/5 onset"],
-                       fontsize=6)
+    ax.set_xticklabels(["grip task", "no preparation"], fontsize=6)
     ax.set_xlim(-0.6, 6.3)
     ax.set_ylabel("breakpoint evidence ($\\Delta$BIC)")
     ax.set_ylim(0, 58)
 
-    # d: breakpoint location across seeds and algorithms
+    # -- d breakpoint location across seeds and algorithms ---------------
     ax = fig.add_subplot(gs[3])
     t_re = sorted(ext["registered_outcomes"]["t_stars"])
     t_a2c = sorted(a2c["registered_outcomes"]["t_stars"])
@@ -252,11 +247,8 @@ def fig2():
     ax.set_ylabel("breakpoint $t^{*}$ (step)")
     ax.set_xlim(-0.5, 1.5)
     ax.set_ylim(10, 28)
-    ax.text(0, 25.6, "10/10 B5", ha="center", fontsize=6, color=BLUE)
-    ax.text(1, 18.3, "5/5 shape\n3/5 strict", ha="center", fontsize=6,
-            color=PURPLE)
 
-    # e: convention formation (no designed gate)
+    # -- e convention formation (no designed gate) ------------------------
     ax = fig.add_subplot(gs2[0])
     grid_c = list(range(0, 4001, 25))
     for i, (s, d) in enumerate(sorted(lc["seeds"].items())):
@@ -269,11 +261,9 @@ def fig2():
     ax.set_ylabel("convention openness")
     ax.set_xlim(0, 2000)
     ax.set_ylim(-0.03, 1.06)
-    ax.set_title("signalling population, 120 equivalent codes\n"
-                 "no gate: 4/5 onset, 5 distinct codes", fontsize=6.5)
-    ax.text(300, 1.005, "open plateau", fontsize=6, color=DARK)
+    ax.set_title("signalling population", fontsize=6.5)
 
-    # f: role lock-in (no designed gate)
+    # -- f role lock-in (no designed gate) ---------------------------------
     ax = fig.add_subplot(gs2[1])
     grid_r = list(range(0, 6001, 25))
     for i, (s, d) in enumerate(sorted(lr["seeds"].items())):
@@ -285,11 +275,9 @@ def fig2():
     ax.set_ylabel("assignment openness")
     ax.set_xlim(0, 2000)
     ax.set_ylim(-0.03, 1.06)
-    ax.set_title("division of labour, 720 equivalent regimes\n"
-                 "no gate: 5/5 onset, 5 distinct permutations",
-                 fontsize=6.5)
+    ax.set_title("division of labour", fontsize=6.5)
 
-    # g: collapse precedes capability
+    # -- g collapse precedes capability ------------------------------------
     ax = fig.add_subplot(gs2[2])
     for d in lc["seeds"].values():
         if d["adj"]["b5_onset"] and d["success_090_cross"] is not None:
@@ -308,8 +296,6 @@ def fig2():
     ax.plot([], [], "o", ms=4, color=BLUE, mew=0, label="convention")
     ax.plot([], [], "s", ms=4, color=PURPLE, mew=0, label="roles")
     ax.legend(frameon=False, loc="lower right", handlelength=1.0)
-    ax.text(180, 1050, "collapse precedes\ncapability in 9/9", fontsize=6,
-            color=DARK)
 
     panel(fig, 0.005, 0.99, "a")
     panel(fig, 0.28, 0.99, "b")
@@ -326,10 +312,10 @@ def fig3():
     lgf = load("learn_grip_formation.json")
     fine = load("learn_grip_formation_fine.json")
 
-    fig = plt.figure(figsize=(DOUBLE, 2.3))
-    gs = fig.add_gridspec(1, 3, wspace=0.45, width_ratios=[1.2, 1.2, 1.0])
+    fig = plt.figure(figsize=(SINGLE * 1.5, 2.3))
+    gs = fig.add_gridspec(1, 2, wspace=0.45)
 
-    # a: formation axis: smooth
+    # -- a formation axis: smooth ----------------------------------------
     ax = fig.add_subplot(gs[0])
     grid = None
     for i, (s, d) in enumerate(sorted(lgf["seeds"].items())):
@@ -344,9 +330,9 @@ def fig3():
     ax.set_ylabel("success (solid)\noutcome openness (dashed)")
     ax.set_xlim(0, 1200)
     ax.set_ylim(-0.03, 1.05)
-    ax.set_title("formation: smooth, 0/5 breakpoints", fontsize=6.5)
+    ax.set_title("formation axis", fontsize=6.5)
 
-    # b: fine grid
+    # -- b fine grid -------------------------------------------------------
     ax = fig.add_subplot(gs[1])
     every = fine["config"]["save_every"]
     for i, (s, d) in enumerate(sorted(fine["seeds"].items())):
@@ -359,35 +345,10 @@ def fig3():
     ax.set_xlabel("training update (5-update grid)")
     ax.set_ylabel("success rate")
     ax.set_xlim(0, 200)
-    ax.set_title("fast but smooth: midpoints 10–20,\n0/5 breakpoints",
-                 fontsize=6.5)
-
-    # c: the quadrant
-    ax = fig.add_subplot(gs[2])
-    ro = lgf["registered_outcomes"]
-    cells = [
-        ("formation (across training)", "expansive, smooth",
-         f"{ro['formation_b5_count']}/5 breakpoints", CYAN, 0.30),
-        ("realization (within episode)", "plateau, punctuated",
-         f"{ro['realization_b5_count']}/5 breakpoints", BLUE, 0.55),
-    ]
-    for i, (rowlab, shape, b5c, col, alpha) in enumerate(cells):
-        y0 = 0.56 - i * 0.48
-        ax.add_patch(Rectangle((0.02, y0), 0.96, 0.40,
-                     facecolor=col, alpha=alpha, edgecolor=col, lw=1.0))
-        ax.text(0.06, y0 + 0.30, rowlab, fontsize=6.8, fontweight="bold",
-                va="center")
-        ax.text(0.06, y0 + 0.12, f"{shape}  —  {b5c}", fontsize=6.2,
-                va="center")
-    ax.text(0.5, 0.0, "same system, same instrument", fontsize=6,
-            ha="center", style="italic")
-    ax.set_xlim(0, 1)
-    ax.set_ylim(-0.05, 1)
-    ax.axis("off")
+    ax.set_title("fine grid", fontsize=6.5)
 
     panel(fig, 0.005, 1.00, "a")
-    panel(fig, 0.38, 1.00, "b")
-    panel(fig, 0.72, 1.00, "c")
+    panel(fig, 0.53, 1.00, "b")
     save(fig, "fig3")
 
 
@@ -402,7 +363,7 @@ def fig4():
     gs = fig.add_gridspec(1, 4, wspace=0.75,
                           width_ratios=[1.1, 1.1, 1.0, 1.0])
 
-    # a: stance: relational collapse
+    # -- a stance: relational collapse -----------------------------------
     ax = fig.add_subplot(gs[0])
     ax2 = ax.twinx()
     for i, (s, d) in enumerate(sorted(lst["seeds"].items())):
@@ -420,9 +381,9 @@ def fig4():
     ax2.axhline(7, color=BLUE, lw=0.5, ls=":")
     ax2.text(38, 7.05, "max", color=BLUE, fontsize=5.5, ha="right")
     ax2.spines["right"].set_visible(True)
-    ax.set_title("marginals stay open,\njoint space closes", fontsize=6.5)
+    ax.set_title("hidden coordination", fontsize=6.5)
 
-    # b: TRI-C: learned higher-order carrier
+    # -- b TRI-C: learned higher-order carrier ---------------------------
     ax = fig.add_subplot(gs[1])
     for i, (s, d) in enumerate(sorted(tric["seeds"].items())):
         cks = sorted(int(k) for k in d)
@@ -437,10 +398,9 @@ def fig4():
             ha="right")
     ax.text(2000, 0.08, r"$C_{\rm pair}$", color="#777777", fontsize=6.5,
             ha="right")
-    ax.set_title("blocked low-order route:\nlearning builds XOR carrier",
-                 fontsize=6.5)
+    ax.set_title("blocked-channel task", fontsize=6.5)
 
-    # c: contract relativity (TRI-C, seed mean)
+    # -- c contract relativity (TRI-C, seed mean) -------------------------
     ax = fig.add_subplot(gs[2])
     comps = ["C_individual", "C_env", "C_pair", "C_high"]
     labels = ["ind", "env", "pair", "high"]
@@ -463,9 +423,9 @@ def fig4():
                        fontsize=5.8)
     ax.set_xlim(-0.6, 1.6)
     ax.set_ylabel("collapse composition (bits)")
-    ax.set_title("same collapse,\nobserver-declared source", fontsize=6.5)
+    ax.set_title("contract relativity", fontsize=6.5)
 
-    # d: matched-product profile separation (E1-C)
+    # -- d matched-product profile separation (E1-C) ----------------------
     ax = fig.add_subplot(gs[3])
     l, n = e1c["learned"], e1c["noisy_scripted"]
     vals = [l["C_env"], n["C_env"]]
@@ -479,10 +439,7 @@ def fig4():
     ax.set_xticklabels(["learned", "scripted\n+ noise"], fontsize=6)
     ax.set_ylabel(r"$C_{\rm env}$ (bits)")
     ax.set_ylim(0, 0.0185)
-    ax.set_title("matched task score:\nprofile separates provenance",
-                 fontsize=6.5)
-    ax.text(0.62, 0.0095, "non-overlapping\n95% CIs", fontsize=5.5,
-            ha="center")
+    ax.set_title("matched-score contrast", fontsize=6.5)
 
     panel(fig, 0.005, 1.06, "a")
     panel(fig, 0.29, 1.06, "b")
@@ -502,7 +459,7 @@ def fig5():
     fig = plt.figure(figsize=(DOUBLE, 2.4))
     gs = fig.add_gridspec(1, 4, wspace=0.5, width_ratios=[1.2, 1, 1.1, 1])
 
-    # a: intervention window vs breakpoint
+    # -- a intervention window vs breakpoint ------------------------------
     ax = fig.add_subplot(gs[0])
     ms = lgu["registered_outcomes"]["mean_switch_by_tau"]
     taus = sorted(int(k) for k in ms)
@@ -516,9 +473,9 @@ def fig5():
     ax.set_xlabel("intervention time $\\tau$ (step)")
     ax.set_ylabel("switch probability")
     ax.set_ylim(0, 1.05)
-    ax.set_title("the window closes after $t^{*}$", fontsize=6.5)
+    ax.set_title("grip: intervention timing", fontsize=6.5)
 
-    # b: predictor race (grip)
+    # -- b predictor race (grip) ------------------------------------------
     ax = fig.add_subplot(gs[1])
     br = lgu["registered_outcomes"]["baseline_race"]
     names = ["side_open", "absx", "absv", "tau", "att"]
@@ -531,9 +488,9 @@ def fig5():
     ax.set_ylabel("AUC (switch prediction)")
     ax.set_ylim(0.4, 1.02)
     ax.axhline(0.5, color=DARK, lw=0.5, ls=":")
-    ax.set_title("grip system", fontsize=6.5)
+    ax.set_title("grip: predictor race", fontsize=6.5)
 
-    # c: matched-parameter causal contrast
+    # -- c matched-parameter causal contrast ------------------------------
     ax = fig.add_subplot(gs[2])
     st = lss["registered_outcomes"]["baseline_race"]
     ct = lsc["registered_outcomes"]["baseline_race"]
@@ -550,9 +507,9 @@ def fig5():
     ax.set_ylim(0.5, 0.95)
     ax.legend(frameon=False, loc="upper right", fontsize=5.5,
               handlelength=1.0)
-    ax.set_title("one parameter flips the ranking", fontsize=6.5)
+    ax.set_title("stance contrast", fontsize=6.5)
 
-    # d: ant per-episode conditional law
+    # -- d ant per-episode conditional law --------------------------------
     ax = fig.add_subplot(gs[3])
     bins = aic["bins"]
     labels = [f"{b['bin'][0]:g}–{b['bin'][1]:g}" for b in bins]
@@ -587,7 +544,7 @@ def fig6():
     fig = plt.figure(figsize=(DOUBLE, 2.7))
     gs = fig.add_gridspec(1, 3, wspace=0.45, width_ratios=[1.0, 1.0, 1.5])
 
-    # a: finite-size scaling law
+    # -- a finite-size scaling law ------------------------------------------
     ax = fig.add_subplot(gs[0])
     law = fss["registered_outcomes"]["log_law"]
     per = fss["per_size"]
@@ -606,9 +563,7 @@ def fig6():
     ax.set_xscale("log")
     ax.set_xlabel("colony size N")
     ax.set_ylabel("commitment time $t_{50}$")
-    ax.set_title("ant model: $t_{50}=a+b\\,\\ln N$\n"
-                 f"$b={law['b']:.0f}$, $R^2={law['r2']:.2f}$; "
-                 "width N-invariant", fontsize=6.5)
+    ax.set_title("ant colony", fontsize=6.5)
     ax.plot([], [], "o", ms=4, color=BLUE, mew=0, label="onset")
     ax.plot([], [], "o", ms=4, mfc="white", mec=GREY, mew=0.9,
             label="no onset")
@@ -623,14 +578,13 @@ def fig6():
         t50 = per[str(n)]["t50"]
         axi.plot(grid - t50, med, lw=0.6)
     axi.set_xlim(-220, 220)
-    axi.set_title("curves collapse under\ntime translation",
-                  fontsize=4.8, pad=1,
+    axi.set_title("time-translation overlay", fontsize=4.8, pad=1,
                   bbox=dict(facecolor="white", edgecolor="none", pad=0.6))
     axi.tick_params(labelsize=4.5, length=1.5, width=0.4)
     for s in axi.spines.values():
         s.set_linewidth(0.4)
 
-    # b: Kuramoto laws
+    # -- b Kuramoto laws ----------------------------------------------------
     ax = fig.add_subplot(gs[1])
     Ks = [float(k) for k in ks["config"]["Ks"]]
     tstar = ks["registered_outcomes"]["mean_t_star"]
@@ -644,10 +598,10 @@ def fig6():
     ax2.set_ylabel("closing slope", color=RED)
     ax2.tick_params(axis="y", colors=RED)
     ax2.spines["right"].set_visible(True)
-    ax.set_title("Kuramoto: critical slowing down,\nsharpening with feedback",
+    ax.set_title("Kuramoto",
                  fontsize=6.5)
 
-    # c: scope: where onset lives
+    # -- c scope: where onset lives -----------------------------------------
     ax = fig.add_subplot(gs[2])
     rows = [
         ("convention formation (no gate)", "onset", "onset"),
@@ -680,8 +634,7 @@ def fig6():
     ax.set_xlim(0, 1.0)
     ax.set_ylim(-0.1, len(rows) + 0.4)
     ax.axis("off")
-    ax.set_title("onset appears where a new joint regime is crossed",
-                 fontsize=6.5)
+    ax.set_title("collapse-profile classification", fontsize=6.5)
 
     panel(fig, 0.005, 1.06, "a")
     panel(fig, 0.30, 1.06, "b")
