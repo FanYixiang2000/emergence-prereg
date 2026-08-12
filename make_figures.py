@@ -111,7 +111,6 @@ def edfig1():
     for s in ax.spines.values():
         s.set_visible(False)
     ax.tick_params(length=0)
-    ax.set_title("four mechanisms, identical observables", fontsize=6.5)
 
     # b: BENCH-72, J orders shapes while M stays invariant
     gd = b72["checks"]["group_detail"]
@@ -123,10 +122,6 @@ def edfig1():
             -0.12, 0.12, len(vals))
         ax.plot(x, vals, "o", ms=2.4, color=SEEDC[k], alpha=0.8, mew=0)
         ax.hlines(np.median(vals), k - 0.22, k + 0.22, color=DARK, lw=1.1)
-    mrr = max(g["M_rel_range"] for g in gd)
-    ax.text(0.03, 0.60, "amplitude M invariant:\nrelative range "
-            f"{mrr:.3f}\n({len(gd)}/{len(gd)} groups)",
-            transform=ax.transAxes, fontsize=5.6, va="top")
     ax.set_xticks(range(3))
     ax.set_xticklabels(shapes, rotation=15)
     ax.set_ylabel("abruptness J")
@@ -183,21 +178,21 @@ def fig2():
     for k in range(16):
         a = 2 * np.pi * k / 16
         r = 0.30 if k % 2 else 0.24
-        x, y = 0.5 + r * np.cos(a), 0.55 + r * 0.72 * np.sin(a)
+        x, y = 0.5 + r * np.cos(a), 0.55 + r * np.sin(a)
         ax.add_patch(Circle((x, y), 0.022, facecolor=BLUE,
                             edgecolor="none", zorder=4))
         ax.add_patch(FancyArrowPatch((x, y),
-                     (0.5 + 0.13 * np.cos(a), 0.55 + 0.095 * np.sin(a)),
+                     (0.5 + 0.13 * np.cos(a), 0.55 + 0.13 * np.sin(a)),
                      arrowstyle="-", color=GREY, lw=0.5, zorder=2))
-    ax.annotate("", xy=(0.90, 0.55), xytext=(0.66, 0.55),
+    ax.annotate("", xy=(0.95, 0.55), xytext=(0.68, 0.55),
                 arrowprops=dict(arrowstyle="->", color=RED, lw=1.2))
-    ax.annotate("", xy=(0.10, 0.55), xytext=(0.34, 0.55),
+    ax.annotate("", xy=(0.05, 0.55), xytext=(0.32, 0.55),
                 arrowprops=dict(arrowstyle="->", color=RED, lw=1.2,
                                 alpha=0.45))
     ax.set_xlim(0, 1)
-    ax.set_ylim(0.05, 1)
+    ax.set_ylim(0.05, 1.05)
+    ax.set_aspect("equal")
     ax.axis("off")
-    ax.set_title("grip-then-push transport", fontsize=6.5)
 
     # -- b side-openness curves (REINFORCE, 5 seeds) ---------------------
     ax = fig.add_subplot(gs[1])
@@ -261,7 +256,6 @@ def fig2():
     ax.set_ylabel("convention openness")
     ax.set_xlim(0, 2000)
     ax.set_ylim(-0.03, 1.06)
-    ax.set_title("signalling population", fontsize=6.5)
 
     # -- f role lock-in (no designed gate) ---------------------------------
     ax = fig.add_subplot(gs2[1])
@@ -275,7 +269,6 @@ def fig2():
     ax.set_ylabel("assignment openness")
     ax.set_xlim(0, 2000)
     ax.set_ylim(-0.03, 1.06)
-    ax.set_title("division of labour", fontsize=6.5)
 
     # -- g collapse precedes capability ------------------------------------
     ax = fig.add_subplot(gs2[2])
@@ -330,7 +323,6 @@ def fig3():
     ax.set_ylabel("success (solid)\noutcome openness (dashed)")
     ax.set_xlim(0, 1200)
     ax.set_ylim(-0.03, 1.05)
-    ax.set_title("formation axis", fontsize=6.5)
 
     # -- b fine grid -------------------------------------------------------
     ax = fig.add_subplot(gs[1])
@@ -345,7 +337,6 @@ def fig3():
     ax.set_xlabel("training update (5-update grid)")
     ax.set_ylabel("success rate")
     ax.set_xlim(0, 200)
-    ax.set_title("fine grid", fontsize=6.5)
 
     panel(fig, 0.005, 1.00, "a")
     panel(fig, 0.53, 1.00, "b")
@@ -381,7 +372,6 @@ def fig4():
     ax2.axhline(7, color=BLUE, lw=0.5, ls=":")
     ax2.text(38, 7.05, "max", color=BLUE, fontsize=5.5, ha="right")
     ax2.spines["right"].set_visible(True)
-    ax.set_title("hidden coordination", fontsize=6.5)
 
     # -- b TRI-C: learned higher-order carrier ---------------------------
     ax = fig.add_subplot(gs[1])
@@ -398,7 +388,6 @@ def fig4():
             ha="right")
     ax.text(2000, 0.08, r"$C_{\rm pair}$", color="#777777", fontsize=6.5,
             ha="right")
-    ax.set_title("blocked-channel task", fontsize=6.5)
 
     # -- c contract relativity (TRI-C, seed mean) -------------------------
     ax = fig.add_subplot(gs[2])
@@ -423,7 +412,6 @@ def fig4():
                        fontsize=5.8)
     ax.set_xlim(-0.6, 1.6)
     ax.set_ylabel("collapse composition (bits)")
-    ax.set_title("contract relativity", fontsize=6.5)
 
     # -- d matched-product profile separation (E1-C) ----------------------
     ax = fig.add_subplot(gs[3])
@@ -439,7 +427,6 @@ def fig4():
     ax.set_xticklabels(["learned", "scripted\n+ noise"], fontsize=6)
     ax.set_ylabel(r"$C_{\rm env}$ (bits)")
     ax.set_ylim(0, 0.0185)
-    ax.set_title("matched-score contrast", fontsize=6.5)
 
     panel(fig, 0.005, 1.06, "a")
     panel(fig, 0.29, 1.06, "b")
@@ -473,7 +460,6 @@ def fig5():
     ax.set_xlabel("intervention time $\\tau$ (step)")
     ax.set_ylabel("switch probability")
     ax.set_ylim(0, 1.05)
-    ax.set_title("grip: intervention timing", fontsize=6.5)
 
     # -- b predictor race (grip) ------------------------------------------
     ax = fig.add_subplot(gs[1])
@@ -488,7 +474,6 @@ def fig5():
     ax.set_ylabel("AUC (switch prediction)")
     ax.set_ylim(0.4, 1.02)
     ax.axhline(0.5, color=DARK, lw=0.5, ls=":")
-    ax.set_title("grip: predictor race", fontsize=6.5)
 
     # -- c matched-parameter causal contrast ------------------------------
     ax = fig.add_subplot(gs[2])
@@ -507,7 +492,6 @@ def fig5():
     ax.set_ylim(0.5, 0.95)
     ax.legend(frameon=False, loc="upper right", fontsize=5.5,
               handlelength=1.0)
-    ax.set_title("stance contrast", fontsize=6.5)
 
     # -- d ant per-episode conditional law --------------------------------
     ax = fig.add_subplot(gs[3])
@@ -526,7 +510,6 @@ def fig5():
     ax.set_xlabel("episode openness", fontsize=6.5)
     ax.set_ylabel("intervention flip rate")
     ax.set_ylim(0, 0.25)
-    ax.set_title("ant colony", fontsize=6.5)
 
     panel(fig, 0.005, 1.00, "a")
     panel(fig, 0.30, 1.00, "b")
@@ -563,7 +546,6 @@ def fig6():
     ax.set_xscale("log")
     ax.set_xlabel("colony size N")
     ax.set_ylabel("commitment time $t_{50}$")
-    ax.set_title("ant colony", fontsize=6.5)
     ax.plot([], [], "o", ms=4, color=BLUE, mew=0, label="onset")
     ax.plot([], [], "o", ms=4, mfc="white", mec=GREY, mew=0.9,
             label="no onset")
@@ -578,8 +560,6 @@ def fig6():
         t50 = per[str(n)]["t50"]
         axi.plot(grid - t50, med, lw=0.6)
     axi.set_xlim(-220, 220)
-    axi.set_title("time-translation overlay", fontsize=4.8, pad=1,
-                  bbox=dict(facecolor="white", edgecolor="none", pad=0.6))
     axi.tick_params(labelsize=4.5, length=1.5, width=0.4)
     for s in axi.spines.values():
         s.set_linewidth(0.4)
@@ -598,8 +578,6 @@ def fig6():
     ax2.set_ylabel("closing slope", color=RED)
     ax2.tick_params(axis="y", colors=RED)
     ax2.spines["right"].set_visible(True)
-    ax.set_title("Kuramoto",
-                 fontsize=6.5)
 
     # -- c scope: where onset lives -----------------------------------------
     ax = fig.add_subplot(gs[2])
@@ -634,7 +612,6 @@ def fig6():
     ax.set_xlim(0, 1.0)
     ax.set_ylim(-0.1, len(rows) + 0.4)
     ax.axis("off")
-    ax.set_title("collapse-profile classification", fontsize=6.5)
 
     panel(fig, 0.005, 1.06, "a")
     panel(fig, 0.30, 1.06, "b")
