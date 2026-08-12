@@ -1,0 +1,25 @@
+[convention] seed=0 repro=5.0e-06 declared_B5=True@300.0 | P1=T@300.0 P2=T@325.0 P3=T@300.0 P4=F@250.0 X1=F@None X2=F@None
+[convention] seed=1 repro=4.9e-06 declared_B5=True@275.0 | P1=T@275.0 P2=T@300.0 P3=F@950.0 P4=T@325.0 X1=F@None X2=F@None
+[convention] seed=2 repro=4.8e-06 declared_B5=True@300.0 | P1=T@300.0 P2=T@300.0 P3=T@300.0 P4=T@300.0 X1=F@None X2=F@None
+[convention] seed=3 repro=5.0e-06 declared_B5=True@275.0 | P1=T@275.0 P2=T@250.0 P3=F@950.0 P4=T@425.0 X1=F@None X2=F@None
+[convention] seed=4 repro=5.0e-06 declared_B5=False@250.0 | P1=F@250.0 P2=F@250.0 P3=F@825.0 P4=F@200.0 X1=F@None X2=F@None
+[roles] seed=0 repro=5.0e-06 declared_B5=True@475.0 | P1=T@475.0 P2=T@450.0 P3=T@450.0 X1=F@None
+[roles] seed=1 repro=5.0e-06 declared_B5=True@375.0 | P1=T@375.0 P2=T@400.0 P3=T@400.0 X1=F@None
+[roles] seed=2 repro=5.0e-06 declared_B5=True@500.0 | P1=T@500.0 P2=T@475.0 P3=T@500.0 X1=F@None
+[roles] seed=3 repro=5.0e-06 declared_B5=True@400.0 | P1=T@400.0 P2=T@325.0 P3=T@400.0 X1=F@None
+[roles] seed=4 repro=5.0e-06 declared_B5=True@500.0 | P1=T@500.0 P2=T@500.0 P3=T@500.0 X1=F@None
+[grip] seed=0 repro=4.7e-06 declared_B5=True@18.0 force=False@None xabs=False
+[grip] seed=1 repro=4.8e-06 declared_B5=True@17.0 force=False@None xabs=False
+[grip] seed=2 repro=5.0e-06 declared_B5=True@16.0 force=False@None xabs=False
+[grip] seed=3 repro=5.0e-06 declared_B5=True@17.0 force=False@None xabs=False
+[grip] seed=4 repro=4.8e-06 declared_B5=True@17.0 force=False@None xabs=False
+{
+  "RE0_reproduction": true,
+  "RE1_verdict_stability": "22/30",
+  "RE1_pass": false,
+  "RE2_t_star_within_10pct_span": "19/19",
+  "RE2_pass": true,
+  "RE3_controls_clean": "20/20",
+  "RE3_pass": true
+}
+Wrote /home/Yixiang/MPARL/GOGOGO/outputs/regime_ensemble_audit.json

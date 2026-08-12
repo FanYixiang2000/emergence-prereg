@@ -43,15 +43,15 @@ the effective joint possibility space}
 Emergence is claimed for scaled-model abilities, multi-agent
 coordination and collective animal behaviour, yet each field certifies
 it with a different instrument, so identical behaviours can be
-labelled emergent or not depending on the measure. Here we
+labelled emergent or not. Here we
 define emergence as a spontaneous, persistent, regime-level collapse
 of a system's effective joint state--action--trajectory possibility
-space, decomposed by source into environmental, individual, pairwise
-and higher-order channels. Calibrated on analytic ground truth and
+space, decomposed into environmental, individual, pairwise
+and higher-order sources. Calibrated on analytic ground truth and
 validated on off-design physics, the instrument shows that
-learning populations commit abruptly wherever a joint exploration
-barrier---a convention or role with value only once shared---must be
-crossed, and smoothly otherwise; that a capability can form smoothly
+learning populations commit abruptly in every tested system where a
+joint exploration barrier---a convention or role with value only once
+shared---must be crossed, and smoothly in its absence; that a capability can form smoothly
 across training while each deployment of it commits abruptly within
 an episode; and that remaining openness predicts, prospectively and
 causally in a standard benchmark, whether an intervention can still
@@ -513,22 +513,21 @@ Overcooked optimization collapses gradually. Our designed systems (the
 grip gate; the blocked-channel XOR task) are mechanism-isolating
 controls, not load-bearing ones: convention formation and role
 lock-in reproduce the signature with no designed barrier. What
-separates the two classes, on present evidence, is a joint
+separates the two classes is a joint
 exploration barrier---now directly measured---and the
 coordination-ring experiment tests this boundary inside the very
 benchmark that produced the negative: restoring competing regimes
 restores committed conventions in every seed. Certified onsets remain
 rare there because that commitment is non-monotone---an instrument
-boundary (a settled-envelope
-extension failed its own validation and was retired;
-Methods); certifying non-monotone commitment and extending to
+boundary (Methods); certifying non-monotone commitment and extending to
 large-scale self-play are the clear next steps. Three boundaries
 remain: the commitment window is not causally verified (a one-pulse
 hypothesis failed its falsification clause; formation proved
 re-entrant); stored language-model checkpoints are too sparse for any
 breakpoint claim; and representation-independence holds as a measured
 equivalence class, breaking only where a representation erases the
-latent channel. Nor is ``emergence $=$ onset breakpoint'' a universal
+latent channel; regime-object audits sharpen this
+boundary---mis-declared objects lose verdicts, never manufacture them (Methods). Nor is ``emergence $=$ onset breakpoint'' a universal
 equivalence: several canonical cases collapse gradually. What we offer
 is narrower and more useful---a calibrated, falsifiable instrument
 that measures \emph{how}, \emph{when} and \emph{through which channel}
@@ -553,6 +552,25 @@ possibility count is $N_\mathrm{eff}=2^{H(P_t)}$. Entropies are estimated
 with a Miller--Madow-style bias correction and, for the joint objects,
 with the nested ladder below rather than by direct high-dimensional
 estimation.
+
+\paragraph{Intensity profile.}
+For a collapse trajectory $C_k$, $k=0,\dots,T$ (entropy reduction from
+stage 0, in bits), with peak stage $k_{\mathrm{p}}=\arg\max_k C_k$:
+amplitude is $M=C_{k_{\mathrm{p}}}/H(P_\mathrm{ref})$, the peak
+reduction as a fraction of the maximum-entropy reference; abruptness is
+$J=\max_k \delta_k / \sum_k \delta_k$ over the positive increments
+$\delta_k$ of $C_k$ up to the peak---the largest single-stage share of
+the total collapse, so $J=1$ for one-step collapse and
+$J\approx 1/T$ for uniform gradual collapse; the profile breakpoint
+estimate is the stage of the largest increment; and persistence
+requires $C_T\geq 0.5\,C_{k_{\mathrm{p}}}$. These are the quantities
+calibrated in the 72-cell battery (Extended Data Fig.~1b). One
+convention keeps all units consistent: ladder components are raw
+entropy reductions in bits and telescope exactly,
+$C_\mathrm{env}+C_\mathrm{individual}+C_\mathrm{pair}+C_\mathrm{high}
+= H(P_\mathrm{ref})-H(P)$, where the ladder's stage-0 maximum-entropy
+distribution is exactly $P_\mathrm{ref}$; the normalized quantities
+$O_t$, $C_t$ and $M$ divide by that same reference entropy.
 
 \paragraph{Matched-confound battery.}
 Four generators---a central script, a hidden common cause, pure
@@ -748,9 +766,47 @@ resolution floor; they break only when the representation erases the
 latent channel or compresses the transition below that floor
 (Supplementary Table~3).
 
+\paragraph{Regime-object audits.}
+The declared regime object is an analyst choice, so two further
+preregistered audits test whether verdicts depend on it. An
+\emph{ensemble} audit enumerates, from each environment specification
+alone, the alternative regime variables an independent analyst could
+plausibly have declared (convention: the listener code, the composed
+speaker--listener channel, a single-meaning sub-regime; roles: one
+agent's role, one role's owner; grip: the realized force direction),
+together with control variables that erase the symmetric competition
+or are exogenous by construction, and adjudicates every candidate with
+the frozen detector on byte-identical reruns. On the formation axis,
+admissible alternatives reproduce the declared verdict in 22/25 cells
+(roles 10/10, listener code 5/5) and every co-certified breakpoint
+falls within the detector's span tolerance (19/19); the disagreements
+are one sub-regime cell below the evidence threshold and the composed
+channel in two seeds---a two-stage regime whose late second collapse
+the monotone detector declines. None of the 20 control cells certifies
+an onset. A \emph{discovery} audit removes the analyst: one fixed
+recipe (k-means on raw episode records, $k$ by silhouette, no
+per-system tuning) defines regime variables from behaviour alone. On
+the formation axis it reproduces 6/10 verdicts, with both convention
+disagreements at the detector threshold ($\Delta$BIC 6.9 and 9.8
+against 10) and one roles cell failing only the thinning clause; on
+the realization axis, state-trace and windowed-force proxies qualify
+the collapse but miss the strict onset bar in all three registered
+constructions (best $\Delta$BIC 12.6), and untrained grip controls
+certify onset because the structural gate delays commitment for any
+policy---the mechanism control's own prediction. The registered
+agreement targets were missed (ensemble 22/30 against 24/30; discovery
+6/15 against 12/15) and are reported with this diagnosis. Across all
+105 audit cells the failures are one-directional: mis-declared or
+lower-power regime objects lose verdicts, and exactly one gains one
+(the event-level convention variable in the seed whose declared object
+shows no onset, $\Delta$BIC 23.6). The declaration is a power
+parameter, not a cherry-picking lever (Supplementary Tables~4
+and~5).
+
 \paragraph{Emergence certificate.}
 The frozen instruments are packaged into a single standardized
-adjudication (\texttt{emergence\_certificate.py}) so that a new system
+adjudication script (\texttt{emergence\_\allowbreak certificate.py})
+so that a new system
 receives a reproducible verdict: a three-condition qualification
 (regime-level: the collapse gate \emph{and}, where the source analysis
 is available, joint-beyond-marginal reorganization; endogenous: the
@@ -770,7 +826,8 @@ amplitude (0.92) as the colony---correctly \emph{fails} qualification,
 because its collapse is purely individual-source rather than a joint
 regime, and the Overcooked occupancy object falls below the collapse
 gate with a low-power flag. Same entropy drop, different verdicts: the
-discrimination is exactly what a bare entropy measure cannot provide.
+discrimination is exactly what a bare entropy measure cannot provide
+(per-system qualification table in Supplementary Table~6).
 
 \paragraph{Learned systems.}
 The grip-transport flagship uses 16 agents, grip threshold 6, a two-phase
@@ -778,7 +835,7 @@ grip-then-push dynamics (grip gain 0.06, decay 0.01), trained by
 REINFORCE\citep{williams1992simple} (1{,}200 updates, batch 512, learning
 rate $2\times10^{-3}$) and, for the robustness check, by advantage
 actor--critic\citep{mnih2016asynchronous} on identical environment
-parameters (per-seed statistics in Supplementary Table~4). The hidden-coordination flagship uses 8 individually-observing
+parameters (per-seed statistics in Supplementary Table~7). The hidden-coordination flagship uses 8 individually-observing
 agents with per-agent stances; the sticky variant sets stance-change
 probability 0.25 and the matched control sets it to 1.0 with all other
 constants imported unchanged. Overcooked runs use the standard
@@ -790,7 +847,7 @@ update, 4{,}000 updates); the role system is six agents choosing among
 six roles with team reward only for full coverage (6{,}000 updates,
 otherwise identical training); in both, openness is computed from
 policy probabilities at 25-update checkpoints and adjudicated by the
-frozen detector (Supplementary Table~5). The neural replications keep both environments and
+frozen detector (Supplementary Table~8). The neural replications keep both environments and
 recipes fixed and replace the tables with one-hidden-layer networks
 (32 tanh units, Adam $3\times10^{-3}$, ten fresh seeds per system):
 per-agent speaker and listener MLPs for the signalling population, and
@@ -801,7 +858,7 @@ updates, the neural runs are evaluated at 5-update resolution---a
 preregistered measurement-density amendment justified by the
 detector's validated grid-power curve; at the original 25-update grid
 the onsets are under-resolved (1/7 and 1/10), which is recorded
-alongside the fine-grid result (Supplementary Table~6). The initialization sweep varies the
+alongside the fine-grid result (Supplementary Table~9). The initialization sweep varies the
 input-weight scale $\sigma\in\{0.02,0.1,0.45\}$ at five seeds per
 cell. The coordination-ring study trains standard
 \texttt{overcooked\_ai} self-play PPO (mechanics and budget identical
@@ -810,7 +867,7 @@ to the cramped-room runs, 2M steps) on the official
 steps; the regime object is the entropy of the pair's circulation
 direction (net winding around the central counter, Laplace-smoothed
 over 30 evaluation episodes per checkpoint), declared before running
-(per-seed conventions in Supplementary Table~7).
+(per-seed conventions in Supplementary Table~10).
 A parallel preregistered attempt on the unmodified MPE
 \texttt{simple\_spread} benchmark did not reach its frozen competence
 precondition (conflict-episode coverage 3\% after 3{,}000 PPO updates)
@@ -836,7 +893,7 @@ grip system and has not yet been run here. The finite-size study uses sizes
 $N\in\{1,2,5,10,20,50,100,200,500\}$, 30 episodes per size and a
 1{,}500-trip horizon, with $t_{50}$ and width read from median
 openness crossings and the log-law slope bootstrapped over episodes
-(Supplementary Table~8).
+(Supplementary Table~11).
 The ant, Kuramoto, Potts, Vicsek, Swift--Hohenberg and Schelling models
 follow their standard definitions (Supplementary Methods).
 
@@ -959,16 +1016,12 @@ The authors declare no competing interests.
 
 \section*{Use of large language models}
 \small
-Large-language-model agents were used throughout this work, under
-continuous human direction and review, to design and implement
-experiments, refine analysis protocols, write and debug code, and
-draft and edit text. All predicted outcomes, falsification clauses and
-adjudication thresholds were fixed in the protocol files before the
-runs they govern; every number reported in the text and figures is
-generated by the released code from raw experiment outputs and
-cross-checked by an automated extraction script. The authors
-independently reviewed and validated the code, protocols and analyses,
-and take full responsibility for all claims.
+Large language models were used, under the authors' direction and
+continuous review, to assist in writing and debugging code and in
+drafting and editing text. The experimental designs, protocols and
+adjudication criteria were specified by the authors, who reviewed and
+validated all code, protocols and analyses and take full
+responsibility for all claims.
 \normalsize
 
 % ==========================================================================

@@ -405,6 +405,89 @@ check("Methods confound 20480 per cell x 6 taus",
       "20{,}480 episodes per cell")
 check("Methods confound 1000 permutations", ccfg["n_perm"], 1000)
 
+rea = load("regime_ensemble_audit.json")
+rea_res = rea["results"]
+form_agree = form_n = 0
+tstar_ok = tstar_n = 0
+ctrl_clean = ctrl_n = 0
+spans = {"convention": 4000, "roles": 6000, "grip": 79}
+plaus = {"convention": ["P2_listener_code", "P3_composed_channel",
+                        "P4_meaning0_symbol"],
+         "roles": ["P2_agent0_role", "P3_role0_owner"],
+         "grip": ["P2_force_sign"]}
+ctrls = {"convention": ["X1_symbol_marginal", "X2_speaker_identity"],
+         "roles": ["X1_role_marginal"], "grip": ["X1_xabs_tertiles"]}
+for s, srows in rea_res.items():
+    for r in srows.values():
+        for c in plaus[s]:
+            cand = r["candidates"][c]
+            if s != "grip":
+                form_n += 1
+                form_agree += cand["b5_onset"] == r["declared_b5"]
+            if cand["b5_onset"] and r["declared_b5"]:
+                tstar_n += 1
+                tstar_ok += (abs(cand["t_star"] - r["declared_t_star"])
+                             <= 0.10 * spans[s])
+        for c in ctrls[s]:
+            ctrl_n += 1
+            ctrl_clean += not r["candidates"][c]["b5_onset"]
+check("Methods ensemble formation agreement 22/25",
+      (form_agree, form_n), (22, 25),
+      "reproduce the declared verdict in 22/25 cells")
+roles_agree = sum(
+    r["candidates"][c]["b5_onset"] == r["declared_b5"]
+    for r in rea_res["roles"].values() for c in plaus["roles"])
+check("Methods ensemble roles 10/10", roles_agree, 10, "roles 10/10")
+lc_agree = sum(
+    r["candidates"]["P2_listener_code"]["b5_onset"] == r["declared_b5"]
+    for r in rea_res["convention"].values())
+check("Methods ensemble listener code 5/5", lc_agree, 5,
+      "listener code 5/5")
+check("Methods ensemble t* 19/19", (tstar_ok, tstar_n), (19, 19),
+      "the detector's span tolerance (19/19)")
+check("Methods ensemble controls 0/20", (ctrl_clean, ctrl_n), (20, 20),
+      "None of the 20 control cells certifies")
+check("Methods ensemble registered 22/30",
+      rea["registered_outcomes"]["RE1_verdict_stability"], "22/30",
+      "ensemble 22/30 against 24/30")
+rda = load("regime_discovery_audit.json")
+rda_res = rda["results"]
+disc_form = sum(
+    r["discovered_adj"]["b5_onset"] == r["declared_b5"]
+    for s in ("convention", "roles") for r in rda_res[s].values())
+check("Methods discovery formation 6/10", disc_form, 6,
+      "it reproduces 6/10 verdicts")
+conv_miss_bics = sorted(
+    r["discovered_adj"]["hinge"]["delta_bic"]
+    for r in rda_res["convention"].values()
+    if r["declared_b5"] and not r["discovered_adj"]["b5_onset"])
+check("Methods discovery conv near-threshold 6.9 and 9.8",
+      [round(b, 1) for b in conv_miss_bics], [6.9, 9.8],
+      "$\\Delta$BIC 6.9 and 9.8")
+check("Methods discovery registered 6/15",
+      rda["registered_outcomes"]["RD2_verdict_agreement"], "6/15",
+      "discovery\n6/15 against 12/15")
+rda2 = load("regime_discovery_audit2.json")
+rea2 = load("regime_ensemble_audit2.json")
+best_realization_bic = max(
+    [r["discovered_adj"]["hinge"]["delta_bic"]
+     for r in rda2["results"].values()]
+    + [r["candidate_adj"]["hinge"]["delta_bic"]
+       for r in rea2["results"].values()])
+check("Methods realization best dBIC 12.6",
+      round(best_realization_bic, 1), 12.6,
+      "best $\\Delta$BIC 12.6", tol=0.05)
+extra = [r for r in rda_res["convention"].values()
+         if r["discovered_adj"]["b5_onset"] and not r["declared_b5"]]
+check("Methods discovery one gained cell dBIC 23.6",
+      (len(extra), round(extra[0]["discovered_adj"]["hinge"]["delta_bic"], 1)),
+      (1, 23.6), "$\\Delta$BIC 23.6")
+n_cells = (sum(len(r["candidates"]) for srows in rea_res.values()
+               for r in srows.values())
+           + 2 * sum(len(srows) for srows in rda_res.values())
+           + 2 * len(rda2["results"]) + len(rea2["results"]))
+check("Methods 105 audit cells", n_cells, 105, "Across all\n105 audit cells")
+
 print()
 n_pass = sum(1 for _, ok, _ in RESULTS if ok)
 n_fail = len(RESULTS) - n_pass

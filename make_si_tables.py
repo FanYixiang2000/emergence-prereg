@@ -126,7 +126,7 @@ table(
     ["Representation", "$\\Delta$BIC", "$t^{*}$", "Verdict"],
     rows, "si:tab:representations")
 
-# Supplementary Table 4: grip per-seed statistics
+# Supplementary Table 7: grip per-seed statistics
 b5 = load("learn_grip_transport_b5.json")
 a2c = load("learn_grip_a2c.json")
 rows = []
@@ -155,7 +155,7 @@ table(
      "Final side mean"],
     rows, "si:tab:grip")
 
-# Supplementary Table 5: convention and role systems, tabular seeds
+# Supplementary Table 8: convention and role systems, tabular seeds
 conv = load("learn_convention.json")
 roles = load("learn_roles.json")
 rows = []
@@ -177,7 +177,7 @@ table(
      "Verdict"],
     rows, "si:tab:tabular")
 
-# Supplementary Table 6: neural replications, per-seed
+# Supplementary Table 9: neural replications, per-seed
 nn = load("learn_nn_resolution.json")
 rows = []
 for name, sysk in (("Neural signalling", "convention"),
@@ -202,7 +202,7 @@ table(
      "Verdict"],
     rows, "si:tab:neural")
 
-# Supplementary Table 7: Overcooked coordination ring, per-seed
+# Supplementary Table 10: Overcooked coordination ring, per-seed
 orc = load("overcooked_ring_convention.json")
 oce = load("oc_ring_ext.json")
 rows = []
@@ -223,7 +223,7 @@ table(
     ["Seed", "Final $P(\\mathrm{ccw})$", "Committed direction"],
     rows, "si:tab:ring")
 
-# Supplementary Table 8: ant finite-size scaling and Kuramoto coupling grid
+# Supplementary Table 11: ant finite-size scaling and Kuramoto coupling grid
 fss = load("ant_fss.json")
 rows = []
 for size, v in sorted(fss["per_size"].items(), key=lambda kv: int(kv[0])):
@@ -247,6 +247,123 @@ table(
     ["System / size", "$t_{50}$ or $t^{*}$", "Width", "$\\Delta$BIC",
      "Verdict"],
     rows, "si:tab:scaling")
+
+# Supplementary Table 4: regime-ensemble audit, per-candidate summary
+rea = load("regime_ensemble_audit.json")["results"]
+rea2 = load("regime_ensemble_audit2.json")["results"]
+CAND_NAMES = {
+    "P1_speaker_code": ("Convention", "speaker code (declared)", "declared"),
+    "P2_listener_code": ("Convention", "listener code", "plausible"),
+    "P3_composed_channel": ("Convention", "composed channel", "plausible"),
+    "P4_meaning0_symbol": ("Convention", "single-meaning sub-regime",
+                           "plausible"),
+    "X1_symbol_marginal": ("Convention", "pooled symbol marginal",
+                           "control (erasing)"),
+    "X2_speaker_identity": ("Convention", "speaker identity",
+                            "control (exogenous)"),
+    "P1_assignment": ("Roles", "assignment openness (declared)", "declared"),
+    "P2_agent0_role": ("Roles", "agent 0's role", "plausible"),
+    "P3_role0_owner": ("Roles", "owner of role 0", "plausible"),
+    "X1_role_marginal": ("Roles", "pooled role marginal",
+                         "control (erasing)"),
+    "P2_force_sign": ("Grip", "force-sign ensemble marginal",
+                      "plausible (mis-specified)"),
+    "X1_xabs_tertiles": ("Grip", "$|x|$ tertile occupancy",
+                         "control (erasing)"),
+}
+rows = []
+for sysname, srows in rea.items():
+    cands = list(next(iter(srows.values()))["candidates"].keys())
+    for c in cands:
+        label = CAND_NAMES[c]
+        n_on = sum(r["candidates"][c]["b5_onset"] for r in srows.values())
+        n_decl = sum(r["declared_b5"] for r in srows.values())
+        agree = sum(r["candidates"][c]["b5_onset"] == r["declared_b5"]
+                    for r in srows.values())
+        ts = [r["candidates"][c]["t_star"] for r in srows.values()
+              if r["candidates"][c]["b5_onset"]]
+        trange = (f"{min(ts):.0f}--{max(ts):.0f}" if ts else "--")
+        rows.append([label[0], label[1], label[2], f"{n_on}/5",
+                     f"{n_decl}/5", f"{agree}/5", trange])
+n_on2 = sum(r["candidate_adj"]["b5_onset"] for r in rea2.values())
+rows.append(["Grip", "per-episode force direction (v2)",
+             "plausible (registered miss)", f"{n_on2}/5", "5/5",
+             f"{n_on2}/5", "--"])
+table(
+    r"\textbf{Regime-ensemble audit.} Alternative regime objects "
+    r"enumerated from each environment specification, adjudicated with "
+    r"the frozen detector on byte-identical reruns. Admissible "
+    r"formation-axis alternatives agree with the declared verdict in "
+    r"22/25 cells; no control cell certifies an onset; the "
+    r"realization-axis force candidates lose the verdict (Methods, "
+    r"`Regime-object audits').",
+    ["System", "Regime object", "Class", "Onset", "Declared",
+     "Agree", "$t^{*}$ range"],
+    rows, "si:tab:regimeensemble")
+
+# Supplementary Table 5: regime-discovery audit, per-seed
+rda = load("regime_discovery_audit.json")["results"]
+rda2 = load("regime_discovery_audit2.json")["results"]
+rows = []
+for sysname in ("convention", "roles"):
+    for sd, r in sorted(rda[sysname].items()):
+        a = r["discovered_adj"]
+        h = a.get("hinge", {})
+        rows.append([sysname.capitalize(), sd, r["k_discovered"],
+                     "onset" if r["declared_b5"] else "--",
+                     fmt(r["declared_t_star"], 0),
+                     "onset" if a["b5_onset"] else "--",
+                     fmt(h.get("delta_bic"), 1), fmt(h.get("t_star"), 0),
+                     "onset" if r["control_adj"]["b5_onset"] else "--"])
+for sd, r in sorted(rda2.items()):
+    a = r["discovered_adj"]
+    h = a.get("hinge", {})
+    rows.append(["Grip (cross-fitted)", sd, r["k_discovered"],
+                 "onset" if r["declared_b5"] else "--",
+                 fmt(r["declared_t_star"], 0),
+                 "onset" if a["b5_onset"] else "--",
+                 fmt(h.get("delta_bic"), 1), fmt(h.get("t_star"), 0),
+                 "onset" if r["control_adj"]["b5_onset"] else "--"])
+table(
+    r"\textbf{Regime-discovery audit.} Machine-discovered regime "
+    r"variables (k-means on raw episode records, $k$ by silhouette, one "
+    r"recipe across systems) adjudicated with the frozen detector; "
+    r"controls apply the identical pipeline to the untrained population "
+    r"or policy. Formation-axis disagreements sit at the detector "
+    r"threshold; the grip rows use the cross-fitted v2 estimator; "
+    r"untrained grip controls certify onset because the structural gate "
+    r"delays commitment for any policy (Methods).",
+    ["System", "Seed", "$k$", "Declared", "$t^{*}_\\mathrm{decl}$",
+     "Discovered", "$\\Delta$BIC", "$t^{*}$", "Control"],
+    rows, "si:tab:regimediscovery")
+
+# Supplementary Table 6: per-system qualification (certificate)
+cert = load("emergence_certificates.json")["certificates"]
+rows = []
+for name, c in cert.items():
+    q = c["qualification"]
+    e = c["eip"]
+    verdict = c["verdict"].split(" (")[0]
+    rows.append([name.replace("&", r"\&"),
+                 fmt(e.get("amplitude_fraction_closed"), 2),
+                 fmt(q["regime_level"]), fmt(q["endogenous"]),
+                 fmt(q["persistent"]), verdict])
+table(
+    r"\textbf{Qualification is three-way, not an entropy drop.} "
+    r"Standardized certificate verdicts: amplitude (fraction of "
+    r"reference entropy closed) with the three qualification gates. "
+    r"The single-ant control and the Overcooked occupancy object show "
+    r"that large collapse with a failed gate is not certified as "
+    r"emergence---ordinary individual determinization is excluded by "
+    r"construction.",
+    ["System", "$M$", "Regime-level", "Endogenous", "Persistent",
+     "Verdict"],
+    rows, "si:tab:qualification",
+    align="lccccl")
+
+# final numbering follows main-text citation order: the three audit
+# tables (built last, above) are Supplementary Tables 4-6
+TABLES = TABLES[:3] + TABLES[8:11] + TABLES[3:8]
 
 with open(os.path.join(HERE, "si_tables.tex"), "w") as f:
     f.write("% Generated by make_si_tables.py -- do not edit by hand.\n\n")

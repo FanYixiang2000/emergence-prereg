@@ -65,6 +65,80 @@ Grip: $\varepsilon=0.01$ truncation & -- & -- & no verdict \\
 
 \begin{table}[p]
 \centering
+\caption{\textbf{Regime-ensemble audit.} Alternative regime objects enumerated from each environment specification, adjudicated with the frozen detector on byte-identical reruns. Admissible formation-axis alternatives agree with the declared verdict in 22/25 cells; no control cell certifies an onset; the realization-axis force candidates lose the verdict (Methods, `Regime-object audits').}
+\label{si:tab:regimeensemble}
+\small
+\begin{tabular}{lcccccc}
+\toprule
+System & Regime object & Class & Onset & Declared & Agree & $t^{*}$ range \\
+\midrule
+Convention & speaker code (declared) & declared & 4/5 & 4/5 & 5/5 & 275--300 \\
+Convention & listener code & plausible & 4/5 & 4/5 & 5/5 & 250--325 \\
+Convention & composed channel & plausible & 2/5 & 4/5 & 3/5 & 300--300 \\
+Convention & single-meaning sub-regime & plausible & 3/5 & 4/5 & 4/5 & 300--425 \\
+Convention & pooled symbol marginal & control (erasing) & 0/5 & 4/5 & 1/5 & -- \\
+Convention & speaker identity & control (exogenous) & 0/5 & 4/5 & 1/5 & -- \\
+Roles & assignment openness (declared) & declared & 5/5 & 5/5 & 5/5 & 375--500 \\
+Roles & agent 0's role & plausible & 5/5 & 5/5 & 5/5 & 325--500 \\
+Roles & owner of role 0 & plausible & 5/5 & 5/5 & 5/5 & 400--500 \\
+Roles & pooled role marginal & control (erasing) & 0/5 & 5/5 & 0/5 & -- \\
+Grip & force-sign ensemble marginal & plausible (mis-specified) & 0/5 & 5/5 & 0/5 & -- \\
+Grip & $|x|$ tertile occupancy & control (erasing) & 0/5 & 5/5 & 0/5 & -- \\
+Grip & per-episode force direction (v2) & plausible (registered miss) & 0/5 & 5/5 & 0/5 & -- \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{table}[p]
+\centering
+\caption{\textbf{Regime-discovery audit.} Machine-discovered regime variables (k-means on raw episode records, $k$ by silhouette, one recipe across systems) adjudicated with the frozen detector; controls apply the identical pipeline to the untrained population or policy. Formation-axis disagreements sit at the detector threshold; the grip rows use the cross-fitted v2 estimator; untrained grip controls certify onset because the structural gate delays commitment for any policy (Methods).}
+\label{si:tab:regimediscovery}
+\small
+\begin{tabular}{lcccccccc}
+\toprule
+System & Seed & $k$ & Declared & $t^{*}_\mathrm{decl}$ & Discovered & $\Delta$BIC & $t^{*}$ & Control \\
+\midrule
+Convention & 0 & 10 & onset & 300 & -- & 6.9 & 1375 & -- \\
+Convention & 1 & 10 & onset & 275 & -- & 9.8 & 400 & -- \\
+Convention & 2 & 10 & onset & 300 & onset & 91.8 & 475 & -- \\
+Convention & 3 & 10 & onset & 275 & onset & 43.9 & 400 & -- \\
+Convention & 4 & 10 & -- & 250 & onset & 23.6 & 425 & -- \\
+Roles & 0 & 10 & onset & 475 & onset & 64.9 & 500 & -- \\
+Roles & 1 & 8 & onset & 375 & onset & 59.2 & 425 & -- \\
+Roles & 2 & 7 & onset & 500 & -- & 73.1 & 550 & -- \\
+Roles & 3 & 10 & onset & 400 & onset & 43.2 & 375 & -- \\
+Roles & 4 & 9 & onset & 500 & onset & 71.6 & 525 & -- \\
+Grip (cross-fitted) & 0 & 2 & onset & 18 & -- & 7.4 & 28 & onset \\
+Grip (cross-fitted) & 1 & 2 & onset & 17 & -- & 5.9 & 28 & onset \\
+Grip (cross-fitted) & 2 & 2 & onset & 16 & -- & 12.6 & 27 & -- \\
+Grip (cross-fitted) & 3 & 2 & onset & 17 & -- & 3.3 & 28 & onset \\
+Grip (cross-fitted) & 4 & 2 & onset & 17 & -- & 8.3 & 27 & -- \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{table}[p]
+\centering
+\caption{\textbf{Qualification is three-way, not an entropy drop.} Standardized certificate verdicts: amplitude (fraction of reference entropy closed) with the three qualification gates. The single-ant control and the Overcooked occupancy object show that large collapse with a failed gate is not certified as emergence---ordinary individual determinization is excluded by construction.}
+\label{si:tab:qualification}
+\small
+\begin{tabular}{lccccl}
+\toprule
+System & $M$ & Regime-level & Endogenous & Persistent & Verdict \\
+\midrule
+grip realization (16 agents) & 0.91 & yes & yes & yes & emergent: punctuated \\
+convention formation (10 agents) & 1.00 & yes & yes & yes & emergent: punctuated \\
+role lock-in (6 agents) & 1.00 & yes & yes & yes & emergent: punctuated \\
+ant colony N=100 & 0.89 & yes & yes & yes & emergent: punctuated \\
+single ant N=1 (control) & 0.92 & no & yes & yes & organized, not qualified \\
+TRI-C high-order (3 agents) & 0.32 & yes & yes & yes & emergent: punctuated \\
+Overcooked occupancy (deep MARL) & 0.11 & no & yes & yes & organized, not qualified \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{table}[p]
+\centering
 \caption{\textbf{Grip-transport flagship, per-seed statistics.} Five REINFORCE seeds (primary) and five advantage actor--critic seeds (byte-identical environment). $\Delta$BIC and $t^{*}$ are from the primary hinge fit; $\dagger$ marks A2C seeds whose strict parity-thinning clause fails on thinned-subsample detector power (the 3/5 partial replication reported in the main text). Final side mean near zero confirms the left/right symmetry of the learned population.}
 \label{si:tab:grip}
 \small

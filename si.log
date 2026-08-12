@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026) (preloaded format=pdflatex 2026.7.29)  12 AUG 2026 13:35
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026) (preloaded format=pdflatex 2026.7.29)  12 AUG 2026 16:38
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -391,7 +391,7 @@ Package hyperref Info: Link coloring OFF on input line 25.
 
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
-LaTeX Font Info:    Trying to load font information for T1+pcr on input line 36.
+LaTeX Font Info:    Trying to load font information for T1+pcr on input line 37.
 (/home/Yixiang/.TinyTeX/texmf-dist/tex/latex/psnfss/t1pcr.fd
 File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
 )
@@ -402,20 +402,30 @@ Package microtype Info: Loading generic protrusion settings for font family
 (/home/Yixiang/.TinyTeX/texmf-dist/tex/latex/microtype/mt-cmr.cfg
 File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman (RS)
 )
-LaTeX Font Info:    Trying to load font information for U+msa on input line 42.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 43.
 (/home/Yixiang/.TinyTeX/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 ) (/home/Yixiang/.TinyTeX/texmf-dist/tex/latex/microtype/mt-msa.cfg
 File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 42.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 43.
 (/home/Yixiang/.TinyTeX/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) (/home/Yixiang/.TinyTeX/texmf-dist/tex/latex/microtype/mt-msb.cfg
 File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 ) [1
 
-{/home/Yixiang/.TinyTeX/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{/home/Yixiang/.TinyTeX/texmf-dist/fonts/enc/dvips/base/8r.enc}] [2] [3] (./si_tables.tex) [4] [5] [6] [7] (./si.aux)
+{/home/Yixiang/.TinyTeX/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{/home/Yixiang/.TinyTeX/texmf-dist/fonts/enc/dvips/base/8r.enc}] [2] [3] [4] (./si_tables.tex
+Overfull \hbox (28.57811pt too wide) in paragraph at lines 71--90
+ [][] 
+ []
+
+
+Overfull \hbox (25.82924pt too wide) in paragraph at lines 125--138
+ [][] 
+ []
+
+) [5] [6] [7] [8] [9] (./si.aux)
  ***********
 LaTeX2e <2026-06-01>
 L3 programming layer <2026-06-18>
@@ -424,18 +434,18 @@ Package rerunfilecheck Info: File `si.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 13826 strings out of 469158
- 219700 string characters out of 5460257
- 699191 words of memory out of 5000000
- 42425 multiletter control sequences out of 15000+600000
- 665994 words of font info for 218 fonts, out of 8000000 for 9000
+ 13870 strings out of 469158
+ 220129 string characters out of 5460257
+ 716502 words of memory out of 5000000
+ 42428 multiletter control sequences out of 15000+600000
+ 667412 words of font info for 240 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 74i,9n,79p,999b,587s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 74i,9n,79p,999b,613s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </home/Yixiang/.TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></home/Yixiang/.TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></home/Yixiang/.TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></home/Yixiang/.TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></home/Yixiang/.TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></home/Yixiang/.TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></home/Yixiang/.TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></home/Yixiang/.TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></home/Yixiang/.TinyTeX/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></home/Yixiang/.TinyTeX/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></home/Yixiang/.TinyTeX/texmf-dist/fonts/type1/urw/times/utmr8a.pfb>
-Output written on si.pdf (7 pages, 149278 bytes).
+Output written on si.pdf (9 pages, 156092 bytes).
 PDF statistics:
- 129 PDF objects out of 1000 (max. 8388607)
- 97 compressed objects within 1 object stream
- 36 named destinations out of 1000 (max. 500000)
+ 148 PDF objects out of 1000 (max. 8388607)
+ 113 compressed objects within 2 object streams
+ 44 named destinations out of 1000 (max. 500000)
  36353 words of extra memory for PDF output out of 42996 (max. 10000000)
 

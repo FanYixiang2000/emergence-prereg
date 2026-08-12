@@ -1,0 +1,42 @@
+[grip-v2] seed=0 repro_err=4.72e-06 k=2 declared_B5=True disc_B5=False dBIC=7.36 t*=28.0 (declared t*=18.0) control_B5=True
+[grip-v2] seed=1 repro_err=4.83e-06 k=2 declared_B5=True disc_B5=False dBIC=5.86 t*=28.0 (declared t*=17.0) control_B5=True
+/home/Yixiang/miniconda3/lib/python3.13/site-packages/sklearn/base.py:1336: ConvergenceWarning: Number of distinct clusters (2) found smaller than n_clusters (3). Possibly due to duplicate points in X.
+  return fit_method(estimator, *args, **kwargs)
+/home/Yixiang/miniconda3/lib/python3.13/site-packages/sklearn/base.py:1336: ConvergenceWarning: Number of distinct clusters (2) found smaller than n_clusters (4). Possibly due to duplicate points in X.
+  return fit_method(estimator, *args, **kwargs)
+/home/Yixiang/miniconda3/lib/python3.13/site-packages/sklearn/base.py:1336: ConvergenceWarning: Number of distinct clusters (2) found smaller than n_clusters (5). Possibly due to duplicate points in X.
+  return fit_method(estimator, *args, **kwargs)
+/home/Yixiang/miniconda3/lib/python3.13/site-packages/sklearn/base.py:1336: ConvergenceWarning: Number of distinct clusters (2) found smaller than n_clusters (6). Possibly due to duplicate points in X.
+  return fit_method(estimator, *args, **kwargs)
+/home/Yixiang/miniconda3/lib/python3.13/site-packages/sklearn/base.py:1336: ConvergenceWarning: Number of distinct clusters (2) found smaller than n_clusters (7). Possibly due to duplicate points in X.
+  return fit_method(estimator, *args, **kwargs)
+/home/Yixiang/miniconda3/lib/python3.13/site-packages/sklearn/base.py:1336: ConvergenceWarning: Number of distinct clusters (2) found smaller than n_clusters (8). Possibly due to duplicate points in X.
+  return fit_method(estimator, *args, **kwargs)
+[grip-v2] seed=2 repro_err=5.00e-06 k=2 declared_B5=True disc_B5=False dBIC=12.622 t*=27.0 (declared t*=16.0) control_B5=False
+[grip-v2] seed=3 repro_err=4.97e-06 k=2 declared_B5=True disc_B5=False dBIC=3.269 t*=28.0 (declared t*=17.0) control_B5=True
+/home/Yixiang/miniconda3/lib/python3.13/site-packages/sklearn/base.py:1336: ConvergenceWarning: Number of distinct clusters (1) found smaller than n_clusters (2). Possibly due to duplicate points in X.
+  return fit_method(estimator, *args, **kwargs)
+/home/Yixiang/miniconda3/lib/python3.13/site-packages/sklearn/base.py:1336: ConvergenceWarning: Number of distinct clusters (1) found smaller than n_clusters (3). Possibly due to duplicate points in X.
+  return fit_method(estimator, *args, **kwargs)
+/home/Yixiang/miniconda3/lib/python3.13/site-packages/sklearn/base.py:1336: ConvergenceWarning: Number of distinct clusters (1) found smaller than n_clusters (4). Possibly due to duplicate points in X.
+  return fit_method(estimator, *args, **kwargs)
+/home/Yixiang/miniconda3/lib/python3.13/site-packages/sklearn/base.py:1336: ConvergenceWarning: Number of distinct clusters (1) found smaller than n_clusters (5). Possibly due to duplicate points in X.
+  return fit_method(estimator, *args, **kwargs)
+/home/Yixiang/miniconda3/lib/python3.13/site-packages/sklearn/base.py:1336: ConvergenceWarning: Number of distinct clusters (1) found smaller than n_clusters (6). Possibly due to duplicate points in X.
+  return fit_method(estimator, *args, **kwargs)
+/home/Yixiang/miniconda3/lib/python3.13/site-packages/sklearn/base.py:1336: ConvergenceWarning: Number of distinct clusters (1) found smaller than n_clusters (7). Possibly due to duplicate points in X.
+  return fit_method(estimator, *args, **kwargs)
+/home/Yixiang/miniconda3/lib/python3.13/site-packages/sklearn/base.py:1336: ConvergenceWarning: Number of distinct clusters (1) found smaller than n_clusters (8). Possibly due to duplicate points in X.
+  return fit_method(estimator, *args, **kwargs)
+/home/Yixiang/miniconda3/lib/python3.13/site-packages/sklearn/base.py:1336: ConvergenceWarning: Number of distinct clusters (1) found smaller than n_clusters (2). Possibly due to duplicate points in X.
+  return fit_method(estimator, *args, **kwargs)
+[grip-v2] seed=4 repro_err=4.84e-06 k=2 declared_B5=True disc_B5=False dBIC=8.267 t*=27.0 (declared t*=17.0) control_B5=False
+{
+  "RD2b_verdict_agreement": "0/5",
+  "RD2b_pass": false,
+  "RD3b_t_star_within_5": "0/0",
+  "RD3b_pass": true,
+  "RD4b_controls_clean": "2/5",
+  "RD4b_pass": false
+}
+Wrote /home/Yixiang/MPARL/GOGOGO/outputs/regime_discovery_audit2.json

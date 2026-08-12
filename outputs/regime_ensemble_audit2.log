@@ -1,0 +1,12 @@
+[grip-e2] seed=0 repro=4.7e-06 declared_B5=True@18.0 cand_B5=False dBIC=-3.743 t*=8.0
+[grip-e2] seed=1 repro=4.8e-06 declared_B5=True@17.0 cand_B5=False dBIC=-3.638 t*=8.0
+[grip-e2] seed=2 repro=5.0e-06 declared_B5=True@16.0 cand_B5=False dBIC=-3.83 t*=7.0
+[grip-e2] seed=3 repro=5.0e-06 declared_B5=True@17.0 cand_B5=False dBIC=-4.751 t*=9.0
+[grip-e2] seed=4 repro=4.8e-06 declared_B5=True@17.0 cand_B5=False dBIC=-3.511 t*=7.0
+{
+  "RE1b_verdict_agreement": "0/5",
+  "RE1b_pass": false,
+  "RE2b_t_star_within_8": "0/0",
+  "RE2b_pass": true
+}
+Wrote /home/Yixiang/MPARL/GOGOGO/outputs/regime_ensemble_audit2.json

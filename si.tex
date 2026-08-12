@@ -30,9 +30,10 @@ possibility space}
 definitions and simulation parameters of the physical and agent-based
 reference models, and the baseline predictors used in the intervention
 race), Supplementary Note~1 (the complete ledger of registered misses
-and protocol amendments), and Supplementary Tables~1--8 (per-seed and
+and protocol amendments), and Supplementary Tables~1--11 (per-seed and
 per-condition statistics behind every aggregate reported in the main
-text). Every number in the Supplementary Tables is generated directly
+text, the regime-object audits and the per-system qualification
+table). Every number in the Supplementary Tables is generated directly
 from the raw experiment outputs by \texttt{make\_si\_tables.py}; no
 value is transcribed by hand.
 
@@ -184,6 +185,32 @@ theory claim made either way.
 rounded to a degenerate value was found and fixed in code; both
 affected experiments were rerun with identical seeds and the
 corrupted outputs archived.
+\item \textbf{Regime-ensemble agreement bar missed.} The registered
+verdict-agreement target for plausible alternative regime objects
+(24/30) was missed at 22/30: the composed speaker--listener channel is
+a two-stage regime whose late second collapse the monotone detector
+declines (two cells), one sub-regime cell falls below the evidence
+threshold, and the across-episode force marginal cancels symmetric
+per-episode commitments (five cells). No control cell certified an
+onset (0/20).
+\item \textbf{Regime-discovery estimator retired and repaired.} The
+first realization-axis discovery estimator evaluated a kNN on its own
+training points; the leakage produced spurious collapse, including in
+untrained controls, and the run is retained as a registered record. A
+separately registered cross-fitted repair (v2) removed the leakage;
+the repaired state-trace proxy and a corrected per-episode force
+candidate still miss the strict onset bar in every seed (best
+$\Delta$BIC 12.6 against threshold 10 with thinning), so the
+realization-axis agreement targets (RD2b 0/5 against 4/5; RE1b 0/5
+against 4/5) are reported as misses: raw-behaviour proxies
+under-certify relative to the declared policy-level object.
+\item \textbf{Untrained-gate onsets.} Untrained grip controls in the
+discovery audit certify onset because attachment accumulates under
+random gripping and the structural gate then releases drift
+commitment for any policy; the registered ``untrained $\Rightarrow$ no
+onset'' control prediction was wrong for this system (and only this
+system), consistent with the paper's mechanism control attributing
+the punctuated profile to the gate rather than to learning.
 \end{enumerate}
 
 \clearpage

@@ -1,0 +1,488 @@
+{
+  "status": "REGIME-ENSEMBLE audit; plausible alternative regime objects and inadmissible controls, all closed form, adjudicated with the frozen B5 detector on byte-identical reruns; predictions RE0-RE3 frozen in the docstring before running",
+  "config": {
+    "grip_episodes": 4096
+  },
+  "results": {
+    "convention": {
+      "0": {
+        "repro_max_abs_err": 4.994409764302703e-06,
+        "declared_b5": true,
+        "declared_t_star": 300.0,
+        "candidates": {
+          "P1_speaker_code": {
+            "b5_onset": true,
+            "t_star": 300.0,
+            "delta_bic": 23.006,
+            "verdict": null
+          },
+          "P2_listener_code": {
+            "b5_onset": true,
+            "t_star": 325.0,
+            "delta_bic": 40.416,
+            "verdict": null
+          },
+          "P3_composed_channel": {
+            "b5_onset": true,
+            "t_star": 300.0,
+            "delta_bic": 12.926,
+            "verdict": null
+          },
+          "P4_meaning0_symbol": {
+            "b5_onset": false,
+            "t_star": 250.0,
+            "delta_bic": 9.329,
+            "verdict": null
+          },
+          "X1_symbol_marginal": {
+            "b5_onset": false,
+            "t_star": null,
+            "delta_bic": null,
+            "verdict": "no_collapse_B5_not_applicable"
+          },
+          "X2_speaker_identity": {
+            "b5_onset": false,
+            "t_star": null,
+            "delta_bic": null,
+            "verdict": "no_collapse_B5_not_applicable"
+          }
+        }
+      },
+      "1": {
+        "repro_max_abs_err": 4.9271557082120054e-06,
+        "declared_b5": true,
+        "declared_t_star": 275.0,
+        "candidates": {
+          "P1_speaker_code": {
+            "b5_onset": true,
+            "t_star": 275.0,
+            "delta_bic": 17.839,
+            "verdict": null
+          },
+          "P2_listener_code": {
+            "b5_onset": true,
+            "t_star": 300.0,
+            "delta_bic": 22.201,
+            "verdict": null
+          },
+          "P3_composed_channel": {
+            "b5_onset": false,
+            "t_star": 950.0,
+            "delta_bic": 7.447,
+            "verdict": null
+          },
+          "P4_meaning0_symbol": {
+            "b5_onset": true,
+            "t_star": 325.0,
+            "delta_bic": 17.278,
+            "verdict": null
+          },
+          "X1_symbol_marginal": {
+            "b5_onset": false,
+            "t_star": null,
+            "delta_bic": null,
+            "verdict": "no_collapse_B5_not_applicable"
+          },
+          "X2_speaker_identity": {
+            "b5_onset": false,
+            "t_star": null,
+            "delta_bic": null,
+            "verdict": "no_collapse_B5_not_applicable"
+          }
+        }
+      },
+      "2": {
+        "repro_max_abs_err": 4.846777117957848e-06,
+        "declared_b5": true,
+        "declared_t_star": 300.0,
+        "candidates": {
+          "P1_speaker_code": {
+            "b5_onset": true,
+            "t_star": 300.0,
+            "delta_bic": 30.087,
+            "verdict": null
+          },
+          "P2_listener_code": {
+            "b5_onset": true,
+            "t_star": 300.0,
+            "delta_bic": 37.115,
+            "verdict": null
+          },
+          "P3_composed_channel": {
+            "b5_onset": true,
+            "t_star": 300.0,
+            "delta_bic": 12.823,
+            "verdict": null
+          },
+          "P4_meaning0_symbol": {
+            "b5_onset": true,
+            "t_star": 300.0,
+            "delta_bic": 17.474,
+            "verdict": null
+          },
+          "X1_symbol_marginal": {
+            "b5_onset": false,
+            "t_star": null,
+            "delta_bic": null,
+            "verdict": "no_collapse_B5_not_applicable"
+          },
+          "X2_speaker_identity": {
+            "b5_onset": false,
+            "t_star": null,
+            "delta_bic": null,
+            "verdict": "no_collapse_B5_not_applicable"
+          }
+        }
+      },
+      "3": {
+        "repro_max_abs_err": 4.963502135746367e-06,
+        "declared_b5": true,
+        "declared_t_star": 275.0,
+        "candidates": {
+          "P1_speaker_code": {
+            "b5_onset": true,
+            "t_star": 275.0,
+            "delta_bic": 19.698,
+            "verdict": null
+          },
+          "P2_listener_code": {
+            "b5_onset": true,
+            "t_star": 250.0,
+            "delta_bic": 16.779,
+            "verdict": null
+          },
+          "P3_composed_channel": {
+            "b5_onset": false,
+            "t_star": 950.0,
+            "delta_bic": 13.986,
+            "verdict": null
+          },
+          "P4_meaning0_symbol": {
+            "b5_onset": true,
+            "t_star": 425.0,
+            "delta_bic": 24.445,
+            "verdict": null
+          },
+          "X1_symbol_marginal": {
+            "b5_onset": false,
+            "t_star": null,
+            "delta_bic": null,
+            "verdict": "no_collapse_B5_not_applicable"
+          },
+          "X2_speaker_identity": {
+            "b5_onset": false,
+            "t_star": null,
+            "delta_bic": null,
+            "verdict": "no_collapse_B5_not_applicable"
+          }
+        }
+      },
+      "4": {
+        "repro_max_abs_err": 4.97546802175064e-06,
+        "declared_b5": false,
+        "declared_t_star": 250.0,
+        "candidates": {
+          "P1_speaker_code": {
+            "b5_onset": false,
+            "t_star": 250.0,
+            "delta_bic": 6.624,
+            "verdict": null
+          },
+          "P2_listener_code": {
+            "b5_onset": false,
+            "t_star": 250.0,
+            "delta_bic": 6.631,
+            "verdict": null
+          },
+          "P3_composed_channel": {
+            "b5_onset": false,
+            "t_star": 825.0,
+            "delta_bic": 12.917,
+            "verdict": null
+          },
+          "P4_meaning0_symbol": {
+            "b5_onset": false,
+            "t_star": 200.0,
+            "delta_bic": 2.881,
+            "verdict": null
+          },
+          "X1_symbol_marginal": {
+            "b5_onset": false,
+            "t_star": null,
+            "delta_bic": null,
+            "verdict": "no_collapse_B5_not_applicable"
+          },
+          "X2_speaker_identity": {
+            "b5_onset": false,
+            "t_star": null,
+            "delta_bic": null,
+            "verdict": "no_collapse_B5_not_applicable"
+          }
+        }
+      }
+    },
+    "roles": {
+      "0": {
+        "repro_max_abs_err": 4.962378558779468e-06,
+        "declared_b5": true,
+        "declared_t_star": 475.0,
+        "candidates": {
+          "P1_assignment": {
+            "b5_onset": true,
+            "t_star": 475.0,
+            "delta_bic": 62.95,
+            "verdict": null
+          },
+          "P2_agent0_role": {
+            "b5_onset": true,
+            "t_star": 450.0,
+            "delta_bic": 63.797,
+            "verdict": null
+          },
+          "P3_role0_owner": {
+            "b5_onset": true,
+            "t_star": 450.0,
+            "delta_bic": 65.184,
+            "verdict": null
+          },
+          "X1_role_marginal": {
+            "b5_onset": false,
+            "t_star": null,
+            "delta_bic": null,
+            "verdict": "no_collapse_B5_not_applicable"
+          }
+        }
+      },
+      "1": {
+        "repro_max_abs_err": 4.983872844411402e-06,
+        "declared_b5": true,
+        "declared_t_star": 375.0,
+        "candidates": {
+          "P1_assignment": {
+            "b5_onset": true,
+            "t_star": 375.0,
+            "delta_bic": 53.597,
+            "verdict": null
+          },
+          "P2_agent0_role": {
+            "b5_onset": true,
+            "t_star": 400.0,
+            "delta_bic": 45.114,
+            "verdict": null
+          },
+          "P3_role0_owner": {
+            "b5_onset": true,
+            "t_star": 400.0,
+            "delta_bic": 52.25,
+            "verdict": null
+          },
+          "X1_role_marginal": {
+            "b5_onset": false,
+            "t_star": null,
+            "delta_bic": null,
+            "verdict": "no_collapse_B5_not_applicable"
+          }
+        }
+      },
+      "2": {
+        "repro_max_abs_err": 4.987954774492891e-06,
+        "declared_b5": true,
+        "declared_t_star": 500.0,
+        "candidates": {
+          "P1_assignment": {
+            "b5_onset": true,
+            "t_star": 500.0,
+            "delta_bic": 71.16,
+            "verdict": null
+          },
+          "P2_agent0_role": {
+            "b5_onset": true,
+            "t_star": 475.0,
+            "delta_bic": 81.332,
+            "verdict": null
+          },
+          "P3_role0_owner": {
+            "b5_onset": true,
+            "t_star": 500.0,
+            "delta_bic": 68.82,
+            "verdict": null
+          },
+          "X1_role_marginal": {
+            "b5_onset": false,
+            "t_star": null,
+            "delta_bic": null,
+            "verdict": "no_collapse_B5_not_applicable"
+          }
+        }
+      },
+      "3": {
+        "repro_max_abs_err": 4.9913589635531435e-06,
+        "declared_b5": true,
+        "declared_t_star": 400.0,
+        "candidates": {
+          "P1_assignment": {
+            "b5_onset": true,
+            "t_star": 400.0,
+            "delta_bic": 61.38,
+            "verdict": null
+          },
+          "P2_agent0_role": {
+            "b5_onset": true,
+            "t_star": 325.0,
+            "delta_bic": 75.7,
+            "verdict": null
+          },
+          "P3_role0_owner": {
+            "b5_onset": true,
+            "t_star": 400.0,
+            "delta_bic": 59.155,
+            "verdict": null
+          },
+          "X1_role_marginal": {
+            "b5_onset": false,
+            "t_star": null,
+            "delta_bic": null,
+            "verdict": "no_collapse_B5_not_applicable"
+          }
+        }
+      },
+      "4": {
+        "repro_max_abs_err": 4.981051012360987e-06,
+        "declared_b5": true,
+        "declared_t_star": 500.0,
+        "candidates": {
+          "P1_assignment": {
+            "b5_onset": true,
+            "t_star": 500.0,
+            "delta_bic": 71.658,
+            "verdict": null
+          },
+          "P2_agent0_role": {
+            "b5_onset": true,
+            "t_star": 500.0,
+            "delta_bic": 72.0,
+            "verdict": null
+          },
+          "P3_role0_owner": {
+            "b5_onset": true,
+            "t_star": 500.0,
+            "delta_bic": 72.81,
+            "verdict": null
+          },
+          "X1_role_marginal": {
+            "b5_onset": false,
+            "t_star": null,
+            "delta_bic": null,
+            "verdict": "no_collapse_B5_not_applicable"
+          }
+        }
+      }
+    },
+    "grip": {
+      "0": {
+        "repro_max_abs_err": 4.716730117801382e-06,
+        "declared_b5": true,
+        "declared_t_star": 18.0,
+        "candidates": {
+          "P2_force_sign": {
+            "b5_onset": false,
+            "t_star": null,
+            "delta_bic": null,
+            "verdict": "no_collapse_B5_not_applicable"
+          },
+          "X1_xabs_tertiles": {
+            "b5_onset": false,
+            "t_star": null,
+            "delta_bic": null,
+            "verdict": "no_collapse_B5_not_applicable"
+          }
+        }
+      },
+      "1": {
+        "repro_max_abs_err": 4.8284888267552395e-06,
+        "declared_b5": true,
+        "declared_t_star": 17.0,
+        "candidates": {
+          "P2_force_sign": {
+            "b5_onset": false,
+            "t_star": null,
+            "delta_bic": null,
+            "verdict": "no_collapse_B5_not_applicable"
+          },
+          "X1_xabs_tertiles": {
+            "b5_onset": false,
+            "t_star": null,
+            "delta_bic": null,
+            "verdict": "no_collapse_B5_not_applicable"
+          }
+        }
+      },
+      "2": {
+        "repro_max_abs_err": 4.9998521804844875e-06,
+        "declared_b5": true,
+        "declared_t_star": 16.0,
+        "candidates": {
+          "P2_force_sign": {
+            "b5_onset": false,
+            "t_star": null,
+            "delta_bic": null,
+            "verdict": "no_collapse_B5_not_applicable"
+          },
+          "X1_xabs_tertiles": {
+            "b5_onset": false,
+            "t_star": null,
+            "delta_bic": null,
+            "verdict": "no_collapse_B5_not_applicable"
+          }
+        }
+      },
+      "3": {
+        "repro_max_abs_err": 4.974012374883707e-06,
+        "declared_b5": true,
+        "declared_t_star": 17.0,
+        "candidates": {
+          "P2_force_sign": {
+            "b5_onset": false,
+            "t_star": null,
+            "delta_bic": null,
+            "verdict": "no_collapse_B5_not_applicable"
+          },
+          "X1_xabs_tertiles": {
+            "b5_onset": false,
+            "t_star": null,
+            "delta_bic": null,
+            "verdict": "no_collapse_B5_not_applicable"
+          }
+        }
+      },
+      "4": {
+        "repro_max_abs_err": 4.835760593416283e-06,
+        "declared_b5": true,
+        "declared_t_star": 17.0,
+        "candidates": {
+          "P2_force_sign": {
+            "b5_onset": false,
+            "t_star": null,
+            "delta_bic": null,
+            "verdict": "no_collapse_B5_not_applicable"
+          },
+          "X1_xabs_tertiles": {
+            "b5_onset": false,
+            "t_star": null,
+            "delta_bic": null,
+            "verdict": "no_collapse_B5_not_applicable"
+          }
+        }
+      }
+    }
+  },
+  "registered_outcomes": {
+    "RE0_reproduction": true,
+    "RE1_verdict_stability": "22/30",
+    "RE1_pass": false,
+    "RE2_t_star_within_10pct_span": "19/19",
+    "RE2_pass": true,
+    "RE3_controls_clean": "20/20",
+    "RE3_pass": true
+  }
+}
