@@ -108,8 +108,7 @@ defining emergence on the \emph{observable of convenience}---a
 benchmark, an order parameter, a success rate---rather than on the
 object that actually reorganizes. Worse, two systems can produce
 byte-identical outcomes---identical joint distributions, marginals
-and task success---through entirely different couplings (Extended
-Data Fig.~1a),
+and task success---through entirely different couplings (Methods),
 and no statistic of that shared distribution can tell them apart.
 They become distinguishable only relative to a declared
 \emph{observation contract}---which variables are measured, which are
@@ -181,7 +180,7 @@ four independent knobs, each knob moves only its own component, the
 ladder is monotone, and hiding an environmental common cause
 deterministically re-attributes collapse from $C_\mathrm{env}$ to the
 relational channels (five preregistered checks pass;
-Extended Data Fig.~1c)---contract-relativity made precise: ``higher-order'' is
+Extended Data Fig.~1a)---contract-relativity made precise: ``higher-order'' is
 defined only relative to what an observer declares exogenous. On a 72-cell factorial (4 sources $\times$ 3
 temporal shapes $\times$ 2 stabilities $\times$ 3 magnitudes) the
 instrument recovers the source in 72/72 cells, and---the point that
@@ -399,7 +398,8 @@ $b=87.6$ (bootstrap 95\% CI [41, 124], $R^{2}=0.93$); the closing width
 is $N$-invariant (280--290 trips from $N{=}50$ to $500$); and the
 median collapse curves for $N\geq 50$ fall onto a single universal
 profile under pure time translation (mean pairwise RMS 0.010 versus
-0.266 unaligned)---sharper than equilibrium-style width
+0.266 unaligned; Extended Data Fig.~2)---sharper than
+equilibrium-style width
 rescaling\citep{stanley1971introduction}. One sub-prediction failed and is reported: at the longer horizon the
 onset threshold sits between $N=10$ and $20$, so ``onset at every
 $N\geq10$'' was counted a miss. In the Kuramoto system the same instrument tracks the
@@ -553,6 +553,18 @@ possibility count is $N_\mathrm{eff}=2^{H(P_t)}$. Entropies are estimated
 with a Miller--Madow-style bias correction and, for the joint objects,
 with the nested ladder below rather than by direct high-dimensional
 estimation.
+
+\paragraph{Matched-confound battery.}
+Four generators---a central script, a hidden common cause, pure
+coincidence and genuine local feedback---are constructed so that no
+statistic of the shared joint-action distribution separates them:
+joint distributions, single-agent marginals and macroscopic task
+outcomes are identical by construction. What separates them is the
+declared contract: conditioning on declared exogenous variables,
+interaction-severing counterfactuals and persistence checks assign
+each generator to its predicted certificate component. Attribution is
+therefore contract-relative, not mechanism discovery from outcome
+statistics.
 
 \paragraph{Source decomposition.}
 The nested maximum-entropy ladder constrains, in order: (i) the
@@ -1066,10 +1078,8 @@ flip.}
 consistent with $t_{50}=a+b\ln N$ ($b=88$, 95\% CI [41, 124],
 $R^{2}=0.93$; dashed
 fit), as predicted by nucleation from $N^{-1/2}$ fluctuations; open
-circles, sizes below the onset threshold. Inset: median collapse
-curves for $N=50$--$500$ superpose under pure time translation
-(aligned RMS 0.010 vs 0.266 unaligned)---the profile is universal,
-only the timing shifts.
+circles, sizes below the onset threshold (see Extended Data Fig.~2
+for the universal collapse profile).
 \textbf{b},~Kuramoto criticality: breakpoint time falls and closing slope
 rises as coupling increases; subcritical runs are gated null.
 \textbf{c},~Classification: onset appears where a joint-regime barrier
@@ -1087,21 +1097,24 @@ MARL, several classic cases).}
 
 \begin{figure}[p]
 \centering
-\includegraphics[width=\textwidth]{edfig1_instrument.pdf}
+\includegraphics[width=0.72\textwidth]{edfig1_instrument.pdf}
 \caption{\textbf{Instrument validation on constructed ground truth.}
-\textbf{a},~Four generators---central script, common cause, coincidence and
-local feedback---constructed so that no statistic of the shared
-joint-action distribution separates them (identical joints, marginals
-and macroscopic success). What separates them is the declared
-contract: conditioning on declared exogenous variables,
-interaction-severing counterfactuals and persistence checks assign
-each to its predicted certificate component---attribution is
-contract-relative, not mechanism discovery from outcome statistics.
+\textbf{a},~Source-decomposition ladder on analytic ground truth: each pure
+generator loads almost entirely onto its own component.
 \textbf{b},~Full-factorial calibration (72 cells): amplitude $M$ is
 invariant across temporal shape while abruptness $J$ strictly orders
-punctuated $>$ sigmoid $>$ gradual.
-\textbf{c},~Source-decomposition ladder on analytic ground truth: each pure
-generator loads almost entirely onto its own component.}
+punctuated $>$ sigmoid $>$ gradual.}
+\end{figure}
+
+\begin{figure}[p]
+\centering
+\includegraphics[width=0.55\textwidth]{edfig2_fss_collapse.pdf}
+\caption{\textbf{Finite-size universality of the collapse profile.}
+Median openness trajectories for ant colonies of $N=50$--$500$,
+aligned by commitment time $t_{50}$: the four profiles superpose under
+pure time translation (mean pairwise RMS 0.010 versus 0.266
+unaligned). Increasing $N$ shifts the timing but does not reshape the
+collapse.}
 \end{figure}
 
 \end{document}

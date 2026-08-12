@@ -82,35 +82,31 @@ def save(fig, name):
 # Extended Data Figure 1: instrument validation (Fig. 1 is the hand-drawn
 # overview schematic figures/fig0_overview.pdf, produced outside this script)
 def edfig1():
-    cc = load("collective_constraint.json")["matched_confound"]
     b72 = load("bench72_factorial.json")
     sd = load("collapse_source_decomposition.json")
 
-    fig = plt.figure(figsize=(DOUBLE, 2.5))
-    gs = fig.add_gridspec(1, 3, wspace=0.55,
-                          width_ratios=[1.0, 1.0, 1.15])
+    fig = plt.figure(figsize=(0.72 * DOUBLE, 2.5))
+    gs = fig.add_gridspec(1, 2, wspace=0.5, width_ratios=[1.15, 1.0])
 
-    # a: matched confound
+    # a: source dissociation on analytic ground truth
+    det = sd["results"]["SD3_dissociations"]["detail"]["components"]
+    gens = ["pure_env", "pure_pair", "pure_high"]
+    comps = ["C_env", "C_pair", "C_high"]
+    labels = [r"$C_{\rm env}$", r"$C_{\rm pair}$", r"$C_{\rm high}$"]
+    colors = [YELLOW, BLUE, PURPLE]
     ax = fig.add_subplot(gs[0])
-    rows = ["central script", "common cause", "coincidence", "local feedback"]
-    checks = ["joint distr.", "marginals", "macro outcome"]
-    ok = [[cc["joint_distributions_identical"],
-           cc["single_agent_marginals_identical"], True]] * 4
-    for i in range(len(rows)):
-        for j in range(len(checks)):
-            ax.add_patch(Rectangle((j, 3 - i), 0.92, 0.92,
-                                   facecolor="#E7EDF5", edgecolor="white"))
-            ax.text(j + 0.46, 3 - i + 0.46, "=", ha="center", va="center",
-                    fontsize=8, color=BLUE, fontweight="bold")
-    ax.set_xlim(-0.1, 3.1)
-    ax.set_ylim(-0.15, 4.05)
-    ax.set_xticks([j + 0.46 for j in range(3)])
-    ax.set_xticklabels(checks, rotation=25, ha="right")
-    ax.set_yticks([3 - i + 0.46 for i in range(4)])
-    ax.set_yticklabels(rows)
-    for s in ax.spines.values():
-        s.set_visible(False)
-    ax.tick_params(length=0)
+    w = 0.24
+    for j, c in enumerate(comps):
+        fr = [max(det[g][c], 0.0) / det[g]["C_total"] for g in gens]
+        ax.bar(np.arange(3) + (j - 1) * w, fr, w, color=colors[j],
+               label=labels[j], edgecolor="none")
+    ax.set_xticks(range(3))
+    ax.set_xticklabels(["env", "pair", "high"], fontsize=6.5)
+    ax.set_xlabel("pure generator")
+    ax.set_ylabel("fraction of total collapse")
+    ax.set_ylim(0, 1.32)
+    ax.legend(frameon=False, ncol=3, loc="upper center",
+              handlelength=0.8, columnspacing=0.8, borderaxespad=0.0)
 
     # b: BENCH-72, J orders shapes while M stays invariant
     gd = b72["checks"]["group_detail"]
@@ -127,30 +123,26 @@ def edfig1():
     ax.set_ylabel("abruptness J")
     ax.set_ylim(0, 1.12)
 
-    # c: source dissociation on analytic ground truth
-    det = sd["results"]["SD3_dissociations"]["detail"]["components"]
-    gens = ["pure_env", "pure_pair", "pure_high"]
-    comps = ["C_env", "C_pair", "C_high"]
-    labels = [r"$C_{\rm env}$", r"$C_{\rm pair}$", r"$C_{\rm high}$"]
-    colors = [YELLOW, BLUE, PURPLE]
-    ax = fig.add_subplot(gs[2])
-    w = 0.24
-    for j, c in enumerate(comps):
-        fr = [max(det[g][c], 0.0) / det[g]["C_total"] for g in gens]
-        ax.bar(np.arange(3) + (j - 1) * w, fr, w, color=colors[j],
-               label=labels[j], edgecolor="none")
-    ax.set_xticks(range(3))
-    ax.set_xticklabels(["env", "pair", "high"], fontsize=6.5)
-    ax.set_xlabel("pure generator")
-    ax.set_ylabel("fraction of total collapse")
-    ax.set_ylim(0, 1.32)
-    ax.legend(frameon=False, ncol=3, loc="upper center",
-              handlelength=0.8, columnspacing=0.8, borderaxespad=0.0)
-
     panel(fig, 0.005, 1.00, "a")
-    panel(fig, 0.355, 1.00, "b")
-    panel(fig, 0.665, 1.00, "c")
+    panel(fig, 0.56, 1.00, "b")
     save(fig, "edfig1_instrument")
+
+
+def edfig2():
+    fss = load("ant_fss.json")
+    per = fss["per_size"]
+
+    fig, ax = plt.subplots(figsize=(3.4, 2.5))
+    grid = np.arange(0, 1501, 10, dtype=float)
+    for n, c in zip((50, 100, 200, 500), SEEDC[:4]):
+        med = np.array(fss["median_curves"][str(n)])
+        t50 = per[str(n)]["t50"]
+        ax.plot(grid - t50, med, lw=1.0, color=c, label=f"$N={n}$")
+    ax.set_xlim(-220, 220)
+    ax.set_xlabel("trips relative to commitment time $t_{50}$")
+    ax.set_ylabel("median openness")
+    ax.legend(frameon=False, handlelength=1.2)
+    save(fig, "edfig2_fss_collapse")
 
 
 # Figure 2: grip flagship, punctuated realization
@@ -552,18 +544,6 @@ def fig6():
     ax.legend(frameon=False, loc="upper left", handlelength=0.8,
               borderaxespad=0.1)
 
-    # inset: translation data collapse for N >= 50
-    axi = ax.inset_axes([0.55, 0.14, 0.42, 0.36])
-    grid = np.arange(0, 1501, 10, dtype=float)
-    for n in (50, 100, 200, 500):
-        med = np.array(fss["median_curves"][str(n)])
-        t50 = per[str(n)]["t50"]
-        axi.plot(grid - t50, med, lw=0.6)
-    axi.set_xlim(-220, 220)
-    axi.tick_params(labelsize=4.5, length=1.5, width=0.4)
-    for s in axi.spines.values():
-        s.set_linewidth(0.4)
-
     # -- b Kuramoto laws ----------------------------------------------------
     ax = fig.add_subplot(gs[1])
     Ks = [float(k) for k in ks["config"]["Ks"]]
@@ -621,6 +601,7 @@ def fig6():
 
 if __name__ == "__main__":
     edfig1()
+    edfig2()
     fig2()
     fig3()
     fig4()
