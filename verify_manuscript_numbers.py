@@ -1,8 +1,9 @@
 """Cross-check headline manuscript numbers against stored output files.
 
-Read-only audit: loads the JSON outputs that back the manuscript's headline
-claims and compares them with the values asserted in paper/main.tex. Any
+Read-only audit: loads the JSON outputs that back the project's headline
+claims and compares them with the expected values recorded here. Any
 mismatch is reported as FAIL. This does not modify any experiment output.
+The manuscript-facing audit is verify_paper_numbers.py.
 """
 
 from __future__ import annotations
@@ -27,7 +28,7 @@ def close(a: float, b: float, tol: float = 5e-4) -> bool:
     return math.isfinite(a) and math.isfinite(b) and abs(a - b) <= tol
 
 
-# CLBF
+# ---------------------------------------------------------------- CLBF
 clbf = json.loads((OUTPUTS / "contextual_lbf_confirmation_analysis.json").read_text())
 counts = clbf["counts"]
 check("CLBF learned passes 9/10", counts["learned_full_passes"] == 9,
@@ -73,7 +74,7 @@ check("CLBF extension all positive acquisition",
       ext["counts"]["learned_positive_acquisition"] == 5,
       f"observed {ext['counts']['learned_positive_acquisition']}")
 
-# Pythia 160m
+# ---------------------------------------------------------------- Pythia 160m
 py = json.loads((OUTPUTS / "pythia_collapse_summary.json").read_text())
 agree = py["runs"]["pythia_agreement"]["stats"]
 check("Pythia-160m agreement burstiness 27.6",
@@ -100,7 +101,7 @@ check("Pythia-160m tail words usefulness 0.056",
       close(twords["usefulness_acc_gain"], 0.056, 0.001),
       f"observed {twords['usefulness_acc_gain']:.4f}")
 
-# Pythia 1b
+# ---------------------------------------------------------------- Pythia 1b
 py1b = json.loads((OUTPUTS / "pythia_collapse_summary_1b.json").read_text())
 a1b = py1b["runs"]["pythia_agreement"]
 check("Pythia-1B agreement emergent",
@@ -118,7 +119,7 @@ check("Pythia-1B head facts rejected via burstiness",
       f"burstiness {h1b['stats']['burstiness_ratio']:.3f}, "
       f"final acc {h1b['stats']['final_test_acc']}")
 
-# Pythia 1.4b
+# ---------------------------------------------------------------- Pythia 1.4b
 py14 = json.loads((OUTPUTS / "pythia_collapse_summary_1.4b.json").read_text())
 a14 = py14["runs"]["pythia_agreement"]
 check("Pythia-1.4B agreement emergent, window 1000",
@@ -145,7 +146,7 @@ check("Pythia-1.4B 21 revisions pairwise distinct",
       hashes["n_complete"] == 21 and hashes["all_revisions_distinct"],
       f"complete {hashes['n_complete']}")
 
-# Pythia 2.8b
+# ---------------------------------------------------------------- Pythia 2.8b
 py28 = json.loads((OUTPUTS / "pythia_collapse_summary_2.8b.json").read_text())
 a28 = py28["runs"]["pythia_agreement"]
 check("Pythia-2.8B registered S1 failure via burstiness",
@@ -174,7 +175,7 @@ check("scaling totals 4/5 agreement, 10/10 controls, 4+4 tails",
       and pc["controls_rejected"] == [10, 10]
       and pc["tail_rejections"] == {"tail_facts": 4, "tail_words": 4},
       str(pc))
-# discovery
+# ---------------------------------------------------------------- discovery
 disc = json.loads((OUTPUTS / "chess_discovery_main.json").read_text())
 da = disc["analysis"]
 check("discovery AUROC 0.730, 4/4 predictions",
@@ -318,7 +319,7 @@ wit = json.loads((OUTPUTS / "component_witness_matrix.json").read_text())
 check("all six components have measured witnesses",
       wit["all_components_witnessed"], "matrix assembled")
 
-# ablation
+# ---------------------------------------------------------------- ablation
 abl = json.loads((OUTPUTS / "component_ablation_witnesses.json").read_text())
 check("CLBF leave-one-out: only selectivity non-redundant",
       abl["components"]["conditional_selectivity"]["newly_accepted_total"] == 2
@@ -340,7 +341,7 @@ check("2.8B agreement flips to accept in all thinning cells",
       f"thin_agree={flip['thinning_agreement']}, "
       f"cells={flip['n_thinning_cells']}")
 
-# deep MARL
+# ---------------------------------------------------------------- deep MARL
 marl = json.loads((OUTPUTS / "deep_marl_collapse_aggregate.json").read_text())
 d3 = marl["D3_counterfactual"]
 check("simple_spread pooled do-gap median +0.083",
@@ -361,7 +362,7 @@ check("LBF 69 wins / 0 losses",
       l3["pooled_sign_wins"] == 69 and l3["pooled_sign_losses"] == 0,
       f"observed {l3['pooled_sign_wins']}/{l3['pooled_sign_losses']}")
 
-# chess
+# ---------------------------------------------------------------- chess
 chess = json.loads((OUTPUTS / "chess_collapse_main_summary.json").read_text())
 
 
@@ -380,7 +381,7 @@ check("chess do-gap 0.539 [0.508, 0.570]",
       and close(gap["ci_hi"], 0.570, 0.001),
       f"observed {gap['point']:.4f} [{gap['ci_lo']:.4f},{gap['ci_hi']:.4f}]")
 
-# reframing-revision audits
+# --------------------------------------------- reframing-revision audits
 fair = json.loads((OUTPUTS / "fair_baseline_comparison.json").read_text())
 frozen = fair["fresh_battery"]["frozen_baselines"]
 best_frozen = max(v["accuracy"] for v in frozen.values())
@@ -907,7 +908,7 @@ check("canonical possibility-collapse validation: CPC-1..6 all pass "
               and "limitation" in r for r in cpc["rows"]),
       json.dumps(cpco))
 
-# report
+# ---------------------------------------------------------------- report
 failures = [c for c in checks if not c[1]]
 for name, ok, detail in checks:
     print(f"{'PASS' if ok else 'FAIL'}  {name}  ({detail})")

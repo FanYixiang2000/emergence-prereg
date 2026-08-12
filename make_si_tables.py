@@ -30,7 +30,7 @@ def fmt(x, nd=2):
 TABLES = []
 
 
-def table(caption, header, rows, label, align=None):
+def table(caption, header, rows, label, align=None, fit_width=False):
     ncol = len(header)
     align = align or "l" + "c" * (ncol - 1)
     lines = [
@@ -39,6 +39,10 @@ def table(caption, header, rows, label, align=None):
         rf"\caption{{{caption}}}",
         rf"\label{{{label}}}",
         r"\small",
+    ]
+    if fit_width:
+        lines.append(r"\resizebox{\textwidth}{!}{%")
+    lines += [
         rf"\begin{{tabular}}{{{align}}}",
         r"\toprule",
         " & ".join(header) + r" \\",
@@ -46,7 +50,10 @@ def table(caption, header, rows, label, align=None):
     ]
     for r in rows:
         lines.append(" & ".join(str(c) for c in r) + r" \\")
-    lines += [r"\bottomrule", r"\end{tabular}", r"\end{table}", ""]
+    lines += [r"\bottomrule", r"\end{tabular}"]
+    if fit_width:
+        lines.append("}")
+    lines += [r"\end{table}", ""]
     TABLES.append("\n".join(lines))
 
 
@@ -299,7 +306,7 @@ table(
     r"`Regime-object audits').",
     ["System", "Regime object", "Class", "Onset", "Declared",
      "Agree", "$t^{*}$ range"],
-    rows, "si:tab:regimeensemble")
+    rows, "si:tab:regimeensemble", fit_width=True)
 
 # Supplementary Table 5: regime-discovery audit, per-seed
 rda = load("regime_discovery_audit.json")["results"]
@@ -359,7 +366,7 @@ table(
     ["System", "$M$", "Regime-level", "Endogenous", "Persistent",
      "Verdict"],
     rows, "si:tab:qualification",
-    align="lccccl")
+    align="lccccl", fit_width=True)
 
 # final numbering follows main-text citation order: the three audit
 # tables (built last, above) are Supplementary Tables 4-6

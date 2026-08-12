@@ -51,7 +51,6 @@ def rng(vals):
     return min(vals), max(vals)
 
 
-# ---------------------------------------------------------------- Fig 1
 b72 = load("bench72_factorial.json")
 ro = b72["registered_outcomes"]
 check("BENCH72 source recovery 72/72", ro["B72_1_source"], True,
@@ -69,7 +68,6 @@ ro = sdec["registered_outcomes"]
 check("Source decomposition five checks SD1-SD5", all(ro[f"SD{i}"] for i in range(1, 6)), True,
       "five preregistered checks pass")
 
-# ---------------------------------------------------------------- detector
 dv = load("detector_validation.json")
 ro = dv["registered_outcomes"]
 check("Detector reference FPR 0.000", dv["reference_point"]["controls_pooled"]["fpr"]
@@ -79,7 +77,6 @@ check("Detector reference FPR 0.000", dv["reference_point"]["controls_pooled"]["
 check("Detector onset power 1.00", ro["ref_onset_power"], 1.0,
       "onset power is 1.00")
 
-# ---------------------------------------------------------------- Fig 2 grip
 b5 = load("learn_grip_transport_b5.json")
 ro = b5["registered_outcomes"]
 check("Grip primary onsets 5/5 (B5 battery)", (ro["b5_count_learned"], ro["n_learned"]), (5, 5))
@@ -108,7 +105,6 @@ d2 = [a2c["seeds"][s]["adj"]["hinge"]["delta_bic"] for s in a2c["seeds"]]
 check("A2C dBIC 37.7-45.5", (round(min(d2), 1), round(max(d2), 1)), (37.7, 45.5),
       "$\\Delta$BIC 37.7--45.5")
 
-# ---------------------------------------------------------------- Fig 3
 lgf = load("learn_grip_formation.json")
 ro = lgf["registered_outcomes"]
 check("Formation 0 breakpoints, realization 5/5",
@@ -118,7 +114,6 @@ fine = load("learn_grip_formation_fine.json")
 ro = fine["registered_outcomes"]
 check("Fine-resolution success no onset 0/5", ro["succ_b5_count"], 0)
 
-# ---------------------------------------------------------------- convention/roles
 lc = load("learn_convention.json")
 seeds = lc["seeds"]
 onsets = [k for k, r in seeds.items() if r["adj"]["b5_onset"]]
@@ -144,7 +139,6 @@ check("Roles dBIC 53.6-71.7", (round(min(rd), 1), round(max(rd), 1)), (53.6, 71.
 perms = set(str(r.get("assignment")) for r in rs.values())
 check("5 distinct role permutations", len(perms), 5, "five distinct role permutations")
 
-# ---------------------------------------------------------------- barrier
 bx = load("barrier_xplay.json")
 ro = bx["registered_outcomes"]
 check("Barrier unilateral gains 0.011/0.001",
@@ -157,7 +151,6 @@ check("Cross-seed incompat 0.14/0.05",
       (round(ro["conv_cross_intel"], 2), round(ro["roles_hybrid_success"], 2)),
       (0.14, 0.05), "cross-seed intelligibility 0.14, hybrid-team success 0.05")
 
-# ---------------------------------------------------------------- NN replication
 nr = load("learn_nn_resolution.json")
 co = nr["systems"]["convention"]["outcomes"]
 rr_ = nr["systems"]["roles"]["outcomes"]
@@ -170,7 +163,6 @@ alld = [r["delta_bic"] for s in ("convention", "roles")
         if r["b5_onset"] and r["delta_bic"] is not None]
 check("NN max dBIC 162", round(max(alld)), 162, "$\\Delta$BIC up to 162")
 
-# ---------------------------------------------------------------- TRI-C
 tric = load("triad_highorder_cue.json")
 finals = []
 pairs = []
@@ -190,7 +182,6 @@ n_tot = len(tbp["seeds"]) + len(tce["seeds"])
 check("TRI-C onsets pooled 7/8", (n_on, n_tot), (7, 8),
       "7/8 seeds across the original run and a five-seed extension")
 
-# ---------------------------------------------------------------- overcooked profile
 e1c = load("overcooked_profile_confirmatory.json")
 check("Overcooked C_env learned 0.0137", round(e1c["learned"]["C_env"], 4), 0.0137,
       "0.0137 [0.0123, 0.0156]")
@@ -199,7 +190,6 @@ check("Overcooked C_env CI [0.0123,0.0156]", (round(ci[0], 4), round(ci[1], 4)),
 check("Overcooked C_env scripted 0.0005", round(e1c["noisy_scripted"]["C_env"], 4), 0.0005,
       "0.0005 [0.0004, 0.0007]")
 
-# ---------------------------------------------------------------- controllability
 lgu = load("learn_grip_utility.json")
 ro = lgu["registered_outcomes"]
 sw = {int(k): v for k, v in ro["mean_switch_by_tau"].items()}
@@ -249,7 +239,6 @@ check("Ant openness gap 0.58", round(ro["mean_openness_flipped_minus_not"], 2), 
 check("Ant permutation p < 1e-4", ro["permutation_p"] < 1e-4, True)
 check("Ant n_pairs 8372", aic["n_pairs"], 8372, "8{,}372 paired counterfactuals")
 
-# ---------------------------------------------------------------- FSS & Kuramoto
 fss = load("ant_fss.json")
 ro = fss["registered_outcomes"]
 ll = ro["log_law"]
@@ -280,12 +269,11 @@ check("Kuramoto 10/10 onsets", (sum(1 for _, _, r in runs if r["onset_pass"]), l
       (10, 10), "(10/10 onsets)")
 check("Kuramoto subcritical gated null 3/3",
       load("kuramoto_breakpoint_r2.json")["registered_outcomes"]["KURR2_2_subcritical_gated_null_3of3"],
-      True, "Every subcritical run is correctly gated null")
+      True, "Every subcritical run is gated null")
 check("Kuramoto pairwise carrier 3/3",
       load("kuramoto_breakpoint_r2.json")["registered_outcomes"]["KURR2_3_relational_carrier_3of3"],
       True, "carried by the pairwise channel (3/3 seeds")
 
-# ---------------------------------------------------------------- negatives & ring
 for f, nm in (("overcooked_state_breakpoint.json", "OC state"),
               ("overcooked_occupancy_breakpoint.json", "OC occupancy")):
     d = load(f)
@@ -347,7 +335,6 @@ check("SEMI-INJ FPR 0.01", ro["SI2_fpr_pooled"], 0.01)
 check("SEMI-INJ t* err ~1%", round(ro["SI3_median_tstar_err_frac"], 2), 0.01)
 check("SEMI-INJ power 0.88", ro["SI1_power_w_le3"], 0.88)
 
-# ---------------------------------------------------------------- SD audit
 sd = load("sd_audit.json")
 d4 = sd["results"]["SDA4_sample_complexity"]["detail"]
 e30k = max(d4["error_table"]["30000"][c]["median_abs_err"] for c in d4["error_table"]["30000"])
@@ -364,7 +351,6 @@ d2_ = sd["results"]["SDA2_off_family"]["detail"]
 mm = d2_["modular_sum"]["components"]["C_high"]
 check("Modular-sum C_high 3.32 bits", round(mm, 2), 3.32, "3.32 bits")
 
-# ---------------------------------------------------------------- contracts & repr
 rrb = load("repr_robustness.json")
 check("243-cell contract battery per system",
       all(s_["n_cells"] == 243 for s_ in rrb["systems"].values()), True)

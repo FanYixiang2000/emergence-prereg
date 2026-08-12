@@ -146,9 +146,6 @@ class ContextualDecoyEnv(DecoySwarmAbstraction):
         return feats
 
 
-# --- controllers -----------------------------------------------------------
-
-
 def rule_controller(priority: Sequence[str]):
     def controller(env: ContextualDecoyEnv, agent_id: int, candidates: List[int]) -> Optional[int]:
         for mode in priority:
@@ -176,9 +173,6 @@ def scorer_controller(scorer, sample: bool = False, rng: Optional[np.random.Gene
         return int(candidates[idx])
 
     return controller
-
-
-# --- episode rollout -------------------------------------------------------
 
 
 def run_episode(
@@ -247,9 +241,6 @@ def rollout_batch(
         context = CONTEXTS[i % len(CONTEXTS)]
         episodes.append(run_episode(controller, context, seed + i * 97, intervention))
     return episodes
-
-
-# --- REINFORCE training on the contextual env ------------------------------
 
 
 def train_marl_scorer(iters: int, batch: int, lr: float, seed: int):
@@ -371,9 +362,6 @@ def untrained_scorer(seed: int):
         return scorer(x).squeeze(-1)
 
     return forward
-
-
-# --- criterion measurement --------------------------------------------------
 
 
 def measure_system(

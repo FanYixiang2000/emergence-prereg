@@ -1,9 +1,10 @@
 # Reproduction targets for the possibility-collapse project.
 #
-#   make audit               read-only: re-check every headline number against
-#                            stored outputs and regenerate the manifest
-#   make figures             rebuild every figure from stored outputs
-#   make paper               compile the manuscript and cover letter
+#   make audit               read-only: re-check every number cited in the
+#                            manuscript against stored outputs and regenerate
+#                            the output manifest
+#   make figures             rebuild every manuscript figure from stored outputs
+#   make paper               compile the manuscript and Supplementary Information
 #   make small-reproduction  re-run the cheap exact/synthetic analyses from
 #                            scratch (no training, no downloads)
 #   make all                 audit + figures + paper
@@ -11,33 +12,24 @@
 # Full training/download pipelines are documented per experiment script and
 # in the preregistration files; they are deliberately not part of `all`.
 
-PY      ?= python
-TEXPATH ?= /home/Yixiang/texlive/2026/bin/x86_64-linux
+PY ?= python
 
 .PHONY: all audit figures paper small-reproduction
 
 all: audit figures paper
 
 audit:
-	$(PY) verify_manuscript_numbers.py
+	$(PY) verify_paper_numbers.py
+	$(PY) manuscript_numbers.py
 	$(PY) generate_manifest.py
 
 figures:
-	$(PY) generate_figure1_concept.py
-	$(PY) generate_paper_figures.py
-	$(PY) generate_robustness_figures.py
-	$(PY) generate_contextual_lbf_figure.py
-	$(PY) generate_scaling_figure.py
-	$(PY) generate_reframe_figures.py
-	$(PY) generate_overcooked_figure.py
-	$(PY) generate_calibration_figure.py
-	$(PY) assemble_main_figures.py
+	$(PY) make_figures.py
+	$(PY) make_si_tables.py
 
 paper:
-	cd paper && PATH="$(TEXPATH):$$PATH" latexmk -pdf \
-		-interaction=nonstopmode main.tex
-	cd paper && PATH="$(TEXPATH):$$PATH" latexmk -pdf \
-		-interaction=nonstopmode cover_letter.tex
+	latexmk -pdf -interaction=nonstopmode main.tex
+	latexmk -pdf -interaction=nonstopmode si.tex
 
 small-reproduction:
 	$(PY) contract_ranking_stability.py
@@ -65,4 +57,4 @@ small-reproduction:
 	$(PY) chess_discovery_referee_sensitivity.py
 	$(PY) summarize_pythia_scaling.py
 	$(PY) held_out_scaling_robustness.py
-	$(PY) verify_manuscript_numbers.py
+	$(PY) verify_paper_numbers.py

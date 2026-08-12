@@ -28,7 +28,6 @@ def load(name):
         return json.load(f)
 
 
-# ---- Nature/NMI style ----------------------------------------------------
 plt.rcParams.update({
     "font.family": "sans-serif",
     "font.sans-serif": ["Helvetica", "Arial", "DejaVu Sans"],
@@ -161,7 +160,6 @@ def fig2():
     gs2 = fig.add_gridspec(1, 3, wspace=0.45, bottom=0.075, top=0.435,
                            width_ratios=[1.15, 1.15, 1.0])
 
-    # -- a task schematic -----------------------------------------------
     ax = fig.add_subplot(gs[0])
     obj = Circle((0.5, 0.55), 0.10, facecolor="#DDDDDD", edgecolor=DARK,
                  lw=0.8, zorder=3)
@@ -186,7 +184,6 @@ def fig2():
     ax.set_aspect("equal")
     ax.axis("off")
 
-    # -- b side-openness curves (REINFORCE, 5 seeds) ---------------------
     ax = fig.add_subplot(gs[1])
     for i, (s, d) in enumerate(sorted(lgt["seeds"].items())):
         c = d["side_openness_curve"][:41]
@@ -201,7 +198,6 @@ def fig2():
     ax.legend(frameon=False, loc="center right", handlelength=1.0,
               borderaxespad=0.1)
 
-    # -- c mechanism contrast: dBIC with vs without preparation phase ----
     ax = fig.add_subplot(gs[2])
     grip_db = [b5["seeds"][s]["adj"]["hinge"]["delta_bic"]
                for s in sorted(b5["seeds"])]
@@ -220,7 +216,6 @@ def fig2():
     ax.set_ylabel("breakpoint evidence ($\\Delta$BIC)")
     ax.set_ylim(0, 58)
 
-    # -- d breakpoint location across seeds and algorithms ---------------
     ax = fig.add_subplot(gs[3])
     t_re = sorted(ext["registered_outcomes"]["t_stars"])
     t_a2c = sorted(a2c["registered_outcomes"]["t_stars"])
@@ -235,7 +230,6 @@ def fig2():
     ax.set_xlim(-0.5, 1.5)
     ax.set_ylim(10, 28)
 
-    # -- e convention formation (no designed gate) ------------------------
     ax = fig.add_subplot(gs2[0])
     grid_c = list(range(0, 4001, 25))
     for i, (s, d) in enumerate(sorted(lc["seeds"].items())):
@@ -249,7 +243,6 @@ def fig2():
     ax.set_xlim(0, 2000)
     ax.set_ylim(-0.03, 1.06)
 
-    # -- f role lock-in (no designed gate) ---------------------------------
     ax = fig.add_subplot(gs2[1])
     grid_r = list(range(0, 6001, 25))
     for i, (s, d) in enumerate(sorted(lr["seeds"].items())):
@@ -262,7 +255,6 @@ def fig2():
     ax.set_xlim(0, 2000)
     ax.set_ylim(-0.03, 1.06)
 
-    # -- g collapse precedes capability ------------------------------------
     ax = fig.add_subplot(gs2[2])
     for d in lc["seeds"].values():
         if d["adj"]["b5_onset"] and d["success_090_cross"] is not None:
@@ -300,7 +292,6 @@ def fig3():
     fig = plt.figure(figsize=(SINGLE * 1.5, 2.3))
     gs = fig.add_gridspec(1, 2, wspace=0.45)
 
-    # -- a formation axis: smooth ----------------------------------------
     ax = fig.add_subplot(gs[0])
     grid = None
     for i, (s, d) in enumerate(sorted(lgf["seeds"].items())):
@@ -316,7 +307,6 @@ def fig3():
     ax.set_xlim(0, 1200)
     ax.set_ylim(-0.03, 1.05)
 
-    # -- b fine grid -------------------------------------------------------
     ax = fig.add_subplot(gs[1])
     every = fine["config"]["save_every"]
     for i, (s, d) in enumerate(sorted(fine["seeds"].items())):
@@ -346,7 +336,6 @@ def fig4():
     gs = fig.add_gridspec(1, 4, wspace=0.75,
                           width_ratios=[1.1, 1.1, 1.0, 1.0])
 
-    # -- a stance: relational collapse -----------------------------------
     ax = fig.add_subplot(gs[0])
     ax2 = ax.twinx()
     for i, (s, d) in enumerate(sorted(lst["seeds"].items())):
@@ -362,26 +351,23 @@ def fig4():
     ax.set_ylim(0, 1.5)
     ax2.set_ylim(0, 7.3)
     ax2.axhline(7, color=BLUE, lw=0.5, ls=":")
-    ax2.text(38, 7.05, "max", color=BLUE, fontsize=5.5, ha="right")
     ax2.spines["right"].set_visible(True)
 
-    # -- b TRI-C: learned higher-order carrier ---------------------------
     ax = fig.add_subplot(gs[1])
     for i, (s, d) in enumerate(sorted(tric["seeds"].items())):
         cks = sorted(int(k) for k in d)
         ch = [d[str(c)]["ladder2_hidden"]["C_high"] for c in cks]
         cp = [d[str(c)]["ladder2_hidden"]["C_pair"] for c in cks]
-        ax.plot(cks, ch, color=PURPLE, lw=0.9)
-        ax.plot(cks, cp, color=GREY, lw=0.8)
+        ax.plot(cks, ch, color=PURPLE, lw=0.9,
+                label=r"$C_{\rm high}$" if i == 0 else None)
+        ax.plot(cks, cp, color=GREY, lw=0.8,
+                label=r"$C_{\rm pair}$" if i == 0 else None)
     ax.set_xlabel("training update")
     ax.set_ylabel("collapse component (bits)")
     ax.set_ylim(-0.04, 1.05)
-    ax.text(2000, 0.90, r"$C_{\rm high}$", color=PURPLE, fontsize=6.5,
-            ha="right")
-    ax.text(2000, 0.08, r"$C_{\rm pair}$", color="#777777", fontsize=6.5,
-            ha="right")
+    ax.legend(frameon=False, loc="upper left", fontsize=5.5,
+              handlelength=1.2)
 
-    # -- c contract relativity (TRI-C, seed mean) -------------------------
     ax = fig.add_subplot(gs[2])
     comps = ["C_individual", "C_env", "C_pair", "C_high"]
     labels = ["ind", "env", "pair", "high"]
@@ -392,20 +378,21 @@ def fig4():
     dec = np.mean([[tric["seeds"][s][max(tric["seeds"][s], key=int)]
                     ["ladder2_declared_e"][c] for c in comps]
                    for s in tric["seeds"]], axis=0)
+    leg = [r"$C_{\rm ind}$", r"$C_{\rm env}$", r"$C_{\rm pair}$",
+           r"$C_{\rm high}$"]
     for j in range(4):
-        ax.bar([0], [hid[j]], 0.55, bottom=sum(hid[:j]), color=colors[j])
+        ax.bar([0], [hid[j]], 0.55, bottom=sum(hid[:j]), color=colors[j],
+               label=leg[j])
         ax.bar([1], [dec[j]], 0.55, bottom=sum(dec[:j]), color=colors[j])
-    ax.text(0, hid[3] / 2 + sum(hid[:3]), r"$C_{\rm high}$", ha="center",
-            va="center", fontsize=6.5, color="white", fontweight="bold")
-    ax.text(1, dec[1] / 2 + dec[0], r"$C_{\rm env}$", ha="center",
-            va="center", fontsize=6.5, color=DARK, fontweight="bold")
     ax.set_xticks([0, 1])
     ax.set_xticklabels(["cues\nhidden", "cues declared\nexogenous"],
                        fontsize=5.8)
     ax.set_xlim(-0.6, 1.6)
+    ax.set_ylim(0, 1.38)
     ax.set_ylabel("collapse composition (bits)")
+    ax.legend(frameon=False, loc="upper center", fontsize=5.2, ncol=2,
+              handlelength=1.0, columnspacing=0.8, borderaxespad=0.1)
 
-    # -- d matched-product profile separation (E1-C) ----------------------
     ax = fig.add_subplot(gs[3])
     l, n = e1c["learned"], e1c["noisy_scripted"]
     vals = [l["C_env"], n["C_env"]]
@@ -438,7 +425,6 @@ def fig5():
     fig = plt.figure(figsize=(DOUBLE, 2.4))
     gs = fig.add_gridspec(1, 4, wspace=0.5, width_ratios=[1.2, 1, 1.1, 1])
 
-    # -- a intervention window vs breakpoint ------------------------------
     ax = fig.add_subplot(gs[0])
     ms = lgu["registered_outcomes"]["mean_switch_by_tau"]
     taus = sorted(int(k) for k in ms)
@@ -453,7 +439,6 @@ def fig5():
     ax.set_ylabel("switch probability")
     ax.set_ylim(0, 1.05)
 
-    # -- b predictor race (grip) ------------------------------------------
     ax = fig.add_subplot(gs[1])
     br = lgu["registered_outcomes"]["baseline_race"]
     names = ["side_open", "absx", "absv", "tau", "att"]
@@ -467,7 +452,6 @@ def fig5():
     ax.set_ylim(0.4, 1.02)
     ax.axhline(0.5, color=DARK, lw=0.5, ls=":")
 
-    # -- c matched-parameter causal contrast ------------------------------
     ax = fig.add_subplot(gs[2])
     st = lss["registered_outcomes"]["baseline_race"]
     ct = lsc["registered_outcomes"]["baseline_race"]
@@ -485,7 +469,6 @@ def fig5():
     ax.legend(frameon=False, loc="upper right", fontsize=5.5,
               handlelength=1.0)
 
-    # -- d ant per-episode conditional law --------------------------------
     ax = fig.add_subplot(gs[3])
     bins = aic["bins"]
     labels = [f"{b['bin'][0]:g}–{b['bin'][1]:g}" for b in bins]
@@ -496,7 +479,6 @@ def fig5():
         ypos = max(r + 0.008, 0.014)
         ax.text(k, ypos, f"{n:,}", fontsize=4.8, ha="center",
                 color="#666666")
-    ax.text(0, 0.045, "0 flips", fontsize=5.4, ha="center", color=DARK)
     ax.set_xticks(range(4))
     ax.set_xticklabels(labels, fontsize=5.2, rotation=25)
     ax.set_xlabel("episode openness", fontsize=6.5)
@@ -519,7 +501,6 @@ def fig6():
     fig = plt.figure(figsize=(DOUBLE, 2.7))
     gs = fig.add_gridspec(1, 3, wspace=0.45, width_ratios=[1.0, 1.0, 1.5])
 
-    # -- a finite-size scaling law ------------------------------------------
     ax = fig.add_subplot(gs[0])
     law = fss["registered_outcomes"]["log_law"]
     per = fss["per_size"]
@@ -544,7 +525,6 @@ def fig6():
     ax.legend(frameon=False, loc="upper left", handlelength=0.8,
               borderaxespad=0.1)
 
-    # -- b Kuramoto laws ----------------------------------------------------
     ax = fig.add_subplot(gs[1])
     Ks = [float(k) for k in ks["config"]["Ks"]]
     tstar = ks["registered_outcomes"]["mean_t_star"]
@@ -559,7 +539,6 @@ def fig6():
     ax2.tick_params(axis="y", colors=RED)
     ax2.spines["right"].set_visible(True)
 
-    # -- c scope: where onset lives -----------------------------------------
     ax = fig.add_subplot(gs[2])
     rows = [
         ("convention formation (no gate)", "onset", "onset"),

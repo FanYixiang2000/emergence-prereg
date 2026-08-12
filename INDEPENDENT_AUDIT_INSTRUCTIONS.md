@@ -1,6 +1,6 @@
 # Independent audit instructions (for a non-author auditor)
 
-Purpose: internal hashes, the 85-check consistency audit, the manifest
+Purpose: internal hashes, the consistency audit, the manifest
 and the ledger prove that the project's files agree with each other.
 They cannot prove the implementation is free of a shared bug. This
 document makes a fully independent audit turnkey for someone who did
@@ -17,18 +17,18 @@ the authors before finishing step 5.
 
 1. Fresh machine or container (Python 3.10+). Clone the repository.
 2. `pip install -r requirements.txt` (versions pinned).
-3. `make audit` -- must print `85/85 checks passed` and regenerate
-   `manifest.json` with hashes identical to `FINAL_FREEZE.md`.
+3. `make audit` -- `verify_paper_numbers.py` must report every check
+   passed and `generate_manifest.py` must regenerate `manifest.json`.
 4. `make figures && make paper` -- every figure and the PDF must
    regenerate from stored outputs alone (no training, no downloads).
 
 ## Step 2: random spot-check of manuscript numbers (2-3 hours)
 
-1. Pick 20 numeric claims from `paper/main.tex` at random (a claim =
+1. Pick 20 numeric claims from `main.tex` at random (a claim =
    any number with a stated source experiment).
-2. For each, trace it to its JSON in `outputs/` via
-   `CLAIM_EVIDENCE_MAP.md` and confirm the value independently (read
-   the JSON yourself; do not use `verify_manuscript_numbers.py`).
+2. For each, trace it to its JSON in `outputs/` and confirm the value
+   independently (read the JSON yourself; do not use
+   `verify_paper_numbers.py`).
 3. Record any mismatch verbatim.
 
 ## Step 3: independent reimplementation of the core quantity (2-4 hours)
