@@ -1,0 +1,178 @@
+[
+ {
+  "seed": 95101,
+  "ckpt": 960000,
+  "scale": 0.25,
+  "openness_at_perturbation": 0.20062,
+  "orig_dir": 1,
+  "unperturbed_final_soups": 2.6,
+  "final_p_ccw": 0.9688,
+  "final_soups": 2.1333,
+  "outcome": "held"
+ },
+ {
+  "seed": 95101,
+  "ckpt": 960000,
+  "scale": 0.5,
+  "openness_at_perturbation": 0.20062,
+  "orig_dir": 1,
+  "unperturbed_final_soups": 2.6,
+  "final_p_ccw": 0.9688,
+  "final_soups": 1.6667,
+  "outcome": "held"
+ },
+ {
+  "seed": 95202,
+  "ckpt": 960000,
+  "scale": 0.25,
+  "openness_at_perturbation": 0.95096,
+  "orig_dir": 1,
+  "unperturbed_final_soups": 1.1333,
+  "final_p_ccw": 0.9688,
+  "final_soups": 0.8,
+  "outcome": "held"
+ },
+ {
+  "seed": 95202,
+  "ckpt": 960000,
+  "scale": 0.5,
+  "openness_at_perturbation": 0.95096,
+  "orig_dir": 1,
+  "unperturbed_final_soups": 1.1333,
+  "final_p_ccw": 0.9688,
+  "final_soups": 0.8667,
+  "outcome": "held"
+ },
+ {
+  "seed": 95303,
+  "ckpt": 960000,
+  "scale": 0.25,
+  "openness_at_perturbation": 0.9629,
+  "orig_dir": -1,
+  "unperturbed_final_soups": 1.7667,
+  "final_p_ccw": 0.0312,
+  "final_soups": 0.5333,
+  "outcome": "held"
+ },
+ {
+  "seed": 95303,
+  "ckpt": 960000,
+  "scale": 0.5,
+  "openness_at_perturbation": 0.9629,
+  "orig_dir": -1,
+  "unperturbed_final_soups": 1.7667,
+  "final_p_ccw": 0.0312,
+  "final_soups": 0.6,
+  "outcome": "held"
+ },
+ {
+  "seed": 95606,
+  "ckpt": 960000,
+  "scale": 0.25,
+  "openness_at_perturbation": 0.20062,
+  "orig_dir": 1,
+  "unperturbed_final_soups": 2.8,
+  "final_p_ccw": 0.9688,
+  "final_soups": 2.2667,
+  "outcome": "held"
+ },
+ {
+  "seed": 95606,
+  "ckpt": 960000,
+  "scale": 0.5,
+  "openness_at_perturbation": 0.20062,
+  "orig_dir": 1,
+  "unperturbed_final_soups": 2.8,
+  "final_p_ccw": 0.9688,
+  "final_soups": 2.2,
+  "outcome": "held"
+ },
+ {
+  "seed": 95707,
+  "ckpt": 960000,
+  "scale": 0.25,
+  "openness_at_perturbation": 0.99864,
+  "orig_dir": 1,
+  "unperturbed_final_soups": 2.5333,
+  "final_p_ccw": 0.9333,
+  "final_soups": 0.6,
+  "outcome": "held"
+ },
+ {
+  "seed": 95707,
+  "ckpt": 960000,
+  "scale": 0.5,
+  "openness_at_perturbation": 0.99864,
+  "orig_dir": 1,
+  "unperturbed_final_soups": 2.5333,
+  "final_p_ccw": 0.9688,
+  "final_soups": 1.0,
+  "outcome": "held"
+ },
+ {
+  "seed": 95808,
+  "ckpt": 960000,
+  "scale": 0.25,
+  "openness_at_perturbation": 0.33729,
+  "orig_dir": -1,
+  "unperturbed_final_soups": 2.9,
+  "final_p_ccw": 0.0312,
+  "final_soups": 1.5667,
+  "outcome": "held"
+ },
+ {
+  "seed": 95808,
+  "ckpt": 960000,
+  "scale": 0.5,
+  "openness_at_perturbation": 0.33729,
+  "orig_dir": -1,
+  "unperturbed_final_soups": 2.9,
+  "final_p_ccw": 0.0312,
+  "final_soups": 2.0667,
+  "outcome": "held"
+ },
+ {
+  "seed": 95909,
+  "ckpt": 960000,
+  "scale": 0.25,
+  "openness_at_perturbation": 0.20062,
+  "orig_dir": 1,
+  "unperturbed_final_soups": 2.6,
+  "final_p_ccw": 0.9688,
+  "final_soups": 2.1667,
+  "outcome": "held"
+ },
+ {
+  "seed": 95909,
+  "ckpt": 960000,
+  "scale": 0.5,
+  "openness_at_perturbation": 0.20062,
+  "orig_dir": 1,
+  "unperturbed_final_soups": 2.6,
+  "final_p_ccw": 0.9688,
+  "final_soups": 2.0333,
+  "outcome": "held"
+ },
+ {
+  "seed": 96010,
+  "ckpt": 960000,
+  "scale": 0.25,
+  "openness_at_perturbation": 0.20062,
+  "orig_dir": 1,
+  "unperturbed_final_soups": 2.9,
+  "final_p_ccw": 0.9688,
+  "final_soups": 2.6333,
+  "outcome": "held"
+ },
+ {
+  "seed": 96010,
+  "ckpt": 960000,
+  "scale": 0.5,
+  "openness_at_perturbation": 0.20062,
+  "orig_dir": 1,
+  "unperturbed_final_soups": 2.9,
+  "final_p_ccw": 0.9688,
+  "final_soups": 2.7333,
+  "outcome": "held"
+ }
+]

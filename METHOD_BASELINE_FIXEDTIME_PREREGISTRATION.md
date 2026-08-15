@@ -178,3 +178,64 @@ OCF1 passes, the manuscript's controllability claim is upgraded from
 "fixed-time comparison in the standard benchmark itself". If OCF1
 fails, the result is reported as a registered miss alongside the
 existing time-confound caveat.
+
+---
+
+# Registered outcomes (appended after the runs; nothing above edited)
+
+## MB outcomes (2026-08-15, outputs/method_baseline_battery.json)
+
+- MB1 PASS: ladder 72/72 (1.00) vs composite 54/72 (0.75).
+- MB2 PASS, with a bookkeeping correction: the factorial has 18
+  environment-driven cells (72/4), not 24 as miswritten above; the
+  composite misassigned 18/18 (all to "pairwise", the common-cause
+  signature the toolkit cannot separate without the contract's
+  declared conditioning).
+- MB3 PASS: max difference of joint entropy, TC and pairwise MI
+  across central_script / common_cause / local_feedback = 0.0
+  (exactly, by construction); contract verdicts differ
+  (local_feedback accepted, both external mechanisms rejected).
+- MB4 PASS: R1 accepts external_mask and external_overwrite, both of
+  which the instrument rejects as exogenous. The parenthetical
+  prediction above named the revelation/metric controls; those have
+  zero entropy amplitude and are rejected by R1 as well, so the named
+  detail was wrong even though the clause passed. R1 also accepts
+  0/72 true positives (an uncalibrated absolute threshold has no
+  operating point on this family).
+- MB5 PASS: binseg-RBF-gain power 1.00 but FPR 1.00 on knee and 1.00
+  on gradual; CUSUM power 1.00 but FPR 1.00 on knee. The instrument's
+  stored reference rates: power 1.00, FPR 0.00 on knee/gradual/flat.
+
+## KUR-N10 outcomes (2026-08-15, outputs/kuramoto_scale_n10.json)
+
+- KN1 PASS: 50/50 onset passes; K=0.9 consistent via the
+  latest-onset branch (mean t* 6.64, later than every higher-K mean).
+- KN2 PASS: strict monotone mean t* 6.64 -> 5.50 -> 3.24 -> 2.38 ->
+  1.80; Spearman rho = -0.99, permutation p = 1e-5 (100,000
+  permutations; the clause said "exact p", implemented as a seeded
+  permutation test).
+- KN3 PASS: strict monotone mean post-slope 0.030 -> 0.065 -> 0.100
+  -> 0.151 -> 0.197; rho = 0.98, permutation p = 1e-5.
+- KN4: per-K bootstrap CIs recorded in the output; manuscript numbers
+  updated to the 10-seed means.
+
+## OC-RING-FIXT outcomes (2026-08-15, outputs/oc_ring_fixed_time.json)
+
+- OCF1 REGISTERED MISS: movable 0/3 open seeds vs 0/5 committed
+  seeds; Fisher p = 1.0. No run moved (0/16).
+- OCF2: 0/6 vs 0/10, p = 1.0.
+- OCF3 FAIL (vacuous): no positive class; AUC undefined.
+- OCF4: vacuously satisfied (no strict flips anywhere).
+- OCF5: AUC undefined for the same reason. Open seeds had lower task
+  performance at T_FIX (0.27-0.53 soups) than committed seeds
+  (0.53-1.9), so maturity does not explain the null.
+- Interpretation recorded at outcome time: every perturbed
+  continuation, including the three behaviourally open seeds
+  (openness 0.95-1.00 at 960k), re-converged to its seed's eventual
+  direction. Together with OC-RING-INT (strict flips occurred only at
+  per-seed late-open checkpoints, 1.20-1.34M steps, under
+  sparse-only reward), this says the redirectable window is set by
+  the seed's own commitment dynamics, not by behavioural openness
+  read at a fixed calendar step: direction is parameter-committed
+  before it is behaviourally visible. The manuscript reports this
+  miss and the refined interpretation explicitly.

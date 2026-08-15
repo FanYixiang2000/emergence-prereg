@@ -1,0 +1,261 @@
+{
+ "status": "OC-RING-FIXT fixed-time causal commitment test; all seeds perturbed at the same training step; registered in METHOD_BASELINE_FIXEDTIME_PREREGISTRATION.md before run",
+ "config": {
+  "t_fix": 960000,
+  "open_threshold": 0.5,
+  "resume_steps": 400000,
+  "noise_scales": [
+   0.25,
+   0.5
+  ],
+  "commit_margin": 0.3
+ },
+ "baselines_at_tfix": {
+  "95101": {
+   "mean_soups_at_tfix": 1.2667,
+   "p_ccw_at_tfix": 0.9688,
+   "openness_at_tfix": 0.20062
+  },
+  "95202": {
+   "mean_soups_at_tfix": 0.5333,
+   "p_ccw_at_tfix": 0.6296,
+   "openness_at_tfix": 0.95096
+  },
+  "95303": {
+   "mean_soups_at_tfix": 0.3667,
+   "p_ccw_at_tfix": 0.3871,
+   "openness_at_tfix": 0.9629
+  },
+  "95606": {
+   "mean_soups_at_tfix": 0.6667,
+   "p_ccw_at_tfix": 0.9688,
+   "openness_at_tfix": 0.20062
+  },
+  "95707": {
+   "mean_soups_at_tfix": 0.2667,
+   "p_ccw_at_tfix": 0.4783,
+   "openness_at_tfix": 0.99864
+  },
+  "95808": {
+   "mean_soups_at_tfix": 0.8667,
+   "p_ccw_at_tfix": 0.0625,
+   "openness_at_tfix": 0.33729
+  },
+  "95909": {
+   "mean_soups_at_tfix": 1.6,
+   "p_ccw_at_tfix": 0.9688,
+   "openness_at_tfix": 0.20062
+  },
+  "96010": {
+   "mean_soups_at_tfix": 1.9,
+   "p_ccw_at_tfix": 0.9688,
+   "openness_at_tfix": 0.20062
+  }
+ },
+ "runs": [
+  {
+   "seed": 95101,
+   "ckpt": 960000,
+   "scale": 0.25,
+   "openness_at_perturbation": 0.20062,
+   "orig_dir": 1,
+   "unperturbed_final_soups": 2.6,
+   "final_p_ccw": 0.9688,
+   "final_soups": 2.1333,
+   "outcome": "held"
+  },
+  {
+   "seed": 95101,
+   "ckpt": 960000,
+   "scale": 0.5,
+   "openness_at_perturbation": 0.20062,
+   "orig_dir": 1,
+   "unperturbed_final_soups": 2.6,
+   "final_p_ccw": 0.9688,
+   "final_soups": 1.6667,
+   "outcome": "held"
+  },
+  {
+   "seed": 95202,
+   "ckpt": 960000,
+   "scale": 0.25,
+   "openness_at_perturbation": 0.95096,
+   "orig_dir": 1,
+   "unperturbed_final_soups": 1.1333,
+   "final_p_ccw": 0.9688,
+   "final_soups": 0.8,
+   "outcome": "held"
+  },
+  {
+   "seed": 95202,
+   "ckpt": 960000,
+   "scale": 0.5,
+   "openness_at_perturbation": 0.95096,
+   "orig_dir": 1,
+   "unperturbed_final_soups": 1.1333,
+   "final_p_ccw": 0.9688,
+   "final_soups": 0.8667,
+   "outcome": "held"
+  },
+  {
+   "seed": 95303,
+   "ckpt": 960000,
+   "scale": 0.25,
+   "openness_at_perturbation": 0.9629,
+   "orig_dir": -1,
+   "unperturbed_final_soups": 1.7667,
+   "final_p_ccw": 0.0312,
+   "final_soups": 0.5333,
+   "outcome": "held"
+  },
+  {
+   "seed": 95303,
+   "ckpt": 960000,
+   "scale": 0.5,
+   "openness_at_perturbation": 0.9629,
+   "orig_dir": -1,
+   "unperturbed_final_soups": 1.7667,
+   "final_p_ccw": 0.0312,
+   "final_soups": 0.6,
+   "outcome": "held"
+  },
+  {
+   "seed": 95606,
+   "ckpt": 960000,
+   "scale": 0.25,
+   "openness_at_perturbation": 0.20062,
+   "orig_dir": 1,
+   "unperturbed_final_soups": 2.8,
+   "final_p_ccw": 0.9688,
+   "final_soups": 2.2667,
+   "outcome": "held"
+  },
+  {
+   "seed": 95606,
+   "ckpt": 960000,
+   "scale": 0.5,
+   "openness_at_perturbation": 0.20062,
+   "orig_dir": 1,
+   "unperturbed_final_soups": 2.8,
+   "final_p_ccw": 0.9688,
+   "final_soups": 2.2,
+   "outcome": "held"
+  },
+  {
+   "seed": 95707,
+   "ckpt": 960000,
+   "scale": 0.25,
+   "openness_at_perturbation": 0.99864,
+   "orig_dir": 1,
+   "unperturbed_final_soups": 2.5333,
+   "final_p_ccw": 0.9333,
+   "final_soups": 0.6,
+   "outcome": "held"
+  },
+  {
+   "seed": 95707,
+   "ckpt": 960000,
+   "scale": 0.5,
+   "openness_at_perturbation": 0.99864,
+   "orig_dir": 1,
+   "unperturbed_final_soups": 2.5333,
+   "final_p_ccw": 0.9688,
+   "final_soups": 1.0,
+   "outcome": "held"
+  },
+  {
+   "seed": 95808,
+   "ckpt": 960000,
+   "scale": 0.25,
+   "openness_at_perturbation": 0.33729,
+   "orig_dir": -1,
+   "unperturbed_final_soups": 2.9,
+   "final_p_ccw": 0.0312,
+   "final_soups": 1.5667,
+   "outcome": "held"
+  },
+  {
+   "seed": 95808,
+   "ckpt": 960000,
+   "scale": 0.5,
+   "openness_at_perturbation": 0.33729,
+   "orig_dir": -1,
+   "unperturbed_final_soups": 2.9,
+   "final_p_ccw": 0.0312,
+   "final_soups": 2.0667,
+   "outcome": "held"
+  },
+  {
+   "seed": 95909,
+   "ckpt": 960000,
+   "scale": 0.25,
+   "openness_at_perturbation": 0.20062,
+   "orig_dir": 1,
+   "unperturbed_final_soups": 2.6,
+   "final_p_ccw": 0.9688,
+   "final_soups": 2.1667,
+   "outcome": "held"
+  },
+  {
+   "seed": 95909,
+   "ckpt": 960000,
+   "scale": 0.5,
+   "openness_at_perturbation": 0.20062,
+   "orig_dir": 1,
+   "unperturbed_final_soups": 2.6,
+   "final_p_ccw": 0.9688,
+   "final_soups": 2.0333,
+   "outcome": "held"
+  },
+  {
+   "seed": 96010,
+   "ckpt": 960000,
+   "scale": 0.25,
+   "openness_at_perturbation": 0.20062,
+   "orig_dir": 1,
+   "unperturbed_final_soups": 2.9,
+   "final_p_ccw": 0.9688,
+   "final_soups": 2.6333,
+   "outcome": "held"
+  },
+  {
+   "seed": 96010,
+   "ckpt": 960000,
+   "scale": 0.5,
+   "openness_at_perturbation": 0.20062,
+   "orig_dir": 1,
+   "unperturbed_final_soups": 2.9,
+   "final_p_ccw": 0.9688,
+   "final_soups": 2.7333,
+   "outcome": "held"
+  }
+ ],
+ "registered_outcomes": {
+  "T_FIX": 960000,
+  "open_seeds": [
+   95202,
+   95303,
+   95707
+  ],
+  "committed_seeds": [
+   95101,
+   95606,
+   95808,
+   95909,
+   96010
+  ],
+  "OCF1_movable_open": "0/3",
+  "OCF1_movable_committed": "0/5",
+  "OCF1_seed_fisher_p": 1.0,
+  "OCF1_pass": false,
+  "OCF2_moved_open_runs": "0/6",
+  "OCF2_moved_committed_runs": "0/10",
+  "OCF2_run_fisher_p": 1.0,
+  "OCF3_auc_openness": null,
+  "OCF3_pass": false,
+  "OCF4_strict_flips_open": 0,
+  "OCF4_strict_flips_committed": 0,
+  "OCF4_flips_only_in_open": true,
+  "OCF5_auc_soups_deficit": null
+ }
+}

@@ -1,0 +1,158 @@
+{
+  "status": "MB method-baseline battery; rival definitions frozen in METHOD_BASELINE_FIXEDTIME_PREREGISTRATION.md before run; same data as the instrument",
+  "composite_on_factorial": {
+    "composite_accuracy": 0.75,
+    "n_correct": 54,
+    "confusion": {
+      "C_individual": {
+        "C_individual": 18
+      },
+      "C_env": {
+        "C_pair": 18
+      },
+      "C_pair": {
+        "C_pair": 18
+      },
+      "C_high": {
+        "C_high": 18
+      }
+    },
+    "env_cells": 18,
+    "env_misassigned": 18
+  },
+  "amplitude_rule": {
+    "true_cells_accepted": "0/72",
+    "controls": {
+      "external_mask": {
+        "M": 0.6652285125255144,
+        "R1_accepts": true
+      },
+      "external_overwrite": {
+        "M": 0.9471365148033973,
+        "R1_accepts": true
+      },
+      "revelation_only": {
+        "M": 0.0,
+        "R1_accepts": false
+      },
+      "metric_artifact": {
+        "M": 0.0,
+        "R1_accepts": false
+      },
+      "transient_sync": {
+        "M": 0.18263302132104595,
+        "R1_accepts": false
+      }
+    },
+    "controls_accepted_by_R1": [
+      "external_mask",
+      "external_overwrite"
+    ]
+  },
+  "matched_confound": {
+    "functionals": {
+      "central_script": {
+        "H_joint": 3.169925001442312,
+        "marginal_entropies": [
+          1.584962500721156,
+          1.584962500721156,
+          1.584962500721156
+        ],
+        "TC": 1.584962500721156,
+        "pair_MI": 0.0
+      },
+      "common_cause": {
+        "H_joint": 3.169925001442312,
+        "marginal_entropies": [
+          1.584962500721156,
+          1.584962500721156,
+          1.584962500721156
+        ],
+        "TC": 1.584962500721156,
+        "pair_MI": 0.0
+      },
+      "local_feedback": {
+        "H_joint": 3.169925001442312,
+        "marginal_entropies": [
+          1.584962500721156,
+          1.584962500721156,
+          1.584962500721156
+        ],
+        "TC": 1.584962500721156,
+        "pair_MI": 0.0
+      }
+    },
+    "max_functional_diff": 0.0,
+    "contract_verdicts": {
+      "central_script": false,
+      "common_cause": false,
+      "local_feedback": true
+    },
+    "functionals_identical": true,
+    "verdicts_differ": true
+  },
+  "changepoint_rivals": {
+    "rivals": {
+      "binseg_rbf_gain": {
+        "threshold_95_flat": 2.4546850260968234,
+        "detection_rates": {
+          "onset": 1.0,
+          "knee": 1.0,
+          "gradual": 1.0,
+          "scurve": 1.0,
+          "flat": 0.07
+        },
+        "power_onset": 1.0,
+        "fpr_by_family": {
+          "knee": 1.0,
+          "gradual": 1.0,
+          "flat": 0.07
+        },
+        "passes_both": false
+      },
+      "cusum": {
+        "threshold_95_flat": 0.33743645186374105,
+        "detection_rates": {
+          "onset": 1.0,
+          "knee": 1.0,
+          "gradual": 0.05,
+          "scurve": 1.0,
+          "flat": 0.06
+        },
+        "power_onset": 1.0,
+        "fpr_by_family": {
+          "knee": 1.0,
+          "gradual": 0.05,
+          "flat": 0.06
+        },
+        "passes_both": false
+      }
+    },
+    "instrument_reference_rates": {
+      "onset": 1.0,
+      "knee": 0.0,
+      "gradual": 0.0,
+      "scurve": 0.995,
+      "flat": 0.0
+    }
+  },
+  "registered_outcomes": {
+    "MB1_ladder_accuracy": 1.0,
+    "MB1_composite_accuracy": 0.75,
+    "MB1_pass": true,
+    "MB2_env_misassigned": "18/18",
+    "MB2_pass": true,
+    "MB2_note": "preregistration wrote 24 environment cells; the factorial has 18 per source (72/4); clause evaluated on the 18",
+    "MB3_max_functional_diff": 0.0,
+    "MB3_pass": true,
+    "MB4_controls_accepted_by_R1": [
+      "external_mask",
+      "external_overwrite"
+    ],
+    "MB4_pass": true,
+    "MB4_note": "accepted controls are the two external takeovers, which carry real amplitude; the revelation/metric controls named in the prereg prediction have zero entropy amplitude and are rejected by R1 too -- prediction detail recorded as partially wrong",
+    "MB5_binseg_passes_both": false,
+    "MB5_cusum_passes_both": false,
+    "MB5_pass": true
+  }
+}

@@ -1,0 +1,137 @@
+K=0.9 seed 82001: gate=True onset_pass=True t*=6.6 slope_after=-0.026784
+K=0.9 seed 82002: gate=True onset_pass=True t*=6.8 slope_after=-0.036602
+K=0.9 seed 82003: gate=True onset_pass=True t*=6.6 slope_after=-0.020239
+K=0.9 seed 82004: gate=True onset_pass=True t*=6.6 slope_after=-0.032376
+K=0.9 seed 82005: gate=True onset_pass=True t*=6.6 slope_after=-0.030821
+K=0.9 seed 82006: gate=True onset_pass=True t*=6.6 slope_after=-0.023132
+K=0.9 seed 82007: gate=True onset_pass=True t*=6.6 slope_after=-0.032477
+K=0.9 seed 82008: gate=True onset_pass=True t*=6.4 slope_after=-0.018708
+K=0.9 seed 82009: gate=True onset_pass=True t*=6.8 slope_after=-0.038037
+K=0.9 seed 82010: gate=True onset_pass=True t*=6.8 slope_after=-0.043912
+K=1.1 seed 82001: gate=True onset_pass=True t*=5.4 slope_after=-0.062627
+K=1.1 seed 82002: gate=True onset_pass=True t*=5.4 slope_after=-0.069728
+K=1.1 seed 82003: gate=True onset_pass=True t*=5.8 slope_after=-0.055368
+K=1.1 seed 82004: gate=True onset_pass=True t*=5.4 slope_after=-0.066881
+K=1.1 seed 82005: gate=True onset_pass=True t*=5.4 slope_after=-0.066469
+K=1.1 seed 82006: gate=True onset_pass=True t*=5.8 slope_after=-0.058221
+K=1.1 seed 82007: gate=True onset_pass=True t*=5.4 slope_after=-0.068622
+K=1.1 seed 82008: gate=True onset_pass=True t*=5.8 slope_after=-0.054236
+K=1.1 seed 82009: gate=True onset_pass=True t*=5.4 slope_after=-0.070964
+K=1.1 seed 82010: gate=True onset_pass=True t*=5.2 slope_after=-0.073713
+K=1.5 seed 82001: gate=True onset_pass=True t*=3.2 slope_after=-0.100502
+K=1.5 seed 82002: gate=True onset_pass=True t*=3.2 slope_after=-0.101239
+K=1.5 seed 82003: gate=True onset_pass=True t*=3.2 slope_after=-0.094151
+K=1.5 seed 82004: gate=True onset_pass=True t*=3.2 slope_after=-0.100906
+K=1.5 seed 82005: gate=True onset_pass=True t*=3.2 slope_after=-0.103265
+K=1.5 seed 82006: gate=True onset_pass=True t*=3.4 slope_after=-0.095661
+K=1.5 seed 82007: gate=True onset_pass=True t*=3.2 slope_after=-0.103618
+K=1.5 seed 82008: gate=True onset_pass=True t*=3.4 slope_after=-0.094851
+K=1.5 seed 82009: gate=True onset_pass=True t*=3.2 slope_after=-0.102099
+K=1.5 seed 82010: gate=True onset_pass=True t*=3.2 slope_after=-0.107392
+K=2.0 seed 82001: gate=True onset_pass=True t*=2.4 slope_after=-0.150831
+K=2.0 seed 82002: gate=True onset_pass=True t*=2.4 slope_after=-0.150148
+K=2.0 seed 82003: gate=True onset_pass=True t*=2.4 slope_after=-0.150325
+K=2.0 seed 82004: gate=True onset_pass=True t*=2.4 slope_after=-0.150972
+K=2.0 seed 82005: gate=True onset_pass=True t*=2.2 slope_after=-0.148454
+K=2.0 seed 82006: gate=True onset_pass=True t*=2.4 slope_after=-0.144513
+K=2.0 seed 82007: gate=True onset_pass=True t*=2.4 slope_after=-0.156338
+K=2.0 seed 82008: gate=True onset_pass=True t*=2.4 slope_after=-0.14477
+K=2.0 seed 82009: gate=True onset_pass=True t*=2.4 slope_after=-0.156335
+K=2.0 seed 82010: gate=True onset_pass=True t*=2.4 slope_after=-0.157006
+K=2.5 seed 82001: gate=True onset_pass=True t*=1.8 slope_after=-0.19925
+K=2.5 seed 82002: gate=True onset_pass=True t*=1.8 slope_after=-0.199578
+K=2.5 seed 82003: gate=True onset_pass=True t*=1.8 slope_after=-0.198408
+K=2.5 seed 82004: gate=True onset_pass=True t*=1.8 slope_after=-0.192592
+K=2.5 seed 82005: gate=True onset_pass=True t*=1.8 slope_after=-0.199705
+K=2.5 seed 82006: gate=True onset_pass=True t*=1.8 slope_after=-0.191191
+K=2.5 seed 82007: gate=True onset_pass=True t*=1.8 slope_after=-0.19986
+K=2.5 seed 82008: gate=True onset_pass=True t*=1.8 slope_after=-0.191029
+K=2.5 seed 82009: gate=True onset_pass=True t*=1.8 slope_after=-0.199376
+K=2.5 seed 82010: gate=True onset_pass=True t*=1.8 slope_after=-0.199962
+{
+  "KN1_existence": true,
+  "KN1_nearcritical_consistent": true,
+  "KN2_strict_mean_monotone": true,
+  "KN2_spearman_rho": -0.9907061868127681,
+  "KN2_perm_p": 9.99990000099999e-06,
+  "KN2_pass": true,
+  "KN3_strict_mean_monotone": true,
+  "KN3_spearman_rho": 0.9799919151000506,
+  "KN3_perm_p": 9.99990000099999e-06,
+  "KN3_pass": true,
+  "passing_K": [
+    0.9,
+    1.1,
+    1.5,
+    2.0,
+    2.5
+  ],
+  "per_K_summary": {
+    "0.9": {
+      "n_pass": 10,
+      "mean_t_star": 6.639999999999999,
+      "ci_t_star": [
+        6.56,
+        6.719999999999999
+      ],
+      "mean_post_slope": 0.030308799999999997,
+      "ci_post_slope": [
+        0.025640005,
+        0.035069735
+      ]
+    },
+    "1.1": {
+      "n_pass": 10,
+      "mean_t_star": 5.5,
+      "ci_t_star": [
+        5.38,
+        5.639999999999999
+      ],
+      "mean_post_slope": 0.0646829,
+      "ci_post_slope": [
+        0.06059486249999999,
+        0.06858856
+      ]
+    },
+    "1.5": {
+      "n_pass": 10,
+      "mean_t_star": 3.2399999999999998,
+      "ci_t_star": [
+        3.2,
+        3.3
+      ],
+      "mean_post_slope": 0.10036839999999998,
+      "ci_post_slope": [
+        0.09785137749999999,
+        0.10279421250000001
+      ]
+    },
+    "2.0": {
+      "n_pass": 10,
+      "mean_t_star": 2.38,
+      "ci_t_star": [
+        2.3399999999999994,
+        2.3999999999999995
+      ],
+      "mean_post_slope": 0.15096919999999997,
+      "ci_post_slope": [
+        0.1483667625,
+        0.1535795
+      ]
+    },
+    "2.5": {
+      "n_pass": 10,
+      "mean_t_star": 1.8,
+      "ci_t_star": [
+        1.8,
+        1.8
+      ],
+      "mean_post_slope": 0.19709510000000002,
+      "ci_post_slope": [
+        0.194668395,
+        0.19919760250000002
+      ]
+    }
+  }
+}
+Wrote /home/Yixiang/MPARL/GOGOGO/outputs/kuramoto_scale_n10.json
