@@ -1,500 +1,434 @@
 {
-  "generated_utc": "2026-08-12T12:31:49.076561+00:00",
+  "generated_utc": "2026-08-15T06:09:51.253427+00:00",
   "python": "3.13.9 | packaged by Anaconda, Inc. | (main, Oct 21 2025, 19:16:10) [GCC 11.2.0]",
-  "claims": [
+  "manuscript": [
+    "main.tex",
+    "si.tex"
+  ],
+  "consumers": {
+    "number_audit": "verify_paper_numbers.py",
+    "figures": "make_figures.py",
+    "si_tables": "make_si_tables.py"
+  },
+  "dependencies": [
     {
-      "claim_id": "CLBF-CONF",
-      "tier": 1,
-      "description": "Second full six-component domain: 9/10 learned, 40/40 controls",
-      "script": "contextual_lbf_transfer.py",
-      "output": "contextual_lbf_confirmation_analysis.json",
-      "output_sha256": "de66bef1d14d16ffa82c9406314093233b6a530de379de12154f39581f29433f"
+      "output": "ant_conditional_leverage.json",
+      "sha256": "ab47f16d887f1dd7ea412e93c2747f618956f51a5270e1c685abcc229897a950",
+      "generating_script": "ant_conditional_leverage.py",
+      "read_by": [
+        "number_audit",
+        "figures"
+      ]
     },
     {
-      "claim_id": "LM-CONF",
-      "tier": 1,
-      "description": "Third full domain (sequence): 10/10 learned, 40/40 controls",
-      "script": "latent_context_lm.py",
-      "output": "latent_context_lm_confirmation.json",
-      "output_sha256": "0f298fdf36a550ec1f30fb83c3d9acd3f02d94f57cd95134f19a08faa5147a3a"
+      "output": "ant_fss.json",
+      "sha256": "85c5851285c38300ce70713f7e4649bacbcdf03688cba7b47f0f1b6b9715613e",
+      "generating_script": "ant_fss.py",
+      "read_by": [
+        "number_audit",
+        "figures",
+        "si_tables"
+      ]
     },
     {
-      "claim_id": "SWARM-CONF",
-      "tier": 1,
-      "description": "External swarm confirmation 25/25",
-      "script": "refined_criterion_confirmation.py",
-      "output": "refined_confirmation_summary.json",
-      "output_sha256": "551d7626aa6cadc3cfc770e1d08efa679a7cfc530bde865ed220eb85f0af8413"
+      "output": "barrier_xplay.json",
+      "sha256": "cea21375090c839e5905f9666d7f3ad74d74334b2829cb7ec4400625da8e2f43",
+      "generating_script": "barrier_xplay.py",
+      "read_by": [
+        "number_audit"
+      ]
     },
     {
-      "claim_id": "DISC-MAIN",
-      "tier": 1,
-      "description": "Prospective discovery 4/4 (AUROC 0.730)",
-      "script": "chess_discovery_probe.py",
-      "output": "chess_discovery_main.json",
-      "output_sha256": "4ee0589604cfaacc287f5384160724777e18adcb958634341ce39d3785d35d7d"
+      "output": "bench72_factorial.json",
+      "sha256": "1fc622b2a7d13194c505c8f34869799b76140e0cee037180bc27f51fe5df56e8",
+      "generating_script": "bench72_factorial.py",
+      "read_by": [
+        "number_audit",
+        "figures"
+      ]
     },
     {
-      "claim_id": "DISC-REP",
-      "tier": 2,
-      "description": "Discovery replication, second year, 4/4 (AUROC 0.725)",
-      "script": "chess_discovery_probe.py",
-      "output": "chess_discovery_replication_2016_03.json",
-      "output_sha256": "be177a7c19f973fdc8b7e2b7532dbe07f323905363f12cfe02625ea47a21084d"
+      "output": "ceb_vicsek_dense.json",
+      "sha256": "fe604f56593447eff9b3ae9508e99530cb63042f4e516d75861b4e01fa14ea18",
+      "generating_script": "ceb_vicsek_dense.py",
+      "read_by": [
+        "figures"
+      ]
     },
     {
-      "claim_id": "DISC-XEVAL",
-      "tier": 2,
-      "description": "Classical-vs-NNUE cross-evaluation referee",
-      "script": "chess_discovery_cross_engine.py",
-      "output": "chess_discovery_cross_engine.json",
-      "output_sha256": "84722eeb22e376ea6ce5c63836e164001985d239df9774728b6662680d66c045"
+      "output": "collapse_source_decomposition.json",
+      "sha256": "398e2090ad9f937f1d6f4c1b2bd6fd2f02093da9709999ee1450fb797b8afad4",
+      "generating_script": "collapse_source_decomposition.py",
+      "read_by": [
+        "number_audit",
+        "figures"
+      ]
     },
     {
-      "claim_id": "SCALE",
-      "tier": 2,
-      "description": "Pythia scaling 160m-2.8B with registered S1/S5/S7 failures",
-      "script": "summarize_pythia_scaling.py",
-      "output": "pythia_scaling_summary.json",
-      "output_sha256": "f22be1949bd8026a280342a823080543ef9066c54976583b7aeefcfb581a5d9f"
+      "output": "detector_validation.json",
+      "sha256": "43c0e26905062d7c5448f3c4d5c9cd204cffc6f9f35a94f7033f162545429e1b",
+      "generating_script": "detector_validation.py",
+      "read_by": [
+        "number_audit",
+        "si_tables"
+      ]
     },
     {
-      "claim_id": "MARL-SEEDS",
-      "tier": 2,
-      "description": "Combined seed-level MARL inference p=0.016/0.004",
-      "script": "hierarchical_marl_analysis.py",
-      "output": "hierarchical_marl_analysis_combined.json",
-      "output_sha256": "7ca0158b69bc779e16bc38f9bb66d0e2c1978bf58d6acc2249d6a20b54682c81"
+      "output": "emergence_certificates.json",
+      "sha256": "a8569da602528508de5fcef94bcbddda73f7e357699cb95175fc9cf897f9ad22",
+      "generating_script": "emergence_certificate.py",
+      "read_by": [
+        "si_tables"
+      ]
     },
     {
-      "claim_id": "PERSIST",
-      "tier": 2,
-      "description": "Persistence: dual retention curves + boundary",
-      "script": "contextual_lbf_persistence.py",
-      "output": "persistence_retention_curves.json",
-      "output_sha256": "c0edc4a19347e0687fa159d503b48463074a1e69eaab71aa6134ac7a752daf19"
+      "output": "kuramoto_breakpoint_r2.json",
+      "sha256": "36b4a37ece159765e8c9c86a761011e13f3be2fa485b0590db332da41dab9c56",
+      "generating_script": "kuramoto_breakpoint_r2.py",
+      "read_by": [
+        "number_audit"
+      ]
     },
     {
-      "claim_id": "LM-GEN",
-      "tier": 2,
-      "description": "Sequence generalization audit (LG1-LG3)",
-      "script": "latent_context_generalization.py",
-      "output": "latent_context_generalization.json",
-      "output_sha256": "2b3de0b17d48743c1b7fc635b494887a485c6f07c45d1dca9b3e71b5e8859d92"
+      "output": "kuramoto_offdesign_ladder.json",
+      "sha256": "20d98aa1b60d246122c10980ab4ee60a2e04f3450878f32ebd0915d7c6c67da3",
+      "generating_script": "kuramoto_offdesign_ladder.py",
+      "read_by": [
+        "figures"
+      ]
     },
     {
-      "claim_id": "CHESS-EVENT",
-      "tier": 1,
-      "description": "Curated chess event-level do-gap 0.539",
-      "script": "chess_collapse_probe.py",
-      "output": "chess_collapse_main_summary.json",
-      "output_sha256": "54e66ab393667b32fc2b98c78113f871e02483d37b6c9d24e7ca244880f7695f"
+      "output": "kuramoto_scale.json",
+      "sha256": "0a4954ba38baa0936ce2f6eb9d2d9057d019a75d1e6a56b67b6a41c741cac8a2",
+      "generating_script": "kuramoto_scale.py",
+      "read_by": [
+        "number_audit",
+        "figures",
+        "si_tables"
+      ]
     },
     {
-      "claim_id": "PHASE",
-      "tier": 2,
-      "description": "Phase-boundary forecast 11/12",
-      "script": "phase_boundary_prediction.py",
-      "output": "phase_boundary_multiseed.json",
-      "output_sha256": "a76e59266ef9ba49f5f79bf4bdfd5003aeb89a2b5f749f71f1f200ccfc6da269"
+      "output": "learn_convention.json",
+      "sha256": "30c0766ae74b190006a18681fe47c409345a28c8f4bb49367fed4fa32d14c876",
+      "generating_script": "learn_convention.py",
+      "read_by": [
+        "number_audit",
+        "figures",
+        "si_tables"
+      ]
     },
     {
-      "claim_id": "OBS-AUDIT",
-      "tier": 3,
-      "description": "Adversarial observer audit, learned side",
-      "script": "adversarial_observer_audit.py",
-      "output": "adversarial_observer_audit.json",
-      "output_sha256": "b69b8ef03b96d919b401bc489f5a1f4946b8f482eed32b67f9e63a47624302c9"
+      "output": "learn_grip_a2c.json",
+      "sha256": "e066f42ef659392e52b8fc704e9b1b170f177197f660e8feddf3e587cefd74b9",
+      "generating_script": "learn_grip_a2c.py",
+      "read_by": [
+        "number_audit",
+        "figures",
+        "si_tables"
+      ]
     },
     {
-      "claim_id": "OBS-NULL",
-      "tier": 3,
-      "description": "Full-verdict null, control side (0/13000)",
-      "script": "adversarial_observer_controls.py",
-      "output": "adversarial_observer_controls.json",
-      "output_sha256": "3c3c13e898f201e8a40a54639280db66003c97cbe1c06e5136eff42c4fd1924c"
+      "output": "learn_grip_confound.json",
+      "sha256": "45bb63e53ed1697bcae907a14701c94159b7af0b1ff2f916bae4cb9012876d05",
+      "generating_script": "learn_grip_confound.py",
+      "read_by": [
+        "number_audit"
+      ]
     },
     {
-      "claim_id": "ORD-LEARN",
-      "tier": 3,
-      "description": "Ordinary-learner boundary probe (proxy scope)",
-      "script": "ordinary_learner_control.py",
-      "output": "ordinary_learner_control.json",
-      "output_sha256": "8c5af19a7c0f3d7e650157b8c530726c5e8ccc29021ce74e46ad593aff96a6bb"
+      "output": "learn_grip_ext.json",
+      "sha256": "1b7e6dac1f209d28c93a9a3d50807c0d58faf5306d320726172d4e4c2cc22f66",
+      "generating_script": "learn_grip_ext.py",
+      "read_by": [
+        "number_audit",
+        "figures"
+      ]
     },
     {
-      "claim_id": "CAP-NOVELTY",
-      "tier": 2,
-      "description": "Capability novelty boundary: ordinary rejected, grokking/induction accepted",
-      "script": "capability_novelty_boundary.py",
-      "output": "capability_novelty_boundary.json",
-      "output_sha256": "40dd2d22e6703f935ab1269983bd2e10990a1464ee1166962b33831c6af4e95a"
+      "output": "learn_grip_formation.json",
+      "sha256": "cc64147eeb46dd31ebd6a7a3cf2bf30c0aff78c0ecc498e3b6bd8d5ac61da103",
+      "generating_script": "learn_grip_formation.py",
+      "read_by": [
+        "number_audit",
+        "figures"
+      ]
     },
     {
-      "claim_id": "BURST-BOUND",
-      "tier": 2,
-      "description": "Burst-collapse boundary: evidence channel, not definition",
-      "script": "burst_boundary_audit.py",
-      "output": "burst_boundary_audit.json",
-      "output_sha256": "43635c8d0539e10e47009e3b2217c773839bb0c6b7fd7398372b3e3f5629e08f"
+      "output": "learn_grip_formation_fine.json",
+      "sha256": "bae59e8ac854c02bfdaba3618e266cfc214086d5c4a3f5d87dfef2c41c570f4b",
+      "generating_script": "learn_grip_formation_fine.py",
+      "read_by": [
+        "number_audit",
+        "figures"
+      ]
     },
     {
-      "claim_id": "COUPLING",
-      "tier": 3,
-      "description": "Exact trajectory-basin coupling",
-      "script": "trajectory_basin_coupling.py",
-      "output": "trajectory_basin_coupling.json",
-      "output_sha256": "55fb64c996e607358070daabab29c1614e62d487cec015d21cefd1b422aad751"
+      "output": "learn_grip_policy.json",
+      "sha256": "3a0b9e1cc279ffa1c56b0e6f84fe35ad3970229f6e339604fb01dc82c46f528d",
+      "generating_script": "learn_grip_policy.py",
+      "read_by": [
+        "number_audit"
+      ]
     },
     {
-      "claim_id": "KL-XCHECK",
-      "tier": 4,
-      "description": "Chain rule vs enumeration cross-implementation",
-      "script": "verify_trajectory_kl_implementation.py",
-      "output": "trajectory_kl_implementation_check.json",
-      "output_sha256": "c0bef02aba347cd358a11e16cac5a8a01308e7d4632b2ff9cd318186530b81ff"
+      "output": "learn_grip_transport.json",
+      "sha256": "f0ad67bc61d9071f93c10614cc19bf9bf2efb93c8212cf16cadc0c818bbc9c6c",
+      "generating_script": "learn_grip_transport.py",
+      "read_by": [
+        "number_audit",
+        "figures"
+      ]
     },
     {
-      "claim_id": "ABLATION",
-      "tier": 3,
-      "description": "Leave-one-component-out + witness matrix",
-      "script": "component_witness_matrix.py",
-      "output": "component_witness_matrix.json",
-      "output_sha256": "ea61192606fc33bb44b5323d568dfc8229e271fb961b8fe9ffdf7a3d6b8b0fc4"
+      "output": "learn_grip_transport_b5.json",
+      "sha256": "8864a498ddbe50c7d2ddf4a6753ade05785b46be30294a10230d4ac41161b161",
+      "generating_script": "learn_grip_transport_b5.py",
+      "read_by": [
+        "number_audit",
+        "figures",
+        "si_tables"
+      ]
     },
     {
-      "claim_id": "HASH-14B",
-      "tier": 4,
-      "description": "Pythia 1.4B revision hash audit (21 distinct)",
-      "script": "verify_pythia_checkpoints.py",
-      "output": "pythia_1.4b_checkpoint_hashes.json",
-      "output_sha256": "1c1189d5203f4b582c7fd5532b84ea6a686e30581ea445fda3cc6d72779dd429"
+      "output": "learn_grip_utility.json",
+      "sha256": "49ae2fba662cb7cf7ca82e831293730d670414f38e243f3525237fef36c7ad5c",
+      "generating_script": "learn_grip_utility.py",
+      "read_by": [
+        "number_audit",
+        "figures"
+      ]
     },
     {
-      "claim_id": "HASH-28B",
-      "tier": 4,
-      "description": "Pythia 2.8B hash audit (upstream defects found)",
-      "script": "verify_pythia_checkpoints.py",
-      "output": "pythia_2.8b_checkpoint_hashes.json",
-      "output_sha256": "ddcfdea211b2c6c01bfdec6059d8e3d5acf457ad6981dfb2bb51da2d9a999a37"
+      "output": "learn_nn_resolution.json",
+      "sha256": "42ce49cf810f6e51748dafddc14c0a9be0f2cf8f4b3996d2859ea92e7036dd36",
+      "generating_script": "learn_nn_resolution.py",
+      "read_by": [
+        "number_audit",
+        "si_tables"
+      ]
     },
     {
-      "claim_id": "NUM-AUDIT",
-      "tier": 4,
-      "description": "Manuscript-number consistency audit",
-      "script": "verify_manuscript_numbers.py"
+      "output": "learn_quorum_breakpoint.json",
+      "sha256": "716021c638d951d5c8cebd73ff52ee6109eafe43ba95f2b3cb7b7530a0c4c572",
+      "generating_script": "learn_quorum_breakpoint.py",
+      "read_by": [
+        "number_audit"
+      ]
     },
     {
-      "claim_id": "FAIR-BASE",
-      "tier": 2,
-      "description": "Fair multivariate baselines: frozen transfer <= 0.9, all miss latent_conditional",
-      "script": "fair_baseline_comparison.py",
-      "output": "fair_baseline_comparison.json",
-      "output_sha256": "a3f54fa876fd6542469ac77b7ae64be15c0becab700b8a2f3d9f503b53fa3386"
+      "output": "learn_roles.json",
+      "sha256": "a120528404b55780cb7fe780d847296a7d533434b0ade59a3adfb7ea80662af2",
+      "generating_script": "learn_roles.py",
+      "read_by": [
+        "number_audit",
+        "figures",
+        "si_tables"
+      ]
     },
     {
-      "claim_id": "DUAL-OBS",
-      "tier": 2,
-      "description": "Dual plausible observer contracts: 60/60 controls, 14/15 structural agreement, 5 conservative value flips (DO-1/DO-3 misses)",
-      "script": "dual_observer_contracts.py",
-      "output": "dual_observer_contracts.json",
-      "output_sha256": "9d265fd7972ca1a63a23b97d720f423f5a9da25c8f8ca4e688685950a3a0910a"
+      "output": "learn_stance_control.json",
+      "sha256": "798c1fe83ffa3f2dc7b667aa6a162ac7d24792cab0febf99329f16ae3b95ae8c",
+      "generating_script": "learn_stance_control.py",
+      "read_by": [
+        "number_audit",
+        "figures"
+      ]
     },
     {
-      "claim_id": "REALIZED",
-      "tier": 3,
-      "description": "Engine-free realized-outcome referee: direction consistent, registered interaction null (RO-1 miss)",
-      "script": "chess_realized_outcome.py",
-      "output": "chess_realized_outcome.json",
-      "output_sha256": "67b46da2369f20bf8523cd22645a94b29e1d25d6110330f940abd739fd76ee0c"
+      "output": "learn_stance_sticky.json",
+      "sha256": "52c3e098957ccef64db170ffcfe0c0a2393ca79e4b9e84b28f4fe6d9b7ad5220",
+      "generating_script": "learn_stance_sticky.py",
+      "read_by": [
+        "number_audit",
+        "figures"
+      ]
     },
     {
-      "claim_id": "STRENGTH",
-      "tier": 2,
-      "description": "Emergence-strength gradient: provenance rarity 0 < 0.39 < 0.65 bits at matched competence (ST-3 suddenness miss retained)",
-      "script": "strength_gradient_battery.py",
-      "output": "strength_gradient_battery.json",
-      "output_sha256": "ddb0ed3bb9e57c7f8405547d784a3ba1ed8f71b7acf130f676dc2af88b2df8c7"
+      "output": "learn_stance_transport.json",
+      "sha256": "0a0c2f5ecedf455d95a862e806d7accf239ed11231a15c20d576b69f0fd16d67",
+      "generating_script": "learn_stance_transport.py",
+      "read_by": [
+        "figures"
+      ]
     },
     {
-      "claim_id": "STRENGTH-FINE",
-      "tier": 3,
-      "description": "Fine-grid follow-up: discovery ~2x later for outcome-only provenance",
-      "script": "strength_gradient_fine.py",
-      "output": "strength_gradient_fine.json",
-      "output_sha256": "56f1f5ea4e7f4d8595bc74463d16d192bc01b3d1c588957ed7437c65e6ebf7bd"
+      "output": "learn_transport_equivariant_slow.json",
+      "sha256": "dcfc22a01a3afd52d97426ec2ff8ee56d9e674504f22416b2db5697d85de0e28",
+      "generating_script": "learn_transport_equivariant_slow.py",
+      "read_by": [
+        "figures"
+      ]
     },
     {
-      "claim_id": "CLUSTER",
-      "tier": 4,
-      "description": "Mover-cluster bootstrap of discovery AUROC excludes 0.5 both months",
-      "script": "chess_clustered_inference.py",
-      "output": "chess_clustered_inference.json",
-      "output_sha256": "22c47f74554126423677709b9285d5a8d551343c5f24c8d61682d138c1a64e0f"
+      "output": "oc_ring_ext.json",
+      "sha256": "ab7e4b4fcfb3fe71f6da8862a188ce670fc5e3d7d01e88e9fa4daf8d4bd868a8",
+      "generating_script": "oc_ring_ext.py",
+      "read_by": [
+        "number_audit",
+        "si_tables"
+      ]
     },
     {
-      "claim_id": "LEARNED-BASIN",
-      "tier": 2,
-      "description": "Machine-discovered basins reproduce CLBF verdicts: 60/60 controls, 14/15 learned, 74/75 agreement",
-      "script": "learned_basin_clbf.py",
-      "output": "learned_basin_clbf.json",
-      "output_sha256": "4e91368a1791be02b007f76b8cd899f44aaac5e51f17116173529622fc190c27"
+      "output": "oc_ring_intervention.json",
+      "sha256": "67695b81cb7aa31a6adbcbf605dc894c21144f03a08a3eb395bc11e129be21bc",
+      "generating_script": "oc_ring_intervention.py",
+      "read_by": [
+        "number_audit"
+      ]
     },
     {
-      "claim_id": "ROLLOUT",
-      "tier": 2,
-      "description": "Rollout-model audit: openness survives near-greedy decoding 15/15; diffuse-model IR-2 miss retained",
-      "script": "independent_rollout_audit.py",
-      "output": "independent_rollout_audit.json",
-      "output_sha256": "cdfaf0420768676cf3eb9c444d8ee2a77d2cd81f10c967f10b441d846c3dc6dc"
+      "output": "oc_ring_realization.json",
+      "sha256": "202f79cd5b79b998d7c49b557d2f1d03a972857b3d0acb9456acdbaea86ad1cc",
+      "generating_script": "oc_ring_realization.py",
+      "read_by": [
+        "number_audit"
+      ]
     },
     {
-      "claim_id": "TOGA",
-      "tier": 3,
-      "description": "Different-lineage referee TG-1 retained miss (weak-referee label noise)",
-      "script": "chess_discovery_toga_referee.py",
-      "output": "chess_discovery_toga_referee.json",
-      "output_sha256": "e9a1c4504a9d09c5fbeb07b91f1f79aa13d52bad7998b045a92a835d20972271"
+      "output": "oci_seed_level.json",
+      "sha256": "1b233341933124cbbb17ba2a72c93f9f44f1c84261dc8894caaeac24c6764e44",
+      "generating_script": "oci_seed_level.py",
+      "read_by": [
+        "number_audit"
+      ]
     },
     {
-      "claim_id": "XFIT-BASIN",
-      "tier": 1,
-      "description": "Cross-fitted low-level basin discovery: 4 methods, mean verdict agreement 0.957, controls 60/60 each",
-      "script": "crossfit_lowlevel_basins.py",
-      "output": "crossfit_lowlevel_basins.json",
-      "output_sha256": "2f52a978232759119588bd9a5f9068e2bcf54b1278022a73b97bb26bef584f8c"
+      "output": "overcooked_occupancy_breakpoint.json",
+      "sha256": "2f965ca171bf7e53a40858c09a71cf493514f430dd71218aeeb921a818a125cc",
+      "generating_script": "overcooked_occupancy_breakpoint.py",
+      "read_by": [
+        "number_audit"
+      ]
     },
     {
-      "claim_id": "HARMFUL",
-      "tier": 2,
-      "description": "Learned harmful emergence: structural pass, U_private +7.5 / U_team -2.0, 5/5 seeds",
-      "script": "learned_harmful_emergence.py",
-      "output": "learned_harmful_emergence.json",
-      "output_sha256": "7ce378b514d70725e4f6193e60e1258c67a0351e4e728016928ae995cdce6575"
+      "output": "overcooked_profile_confirmatory.json",
+      "sha256": "76e72a2d83e0fa1b1ea0199e21576e7d652de084e827c2c6f06bb862343c274f",
+      "generating_script": "overcooked_profile_confirmatory.py",
+      "read_by": [
+        "number_audit",
+        "figures"
+      ]
     },
     {
-      "claim_id": "MATCHED-PROV",
-      "tier": 2,
-      "description": "Matched-behaviour provenance: clone counterfactually distinguishable; rarity 0.33<0.39<0.65",
-      "script": "matched_provenance.py",
-      "output": "matched_provenance.json",
-      "output_sha256": "ab71b31e3f09d16976bee817d44745b93697787d3b32f903860a5402b4484e8c"
+      "output": "overcooked_ring_convention.json",
+      "sha256": "85084568747778336323982e7ec216c25268555be151719337f1040f7d1e70d4",
+      "generating_script": "overcooked_ring_convention.py",
+      "read_by": [
+        "number_audit",
+        "si_tables"
+      ]
     },
     {
-      "claim_id": "PHASE-2D",
-      "tier": 1,
-      "description": "Prospective 2-D phase surface: 14/15 non-fragile cells match (P2D-1 one-cell miss retained); non-rectangular as derived",
-      "script": "phase_2d_prediction.py",
-      "output": "phase_2d_prediction.json",
-      "output_sha256": "59265ca4930ab5294941ea9c9de2ac09275dd81bf43e5d3845b229728bd6a0e1"
+      "output": "overcooked_state_breakpoint.json",
+      "sha256": "c2f3714d30c40fe7d94d2aac166c9621d20b9143e4ca8af519658ed2fb89c730",
+      "generating_script": "overcooked_state_breakpoint.py",
+      "read_by": [
+        "number_audit"
+      ]
     },
     {
-      "claim_id": "ENSEMBLE",
-      "tier": 2,
-      "description": "Contract ensemble: controls 420/420 invariant negative; learned mean R 0.87",
-      "script": "contract_ensemble_analysis.py",
-      "output": "contract_ensemble_analysis.json",
-      "output_sha256": "9cd4ef88d1140a226fed3ce1e453e1710766e09b74a8f0989a3164e5dd6c0e96"
+      "output": "regime_discovery_audit.json",
+      "sha256": "868738ec97304eb3f25f171c4127b7b0fd8a719d3442cc57d5e1db846b7ec594",
+      "generating_script": "regime_discovery_audit.py",
+      "read_by": [
+        "number_audit",
+        "si_tables"
+      ]
     },
     {
-      "claim_id": "WM-CLOSURE",
-      "tier": 2,
-      "description": "World-model closure: WM1/WM2 pass; WM3 ensemble-spread proxy bias-blind (retained miss)",
-      "script": "world_model_closure.py",
-      "output": "world_model_closure.json",
-      "output_sha256": "6e092b24b3978a26ad10d8245e315080e3e5aac5d4447cc74361ac8a77da9bf4"
+      "output": "regime_discovery_audit2.json",
+      "sha256": "cbf33f7bc6cf9e70d2f02d033bd936bafa3d386a87e874179e46b8e674b753e5",
+      "generating_script": "regime_discovery_audit2.py",
+      "read_by": [
+        "number_audit",
+        "si_tables"
+      ]
     },
     {
-      "claim_id": "WM-FOLLOWUP",
-      "tier": 3,
-      "description": "Coverage-augmented rule: 20/20 mismatches caught, conservative at K=20000",
-      "script": "world_model_closure_followup.py",
-      "output": "world_model_closure_followup.json",
-      "output_sha256": "eac5bd273f4fc021c26b3a949694ab0c8fb2ccaeaee759697bc8272c8ab96f26"
+      "output": "regime_ensemble_audit.json",
+      "sha256": "44c0ef2ae7da2cbf287c194e6984c8949f280c188f576fde48af67f720520821",
+      "generating_script": "regime_ensemble_audit.py",
+      "read_by": [
+        "number_audit",
+        "si_tables"
+      ]
     },
     {
-      "claim_id": "BRIDGE",
-      "tier": 4,
-      "description": "Collapse-bridge identity (Prop. B) machine-verified",
-      "script": "verify_bridge_identity.py",
-      "output": "bridge_identity_verification.json",
-      "output_sha256": "9e2c304ded0a062deb244c4885acb95fd7716a1ac5c0645b44c074bd515193dd"
+      "output": "regime_ensemble_audit2.json",
+      "sha256": "fdcf5c7e10d6e17b9464e833108db77b793bda11cf75eb16c4c2ebaca0964675",
+      "generating_script": "regime_ensemble_audit2.py",
+      "read_by": [
+        "number_audit",
+        "si_tables"
+      ]
     },
     {
-      "claim_id": "CALIBRATION",
-      "tier": 2,
-      "description": "Continuous-profile construct calibration: orthogonality (corrected rule; original rank rule retained miss) + dose-response Spearman 1.0",
-      "script": "profile_calibration.py",
-      "output": "profile_calibration.json",
-      "output_sha256": "946fb2de132cd17639ad704981932023625ee4518633190db1844e750c5748f9"
+      "output": "repr_equiv_convention.json",
+      "sha256": "2f9756eebc2bc6e1e68d675508bb43fde44e0405e4e33b69d56655ccc9c9d320",
+      "generating_script": "repr_equiv_convention.py",
+      "read_by": [
+        "number_audit",
+        "si_tables"
+      ]
     },
     {
-      "claim_id": "PROFILES",
-      "tier": 2,
-      "description": "Taxonomy continuous profiles separate along declared axes (5/5 checks)",
-      "script": "profile_existing_systems.py",
-      "output": "profile_existing_systems.json",
-      "output_sha256": "88d1ff7a34c687810c839782d92e7b8bc9dcb44e0d56396d474618bba82cf127"
+      "output": "repr_equiv_grip.json",
+      "sha256": "33d7d9447368cc7f2eac808768601b30eeef8492f785647e55c3048367496eee",
+      "generating_script": "repr_equiv_grip.py",
+      "read_by": [
+        "number_audit",
+        "si_tables"
+      ]
     },
     {
-      "claim_id": "RANK-STABILITY",
-      "tier": 3,
-      "description": "Cross-contract E_struct ranking rho 0.76; RS-2 structure-only separation retained miss; E_adapt 15/15",
-      "script": "contract_ranking_stability.py",
-      "output": "contract_ranking_stability.json",
-      "output_sha256": "f0d8943e36391e3787cba7d1b7f57bb317fd9c58c61cf863aa1d44efa8b352f5"
+      "output": "repr_robustness.json",
+      "sha256": "55a2159e25d065c6a76e426aa705dfa696505a3de1f7eefd4c3301bf0a86f98d",
+      "generating_script": "repr_robustness.py",
+      "read_by": [
+        "number_audit",
+        "si_tables"
+      ]
     },
     {
-      "claim_id": "PRED-VALIDITY",
-      "tier": 3,
-      "description": "Early-magnitude prediction battery PV-1..3 retained misses; early value axis 0.81 (descriptive)",
-      "script": "predictive_validity.py",
-      "output": "predictive_validity.json",
-      "output_sha256": "410d4303a6e362c4d2ac1ba4ba32d3a9d6d546a4efbab3d39cd115aee45fce73"
+      "output": "sd_audit.json",
+      "sha256": "074512dfcc3d77181afe47946ff0d55cd15f8ddf24d36d02ec7c8a8032486665",
+      "generating_script": "sd_audit.py",
+      "read_by": [
+        "number_audit"
+      ]
     },
     {
-      "claim_id": "OVERCOOKED",
-      "tier": 1,
-      "description": "Public third-party environment, externally timestamped preregistration: OC-1..5 all passed (learned 8/12, controls 48/48 rejected, useful+ 12/12 p=2.4e-4)",
-      "script": "overcooked_aggregate.py",
-      "output": "overcooked_confirmation_pooled.json",
-      "output_sha256": "a2d2ab07094e021e1b3f207019da0d8bb1030884c1d89a162769f584e9d63b85"
+      "output": "semi_inject.json",
+      "sha256": "1e599bad358008f8e4ee4a60364b8aaefbb76dda52aa312fdf7e360b445716e2",
+      "generating_script": "semi_inject.py",
+      "read_by": [
+        "number_audit"
+      ]
     },
     {
-      "claim_id": "GENERATOR-CAL",
-      "tier": 2,
-      "description": "Six-knob ground-truth generator: sensitivity matrix diagonally dominant (GC-1), nullity/value/provenance separability pass; GC-2 retained miss with disclosed follow-up",
-      "script": "generator_calibration.py",
-      "output": "generator_calibration.json",
-      "output_sha256": "f2a40b3871ba44497d7a2e43f1a08ecf93142707942b6fef9c2a2c424c558af1"
+      "output": "tri_c_breakpoint.json",
+      "sha256": "2bbda6870ab9442d4e8889397f3f9641b3d4779bcc622a2e17ee65c362edf985",
+      "generating_script": "tri_c_breakpoint.py",
+      "read_by": [
+        "number_audit"
+      ]
     },
     {
-      "claim_id": "AXIOMS",
-      "tier": 4,
-      "description": "Continuous-record axioms A1-A8 machine-verified",
-      "script": "verify_record_axioms.py",
-      "output": "record_axioms_verification.json",
-      "output_sha256": "1cb507936eb59a77338b20ab006f8e2d35488a360a86500f4d5d4b129babb0a2"
+      "output": "tri_c_breakpoint_ext.json",
+      "sha256": "2e9b1ff018d815534953ced5691f570682a975ee4c7856bddf2e27cd5217976d",
+      "generating_script": "tri_c_breakpoint_ext.py",
+      "read_by": [
+        "number_audit"
+      ]
     },
     {
-      "claim_id": "CONVERGENT",
-      "tier": 3,
-      "description": "Convergent validity: CV-1 pass (matched structure prediction 0.56 vs -0.09); CV-2/3 retained misses",
-      "script": "convergent_validity.py",
-      "output": "convergent_validity.json",
-      "output_sha256": "f49706d2eb69917747bf1c2afd20feb8148beffcca729d31f0a22f33573f5429"
-    },
-    {
-      "claim_id": "OC-PROFILES",
-      "tier": 3,
-      "description": "Overcooked continuous profiles: rejected learned seeds rank strictly below accepted (0.653 < 0.695), controls all zero, read-only",
-      "script": "overcooked_profiles.py",
-      "output": "overcooked_profiles.json",
-      "output_sha256": "3967311ddfb9a66b70128991a6c97ee3077258d035de2071023d415e4b5d8d64"
-    },
-    {
-      "claim_id": "OC-TRANSITION",
-      "tier": 3,
-      "description": "Overcooked real-vs-ghost transition scaffold: state-level smoke passes; no learned flagship claim",
-      "script": "overcooked_transition_certificate.py",
-      "output": "overcooked_transition_certificate_smoke_scripted.json",
-      "output_sha256": "b3ff4442a486a77f7bf5ba9d2432e12902bf862f424d72b759153b83c8450648"
-    },
-    {
-      "claim_id": "OC-TRANS-PILOT",
-      "tier": 3,
-      "description": "Overcooked learned transition pilots: 40k/500k boundary, 2M single-seed pilot positive",
-      "script": "overcooked_transition_pilot_audit.py",
-      "output": "overcooked_transition_pilot_audit.json",
-      "output_sha256": "0ee878d85cf26217b6aad10656df7fb71fbea54a900171611aff400e1cf234c1"
-    },
-    {
-      "claim_id": "CROWD",
-      "tier": 2,
-      "description": "Collective-control domain (crowd voting): 50/50 controls rejected with declared routes; do-block reproduces the historical counterfactual 10/10; CR-1 (7/10) and CR-5 retained misses; two design pilots quarantined",
-      "script": "crowd_vote_domain.py",
-      "output": "crowd_vote_domain.json",
-      "output_sha256": "04e23bf1a5878dba8841bb16e4d777a08cefdda2b26b9570e214c8a833e0faf4"
-    },
-    {
-      "claim_id": "BIFURCATION",
-      "tier": 2,
-      "description": "Convention bifurcation: selective fraction 0.1->0.9 across the measured value-gap sign change; gap sign predicts majority basin 4/5; BF-4 retained miss (basin decided late)",
-      "script": "convention_bifurcation.py",
-      "output": "convention_bifurcation.json",
-      "output_sha256": "12639c1c898396bd894267269248ce4830e2f5d7fed25ee4ac90f60519bcf9de"
-    },
-    {
-      "claim_id": "META-COLLAPSE",
-      "tier": 3,
-      "description": "Population convention space never collapses (stable 26/22/2 bifurcation); MC-2/3/4 retained misses; hard signature exposed as jitter artifact",
-      "script": "meta_collapse_commitment.py",
-      "output": "meta_collapse_commitment.json",
-      "output_sha256": "5d174fdb0649a358bd25ce08c32ed997532c8c0af54b4262e8830da24a1b7a82"
-    },
-    {
-      "claim_id": "META-MARGINS",
-      "tier": 3,
-      "description": "Soft-margin follow-up: basin decided in the open-ground state 24/24 (no overlap), late and stochastic; F-1 retained miss",
-      "script": "meta_collapse_margins.py",
-      "output": "meta_collapse_margins.json",
-      "output_sha256": "c6cf83ced08ab3e5aace20dbe6d5019192568b9d92558baac152c6369b4656d2"
-    },
-    {
-      "claim_id": "SPATIAL-BRIDGE",
-      "tier": 4,
-      "description": "Proposition S machine-verified: spatial collapse = total correlation; linear N-growth of the open space; scripts attain the maximum (provenance-blind)",
-      "script": "verify_spatial_bridge.py",
-      "output": "spatial_bridge_verification.json",
-      "output_sha256": "bae1dfbedd85e80086e220ac9e21c33faedce171b8a69487419bb062ce771a59"
-    },
-    {
-      "claim_id": "EXEMPLARS",
-      "tier": 2,
-      "description": "Canonical exemplars (Boids/Schelling/Life): CE-1..5 all pass; structural-not-adaptive classification with measured reasons; Life at the substrate boundary exactly",
-      "script": "canonical_exemplars.py",
-      "output": "canonical_exemplars.json",
-      "output_sha256": "2ff34c71bb85715d6bdfde06a281bb7e06116adbc21219c0c78dbc694dce28c0"
-    },
-    {
-      "claim_id": "UNIVERSAL-OBS",
-      "tier": 1,
-      "description": "One semantics-free possibility-space recipe, identical code across domains: battery 8/9 (positives accepted), crowd 18/18 + 15/15 controls, CLBF stored 95.7%; two disclosed run-1 corrections",
-      "script": "universal_observer.py",
-      "output": "universal_observer.json",
-      "output_sha256": "fa343f59fe13b96bf6a2bf214257c2d64ed857719b340b2e4f163ddc2aae4823"
-    },
-    {
-      "claim_id": "UNIVERSAL-OC",
-      "tier": 2,
-      "description": "Universal recipe on public Overcooked: 19/20 agreement, 16/16 controls; U-4c retained miss (coarser partitions are conservative, never manufacture acceptance)",
-      "script": "overcooked_universal_observer.py",
-      "output": "overcooked_universal_observer.json",
-      "output_sha256": "d3d4933b51bf61a53c57cc3ed150e4a6941821d11e53611d2efa199792a046b1"
-    },
-    {
-      "claim_id": "LIVE-DEMO",
-      "tier": 2,
-      "description": "Blind accuracy: 24 hidden random knob vectors recovered at Spearman 0.96-0.999 per matched dimension; live five-system verdict walkthrough correct; LD-2 raw rule retained miss (undeclared partial leakage below permutation null, p=0.65)",
-      "script": "live_demonstration.py",
-      "output": "live_demonstration.json",
-      "output_sha256": "4270296273496a474f90a1234df2caf149cce11f28c5722bae1d902b369060d9"
-    },
-    {
-      "claim_id": "PROMOTE",
-      "tier": 2,
-      "description": "Emergence-promoting selection: optimizing the record raises convention acquisition 0.39->0.78 at no value cost, beating value-selection 0.53 (PE-1..3 all pass)",
-      "script": "emergence_promoting_selection.py",
-      "output": "emergence_promoting_selection.json",
-      "output_sha256": "6db56c77ac526d46a3f798f3a32042207add99d650fe291424f88ada9095d0fb"
-    },
-    {
-      "claim_id": "COORDINATES",
-      "tier": 1,
-      "description": "Emergence coordinates: analytic per-dimension truths recovered (EC-1); frozen thresholds transfer blind to Kuramoto/Life/learned conventions matching literature labels 4/4 (EC-2); adversarial matrix 8/8 on predicted dimensions (EC-3); three runs of spec errors caught by the battery's own exact computations, retained",
-      "script": "emergence_coordinates.py",
-      "output": "emergence_coordinates.json",
-      "output_sha256": "2b833994a9d80f79f0cdac819b78266d38851ba5f599ee79f3e6c204a2ea100d"
+      "output": "triad_highorder_cue.json",
+      "sha256": "523b7a2cf6798b7991a6fb4dc1061c5f1f8c503691f9f8e68dd6ca12c74b0ad4",
+      "generating_script": "triad_highorder_cue.py",
+      "read_by": [
+        "number_audit",
+        "figures"
+      ]
     }
   ],
   "invalid_data_registry": [
@@ -555,7 +489,8 @@
     "THEORY.md": "7db373c02a57167f13983917373a44ad23050c5f410cdaaa393e010f4677f8b2",
     "ANALYSIS_FREEZE.md": "fd37e9b36abe51c43ad9da11f2f37c0546c268c1ecc8e88c83b64133dbb6897d",
     "CLAIM_EVIDENCE_MAP.md": "90fac83fefd61a47ab4459155501698c554d2f22b3ed7b0e1f24b8febc626c12",
-    "REPRODUCIBILITY.md": "93494167112023060f31b6e8da3192d1dc906c3a0664d8e6b40ac3cfa0861682",
+    "REPRODUCIBILITY.md": "e0a7682d1bcf72afdc9d4611de5e432616189cf168ebc506851b2a03cc3d65a6",
+    "INDEPENDENT_AUDIT_INSTRUCTIONS.md": "6eb1559fafe1ae60c39fb05259d3c673885d0af5b313638202e423bbdb4eb449",
     "INVALID_DATA_REGISTRY.md": "09d07c808c1b0aca7fcb30c161b468d3e4c864fb4fa302ea22758aba8f3e8024",
     "NMI_READINESS_AUDIT.md": "e2e068034047ed4754d381159a9936dfcd20d544e628f0d4ee1f1c86acaa6cba",
     "EVIDENCE_AUDIT.md": "737fe6d318709b18707d3f262e8fb5916a48271f70f0a4949f8f5e04c1d83c23"
@@ -989,5 +924,5 @@
     "within_episode_sweep_ci.csv": "17d051ccf89cadee10478e1e2ab3b0e7446773b6e58886c601a9f349d93f3559",
     "within_episode_sweep_per_seed.csv": "b1ad2d3569e63a49efaa3ac60dc14e9e9eac40c7f7a289f55aeb23aff1f7259f"
   },
-  "git_commit": "a7b26afe504de1f802550e5b38f28ed8f244856a"
+  "git_commit": "0365686497006c6772f5270d8db9eddf66b452d4"
 }
