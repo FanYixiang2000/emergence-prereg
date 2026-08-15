@@ -239,3 +239,60 @@ existing time-confound caveat.
   read at a fixed calendar step: direction is parameter-committed
   before it is behaviourally visible. The manuscript reports this
   miss and the refined interpretation explicitly.
+
+---
+
+# Protocol RDC: discovered-regime controllability (frozen 2026-08-15, appended after the three protocols above were complete; nothing above edited)
+
+Script: `learn_grip_discovery_utility.py` ->
+`outputs/learn_grip_discovery_utility.json`.
+
+Question: the regime-discovery audit showed that a fixed k-means
+recipe recovers a two-cluster regime variable in the grip system
+(k = 2 in 5/5 seeds, the left/right side split) but that the
+discovered openness curve's temporal shape fails the onset gate.
+The construct-validity question that matters is functional: with the
+analyst removed, does the machine-discovered regime variable still
+carry the controllability information? This protocol races the
+discovered openness against the declared side-openness on the same
+intervention outcomes.
+
+### Design (all components frozen; no new tuning anywhere)
+
+- Grip seeds, training, intervention grid (taus 5, 10, 14, 16, 18,
+  20, 24, 30), kick parameters and evaluation batch are byte-identical
+  to LEARN-GRIP-UTILITY.
+- Discovery recipe is byte-identical to the REGIME-DISCOVERY audit's
+  grip arm: 2,048 fresh rollouts per seed, k-means on the raw
+  80-step position traces, k chosen by silhouette over 2..8 with
+  cluster seed 0.
+- Discovered openness of an intervention episode at time tau: fit the
+  25-NN classifier on the recipe episodes' states (x, v, att) at step
+  tau with their trace-cluster labels; the predictor is the
+  normalized entropy of the class probabilities at the episode's own
+  pre-kick state.
+- Additional simple baseline: policy action entropy, the normalized
+  entropy of the policy's action distribution at the pre-kick state.
+- Predictors raced on pooled episodes (5 seeds x 8 taus x 2,048):
+  discovered openness, declared side-openness, policy action entropy,
+  |x|, |v|, att, tau. Outcome = the kick switches the final side.
+
+### Registered outcomes
+
+- RDC1: pooled AUC of discovered openness >= 0.80.
+- RDC2: at every tau where both outcome classes have >= 20 episodes,
+  fixed-time AUC of discovered openness >= 0.80.
+- RDC3: discovered openness beats the time baseline
+  (AUC(disc) > AUC(tau)).
+- RDC4 (registered prediction): declared side-openness beats raw
+  policy action entropy (AUC(side) > AUC(entropy)); the discovered
+  openness vs policy entropy comparison is reported descriptively.
+
+### Interpretation rules
+
+If RDC1-3 pass, the controllability conclusion survives removal of
+the analyst-declared representation: the machine-discovered regime
+variable predicts, at matched intervention times, whether the
+outcome can still be steered. A failure is reported as a registered
+miss and the construct-validity limitation stands as currently
+written in the manuscript.
