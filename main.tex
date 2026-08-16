@@ -372,7 +372,10 @@ $t=16$ and only 0.27 by $t=30$, with side-openness predicting
 switchability with an AUC of 0.996 (Fig.~5a,b). This is not a time
 proxy. At a fixed intervention time, openness still separates flippable
 from locked episodes (AUC 0.974--0.990 at every tested $\tau$; 20{,}480
-episodes per cell). Conditioning additionally on the physical order
+episodes per cell). Because episodes nest within training seeds, the
+race was re-aggregated at the seed level: side-openness reaches an AUC
+of at least 0.999 within every individual seed, with a seed-cluster
+bootstrap 95\% CI of 0.993--1.000 (Methods). Conditioning additionally on the physical order
 parameter removes the signal, defining the registered boundary: here,
 openness is an information-sufficient transform of the physical state.
 Its value lies in being computable from the policy alone and
@@ -882,6 +885,21 @@ entropy carries almost none of the signal (pooled AUC 0.62 against
 0.996). The discovery recipe recovers the two-regime structure in
 5/5 seeds; what declaration buys is measurement power, not the
 existence of the signal (Supplementary Table~14).
+
+\paragraph{Statistical unit.}
+Intervention episodes are nested within training seeds, so a frozen
+analysis addendum re-aggregates the same race at the seed level, the
+independent unit. Declared side-openness reaches a pooled AUC of at
+least $0.999$ within every individual seed (seed-cluster bootstrap
+95\% CI 0.993--1.000; leave-one-seed-out range 0.995--0.998),
+discovered openness 0.73--0.85 (CI 0.730--0.851), and raw policy
+entropy 0.60--0.64 (CI 0.606--0.636); side-openness beats entropy in
+5/5 seeds (both registered outcomes met; Supplementary Table~15).
+The cross-seed pooled values quoted above are lower than every
+within-seed value because seed-to-seed offsets in the predictors add
+between-cluster variance; the ordering of predictors is identical
+under both aggregations. The sticky-stance AUCs (Fig.~5c) pool
+episodes across their five seeds.
 
 \paragraph{Emergence certificate.}
 The frozen instruments are packaged into a single standardized

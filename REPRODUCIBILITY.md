@@ -61,6 +61,7 @@ documents were written only after the corresponding run.
 | Overcooked counter_circuit pilots (competence gate) | oc_cc_pilot.py, oc_cc_pilot2.py | training | hours |
 | Method-baseline battery | bench_baselines.py | re-analysis of stored outputs | seconds |
 | Discovered-regime controllability race | learn_grip_discovery_utility.py | training + re-analysis | hours |
+| Seed-level statistics for the grip race | learn_grip_stat_unit.py | training + re-analysis | ~30 min |
 | Contract-violation injections | semi_inject.py | re-analysis of stored curves | seconds |
 | Representation robustness | repr_equiv_grip.py, repr_equiv_convention.py, repr_robustness.py | re-analysis + training | minutes |
 | Emergence certificates (all systems) | emergence_certificate.py | re-analysis of stored outputs | seconds |

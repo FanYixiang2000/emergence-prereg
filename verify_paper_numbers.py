@@ -420,6 +420,37 @@ check("RDC registered miss (RDC1-3 fail, RDC4 pass)",
        rdc["RDC4_pass"]), (False, False, False, True),
       "missing the registered 0.80-everywhere bar (a registered miss)")
 
+su = load("learn_grip_stat_unit.json")["registered_outcomes"]
+check("STAT-UNIT side per-seed AUC >= 0.999 in 5/5",
+      all(a >= 0.999 for a in su["per_seed_auc"]["side_open"]), True,
+      "at least $0.999$ within every individual seed")
+ci = su["boot_ci_95_seed_cluster"]
+check("STAT-UNIT side cluster CI 0.993-1.000",
+      (round(ci["side_open"][0], 3), ci["side_open"][1] <= 1.0),
+      (0.993, True), "95\\% CI 0.993--1.000")
+check("STAT-UNIT disc per-seed AUC 0.73-0.85",
+      (round(min(su["per_seed_auc"]["disc_open"]), 2),
+       round(max(su["per_seed_auc"]["disc_open"]), 2)), (0.73, 0.85),
+      "discovered openness 0.73--0.85")
+check("STAT-UNIT disc CI 0.730-0.851",
+      (round(ci["disc_open"][0], 3), round(ci["disc_open"][1], 3)),
+      (0.730, 0.851))
+check("STAT-UNIT entropy per-seed AUC 0.60-0.64",
+      (round(min(su["per_seed_auc"]["pol_ent"]), 2),
+       round(max(su["per_seed_auc"]["pol_ent"]), 2)), (0.60, 0.64),
+      "raw policy entropy 0.60--0.64")
+check("STAT-UNIT entropy CI 0.606-0.636",
+      (round(ci["pol_ent"][0], 3), round(ci["pol_ent"][1], 3)),
+      (0.606, 0.636))
+loo = su["leave_one_seed_out"]["side_open"]
+check("STAT-UNIT LOSO side 0.995-0.998",
+      (round(min(loo), 3), round(max(loo), 3)), (0.995, 0.998),
+      "leave-one-seed-out range 0.995--0.998")
+check("STAT-UNIT registered outcomes met",
+      (su["SU1_side_beats_entropy_every_seed"],
+       su["SU2_side_ci_above_095"]), (True, True),
+      "side-openness beats entropy in 5/5 seeds")
+
 si = load("semi_inject.json")
 ro = si["registered_outcomes"]
 check("SEMI-INJ FPR 0.01", ro["SI2_fpr_pooled"], 0.01)

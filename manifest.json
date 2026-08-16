@@ -1,5 +1,5 @@
 {
-  "generated_utc": "2026-08-16T04:49:40.356538+00:00",
+  "generated_utc": "2026-08-16T06:26:24.151369+00:00",
   "python": "3.13.9 | packaged by Anaconda, Inc. | (main, Oct 21 2025, 19:16:10) [GCC 11.2.0]",
   "manuscript": [
     "main.tex",
@@ -177,6 +177,15 @@
       "generating_script": "learn_grip_policy.py",
       "read_by": [
         "number_audit"
+      ]
+    },
+    {
+      "output": "learn_grip_stat_unit.json",
+      "sha256": "b8c318f0e8dca3742ddc2a1a8867f853e159830247d14fde372c3b205e438636",
+      "generating_script": "learn_grip_stat_unit.py",
+      "read_by": [
+        "number_audit",
+        "si_tables"
       ]
     },
     {
@@ -505,7 +514,7 @@
     "EXTERNAL_TRANSFER_PREREGISTRATION.md": "885bc4ef847ae15eafbc16885b3ac12ac283496c10f9c7f381757d41d42858ad",
     "LATENT_CONTEXT_PREREGISTRATION.md": "a2a88eb2925cb6d630e3ddeeccda6d8c0037829c32083844cba9d164eaf1258d",
     "LBF_PREREGISTRATION.md": "4d32cacbcdfea123b41224b6dc42c07d82bce62fd23dc1157d242f1b5ad4fa6b",
-    "METHOD_BASELINE_FIXEDTIME_PREREGISTRATION.md": "23e7e6d4db0765f619158fbf316aa906a44a6b8ebd5a92dfce2a10e957708643",
+    "METHOD_BASELINE_FIXEDTIME_PREREGISTRATION.md": "f8308bac5479aa57f0637a06f4fea8d4567a33722a3786436ebfe05241f9027c",
     "MULTIBERTS_PREREGISTRATION.md": "f00e6d8306ae3344f6cf7f157436cea8fdc91462717ebfaf7fdf31d1bd6e6ac3",
     "OVERCOOKED_PREREGISTRATION.md": "c1cb90365bd3425b8bcbb554aa1b6728fd835579d64945246936e04375f0089c",
     "OVERCOOKED_ROUND2_PREREGISTRATION.md": "ce9e06bc81d4c108e3be05d7d678db14acf9a5fa0114f67171c6a7583ffd2f81",
@@ -517,7 +526,7 @@
     "THEORY.md": "7db373c02a57167f13983917373a44ad23050c5f410cdaaa393e010f4677f8b2",
     "ANALYSIS_FREEZE.md": "fd37e9b36abe51c43ad9da11f2f37c0546c268c1ecc8e88c83b64133dbb6897d",
     "CLAIM_EVIDENCE_MAP.md": "90fac83fefd61a47ab4459155501698c554d2f22b3ed7b0e1f24b8febc626c12",
-    "REPRODUCIBILITY.md": "8d28fa1272b2eaa0e7afce224199838b1bd704bd4eccc02117c3f848e785007c",
+    "REPRODUCIBILITY.md": "c4a38ba60e7d53604be8ec81b5c94309b950459ee44014c345efdaf087f02fa9",
     "INDEPENDENT_AUDIT_INSTRUCTIONS.md": "6eb1559fafe1ae60c39fb05259d3c673885d0af5b313638202e423bbdb4eb449",
     "INVALID_DATA_REGISTRY.md": "09d07c808c1b0aca7fcb30c161b468d3e4c864fb4fa302ea22758aba8f3e8024",
     "NMI_READINESS_AUDIT.md": "e2e068034047ed4754d381159a9936dfcd20d544e628f0d4ee1f1c86acaa6cba",
@@ -676,6 +685,7 @@
     "learn_grip_formation.json": "cc64147eeb46dd31ebd6a7a3cf2bf30c0aff78c0ecc498e3b6bd8d5ac61da103",
     "learn_grip_formation_fine.json": "bae59e8ac854c02bfdaba3618e266cfc214086d5c4a3f5d87dfef2c41c570f4b",
     "learn_grip_policy.json": "3a0b9e1cc279ffa1c56b0e6f84fe35ad3970229f6e339604fb01dc82c46f528d",
+    "learn_grip_stat_unit.json": "b8c318f0e8dca3742ddc2a1a8867f853e159830247d14fde372c3b205e438636",
     "learn_grip_transport.json": "f0ad67bc61d9071f93c10614cc19bf9bf2efb93c8212cf16cadc0c818bbc9c6c",
     "learn_grip_transport_b5.json": "8864a498ddbe50c7d2ddf4a6753ade05785b46be30294a10230d4ac41161b161",
     "learn_grip_utility.json": "49ae2fba662cb7cf7ca82e831293730d670414f38e243f3525237fef36c7ad5c",
@@ -959,5 +969,5 @@
     "within_episode_sweep_ci.csv": "17d051ccf89cadee10478e1e2ab3b0e7446773b6e58886c601a9f349d93f3559",
     "within_episode_sweep_per_seed.csv": "b1ad2d3569e63a49efaa3ac60dc14e9e9eac40c7f7a289f55aeb23aff1f7259f"
   },
-  "git_commit": "3fec8b37a4af4dbb0e87da059604b9631ca77790"
+  "git_commit": "61f093c8cd766de7892133a4d5a132a66c780077"
 }

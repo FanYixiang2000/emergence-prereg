@@ -334,3 +334,19 @@ Intervention time $\tau$ & 0.42 & 0.941 & --- \\
 \bottomrule
 \end{tabular}
 \end{table}
+
+\begin{table}[p]
+\centering
+\caption{\textbf{Seed-level statistics for the grip intervention race.} The 81{,}920 intervention episodes nest within 5 training seeds, so the race of Supplementary Table~14 is re-aggregated at the seed level under a frozen analysis addendum. Per-seed: pooled AUC computed within each seed. CI: seed-cluster bootstrap (10{,}000 resamples of the 5 seeds with replacement). LOSO: leave-one-seed-out pooled AUC. Both registered outcomes were met: side-openness beats policy entropy in 5/5 seeds, and its CI lies above 0.95. Within-seed AUCs exceed the cross-seed pooled values because seed-to-seed predictor offsets add between-cluster variance.}
+\label{si:tab:statunit}
+\small
+\begin{tabular}{p{0.32\textwidth}p{0.17\textwidth}p{0.22\textwidth}p{0.15\textwidth}}
+\toprule
+Predictor & Per-seed AUC & Cluster bootstrap 95\% CI & LOSO AUC \\
+\midrule
+Declared side-openness & 0.999--1.000 & [0.993, 1.000] & 0.995--0.998 \\
+Discovered openness & 0.734--0.852 & [0.730, 0.851] & 0.781--0.846 \\
+Policy action entropy & 0.605--0.643 & [0.606, 0.636] & --- \\
+\bottomrule
+\end{tabular}
+\end{table}

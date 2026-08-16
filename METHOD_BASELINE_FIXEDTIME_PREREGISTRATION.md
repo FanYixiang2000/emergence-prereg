@@ -331,6 +331,53 @@ declared object (0.999, 0.996), as expected where side-openness is
 nearly a function of the state; the declared object's value is that
 it generalizes to systems with no such privileged coordinates.
 
+# Analysis addendum STAT-UNIT: seed-level statistics for the intervention races (frozen 2026-08-16 before the run; nothing above edited)
+
+Script: `learn_grip_stat_unit.py` -> `outputs/learn_grip_stat_unit.json`.
+
+Motivation: the grip intervention races pool 81,920 episodes that are
+nested within 5 independently trained seeds. Episode counts measure
+precision, not replication; the training seed is the independent
+unit. This addendum recomputes the published AUCs at seed level with
+no new data collection: training, discovery, intervention grid, kick
+and predictor definitions are byte-identical to LEARN-GRIP-UTILITY
+and RDC (same seeds, same generators), so the episode streams are
+identical reruns.
+
+### Frozen analysis
+
+- Per-seed pooled AUC of every raced predictor (side_open, disc_open,
+  pol_ent, absx, absv, att, tau), computed within each seed across
+  its 8 x 2,048 episodes.
+- Seed-cluster bootstrap: 10,000 resamples of the 5 seeds with
+  replacement, pooled AUC recomputed on the concatenated episodes of
+  each resample; report the 2.5/97.5 percentiles.
+- Leave-one-seed-out pooled AUC range for side_open and disc_open.
+- Per-seed fixed-time AUCs at each tau where both outcome classes
+  have >= 20 episodes within that seed.
+
+### Registered outcomes
+
+- SU1: side_open per-seed pooled AUC exceeds pol_ent per-seed pooled
+  AUC in 5/5 seeds.
+- SU2: the seed-cluster bootstrap 95% CI for the pooled side_open
+  AUC lies entirely above 0.95.
+- SU3 (descriptive, no bar): per-seed and leave-one-seed-out spreads
+  for disc_open are reported as measured.
+
+### Outcomes (appended 2026-08-16 after the run; nothing above edited)
+
+- Discovery recovered k = 2 in 5/5 seeds.
+- Per-seed pooled AUC: side_open 0.99943-0.99999, disc_open
+  0.73362-0.85248, pol_ent 0.60492-0.64342.
+- Seed-cluster bootstrap 95% CI: side_open [0.9932, 0.9998],
+  disc_open [0.7301, 0.8509], pol_ent [0.6058, 0.6357].
+- Leave-one-seed-out pooled AUC: side_open 0.99532-0.99849,
+  disc_open 0.78065-0.84613.
+- SU1 PASS (side_open beats pol_ent in 5/5 seeds).
+- SU2 PASS (side_open CI lower bound 0.9932 > 0.95).
+- SU3 reported as measured (`outputs/learn_grip_stat_unit.json`).
+
 # Protocol OC-CC: counter_circuit convention study (NOT FROZEN; stopped at the pilot gate, 2026-08-16)
 
 Intent: a second official Overcooked layout with two mirror-equivalent

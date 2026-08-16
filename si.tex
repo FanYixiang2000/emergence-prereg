@@ -136,6 +136,18 @@ the episode's own pre-kick state. The second added predictor is raw
 policy action entropy at the same state. Registered outcomes and the
 miss are listed in Supplementary Note~1.
 
+\paragraph{Seed-level statistics.}
+Because intervention episodes nest within training seeds, a frozen
+analysis addendum recomputes the race of Supplementary Table~14 at
+the seed level with no new data collection: the training, discovery,
+intervention grid and predictor definitions are byte-identical, so
+the episode streams are identical reruns. Reported quantities are the
+per-seed pooled AUC of every predictor, a seed-cluster bootstrap
+(10{,}000 resamples of the five seeds with replacement, pooled AUC
+recomputed on each resample's concatenated episodes), and
+leave-one-seed-out pooled AUCs (Supplementary Table~15). Both
+registered outcomes were met.
+
 \section*{Supplementary Note 1: registered misses and amendments}
 
 Every experiment in this study was preceded by an internal frozen

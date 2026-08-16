@@ -1,0 +1,176 @@
+{
+  "status": "STAT-UNIT seed-level statistics; episode streams byte-identical to LEARN-GRIP-UTILITY/RDC; analysis addendum frozen before run",
+  "config": {
+    "n_seeds": 5,
+    "n_boot": 10000,
+    "boot_seed": 0
+  },
+  "registered_outcomes": {
+    "k_discovered": [
+      2,
+      2,
+      2,
+      2,
+      2
+    ],
+    "per_seed_auc": {
+      "disc_open": [
+        0.81211,
+        0.74744,
+        0.85248,
+        0.75894,
+        0.73362
+      ],
+      "side_open": [
+        0.99989,
+        0.99998,
+        0.99992,
+        0.99999,
+        0.99943
+      ],
+      "pol_ent": [
+        0.64342,
+        0.63464,
+        0.61146,
+        0.60492,
+        0.62061
+      ],
+      "absx": [
+        0.99989,
+        0.99996,
+        0.99694,
+        0.99999,
+        0.99939
+      ],
+      "absv": [
+        0.99987,
+        0.99997,
+        0.97726,
+        0.99998,
+        0.99939
+      ],
+      "att": [
+        0.35874,
+        0.3681,
+        0.35376,
+        0.35483,
+        0.42358
+      ],
+      "tau": [
+        0.96682,
+        0.96675,
+        0.9665,
+        0.97354,
+        0.96182
+      ]
+    },
+    "boot_ci_95_seed_cluster": {
+      "side_open": [
+        0.9932,
+        0.99976
+      ],
+      "disc_open": [
+        0.73013,
+        0.85086
+      ],
+      "pol_ent": [
+        0.60577,
+        0.63569
+      ]
+    },
+    "leave_one_seed_out": {
+      "side_open": [
+        0.99539,
+        0.99794,
+        0.99599,
+        0.99849,
+        0.99532
+      ],
+      "disc_open": [
+        0.80168,
+        0.78065,
+        0.81171,
+        0.83746,
+        0.84613
+      ]
+    },
+    "per_seed_fixed_tau": [
+      {
+        "20": {
+          "auc_side": 0.99939,
+          "auc_disc": 0.56675
+        },
+        "24": {
+          "auc_side": 0.99947,
+          "auc_disc": 0.91792
+        },
+        "30": {
+          "auc_side": 0.99978,
+          "auc_disc": 0.8236
+        }
+      },
+      {
+        "20": {
+          "auc_side": 0.99925,
+          "auc_disc": 0.61568
+        },
+        "24": {
+          "auc_side": 0.99997,
+          "auc_disc": 0.89259
+        },
+        "30": {
+          "auc_side": 1.0,
+          "auc_disc": 0.8156
+        }
+      },
+      {
+        "20": {
+          "auc_side": 0.99986,
+          "auc_disc": 0.58148
+        },
+        "24": {
+          "auc_side": 0.99954,
+          "auc_disc": 0.91526
+        },
+        "30": {
+          "auc_side": 0.99988,
+          "auc_disc": 0.80722
+        }
+      },
+      {
+        "20": {
+          "auc_side": 0.99941,
+          "auc_disc": 0.88686
+        },
+        "24": {
+          "auc_side": 0.99998,
+          "auc_disc": 0.729
+        },
+        "30": {
+          "auc_side": 0.99998,
+          "auc_disc": 0.82665
+        }
+      },
+      {
+        "18": {
+          "auc_side": 0.98769,
+          "auc_disc": 0.7719
+        },
+        "20": {
+          "auc_side": 0.99481,
+          "auc_disc": 0.70832
+        },
+        "24": {
+          "auc_side": 0.99894,
+          "auc_disc": 0.96417
+        },
+        "30": {
+          "auc_side": 0.99919,
+          "auc_disc": 0.83425
+        }
+      }
+    ],
+    "SU1_side_beats_entropy_every_seed": true,
+    "SU2_side_ci_above_095": true
+  }
+}
