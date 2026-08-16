@@ -425,8 +425,8 @@ table(
     r"controls, but those carry zero entropy amplitude; the clause "
     r"passed through the external-takeover controls instead.",
     ["Baseline", "Test", "Baseline result", "Instrument"],
-    rows, "si:tab:baselines", align="p{0.24\\textwidth}p{0.2\\textwidth}"
-    "p{0.3\\textwidth}p{0.18\\textwidth}")
+    rows, "si:tab:baselines", align="p{0.22\\textwidth}p{0.18\\textwidth}"
+    "p{0.28\\textwidth}p{0.17\\textwidth}")
 
 # Supplementary Table 13: fixed-time ring intervention, all runs
 ft = load("oc_ring_fixed_time.json")
