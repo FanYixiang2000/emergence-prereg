@@ -1,0 +1,513 @@
+{
+  "status": "OC-CC competence pilot round 2; two recipe arms; decides the confirmatory recipe, frozen before the confirmatory run; pilot seeds excluded",
+  "arms": {
+    "A_anneal09_8M": {
+      "config": {
+        "seed": 97002,
+        "total_steps": 8000000,
+        "anneal_frac": 0.9
+      },
+      "curves": {
+        "200000": {
+          "circulation_openness": 0.20062,
+          "p_ccw": 0.9688,
+          "n_committed_episodes": 30,
+          "mean_soups": 0.0,
+          "mean_policy_entropy_norm": 0.72374
+        },
+        "400000": {
+          "circulation_openness": 0.20062,
+          "p_ccw": 0.9688,
+          "n_committed_episodes": 30,
+          "mean_soups": 0.0,
+          "mean_policy_entropy_norm": 0.59837
+        },
+        "600000": {
+          "circulation_openness": 0.20062,
+          "p_ccw": 0.9688,
+          "n_committed_episodes": 30,
+          "mean_soups": 0.0,
+          "mean_policy_entropy_norm": 0.57341
+        },
+        "800000": {
+          "circulation_openness": 0.20062,
+          "p_ccw": 0.9688,
+          "n_committed_episodes": 30,
+          "mean_soups": 0.0,
+          "mean_policy_entropy_norm": 0.58401
+        },
+        "1000000": {
+          "circulation_openness": 0.20062,
+          "p_ccw": 0.9688,
+          "n_committed_episodes": 30,
+          "mean_soups": 0.0,
+          "mean_policy_entropy_norm": 0.56322
+        },
+        "1200000": {
+          "circulation_openness": 0.20559,
+          "p_ccw": 0.9677,
+          "n_committed_episodes": 29,
+          "mean_soups": 0.0,
+          "mean_policy_entropy_norm": 0.58636
+        },
+        "1400000": {
+          "circulation_openness": 0.20062,
+          "p_ccw": 0.9688,
+          "n_committed_episodes": 30,
+          "mean_soups": 0.0,
+          "mean_policy_entropy_norm": 0.58346
+        },
+        "1600000": {
+          "circulation_openness": 0.20062,
+          "p_ccw": 0.9688,
+          "n_committed_episodes": 30,
+          "mean_soups": 0.0,
+          "mean_policy_entropy_norm": 0.55329
+        },
+        "1800000": {
+          "circulation_openness": 0.20062,
+          "p_ccw": 0.9688,
+          "n_committed_episodes": 30,
+          "mean_soups": 0.0,
+          "mean_policy_entropy_norm": 0.504
+        },
+        "2000000": {
+          "circulation_openness": 0.20062,
+          "p_ccw": 0.9688,
+          "n_committed_episodes": 30,
+          "mean_soups": 0.0,
+          "mean_policy_entropy_norm": 0.53673
+        },
+        "2200000": {
+          "circulation_openness": 0.20559,
+          "p_ccw": 0.9677,
+          "n_committed_episodes": 29,
+          "mean_soups": 0.0,
+          "mean_policy_entropy_norm": 0.4956
+        },
+        "2400000": {
+          "circulation_openness": 0.20062,
+          "p_ccw": 0.9688,
+          "n_committed_episodes": 30,
+          "mean_soups": 0.0,
+          "mean_policy_entropy_norm": 0.48797
+        },
+        "2600000": {
+          "circulation_openness": 0.20062,
+          "p_ccw": 0.9688,
+          "n_committed_episodes": 30,
+          "mean_soups": 0.0,
+          "mean_policy_entropy_norm": 0.49036
+        },
+        "2800000": {
+          "circulation_openness": 0.20062,
+          "p_ccw": 0.9688,
+          "n_committed_episodes": 30,
+          "mean_soups": 0.0,
+          "mean_policy_entropy_norm": 0.47721
+        },
+        "3000000": {
+          "circulation_openness": 0.20062,
+          "p_ccw": 0.9688,
+          "n_committed_episodes": 30,
+          "mean_soups": 0.0,
+          "mean_policy_entropy_norm": 0.42877
+        },
+        "3200000": {
+          "circulation_openness": 0.20062,
+          "p_ccw": 0.9688,
+          "n_committed_episodes": 30,
+          "mean_soups": 0.0,
+          "mean_policy_entropy_norm": 0.44662
+        },
+        "3400000": {
+          "circulation_openness": 0.20062,
+          "p_ccw": 0.9688,
+          "n_committed_episodes": 30,
+          "mean_soups": 0.0,
+          "mean_policy_entropy_norm": 0.43793
+        },
+        "3600000": {
+          "circulation_openness": 0.20062,
+          "p_ccw": 0.9688,
+          "n_committed_episodes": 30,
+          "mean_soups": 0.0,
+          "mean_policy_entropy_norm": 0.52239
+        },
+        "3800000": {
+          "circulation_openness": 0.20062,
+          "p_ccw": 0.9688,
+          "n_committed_episodes": 30,
+          "mean_soups": 0.0,
+          "mean_policy_entropy_norm": 0.48707
+        },
+        "4000000": {
+          "circulation_openness": 0.20062,
+          "p_ccw": 0.9688,
+          "n_committed_episodes": 30,
+          "mean_soups": 0.0,
+          "mean_policy_entropy_norm": 0.51427
+        },
+        "4200000": {
+          "circulation_openness": 0.20062,
+          "p_ccw": 0.9688,
+          "n_committed_episodes": 30,
+          "mean_soups": 0.0,
+          "mean_policy_entropy_norm": 0.51566
+        },
+        "4400000": {
+          "circulation_openness": 0.20062,
+          "p_ccw": 0.9688,
+          "n_committed_episodes": 30,
+          "mean_soups": 0.0,
+          "mean_policy_entropy_norm": 0.5348
+        },
+        "4600000": {
+          "circulation_openness": 0.20062,
+          "p_ccw": 0.9688,
+          "n_committed_episodes": 30,
+          "mean_soups": 0.0,
+          "mean_policy_entropy_norm": 0.5691
+        },
+        "4800000": {
+          "circulation_openness": 0.20062,
+          "p_ccw": 0.9688,
+          "n_committed_episodes": 30,
+          "mean_soups": 0.0,
+          "mean_policy_entropy_norm": 0.53206
+        },
+        "5000000": {
+          "circulation_openness": 0.20062,
+          "p_ccw": 0.9688,
+          "n_committed_episodes": 30,
+          "mean_soups": 0.0,
+          "mean_policy_entropy_norm": 0.54441
+        },
+        "5200000": {
+          "circulation_openness": 0.20062,
+          "p_ccw": 0.9688,
+          "n_committed_episodes": 30,
+          "mean_soups": 0.0,
+          "mean_policy_entropy_norm": 0.55658
+        },
+        "5400000": {
+          "circulation_openness": 0.20062,
+          "p_ccw": 0.9688,
+          "n_committed_episodes": 30,
+          "mean_soups": 0.0,
+          "mean_policy_entropy_norm": 0.5285
+        },
+        "5600000": {
+          "circulation_openness": 0.20062,
+          "p_ccw": 0.9688,
+          "n_committed_episodes": 30,
+          "mean_soups": 0.0,
+          "mean_policy_entropy_norm": 0.56682
+        },
+        "5800000": {
+          "circulation_openness": 0.20062,
+          "p_ccw": 0.9688,
+          "n_committed_episodes": 30,
+          "mean_soups": 0.0,
+          "mean_policy_entropy_norm": 0.56151
+        },
+        "6000000": {
+          "circulation_openness": 0.20062,
+          "p_ccw": 0.9688,
+          "n_committed_episodes": 30,
+          "mean_soups": 0.0,
+          "mean_policy_entropy_norm": 0.60034
+        },
+        "6200000": {
+          "circulation_openness": 0.20062,
+          "p_ccw": 0.9688,
+          "n_committed_episodes": 30,
+          "mean_soups": 0.0,
+          "mean_policy_entropy_norm": 0.61094
+        },
+        "6400000": {
+          "circulation_openness": 0.20062,
+          "p_ccw": 0.9688,
+          "n_committed_episodes": 30,
+          "mean_soups": 0.0,
+          "mean_policy_entropy_norm": 0.56465
+        },
+        "6600000": {
+          "circulation_openness": 0.20062,
+          "p_ccw": 0.9688,
+          "n_committed_episodes": 30,
+          "mean_soups": 0.0,
+          "mean_policy_entropy_norm": 0.55565
+        },
+        "6800000": {
+          "circulation_openness": 0.20062,
+          "p_ccw": 0.9688,
+          "n_committed_episodes": 30,
+          "mean_soups": 0.0,
+          "mean_policy_entropy_norm": 0.57449
+        },
+        "7000000": {
+          "circulation_openness": 0.20062,
+          "p_ccw": 0.9688,
+          "n_committed_episodes": 30,
+          "mean_soups": 0.0,
+          "mean_policy_entropy_norm": 0.55695
+        },
+        "7200000": {
+          "circulation_openness": 0.20062,
+          "p_ccw": 0.9688,
+          "n_committed_episodes": 30,
+          "mean_soups": 0.0,
+          "mean_policy_entropy_norm": 0.64113
+        },
+        "7400000": {
+          "circulation_openness": 0.2164,
+          "p_ccw": 0.9655,
+          "n_committed_episodes": 27,
+          "mean_soups": 0.0,
+          "mean_policy_entropy_norm": 0.80004
+        },
+        "7600000": {
+          "circulation_openness": 0.9183,
+          "p_ccw": 0.3333,
+          "n_committed_episodes": 1,
+          "mean_soups": 0.0,
+          "mean_policy_entropy_norm": 0.80702
+        },
+        "7800000": {
+          "circulation_openness": 0.81128,
+          "p_ccw": 0.25,
+          "n_committed_episodes": 2,
+          "mean_soups": 0.0,
+          "mean_policy_entropy_norm": 0.78042
+        },
+        "8000000": {
+          "circulation_openness": 1.0,
+          "p_ccw": 0.5,
+          "n_committed_episodes": 0,
+          "mean_soups": 0.0,
+          "mean_policy_entropy_norm": 0.75121
+        }
+      }
+    },
+    "B_noanneal_6M": {
+      "config": {
+        "seed": 97003,
+        "total_steps": 6000000,
+        "anneal_frac": 2.0
+      },
+      "curves": {
+        "200000": {
+          "circulation_openness": 1.0,
+          "p_ccw": 0.5,
+          "n_committed_episodes": 0,
+          "mean_soups": 0.0,
+          "mean_policy_entropy_norm": 0.73845
+        },
+        "400000": {
+          "circulation_openness": 0.9183,
+          "p_ccw": 0.3333,
+          "n_committed_episodes": 1,
+          "mean_soups": 0.0,
+          "mean_policy_entropy_norm": 0.62931
+        },
+        "600000": {
+          "circulation_openness": 0.81128,
+          "p_ccw": 0.25,
+          "n_committed_episodes": 2,
+          "mean_soups": 0.0,
+          "mean_policy_entropy_norm": 0.55103
+        },
+        "800000": {
+          "circulation_openness": 0.81128,
+          "p_ccw": 0.25,
+          "n_committed_episodes": 2,
+          "mean_soups": 0.0,
+          "mean_policy_entropy_norm": 0.48233
+        },
+        "1000000": {
+          "circulation_openness": 0.469,
+          "p_ccw": 0.1,
+          "n_committed_episodes": 8,
+          "mean_soups": 0.0,
+          "mean_policy_entropy_norm": 0.46389
+        },
+        "1200000": {
+          "circulation_openness": 0.469,
+          "p_ccw": 0.1,
+          "n_committed_episodes": 8,
+          "mean_soups": 0.0,
+          "mean_policy_entropy_norm": 0.44741
+        },
+        "1400000": {
+          "circulation_openness": 0.32276,
+          "p_ccw": 0.0588,
+          "n_committed_episodes": 15,
+          "mean_soups": 0.0,
+          "mean_policy_entropy_norm": 0.45366
+        },
+        "1600000": {
+          "circulation_openness": 0.41382,
+          "p_ccw": 0.0833,
+          "n_committed_episodes": 10,
+          "mean_soups": 0.0,
+          "mean_policy_entropy_norm": 0.40203
+        },
+        "1800000": {
+          "circulation_openness": 0.50326,
+          "p_ccw": 0.1111,
+          "n_committed_episodes": 7,
+          "mean_soups": 0.0,
+          "mean_policy_entropy_norm": 0.373
+        },
+        "2000000": {
+          "circulation_openness": 0.35336,
+          "p_ccw": 0.0667,
+          "n_committed_episodes": 13,
+          "mean_soups": 0.0,
+          "mean_policy_entropy_norm": 0.38606
+        },
+        "2200000": {
+          "circulation_openness": 0.4395,
+          "p_ccw": 0.0909,
+          "n_committed_episodes": 9,
+          "mean_soups": 0.0,
+          "mean_policy_entropy_norm": 0.36645
+        },
+        "2400000": {
+          "circulation_openness": 0.32276,
+          "p_ccw": 0.0588,
+          "n_committed_episodes": 15,
+          "mean_soups": 0.0,
+          "mean_policy_entropy_norm": 0.36638
+        },
+        "2600000": {
+          "circulation_openness": 0.32276,
+          "p_ccw": 0.0588,
+          "n_committed_episodes": 15,
+          "mean_soups": 0.0,
+          "mean_policy_entropy_norm": 0.36516
+        },
+        "2800000": {
+          "circulation_openness": 0.24229,
+          "p_ccw": 0.04,
+          "n_committed_episodes": 23,
+          "mean_soups": 0.0,
+          "mean_policy_entropy_norm": 0.40613
+        },
+        "3000000": {
+          "circulation_openness": 0.24229,
+          "p_ccw": 0.04,
+          "n_committed_episodes": 23,
+          "mean_soups": 0.0,
+          "mean_policy_entropy_norm": 0.38087
+        },
+        "3200000": {
+          "circulation_openness": 0.39124,
+          "p_ccw": 0.0769,
+          "n_committed_episodes": 11,
+          "mean_soups": 0.0,
+          "mean_policy_entropy_norm": 0.32236
+        },
+        "3400000": {
+          "circulation_openness": 0.54356,
+          "p_ccw": 0.125,
+          "n_committed_episodes": 6,
+          "mean_soups": 0.0,
+          "mean_policy_entropy_norm": 0.36155
+        },
+        "3600000": {
+          "circulation_openness": 0.4395,
+          "p_ccw": 0.0909,
+          "n_committed_episodes": 9,
+          "mean_soups": 0.0,
+          "mean_policy_entropy_norm": 0.26926
+        },
+        "3800000": {
+          "circulation_openness": 0.4395,
+          "p_ccw": 0.0909,
+          "n_committed_episodes": 9,
+          "mean_soups": 0.0,
+          "mean_policy_entropy_norm": 0.3769
+        },
+        "4000000": {
+          "circulation_openness": 0.50326,
+          "p_ccw": 0.1111,
+          "n_committed_episodes": 7,
+          "mean_soups": 0.0,
+          "mean_policy_entropy_norm": 0.3745
+        },
+        "4200000": {
+          "circulation_openness": 0.37123,
+          "p_ccw": 0.0714,
+          "n_committed_episodes": 12,
+          "mean_soups": 0.0,
+          "mean_policy_entropy_norm": 0.29222
+        },
+        "4400000": {
+          "circulation_openness": 0.2762,
+          "p_ccw": 0.0476,
+          "n_committed_episodes": 19,
+          "mean_soups": 0.0,
+          "mean_policy_entropy_norm": 0.31696
+        },
+        "4600000": {
+          "circulation_openness": 0.41382,
+          "p_ccw": 0.0833,
+          "n_committed_episodes": 10,
+          "mean_soups": 0.0,
+          "mean_policy_entropy_norm": 0.29759
+        },
+        "4800000": {
+          "circulation_openness": 0.39124,
+          "p_ccw": 0.0769,
+          "n_committed_episodes": 11,
+          "mean_soups": 0.0,
+          "mean_policy_entropy_norm": 0.33908
+        },
+        "5000000": {
+          "circulation_openness": 0.24988,
+          "p_ccw": 0.0417,
+          "n_committed_episodes": 22,
+          "mean_soups": 0.0,
+          "mean_policy_entropy_norm": 0.36603
+        },
+        "5200000": {
+          "circulation_openness": 0.32276,
+          "p_ccw": 0.0588,
+          "n_committed_episodes": 15,
+          "mean_soups": 0.0,
+          "mean_policy_entropy_norm": 0.33661
+        },
+        "5400000": {
+          "circulation_openness": 0.22854,
+          "p_ccw": 0.037,
+          "n_committed_episodes": 25,
+          "mean_soups": 0.0,
+          "mean_policy_entropy_norm": 0.32788
+        },
+        "5600000": {
+          "circulation_openness": 0.22228,
+          "p_ccw": 0.0357,
+          "n_committed_episodes": 26,
+          "mean_soups": 0.0,
+          "mean_policy_entropy_norm": 0.29619
+        },
+        "5800000": {
+          "circulation_openness": 0.39124,
+          "p_ccw": 0.0769,
+          "n_committed_episodes": 11,
+          "mean_soups": 0.0,
+          "mean_policy_entropy_norm": 0.30781
+        },
+        "6000000": {
+          "circulation_openness": 0.20559,
+          "p_ccw": 0.0323,
+          "n_committed_episodes": 29,
+          "mean_soups": 0.0,
+          "mean_policy_entropy_norm": 0.33327
+        }
+      }
+    }
+  }
+}

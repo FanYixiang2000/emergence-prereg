@@ -30,6 +30,7 @@ CONSUMERS = {
 # Output stems whose generating script is not the same-named .py file.
 GENERATOR_EXCEPTIONS = {
     "emergence_certificates": "emergence_certificate.py",
+    "method_baseline_battery": "bench_baselines.py",
 }
 
 INVALID = [

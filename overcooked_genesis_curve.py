@@ -46,9 +46,14 @@ N_BOOT = 1000
 
 
 def train_with_checkpoints(layouts, seed: int, total_steps: int,
-                           checkpoint_steps, tag: str) -> Dict[int, Path]:
+                           checkpoint_steps, tag: str,
+                           anneal_frac: float = 0.6) -> Dict[int, Path]:
     """`train_mixed` mechanics, unchanged, plus checkpoint saving at the
-    first batch boundary crossing each declared step count."""
+    first batch boundary crossing each declared step count.
+
+    `anneal_frac` sets the fraction of `total_steps` over which the
+    official shaped reward anneals to zero (0.6 in every pre-existing
+    run; `anneal_frac >= 1` keeps shaping on for the whole run)."""
     torch.manual_seed(seed)
     random.seed(seed)
     np.random.seed(seed)
@@ -85,7 +90,7 @@ def train_with_checkpoints(layouts, seed: int, total_steps: int,
             actions = [Action.ALL_ACTIONS[a] for a in acts.tolist()]
             _s, sparse_r, done, info = env.step(actions)
             shaped = info.get("shaped_r_by_agent", [0, 0])
-            anneal = max(0.0, 1.0 - step_count / (0.6 * total_steps))
+            anneal = max(0.0, 1.0 - step_count / (anneal_frac * total_steps))
             rewards = [sparse_r + anneal * shaped[i] for i in range(2)]
             buf["obs"].append(np.stack(obs))
             buf["act"].append(acts.numpy())

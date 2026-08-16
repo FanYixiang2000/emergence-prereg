@@ -495,7 +495,7 @@ def fig5():
 # Figure 6: laws and scope
 def fig6():
     fss = load("ant_fss.json")
-    ks = load("kuramoto_scale.json")
+    ks = load("kuramoto_scale_n10.json")
     vd = load("ceb_vicsek_dense.json")
 
     fig = plt.figure(figsize=(DOUBLE, 2.7))
@@ -526,15 +526,22 @@ def fig6():
               borderaxespad=0.1)
 
     ax = fig.add_subplot(gs[1])
+    summ = ks["registered_outcomes"]["per_K_summary"]
     Ks = [float(k) for k in ks["config"]["Ks"]]
-    tstar = ks["registered_outcomes"]["mean_t_star"]
-    slope = ks["registered_outcomes"]["mean_post_slope"]
-    ax.plot(Ks, tstar, "o-", color=BLUE, lw=1.0, ms=3.5, mew=0)
+    tstar = np.array([summ[str(k)]["mean_t_star"] for k in Ks])
+    tci = np.array([summ[str(k)]["ci_t_star"] for k in Ks]).T
+    slope = np.array([summ[str(k)]["mean_post_slope"] for k in Ks])
+    sci = np.array([summ[str(k)]["ci_post_slope"] for k in Ks]).T
+    ax.errorbar(Ks, tstar, yerr=[tstar - tci[0], tci[1] - tstar],
+                fmt="o-", color=BLUE, lw=1.0, ms=3.5, mew=0,
+                elinewidth=0.7, capsize=1.5)
     ax.set_xlabel("coupling K")
     ax.set_ylabel("breakpoint time $t^{*}$", color=BLUE)
     ax.tick_params(axis="y", colors=BLUE)
     ax2 = ax.twinx()
-    ax2.plot(Ks, slope, "s--", color=RED, lw=1.0, ms=3.2, mew=0)
+    ax2.errorbar(Ks, slope, yerr=[slope - sci[0], sci[1] - slope],
+                 fmt="s--", color=RED, lw=1.0, ms=3.2, mew=0,
+                 elinewidth=0.7, capsize=1.5)
     ax2.set_ylabel("closing slope", color=RED)
     ax2.tick_params(axis="y", colors=RED)
     ax2.spines["right"].set_visible(True)

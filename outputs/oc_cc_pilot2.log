@@ -1,0 +1,149 @@
+Gym has been unmaintained since 2022 and does not support NumPy 2.0 amongst other critical functionality.
+Please upgrade to Gymnasium, the maintained drop-in replacement of Gym, or contact the authors of your software and request that they upgrade.
+Users of this version of Gym should be able to simply replace 'import gym' with 'import gymnasium as gym' in the vast majority of cases.
+See the migration guide at https://gymnasium.farama.org/introduction/migration_guide/ for additional information.
+Gym has been unmaintained since 2022 and does not support NumPy 2.0 amongst other critical functionality.
+Please upgrade to Gymnasium, the maintained drop-in replacement of Gym, or contact the authors of your software and request that they upgrade.
+Users of this version of Gym should be able to simply replace 'import gym' with 'import gymnasium as gym' in the vast majority of cases.
+See the migration guide at https://gymnasium.farama.org/introduction/migration_guide/ for additional information.
+  checkpoint 200000 saved at step 200704
+  checkpoint 200000 saved at step 200704
+  checkpoint 400000 saved at step 401408
+  checkpoint 400000 saved at step 401408
+  checkpoint 600000 saved at step 600064
+  checkpoint 600000 saved at step 600064
+  checkpoint 800000 saved at step 800768
+  checkpoint 800000 saved at step 800768
+  checkpoint 1000000 saved at step 1001472
+  checkpoint 1000000 saved at step 1001472
+  checkpoint 1200000 saved at step 1200128
+  checkpoint 1200000 saved at step 1200128
+  checkpoint 1400000 saved at step 1400832
+  checkpoint 1400000 saved at step 1400832
+  checkpoint 1600000 saved at step 1601536
+  checkpoint 1600000 saved at step 1601536
+  checkpoint 1800000 saved at step 1800192
+  checkpoint 1800000 saved at step 1800192
+  checkpoint 2000000 saved at step 2000896
+  checkpoint 2000000 saved at step 2000896
+  checkpoint 2200000 saved at step 2201600
+  checkpoint 2200000 saved at step 2201600
+  checkpoint 2400000 saved at step 2400256
+  checkpoint 2400000 saved at step 2400256
+  checkpoint 2600000 saved at step 2600960
+  checkpoint 2600000 saved at step 2600960
+  checkpoint 2800000 saved at step 2801664
+  checkpoint 2800000 saved at step 2801664
+  checkpoint 3000000 saved at step 3000320
+  checkpoint 3000000 saved at step 3000320
+  checkpoint 3200000 saved at step 3201024
+  checkpoint 3200000 saved at step 3201024
+  checkpoint 3400000 saved at step 3401728
+  checkpoint 3400000 saved at step 3401728
+  checkpoint 3600000 saved at step 3600384
+  checkpoint 3600000 saved at step 3600384
+  checkpoint 3800000 saved at step 3801088
+  checkpoint 3800000 saved at step 3801088
+  checkpoint 4000000 saved at step 4001792
+  checkpoint 4000000 saved at step 4001792
+  checkpoint 4200000 saved at step 4200448
+  checkpoint 4200000 saved at step 4200448
+  checkpoint 4400000 saved at step 4401152
+  checkpoint 4400000 saved at step 4401152
+  checkpoint 4600000 saved at step 4601856
+  checkpoint 4600000 saved at step 4601856
+  checkpoint 4800000 saved at step 4800512
+  checkpoint 4800000 saved at step 4800512
+  checkpoint 5000000 saved at step 5001216
+  checkpoint 5000000 saved at step 5001216
+  checkpoint 5200000 saved at step 5201920
+  checkpoint 5200000 saved at step 5201920
+  checkpoint 5400000 saved at step 5400576
+  checkpoint 5400000 saved at step 5400576
+  checkpoint 5600000 saved at step 5601280
+  checkpoint 5600000 saved at step 5601280
+  checkpoint 5800000 saved at step 5801984
+  checkpoint 5800000 saved at step 5801984
+  checkpoint 6000000 saved at step 6000640
+B_noanneal_6M ck=200000: soups=0.0 open=1.0 p_ccw=0.5 n_com=0
+B_noanneal_6M ck=400000: soups=0.0 open=0.9183 p_ccw=0.3333 n_com=1
+B_noanneal_6M ck=600000: soups=0.0 open=0.81128 p_ccw=0.25 n_com=2
+  checkpoint 6000000 saved at step 6000640
+B_noanneal_6M ck=800000: soups=0.0 open=0.81128 p_ccw=0.25 n_com=2
+B_noanneal_6M ck=1000000: soups=0.0 open=0.469 p_ccw=0.1 n_com=8
+B_noanneal_6M ck=1200000: soups=0.0 open=0.469 p_ccw=0.1 n_com=8
+B_noanneal_6M ck=1400000: soups=0.0 open=0.32276 p_ccw=0.0588 n_com=15
+B_noanneal_6M ck=1600000: soups=0.0 open=0.41382 p_ccw=0.0833 n_com=10
+B_noanneal_6M ck=1800000: soups=0.0 open=0.50326 p_ccw=0.1111 n_com=7
+B_noanneal_6M ck=2000000: soups=0.0 open=0.35336 p_ccw=0.0667 n_com=13
+B_noanneal_6M ck=2200000: soups=0.0 open=0.4395 p_ccw=0.0909 n_com=9
+B_noanneal_6M ck=2400000: soups=0.0 open=0.32276 p_ccw=0.0588 n_com=15
+B_noanneal_6M ck=2600000: soups=0.0 open=0.32276 p_ccw=0.0588 n_com=15
+B_noanneal_6M ck=2800000: soups=0.0 open=0.24229 p_ccw=0.04 n_com=23
+B_noanneal_6M ck=3000000: soups=0.0 open=0.24229 p_ccw=0.04 n_com=23
+B_noanneal_6M ck=3200000: soups=0.0 open=0.39124 p_ccw=0.0769 n_com=11
+B_noanneal_6M ck=3400000: soups=0.0 open=0.54356 p_ccw=0.125 n_com=6
+B_noanneal_6M ck=3600000: soups=0.0 open=0.4395 p_ccw=0.0909 n_com=9
+B_noanneal_6M ck=3800000: soups=0.0 open=0.4395 p_ccw=0.0909 n_com=9
+B_noanneal_6M ck=4000000: soups=0.0 open=0.50326 p_ccw=0.1111 n_com=7
+B_noanneal_6M ck=4200000: soups=0.0 open=0.37123 p_ccw=0.0714 n_com=12
+B_noanneal_6M ck=4400000: soups=0.0 open=0.2762 p_ccw=0.0476 n_com=19
+B_noanneal_6M ck=4600000: soups=0.0 open=0.41382 p_ccw=0.0833 n_com=10
+B_noanneal_6M ck=4800000: soups=0.0 open=0.39124 p_ccw=0.0769 n_com=11
+B_noanneal_6M ck=5000000: soups=0.0 open=0.24988 p_ccw=0.0417 n_com=22
+B_noanneal_6M ck=5200000: soups=0.0 open=0.32276 p_ccw=0.0588 n_com=15
+B_noanneal_6M ck=5400000: soups=0.0 open=0.22854 p_ccw=0.037 n_com=25
+B_noanneal_6M ck=5600000: soups=0.0 open=0.22228 p_ccw=0.0357 n_com=26
+B_noanneal_6M ck=5800000: soups=0.0 open=0.39124 p_ccw=0.0769 n_com=11
+B_noanneal_6M ck=6000000: soups=0.0 open=0.20559 p_ccw=0.0323 n_com=29
+  checkpoint 6200000 saved at step 6201344
+  checkpoint 6400000 saved at step 6400000
+  checkpoint 6600000 saved at step 6600704
+  checkpoint 6800000 saved at step 6801408
+  checkpoint 7000000 saved at step 7000064
+  checkpoint 7200000 saved at step 7200768
+  checkpoint 7400000 saved at step 7401472
+  checkpoint 7600000 saved at step 7600128
+  checkpoint 7800000 saved at step 7800832
+  checkpoint 8000000 saved at step 8001536
+A_anneal09_8M ck=200000: soups=0.0 open=0.20062 p_ccw=0.9688 n_com=30
+A_anneal09_8M ck=400000: soups=0.0 open=0.20062 p_ccw=0.9688 n_com=30
+A_anneal09_8M ck=600000: soups=0.0 open=0.20062 p_ccw=0.9688 n_com=30
+A_anneal09_8M ck=800000: soups=0.0 open=0.20062 p_ccw=0.9688 n_com=30
+A_anneal09_8M ck=1000000: soups=0.0 open=0.20062 p_ccw=0.9688 n_com=30
+A_anneal09_8M ck=1200000: soups=0.0 open=0.20559 p_ccw=0.9677 n_com=29
+A_anneal09_8M ck=1400000: soups=0.0 open=0.20062 p_ccw=0.9688 n_com=30
+A_anneal09_8M ck=1600000: soups=0.0 open=0.20062 p_ccw=0.9688 n_com=30
+A_anneal09_8M ck=1800000: soups=0.0 open=0.20062 p_ccw=0.9688 n_com=30
+A_anneal09_8M ck=2000000: soups=0.0 open=0.20062 p_ccw=0.9688 n_com=30
+A_anneal09_8M ck=2200000: soups=0.0 open=0.20559 p_ccw=0.9677 n_com=29
+A_anneal09_8M ck=2400000: soups=0.0 open=0.20062 p_ccw=0.9688 n_com=30
+A_anneal09_8M ck=2600000: soups=0.0 open=0.20062 p_ccw=0.9688 n_com=30
+A_anneal09_8M ck=2800000: soups=0.0 open=0.20062 p_ccw=0.9688 n_com=30
+A_anneal09_8M ck=3000000: soups=0.0 open=0.20062 p_ccw=0.9688 n_com=30
+A_anneal09_8M ck=3200000: soups=0.0 open=0.20062 p_ccw=0.9688 n_com=30
+A_anneal09_8M ck=3400000: soups=0.0 open=0.20062 p_ccw=0.9688 n_com=30
+A_anneal09_8M ck=3600000: soups=0.0 open=0.20062 p_ccw=0.9688 n_com=30
+A_anneal09_8M ck=3800000: soups=0.0 open=0.20062 p_ccw=0.9688 n_com=30
+A_anneal09_8M ck=4000000: soups=0.0 open=0.20062 p_ccw=0.9688 n_com=30
+A_anneal09_8M ck=4200000: soups=0.0 open=0.20062 p_ccw=0.9688 n_com=30
+A_anneal09_8M ck=4400000: soups=0.0 open=0.20062 p_ccw=0.9688 n_com=30
+A_anneal09_8M ck=4600000: soups=0.0 open=0.20062 p_ccw=0.9688 n_com=30
+A_anneal09_8M ck=4800000: soups=0.0 open=0.20062 p_ccw=0.9688 n_com=30
+A_anneal09_8M ck=5000000: soups=0.0 open=0.20062 p_ccw=0.9688 n_com=30
+A_anneal09_8M ck=5200000: soups=0.0 open=0.20062 p_ccw=0.9688 n_com=30
+A_anneal09_8M ck=5400000: soups=0.0 open=0.20062 p_ccw=0.9688 n_com=30
+A_anneal09_8M ck=5600000: soups=0.0 open=0.20062 p_ccw=0.9688 n_com=30
+A_anneal09_8M ck=5800000: soups=0.0 open=0.20062 p_ccw=0.9688 n_com=30
+A_anneal09_8M ck=6000000: soups=0.0 open=0.20062 p_ccw=0.9688 n_com=30
+A_anneal09_8M ck=6200000: soups=0.0 open=0.20062 p_ccw=0.9688 n_com=30
+A_anneal09_8M ck=6400000: soups=0.0 open=0.20062 p_ccw=0.9688 n_com=30
+A_anneal09_8M ck=6600000: soups=0.0 open=0.20062 p_ccw=0.9688 n_com=30
+A_anneal09_8M ck=6800000: soups=0.0 open=0.20062 p_ccw=0.9688 n_com=30
+A_anneal09_8M ck=7000000: soups=0.0 open=0.20062 p_ccw=0.9688 n_com=30
+A_anneal09_8M ck=7200000: soups=0.0 open=0.20062 p_ccw=0.9688 n_com=30
+A_anneal09_8M ck=7400000: soups=0.0 open=0.2164 p_ccw=0.9655 n_com=27
+A_anneal09_8M ck=7600000: soups=0.0 open=0.9183 p_ccw=0.3333 n_com=1
+A_anneal09_8M ck=7800000: soups=0.0 open=0.81128 p_ccw=0.25 n_com=2
+A_anneal09_8M ck=8000000: soups=0.0 open=1.0 p_ccw=0.5 n_com=0
+Wrote /home/Yixiang/MPARL/GOGOGO/outputs/oc_cc_pilot2.json

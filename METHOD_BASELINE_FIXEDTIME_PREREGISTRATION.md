@@ -296,3 +296,73 @@ variable predicts, at matched intervention times, whether the
 outcome can still be steered. A failure is reported as a registered
 miss and the construct-validity limitation stands as currently
 written in the manuscript.
+
+### Outcomes (appended 2026-08-15 after the run; nothing above edited)
+
+Recorded in `outputs/learn_grip_discovery_utility.json`.
+
+- Discovery: k = 2 in 5/5 seeds (silhouette over 2..8), as in the
+  regime-discovery audit. The recipe recovers the regime cardinality
+  with no analyst input.
+- RDC1: FAIL. Pooled AUC of discovered openness 0.750 (< 0.80).
+- RDC2: FAIL. Both outcome classes have >= 20 episodes at taus 18,
+  20, 24, 30; fixed-time discovered-openness AUCs are 0.751, 0.729,
+  0.925, 0.834 (2/4 above 0.80). Declared side-openness at the same
+  taus: 0.986, 0.979, 0.981, 0.993.
+- RDC3: FAIL. AUC(disc) 0.750 < AUC(tau) 0.941. The pooled race is
+  dominated by intervention time itself (all kicks before tau 18
+  switch the side), which compresses pooled AUCs for every
+  state-based predictor; the informative comparison is the
+  fixed-time one in RDC2.
+- RDC4: PASS. AUC(side) 0.996 > AUC(entropy) 0.621.
+- Full pooled race (rank corr / AUC): disc_open 0.36/0.750,
+  side_open 0.61/0.996, pol_ent 0.09/0.621, |x| 0.60/0.999,
+  |v| 0.60/0.996, att 0.03/0.482, tau 0.42/0.941.
+
+Interpretation under the registered rules: RDC1-3 are a registered
+miss; the construct-validity limitation stands as written. The
+descriptive content is reported alongside the miss: the analyst-free
+recipe recovers the two-regime structure in every seed and its
+openness carries a real but weaker share of the controllability
+signal at matched times (0.73-0.93 versus 0.98-0.99 declared),
+while raw policy entropy carries almost none (0.62). In this
+low-dimensional system the physical magnitudes |x| and |v| match the
+declared object (0.999, 0.996), as expected where side-openness is
+nearly a function of the state; the declared object's value is that
+it generalizes to systems with no such privileged coordinates.
+
+# Protocol OC-CC: counter_circuit convention study (NOT FROZEN; stopped at the pilot gate, 2026-08-16)
+
+Intent: a second official Overcooked layout with two mirror-equivalent
+circulation conventions (counter_circuit, 9x5, central counter block,
+ring centre (4,2)), to replicate the coordination-ring formation
+result under a protocol frozen in advance. Following the MPE
+precedent, a competence pilot gates the confirmatory run: if pilot
+seeds cannot deliver soups, the layout fails the competence
+precondition and no confirmatory protocol is frozen.
+
+Pilot outcomes (scripts oc_cc_pilot.py, oc_cc_pilot2.py; outputs
+oc_cc_pilot.json, oc_cc_pilot2.json; pilot seeds 97001-97003,
+excluded from any future confirmatory set):
+
+- Round 1: 4M steps, the recipe's standard 0.6-horizon shaping
+  anneal. Zero soups at every checkpoint. A shaped-reward circulation
+  habit commits early (p_ccw ~= 0.03 from 400k) and dissolves after
+  shaping expires (~3.0-3.2M), ending fully open.
+- Round 2, arm A: 8M steps, 0.9-horizon anneal. Zero soups; committed
+  circulation (p_ccw ~= 0.97) until shaping expires (~7.2M), then
+  dissolves.
+- Round 2, arm B: 6M steps, shaping never annealed. Zero soups;
+  circulation habit persists under permanent shaping.
+
+Decision under the gate: the training recipe (the paper's fixed
+2-layer MLP on featurized states, PPO self-play, mechanics identical
+to the ring study) does not reach task competence on counter_circuit
+at up to 8M steps under three disclosed shaping schedules, so the
+confirmatory convention study was not run. Recorded as a pilot-stage
+competence failure with no theory claim either way. Per the frozen
+decision rule adopted from the reviewer-response plan, no further
+Overcooked layouts will be piloted for this manuscript: the
+circulation habit without realized task value also illustrates why
+the certificate requires competence before adjudicating a
+convention.

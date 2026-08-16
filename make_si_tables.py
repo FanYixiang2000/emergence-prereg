@@ -237,22 +237,25 @@ for size, v in sorted(fss["per_size"].items(), key=lambda kv: int(kv[0])):
     rows.append([f"Ant $N={size}$", fmt(v.get("t50"), 0),
                  fmt(v.get("width"), 0), fmt(v.get("delta_bic"), 1),
                  "onset" if v.get("b5_onset") else "--"])
-ks = load("kuramoto_scale.json")
-for K, seeds in sorted(ks["per_K"].items(), key=lambda kv: float(kv[0])):
-    for sd, v in sorted(seeds.items()):
-        h = v["hinge"]
-        rows.append([f"Kuramoto $K={K}$ (seed {sd})",
-                     fmt(h["t_star"], 1),
-                     "--", fmt(h["delta_bic"], 1),
-                     "onset" if v.get("onset_pass") else "--"])
+ks = load("kuramoto_scale_n10.json")
+summ = ks["registered_outcomes"]["per_K_summary"]
+for K, v in sorted(summ.items(), key=lambda kv: float(kv[0])):
+    tci = v["ci_t_star"]
+    sci = v["ci_post_slope"]
+    rows.append([f"Kuramoto $K={K}$ (10 seeds)",
+                 f"{v['mean_t_star']:.2f} [{tci[0]:.2f}, {tci[1]:.2f}]",
+                 f"{v['mean_post_slope']:.3f} [{sci[0]:.3f}, {sci[1]:.3f}]",
+                 "--", f"onset {v['n_pass']}/10"])
 table(
     r"\textbf{Scaling data.} Ant-colony finite-size scaling (median "
     r"$t_{50}$ crossing and 10--90\% width in trips, 30 episodes per "
-    r"size) and the Kuramoto coupling grid (two seeds per coupling "
-    r"$K$; $t^{*}$ in time units). These rows are the points behind "
-    r"Fig.~6a,b.",
-    ["System / size", "$t_{50}$ or $t^{*}$", "Width", "$\\Delta$BIC",
-     "Verdict"],
+    r"size) and the Kuramoto coupling grid (ten seeds per coupling "
+    r"$K$; seed-mean $t^{*}$ and closing-slope magnitude with 95\% "
+    r"bootstrap intervals over seeds; for the Kuramoto rows the width "
+    r"column reports the closing slope). These rows are the points "
+    r"behind Fig.~6a,b.",
+    ["System / size", "$t_{50}$ or $t^{*}$", "Width / slope",
+     "$\\Delta$BIC", "Verdict"],
     rows, "si:tab:scaling")
 
 # Supplementary Table 4: regime-ensemble audit, per-candidate summary
@@ -368,9 +371,131 @@ table(
     rows, "si:tab:qualification",
     align="lccccl", fit_width=True)
 
-# final numbering follows main-text citation order: the three audit
-# tables (built last, above) are Supplementary Tables 4-6
+# numbering follows main-text citation order: the three audit tables
+# (built after tables 7-11) are Supplementary Tables 4-6
 TABLES = TABLES[:3] + TABLES[8:11] + TABLES[3:8]
+
+# Supplementary Table 12: method-baseline battery
+mb = load("method_baseline_battery.json")
+comp = mb["composite_on_factorial"]
+amp = mb["amplitude_rule"]
+mc = mb["matched_confound"]
+cp = mb["changepoint_rivals"]["rivals"]
+inst = mb["changepoint_rivals"]["instrument_reference_rates"]
+
+
+def fpr_str(r):
+    f = r["fpr_by_family"]
+    return (f"power {r['power_onset']:.2f}; FPR {f['knee']:.2f} knee, "
+            f"{f['gradual']:.2f} gradual, {f['flat']:.2f} flat")
+
+
+rows = [
+    ["Marginals + TC + pairwise MI (composite)",
+     "source recovery, 72-cell factorial",
+     f"{comp['n_correct']}/72; {comp['env_misassigned']}/"
+     f"{comp['env_cells']} environment cells misread as pairwise",
+     "72/72"],
+    ["Amplitude threshold (no qualification)",
+     "pseudo-controls and true positives",
+     f"accepts {len(amp['controls_accepted_by_R1'])}/2 external "
+     f"takeovers; {amp['true_cells_accepted']} true positives",
+     "rejects all controls; profiles all cells"],
+    ["Any joint-distribution functional",
+     "matched-confound mechanisms",
+     f"identical across generators (max diff "
+     f"{mc['max_functional_diff']:.0e})",
+     "contract verdicts separate them"],
+    ["Binary segmentation, RBF (5\\% calibrated)",
+     "held-out curve benchmark",
+     fpr_str(cp["binseg_rbf_gain"]),
+     f"power {inst['onset']:.2f}; FPR 0.00 all families"],
+    ["CUSUM (5\\% calibrated)",
+     "held-out curve benchmark",
+     fpr_str(cp["cusum"]),
+     f"power {inst['onset']:.2f}; FPR 0.00 all families"],
+]
+table(
+    r"\textbf{Method-baseline battery.} Standard alternatives evaluated "
+    r"on exactly the data the instrument used, with rival decision rules "
+    r"frozen in the preregistration before implementation; the only "
+    r"calibration is the 5\% false-positive calibration on flat curves. "
+    r"One preregistration detail was wrong and is retained: the "
+    r"amplitude rule was predicted to accept the revelation/metric "
+    r"controls, but those carry zero entropy amplitude; the clause "
+    r"passed through the external-takeover controls instead.",
+    ["Baseline", "Test", "Baseline result", "Instrument"],
+    rows, "si:tab:baselines", align="p{0.24\\textwidth}p{0.2\\textwidth}"
+    "p{0.3\\textwidth}p{0.18\\textwidth}")
+
+# Supplementary Table 13: fixed-time ring intervention, all runs
+ft = load("oc_ring_fixed_time.json")
+base = ft["baselines_at_tfix"]
+rows = []
+for r in ft["runs"]:
+    b = base[str(r["seed"])]
+    rows.append([r["seed"], fmt(r["scale"], 2),
+                 fmt(r["openness_at_perturbation"], 2),
+                 fmt(b["mean_soups_at_tfix"], 2),
+                 fmt(r["final_p_ccw"], 2), r["outcome"]])
+oc = ft["registered_outcomes"]
+table(
+    r"\textbf{Fixed-time ring intervention (registered miss).} All "
+    r"eight seeds perturbed at the same training step "
+    rf"({oc['T_FIX']//1000}k, variance-maximizing rule frozen before "
+    r"the run) at two noise scales and resumed for 400k steps with "
+    r"unchanged mechanics. No run moved "
+    rf"({oc['OCF1_movable_open']} open vs "
+    rf"{oc['OCF1_movable_committed']} committed seeds movable, Fisher "
+    rf"$p={oc['OCF1_seed_fisher_p']:.1f}$): every continuation, "
+    r"including the behaviourally open seeds, re-converged to its "
+    r"seed's eventual direction.",
+    ["Seed", "Noise scale", "Openness at 960k", "Soups at 960k",
+     "Final $P(\\mathrm{ccw})$", "Outcome"],
+    rows, "si:tab:fixedtime")
+
+# Supplementary Table 14: discovered-regime controllability race
+rdc = load("learn_grip_discovery_utility.json")["registered_outcomes"]
+race = rdc["race"]
+ftau = rdc["fixed_tau"]
+valid_taus = [t for t in sorted(ftau, key=int) if "auc_disc" in ftau[t]]
+names = {
+    "disc_open": "Discovered openness (k-means, no analyst)",
+    "side_open": "Declared side-openness",
+    "pol_ent": "Policy action entropy",
+    "absx": "$|x|$", "absv": "$|v|$", "att": "Attachment flag",
+    "tau": "Intervention time $\\tau$",
+}
+rows = []
+for key in ["disc_open", "side_open", "pol_ent", "absx", "absv", "att",
+            "tau"]:
+    if key == "disc_open":
+        span = (f"{min(ftau[t]['auc_disc'] for t in valid_taus):.2f}--"
+                f"{max(ftau[t]['auc_disc'] for t in valid_taus):.2f}")
+    elif key == "side_open":
+        span = (f"{min(ftau[t]['auc_side'] for t in valid_taus):.2f}--"
+                f"{max(ftau[t]['auc_side'] for t in valid_taus):.2f}")
+    else:
+        span = "---"
+    rows.append([names[key], fmt(race[key]["rank_corr"], 2),
+                 fmt(race[key]["auc"], 3), span])
+table(
+    r"\textbf{Discovered-regime controllability race (registered "
+    r"miss).} Predictors of kick-induced outcome switching raced on the "
+    r"same 81{,}920 grip intervention episodes (5 seeds $\times$ 8 "
+    r"intervention times $\times$ 2{,}048 episodes). The discovery "
+    r"recipe (k-means on raw traces, $k$ by silhouette, frozen from the "
+    r"regime-discovery audit) recovers $k=2$ in 5/5 seeds. Fixed-time "
+    r"AUCs are shown at the four intervention times where both outcome "
+    r"classes have $\geq$20 episodes; the registered "
+    r"0.80-at-every-time bar for discovered openness fails (2/4 "
+    r"times), so the analyst-free result is reported as a registered "
+    r"miss. Pooled AUCs are compressed for all state-based predictors "
+    r"because early kicks always switch the side.",
+    ["Predictor", "Rank corr.", "Pooled AUC", "Fixed-time AUC"],
+    rows, "si:tab:rdc",
+    align="p{0.4\\textwidth}p{0.12\\textwidth}p{0.12\\textwidth}"
+    "p{0.2\\textwidth}")
 
 with open(os.path.join(HERE, "si_tables.tex"), "w") as f:
     f.write("% Generated by make_si_tables.py -- do not edit by hand.\n\n")

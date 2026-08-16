@@ -68,8 +68,8 @@ measured every 10 steps. The openness object is the normalized entropy
 of the phase distribution over 10 bins, estimated from an ensemble of
 20{,}000 replicates. The breakpoint contrast uses supercritical
 $K=1.5$ against subcritical $K=0.3$; the coupling study spans
-$K\in\{0.9,1.1,1.5,2.0,2.5\}$ with two seeds per coupling
-(Supplementary Table~11).
+$K\in\{0.9,1.1,1.5,2.0,2.5\}$ with ten seeds per coupling and
+seed-bootstrap intervals (Supplementary Table~11).
 
 \paragraph{Potts model.}
 Ferromagnetic $q$-state Potts model ($q=2$ and $q=10$) on a $48\times
@@ -121,6 +121,20 @@ the object's position magnitude $|x|$, its velocity magnitude $|v|$,
 the population attachment (grip) level, and the intervention time
 index $\tau$ itself. All predictors are computed from the same stored
 rollouts; AUCs are reported per seed and pooled.
+
+\paragraph{Discovered-openness predictor.}
+The analyst-free follow-up (Supplementary Table~14) adds two
+predictors to the same race under a protocol frozen before the run.
+The discovery step is byte-identical to the regime-discovery audit's
+grip arm: 2{,}048 fresh rollouts per seed, k-means on the raw 80-step
+position traces with $k$ chosen by silhouette over $2..8$
+(fixed clustering seed). Discovered openness of an intervention
+episode is the normalized entropy of the class probabilities of a
+25-nearest-neighbour classifier fit on the recipe episodes' states at
+the intervention time with their trace-cluster labels, evaluated at
+the episode's own pre-kick state. The second added predictor is raw
+policy action entropy at the same state. Registered outcomes and the
+miss are listed in Supplementary Note~1.
 
 \section*{Supplementary Note 1: registered misses and amendments}
 
@@ -181,6 +195,15 @@ unmodified MPE \texttt{simple\_spread} benchmark did not meet its
 frozen competence precondition (conflict-episode coverage 3\% after
 3{,}000 PPO updates) and is recorded as a training failure with no
 theory claim made either way.
+\item \textbf{Counter-circuit pilot gate.} A planned second-layout
+convention study on the official \texttt{counter\_circuit} layout was
+stopped at the competence gate before any protocol was frozen: three
+disclosed one-seed pilots (4M steps with the recipe's standard
+0.6-horizon shaping anneal; 8M with a 0.9-horizon anneal; 6M with
+shaping never annealed) all deliver zero soups. In the annealed
+pilots a shaped-reward circulation habit commits and then dissolves
+once shaping expires. Recorded as a pilot-stage competence failure
+with no theory claim either way; no further layouts were piloted.
 \item \textbf{Numerical defect.} One float32 entropy clamp that
 rounded to a degenerate value was found and fixed in code; both
 affected experiments were rerun with identical seeds and the
@@ -211,6 +234,26 @@ commitment for any policy; the registered ``untrained $\Rightarrow$ no
 onset'' control prediction was wrong for this system (and only this
 system), consistent with the paper's mechanism control attributing
 the punctuated profile to the gate rather than to learning.
+\item \textbf{Fixed-time ring intervention miss.} The preregistered
+fixed-time follow-up to the ring intervention (all eight seeds
+perturbed at the same 960k step) predicted that behaviourally open
+seeds would be movable; no run moved (0/16, Fisher $p=1.0$), a
+registered miss reported with its diagnosis: the eventual direction
+is already parameter-committed while behaviour still looks open
+(Supplementary Table~13).
+\item \textbf{Method-battery clause detail.} One preregistration
+detail in the method-baseline battery was wrong and is retained
+verbatim: the amplitude-only rival was predicted to accept the
+revelation/metric controls, which carry zero entropy amplitude; the
+clause passed through the external-takeover controls instead
+(Supplementary Table~12).
+\item \textbf{Discovered-regime controllability miss.} The
+analyst-free follow-up racing discovered openness against the
+declared object on 81{,}920 grip intervention episodes missed its
+registered 0.80-at-every-time AUC bar (fixed-time AUCs 0.73--0.93
+against 0.98--0.99 declared); the discovery recipe recovered the
+two-regime structure in 5/5 seeds and the result is reported as a
+registered miss (Supplementary Table~14).
 \end{enumerate}
 
 \clearpage

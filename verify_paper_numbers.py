@@ -254,19 +254,30 @@ check("FSS width 280-290 across N>=50",
       (min(w.values()), max(w.values())), (280.0, 290.0),
       "280--290 trips from $N{=}50$ to $500$")
 
-ks = load("kuramoto_scale.json")
+ks = load("kuramoto_scale_n10.json")
 ro = ks["registered_outcomes"]
-tvals = ro["mean_t_star"]
-svals = ro["mean_post_slope"]
-check("Kuramoto t* 6.7->1.8", (round(tvals[0], 1), round(tvals[-1], 1)), (6.7, 1.8),
-      "(6.7 $\\to$ 1.8)")
-check("Kuramoto t* monotone decreasing", tvals == sorted(tvals, reverse=True), True)
-check("Kuramoto slope 0.032->0.199", (round(svals[0], 3), round(svals[-1], 3)), (0.032, 0.199),
-      "(0.032 $\\to$ 0.199)")
-check("Kuramoto slope monotone increasing", svals == sorted(svals), True)
+summ = ro["per_K_summary"]
+korder = [str(k) for k in ks["config"]["Ks"]]
+tvals = [summ[k]["mean_t_star"] for k in korder]
+svals = [summ[k]["mean_post_slope"] for k in korder]
+check("Kuramoto t* 6.64->1.80", (round(tvals[0], 2), round(tvals[-1], 2)), (6.64, 1.80),
+      "(6.64 $\\to$ 1.80")
+check("Kuramoto t* strictly monotone", ro["KN2_strict_mean_monotone"], True,
+      "falls strictly monotonically")
+check("Kuramoto t* Spearman rho -0.99", round(ro["KN2_spearman_rho"], 2), -0.99,
+      "Spearman $\\rho=-0.99$")
+check("Kuramoto t* permutation p 1e-5", ro["KN2_perm_p"] < 1.1e-5, True,
+      "permutation $p=10^{-5}$")
+check("Kuramoto slope 0.030->0.197", (round(svals[0], 3), round(svals[-1], 3)), (0.030, 0.197),
+      "(0.030 $\\to$ 0.197")
+check("Kuramoto slope strictly monotone + rho 0.98",
+      (ro["KN3_strict_mean_monotone"], round(ro["KN3_spearman_rho"], 2),
+       ro["KN3_perm_p"] < 1.1e-5),
+      (True, 0.98, True), "$\\rho=0.98$")
 runs = [(K, s, r) for K, seeds in ks["per_K"].items() for s, r in seeds.items()]
-check("Kuramoto 10/10 onsets", (sum(1 for _, _, r in runs if r["onset_pass"]), len(runs)),
-      (10, 10), "(10/10 onsets)")
+check("Kuramoto 50/50 onsets, ten seeds per coupling",
+      (sum(1 for _, _, r in runs if r["onset_pass"]), len(runs)),
+      (50, 50), "ten seeds per coupling (50/50 onsets)")
 check("Kuramoto subcritical gated null 3/3",
       load("kuramoto_breakpoint_r2.json")["registered_outcomes"]["KURR2_2_subcritical_gated_null_3of3"],
       True, "Every subcritical run is gated null")
@@ -328,6 +339,86 @@ check("OCI sign-flip p=0.016", round(sl_["moved"]["sign_flip_p"], 3), 0.016,
       "sign-flip $p=0.016$")
 check("OCI flip p=0.125 (printed 0.13)", sl_["strict_flip"]["sign_flip_p"], 0.125,
       "$p=0.13$", tol=0.004)
+
+ft = load("oc_ring_fixed_time.json")
+ro = ft["registered_outcomes"]
+check("Fixed-time T=960k", ro["T_FIX"], 960_000, "same step (960k")
+check("Fixed-time 0/16 moved",
+      (ro["OCF2_moved_open_runs"], ro["OCF2_moved_committed_runs"]),
+      ("0/6", "0/10"), "No run moved (0/16)")
+check("Fixed-time seed Fisher p=1.0", ro["OCF1_seed_fisher_p"], 1.0,
+      "Fisher $p=1.0$")
+check("Fixed-time 3 open vs 5 committed seeds",
+      (len(ro["open_seeds"]), len(ro["committed_seeds"])), (3, 5),
+      "three seeds were still behaviourally open")
+opens_ft = [ft["baselines_at_tfix"][str(s)]["openness_at_tfix"]
+            for s in ro["open_seeds"]]
+check("Fixed-time open seeds openness 0.95-1.00",
+      (round(min(opens_ft), 2), round(max(opens_ft), 2)), (0.95, 1.0),
+      "(openness 0.95--1.00)")
+soup_open = [ft["baselines_at_tfix"][str(s)]["mean_soups_at_tfix"]
+             for s in ro["open_seeds"]]
+soup_com = [ft["baselines_at_tfix"][str(s)]["mean_soups_at_tfix"]
+            for s in ro["committed_seeds"]]
+check("Fixed-time soups 0.27-0.53 vs 0.67-1.9",
+      (round(min(soup_open), 2), round(max(soup_open), 2),
+       round(min(soup_com), 2), round(max(soup_com), 1)),
+      (0.27, 0.53, 0.67, 1.9), "(0.27--0.53 versus 0.67--1.9 mean soups)")
+
+mb = load("method_baseline_battery.json")
+ro = mb["registered_outcomes"]
+comp = mb["composite_on_factorial"]
+check("Battery composite 54/72", comp["n_correct"], 54,
+      "recovers 54/72")
+check("Battery env cells 18/18 misread",
+      (comp["env_misassigned"], comp["env_cells"]), (18, 18),
+      "misreading all 18 environment-driven cells as pairwise coupling")
+check("Battery amplitude accepts externals only",
+      (sorted(mb["amplitude_rule"]["controls_accepted_by_R1"]),
+       mb["amplitude_rule"]["true_cells_accepted"]),
+      (["external_mask", "external_overwrite"], "0/72"),
+      "accepts none of the 72 true positives")
+check("Battery matched-confound functionals identical",
+      mb["matched_confound"]["max_functional_diff"], 0.0,
+      "equal across the three generators to machine precision")
+cpb = mb["changepoint_rivals"]["rivals"]
+check("Battery binseg fires on knee+gradual",
+      (cpb["binseg_rbf_gain"]["power_onset"],
+       cpb["binseg_rbf_gain"]["fpr_by_family"]["knee"],
+       cpb["binseg_rbf_gain"]["fpr_by_family"]["gradual"]),
+      (1.0, 1.0, 1.0),
+      "binary segmentation also on 100\\% of gradual")
+check("Battery cusum fires on knee",
+      (cpb["cusum"]["power_onset"], cpb["cusum"]["fpr_by_family"]["knee"]),
+      (1.0, 1.0), "fire on 100\\% of deceleration")
+check("Battery MB5 no rival at operating point",
+      ro["MB5_pass"], True,
+      "neither attains the instrument's operating point")
+
+rdc = load("learn_grip_discovery_utility.json")["registered_outcomes"]
+check("RDC k=2 in 5/5 seeds", rdc["k_discovered"], [2] * 5,
+      "recovers the two-regime structure in 5/5 seeds")
+rdc_ft = rdc["fixed_tau"]
+rdc_taus = [t for t in rdc_ft if "auc_disc" in rdc_ft[t]]
+disc_lo = min(rdc_ft[t]["auc_disc"] for t in rdc_taus)
+disc_hi = max(rdc_ft[t]["auc_disc"] for t in rdc_taus)
+side_lo = min(rdc_ft[t]["auc_side"] for t in rdc_taus)
+side_hi = max(rdc_ft[t]["auc_side"] for t in rdc_taus)
+check("RDC fixed-time disc AUC 0.73-0.93",
+      (round(disc_lo, 2), round(disc_hi, 2)), (0.73, 0.93),
+      "fixed-time AUCs of 0.73--0.93")
+check("RDC fixed-time side AUC 0.98-0.99",
+      (round(side_lo, 2), round(side_hi, 2)), (0.98, 0.99),
+      "against 0.98--0.99 for the declared object")
+check("RDC policy entropy pooled AUC 0.62",
+      round(rdc["race"]["pol_ent"]["auc"], 2), 0.62,
+      "pooled AUC 0.62 against 0.996")
+check("RDC side pooled AUC 0.996",
+      round(rdc["race"]["side_open"]["auc"], 3), 0.996)
+check("RDC registered miss (RDC1-3 fail, RDC4 pass)",
+      (rdc["RDC1_pass"], rdc["RDC2_pass"], rdc["RDC3_pass"],
+       rdc["RDC4_pass"]), (False, False, False, True),
+      "missing the registered 0.80-everywhere bar (a registered miss)")
 
 si = load("semi_inject.json")
 ro = si["registered_outcomes"]

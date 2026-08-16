@@ -1,5 +1,5 @@
 {
-  "generated_utc": "2026-08-15T06:09:51.253427+00:00",
+  "generated_utc": "2026-08-16T04:49:40.356538+00:00",
   "python": "3.13.9 | packaged by Anaconda, Inc. | (main, Oct 21 2025, 19:16:10) [GCC 11.2.0]",
   "manuscript": [
     "main.tex",
@@ -98,9 +98,9 @@
       ]
     },
     {
-      "output": "kuramoto_scale.json",
-      "sha256": "0a4954ba38baa0936ce2f6eb9d2d9057d019a75d1e6a56b67b6a41c741cac8a2",
-      "generating_script": "kuramoto_scale.py",
+      "output": "kuramoto_scale_n10.json",
+      "sha256": "9955c59b79cfb43ab78b7df83ea00f8bbf57d283ee879557e4de4fd15162b825",
+      "generating_script": "kuramoto_scale_n10.py",
       "read_by": [
         "number_audit",
         "figures",
@@ -133,6 +133,15 @@
       "generating_script": "learn_grip_confound.py",
       "read_by": [
         "number_audit"
+      ]
+    },
+    {
+      "output": "learn_grip_discovery_utility.json",
+      "sha256": "c25d1efdbf09e4163d4f7404f47c4f9787e39fe0796f3a34544b07ba258943ff",
+      "generating_script": "learn_grip_discovery_utility.py",
+      "read_by": [
+        "number_audit",
+        "si_tables"
       ]
     },
     {
@@ -260,9 +269,27 @@
       ]
     },
     {
+      "output": "method_baseline_battery.json",
+      "sha256": "fea0e03fa8e758ea45009ae48fb879ca4ae4f1042b0ed9a8b7fcf8a87987e519",
+      "generating_script": "bench_baselines.py",
+      "read_by": [
+        "number_audit",
+        "si_tables"
+      ]
+    },
+    {
       "output": "oc_ring_ext.json",
       "sha256": "ab7e4b4fcfb3fe71f6da8862a188ce670fc5e3d7d01e88e9fa4daf8d4bd868a8",
       "generating_script": "oc_ring_ext.py",
+      "read_by": [
+        "number_audit",
+        "si_tables"
+      ]
+    },
+    {
+      "output": "oc_ring_fixed_time.json",
+      "sha256": "c79756f793bae8d9b368b793e0d600fb3c7d07d14cc5384743cef766865b9f01",
+      "generating_script": "oc_ring_fixed_time.py",
       "read_by": [
         "number_audit",
         "si_tables"
@@ -478,6 +505,7 @@
     "EXTERNAL_TRANSFER_PREREGISTRATION.md": "885bc4ef847ae15eafbc16885b3ac12ac283496c10f9c7f381757d41d42858ad",
     "LATENT_CONTEXT_PREREGISTRATION.md": "a2a88eb2925cb6d630e3ddeeccda6d8c0037829c32083844cba9d164eaf1258d",
     "LBF_PREREGISTRATION.md": "4d32cacbcdfea123b41224b6dc42c07d82bce62fd23dc1157d242f1b5ad4fa6b",
+    "METHOD_BASELINE_FIXEDTIME_PREREGISTRATION.md": "23e7e6d4db0765f619158fbf316aa906a44a6b8ebd5a92dfce2a10e957708643",
     "MULTIBERTS_PREREGISTRATION.md": "f00e6d8306ae3344f6cf7f157436cea8fdc91462717ebfaf7fdf31d1bd6e6ac3",
     "OVERCOOKED_PREREGISTRATION.md": "c1cb90365bd3425b8bcbb554aa1b6728fd835579d64945246936e04375f0089c",
     "OVERCOOKED_ROUND2_PREREGISTRATION.md": "ce9e06bc81d4c108e3be05d7d678db14acf9a5fa0114f67171c6a7583ffd2f81",
@@ -489,7 +517,7 @@
     "THEORY.md": "7db373c02a57167f13983917373a44ad23050c5f410cdaaa393e010f4677f8b2",
     "ANALYSIS_FREEZE.md": "fd37e9b36abe51c43ad9da11f2f37c0546c268c1ecc8e88c83b64133dbb6897d",
     "CLAIM_EVIDENCE_MAP.md": "90fac83fefd61a47ab4459155501698c554d2f22b3ed7b0e1f24b8febc626c12",
-    "REPRODUCIBILITY.md": "e0a7682d1bcf72afdc9d4611de5e432616189cf168ebc506851b2a03cc3d65a6",
+    "REPRODUCIBILITY.md": "8d28fa1272b2eaa0e7afce224199838b1bd704bd4eccc02117c3f848e785007c",
     "INDEPENDENT_AUDIT_INSTRUCTIONS.md": "6eb1559fafe1ae60c39fb05259d3c673885d0af5b313638202e423bbdb4eb449",
     "INVALID_DATA_REGISTRY.md": "09d07c808c1b0aca7fcb30c161b468d3e4c864fb4fa302ea22758aba8f3e8024",
     "NMI_READINESS_AUDIT.md": "e2e068034047ed4754d381159a9936dfcd20d544e628f0d4ee1f1c86acaa6cba",
@@ -626,6 +654,7 @@
     "kuramoto_breakpoint_r2.json": "36b4a37ece159765e8c9c86a761011e13f3be2fa485b0590db332da41dab9c56",
     "kuramoto_offdesign_ladder.json": "20d98aa1b60d246122c10980ab4ee60a2e04f3450878f32ebd0915d7c6c67da3",
     "kuramoto_scale.json": "0a4954ba38baa0936ce2f6eb9d2d9057d019a75d1e6a56b67b6a41c741cac8a2",
+    "kuramoto_scale_n10.json": "9955c59b79cfb43ab78b7df83ea00f8bbf57d283ee879557e4de4fd15162b825",
     "latent_context_generalization.json": "2b3de0b17d48743c1b7fc635b494887a485c6f07c45d1dca9b3e71b5e8859d92",
     "latent_context_lm_confirmation.json": "0f298fdf36a550ec1f30fb83c3d9acd3f02d94f57cd95134f19a08faa5147a3a",
     "latent_context_lm_pilot.json": "167c290925322175bbef34e1ecc7de7d9cc2732921e23e53580e119f57314be5",
@@ -642,6 +671,7 @@
     "learn_eta_breakpoint.json": "7c877d0687eaf24f2e38b845f026d5eb4adc9fb199141ddd14e80017f159d4d7",
     "learn_grip_a2c.json": "e066f42ef659392e52b8fc704e9b1b170f177197f660e8feddf3e587cefd74b9",
     "learn_grip_confound.json": "45bb63e53ed1697bcae907a14701c94159b7af0b1ff2f916bae4cb9012876d05",
+    "learn_grip_discovery_utility.json": "c25d1efdbf09e4163d4f7404f47c4f9787e39fe0796f3a34544b07ba258943ff",
     "learn_grip_ext.json": "1b7e6dac1f209d28c93a9a3d50807c0d58faf5306d320726172d4e4c2cc22f66",
     "learn_grip_formation.json": "cc64147eeb46dd31ebd6a7a3cf2bf30c0aff78c0ecc498e3b6bd8d5ac61da103",
     "learn_grip_formation_fine.json": "bae59e8ac854c02bfdaba3618e266cfc214086d5c4a3f5d87dfef2c41c570f4b",
@@ -677,6 +707,7 @@
     "matched_provenance.json": "ab71b31e3f09d16976bee817d44745b93697787d3b32f903860a5402b4484e8c",
     "meta_collapse_commitment.json": "5d174fdb0649a358bd25ce08c32ed997532c8c0af54b4262e8830da24a1b7a82",
     "meta_collapse_margins.json": "c6cf83ced08ab3e5aace20dbe6d5019192568b9d92558baac152c6369b4656d2",
+    "method_baseline_battery.json": "fea0e03fa8e758ea45009ae48fb879ca4ae4f1042b0ed9a8b7fcf8a87987e519",
     "mpe_spread_ppo.json": "fdc5691495b02ef312981e815eb61fd34d0057f37e214231d3eb7264049cf7e2",
     "mpe_spread_realization.json": "2780f1dda725584624b4735f73e96e9ce5087b0e475e1e5c21da8c4353d20cb0",
     "multiberts_collapse_summary.json": "467f4194d8cfa020c5834d7f5a7e41834ee2510f3a8ee5d9be4cb0a5d63a324c",
@@ -690,7 +721,11 @@
     "neural_within_episode_summary.json": "f726deac059ad0e42846cfb5458a9da5b0e336a024a87a5036a3963d08ae9359",
     "nonmono_cert.json": "652797918fc0aeeb7e1af00106556abb2f8eb4d644a26dd79f3acf18d76a878b",
     "observer_bounds_verification.json": "cd23f1c3d067322cbe16925742c89a20cf1dbb318b3d1edf3353e392331c83b0",
+    "oc_cc_pilot.json": "7f358fd4c75eaf0afb3e3d4596c425f9b06827ee9bb9bd8df1f67147e2284993",
+    "oc_cc_pilot2.json": "fe09c1bb44830a93dacfe2e5d2e5e219d3b35d26fa11f4b2511414e5d24e23b2",
+    "oc_fixt_partial.json": "abaff455f00fe9145d993e00270b180f2ddc34f8cfcd9b497b80500aed918461",
     "oc_ring_ext.json": "ab7e4b4fcfb3fe71f6da8862a188ce670fc5e3d7d01e88e9fa4daf8d4bd868a8",
+    "oc_ring_fixed_time.json": "c79756f793bae8d9b368b793e0d600fb3c7d07d14cc5384743cef766865b9f01",
     "oc_ring_intervention.json": "67695b81cb7aa31a6adbcbf605dc894c21144f03a08a3eb395bc11e129be21bc",
     "oc_ring_intervention_partial.json": "ffeda8709acba941ee558b757197eda5ee6ed13da98ad2de3b0e54df9c12fdb5",
     "oc_ring_realization.json": "202f79cd5b79b998d7c49b557d2f1d03a972857b3d0acb9456acdbaea86ad1cc",
@@ -924,5 +959,5 @@
     "within_episode_sweep_ci.csv": "17d051ccf89cadee10478e1e2ab3b0e7446773b6e58886c601a9f349d93f3559",
     "within_episode_sweep_per_seed.csv": "b1ad2d3569e63a49efaa3ac60dc14e9e9eac40c7f7a289f55aeb23aff1f7259f"
   },
-  "git_commit": "0365686497006c6772f5270d8db9eddf66b452d4"
+  "git_commit": "3fec8b37a4af4dbb0e87da059604b9631ca77790"
 }

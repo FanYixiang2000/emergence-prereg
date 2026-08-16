@@ -1,0 +1,85 @@
+Gym has been unmaintained since 2022 and does not support NumPy 2.0 amongst other critical functionality.
+Please upgrade to Gymnasium, the maintained drop-in replacement of Gym, or contact the authors of your software and request that they upgrade.
+Users of this version of Gym should be able to simply replace 'import gym' with 'import gymnasium as gym' in the vast majority of cases.
+See the migration guide at https://gymnasium.farama.org/introduction/migration_guide/ for additional information.
+  checkpoint 100000 saved at step 100352
+  checkpoint 200000 saved at step 200704
+  checkpoint 300000 saved at step 301056
+  checkpoint 400000 saved at step 401408
+  checkpoint 500000 saved at step 501760
+  checkpoint 600000 saved at step 600064
+  checkpoint 700000 saved at step 700416
+  checkpoint 800000 saved at step 800768
+  checkpoint 900000 saved at step 901120
+  checkpoint 1000000 saved at step 1001472
+  checkpoint 1100000 saved at step 1101824
+  checkpoint 1200000 saved at step 1200128
+  checkpoint 1300000 saved at step 1300480
+  checkpoint 1400000 saved at step 1400832
+  checkpoint 1500000 saved at step 1501184
+  checkpoint 1600000 saved at step 1601536
+  checkpoint 1700000 saved at step 1701888
+  checkpoint 1800000 saved at step 1800192
+  checkpoint 1900000 saved at step 1900544
+  checkpoint 2000000 saved at step 2000896
+  checkpoint 2100000 saved at step 2101248
+  checkpoint 2200000 saved at step 2201600
+  checkpoint 2300000 saved at step 2301952
+  checkpoint 2400000 saved at step 2400256
+  checkpoint 2500000 saved at step 2500608
+  checkpoint 2600000 saved at step 2600960
+  checkpoint 2700000 saved at step 2701312
+  checkpoint 2800000 saved at step 2801664
+  checkpoint 2900000 saved at step 2902016
+  checkpoint 3000000 saved at step 3000320
+  checkpoint 3100000 saved at step 3100672
+  checkpoint 3200000 saved at step 3201024
+  checkpoint 3300000 saved at step 3301376
+  checkpoint 3400000 saved at step 3401728
+  checkpoint 3500000 saved at step 3500032
+  checkpoint 3600000 saved at step 3600384
+  checkpoint 3700000 saved at step 3700736
+  checkpoint 3800000 saved at step 3801088
+  checkpoint 3900000 saved at step 3901440
+  checkpoint 4000000 saved at step 4001792
+ck=100000: soups=0.0 open=1.0 p_ccw=0.5 n_com=0
+ck=200000: soups=0.0 open=0.9183 p_ccw=0.3333 n_com=1
+ck=300000: soups=0.0 open=0.9183 p_ccw=0.3333 n_com=1
+ck=400000: soups=0.0 open=0.33729 p_ccw=0.0625 n_com=14
+ck=500000: soups=0.0 open=0.22228 p_ccw=0.0357 n_com=26
+ck=600000: soups=0.0 open=0.20062 p_ccw=0.0312 n_com=30
+ck=700000: soups=0.0 open=0.20062 p_ccw=0.0312 n_com=30
+ck=800000: soups=0.0 open=0.20559 p_ccw=0.0323 n_com=29
+ck=900000: soups=0.0 open=0.20062 p_ccw=0.0312 n_com=30
+ck=1000000: soups=0.0 open=0.20062 p_ccw=0.0312 n_com=30
+ck=1100000: soups=0.0 open=0.20062 p_ccw=0.0312 n_com=30
+ck=1200000: soups=0.0 open=0.20559 p_ccw=0.0323 n_com=29
+ck=1300000: soups=0.0 open=0.20062 p_ccw=0.0312 n_com=30
+ck=1400000: soups=0.0 open=0.20062 p_ccw=0.0312 n_com=30
+ck=1500000: soups=0.0 open=0.2164 p_ccw=0.0345 n_com=27
+ck=1600000: soups=0.0 open=0.21084 p_ccw=0.0333 n_com=28
+ck=1700000: soups=0.0 open=0.20559 p_ccw=0.0323 n_com=29
+ck=1800000: soups=0.0 open=0.20062 p_ccw=0.0312 n_com=30
+ck=1900000: soups=0.0 open=0.20062 p_ccw=0.0312 n_com=30
+ck=2000000: soups=0.0 open=0.20559 p_ccw=0.0323 n_com=29
+ck=2100000: soups=0.0 open=0.20559 p_ccw=0.0323 n_com=29
+ck=2200000: soups=0.0 open=0.20559 p_ccw=0.0323 n_com=29
+ck=2300000: soups=0.0 open=0.24988 p_ccw=0.0417 n_com=22
+ck=2400000: soups=0.0 open=0.24988 p_ccw=0.0417 n_com=22
+ck=2500000: soups=0.0 open=0.50326 p_ccw=0.1111 n_com=7
+ck=2600000: soups=0.0 open=0.22854 p_ccw=0.037 n_com=25
+ck=2700000: soups=0.0 open=0.26676 p_ccw=0.0455 n_com=20
+ck=2800000: soups=0.0 open=0.50326 p_ccw=0.1111 n_com=7
+ck=2900000: soups=0.0 open=0.30954 p_ccw=0.0556 n_com=16
+ck=3000000: soups=0.0 open=0.72193 p_ccw=0.8 n_com=3
+ck=3100000: soups=0.0 open=0.24229 p_ccw=0.96 n_com=23
+ck=3200000: soups=0.0 open=1.0 p_ccw=0.5 n_com=0
+ck=3300000: soups=0.0 open=1.0 p_ccw=0.5 n_com=0
+ck=3400000: soups=0.0 open=0.9183 p_ccw=0.6667 n_com=1
+ck=3500000: soups=0.0 open=1.0 p_ccw=0.5 n_com=0
+ck=3600000: soups=0.0 open=1.0 p_ccw=0.5 n_com=0
+ck=3700000: soups=0.0 open=1.0 p_ccw=0.5 n_com=0
+ck=3800000: soups=0.0 open=1.0 p_ccw=0.5 n_com=0
+ck=3900000: soups=0.0 open=1.0 p_ccw=0.5 n_com=0
+ck=4000000: soups=0.0 open=1.0 p_ccw=0.5 n_com=0
+Wrote /home/Yixiang/MPARL/GOGOGO/outputs/oc_cc_pilot.json

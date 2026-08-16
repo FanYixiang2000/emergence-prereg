@@ -48,7 +48,10 @@ smoothly across training while each deployment commits abruptly within
 an episode; and that remaining openness predicts intervention success
 prospectively. In a standard benchmark, perturbations alter
 conventions more often while the population is open than after
-commitment. Possibility-space collapse makes a contested concept
+commitment. On the same data, amplitude thresholds,
+information-theoretic composites and generic change-point detectors
+each fail at least one of these adjudications. Possibility-space
+collapse makes a contested concept
 measurable and falsifiable under a declared observation contract.
 \end{abstract}
 
@@ -124,7 +127,7 @@ Here we introduce a two-level definition of emergence: a qualification
 (spontaneous, regime-level, persistent) and a quantitative
 \emph{emergence intensity profile} (EIP) whose axes---amplitude,
 abruptness and source decomposition---are measured separately, so
-abruptness is a phenotype rather than an existence criterion. We then
+abruptness is a phenotype, never an existence criterion. We then
 provide a calibrated measurement
 contract, matured through preregistered self-falsification, that
 recovers a collapse's source on analytic ground truth (72/72 cells)
@@ -150,7 +153,7 @@ in the joint distribution), endogenous (internally generated, defined
 by a declared provenance boundary), and persistent (stable over the
 declared horizon). Robustness properties, such as recovery and causal
 irreversibility, are reported separately. For qualified systems, we
-report an intensity profile rather than a binary label. The
+report an intensity profile in place of a binary label. The
 distribution $P_t$ is defined relative to a declared \emph{observation
 contract}---variables, horizon, discretization, reference, and
 provenance boundary---that is frozen before adjudication. The contract
@@ -181,6 +184,17 @@ strictly orders punctuated $>$ sigmoid $>$ gradual (Extended Data
 Fig.~1b). This separation addresses the metric-artefact
 critique\citep{schaeffer2023emergent}; a revelation-only or
 discontinuous-metric control produces exactly zero collapse.
+A preregistered baseline battery then gives the standard
+information-theoretic toolkit its best a-priori shot on the same 72
+cells: a composite rule built from marginal entropies, total
+correlation and pairwise mutual information recovers 54/72, misreading
+all 18 environment-driven cells as pairwise coupling, because a common
+cause and genuine coupling are indistinguishable to any functional of
+the system distribution without the contract's declared conditioning
+step. A raw entropy-amplitude threshold fails in both directions at
+once: it accepts the two external-takeover controls that the
+instrument rejects as exogenous, and accepts none of the 72 true
+positives (Methods; Supplementary Table~12).
 
 \subsection*{Breakpoints mark phenotypes, not emergence itself}
 
@@ -197,7 +211,12 @@ yielded zero false positives across deceleration, gradual and flat
 control families at every tested grid density and noise level,
 achieved an onset power of 1.00 at our operating resolution, and
 showed location agreement with a standard change-point method
-(Methods). Every headline verdict below is additionally stable across
+(Methods). Generic change-point detectors do not reproduce this
+operating point: calibrated to the same 5\% false-positive budget on
+flat curves, binary segmentation and CUSUM both reach a power of 1.00
+but fire on 100\% of deceleration controls (binary segmentation also
+on 100\% of gradual controls; Supplementary Table~12). The two-regime
+gate, not the change-point machinery, is what buys specificity. Every headline verdict below is additionally stable across
 243 adjudication contracts (gate, window, truncation, threshold, grid)
 and across a preregistered battery of representations of the openness
 object itself. The measured equivalence class, including the
@@ -217,8 +236,8 @@ checkpoints, whose entropy collapses before the second saved step.
 
 \subsection*{Formation and realization dissociate in learned systems}
 
-We next examine learned agents, where the
-possibility space is shaped by optimization rather than fixed physics.
+We next examine learned agents, whose
+possibility space is itself a product of optimization.
 In a two-phase collective-transport task, sixteen agents must jointly
 grip an object before they can push it, structurally delaying the
 choice of side. Policy-gradient training\citep{williams1992simple}
@@ -272,7 +291,8 @@ shows the same signature more strongly in 5/5 seeds ($\Delta$BIC
 with collapse preceding capability and five distinct role
 permutations.
 
-In both systems the open plateau \emph{is} the joint exploration barrier.
+In both systems the open plateau behaves as a joint exploration
+barrier, measured here through its unilateral component (Methods).
 Mid-plateau, a probe agent
 unilaterally committing to the \emph{best} available code or role
 gains essentially nothing (0.011; 0.001). After commitment, the
@@ -392,9 +412,12 @@ sub-prediction failed and is reported: at the longer horizon, the
 onset threshold sits between $N=10$ and $20$, so ``onset at every
 $N\geq10$'' was counted as a miss. In the Kuramoto system, the same
 instrument tracks the approach to criticality. Across coupling
-$K=0.9\to2.5$ (10/10 onsets), the breakpoint time falls monotonically
-(6.7 $\to$ 1.8) and the closing slope rises monotonically (0.032 $\to$
-0.199). Every subcritical run is gated null, and the
+$K=0.9\to2.5$ with ten seeds per coupling (50/50 onsets), the mean
+breakpoint time falls strictly monotonically (6.64 $\to$ 1.80;
+Spearman $\rho=-0.99$, permutation $p=10^{-5}$) and the mean closing
+slope rises strictly monotonically (0.030 $\to$ 0.197; $\rho=0.98$,
+$p=10^{-5}$), with per-coupling bootstrap intervals shown in Fig.~6b.
+Every subcritical run is gated null, and the
 collapse is carried by the pairwise channel (3/3 seeds;
 Fig.~6b)\citep{acebron2005kuramoto}. Abruptness therefore has two
 independent, manipulable control parameters---system size and feedback
@@ -450,9 +473,25 @@ open-phase flips, zero late; $p=0.13$ across seeds). Stored openness
 at the perturbed checkpoint predicts strict flips (AUC 0.85;
 descriptive, runs cluster within seeds), and capability recovers to
 0.92 of the unperturbed rate after late perturbation. What locks is
-the institution, not the learning. This validates the functional
-open-versus-committed distinction, not a causal breakpoint time (open
-and late checkpoints also differ in training time; Methods).
+the institution, not the learning. Because open
+and late checkpoints also differ in training time, we ran a
+preregistered fixed-time follow-up: all eight seeds perturbed at the
+same step (960k, selected by a variance-maximizing rule frozen in
+advance), where three seeds were still behaviourally open (openness
+0.95--1.00) and five were committed. No run moved (0/16), a registered
+miss of the openness-predicts-movability clause. Every continuation,
+including the behaviourally open seeds, re-converged to its seed's
+eventual direction, and the open seeds' lower task maturity does not
+explain the null (Methods; Supplementary Table~13). Together the two
+experiments bound the claim. The checkpoint-conditioned contrast
+establishes a functional difference between empirically open and
+committed populations, but the common-clock control did not reproduce
+it, so openness is not isolated causally from the rest of training
+history. What the null does show is that the eventual direction is
+already parameter-committed while behaviour still looks open:
+formation-level commitment runs deeper than behavioural openness, and
+reading openness at a single fixed time is not a sufficient handle
+for redirection.
 
 Among classic cases, the picture is mixed. Vicsek
 flocking\citep{vicsek1995novel}, Swift--Hohenberg pattern
@@ -505,8 +544,10 @@ Overcooked optimization collapses gradually. Our designed systems (the
 grip gate; the blocked-channel XOR task) are mechanism-isolating
 controls. Convention formation and role
 lock-in reproduce the signature with no designed barrier. What
-separates the two classes is a joint
-exploration barrier, now directly measured. The
+separates the two classes is a joint exploration barrier, whose
+unilateral component---no single-agent gradient onto the regime
+mid-plateau, a structural-maximum cost of leaving it after---is
+measured directly (Methods). The
 coordination-ring experiment tests this boundary inside the very
 benchmark that produced the negative: restoring competing regimes
 restores committed conventions in every seed. Certified onsets remain
@@ -522,7 +563,12 @@ within a measured equivalence class and breaks where a representation
 erases the latent channel. Consistent with this boundary, lower-power
 or mis-declared regime objects usually lose verdicts, although one
 event-level convention object gains an onset where the declared object
-does not (Methods). Nor is ``emergence $=$ onset breakpoint'' a
+does not (Methods). With the analyst removed entirely, a frozen
+discovery recipe recovers the grip system's two-regime structure in
+every seed and its openness retains most of the fixed-time
+controllability signal (AUC 0.73--0.93 versus 0.98--0.99 declared),
+short of its registered bar: declaration buys measurement power, not
+the phenomenon. Nor is ``emergence $=$ onset breakpoint'' a
 universal equivalence, as several canonical cases collapse gradually.
 The resulting instrument measures \emph{how}, \emph{when}, and
 \emph{through which channel} a possibility space closes, while marking
@@ -544,7 +590,7 @@ Shannon entropy in bits and $P_\mathrm{ref}$ the maximum-entropy
 reference on the same support; collapse is $C_t=1-O_t$ and effective
 possibility count is $N_\mathrm{eff}=2^{H(P_t)}$. Entropies are estimated
 with a Miller--Madow-style bias correction and, for the joint objects,
-with the nested ladder below rather than by direct high-dimensional
+with the nested ladder below, which avoids direct high-dimensional
 estimation.
 
 \paragraph{Intensity profile.}
@@ -675,6 +721,35 @@ instrument correctly declines to call onset on deceleration and gradual
 curves. The zero power at 12 grid points sets the resolution floor:
 it is why no claim is made on sparse language-model checkpoint grids.
 
+\paragraph{Method-baseline battery.}
+A preregistered battery evaluates standard alternatives on exactly the
+data the instrument used, with all rival definitions frozen before
+implementation. On the 72-cell factorial, a composite of marginal
+entropies, total correlation and pairwise mutual information---given
+the fixed best-effort decision rule stated in the protocol---recovers
+the source in 54/72 cells and misassigns all 18 environment-driven
+cells as pairwise coupling; the composite has no environment rung
+because, without the contract's declared conditioning step,
+environmental and internal relational constraints are not separable by
+any function of the system joint distribution. A raw
+amplitude threshold ($C_\mathrm{peak}\geq 0.5$ of reference, no
+qualification) accepts the two external-takeover pseudo-controls the
+instrument rejects and accepts none of the 72 true positives. On the
+matched-confound mechanisms, joint entropy, total correlation and
+pairwise mutual information are equal across the three generators to
+machine precision while the contract verdicts differ. On the held-out
+curve benchmark, binary segmentation (RBF cost, gain acceptance) and
+CUSUM, each calibrated to a 5\% false-positive rate on flat curves
+before scoring any other family, reach power 1.00 but fire on 100\% of
+deceleration curves (binary segmentation also on 100\% of gradual
+curves); neither attains the instrument's operating point (power 1.00
+at false-positive rate 0.000). One preregistration detail was wrong
+and is retained: the protocol predicted the amplitude rule would
+accept the revelation/metric controls, but those have zero entropy
+amplitude and are rejected by the amplitude rule too; the clause
+passed through the external-takeover controls instead (Supplementary
+Table~12).
+
 \paragraph{Adjudication-contract robustness.}
 All headline breakpoint verdicts were re-adjudicated across 243 analysis
 contracts per system, crossing saturation fraction
@@ -745,7 +820,7 @@ instead of claiming blanket invariance. All four breaking cells fail
 for identifiable reasons and still locate the commitment at
 $t\approx19$--$22$: two fall just below the conservative
 $\Delta$BIC$=10$ bar while agreeing on location (per-agent entropy,
-which is an individual-level object rather than the joint convention;
+an individual-level object distinct from the joint convention;
 5$\to$3 binning); 0.5-level state quantization compresses the
 transition into a one-to-two-checkpoint cliff that fails the frozen
 thinning clause (a resolution limit, not a disappearance: the unthinned
@@ -795,7 +870,18 @@ lower-power regime objects lose verdicts, and exactly one gains one
 (the event-level convention variable in the seed whose declared object
 shows no onset, $\Delta$BIC 23.6). The declaration is a power
 parameter, not a cherry-picking lever (Supplementary Tables~4
-and~5).
+and~5). A functional follow-up asks whether the machine-discovered
+regime variable still carries the controllability information with
+the analyst removed entirely: racing its openness against the
+declared side-openness on the same 81{,}920 grip intervention
+episodes (frozen protocol, appended preregistration), the discovered
+predictor reaches fixed-time AUCs of
+0.73--0.93 against 0.98--0.99 for the declared object, missing the
+registered 0.80-everywhere bar (a registered miss), while raw policy
+entropy carries almost none of the signal (pooled AUC 0.62 against
+0.996). The discovery recipe recovers the two-regime structure in
+5/5 seeds; what declaration buys is measurement power, not the
+existence of the signal (Supplementary Table~14).
 
 \paragraph{Emergence certificate.}
 The frozen instruments are packaged into a single standardized
@@ -817,8 +903,9 @@ exists to remove. Applied to the paper's systems, the certificate
 issues ``emergent: punctuated'' for the grip, convention, role and
 $N{=}100$ ant systems; the single-ant control---with nearly the same
 amplitude (0.92) as the colony---\emph{fails} qualification,
-because its collapse is purely individual-source rather than a joint
-regime, and the Overcooked occupancy object falls below the collapse
+because its collapse is carried entirely by the individual source,
+with no joint regime involved,
+and the Overcooked occupancy object falls below the collapse
 gate with a low-power flag. Same entropy drop, different verdicts: the
 discrimination is exactly what a bare entropy measure cannot provide
 (per-system qualification table in Supplementary Table~6).
@@ -866,7 +953,16 @@ A parallel preregistered attempt on the unmodified MPE
 \texttt{simple\_spread} benchmark did not reach its frozen competence
 precondition (conflict-episode coverage 3\% after 3{,}000 PPO updates)
 and is recorded as a training failure with no theory claim made either
-way. The causal commitment test perturbs stored ring checkpoints at
+way. A planned second-layout study on the official
+\texttt{counter\_circuit} layout, whose central circuit supports the
+same two mirror-equivalent circulation conventions, was stopped at
+the same gate: in three disclosed one-seed pilots (4M steps with the
+standard shaping anneal; 8M with a lengthened anneal; 6M with shaping
+never annealed) the fixed training recipe delivers zero soups, so no
+confirmatory protocol was frozen. In the annealed pilots a
+shaped-reward circulation habit forms and then dissolves once shaping
+expires---a convention without realized task value, which is
+precisely what the competence precondition exists to exclude. The causal commitment test perturbs stored ring checkpoints at
 100k steps, at the seed's most-open checkpoint (last with direction
 probability in $[0.3,0.7]$ and $\geq 20$ committed evaluation
 episodes), and at 1.6M steps, adding per-tensor Gaussian noise of 0.25
@@ -880,10 +976,17 @@ the frozen clause, and a stricter seed-level paired analysis (exact
 sign-flip permutation over the eight seeds, labeled post-hoc in the
 protocol file) confirms the primary endpoint and demotes the strict
 direction-reversal contrast to descriptive. Because open and late
-checkpoints differ in training time as well as openness, the timing
-contrast alone cannot exclude generic training maturity; the
-fixed-time analysis that rules out the time confound exists in the
-grip system and has not yet been run here. The finite-size study uses sizes
+checkpoints differ in training time as well as openness, a
+preregistered fixed-time follow-up perturbed all eight seeds at the
+same step, 960k, chosen by a frozen rule (the common-grid checkpoint
+maximizing cross-seed openness variance with $\geq 20$ committed
+episodes per seed), with identical noise scales, resume length and
+scoring. No continuation moved (0/16; seed-level Fisher $p=1.0$), a
+registered miss of the openness-predicts-movability clause at fixed
+time. The open seeds' lower checkpoint task performance (0.27--0.53
+versus 0.67--1.9 mean soups) rules out maturity as an explanation of
+the null, and every continuation re-converged to its seed's eventual
+direction. The finite-size study uses sizes
 $N\in\{1,2,5,10,20,50,100,200,500\}$, 30 episodes per size and a
 1{,}500-trip horizon, with $t_{50}$ and width read from median
 openness crossings and the log-law slope bootstrapped over episodes
@@ -1130,8 +1233,9 @@ the slope interval is an episode-bootstrap 95\% confidence interval
 from 200 resamples (see Extended Data Fig.~2 for the universal collapse
 profile).
 \textbf{b},~Kuramoto criticality: breakpoint time falls and closing slope
-rises as coupling increases; points are means of two seeds per
-coupling, and subcritical runs are gated null.
+rises as coupling increases; points are means of ten seeds per
+coupling, error bars are 95\% bootstrap intervals over seeds, and
+subcritical runs are gated null.
 \textbf{c},~Classification: onset appears in systems that cross a
 joint-regime barrier, including convention formation and role lock-in
 without a designed gate. In the standard Overcooked coordination-ring

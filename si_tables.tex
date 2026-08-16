@@ -243,12 +243,12 @@ Extension 96010 & 0.97 & counterclockwise \\
 
 \begin{table}[p]
 \centering
-\caption{\textbf{Scaling data.} Ant-colony finite-size scaling (median $t_{50}$ crossing and 10--90\% width in trips, 30 episodes per size) and the Kuramoto coupling grid (two seeds per coupling $K$; $t^{*}$ in time units). These rows are the points behind Fig.~6a,b.}
+\caption{\textbf{Scaling data.} Ant-colony finite-size scaling (median $t_{50}$ crossing and 10--90\% width in trips, 30 episodes per size) and the Kuramoto coupling grid (ten seeds per coupling $K$; seed-mean $t^{*}$ and closing-slope magnitude with 95\% bootstrap intervals over seeds; for the Kuramoto rows the width column reports the closing slope). These rows are the points behind Fig.~6a,b.}
 \label{si:tab:scaling}
 \small
 \begin{tabular}{lcccc}
 \toprule
-System / size & $t_{50}$ or $t^{*}$ & Width & $\Delta$BIC & Verdict \\
+System / size & $t_{50}$ or $t^{*}$ & Width / slope & $\Delta$BIC & Verdict \\
 \midrule
 Ant $N=1$ & 220 & 220 & 25.4 & -- \\
 Ant $N=2$ & 230 & 270 & 63.1 & -- \\
@@ -259,16 +259,78 @@ Ant $N=50$ & 430 & 280 & 76.7 & onset \\
 Ant $N=100$ & 480 & 280 & 111.8 & onset \\
 Ant $N=200$ & 510 & 290 & 133.3 & onset \\
 Ant $N=500$ & 670 & 290 & 236.6 & onset \\
-Kuramoto $K=0.9$ (seed 82001) & 6.6 & -- & 195.7 & onset \\
-Kuramoto $K=0.9$ (seed 82002) & 6.8 & -- & 202.1 & onset \\
-Kuramoto $K=1.1$ (seed 82001) & 5.4 & -- & 240.8 & onset \\
-Kuramoto $K=1.1$ (seed 82002) & 5.4 & -- & 239.1 & onset \\
-Kuramoto $K=1.5$ (seed 82001) & 3.2 & -- & 95.7 & onset \\
-Kuramoto $K=1.5$ (seed 82002) & 3.2 & -- & 93.7 & onset \\
-Kuramoto $K=2.0$ (seed 82001) & 2.4 & -- & 63.3 & onset \\
-Kuramoto $K=2.0$ (seed 82002) & 2.4 & -- & 63.8 & onset \\
-Kuramoto $K=2.5$ (seed 82001) & 1.8 & -- & 53.5 & onset \\
-Kuramoto $K=2.5$ (seed 82002) & 1.8 & -- & 53.4 & onset \\
+Kuramoto $K=0.9$ (10 seeds) & 6.64 [6.56, 6.72] & 0.030 [0.026, 0.035] & -- & onset 10/10 \\
+Kuramoto $K=1.1$ (10 seeds) & 5.50 [5.38, 5.64] & 0.065 [0.061, 0.069] & -- & onset 10/10 \\
+Kuramoto $K=1.5$ (10 seeds) & 3.24 [3.20, 3.30] & 0.100 [0.098, 0.103] & -- & onset 10/10 \\
+Kuramoto $K=2.0$ (10 seeds) & 2.38 [2.34, 2.40] & 0.151 [0.148, 0.154] & -- & onset 10/10 \\
+Kuramoto $K=2.5$ (10 seeds) & 1.80 [1.80, 1.80] & 0.197 [0.195, 0.199] & -- & onset 10/10 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{table}[p]
+\centering
+\caption{\textbf{Method-baseline battery.} Standard alternatives evaluated on exactly the data the instrument used, with rival decision rules frozen in the preregistration before implementation; the only calibration is the 5\% false-positive calibration on flat curves. One preregistration detail was wrong and is retained: the amplitude rule was predicted to accept the revelation/metric controls, but those carry zero entropy amplitude; the clause passed through the external-takeover controls instead.}
+\label{si:tab:baselines}
+\small
+\begin{tabular}{p{0.24\textwidth}p{0.2\textwidth}p{0.3\textwidth}p{0.18\textwidth}}
+\toprule
+Baseline & Test & Baseline result & Instrument \\
+\midrule
+Marginals + TC + pairwise MI (composite) & source recovery, 72-cell factorial & 54/72; 18/18 environment cells misread as pairwise & 72/72 \\
+Amplitude threshold (no qualification) & pseudo-controls and true positives & accepts 2/2 external takeovers; 0/72 true positives & rejects all controls; profiles all cells \\
+Any joint-distribution functional & matched-confound mechanisms & identical across generators (max diff 0e+00) & contract verdicts separate them \\
+Binary segmentation, RBF (5\% calibrated) & held-out curve benchmark & power 1.00; FPR 1.00 knee, 1.00 gradual, 0.07 flat & power 1.00; FPR 0.00 all families \\
+CUSUM (5\% calibrated) & held-out curve benchmark & power 1.00; FPR 1.00 knee, 0.05 gradual, 0.06 flat & power 1.00; FPR 0.00 all families \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{table}[p]
+\centering
+\caption{\textbf{Fixed-time ring intervention (registered miss).} All eight seeds perturbed at the same training step (960k, variance-maximizing rule frozen before the run) at two noise scales and resumed for 400k steps with unchanged mechanics. No run moved (0/3 open vs 0/5 committed seeds movable, Fisher $p=1.0$): every continuation, including the behaviourally open seeds, re-converged to its seed's eventual direction.}
+\label{si:tab:fixedtime}
+\small
+\begin{tabular}{lccccc}
+\toprule
+Seed & Noise scale & Openness at 960k & Soups at 960k & Final $P(\mathrm{ccw})$ & Outcome \\
+\midrule
+95101 & 0.25 & 0.20 & 1.27 & 0.97 & held \\
+95101 & 0.50 & 0.20 & 1.27 & 0.97 & held \\
+95202 & 0.25 & 0.95 & 0.53 & 0.97 & held \\
+95202 & 0.50 & 0.95 & 0.53 & 0.97 & held \\
+95303 & 0.25 & 0.96 & 0.37 & 0.03 & held \\
+95303 & 0.50 & 0.96 & 0.37 & 0.03 & held \\
+95606 & 0.25 & 0.20 & 0.67 & 0.97 & held \\
+95606 & 0.50 & 0.20 & 0.67 & 0.97 & held \\
+95707 & 0.25 & 1.00 & 0.27 & 0.93 & held \\
+95707 & 0.50 & 1.00 & 0.27 & 0.97 & held \\
+95808 & 0.25 & 0.34 & 0.87 & 0.03 & held \\
+95808 & 0.50 & 0.34 & 0.87 & 0.03 & held \\
+95909 & 0.25 & 0.20 & 1.60 & 0.97 & held \\
+95909 & 0.50 & 0.20 & 1.60 & 0.97 & held \\
+96010 & 0.25 & 0.20 & 1.90 & 0.97 & held \\
+96010 & 0.50 & 0.20 & 1.90 & 0.97 & held \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{table}[p]
+\centering
+\caption{\textbf{Discovered-regime controllability race (registered miss).} Predictors of kick-induced outcome switching raced on the same 81{,}920 grip intervention episodes (5 seeds $\times$ 8 intervention times $\times$ 2{,}048 episodes). The discovery recipe (k-means on raw traces, $k$ by silhouette, frozen from the regime-discovery audit) recovers $k=2$ in 5/5 seeds. Fixed-time AUCs are shown at the four intervention times where both outcome classes have $\geq$20 episodes; the registered 0.80-at-every-time bar for discovered openness fails (2/4 times), so the analyst-free result is reported as a registered miss. Pooled AUCs are compressed for all state-based predictors because early kicks always switch the side.}
+\label{si:tab:rdc}
+\small
+\begin{tabular}{p{0.4\textwidth}p{0.12\textwidth}p{0.12\textwidth}p{0.2\textwidth}}
+\toprule
+Predictor & Rank corr. & Pooled AUC & Fixed-time AUC \\
+\midrule
+Discovered openness (k-means, no analyst) & 0.36 & 0.750 & 0.73--0.93 \\
+Declared side-openness & 0.61 & 0.996 & 0.98--0.99 \\
+Policy action entropy & 0.09 & 0.621 & --- \\
+$|x|$ & 0.60 & 0.999 & --- \\
+$|v|$ & 0.60 & 0.996 & --- \\
+Attachment flag & 0.03 & 0.482 & --- \\
+Intervention time $\tau$ & 0.42 & 0.941 & --- \\
 \bottomrule
 \end{tabular}
 \end{table}

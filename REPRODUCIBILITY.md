@@ -54,10 +54,13 @@ documents were written only after the corresponding run.
 | Higher-order triad | triad_highorder_cue.py, tri_c_breakpoint.py, tri_c_breakpoint_ext.py | training | minutes |
 | Gradual-collapse negative control | learn_quorum_breakpoint.py | training | minutes |
 | Ant colony | ant_conditional_leverage.py, ant_fss.py | agent-based simulation | minutes |
-| Kuramoto | kuramoto_breakpoint.py, kuramoto_breakpoint_r2.py, kuramoto_scale.py, kuramoto_offdesign_ladder.py | ensemble simulation | minutes-hours |
+| Kuramoto | kuramoto_breakpoint.py, kuramoto_breakpoint_r2.py, kuramoto_scale.py, kuramoto_scale_n10.py, kuramoto_offdesign_ladder.py | ensemble simulation | minutes-hours |
 | Potts, Swift-Hohenberg, Schelling, Vicsek | regime_discovery_audit.py, regime_discovery_audit2.py, regime_ensemble_audit.py, regime_ensemble_audit2.py, ceb_vicsek_dense.py | simulation | minutes-hours |
 | Overcooked (official layouts, PPO) | overcooked_profile_confirmatory.py, overcooked_ring_convention.py, oc_ring_ext.py, oc_ring_realization.py, overcooked_state_breakpoint.py, overcooked_occupancy_breakpoint.py | training | hours-days |
-| Overcooked causal intervention | oc_ring_intervention.py, oci_seed_level.py | resumed training from stored checkpoints (`outputs/overcooked_genesis_*.pt`) | hours |
+| Overcooked causal intervention | oc_ring_intervention.py, oci_seed_level.py, oc_ring_fixed_time.py | resumed training from stored checkpoints (`outputs/overcooked_genesis_*.pt`) | hours |
+| Overcooked counter_circuit pilots (competence gate) | oc_cc_pilot.py, oc_cc_pilot2.py | training | hours |
+| Method-baseline battery | bench_baselines.py | re-analysis of stored outputs | seconds |
+| Discovered-regime controllability race | learn_grip_discovery_utility.py | training + re-analysis | hours |
 | Contract-violation injections | semi_inject.py | re-analysis of stored curves | seconds |
 | Representation robustness | repr_equiv_grip.py, repr_equiv_convention.py, repr_robustness.py | re-analysis + training | minutes |
 | Emergence certificates (all systems) | emergence_certificate.py | re-analysis of stored outputs | seconds |

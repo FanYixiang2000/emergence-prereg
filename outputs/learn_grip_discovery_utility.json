@@ -1,0 +1,119 @@
+{
+  "status": "RDC discovered-regime controllability race; recipe and grid byte-identical to prior audits; registered in METHOD_BASELINE_FIXEDTIME_PREREGISTRATION.md before run",
+  "config": {
+    "taus": [
+      5,
+      10,
+      14,
+      16,
+      18,
+      20,
+      24,
+      30
+    ],
+    "eval_batch": 2048,
+    "grip_episodes": 2048,
+    "knn": 25,
+    "cluster_seed": 0
+  },
+  "registered_outcomes": {
+    "k_discovered": [
+      2,
+      2,
+      2,
+      2,
+      2
+    ],
+    "RDC1_pooled_auc_disc": 0.75035,
+    "RDC1_pass": false,
+    "RDC2_fixed_tau_aucs_disc": {
+      "5": null,
+      "10": null,
+      "14": null,
+      "16": null,
+      "18": 0.75085,
+      "20": 0.72866,
+      "24": 0.9251,
+      "30": 0.83407
+    },
+    "RDC2_pass": false,
+    "RDC3_pass": false,
+    "RDC4_side_vs_entropy": [
+      0.99643,
+      0.62133
+    ],
+    "RDC4_pass": true,
+    "race": {
+      "disc_open": {
+        "rank_corr": 0.36436,
+        "auc": 0.75035
+      },
+      "side_open": {
+        "rank_corr": 0.60826,
+        "auc": 0.99643
+      },
+      "pol_ent": {
+        "rank_corr": 0.09412,
+        "auc": 0.62133
+      },
+      "absx": {
+        "rank_corr": 0.6036,
+        "auc": 0.99918
+      },
+      "absv": {
+        "rank_corr": 0.60182,
+        "auc": 0.99568
+      },
+      "att": {
+        "rank_corr": 0.03208,
+        "auc": 0.48211
+      },
+      "tau": {
+        "rank_corr": 0.4201,
+        "auc": 0.94073
+      }
+    },
+    "fixed_tau": {
+      "5": {
+        "n_switch": 10240,
+        "n_hold": 0
+      },
+      "10": {
+        "n_switch": 10240,
+        "n_hold": 0
+      },
+      "14": {
+        "n_switch": 10240,
+        "n_hold": 0
+      },
+      "16": {
+        "n_switch": 10240,
+        "n_hold": 0
+      },
+      "18": {
+        "n_switch": 10157,
+        "n_hold": 83,
+        "auc_disc": 0.75085,
+        "auc_side": 0.98592
+      },
+      "20": {
+        "n_switch": 9187,
+        "n_hold": 1053,
+        "auc_disc": 0.72866,
+        "auc_side": 0.97853
+      },
+      "24": {
+        "n_switch": 5918,
+        "n_hold": 4322,
+        "auc_disc": 0.9251,
+        "auc_side": 0.98134
+      },
+      "30": {
+        "n_switch": 2730,
+        "n_hold": 7510,
+        "auc_disc": 0.83407,
+        "auc_side": 0.9929
+      }
+    }
+  }
+}
