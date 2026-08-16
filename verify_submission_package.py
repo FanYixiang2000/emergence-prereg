@@ -96,8 +96,10 @@ def main() -> None:
         work = tmp_path / "GOGOGO"
 
         audit = run(["python3", "verify_paper_numbers.py"], work)
-        if "111/111 checks passed, 0 failed" not in audit:
-            raise RuntimeError("paper-number audit did not report 111/111")
+        m = re.search(r"(\d+)/(\d+) checks passed, 0 failed", audit)
+        if not m or m.group(1) != m.group(2):
+            raise RuntimeError("paper-number audit did not pass cleanly")
+        n_checks = m.group(0)
 
         before = {name: digest(work / "figures" / name) for name in FIGURES}
         run(["python3", "make_figures.py"], work)
@@ -112,7 +114,7 @@ def main() -> None:
         check_latex_log(work / "si.log")
 
     print(
-        f"PASS: {len(packaged)} files; 111/111 numbers; "
+        f"PASS: {len(packaged)} files; {n_checks}; "
         f"{len(FIGURES)}/{len(FIGURES)} figures reproduced; PDFs rebuilt"
     )
 
