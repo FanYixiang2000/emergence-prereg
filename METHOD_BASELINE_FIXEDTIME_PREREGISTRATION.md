@@ -704,3 +704,32 @@ of Addendum REACH-VALID.
   only if fresh-seed VS1, VS2 and VS3' all pass (VH1 has already
   passed). If any fails, the REACH line stops permanently under the
   original stopping conditions.
+
+### Outcomes (appended 2026-08-17 after the run; nothing above edited)
+
+Recorded in `outputs/reach_valid_signalling2.json`.
+
+- VS1 PASS 3/3 (REACH at update 0 is 0.833-1.0 with 6-8 distinct
+  converged codes).
+- VS2 FAIL 2/3: seed 717304's base run crosses success 0.9 only at
+  update 3650, beyond the last snapshot (2000), so the
+  closed-after-capability clause cannot be satisfied within the
+  registered grid.
+- VS3' FAIL 2/3: the same seed's REACH curve reopens after closure
+  (0 at update 700, then 0.181/0.354/0.469 at 800/900/1000, final
+  closure only at 1500) and violates the non-increase clause
+  (0.270 -> 0.469 exceeds the 0.15 quantum).
+- Original VS3 Spearman, verbatim, no bar: -0.8006, -0.8171, -0.732.
+- Reading: the miss is not a statistic artifact this time. In one of
+  three fresh seeds the reachable-future distribution genuinely
+  reopens after closing -- latent commitment in this system can be
+  non-monotone, consistent with the manuscript's report that
+  formation commitment in the ring is non-monotone in 7/8 seeds.
+  The frozen interpretive framework of Protocol REACH (monotone,
+  irrevocable closure) is therefore not valid as an estimator
+  contract.
+- Decision under the frozen rule: the REACH line STOPS permanently.
+  The confirmatory 576-cell grid is not run, no clause is amended a
+  second time, and the manuscript's existing conclusions stand
+  unchanged. The gate outcome is reported as an estimator-validation
+  failure.

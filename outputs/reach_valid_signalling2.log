@@ -10,3 +10,62 @@ seed 717405 u=200: reach=0.181 codes=2
 seed 717304 u=300: reach=0.667 codes=3
 seed 717506 u=300: reach=-0.000 codes=1
 seed 717405 u=300: reach=0.181 codes=2
+seed 717304 u=400: reach=0.270 codes=1
+seed 717506 u=400: reach=-0.000 codes=1
+seed 717405 u=400: reach=-0.000 codes=1
+seed 717304 u=500: reach=0.469 codes=2
+seed 717506 u=500: reach=-0.000 codes=1
+seed 717405 u=500: reach=-0.000 codes=1
+seed 717304 u=600: reach=0.181 codes=1
+seed 717506 u=600: reach=-0.000 codes=1
+seed 717405 u=600: reach=-0.000 codes=1
+seed 717304 u=700: reach=-0.000 codes=1
+seed 717506 u=700: reach=-0.000 codes=1
+seed 717405 u=700: reach=-0.000 codes=1
+seed 717304 u=800: reach=0.181 codes=2
+seed 717506 u=800: reach=-0.000 codes=1
+seed 717405 u=800: reach=-0.000 codes=1
+seed 717304 u=900: reach=0.354 codes=2
+seed 717304 u=1000: reach=0.469 codes=2
+seed 717506 u=900: reach=-0.000 codes=1
+seed 717405 u=900: reach=-0.000 codes=1
+seed 717304 u=1500: reach=-0.000 codes=1
+seed 717304 u=2000: reach=-0.000 codes=1
+seed 717506 u=1000: reach=-0.000 codes=1
+seed 717405 u=1000: reach=-0.000 codes=1
+seed 717506 u=1500: reach=-0.000 codes=1
+seed 717405 u=1500: reach=-0.000 codes=1
+seed 717506 u=2000: reach=-0.000 codes=1
+seed 717405 u=2000: reach=-0.000 codes=1
+{
+  "VS1_open_at_zero": "3/3",
+  "VS1_pass": true,
+  "VS2_closed_after_capability": "2/3",
+  "VS2_pass": false,
+  "VS3prime_monotone_irrevocable": "2/3",
+  "VS3prime_pass": false,
+  "original_VS3_spearman_verbatim": [
+    -0.8006,
+    -0.8171,
+    -0.732
+  ],
+  "closure_vs_s090": [
+    {
+      "seed": 717304,
+      "reach_closure": 700,
+      "s090": 3650
+    },
+    {
+      "seed": 717405,
+      "reach_closure": 400,
+      "s090": 675
+    },
+    {
+      "seed": 717506,
+      "reach_closure": 300,
+      "s090": 725
+    }
+  ],
+  "launch_full_reach": false
+}
+Wrote reach_valid_signalling2.json

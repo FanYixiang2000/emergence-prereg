@@ -1,5 +1,5 @@
 {
-  "generated_utc": "2026-08-16T06:26:24.151369+00:00",
+  "generated_utc": "2026-08-17T11:32:25.336505+00:00",
   "python": "3.13.9 | packaged by Anaconda, Inc. | (main, Oct 21 2025, 19:16:10) [GCC 11.2.0]",
   "manuscript": [
     "main.tex",
@@ -250,6 +250,15 @@
       "read_by": [
         "number_audit",
         "figures"
+      ]
+    },
+    {
+      "output": "learn_stance_stat_unit.json",
+      "sha256": "f5ceaf09e893c370ccc72654c0f6e7679c4191fc1b41327deac1ea1ff664450f",
+      "generating_script": "learn_stance_stat_unit.py",
+      "read_by": [
+        "number_audit",
+        "si_tables"
       ]
     },
     {
@@ -514,7 +523,7 @@
     "EXTERNAL_TRANSFER_PREREGISTRATION.md": "885bc4ef847ae15eafbc16885b3ac12ac283496c10f9c7f381757d41d42858ad",
     "LATENT_CONTEXT_PREREGISTRATION.md": "a2a88eb2925cb6d630e3ddeeccda6d8c0037829c32083844cba9d164eaf1258d",
     "LBF_PREREGISTRATION.md": "4d32cacbcdfea123b41224b6dc42c07d82bce62fd23dc1157d242f1b5ad4fa6b",
-    "METHOD_BASELINE_FIXEDTIME_PREREGISTRATION.md": "f8308bac5479aa57f0637a06f4fea8d4567a33722a3786436ebfe05241f9027c",
+    "METHOD_BASELINE_FIXEDTIME_PREREGISTRATION.md": "f375ad2b397cc296b62fb890b3c52e11f849ed1d163c20ec516af3d59bd4325f",
     "MULTIBERTS_PREREGISTRATION.md": "f00e6d8306ae3344f6cf7f157436cea8fdc91462717ebfaf7fdf31d1bd6e6ac3",
     "OVERCOOKED_PREREGISTRATION.md": "c1cb90365bd3425b8bcbb554aa1b6728fd835579d64945246936e04375f0089c",
     "OVERCOOKED_ROUND2_PREREGISTRATION.md": "ce9e06bc81d4c108e3be05d7d678db14acf9a5fa0114f67171c6a7583ffd2f81",
@@ -526,7 +535,7 @@
     "THEORY.md": "7db373c02a57167f13983917373a44ad23050c5f410cdaaa393e010f4677f8b2",
     "ANALYSIS_FREEZE.md": "fd37e9b36abe51c43ad9da11f2f37c0546c268c1ecc8e88c83b64133dbb6897d",
     "CLAIM_EVIDENCE_MAP.md": "90fac83fefd61a47ab4459155501698c554d2f22b3ed7b0e1f24b8febc626c12",
-    "REPRODUCIBILITY.md": "c4a38ba60e7d53604be8ec81b5c94309b950459ee44014c345efdaf087f02fa9",
+    "REPRODUCIBILITY.md": "d2d18cb00d8e52ba44c557526475736f512a3af2d46708ed86e7ce911e7d8459",
     "INDEPENDENT_AUDIT_INSTRUCTIONS.md": "6eb1559fafe1ae60c39fb05259d3c673885d0af5b313638202e423bbdb4eb449",
     "INVALID_DATA_REGISTRY.md": "09d07c808c1b0aca7fcb30c161b468d3e4c864fb4fa302ea22758aba8f3e8024",
     "NMI_READINESS_AUDIT.md": "e2e068034047ed4754d381159a9936dfcd20d544e628f0d4ee1f1c86acaa6cba",
@@ -697,6 +706,7 @@
     "learn_roles.json": "a120528404b55780cb7fe780d847296a7d533434b0ade59a3adfb7ea80662af2",
     "learn_roles_nn.json": "776c8b6cc8ee8a28d2968afabc6336c98b7aec2d43c7130581bb264db37de562",
     "learn_stance_control.json": "798c1fe83ffa3f2dc7b667aa6a162ac7d24792cab0febf99329f16ae3b95ae8c",
+    "learn_stance_stat_unit.json": "f5ceaf09e893c370ccc72654c0f6e7679c4191fc1b41327deac1ea1ff664450f",
     "learn_stance_sticky.json": "52c3e098957ccef64db170ffcfe0c0a2393ca79e4b9e84b28f4fe6d9b7ad5220",
     "learn_stance_sticky_nanbug.json": "a9b9ef8e862ff59aadd7c41479a3331c822533ac0ed57f95eca78d3e179b9199",
     "learn_stance_transport.json": "0a0c2f5ecedf455d95a862e806d7accf239ed11231a15c20d576b69f0fd16d67",
@@ -714,6 +724,7 @@
     "learned_ptc_results.json": "71828fa128353d2104b4dcd7bb07881e38a1f06c3a13078dee754d28c54e78f0",
     "learned_representation_jump_summary.json": "1593a5d34e5133af96f2b80d4a31b250cc637b36d5caa40a1b555d7b2fa63161",
     "live_demonstration.json": "4270296273496a474f90a1234df2caf149cce11f28c5722bae1d902b369060d9",
+    "llm_conv_pilot.json": "3867001e059740979f2fe344ab54e0c6f2c1fbdf602f82b1df37d44b19507a6e",
     "matched_provenance.json": "ab71b31e3f09d16976bee817d44745b93697787d3b32f903860a5402b4484e8c",
     "meta_collapse_commitment.json": "5d174fdb0649a358bd25ce08c32ed997532c8c0af54b4262e8830da24a1b7a82",
     "meta_collapse_margins.json": "c6cf83ced08ab3e5aace20dbe6d5019192568b9d92558baac152c6369b4656d2",
@@ -738,6 +749,7 @@
     "oc_ring_fixed_time.json": "c79756f793bae8d9b368b793e0d600fb3c7d07d14cc5384743cef766865b9f01",
     "oc_ring_intervention.json": "67695b81cb7aa31a6adbcbf605dc894c21144f03a08a3eb395bc11e129be21bc",
     "oc_ring_intervention_partial.json": "ffeda8709acba941ee558b757197eda5ee6ed13da98ad2de3b0e54df9c12fdb5",
+    "oc_ring_reach_pilot.json": "188c45780132dce07db4b5a9362f30576bafc790857d507ad0380dc61bfaee2d",
     "oc_ring_realization.json": "202f79cd5b79b998d7c49b557d2f1d03a972857b3d0acb9456acdbaea86ad1cc",
     "oci_seed_level.json": "1b233341933124cbbb17ba2a72c93f9f44f1c84261dc8894caaeac24c6764e44",
     "ordinary_learner_control.json": "8c5af19a7c0f3d7e650157b8c530726c5e8ccc29021ce74e46ad593aff96a6bb",
@@ -856,6 +868,9 @@
     "re1_ordinary_learner_breakpoint.json": "154ae0c62391581309ecfb204af7b4261b7c081227199227bb8222a8fada5ed8",
     "re2_ant_joint_breakpoint.json": "1dfd1ff35c01407e298962e983a46c707e30c3c430f0307acee7deb9bd190b8c",
     "re3_stored_series_breakpoint.json": "e7e75d54ba6d157aef560dec51b43078fb37be9e300baeeeb63de5bce9bc3e7e",
+    "reach_valid_ring.json": "462559dd68a572e6b0574b2fdf3d3e4f24c8a758ce51a4f230ce1f95746889e7",
+    "reach_valid_signalling.json": "320aa468ea5953581c0927cd073cb672bc071a10d3f3556b095c05fa72254cc9",
+    "reach_valid_signalling2.json": "c473396163ae657614ccd71178acaf3efdfcb4c3846b4953b74d2552476b9f68",
     "record_axioms_verification.json": "1cb507936eb59a77338b20ab006f8e2d35488a360a86500f4d5d4b129babb0a2",
     "refined_confirmation_summary.json": "551d7626aa6cadc3cfc770e1d08efa679a7cfc530bde865ed220eb85f0af8413",
     "refined_selectivity_summary.json": "af522fb458c57d85bfb415045faf9b20f3a40b2bd5db26907fef9b7165b1f242",
@@ -969,5 +984,5 @@
     "within_episode_sweep_ci.csv": "17d051ccf89cadee10478e1e2ab3b0e7446773b6e58886c601a9f349d93f3559",
     "within_episode_sweep_per_seed.csv": "b1ad2d3569e63a49efaa3ac60dc14e9e9eac40c7f7a289f55aeb23aff1f7259f"
   },
-  "git_commit": "61f093c8cd766de7892133a4d5a132a66c780077"
+  "git_commit": "73804d3b0fbcdbda195fc7c9aa902c82d11324d8"
 }
