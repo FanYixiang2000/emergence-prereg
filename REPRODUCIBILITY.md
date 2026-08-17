@@ -62,6 +62,9 @@ documents were written only after the corresponding run.
 | Method-baseline battery | bench_baselines.py | re-analysis of stored outputs | seconds |
 | Discovered-regime controllability race | learn_grip_discovery_utility.py | training + re-analysis | hours |
 | Seed-level statistics for the grip race | learn_grip_stat_unit.py | training + re-analysis | ~30 min |
+| Seed-level statistics for the stance races | learn_stance_stat_unit.py | training + re-analysis | ~15 min |
+| REACH estimator validity gates | oc_ring_reach_pilot.py, reach_valid_ring.py, reach_valid_signalling.py, reach_valid_signalling2.py | resumed training + fresh training | hours |
+| LLM convention pilot (stopped at gate) | llm_conv_pilot.py | local LLM inference (Qwen2.5-7B-Instruct) | ~1 h |
 | Contract-violation injections | semi_inject.py | re-analysis of stored curves | seconds |
 | Representation robustness | repr_equiv_grip.py, repr_equiv_convention.py, repr_robustness.py | re-analysis + training | minutes |
 | Emergence certificates (all systems) | emergence_certificate.py | re-analysis of stored outputs | seconds |

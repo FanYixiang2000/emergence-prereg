@@ -413,3 +413,294 @@ Overcooked layouts will be piloted for this manuscript: the
 circulation habit without realized task value also illustrates why
 the certificate requires competence before adjudicating a
 convention.
+
+# Protocol REACH: reachable-outcome openness in coordination_ring (frozen 2026-08-17 before the run; nothing above edited)
+
+Script: `oc_ring_reach.py` -> `outputs/oc_ring_reach.json`.
+Timing/sanity pilot: `oc_ring_reach_pilot.py` -> `outputs/oc_ring_reach_pilot.json`.
+
+Motivation. The ring formation curves are non-monotone in behavioural
+openness, which is why the frozen monotone detector certifies onset
+in 1/8 seeds, and the OC-RING-FIXT null showed that behaviourally
+open seeds at 960k were not movable. Both facts suggest the
+behavioural object is a distorted proxy at formation level. The
+possibility space named by the framework is the set of futures still
+reachable; this protocol measures it directly.
+
+Object. For seed s and stored checkpoint c, REACH-openness is the
+normalized binary entropy H2(k/m) of the final circulation direction
+across m independent continuations of the original training recipe
+from checkpoint c to the full 2,000,000-step horizon
+(`resume_training`, byte-identical mechanics, no perturbation), where
+k of m continuations end counterclockwise. Final direction of a
+continuation: p_ccw > 0.5 under the standard 30-episode
+`eval_checkpoint`; the commit-margin flag (|p_ccw - 0.5| >= 0.3) is
+recorded descriptively.
+
+Frozen design.
+
+- Seeds: the 8 confirmatory ring seeds (95101...96010).
+- Checkpoint grid (9 points): 100k, 300k, 500k, 600k, 700k, 800k,
+  960k, 1200k, 1600k.
+- m = 8 continuations per (seed, checkpoint); continuation rng seed
+  = 1000003 * seed + 31 * (checkpoint // 1000) + j, j = 0..7.
+- No interim looks; all 576 cells run; outcomes reported as
+  measured.
+- Granularity-aware thresholds (m = 8): a grid point is OPEN if
+  openness >= 0.95 (k in 3..5) and CLOSED if openness <= 0.544
+  (k <= 1 or k >= 7). t_hi(s) = last OPEN grid step; t_lo(s) = first
+  CLOSED grid step after t_hi(s).
+- Behavioural commitment step t_beh(s): first grid checkpoint from
+  which |p_ccw - 0.5| >= 0.3 holds at that and every later grid
+  checkpoint in the stored formation record.
+
+Registered outcomes.
+
+- RE1 (monotone object): Spearman rho(openness, step) <= -0.7 in
+  >= 6/8 seeds.
+- RE2 (sharp closure): t_lo - t_hi <= 500k steps in >= 6/8 of the
+  seeds where both are defined; seeds with no OPEN point are
+  reported as closed-from-start and excluded from the RE2
+  denominator.
+- RE3 (closure precedes behavioural commitment): t_lo <= t_beh in
+  >= 6/8 seeds.
+- RE4 (explains the OC-RING-FIXT null): REACH-openness at 960k is
+  CLOSED (<= 0.544) in 8/8 seeds, including the three behaviourally
+  open seeds.
+- RE5 (descriptive, no bar): the frozen breakpoint detector's
+  verdict on each 9-point REACH curve is recorded; the grid density
+  is below the detector's validated operating range, so no pass bar
+  is attached.
+
+Pilot clause. Two continuations (seed 95101, checkpoint 500k,
+j = 900, 901) verify that the recipe completes and measure wall
+time. Pilot runs are excluded from the confirmatory cells; the only
+parameter the pilot may adjust is worker parallelism.
+
+### Pilot outcome (appended 2026-08-17 after the pilot; nothing above edited)
+
+Both pilot continuations completed (wall 910/926 s at 4 threads
+each); both ended committed counterclockwise (p_ccw 0.9688) with
+task competence retained (2.2-2.4 soups). Timing implies the full
+576-cell grid costs roughly 10-12 h at 32 parallel workers. No
+protocol parameter was changed.
+
+# Analysis addendum STANCE-STAT-UNIT: seed-level statistics for the stance races (frozen 2026-08-17 before the run; nothing above edited)
+
+Script: `learn_stance_stat_unit.py` -> `outputs/learn_stance_stat_unit.json`.
+
+Motivation: the LEARN-STANCE-STICKY and LEARN-STANCE-CONTROL races
+(Fig. 5c) pool episodes across 5 seeds per arm. As with STAT-UNIT,
+this addendum recomputes the published AUCs at seed level with no
+new data collection: both arms are deterministic reruns of the same
+module (control arm sets STICK_P = 1.0), same seeds, same
+intervention grid, same predictor definitions and signs.
+
+Frozen analysis: per-seed pooled AUC of open/absx/absv/tau within
+each arm; seed-cluster bootstrap (10,000 resamples, seed 0) for
+open, absx, absv per arm; leave-one-seed-out pooled AUC for open in
+both arms.
+
+Registered outcomes.
+
+- SSU1 (sticky ordering per seed): AUC(open) > AUC(absx) in >= 4/5
+  sticky seeds.
+- SSU2 (control reversal per seed): AUC(absv) > AUC(open) in >= 4/5
+  control seeds.
+- SSU3 (descriptive): CIs and leave-one-seed-out ranges reported as
+  measured.
+
+### Outcomes (appended 2026-08-17 after the run; nothing above edited)
+
+Recorded in `outputs/learn_stance_stat_unit.json`.
+
+- SSU1 FAIL: openness beats |x| in 0/5 sticky seeds. Within every
+  sticky seed |x| leads: 0.94585-0.95644 against openness
+  0.90996-0.93125. Seed-cluster bootstrap 95% CI: openness
+  [0.9158, 0.9276], |x| [0.8932, 0.9466] (overlapping).
+- SSU2 PASS: |v| beats openness in 5/5 control seeds.
+- SSU3: leave-one-seed-out openness 0.9188-0.9239 (sticky),
+  0.7841-0.8272 (control).
+- Interpretation under the registered rules: the pooled sticky-arm
+  ordering (openness 0.886 > |x| 0.849) is an aggregation effect
+  that does not persist at the seed level. The main-text claim that
+  openness outperforms the physical order parameter when a hidden
+  consolidation phase exists is withdrawn and replaced by the
+  narrower seed-level statement; the control-arm reversal stands.
+  No rescue analysis was or will be run.
+
+# Protocol LLM-CONV: in-context convention commitment in an LLM population (pilot gate frozen 2026-08-17 before the pilot; nothing above edited)
+
+Pilot script: `llm_conv_pilot.py` -> `outputs/llm_conv_pilot.json`.
+
+Intent: a realization-level convention system in a modern learned
+model, structurally parallel to the Lewis signalling population: a
+group of N = 4 instances of a fixed open-weight LLM
+(Qwen2.5-7B-Instruct, local weights, temperature 0.8, top_p 0.95)
+repeatedly and simultaneously picks one of 5 arbitrary symbols
+(zib, kem, rop, dax, fen), seeing only the group's choice history in
+context; any unanimous symbol is an equally valid convention. If the
+pilot gate passes, a confirmatory protocol (branch-resampled
+possibility-space openness across rounds, plus a deviant-message
+intervention raced against openness) will be frozen as a separate
+addendum BEFORE any confirmatory conversation is run.
+
+Pilot gate (8 conversations, seeds 0..7, 30 rounds each):
+
+- G1 (competence): >= 6/8 conversations reach unanimity sustained
+  for 3 consecutive rounds within 30 rounds.
+- G2 (symmetry breaking, not prompt bias): among converged
+  conversations, >= 2 distinct final symbols are adopted.
+
+If either gate fails, the line is stopped and recorded as a
+competence/bias failure, as with MPE and counter_circuit; pilot
+conversations are excluded from any confirmatory set.
+
+### Outcomes (appended 2026-08-17 after the pilot; nothing above edited)
+
+Recorded in `outputs/llm_conv_pilot.json`.
+
+- G1 PASS: 8/8 conversations reach sustained unanimity, all within
+  3 rounds, with zero parse failures.
+- G2 FAIL: all 8 conversations converge to the same symbol ("zib",
+  the first item of the symbol list). The convergence is driven by
+  the lexical prior of the shared model, not by history-dependent
+  symmetry breaking; there is no seed-dependent convention to
+  measure.
+- Decision under the gate: the LLM-CONV line is stopped and recorded
+  as a bias failure. No confirmatory protocol is frozen, no prompt
+  engineering or symbol-set search will be run for this manuscript.
+
+# Addendum REACH-VALID: estimator validity gates (frozen 2026-08-17 before any gate run; nothing above edited)
+
+Scripts: `reach_valid_ring.py` -> `outputs/reach_valid_ring.json`;
+`reach_valid_signalling.py` -> `outputs/reach_valid_signalling.json`.
+
+Derivation lineage (stated before any gate or confirmatory result is
+seen). The manuscript defines the possibility space as the effective
+joint distribution over the state-action-trajectory support still
+open to the collective. At formation level the trajectory support is
+the set of training futures, so the object's direct estimator is the
+distribution over final regimes across fresh stochastic continuations
+of the unchanged recipe: REACH as defined in Protocol REACH.
+Behavioural openness is the within-checkpoint proxy for this object.
+REACH is therefore not a new quantity introduced after the
+OC-RING-FIXT miss; it is the trajectory-level instance of the
+manuscript's own definition, and these gates test the estimator, not
+the attractiveness of its Overcooked result. The gates are decided on
+one ring seed's pilot cells and on a tractable system whose
+ground-truth openness is known, before any confirmatory REACH cell is
+run.
+
+### Gate VH: continuation-horizon convergence (ring)
+
+Seed 95101 (pilot seed of Protocol REACH), checkpoints 500k and
+960k, continuation indices j = 902..909 (disjoint from confirmatory
+j = 0..7 and pilot j = 900, 901; all gate runs are excluded from
+confirmatory cells). Each continuation is evaluated at horizons
+1.2M (descriptive), 1.6M and 2.0M by running `resume_training` from
+the checkpoint to each horizon with the SAME continuation rng seed
+(1_000_003 * seed + 31 * (ckpt // 1000) + j), so the shorter-horizon
+runs are prefixes of the longer one when the pipeline is
+deterministic. A determinism check (one cell run twice with
+identical seeds; identical final p_ccw required) is recorded first.
+
+- VH1: the direction label (p_ccw > 0.5) at 1.6M equals the label at
+  2.0M in >= 7/8 continuations at each checkpoint.
+- Fallback reading, frozen now: if the determinism check fails, VH1
+  is evaluated at distribution level instead
+  (|k_ccw(1.6M) - k_ccw(2.0M)| <= 1 at each checkpoint).
+
+### Gate VS: tractable-system sanity (Lewis signalling)
+
+Fresh seeds 717001, 717102, 717203 (disjoint from the published
+LEARN-CONVENTION seeds). For each seed, the published recipe
+(`learn_convention.py`, unchanged constants) is trained once with
+parameter + Adam-state + baseline snapshots at updates
+{0, 100, ..., 1000, 1500, 2000}. From every snapshot, m = 8
+continuations run to the 4000-update horizon with fresh sampling
+randomness (continuation seed = 90_000_000 + 97 * seed_index +
+13 * snapshot + j, applied to torch.manual_seed and to the pairing
+generator). Final label of a continuation: the population majority
+code (tuple) if final mutual success >= 0.8, else "unconverged".
+REACH-openness of a snapshot = H(empirical label distribution) /
+log2(8). Ground truth in this system: all 120 codes are equivalent
+and reachable at update 0; after capability (success 0.9) the code
+is absorbing.
+
+- VS1 (open where ground truth is open): at update 0, REACH >= 0.75
+  and >= 4 distinct converged codes, in 3/3 seeds.
+- VS2 (closed after capability): at the first snapshot at or after
+  the base run's success-0.9 crossing, 8/8 continuations end at the
+  base run's own final code (REACH = 0), in 3/3 seeds.
+- VS3 (monotone and irrevocable): Spearman rho(REACH, update)
+  <= -0.7, and once REACH = 0 at two consecutive snapshots it stays
+  0 at every later snapshot, in 3/3 seeds.
+- VS4 (descriptive, no bar): the REACH closure update compared with
+  the behavioural breakpoint t* and the capability crossing of the
+  base run.
+
+### Decision rule (frozen)
+
+The confirmatory 576-cell REACH grid of Protocol REACH is launched
+only if VH1 and VS1-VS3 all pass. If any gate fails, the REACH line
+stops with no modification (no horizon change, no entropy-estimator
+change, no detector change, no re-run), the gate outcome is reported
+as an estimator-validation failure, and the manuscript's existing
+conclusions stand unchanged.
+
+### Outcomes (appended 2026-08-17 after the gate runs; nothing above edited)
+
+Recorded in `outputs/reach_valid_ring.json` and
+`outputs/reach_valid_signalling.json`.
+
+- VH determinism check PASS (identical p_ccw on the duplicated
+  cell); primary reading used.
+- VH1 PASS: label(1.6M) = label(2.0M) in 8/8 continuations at both
+  checkpoints (all counterclockwise at both horizons).
+- VS1 PASS 3/3: REACH at update 0 is 0.917-1.0 with 7-8 distinct
+  converged codes.
+- VS2 PASS 3/3: at the first snapshot after the capability crossing,
+  8/8 continuations end at the base run's own code (REACH = 0).
+- VS3 FAIL 1/3 (rho -0.8187, -0.629, -0.629 against the -0.7 bar).
+  Diagnosis, verifiable analytically: every measured curve is
+  non-increasing at every consecutive pair and never reopens after
+  zero; the two missing seeds close by the third snapshot, leaving
+  11 of 13 snapshots tied at zero, and the tie-corrected Spearman
+  magnitude for ANY such curve is capped at
+  72/sqrt(182*72) = 0.629 -- both seeds measured exactly this
+  ceiling. The registered statistic cannot reach 0.7 for curves that
+  close early, i.e., it penalizes fast irrevocable closure, the very
+  behaviour the gate exists to reward. This is a mis-calibrated
+  clause of the same kind as the barrier-threshold entry in
+  Supplementary Note 1, and is reported verbatim.
+- VS4 (descriptive): REACH closure precedes the capability crossing
+  in 3/3 seeds (400 vs 800; 200 vs 650; 200 vs 700 updates).
+
+# Amendment REACH-VALID-2: corrected monotonicity clause, fresh-seed re-validation (frozen 2026-08-17 before the run; nothing above edited)
+
+Script: `reach_valid_signalling2.py` ->
+`outputs/reach_valid_signalling2.json`.
+
+Following the detector-amendment precedent (original miss reported
+verbatim; amended clause registered; re-validated on FRESH data
+before any confirmatory use), the mis-calibrated VS3 statistic is
+replaced and the whole VS gate re-run on three fresh seeds. Nothing
+else changes: recipe, snapshot grid, m = 8, label definition,
+continuation-seed formula (with seed_index values 3, 4, 5) are those
+of Addendum REACH-VALID.
+
+- Fresh seeds: 717304, 717405, 717506 (disjoint from all previous).
+- VS3' (amended monotonicity-irrevocability): at every consecutive
+  snapshot pair up to and including the first zero, the REACH curve
+  does not increase by more than 0.15 (the approximate one-label
+  quantum at m = 8); and once the curve is 0 at two consecutive
+  snapshots it stays 0 at every later snapshot. Required in 3/3
+  fresh seeds.
+- VS1 and VS2 are re-required on the fresh seeds with unchanged
+  bars. The original VS3 Spearman value is also computed and
+  reported verbatim with no bar attached.
+- Decision rule: the confirmatory 576-cell REACH grid is launched
+  only if fresh-seed VS1, VS2 and VS3' all pass (VH1 has already
+  passed). If any fails, the REACH line stops permanently under the
+  original stopping conditions.

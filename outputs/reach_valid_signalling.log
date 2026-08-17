@@ -1,0 +1,65 @@
+seed 717203 u=0: reach=0.917 codes=7
+seed 717102 u=0: reach=1.000 codes=7
+seed 717001 u=0: reach=1.000 codes=8
+seed 717203 u=100: reach=0.354 codes=3
+seed 717102 u=100: reach=0.181 codes=1
+seed 717001 u=100: reach=0.917 codes=7
+seed 717102 u=200: reach=-0.000 codes=1
+seed 717203 u=200: reach=-0.000 codes=1
+seed 717001 u=200: reach=0.719 codes=4
+seed 717102 u=300: reach=-0.000 codes=1
+seed 717203 u=300: reach=-0.000 codes=1
+seed 717001 u=300: reach=0.520 codes=2
+seed 717102 u=400: reach=-0.000 codes=1
+seed 717001 u=400: reach=-0.000 codes=1
+seed 717203 u=400: reach=-0.000 codes=1
+seed 717102 u=500: reach=-0.000 codes=1
+seed 717001 u=500: reach=-0.000 codes=1
+seed 717203 u=500: reach=-0.000 codes=1
+seed 717102 u=600: reach=-0.000 codes=1
+seed 717001 u=600: reach=-0.000 codes=1
+seed 717203 u=600: reach=-0.000 codes=1
+seed 717102 u=700: reach=-0.000 codes=1
+seed 717001 u=700: reach=-0.000 codes=1
+seed 717203 u=700: reach=-0.000 codes=1
+seed 717102 u=800: reach=-0.000 codes=1
+seed 717001 u=800: reach=-0.000 codes=1
+seed 717203 u=800: reach=-0.000 codes=1
+seed 717102 u=900: reach=-0.000 codes=1
+seed 717001 u=900: reach=-0.000 codes=1
+seed 717203 u=900: reach=-0.000 codes=1
+seed 717102 u=1000: reach=-0.000 codes=1
+seed 717001 u=1000: reach=-0.000 codes=1
+seed 717203 u=1000: reach=-0.000 codes=1
+seed 717102 u=1500: reach=-0.000 codes=1
+seed 717001 u=1500: reach=-0.000 codes=1
+seed 717203 u=1500: reach=-0.000 codes=1
+seed 717102 u=2000: reach=-0.000 codes=1
+seed 717001 u=2000: reach=-0.000 codes=1
+seed 717203 u=2000: reach=-0.000 codes=1
+{
+  "VS1_open_at_zero": "3/3",
+  "VS1_pass": true,
+  "VS2_closed_after_capability": "3/3",
+  "VS2_pass": true,
+  "VS3_monotone_irrevocable": "1/3",
+  "VS3_pass": false,
+  "VS4_closure_vs_s090": [
+    {
+      "seed": 717001,
+      "reach_closure": 400,
+      "s090": 800
+    },
+    {
+      "seed": 717102,
+      "reach_closure": 200,
+      "s090": 650
+    },
+    {
+      "seed": 717203,
+      "reach_closure": 200,
+      "s090": 700
+    }
+  ]
+}
+Wrote reach_valid_signalling.json

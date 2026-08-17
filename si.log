@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026) (preloaded format=pdflatex 2026.7.29)  16 AUG 2026 14:25
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026) (preloaded format=pdflatex 2026.7.29)  17 AUG 2026 18:49
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -447,7 +447,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 284--284
 []\T1/ptm/m/n/10 (+20) held-out curve
  []
 
-) [6] [7] [8] [9] [10] [11] (./si.aux)
+) [6] [7] [8] [9] [10] [11] [12] (./si.aux)
  ***********
 LaTeX2e <2026-06-01>
 L3 programming layer <2026-06-18>
@@ -456,18 +456,18 @@ Package rerunfilecheck Info: File `si.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 13925 strings out of 469158
- 220655 string characters out of 5460257
- 747644 words of memory out of 5000000
- 42432 multiletter control sequences out of 15000+600000
- 669090 words of font info for 266 fonts, out of 8000000 for 9000
+ 13951 strings out of 469158
+ 220891 string characters out of 5460257
+ 753417 words of memory out of 5000000
+ 42433 multiletter control sequences out of 15000+600000
+ 669991 words of font info for 280 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 74i,10n,79p,999b,619s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 74i,10n,79p,999b,615s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </home/Yixiang/.TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></home/Yixiang/.TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></home/Yixiang/.TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></home/Yixiang/.TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></home/Yixiang/.TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></home/Yixiang/.TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></home/Yixiang/.TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></home/Yixiang/.TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></home/Yixiang/.TinyTeX/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></home/Yixiang/.TinyTeX/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></home/Yixiang/.TinyTeX/texmf-dist/fonts/type1/urw/times/utmr8a.pfb>
-Output written on si.pdf (11 pages, 165091 bytes).
+Output written on si.pdf (12 pages, 167877 bytes).
 PDF statistics:
- 168 PDF objects out of 1000 (max. 8388607)
- 131 compressed objects within 2 object streams
- 56 named destinations out of 1000 (max. 500000)
+ 175 PDF objects out of 1000 (max. 8388607)
+ 137 compressed objects within 2 object streams
+ 60 named destinations out of 1000 (max. 500000)
  36353 words of extra memory for PDF output out of 42996 (max. 10000000)
 

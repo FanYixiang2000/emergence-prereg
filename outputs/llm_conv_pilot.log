@@ -1,0 +1,18 @@
+Loading weights:   0%|          | 0/339 [00:00<?, ?it/s]Loading weights:   0%|          | 1/339 [00:00<01:31,  3.71it/s]Loading weights:   1%|          | 2/339 [00:00<02:06,  2.67it/s]Loading weights:   4%|▍         | 15/339 [00:00<00:13, 23.40it/s]Loading weights:   8%|▊         | 28/339 [00:01<00:07, 41.05it/s]Loading weights:  10%|█         | 35/339 [00:01<00:06, 46.77it/s]Loading weights:  16%|█▌        | 54/339 [00:01<00:03, 76.86it/s]Loading weights:  19%|█▉        | 65/339 [00:01<00:03, 71.95it/s]Loading weights:  22%|██▏       | 74/339 [00:01<00:03, 71.02it/s]Loading weights:  24%|██▍       | 83/339 [00:01<00:03, 72.07it/s]Loading weights:  27%|██▋       | 91/339 [00:01<00:04, 54.14it/s]Loading weights:  29%|██▉       | 100/339 [00:02<00:04, 58.87it/s]Loading weights:  32%|███▏      | 107/339 [00:02<00:06, 35.58it/s]Loading weights:  35%|███▍      | 118/339 [00:02<00:04, 45.26it/s]Loading weights:  37%|███▋      | 125/339 [00:02<00:05, 36.51it/s]Loading weights:  39%|███▉      | 133/339 [00:03<00:06, 31.62it/s]Loading weights:  42%|████▏     | 144/339 [00:03<00:05, 34.62it/s]Loading weights:  45%|████▌     | 154/339 [00:03<00:04, 42.91it/s]Loading weights:  47%|████▋     | 160/339 [00:03<00:04, 43.61it/s]Loading weights:  49%|████▉     | 166/339 [00:03<00:03, 45.24it/s]Loading weights:  51%|█████     | 172/339 [00:03<00:03, 44.33it/s]Loading weights:  55%|█████▍    | 185/339 [00:04<00:02, 56.21it/s]Loading weights:  57%|█████▋    | 192/339 [00:04<00:03, 46.93it/s]Loading weights:  62%|██████▏   | 210/339 [00:04<00:01, 69.93it/s]Loading weights:  65%|██████▌   | 221/339 [00:04<00:01, 68.87it/s]Loading weights:  69%|██████▉   | 234/339 [00:04<00:01, 78.01it/s]Loading weights:  73%|███████▎  | 246/339 [00:04<00:01, 79.45it/s]Loading weights:  78%|███████▊  | 264/339 [00:05<00:00, 100.48it/s]Loading weights:  81%|████████  | 275/339 [00:05<00:00, 76.03it/s] Loading weights:  84%|████████▍ | 285/339 [00:05<00:00, 64.70it/s]Loading weights:  88%|████████▊ | 300/339 [00:05<00:00, 79.64it/s]Loading weights:  91%|█████████▏| 310/339 [00:05<00:00, 81.22it/s]Loading weights:  96%|█████████▋| 327/339 [00:05<00:00, 96.67it/s]Loading weights: 100%|█████████▉| 338/339 [00:05<00:00, 95.64it/s]Loading weights: 100%|██████████| 339/339 [00:05<00:00, 56.84it/s]
+conv 0: converged_at=3 final=zib parse_failures=0
+conv 1: converged_at=3 final=zib parse_failures=0
+conv 2: converged_at=3 final=zib parse_failures=0
+conv 3: converged_at=3 final=zib parse_failures=0
+conv 4: converged_at=3 final=zib parse_failures=0
+conv 5: converged_at=3 final=zib parse_failures=0
+conv 6: converged_at=3 final=zib parse_failures=0
+conv 7: converged_at=3 final=zib parse_failures=0
+{
+  "G1_converged": "8/8",
+  "G1_pass": true,
+  "G2_distinct_final_symbols": [
+    "zib"
+  ],
+  "G2_pass": false
+}
+Wrote llm_conv_pilot.json

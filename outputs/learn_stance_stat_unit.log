@@ -1,0 +1,129 @@
+control seed 2: n=16384 open=0.90791 absx=0.96917 absv=0.96906 tau=0.93316
+control seed 4: n=16384 open=0.73073 absx=0.82178 absv=0.82156 tau=0.79391
+control seed 0: n=16384 open=0.80611 absx=0.90723 absv=0.90843 tau=0.87211
+control seed 1: n=16384 open=0.78036 absx=0.84442 absv=0.85116 tau=0.81914
+sticky seed 0: n=16384 open=0.91837 absx=0.95411 absv=0.95465 tau=0.87068
+control seed 3: n=16384 open=0.87012 absx=0.95099 absv=0.95106 tau=0.91618
+sticky seed 1: n=16384 open=0.92295 absx=0.95267 absv=0.95408 tau=0.87058
+sticky seed 4: n=16384 open=0.92307 absx=0.95158 absv=0.95231 tau=0.87086
+sticky seed 2: n=16384 open=0.90996 absx=0.94585 absv=0.94663 tau=0.86382
+sticky seed 3: n=16384 open=0.93125 absx=0.95644 absv=0.95703 tau=0.87446
+{
+  "per_seed_auc": {
+    "sticky": [
+      {
+        "open": 0.91837,
+        "absx": 0.95411,
+        "absv": 0.95465,
+        "tau": 0.87068
+      },
+      {
+        "open": 0.92295,
+        "absx": 0.95267,
+        "absv": 0.95408,
+        "tau": 0.87058
+      },
+      {
+        "open": 0.90996,
+        "absx": 0.94585,
+        "absv": 0.94663,
+        "tau": 0.86382
+      },
+      {
+        "open": 0.93125,
+        "absx": 0.95644,
+        "absv": 0.95703,
+        "tau": 0.87446
+      },
+      {
+        "open": 0.92307,
+        "absx": 0.95158,
+        "absv": 0.95231,
+        "tau": 0.87086
+      }
+    ],
+    "control": [
+      {
+        "open": 0.80611,
+        "absx": 0.90723,
+        "absv": 0.90843,
+        "tau": 0.87211
+      },
+      {
+        "open": 0.78036,
+        "absx": 0.84442,
+        "absv": 0.85116,
+        "tau": 0.81914
+      },
+      {
+        "open": 0.90791,
+        "absx": 0.96917,
+        "absv": 0.96906,
+        "tau": 0.93316
+      },
+      {
+        "open": 0.87012,
+        "absx": 0.95099,
+        "absv": 0.95106,
+        "tau": 0.91618
+      },
+      {
+        "open": 0.73073,
+        "absx": 0.82178,
+        "absv": 0.82156,
+        "tau": 0.79391
+      }
+    ]
+  },
+  "boot_ci_95_seed_cluster": {
+    "sticky": {
+      "open": [
+        0.91575,
+        0.92764
+      ],
+      "absx": [
+        0.89322,
+        0.94659
+      ],
+      "absv": [
+        0.89317,
+        0.94839
+      ]
+    },
+    "control": {
+      "open": [
+        0.7568,
+        0.87214
+      ],
+      "absx": [
+        0.82533,
+        0.93161
+      ],
+      "absv": [
+        0.82589,
+        0.93189
+      ]
+    }
+  },
+  "leave_one_seed_out_open": {
+    "sticky": [
+      0.9234,
+      0.92087,
+      0.92392,
+      0.91878,
+      0.91949
+    ],
+    "control": [
+      0.79906,
+      0.80974,
+      0.78414,
+      0.78913,
+      0.82715
+    ]
+  },
+  "SSU1_sticky_open_beats_absx_seeds": "0/5",
+  "SSU1_pass": false,
+  "SSU2_control_absv_beats_open_seeds": "5/5",
+  "SSU2_pass": true
+}
+Wrote /home/Yixiang/MPARL/GOGOGO/outputs/learn_stance_stat_unit.json

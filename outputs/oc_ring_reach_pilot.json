@@ -1,0 +1,26 @@
+{
+  "status": "REACH timing/sanity pilot; runs excluded from confirmatory cells",
+  "config": {
+    "seed": 95101,
+    "ckpt": 500000,
+    "horizon": 2000000
+  },
+  "runs": [
+    {
+      "j": 900,
+      "rng_seed": 95101301703,
+      "final_p_ccw": 0.9688,
+      "final_soups": 2.4333,
+      "committed": true,
+      "wall_seconds": 910.0
+    },
+    {
+      "j": 901,
+      "rng_seed": 95101301704,
+      "final_p_ccw": 0.9688,
+      "final_soups": 2.1667,
+      "committed": true,
+      "wall_seconds": 926.2
+    }
+  ]
+}

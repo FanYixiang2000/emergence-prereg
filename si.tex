@@ -146,7 +146,12 @@ per-seed pooled AUC of every predictor, a seed-cluster bootstrap
 (10{,}000 resamples of the five seeds with replacement, pooled AUC
 recomputed on each resample's concatenated episodes), and
 leave-one-seed-out pooled AUCs (Supplementary Table~15). Both
-registered outcomes were met.
+registered outcomes were met. A parallel addendum applies the same
+aggregation to the two stance races (sticky and matched control,
+deterministic reruns of the published arms): the control-arm ordering
+holds in 5/5 seeds while the pooled sticky-arm ordering does not
+(0/5), recorded as a registered miss (Supplementary Table~16 and
+Supplementary Note~1).
 
 \section*{Supplementary Note 1: registered misses and amendments}
 
@@ -266,6 +271,23 @@ registered 0.80-at-every-time AUC bar (fixed-time AUCs 0.73--0.93
 against 0.98--0.99 declared); the discovery recipe recovered the
 two-regime structure in 5/5 seeds and the result is reported as a
 registered miss (Supplementary Table~14).
+\item \textbf{Sticky-stance seed-level miss.} The seed-level addendum
+to the stance races sustained the control-arm ordering (physical
+variable above openness, 5/5 seeds) but not the pooled sticky-arm
+ordering (0/5; physical 0.946--0.956 against openness 0.910--0.931
+within every seed). The main text's earlier claim that openness
+outperforms the physical order parameter when a hidden consolidation
+phase exists is withdrawn and replaced by the narrower seed-level
+statement (Supplementary Table~16).
+\item \textbf{LLM-population pilot gate.} A pilot toward an
+in-context convention system in a population of four
+Qwen2.5-7B-Instruct instances passed its competence gate (8/8
+conversations reach sustained unanimity within 3 rounds) but failed
+its symmetry-breaking gate: all conversations converged to the same
+symbol, the first item of the offered list, so the outcome reflects
+the shared model's lexical prior rather than history-dependent
+convention formation. The line was stopped at the gate with no
+prompt or symbol-set search, and no theory claim is made either way.
 \end{enumerate}
 
 \clearpage

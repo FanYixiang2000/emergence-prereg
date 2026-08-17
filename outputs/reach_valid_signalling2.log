@@ -1,0 +1,12 @@
+seed 717304 u=0: reach=0.833 codes=6
+seed 717506 u=0: reach=1.000 codes=8
+seed 717405 u=0: reach=0.917 codes=6
+seed 717304 u=100: reach=0.802 codes=5
+seed 717506 u=100: reach=0.318 codes=2
+seed 717405 u=100: reach=0.802 codes=5
+seed 717304 u=200: reach=0.750 codes=5
+seed 717506 u=200: reach=0.354 codes=3
+seed 717405 u=200: reach=0.181 codes=2
+seed 717304 u=300: reach=0.667 codes=3
+seed 717506 u=300: reach=-0.000 codes=1
+seed 717405 u=300: reach=0.181 codes=2

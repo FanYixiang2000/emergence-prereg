@@ -220,7 +220,7 @@ lss = load("learn_stance_sticky.json")
 br = lss["registered_outcomes"]["baseline_race"]
 check("Sticky openness AUC 0.886 vs absx 0.849",
       (round(br["open"]["auc"], 3), round(br["absx"]["auc"], 3)), (0.886, 0.849),
-      "(AUC 0.886 vs 0.849)")
+      "AUC 0.886 vs\n0.849)")
 lsc = load("learn_stance_control.json")
 bc = lsc["registered_outcomes"]["baseline_race"]
 check("Control reversal 0.811 vs 0.884",
@@ -450,6 +450,35 @@ check("STAT-UNIT registered outcomes met",
       (su["SU1_side_beats_entropy_every_seed"],
        su["SU2_side_ci_above_095"]), (True, True),
       "side-openness beats entropy in 5/5 seeds")
+
+ssu = load("learn_stance_stat_unit.json")["registered_outcomes"]
+check("STANCE-STAT SSU1 miss (0/5), SSU2 pass (5/5)",
+      (ssu["SSU1_pass"], ssu["SSU1_sticky_open_beats_absx_seeds"],
+       ssu["SSU2_pass"], ssu["SSU2_control_absv_beats_open_seeds"]),
+      (False, "0/5", True, "5/5"),
+      "sustains the control-arm ordering in 5/5 seeds but not the sticky-arm")
+stk = ssu["per_seed_auc"]["sticky"]
+check("STANCE-STAT sticky physical 0.946-0.956",
+      (round(min(p["absx"] for p in stk), 3),
+       round(max(p["absx"] for p in stk), 3)), (0.946, 0.956),
+      "the physical variable leads (0.946--0.956")
+check("STANCE-STAT sticky openness 0.910-0.931",
+      (round(min(p["open"] for p in stk), 3),
+       round(max(p["open"] for p in stk), 3)), (0.910, 0.931),
+      "vs 0.910--0.931")
+gaps_s = [p["absx"] - p["open"] for p in stk]
+gaps_c = [p["absx"] - p["open"] for p in ssu["per_seed_auc"]["control"]]
+check("STANCE-STAT gap sticky 0.025-0.036 vs control 0.061-0.101",
+      (round(min(gaps_s), 3), round(max(gaps_s), 3),
+       round(min(gaps_c), 3), round(max(gaps_c), 3)),
+      (0.025, 0.036, 0.061, 0.101),
+      "closes most of the gap between openness and the physical variable")
+ci_s = ssu["boot_ci_95_seed_cluster"]["sticky"]
+check("STANCE-STAT sticky cluster CIs",
+      (round(ci_s["open"][0], 3), round(ci_s["open"][1], 3),
+       round(ci_s["absx"][0], 3), round(ci_s["absx"][1], 3)),
+      (0.916, 0.928, 0.893, 0.947),
+      "seed-cluster bootstrap 95\\% CIs 0.893--0.947 against 0.916--0.928")
 
 si = load("semi_inject.json")
 ro = si["registered_outcomes"]

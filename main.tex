@@ -385,14 +385,22 @@ the original seeds transfers to five unseen seeds, flipping 99.99\% of
 episodes while acting 3.8 steps later than the best fixed schedule
 (99.6\%) and beating random timing by 21 points. This provides a
 policy-accessible intervention coordinate, acting as late as each
-episode allows. A matched-parameter contrast isolates the mechanism. When stances are
-inertial (a hidden consolidation phase exists), joint openness predicts
-switchability \emph{better} than the physical order parameter (AUC
-0.886 vs 0.849). When the single stickiness parameter removes the
-hidden phase---with all other constants unchanged---the advantage
-reverses (0.811 vs 0.884; Fig.~5c). Both orderings were preregistered
-predictions. Openness carries controllability information beyond the
-order parameter exactly when there is a hidden regime to consolidate.
+episode allows. A matched-parameter contrast asks when openness adds
+information beyond physical observables. In the pooled episode-level
+race, openness ranks above the physical order parameter when stances
+are inertial (a hidden consolidation phase exists; AUC 0.886 vs
+0.849), and the ranking reverses when the single stickiness parameter
+removes the hidden phase (0.811 vs 0.884; Fig.~5c); both pooled
+orderings were preregistered predictions. A frozen seed-level addendum
+sustains the control-arm ordering in 5/5 seeds but not the sticky-arm
+one: within every sticky seed the physical variable leads (0.946--0.956
+vs 0.910--0.931; 0/5, a registered miss). We therefore do not claim
+that openness outperforms the order parameter in this system; both are
+strong predictors, and the pooled sticky ordering is an aggregation
+effect, not a per-seed superiority. The hidden phase's seed-level
+effect is narrower: it closes most of the gap between openness and the
+physical variable (0.025--0.036, versus 0.061--0.101 without it;
+Methods).
 
 \subsection*{Abruptness scales with system size and criticality}
 
@@ -898,8 +906,14 @@ entropy 0.60--0.64 (CI 0.606--0.636); side-openness beats entropy in
 The cross-seed pooled values quoted above are lower than every
 within-seed value because seed-to-seed offsets in the predictors add
 between-cluster variance; the ordering of predictors is identical
-under both aggregations. The sticky-stance AUCs (Fig.~5c) pool
-episodes across their five seeds.
+under both aggregations. A parallel addendum re-aggregates the stance
+races (Fig.~5c) at the seed level: the control-arm ordering (physical
+variable above openness) holds in 5/5 seeds, but the pooled sticky-arm
+ordering does not (0/5; physical 0.946--0.956 against openness
+0.910--0.931 within every seed, seed-cluster bootstrap 95\% CIs
+0.893--0.947 against 0.916--0.928), so the sticky-arm superiority is a
+registered miss and is withdrawn in the main text (Supplementary
+Table~16).
 
 \paragraph{Emergence certificate.}
 The frozen instruments are packaged into a single standardized
@@ -1229,10 +1243,11 @@ per seed and time across five trained seeds.
 \textbf{b},~Openness predicts switchability as well as or better than
 physical baselines; bars show pooled AUC across the same seeds and
 intervention times.
-\textbf{c},~Matched-parameter causal contrast: openness beats the order
-parameter only when a hidden consolidation phase exists (sticky), and the
-ranking reverses in the control; bars show pooled AUC across five
-training seeds per condition.
+\textbf{c},~Matched-parameter contrast: in the pooled race, openness
+ranks above the order parameter when a hidden consolidation phase
+exists (sticky) and below it in the control; bars show pooled AUC
+across five training seeds per condition. The sticky-arm ordering does
+not persist at the seed level (registered miss; Methods).
 \textbf{d},~Ant colony, paired counterfactuals: intervention flip-rate
 rises with the episode's own remaining openness; closed episodes never
 flip ($n=8{,}372$ episode pairs; numbers above bars give bin counts).}
