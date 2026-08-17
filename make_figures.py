@@ -417,8 +417,6 @@ def fig4():
 # Figure 5: openness predicts controllability
 def fig5():
     lgu = load("learn_grip_utility.json")
-    lss = load("learn_stance_sticky.json")
-    lsc = load("learn_stance_control.json")
     aic = load("ant_conditional_leverage.json")
     ext = load("learn_grip_ext.json")
 
@@ -453,20 +451,25 @@ def fig5():
     ax.axhline(0.5, color=DARK, lw=0.5, ls=":")
 
     ax = fig.add_subplot(gs[2])
-    st = lss["registered_outcomes"]["baseline_race"]
-    ct = lsc["registered_outcomes"]["baseline_race"]
+    su = load("learn_stance_stat_unit.json")
+    ps = su["registered_outcomes"]["per_seed_auc"]
     names = ["open", "absx", "absv", "tau"]
     labs = ["openness", "|x|", "|v|", "time"]
     x = np.arange(4)
-    ax.bar(x - 0.18, [st[n]["auc"] for n in names], 0.34, color=BLUE,
-           label="sticky (hidden phase)")
-    ax.bar(x + 0.18, [ct[n]["auc"] for n in names], 0.34, color=GREY,
-           label="matched control")
+    for i in range(5):
+        off = (i - 2) * 0.05
+        ax.plot(x - 0.17 + off, [ps["sticky"][i][n] for n in names], "o",
+                ms=2.4, color=BLUE, mew=0, alpha=0.9, clip_on=False)
+        ax.plot(x + 0.17 + off, [ps["control"][i][n] for n in names], "o",
+                ms=2.4, color=GREY, mew=0, alpha=0.9, clip_on=False)
+    ax.plot([], [], "o", ms=2.6, color=BLUE, mew=0,
+            label="sticky (hidden phase)")
+    ax.plot([], [], "o", ms=2.6, color=GREY, mew=0, label="matched control")
     ax.set_xticks(x)
     ax.set_xticklabels(labs, rotation=30, ha="right")
-    ax.set_ylabel("AUC (switch prediction)")
-    ax.set_ylim(0.5, 0.95)
-    ax.legend(frameon=False, loc="upper right", fontsize=5.5,
+    ax.set_ylabel("per-seed AUC (switch prediction)")
+    ax.set_ylim(0.7, 1.0)
+    ax.legend(frameon=False, loc="lower right", fontsize=5.5,
               handlelength=1.0)
 
     ax = fig.add_subplot(gs[3])

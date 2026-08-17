@@ -225,7 +225,7 @@ lsc = load("learn_stance_control.json")
 bc = lsc["registered_outcomes"]["baseline_race"]
 check("Control reversal 0.811 vs 0.884",
       (round(bc["open"]["auc"], 3), round(bc["absx"]["auc"], 3)), (0.811, 0.884),
-      "(0.811 vs 0.884; Fig.~5c)")
+      "(0.811 vs 0.884); both pooled")
 
 aic = load("ant_conditional_leverage.json")
 ro = aic["registered_outcomes"]

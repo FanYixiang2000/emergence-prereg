@@ -390,11 +390,11 @@ information beyond physical observables. In the pooled episode-level
 race, openness ranks above the physical order parameter when stances
 are inertial (a hidden consolidation phase exists; AUC 0.886 vs
 0.849), and the ranking reverses when the single stickiness parameter
-removes the hidden phase (0.811 vs 0.884; Fig.~5c); both pooled
+removes the hidden phase (0.811 vs 0.884); both pooled
 orderings were preregistered predictions. A frozen seed-level addendum
-sustains the control-arm ordering in 5/5 seeds but not the sticky-arm
-one: within every sticky seed the physical variable leads (0.946--0.956
-vs 0.910--0.931; 0/5, a registered miss). We therefore do not claim
+(Fig.~5c) sustains the control-arm ordering in 5/5 seeds but not the
+sticky-arm one: within every sticky seed the physical variable leads
+(0.946--0.956 vs 0.910--0.931; 0/5, a registered miss). We therefore do not claim
 that openness outperforms the order parameter in this system; both are
 strong predictors, and the pooled sticky ordering is an aggregation
 effect, not a per-seed superiority. The hidden phase's seed-level
@@ -568,7 +568,14 @@ large-scale self-play are the clear next steps.
 
 Several boundaries remain. The commitment window is not causally
 verified: a one-pulse hypothesis failed its falsification clause, and
-formation proved re-entrant. Stored language-model checkpoints are too
+formation proved re-entrant. A registered trajectory-level estimator
+of reachable futures showed the same re-entrance in a tractable system
+and stopped at its validity gate, and a language-model convention
+pilot stopped at a bias gate (Supplementary Note~1). Across every
+closure notion we froze---behavioural, settled-envelope,
+reachable-future---none is universally monotone: irreversibility
+enters the framework as a measured property, never an assumption.
+Stored language-model checkpoints are too
 sparse for a breakpoint claim. Representation-independence holds only
 within a measured equivalence class and breaks where a representation
 erases the latent channel. Consistent with this boundary, lower-power
@@ -1243,11 +1250,12 @@ per seed and time across five trained seeds.
 \textbf{b},~Openness predicts switchability as well as or better than
 physical baselines; bars show pooled AUC across the same seeds and
 intervention times.
-\textbf{c},~Matched-parameter contrast: in the pooled race, openness
-ranks above the order parameter when a hidden consolidation phase
-exists (sticky) and below it in the control; bars show pooled AUC
-across five training seeds per condition. The sticky-arm ordering does
-not persist at the seed level (registered miss; Methods).
+\textbf{c},~Matched-parameter contrast at the seed level: each dot is
+one training seed's AUC (five seeds per arm). Within every sticky seed
+the physical variables lead openness (0/5), so the pooled sticky-arm
+advantage of openness is an aggregation effect and is not claimed
+(registered miss; Methods); the control-arm ordering holds in every
+seed.
 \textbf{d},~Ant colony, paired counterfactuals: intervention flip-rate
 rises with the episode's own remaining openness; closed episodes never
 flip ($n=8{,}372$ episode pairs; numbers above bars give bin counts).}
